@@ -15,7 +15,7 @@ class CreateActionStatesTable extends Migration
     {
         Schema::create('action_states', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('state_id')->unsigned();
             $table->bigInteger('action_id')->unsigned();
             $table->timestamps();
         });

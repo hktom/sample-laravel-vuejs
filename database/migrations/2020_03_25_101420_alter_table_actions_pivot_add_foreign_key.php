@@ -49,7 +49,7 @@ class AlterTableActionsPivotAddForeignKey extends Migration
         });
 
         Schema::table('action_orientations', function (Blueprint $table) {
-            $table->foreign('state_id')->references('id')->on('states');
+            $table->foreign('orientation_id')->references('id')->on('orientations');
             $table->foreign('action_id')->references('id')->on('actions');
 
         });
