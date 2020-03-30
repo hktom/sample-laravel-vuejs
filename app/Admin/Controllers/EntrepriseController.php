@@ -2,20 +2,21 @@
 
 namespace App\Admin\Controllers;
 
-use App\Project;
+use App\Entreprise;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Illuminate\Http\Request;
 
-class ProjectController extends AdminController
+class EntrepriseController extends AdminController
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = 'Project';
+    protected $title = 'App\Entreprise';
 
     /**
      * Make a grid builder.
@@ -24,13 +25,14 @@ class ProjectController extends AdminController
      */
     protected function grid()
     {
-        $grid = new Grid(new Project());
+        $grid = new Grid(new Entreprise());
 
         $grid->column('id', __('Id'));
-        $grid->column('ca_principal', __('Code'));
         $grid->column('name', __('Name'));
-        $grid->column('created_at', __('Date création'));
+        $grid->column('email', __('Email'));
+        $grid->column('created_at', __('Created at'));
         //$grid->column('image', __('Image'));
+        //$grid->column('remember_token', __('Remember token'));
         //$grid->column('updated_at', __('Updated at'));
 
         return $grid;
@@ -44,13 +46,14 @@ class ProjectController extends AdminController
      */
     protected function detail($id)
     {
-        $show = new Show(Project::findOrFail($id));
+        $show = new Show(Entreprise::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('ca_principal', __('Code'));
         $show->field('name', __('Name'));
-        $show->field('created_at', __('Date création'));
+        $show->field('email', __('Email'));
+        $show->field('created_at', __('Created at'));
         //$show->field('image', __('Image'));
+        //$show->field('remember_token', __('Remember token'));
         //$show->field('updated_at', __('Updated at'));
 
         return $show;
@@ -63,12 +66,19 @@ class ProjectController extends AdminController
      */
     protected function form()
     {
-        $form = new Form(new Project());
-        $form->setTitle("Nouveau");
-        $form->text('ca_principal', __('Code'))->rules("required|unique:projects");
-        $form->text('name', __('Name'))->rules("required|unique:projects");
+        $form = new Form(new Entreprise());
+
+        $form->text('name', __('Name'))->rules('required|unique:entreprises');
+        $form->email('email', __('Email'));
         //$form->image('image', __('Image'));
+        //$form->text('remember_token', __('Remember token'));
 
         return $form;
+    }
+
+    public function entreprises(Request $request)
+    {
+        $q = $request->get('q');
+        return Entreprise::where('name', 'like', "%$q%")->paginate(null, ['id', 'name as text']);
     }
 }

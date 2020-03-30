@@ -3,10 +3,14 @@
 namespace App\Admin\Controllers;
 
 use App\User;
+use App\Entreprise;
 use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\PDO;
+use Illuminate\Support\Facades\Request;
 
 class UserController extends AdminController
 {
@@ -29,6 +33,7 @@ class UserController extends AdminController
         $grid->column('id', __('Id'));
         $grid->column('name', __('Name'));
         $grid->column('email', __('Email'));
+        $grid->column('entreprise.name', __('Entreprise'));
         $grid->column('created_at', __('Created at'));
         //$grid->column('email_verified_at', __('Email verified at'));
         //$grid->column('password', __('Password'));
@@ -72,9 +77,13 @@ class UserController extends AdminController
 
         $form->text('name', __('Name'))->rules("required|unique:users");
         $form->email('email', __('Email'));
-        //$form->datetime('email_verified_at', __('Email verified at'))->default(date('Y-m-d H:i:s'));
-        //$form->password('password', __('Password'));
-        //$form->text('remember_token', __('Remember token'));
+        $form->select('entreprise_id')->options(function ($name) {
+            $entreprise = 'App\Entreprise'::where('name', 'like', "%$name%")->first();
+            if($entreprise)
+            {
+                return [$entreprise->id => $entreprise->name];
+            }
+        })->ajax('/admin/api/entreprises');
 
         return $form;
     }
