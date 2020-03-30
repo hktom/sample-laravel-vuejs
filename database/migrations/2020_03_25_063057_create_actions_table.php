@@ -29,7 +29,6 @@ class CreateActionsTable extends Migration
             $table->string('total_couts')->nullable();
             $table->bigInteger("project_id")->unsigned();
             $table->bigInteger("comment_id")->unsigned();
-            $table->bigInteger('source_financement')->unsigned()->nullable();
             $table->timestamps();
         });
     }
