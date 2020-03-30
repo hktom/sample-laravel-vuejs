@@ -6,8 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Application extends Model
 {
-    public function project()
+    public function budget()
     {
-        return $this->belongsTo('App\Project');
+        return $this->belongsTo('App\Budget');
+    }
+
+    public function fonctions()
+    {
+        return $this->hasMany('App\Fonction');
     }
 }

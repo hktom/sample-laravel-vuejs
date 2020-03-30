@@ -17,9 +17,9 @@ class Action extends Model
         return $this->belongsTo('App\Comment');
     }
 
-    public function source_financement()
+    public function financement()
     {
-        return $this->belongsTo('App\User');
+        return $this->hasMany('App\ActionFinancement', 'user_id');
     }
 
     public function responsables()
@@ -70,5 +70,15 @@ class Action extends Model
     public function types()
     {
         return $this->hasMany('App\Type', 'type_id');
+    }
+
+    public function bugets()
+    {
+        return $this->hasMany('App\Budget');
+    }
+
+    public function calendars()
+    {
+        return $this->hasMany('App\Calendar');
     }
 }
