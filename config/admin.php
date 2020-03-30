@@ -174,7 +174,7 @@ return [
     'database' => [
 
         // Database connection for following tables.
-        'connection' => 'mysql',
+        'connection' => '',
 
         // User tables and model.
         'users_table' => 'admin_users',
@@ -290,7 +290,7 @@ return [
     | "sidebar-mini".
     |
     */
-    'layout' => ['sidebar-mini', 'sidebar-collapse'],
+    'layout' => ['sidebar-mini'],
 
     /*
     |--------------------------------------------------------------------------
