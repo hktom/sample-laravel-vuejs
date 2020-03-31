@@ -16,5 +16,11 @@ Route::group([
     $router->resource('users', UserController::class);
     $router->resource('entreprises', EntrepriseController::class);
     $router->get('/api/entreprises', 'EntrepriseController@entreprises');
+    $router->resource('states', StateController::class);
+    $router->resource('comments', CommentController::class);
+    $router->resource('actions', ActionController::class);
+    $router->resource('budgets', BudgetController::class);
+    $router->resource('applications', ApplicationController::class);
+    $router->resource('fonctions', FonctionController::class);
 
 });
