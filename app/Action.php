@@ -42,20 +42,20 @@ class Action extends Model
         return $this->hasMany('App\ActionRealisators', 'user_id');
     }
 
-    public function cases()
-    {
-        return $this->hasMany('App\Case', 'case_id');
-    }
+    // public function cases()
+    // {
+    //     return $this->hasMany('App\Case', 'case_id');
+    // }
 
-    public function echelles()
-    {
-        return $this->hasMany('App\Echelles', 'echelle_id');
-    }
+    // public function echelles()
+    // {
+    //     return $this->hasMany('App\Echelles', 'echelle_id');
+    // }
 
-    public function fields()
-    {
-        return $this->hasMany('App\Field', 'field_id');
-    }
+    // public function fields()
+    // {
+    //     return $this->hasMany('App\Field', 'field_id');
+    // }
 
     public function orientations()
     {
@@ -64,13 +64,13 @@ class Action extends Model
 
     public function states()
     {
-        return $this->hasMany('App\State', 'state_id');
+        return $this->belongsTo('App\State');
     }
 
-    public function types()
-    {
-        return $this->hasMany('App\Type', 'type_id');
-    }
+    // public function types()
+    // {
+    //     return $this->hasMany('App\Type', 'type_id');
+    // }
 
     public function bugets()
     {

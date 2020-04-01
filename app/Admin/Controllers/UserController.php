@@ -8,9 +8,7 @@ use Encore\Admin\Controllers\AdminController;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\PDO;
-use Illuminate\Support\Facades\Request;
+
 
 class UserController extends AdminController
 {

@@ -93,11 +93,19 @@ class ActionController extends AdminController
     protected function form()
     {
         $form = new Form(new Action());
+        $form->select('project_id', "Project")->options(function ($name) {
+            $d = 'App\Project'::where('name', 'like', "%$name%")->first();
+            if($d)
+            {
+                return [$d->id => $d->name];
+            }
+        })->ajax('/admin/api/projects');
 
-        $form->text('document_num', __('Document num'));
+        $form->text('code', __('code'));
         $form->text('label', __('Label'));
         //$form->image('image', __('Image'));
-        $form->textarea('description', __('Description'));
+        $form->ckeditor('description', __('Description'));
+        //$form->textarea('description', __('Description'));
         $form->text('indicator', __('Indicator'));
         $form->switch('R', __('R'));
         $form->switch('A', __('A'));
@@ -106,8 +114,22 @@ class ActionController extends AdminController
         $form->text('total_cout_etat', __('Total cout etat'));
         $form->text('cout_externe', __('Cout externe'));
         $form->text('total_couts', __('Total couts'));
-        //$form->number('project_id', __('Project id'));
-        //$form->number('comment_id', __('Comment id'));
+
+        $form->select('state_id', "Statut Action")->options(function ($name) {
+            $d = 'App\State'::where('name', 'like', "%$name%")->first();
+            if($d)
+            {
+                return [$d->id => $d->name];
+            }
+        })->ajax('/admin/api/states');
+
+        $form->select('comment_id', "Commentaire")->options(function ($name) {
+            $d = 'App\Comment'::where('content', 'like', "%$name%")->first();
+            if($d)
+            {
+                return [$d->id => $d->name];
+            }
+        })->ajax('/admin/api/comments');
 
         return $form;
     }

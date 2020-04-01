@@ -15,12 +15,18 @@ Route::group([
     $router->resource('projects', ProjectController::class);
     $router->resource('users', UserController::class);
     $router->resource('entreprises', EntrepriseController::class);
-    $router->get('/api/entreprises', 'EntrepriseController@entreprises');
     $router->resource('states', StateController::class);
     $router->resource('comments', CommentController::class);
     $router->resource('actions', ActionController::class);
     $router->resource('budgets', BudgetController::class);
     $router->resource('applications', ApplicationController::class);
     $router->resource('fonctions', FonctionController::class);
+
+    Route::group(['prefix' => 'api'], function (Router $router) {
+        $router->get('entreprises', 'ApiController@entreprises');
+        $router->get('projects', 'ApiController@projects');
+        $router->get('comments', 'ApiController@comments');
+        $router->get('states', 'ApiController@states');
+    });
 
 });

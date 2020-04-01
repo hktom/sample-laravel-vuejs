@@ -75,10 +75,4 @@ class EntrepriseController extends AdminController
 
         return $form;
     }
-
-    public function entreprises(Request $request)
-    {
-        $q = $request->get('q');
-        return Entreprise::where('name', 'like', "%$q%")->paginate(null, ['id', 'name as text']);
-    }
 }
