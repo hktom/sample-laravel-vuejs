@@ -18,5 +18,10 @@ class DatabaseSeeder extends Seeder
         $this->call(CommentsTableSeeder::class);
         $this->call(PoncsTableSeeder::class);
         $this->call(UsersTableSeeder::class);
+        $this->call(ActionsTableSeeder::class);
+        $this->call(ActionAuthorsTableSeeder::class);
+        $this->call(ActionCollaboratorsTableSeeder::class);
+        $this->call(ActionResponsablesTableSeeder::class);
+        $this->call(ActionRealisatorsTableSeeder::class);
     }
 }
