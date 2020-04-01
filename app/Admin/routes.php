@@ -21,12 +21,14 @@ Route::group([
     $router->resource('budgets', BudgetController::class);
     $router->resource('applications', ApplicationController::class);
     $router->resource('fonctions', FonctionController::class);
+    $router->resource('poncs', PoncController::class);
 
     Route::group(['prefix' => 'api'], function (Router $router) {
         $router->get('entreprises', 'ApiController@entreprises');
         $router->get('projects', 'ApiController@projects');
         $router->get('comments', 'ApiController@comments');
         $router->get('states', 'ApiController@states');
+        $router->get('poncs', 'ApiController@poncs');
     });
 
 });

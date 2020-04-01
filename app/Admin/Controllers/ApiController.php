@@ -25,6 +25,12 @@ class ApiController extends AdminController
         return 'App\State'::where('name', 'like', "%$q%")->paginate(null, ['id', 'name as text']);
     }
 
+    public function poncs(Request $request)
+    {
+        $q = $request->get('q');
+        return 'App\Ponc'::where('content', 'like', "%$q%")->paginate(null, ['id', 'content as text']);
+    }
+
     public function comments(Request $request)
     {
         $q = $request->get('q');

@@ -21,6 +21,16 @@ class CreateEntreprisesTable extends Migration
             $table->rememberToken()->nullable();
             $table->timestamps();
         });
+
+        Schema::table('action_realisators', function (Blueprint $table) {
+            $table->foreign('entreprise_id')->references('id')->on('entreprises');
+            $table->foreign('action_id')->references('id')->on('actions');
+        });
+
+        Schema::table('action_responsables', function (Blueprint $table) {
+            $table->foreign('entreprise_id')->references('id')->on('entreprises');
+            $table->foreign('action_id')->references('id')->on('actions');
+        });
     }
 
     /**

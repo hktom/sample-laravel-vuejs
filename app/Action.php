@@ -19,27 +19,28 @@ class Action extends Model
 
     public function financement()
     {
-        return $this->hasMany('App\ActionFinancement', 'user_id');
+        return $this->hasMany('App\ActionFinancement');
     }
 
-    public function responsables()
-    {
-        return $this->hasMany('App\ActionResponsable', 'user_id');
-    }
 
     public function authors()
     {
-        return $this->hasMany('App\ActionAuthor', 'user_id');
+        return $this->belongsToMany('App\User', 'action_authors');
     }
 
     public function collaborators()
     {
-        return $this->hasMany('App\ActionCollaborator', 'user_id');
+        return $this->belongsToMany('App\User', 'action_collaborators');
+    }
+
+    public function responsables()
+    {
+        return $this->belongsToMany('App\Entreprise', 'action_responsables');
     }
 
     public function realisators()
     {
-        return $this->hasMany('App\ActionRealisators', 'user_id');
+        return $this->belongsToMany('App\Entreprise', 'action_realisators');
     }
 
     // public function cases()
@@ -62,7 +63,12 @@ class Action extends Model
         return $this->hasMany('App\Orientation', 'orientation_id');
     }
 
-    public function states()
+    public function ponc()
+    {
+        return $this->belongsTo('App\Ponc');
+    }
+
+    public function state()
     {
         return $this->belongsTo('App\State');
     }

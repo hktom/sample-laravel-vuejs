@@ -17,10 +17,10 @@ class ActionController extends AdminController
      */
     protected $title = 'Action';
     protected $description = [
-            //    'index'  => 'Actions',
+        //    'index'  => 'Actions',
         //        'show'   => 'Show',
         //        'edit'   => 'Edit',
-               'create' => 'nouveau',
+        'create' => 'nouveau',
     ];
 
 
@@ -33,22 +33,32 @@ class ActionController extends AdminController
     {
         $grid = new Grid(new Action());
 
-        $grid->column('id', __('Id'));
-        $grid->column('document_num', __('Document num'));
+        $grid->column('code', __('Code'));
         $grid->column('label', __('Label'));
-        $grid->column('image', __('Image'));
-        $grid->column('description', __('Description'));
-        $grid->column('indicator', __('Indicator'));
-        $grid->column('R', __('R'));
-        $grid->column('A', __('A'));
-        $grid->column('E', __('E'));
-        $grid->column('T', __('T'));
+        $grid->column('state.name', __('Status'));
+        $this->_boolean($grid, "R");
+        $this->_boolean($grid, "A");
+        $this->_boolean($grid, "E");
+        $this->_boolean($grid, "T");
+        $grid->column("authors", "Elaboré par")->display(function ($authors) {
+
+            $authors = array_map(function ($authors) {
+                return "<span class=''>{$authors['name']}</span>";
+            }, $authors);
+
+            return join('&nbsp;', $authors);
+        });
+        $grid->column('created_at', __('Created at'));
+
+         //$grid->column('id', __('Id'));
+        //$grid->column('image', __('Image'));
+        //$grid->column('indicator', __('Indicator'));
+        //$grid->column('description', __('Description'));
         //$grid->column('total_cout_etat', __('Total cout etat'));
         //$grid->column('cout_externe', __('Cout externe'));
         //$grid->column('total_couts', __('Total couts'));
         //$grid->column('project_id', __('Project id'));
         //$grid->column('comment_id', __('Comment id'));
-        $grid->column('created_at', __('Created at'));
         //$grid->column('updated_at', __('Updated at'));
 
         return $grid;
@@ -93,44 +103,88 @@ class ActionController extends AdminController
     protected function form()
     {
         $form = new Form(new Action());
-        $form->select('project_id', "Project")->options(function ($name) {
-            $d = 'App\Project'::where('name', 'like', "%$name%")->first();
-            if($d)
-            {
-                return [$d->id => $d->name];
-            }
-        })->ajax('/admin/api/projects');
 
+        $this->_select("project", $form);
         $form->text('code', __('code'));
         $form->text('label', __('Label'));
+
+        $form->multipleSelect("authors", "Auteur")->options('App\User'::all()->pluck('name', 'id'));
+        $form->multipleSelect("collaborators", "Collaborateurs")->options('App\User'::all()->pluck('name', 'id'));
+
+        $form->multipleSelect("realisators", "Realisateurs")->options('App\Entreprise'::all()->pluck('name', 'id'));
+
+        $form->multipleSelect("Responsables", "Responsables")->options('App\Entreprise'::all()->pluck('name', 'id'));
+
         //$form->image('image', __('Image'));
         $form->ckeditor('description', __('Description'));
-        //$form->textarea('description', __('Description'));
         $form->text('indicator', __('Indicator'));
         $form->switch('R', __('R'));
         $form->switch('A', __('A'));
         $form->switch('E', __('E'));
         $form->switch('T', __('T'));
+        $this->_select("state", $form);
+        $this->_select("type", $form);
+        $this->_select("comment", $form);
+        $form->divider();
         $form->text('total_cout_etat', __('Total cout etat'));
         $form->text('cout_externe', __('Cout externe'));
         $form->text('total_couts', __('Total couts'));
 
-        $form->select('state_id', "Statut Action")->options(function ($name) {
-            $d = 'App\State'::where('name', 'like', "%$name%")->first();
-            if($d)
-            {
-                return [$d->id => $d->name];
-            }
-        })->ajax('/admin/api/states');
-
-        $form->select('comment_id', "Commentaire")->options(function ($name) {
-            $d = 'App\Comment'::where('content', 'like', "%$name%")->first();
-            if($d)
-            {
-                return [$d->id => $d->name];
-            }
-        })->ajax('/admin/api/comments');
-
         return $form;
+    }
+
+    public function _boolean($grid, $b){
+
+        return $grid->column("$b", __("$b"))->display(function ($v) {
+            if($v==1)
+            {
+                return "<span style='color:blue'>X</span>";
+            }
+            else
+            {
+                return "<span style='color:blue'></span>";
+            }
+
+        });
+    }
+    public function _select($select, $form)
+    {
+        if ($select == "project") {
+            return   $form->select('project_id', "Project")->options(function ($name) {
+                $d = 'App\Project'::where('name', 'like', "%$name%")->first();
+                if ($d) {
+                    return [$d->id => $d->name];
+                }
+            })->ajax('/admin/api/projects');
+        }
+
+        if ($select == "type") {
+
+
+            return $form->select('ponc_id', "Type Action")->options(function ($name) {
+                $d = 'App\Ponc'::where('content', 'like', "%$name%")->first();
+                if ($d) {
+                    return [$d->id => $d->content];
+                }
+            })->ajax('/admin/api/poncs');
+        }
+
+        if ($select == "state") {
+            return          $form->select('state_id', "Statut Action")->options(function ($name) {
+                $d = 'App\State'::where('name', 'like', "%$name%")->first();
+                if ($d) {
+                    return [$d->id => $d->name];
+                }
+            })->ajax('/admin/api/states');
+        }
+
+        if ($select == "comment") {
+            return $form->select('comment_id', "Commentaire")->options(function ($name) {
+                $d = 'App\Comment'::where('content', 'like', "%$name%")->first();
+                if ($d) {
+                    return [$d->id => $d->content];
+                }
+            })->ajax('/admin/api/comments');
+        }
     }
 }

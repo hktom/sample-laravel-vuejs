@@ -15,7 +15,7 @@ class CreateActionRealisatorsTable extends Migration
     {
         Schema::create('action_realisators', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('user_id')->unsigned();
+            $table->bigInteger('entreprise_id')->unsigned();
             $table->bigInteger('action_id')->unsigned();
             $table->timestamps();
         });

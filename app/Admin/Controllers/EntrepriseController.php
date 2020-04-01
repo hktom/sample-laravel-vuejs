@@ -28,7 +28,7 @@ class EntrepriseController extends AdminController
         $grid = new Grid(new Entreprise());
 
         $grid->column('id', __('Id'));
-        $grid->column('name', __('Name'));
+        $grid->column('name', __('Name'))->filter();
         $grid->column('email', __('Email'));
         $grid->column('created_at', __('Created at'));
         //$grid->column('image', __('Image'));
