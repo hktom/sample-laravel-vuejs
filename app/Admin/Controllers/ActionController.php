@@ -15,7 +15,14 @@ class ActionController extends AdminController
      *
      * @var string
      */
-    protected $title = 'App\Action';
+    protected $title = 'Action';
+    protected $description = [
+            //    'index'  => 'Actions',
+        //        'show'   => 'Show',
+        //        'edit'   => 'Edit',
+               'create' => 'nouveau',
+    ];
+
 
     /**
      * Make a grid builder.
@@ -99,8 +106,8 @@ class ActionController extends AdminController
         $form->text('total_cout_etat', __('Total cout etat'));
         $form->text('cout_externe', __('Cout externe'));
         $form->text('total_couts', __('Total couts'));
-        $form->number('project_id', __('Project id'));
-        $form->number('comment_id', __('Comment id'));
+        //$form->number('project_id', __('Project id'));
+        //$form->number('comment_id', __('Comment id'));
 
         return $form;
     }

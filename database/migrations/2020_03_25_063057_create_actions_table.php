@@ -15,11 +15,11 @@ class CreateActionsTable extends Migration
     {
         Schema::create('actions', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string("document_num")->nullable();
+            $table->string("code")->nullable()->unique();
             $table->string("label");
             $table->string("image")->nullable();
-            $table->text('description');
-            $table->string('indicator')->nullable();
+            $table->text('description')->nullable();
+            $table->text('indicator')->nullable();
             $table->boolean('R')->nullable();
             $table->boolean('A')->nullable();
             $table->boolean('E')->nullable();
@@ -29,6 +29,8 @@ class CreateActionsTable extends Migration
             $table->string('total_couts')->nullable();
             $table->bigInteger("project_id")->unsigned();
             $table->bigInteger("comment_id")->unsigned();
+            $table->bigInteger("state_id")->unsigned();
+            $table->bigInteger("ponc_id")->unsigned();
             $table->timestamps();
         });
     }

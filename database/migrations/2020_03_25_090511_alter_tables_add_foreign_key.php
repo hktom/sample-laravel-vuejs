@@ -17,6 +17,8 @@ class AlterTablesAddForeignKey extends Migration
             $table->foreign('project_id')->references('id')->on('projects')->onDelete('cascade');
 
             $table->foreign('comment_id')->references('id')->on('comments')->onDelete('cascade');
+
+            $table->foreign('state_id')->references('id')->on('states')->onDelete('cascade');
         });
     }
 

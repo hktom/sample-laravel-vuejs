@@ -28,37 +28,39 @@ class AlterTableActionsPivotAddForeignKey extends Migration
             $table->foreign('action_id')->references('id')->on('actions');
         });
 
-        Schema::table('action_types', function (Blueprint $table) {
-            $table->foreign('type_id')->references('id')->on('types');
-            $table->foreign('action_id')->references('id')->on('actions');
-        });
-
-        Schema::table('action_echelles', function (Blueprint $table) {
-            $table->foreign('echelle_id')->references('id')->on('echelles');
-            $table->foreign('action_id')->references('id')->on('actions');
-        });
-
-        Schema::table('action_fields', function (Blueprint $table) {
-            $table->foreign('field_id')->references('id')->on('fields');
-            $table->foreign('action_id')->references('id')->on('actions');
-        });
-
-        Schema::table('action_states', function (Blueprint $table) {
-            $table->foreign('state_id')->references('id')->on('states');
-            $table->foreign('action_id')->references('id')->on('actions');
-        });
-
         Schema::table('action_orientations', function (Blueprint $table) {
             $table->foreign('orientation_id')->references('id')->on('orientations');
             $table->foreign('action_id')->references('id')->on('actions');
 
         });
 
-        Schema::table('action_cases', function (Blueprint $table) {
-            $table->foreign('case_id')->references('id')->on('cases');
-            $table->foreign('action_id')->references('id')->on('actions');
+        // Schema::table('action_types', function (Blueprint $table) {
+        //     $table->foreign('type_id')->references('id')->on('types');
+        //     $table->foreign('action_id')->references('id')->on('actions');
+        // });
 
-        });
+        // Schema::table('action_echelles', function (Blueprint $table) {
+        //     $table->foreign('echelle_id')->references('id')->on('echelles');
+        //     $table->foreign('action_id')->references('id')->on('actions');
+        // });
+
+        // Schema::table('action_fields', function (Blueprint $table) {
+        //     $table->foreign('field_id')->references('id')->on('fields');
+        //     $table->foreign('action_id')->references('id')->on('actions');
+        // });
+
+        // Schema::table('action_states', function (Blueprint $table) {
+        //     $table->foreign('state_id')->references('id')->on('states');
+        //     $table->foreign('action_id')->references('id')->on('actions');
+        // });
+
+
+
+        // Schema::table('action_cases', function (Blueprint $table) {
+        //     $table->foreign('case_id')->references('id')->on('cases');
+        //     $table->foreign('action_id')->references('id')->on('actions');
+
+        // });
     }
 
     /**

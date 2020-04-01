@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateActionEchellesTable extends Migration
+class CreateDetailsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateActionEchellesTable extends Migration
      */
     public function up()
     {
-        Schema::create('action_echelles', function (Blueprint $table) {
+        Schema::create('details', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('echelle_id')->unsigned();
             $table->bigInteger('action_id')->unsigned();
+            $table->bigInteger('field_id')->unsigned();
+            $table->bigInteger('action_id_link')->unsigned();
+            $table->foreign('action_id')->references('id')->on('actions');
+            $table->foreign('field_id')->references('id')->on('fields');
+            $table->foreign('action_id_link')->references('id')->on('actions');
             $table->timestamps();
         });
     }
@@ -28,6 +32,6 @@ class CreateActionEchellesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('action_echelles');
+        Schema::dropIfExists('details');
     }
 }

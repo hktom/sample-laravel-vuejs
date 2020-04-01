@@ -15,8 +15,10 @@ class CreateBudgetsTable extends Migration
     {
         Schema::create('budgets', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('action_id')->unsigned();
             $table->string('name');
             $table->timestamps();
+            $table->foreign('action_id')->references('id')->on('actions');
         });
     }
 

@@ -15,7 +15,7 @@ class CreateCalendarsTable extends Migration
     {
         Schema::create('calendars', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('action_id')->unsigned()->nullable();
+            $table->bigInteger('action_id')->unsigned();
             $table->string('label')->nullable();
             $table->string('description')->nullable();
             $table->timestamps();

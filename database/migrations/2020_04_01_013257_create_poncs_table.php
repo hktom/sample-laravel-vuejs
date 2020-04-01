@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCasesTable extends Migration
+class CreatePoncsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,14 @@ class CreateCasesTable extends Migration
      */
     public function up()
     {
-        Schema::create('cases', function (Blueprint $table) {
+        Schema::create('poncs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string("content");
             $table->timestamps();
+        });
+
+        Schema::table('actions', function (Blueprint $table) {
+            $table->foreign('ponc_id')->references('id')->on('poncs');
         });
     }
 
@@ -27,6 +31,6 @@ class CreateCasesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('cases');
+        Schema::dropIfExists('poncs');
     }
 }
