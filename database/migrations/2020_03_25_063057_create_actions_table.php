@@ -28,9 +28,9 @@ class CreateActionsTable extends Migration
             $table->string('cout_externe')->nullable();
             $table->string('total_couts')->nullable();
             $table->bigInteger("project_id")->unsigned();
-            $table->bigInteger("comment_id")->unsigned();
-            $table->bigInteger("state_id")->unsigned();
-            $table->bigInteger("ponc_id")->unsigned();
+            $table->bigInteger("comment_id")->unsigned()->nullable();
+            $table->bigInteger("state_id")->unsigned()->nullable();
+            $table->bigInteger("ponc_id")->unsigned()->nullable();
             $table->timestamps();
         });
     }

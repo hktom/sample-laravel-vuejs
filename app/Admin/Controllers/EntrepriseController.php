@@ -16,7 +16,7 @@ class EntrepriseController extends AdminController
      *
      * @var string
      */
-    protected $title = 'App\Entreprise';
+    protected $title = 'Organisations';
 
     /**
      * Make a grid builder.

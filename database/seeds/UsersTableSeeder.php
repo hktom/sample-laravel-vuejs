@@ -68,26 +68,26 @@ class UsersTableSeeder extends Seeder
             4 => 
             array (
                 'id' => 5,
-                'entreprise_id' => 1,
-                'name' => 'AL. Cantiniaux',
+                'entreprise_id' => NULL,
+                'name' => 'Anne-Lise Cantiniaux',
                 'email' => NULL,
                 'email_verified_at' => NULL,
                 'password' => NULL,
                 'remember_token' => NULL,
                 'created_at' => '2020-04-01 02:20:47',
-                'updated_at' => '2020-04-01 02:20:47',
+                'updated_at' => '2020-04-03 11:42:58',
             ),
             5 => 
             array (
                 'id' => 6,
-                'entreprise_id' => 7,
-                'name' => 'V. Venizelos',
+                'entreprise_id' => NULL,
+                'name' => 'Vassilis Venizelos',
                 'email' => NULL,
                 'email_verified_at' => NULL,
                 'password' => NULL,
                 'remember_token' => NULL,
                 'created_at' => '2020-04-01 02:21:17',
-                'updated_at' => '2020-04-01 02:21:17',
+                'updated_at' => '2020-04-03 11:43:24',
             ),
             6 => 
             array (
@@ -784,6 +784,66 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => NULL,
                 'created_at' => '2020-04-01 02:44:38',
                 'updated_at' => '2020-04-01 02:44:38',
+            ),
+            64 => 
+            array (
+                'id' => 65,
+                'entreprise_id' => 1,
+                'name' => 'OCAN',
+                'email' => NULL,
+                'email_verified_at' => NULL,
+                'password' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-01 05:07:16',
+                'updated_at' => '2020-04-01 05:07:16',
+            ),
+            65 => 
+            array (
+                'id' => 66,
+                'entreprise_id' => NULL,
+                'name' => 'GE-21',
+                'email' => NULL,
+                'email_verified_at' => NULL,
+                'password' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-01 05:07:57',
+                'updated_at' => '2020-04-01 05:07:57',
+            ),
+            66 => 
+            array (
+                'id' => 67,
+                'entreprise_id' => 49,
+            'name' => 'Service de l’information et de la communication du DT (SIC)',
+                'email' => NULL,
+                'email_verified_at' => NULL,
+                'password' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-01 05:08:10',
+                'updated_at' => '2020-04-01 05:08:10',
+            ),
+            67 => 
+            array (
+                'id' => 68,
+                'entreprise_id' => 55,
+                'name' => 'Estelle Lecomte',
+                'email' => NULL,
+                'email_verified_at' => NULL,
+                'password' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:15:18',
+                'updated_at' => '2020-04-03 11:15:18',
+            ),
+            68 => 
+            array (
+                'id' => 69,
+                'entreprise_id' => 49,
+                'name' => 'Jean-Marc Mitterer',
+                'email' => NULL,
+                'email_verified_at' => NULL,
+                'password' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 13:12:12',
+                'updated_at' => '2020-04-03 13:12:12',
             ),
         ));
         

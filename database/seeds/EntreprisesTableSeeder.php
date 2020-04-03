@@ -487,6 +487,216 @@ class EntreprisesTableSeeder extends Seeder
                 'created_at' => '2020-03-31 07:37:22',
                 'updated_at' => '2020-03-31 07:37:22',
             ),
+            47 => 
+            array (
+                'id' => 48,
+                'name' => 'GE-21',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-01 04:59:13',
+                'updated_at' => '2020-04-01 04:59:13',
+            ),
+            48 => 
+            array (
+                'id' => 49,
+            'name' => 'Service de l’information et de la communication du DT (SIC)',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-01 05:04:30',
+                'updated_at' => '2020-04-01 05:04:30',
+            ),
+            49 => 
+            array (
+                'id' => 50,
+                'name' => 'CCO-Genève',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-01 05:05:27',
+                'updated_at' => '2020-04-01 05:05:27',
+            ),
+            50 => 
+            array (
+                'id' => 51,
+                'name' => 'Service de l’écologie de l’eau',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:08:36',
+                'updated_at' => '2020-04-03 11:08:36',
+            ),
+            51 => 
+            array (
+                'id' => 52,
+                'name' => 'OCEau-Service du Lac, de la renaturation et de la pêche',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:08:54',
+                'updated_at' => '2020-04-03 11:08:54',
+            ),
+            52 => 
+            array (
+                'id' => 53,
+                'name' => 'OCEau-Service de l’écologie de l’eau',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:09:03',
+                'updated_at' => '2020-04-03 11:09:03',
+            ),
+            53 => 
+            array (
+                'id' => 54,
+                'name' => 'Commission internationale pour la protection des eaux du Léman',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:13:45',
+                'updated_at' => '2020-04-03 11:13:45',
+            ),
+            54 => 
+            array (
+                'id' => 55,
+                'name' => 'Services Industriels de Genève',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:14:48',
+                'updated_at' => '2020-04-03 11:14:48',
+            ),
+            55 => 
+            array (
+                'id' => 56,
+                'name' => 'Réseau d’experts au sein et à l’extérieur de l’Etat',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:22:36',
+                'updated_at' => '2020-04-03 11:22:36',
+            ),
+            56 => 
+            array (
+                'id' => 57,
+                'name' => 'Animateurs RAE',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:22:57',
+                'updated_at' => '2020-04-03 11:22:57',
+            ),
+            57 => 
+            array (
+                'id' => 58,
+                'name' => 'Associations d’agriculteurs',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:23:03',
+                'updated_at' => '2020-04-03 11:23:03',
+            ),
+            58 => 
+            array (
+                'id' => 59,
+                'name' => 'HEPIA',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:28:24',
+                'updated_at' => '2020-04-03 11:28:24',
+            ),
+            59 => 
+            array (
+                'id' => 60,
+                'name' => 'FiBL',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:28:33',
+                'updated_at' => '2020-04-03 11:28:33',
+            ),
+            60 => 
+            array (
+                'id' => 61,
+                'name' => 'ProSpecieRara Slow Food',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:32:50',
+                'updated_at' => '2020-04-03 11:32:50',
+            ),
+            61 => 
+            array (
+                'id' => 62,
+                'name' => 'DPC',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:44:37',
+                'updated_at' => '2020-04-03 11:44:37',
+            ),
+            62 => 
+            array (
+                'id' => 63,
+                'name' => 'Police du feu',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 11:51:05',
+                'updated_at' => '2020-04-03 11:51:05',
+            ),
+            63 => 
+            array (
+                'id' => 64,
+                'name' => 'Conservatoire et Jardin botaniques de Genève',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 12:07:07',
+                'updated_at' => '2020-04-03 12:07:07',
+            ),
+            64 => 
+            array (
+                'id' => 65,
+                'name' => 'Société mycologique de Genève',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 12:07:15',
+                'updated_at' => '2020-04-03 12:07:15',
+            ),
+            65 => 
+            array (
+                'id' => 66,
+                'name' => 'Société botanique de Genève',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 12:07:25',
+                'updated_at' => '2020-04-03 12:07:25',
+            ),
+            66 => 
+            array (
+                'id' => 67,
+                'name' => 'Experts bryophytes et lichens',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 12:07:34',
+                'updated_at' => '2020-04-03 12:07:34',
+            ),
+            67 => 
+            array (
+                'id' => 68,
+                'name' => 'Haute école du paysage, d’ingénierie et d’architecture de Genève',
+                'email' => NULL,
+                'image' => NULL,
+                'remember_token' => NULL,
+                'created_at' => '2020-04-03 12:07:47',
+                'updated_at' => '2020-04-03 12:07:47',
+            ),
         ));
         
         
