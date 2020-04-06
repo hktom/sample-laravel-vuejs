@@ -22,6 +22,7 @@ Route::group([
     $router->resource('applications', ApplicationController::class);
     $router->resource('fonctions', FonctionController::class);
     $router->resource('poncs', PoncController::class);
+    $router->resource('actors', ActorController::class);
 
     Route::group(['prefix' => 'api'], function (Router $router) {
         $router->get('entreprises', 'ApiController@entreprises');
@@ -29,6 +30,7 @@ Route::group([
         $router->get('comments', 'ApiController@comments');
         $router->get('states', 'ApiController@states');
         $router->get('poncs', 'ApiController@poncs');
+        $router->get('actors', 'ApiController@actors');
     });
 
 });

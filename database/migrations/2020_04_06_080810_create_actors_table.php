@@ -20,7 +20,7 @@ class CreateActorsTable extends Migration
             $table->string('email')->unique()->nullable();
             $table->string('logo')->unique()->nullable();
             $table->string('description')->unique()->nullable();
-            $table->boolean('is_a_person')->default(true);
+            $table->boolean('is_a_person')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });

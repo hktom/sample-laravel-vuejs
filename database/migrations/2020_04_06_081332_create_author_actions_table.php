@@ -15,6 +15,10 @@ class CreateAuthorActionsTable extends Migration
     {
         Schema::create('author_actions', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('actor_id')->unsigned();
+            $table->bigInteger('action_id')->unsigned();
+            $table->foreign('actor_id')->references('id')->on('actors');
+            $table->foreign('action_id')->references('id')->on('actions');
             $table->timestamps();
         });
     }
