@@ -104,20 +104,22 @@ class ActionController extends AdminController
     {
         $form = new Form(new Action());
 
-        $this->_select("project", $form);
-        $form->text('code', __('code'));
-        $form->text('label', __('Label'));
+        $this->_select("project", $form)->rules('required');
+        $form->text('code', __('code'))->rules('required|unique:actions');
+        $form->text('label', __('Label'))->rules('required|unique:actions');
 
         $form->multipleSelect("authors", "Auteur")->options('App\User'::all()->pluck('name', 'id'));
         $form->multipleSelect("collaborators", "Collaborateurs")->options('App\User'::all()->pluck('name', 'id'));
 
-        $form->multipleSelect("realisators", "Realisateurs")->options('App\Entreprise'::all()->pluck('name', 'id'));
+        //$form->image('image', __('Image'));
+        $form->ckeditor('description', __('Description'));
+        $form->textarea('indicator', __('Indicator'));
 
         $form->multipleSelect("Responsables", "Responsables")->options('App\Entreprise'::all()->pluck('name', 'id'));
 
-        //$form->image('image', __('Image'));
-        $form->ckeditor('description', __('Description'));
-        $form->text('indicator', __('Indicator'));
+        $form->multipleSelect("realisators", "Realisateurs")->options('App\Entreprise'::all()->pluck('name', 'id'));
+
+
         $form->switch('R', __('R'));
         $form->switch('A', __('A'));
         $form->switch('E', __('E'));
@@ -151,7 +153,7 @@ class ActionController extends AdminController
     {
         if ($select == "project") {
             return   $form->select('project_id', "Project")->options(function ($name) {
-                $d = 'App\Project'::where('name', 'like', "%$name%")->first();
+                $d = 'App\Project'::where('name', 'like', "%$name%")->orWhere('id', $name)->first();
                 if ($d) {
                     return [$d->id => $d->name];
                 }
@@ -162,7 +164,7 @@ class ActionController extends AdminController
 
 
             return $form->select('ponc_id', "Type Action")->options(function ($name) {
-                $d = 'App\Ponc'::where('content', 'like', "%$name%")->first();
+                $d = 'App\Ponc'::where('content', 'like', "%$name%")->orWhere('id', $name)->first();
                 if ($d) {
                     return [$d->id => $d->content];
                 }
@@ -171,7 +173,7 @@ class ActionController extends AdminController
 
         if ($select == "state") {
             return          $form->select('state_id', "Statut Action")->options(function ($name) {
-                $d = 'App\State'::where('name', 'like', "%$name%")->first();
+                $d = 'App\State'::where('name', 'like', "%$name%")->orWhere('id', $name)->first();
                 if ($d) {
                     return [$d->id => $d->name];
                 }
@@ -180,7 +182,7 @@ class ActionController extends AdminController
 
         if ($select == "comment") {
             return $form->select('comment_id', "Commentaire")->options(function ($name) {
-                $d = 'App\Comment'::where('content', 'like', "%$name%")->first();
+                $d = 'App\Comment'::where('content', 'like', "%$name%")->orWhere('id', $name)->first();
                 if ($d) {
                     return [$d->id => $d->content];
                 }
