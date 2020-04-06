@@ -100,11 +100,7 @@ d&eacute;ploy&eacute;e en se basant sur les concepts &laquo; Chaque m2 compte &r
         array (
             'id' => 4,
             'code' => '1.3',
-<<<<<<< HEAD
-            'label' => 'Infrastructure écologique du territoire',
-=======
             'label' => '3. Intégrer l\'infrastructure écologique dans l\'aménagement du territoire et l’implémenter',
->>>>>>> feature/actions
             'image' => NULL,
             'description' => '<p>Poursuivre le d&eacute;veloppement du canton sans penser &agrave; l&rsquo;infrastructure n&eacute;cessaire &agrave; la biodiversit&eacute;,<br />
 c&rsquo;est menacer notre propre survie. Les Plans Directeurs cantonal et communaux doivent garantir la<br />
