@@ -3110,6 +3110,1914 @@ Questionnaires d’évaluation',
 'created_at' => '2020-04-03 13:45:47',
 'updated_at' => '2020-04-03 13:45:47',
 ),
+77 => 
+array (
+'id' => 79,
+'code' => '10.1',
+'label' => '1. EP – Sorties Nature 5P accompagnées de naturalistes',
+'image' => NULL,
+'description' => '<p>Objectifs :<br />
+&bull; Assurer l&rsquo;observation de milieux naturels proches des &eacute;coles par tous les &eacute;l&egrave;ves de 5P avec des<br />
+accompagnants form&eacute;s, ce qui r&eacute;pond &agrave; l&rsquo;une des conditions-cadre &agrave; mettre en &oelig;uvre selon le<br />
+Plan d&rsquo;&eacute;tudes romand (PER), &agrave; savoir &ldquo;donner l&rsquo;occasion de sortir pour observer et explorer le<br />
+terrain et le milieu&rdquo;.<br />
+&bull; Participer &agrave; l&rsquo;acquisition de l&rsquo;objectif d&rsquo;apprentissage en Math&eacute;matiques et sciences de la nature<br />
+(MSN 28) D&eacute;terminer des caract&eacute;ristiques du monde vivant et de divers milieux et en tirer des<br />
+cons&eacute;quences pour la p&eacute;rennit&eacute; de la vie en observant et d&eacute;crivant divers milieux urbains et naturels.<br />
+&bull; Mettre en valeur le patrimoine naturel du canton de Gen&egrave;ve pour les &eacute;l&egrave;ves et les enseignant-e-s.<br />
+R&eacute;alisations :<br />
+&bull; Effectuer chaque ann&eacute;e deux sorties nature (automne et printemps) accompagn&eacute;es de naturalistes<br />
+pour toutes les classes de 5P<br />
+&bull; D&eacute;cider si la sortie 5P devait &ecirc;tre rendue obligatoire pour toutes les classes de 5P<br />
+&bull; Revoir et consolider le guide p&eacute;dagogique accompagnant les sorties 5P<br />
+Besoins :<br />
+Une demande de participation au financement du projet budg&eacute;t&eacute; &agrave; CHF 300&rsquo;000.- pour l&rsquo;accueil de<br />
+150 classes par ann&eacute;e a &eacute;t&eacute; d&eacute;pos&eacute;e par l&rsquo;OCeau aupr&egrave;s de la Conf&eacute;d&eacute;ration pour contractualiser<br />
+cette action dans le cadre des conventions programmes entre l&rsquo;Etat et la Conf&eacute;d&eacute;ration (R&eacute;forme sur<br />
+la p&eacute;r&eacute;quation et la r&eacute;partition des t&acirc;ches) pour 2020-2024. La Conf&eacute;d&eacute;ration a reconnu l&rsquo;importance<br />
+de rendre obligatoires les sorties nature pour les 5P et versera, &agrave; ce titre, &agrave; l&rsquo;Etat de Gen&egrave;ve (via le<br />
+DT): 150 000 CHF par an d&egrave;s 2020 pendant 5 ans.<br />
+Un taux suppl&eacute;mentaire de poste administratif est &agrave; pr&eacute;voir au Service enseignement et &eacute;valuation<br />
+(SEE) pour assurer la coordination du projet (gestion du d&eacute;placement des classes notamment en<br />
+collaboration avec la Cellule Transport du D&eacute;partement de l&rsquo;Instruction Publique)<br />
+Contexte :<br />
+Suite &agrave; une recherche men&eacute;e par le Service de recherche en &eacute;ducation (SRED) en 2012, l&rsquo;Office<br />
+cantonal de l&rsquo;agriculture et de la nature (OCAN) a d&eacute;cid&eacute; d&rsquo;&eacute;laborer un projet de sorties nature qui<br />
+seraient syst&eacute;matiquement propos&eacute;es aux &eacute;l&egrave;ves. Pour ce faire, deux associations (Pro Natura et La<br />
+Libellule) ont &eacute;t&eacute; mandat&eacute;es pour &eacute;laborer ce projet en collaboration avec le SEE pour les aspects<br />
+p&eacute;dagogiques. Les frais de pr&eacute;paration du projet (env. 50&rsquo;000 CHF) ont &eacute;t&eacute; pris en charge par la<br />
+Direction g&eacute;n&eacute;rale de la nature et du paysage (DGNP).</p>
+
+<p>Au printemps 2016, 10 classes ont particip&eacute; au d&eacute;marrage de la phase-pilote du projet, puis 60 classes<br />
+en 2016-2017. Depuis 2017-2018, 120 classes sont pris en charge par les animateurs engag&eacute;s par<br />
+les associations La Libellule et Pro Natura pendant deux sorties dans une for&ecirc;t proche leur &eacute;cole.<br />
+Gr&acirc;ce &agrave; une fondation (CHF 360&rsquo;000 CHF), &agrave; la Loterie Romande (CHF 50&rsquo;000), &agrave; Pro Natura Suisse<br />
+(CHF 64&rsquo;000) et &agrave; Education 21 (CHF 2&rsquo;000), le budget total de ces sorties, ainsi que leur &eacute;laboration<br />
+ont &eacute;t&eacute; couvert. En automne 2018, la fondation en question s&rsquo;est engag&eacute;e &agrave; reconduire le budget<br />
+n&eacute;cessaire &agrave; la r&eacute;alisation de ce projet durant les quatre ann&eacute;es &agrave; venir. En revanche, ce financement<br />
+ne sera plus assur&eacute; d&egrave;s la rentr&eacute;e scolaire 2022-2023.<br />
+Le bilan de ce projet est tr&egrave;s positif, tant de la part des &eacute;l&egrave;ves, des enseignants et des associations. Un<br />
+important travail a &eacute;t&eacute; fourni de la part de l&rsquo;OCAN (f&eacute;d&eacute;ration des diff&eacute;rents partenaires, d&eacute;finitions des<br />
+objectifs du projet, recherche de fonds), des associations (&eacute;laboration des contenus des animations<br />
+nature, des documents p&eacute;dagogiques mis &agrave; la disposition des enseignants en collaboration avec<br />
+le DIP, formation des animateurs, recherche de fonds), ainsi que du DIP (coordination du projet,<br />
+validation des contenus, enqu&ecirc;te de satisfaction, transports) qui est en charge de la commande de<br />
+ce programme et responsable de son int&eacute;gration ad&eacute;quate dans les activit&eacute;s scolaires.</p>',
+'indicator' => '• Nombre de sorties effectuées (automne et printemps)
+• Taux de satisfaction des enseignant-e-s (sondage en ligne)',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 05:49:27',
+'updated_at' => '2020-04-06 05:49:27',
+),
+78 => 
+array (
+'id' => 80,
+'code' => '10.2',
+'label' => 'Sorties nature 9e accompagnées de naturalistes',
+'image' => NULL,
+'description' => '<p>Objectifs :<br />
+&bull; Participer &agrave; l&rsquo;acquisition des objectifs d&rsquo;apprentissages en lien avec la d&eacute;marche d&rsquo;investigation et<br />
+d&rsquo;observation scientifique sur le terrain. MSN 35/38<br />
+&bull; Participer &agrave; l&rsquo;acquisition des objectifs d&rsquo;apprentissages en lien avec les attentes fondamentales du<br />
+PER MSN38 : 1/2/4 /A.<br />
+&bull; Participer &agrave; l&rsquo;acquisition des objectifs d&rsquo;apprentissage en lien avec la th&eacute;matique interd&eacute;pendances<br />
+FG36/37.<br />
+&bull; Offrir l&rsquo;opportunit&eacute; aux &eacute;l&egrave;ves de vivre l&rsquo;exp&eacute;rience d&rsquo;une nature de proximit&eacute; sur le terrain afin de<br />
+les sensibiliser &agrave; leur environnement naturel (Education &agrave; l&rsquo;environnement).<br />
+&bull; Former les enseignants aux sorties sur le terrain &ldquo;par la pratique&rdquo;, coupl&eacute;es au dispositif de formation<br />
+R&eacute;alisation :<br />
+Assurer au minimum 1 sortie nature accompagn&eacute;e par un naturaliste disposant d&rsquo;un titre de biologiste<br />
+dipl&ocirc;m&eacute; (Bachelor ou Master) pour l&rsquo;ensemble des classes de 9e du C.O pour la premi&egrave;re ann&eacute;e puis<br />
+g&eacute;n&eacute;raliser &agrave; 2 sorties pour toutes les classes de 9e.<br />
+Besoins :<br />
+Le financement permettant de couvrir les prestations des naturalistes-biologistes de La Libellule lors<br />
+des sorties d&egrave;s la prochaine rentr&eacute;e.<br />
+Contexte :<br />
+Depuis septembre 2017 des sorties encadr&eacute;es sont organis&eacute;es avec les naturalistes dans le cadre<br />
+d&rsquo;une formation continue qui permet &agrave; certaines classes de 9e de sortir sur le terrain. Afin de g&eacute;n&eacute;raliser<br />
+cette pratique et permettre ainsi &agrave; un l&rsquo;ensemble des classes de sortir sur le terrain, un projet avec<br />
+recherche de fond a &eacute;t&eacute; men&eacute; depuis plusieurs ann&eacute;es. Cependant malgr&eacute; un d&eacute;marchage important<br />
+aucune autre fondation n&rsquo;a &eacute;t&eacute; en mesure de r&eacute;pondre favorablement &agrave; notre demande de soutien.<br />
+Jusqu&rsquo;&agrave; ce jour, le bilan de ce projet est tr&egrave;s positif, tant de la part des &eacute;l&egrave;ves que des enseignant-<br />
+e-s, qui sans cette action, ne sont pas toujours en mesure de proposer ce type de sorties &agrave; leurs<br />
+classes de 9 e .</p>',
+'indicator' => '• Par le nombre de sorties effectuées.
+• Par le taux de satisfaction des enseignant-e-s( sondage en ligne)',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:14:23',
+'updated_at' => '2020-04-06 06:14:23',
+),
+79 => 
+array (
+'id' => 81,
+'code' => '10.3',
+'label' => 'Formations des enseignant-e-s sur la biodiversité et l’étude sur le terrain',
+'image' => NULL,
+'description' => '<p>Objectifs :<br />
+&bull; Actualiser les connaissances des enseignant-e-s sur la nouvelle classification du vivant, sur la<br />
+biodiversit&eacute;, les interd&eacute;pendances, notamment en lien avec les s&eacute;quences genevoises MSN 28.<br />
+&bull; Renforcer les comp&eacute;tences didactiques pour mener des activit&eacute;s sur la classification, la biodiversit&eacute;<br />
+et les interd&eacute;pendances.<br />
+R&eacute;alisations :<br />
+&bull; Dispenser des formations sur les plans scientifique et didactique concernant la biodiversit&eacute; des<br />
+milieux.<br />
+&bull; R&eacute;aliser des ressources vid&eacute;o relativement aux s&eacute;quences d&rsquo;enseignement genevoises pour &eacute;tayer<br />
+leur mise en &oelig;uvre et alimenter les formations en &eacute;tablissements.<br />
+&bull; Organiser une conf&eacute;rence film&eacute;e pour les enseignant-e-s et futurs enseignant-e-s EP hors temps<br />
+scolaire (HT), alliant une pr&eacute;sentation de la nouvelle classification animale et l&rsquo;&eacute;volution des esp&egrave;ces<br />
+en tenant compte des enjeux &eacute;cologiques actuels.<br />
+Besoins :<br />
+&bull; Renforcement de la collaboration entre l&rsquo;UniGE, le SEM, RTS D&eacute;couvertes, le Service de formation<br />
+et de d&eacute;veloppement (DGEO) et le SEE (Coordinateur-trice de Biologie du cycle d&rsquo;orientation et<br />
+Coordinateur-trice de Discipline en sciences de la nature de l&rsquo;&eacute;cole primaire)<br />
+&bull; Engagement de conf&eacute;renciers sur les th&eacute;matiques de la classification phylog&eacute;n&eacute;tique et de l&rsquo;&eacute;volution<br />
+des esp&egrave;ces<br />
+&bull; Augmentation de 50% du poste d&eacute;volu aux sciences de la nature et au d&eacute;veloppement durable au<br />
+sein des Coordinateurs de disciplines du SEE pour :<br />
+&bull; assurer le pilotage de cette action en lien avec les diff&eacute;rents acteurs (services de l&rsquo;&Eacute;tat, UniGe,<br />
+associations, enseignant-e-s r&eacute;f&eacute;rent-e-s,&hellip;);<br />
+&bull; intervenir dans le cadre de la formation continue ou du recyclage obligatoire des enseignant-e-s.<br />
+Contexte :<br />
+Le contenu du moyen d&rsquo;enseignement romand (MER) transitoire actuel pour le cycle 2 (collection<br />
+Odyss&eacute;o de l&rsquo;&eacute;diteur Magnard, 3e cycle fran&ccedil;ais, &eacute;dition 2010), ne r&eacute;pond pas enti&egrave;rement aux<br />
+progressions du Plan d&rsquo;&eacute;tudes romand (PER) de l&rsquo;axe math&eacute;matique et sciences de la nature (MSN<br />
+28) sur la diversit&eacute; du vivant. Afin de combler ces manques, trois s&eacute;quences genevoises produites<br />
+par le SEE ont &eacute;t&eacute; mise &agrave; disposition des enseignant-e-s pour compl&eacute;ter le MER existant :<br />
+&bull; D&eacute;couvrir la biodiversit&eacute; (5P-6P)<br />
+&bull; Classer le vivant (7P-8P)<br />
+&bull; Interd&eacute;pendances entre &ecirc;tres vivants (7P-8P).</p>
+
+<p>Les notions abord&eacute;es restent toutefois complexes pour un-e enseignant-e g&eacute;n&eacute;raliste et m&eacute;ritent des<br />
+formations ou informations compl&eacute;mentaires sous diverses formes et approches.<br />
+Pour les enseignant-e-s du cycle 1, il est &eacute;galement important de comprendre l&rsquo;&eacute;volution de la<br />
+classification du vivant, afin d&rsquo;&eacute;viter la construction de fausses repr&eacute;sentations des &eacute;l&egrave;ves. Les<br />
+premi&egrave;res progressions d&rsquo;apprentissage li&eacute;es au tri et &agrave; l&rsquo;observation des besoins du vivant<br />
+apparaissent d&egrave;s la 1P.</p>',
+'indicator' => '• Nombre de ressources numériques créées pour les élèves et les enseignant-e-s
+• Organisation de la conférence sur la nouvelle classification animale et l’évolution des espèces hors
+temps scolaire (ST)',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:16:06',
+'updated_at' => '2020-04-06 06:16:06',
+),
+80 => 
+array (
+'id' => 82,
+'code' => '10.4',
+'label' => 'Formation continue des enseignant-e-s sur la biodiversité et l’EDD',
+'image' => NULL,
+'description' => '<p>Objectifs :<br />
+&bull; Renforcer les connaissances et comp&eacute;tences en lien avec MSN 38. Etudier l&rsquo;opportunit&eacute; de l&rsquo;adapter<br />
+au secondaire II.<br />
+&bull; Encourager les enseignant-e-s &agrave; s&rsquo;informer et se former sur les th&eacute;matiques li&eacute;es &agrave; la biodiversit&eacute;<br />
+et suivre les changements li&eacute;s &agrave; la discipline.<br />
+&bull; Approfondir les connaissances naturalistes de terrain des enseignant-e-s par des apports th&eacute;oriques<br />
+scientifiques et techniques.<br />
+&bull; Permettre aux enseignant-e-s de mettre &agrave; jour leurs connaissances sur les outils mis en place pour<br />
+concilier les activit&eacute;s agricoles et biodiversit&eacute;.<br />
+R&eacute;alisation :<br />
+&bull; Organiser et planifier 1 &agrave; 2 formations par an en lien avec la biodiversit&eacute; genevoise, par le GT &laquo; FC<br />
+et mat&eacute;riel p&eacute;dagogique &raquo;. Etudier l&rsquo;opportunit&eacute; de rendre ces formations obligatoires (recyclage).<br />
+L&rsquo;adapter &eacute;ventuellement au secondaire II.<br />
+&bull; Organiser et planifier une formation continue permettant la mise en &oelig;uvre de la s&eacute;quence<br />
+interdisciplinaire EDD intitul&eacute;e : Biodiversit&eacute; et agriculture durable (2019-2020). Etudier l&rsquo;opportunit&eacute;<br />
+de rendre ces formations obligatoires (recyclage). Ouvrir les formations continues aux enseignant-<br />
+e-s du secondaire II.<br />
+&bull; R&eacute;aliser ou ajuster du mat&eacute;riel p&eacute;dagogique pour la formation, li&eacute; notamment au contexte de<br />
+l&rsquo;&eacute;tablissement et des actions envisag&eacute;es (voir action 10.12).<br />
+Besoins :<br />
+&bull; Financement du groupe de travail &laquo; FC et mat&eacute;riel p&eacute;dagogique &raquo; &agrave; hauteur de 3x 3h au poste.<br />
+&bull; Financement d&rsquo;intervenants externes sp&eacute;cialistes des questions biodiversit&eacute; et/ ou de diverses<br />
+associations naturalistes.<br />
+Contexte :<br />
+L&rsquo;&eacute;volution des connaissances scientifiques en biologie demandent une mise &agrave; jour permanente des<br />
+connaissances des enseignant-e-s, ce qui peut &ecirc;tre r&eacute;alis&eacute; lors des formations continues gr&acirc;ce &agrave;<br />
+l&rsquo;interventions de divers sp&eacute;cialistes.<br />
+Les formations continues en lien avec les th&eacute;matiques interd&eacute;pendances apportent un &eacute;clairage<br />
+inter- et trans- disciplinaire biologie / g&eacute;ographie int&eacute;grant la d&eacute;marche scientifique autour de sujets<br />
+d&rsquo;&eacute;tudes choisi dans une perspective EDD.</p>',
+'indicator' => '• Nombre de formations et de participants aux formations continues.
+• Taux de satisfaction des enseignant-e-s. (Sondage en ligne)',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 1,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:21:12',
+'updated_at' => '2020-04-06 06:21:12',
+),
+81 => 
+array (
+'id' => 83,
+'code' => '10.5',
+'label' => 'CO et EP – Formations continues en lien avec la biodiversité au catalogue DIP: ES II',
+'image' => NULL,
+'description' => '<p>Chaque ann&eacute;e, au moins 2 formations continues seront propos&eacute;es aux enseignant-e-s de l&rsquo;ES II<br />
+avec la participation possible des enseignant-e-s du CO et du primaire. Les th&egrave;mes seront choisis<br />
+en fonction des besoins des enseignant-e-s, de l&rsquo;actualit&eacute; et des priorit&eacute;s retenues pour la mise en<br />
+&oelig;uvre du plan d&rsquo;actions biodiversit&eacute; PB1.</p>',
+'indicator' => '• Par le nombre de participant.e.s.
+• Par le taux de satisfaction des enseignant-e-s.',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:23:50',
+'updated_at' => '2020-04-06 06:23:50',
+),
+82 => 
+array (
+'id' => 84,
+'code' => '10.6',
+'label' => 'Formation initiale des enseignant-e-s sur la biodiversité et l’étude sur le terrain',
+'image' => NULL,
+'description' => '<p>Objectifs :<br />
+&bull; Inscrire de mani&egrave;re obligatoire et p&eacute;renne le th&egrave;me de la biodiversit&eacute; et de ses principes-cl&eacute;s dans<br />
+la formation didactique de l&rsquo;ensemble des &eacute;tudiant-e-s se destinant &agrave; enseigner aux degr&eacute;s primaire<br />
+(g&eacute;n&eacute;ralistes), secondaire I et II (en biologie, g&eacute;ographie et &eacute;conomie) ;<br />
+&bull; Int&eacute;grer les principes d&rsquo;une &Eacute;ducation en vue d&rsquo;un d&eacute;veloppement durable (EDD) dans les enseignements<br />
+des didactiques mentionn&eacute;es, dans les activit&eacute;s d&rsquo;enseignement-apprentissage &eacute;tudi&eacute;es/men&eacute;es.<br />
+&bull; R&eacute;aliser par les &eacute;tudiant-e-s des actions &laquo; sur le terrain &raquo; qui ont trait &agrave; la biodiversit&eacute; : &eacute;tude/enqu&ecirc;te,<br />
+r&eacute;alisation d&rsquo;am&eacute;nagement favorisant la biodiversit&eacute; dans l&rsquo;environnement proche/dans un &eacute;tablissement<br />
+scolaire, etc.<br />
+R&eacute;alisations :<br />
+&bull; Dans le cadre du cours et de l&rsquo;atelier de didactique de la G&eacute;ographie (primaire et sec. I et II) :<br />
+r&eacute;flexion sur la d&eacute;finition de la biodiversit&eacute;, sur les enjeux de biodiversit&eacute; &agrave; diff&eacute;rentes &eacute;chelles<br />
+d&rsquo;analyse (locale et globale notamment) et sur leur int&eacute;gration dans une d&eacute;marche syst&eacute;mique<br />
+visant au d&eacute;veloppement durable de nos soci&eacute;t&eacute;s; l&rsquo;analyse et/ou la mise en &oelig;uvre d&rsquo;activit&eacute;s<br />
+d&rsquo;enseignement-apprentissage qui int&egrave;grent l&rsquo;&eacute;tude des relations syst&eacute;miques et d&rsquo;interd&eacute;pendances<br />
+entre la biodiversit&eacute; et les usages et am&eacute;nagements d&rsquo;un espace par les &ecirc;tres humains, qui explorent<br />
+la prise en compte de la biodiversit&eacute; dans les pratiques et dans les politiques locales.<br />
+&bull; Dans le cadre des cours et ateliers de didactique des Sciences de la nature (primaire) et de Biologie<br />
+(sec. I et II): l&rsquo;analyse et/ou la mise en &oelig;uvre d&rsquo;activit&eacute;s d&rsquo;enseignement-apprentissage int&eacute;grant<br />
+les notions essentielles &agrave; la compr&eacute;hension de la biodiversit&eacute; (notions de r&eacute;seau alimentaire, des<br />
+besoins de la faune et de la flore, d&rsquo;&eacute;cosyst&egrave;me, d&rsquo;esp&egrave;ce, de classification des esp&egrave;ces, de variation<br />
+g&eacute;n&eacute;tique, &hellip;) et des principes-cl&eacute;s de la biodiversit&eacute; : diversit&eacute; au niveau des g&egrave;nes (sec. I et II),<br />
+des esp&egrave;ces et des &eacute;cosyst&egrave;mes, interd&eacute;pendances, services &eacute;cosyst&eacute;miques.<br />
+&bull; Dans le cadre du cours de didactique de l&rsquo;&Eacute;conomie (sec. II) : l&rsquo;analyse et/ou la mise en &oelig;uvre<br />
+d&rsquo;activit&eacute;s d&rsquo;enseignement-apprentissage qui &eacute;tudient les relations syst&eacute;miques entre la biodiversit&eacute;<br />
+et les ressources, leurs usages et exploitations par les soci&eacute;t&eacute;s humaines, les services &eacute;conomiques<br />
+des syst&egrave;mes &eacute;cologiques, les cons&eacute;quences &eacute;conomiques qu&rsquo;elles repr&eacute;sentent pour les &ecirc;tres<br />
+humains, les co&ucirc;ts/b&eacute;n&eacute;fices d&rsquo;actions qui visent &agrave; favoriser la biodiversit&eacute;<br />
+&bull; Dans le cadre de l&rsquo;atelier de didactique de Biologie (sec. I et II): sortie didactique sur le terrain pour<br />
+d&eacute;velopper les comp&eacute;tences de mise en &oelig;uvre d&rsquo;&eacute;tudes/actions sur le terrain avec les &eacute;l&egrave;ves.<br />
+&bull; Mise en &oelig;uvre d&rsquo;&eacute;tudes ou d&rsquo;am&eacute;nagements sur le terrain visant &agrave; comprendre et favoriser la<br />
+biodiversit&eacute;, selon une d&eacute;marche interdisciplinaire dans la mesure du possible.<br />
+&bull; Clarification des principes d&rsquo;une EDD aupr&egrave;s des formateurs-trices et int&eacute;gration dans les<br />
+enseignements didactiques des disciplines prioritairement en charge du th&egrave;me de la biodiversit&eacute;.</p>
+
+<p>&nbsp;</p>
+
+<p>&bull; Si la Formation en enseignement primaire (FEP) n&rsquo;est pas amput&eacute;e d&rsquo;une ann&eacute;e : mise en place<br />
+d&rsquo;un dispositif d&rsquo;approfondissement interdisciplinaire au niveau du CCEP (destin&eacute;s aux &eacute;tudiant-e-s<br />
+en derni&egrave;re ann&eacute;e de formation) permettant &agrave; l&rsquo;EDD et aux contenus relatifs &agrave; la biodiversit&eacute; d&rsquo;&ecirc;tre<br />
+abord&eacute;s en surmontant l&rsquo;obstacle du cloisonnement disciplinaire<br />
+&bull; Promotion des r&eacute;alisations &agrave; l&rsquo;interne de l&rsquo;IUFE (enseignements, journ&eacute;e &eacute;v&eacute;nement, formation<br />
+continue,&hellip;) et &agrave; l&rsquo;externe (formation continue du DIP, &hellip;).<br />
+&bull; Cr&eacute;ation d&rsquo;une commission EDD-Biodiversit&eacute; au sein de l&rsquo;IUFE, charg&eacute;e d&rsquo;&eacute;valuer la coh&eacute;rence et<br />
+le suivi des r&eacute;alisations.<br />
+Besoins :<br />
+&bull; Financement d&rsquo;un poste de Coordinateur-trice p&eacute;dagogique Biodiversit&eacute; et EDD &agrave; hauteur de 20<br />
+% pour organiser et suivre les r&eacute;alisations mentionn&eacute;es.<br />
+&bull; Financement des actions sur le terrain : frais de mat&eacute;riels, de r&eacute;alisation, de d&eacute;fraiement<br />
+d&rsquo;intervenants externes sp&eacute;cialistes, etc.<br />
+Contexte :<br />
+Les cours, ateliers et s&eacute;minaires de didactique mentionn&eacute;s int&egrave;grent d&eacute;j&agrave; partiellement ces diff&eacute;rents<br />
+objectifs.<br />
+Le but premier serait de les renforcer en les institutionnalisant, au-del&agrave; des engagements personnels et<br />
+volontaires des formateurs-trices, et en s&rsquo;assurant qu&rsquo;ils soient travaill&eacute;s par l&rsquo;ensemble des &eacute;tudiant-<br />
+e-s.<br />
+Le but secondaire serait de stimuler des d&eacute;marches interdisciplinaires et des actions sur le terrain.<br />
+Les dispositifs didactiques li&eacute;s au th&egrave;me de la biodiversit&eacute; permettent d&rsquo;illustrer des s&eacute;quences qui<br />
+int&egrave;grent plus largement les principes et notions d&rsquo;Education en vue d&rsquo;un d&eacute;veloppement durable.</p>',
+'indicator' => '• Liste des sujets et notions abordés en cours par les didactiques mentionnées
+• Nombre et types d’actions réalisées sur le terrain',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:25:34',
+'updated_at' => '2020-04-06 06:25:34',
+),
+83 => 
+array (
+'id' => 85,
+'code' => '10.7',
+'label' => 'EP – Ressources et site internet de La Salamandre',
+'image' => NULL,
+'description' => '<p>Objectif :<br />
+- Mettre &agrave; disposition des enseignant-e-s et des &eacute;l&egrave;ves des ressources naturalistes de qualit&eacute; sur la<br />
+faune et la flore locales utiles &agrave; l&rsquo;enseignement de l&rsquo;axe Diversit&eacute; du vivant (MSN18-28) en participant<br />
+&agrave; leur &eacute;laboration.<br />
+R&eacute;alisations :<br />
+- Distribuer les revues de la Salamandre dans toutes les classes du Cycle 1, Cycle 2 et classes<br />
+sp&eacute;cialis&eacute;es.<br />
+- Permettre l&rsquo;acc&egrave;s au site p&eacute;dagogique de la Salamandre.<br />
+- Etablir un contrat de collaboration entre la Salamandre et le DIP pour assurer une meilleure<br />
+transposition didactique des ressources propos&eacute;es aux enseignant-e-s.<br />
+Besoins:<br />
+- Participation au financement de la maintenance du site http://&eacute;cole.lasalamandre.net/ fix&eacute;e &agrave; CHF<br />
+12&rsquo;168, calcul&eacute;e sur la base de la r&eacute;partition inter-cantonale de la Conf&eacute;rence intercantonale de<br />
+l&rsquo;instruction publique de suisse romande et du tessin (CIIP)<br />
+- Financement de l&rsquo;abonnement de toutes les classes du canton aux revues de la Salamandre dans<br />
+le cas o&ugrave; la fondation Montagu ne devait pas poursuivre son financement<br />
+- Augmentation de 5% du poste d&eacute;volu &agrave; MSN au sein des Coordinateurs de disciplines du SEE pour<br />
+assurer une collaboration entre la Salamandre et le D&eacute;partement de l&rsquo;instruction publique (DIP).<br />
+Contexte:<br />
+En 2016, Julien Perrot, directeur des &eacute;ditions la Salamandre, a sollicit&eacute; une fondation, afin de financer<br />
+1700 abonnements &agrave; destination de toutes les classes genevoises, regroupements sp&eacute;cialis&eacute;s inclus,<br />
+des revues La petite Salamandre et La Salamandre junior pour un montant de CHF 90&rsquo;000 durant<br />
+l&rsquo;ann&eacute;e scolaire 2017-2018.<br />
+En compl&eacute;ment &agrave; cette revue, La Salamandre a d&eacute;velopp&eacute; un site internet &agrave; destination des<br />
+enseignants et des &eacute;l&egrave;ves. La construction du site a &eacute;t&eacute; financ&eacute;e par la DGEO Vaud (CHF 121&rsquo;000),<br />
+une fondation (CHF 66&rsquo;000) et l&rsquo;Office f&eacute;d&eacute;ral de l&rsquo;environnement (CHF 55&rsquo;000). M. Perrot propose<br />
+un libre acc&egrave;s aux ressources du site en &eacute;change d&rsquo;une participation financi&egrave;re pour sa maintenance<br />
+fix&eacute;e &agrave; CHF 12&rsquo;168, calcul&eacute;e sur la base de la r&eacute;partition intercantonale de la CIIP. Les contenus<br />
+du site, en constante &eacute;volution, permettent de r&eacute;pondre &agrave; certains objectifs du PER, ainsi que de<br />
+servir aux actions men&eacute;es au sein de la commission Commission d&rsquo;Enseignement Math&eacute;matiques<br />
+et Sciences de la Nature et du Num&eacute;rique (CEMSN2) en lien avec la biodiversit&eacute; (cf. s&eacute;quences<br />
+genevoises produites par le Service enseignement et &eacute;valuation). Actuellement, les classes genevoises<br />
+peuvent acc&eacute;der gratuitement au site jusqu&rsquo;au 31 d&eacute;cembre 2020. Un sondage en ligne aupr&egrave;s des<br />
+enseignant-e-s a d&eacute;montr&eacute; leur satisfaction.</p>
+
+<p>&nbsp;</p>
+
+<p>Une fondation a assur&eacute; son soutien pour financer la distribution des revues de La Salamandre dans<br />
+les 1700 classes du canton de Gen&egrave;ve pour l&rsquo;ann&eacute;e scolaire 2020-2021. Ce soutien ne sera pas<br />
+poursuivi d&egrave;s la rentr&eacute;e 2021.<br />
+L&rsquo;utilisation de ces ressources pourrait &ecirc;tre encore davantage exploit&eacute;e en assurant une meilleure<br />
+promotion des contenus propos&eacute;s aupr&egrave;s des enseignant-e-s et en participant, comme d&rsquo;autres<br />
+cantons, &agrave; la r&eacute;flexion sur leur &eacute;laboration. Pour ce faire, un contrat de collaboration entre la<br />
+Salamandre et le DIP pourrait &ecirc;tre envisag&eacute;.</p>',
+'indicator' => '- dénombrement des enseignant-e-s se connectant au site http://école.lasalamandre.net/
+- participation à un groupe de travail produisant les contenus de site pédagogique de la Salamandre',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:27:39',
+'updated_at' => '2020-04-06 06:27:39',
+),
+84 => 
+array (
+'id' => 86,
+'code' => '10.8',
+'label' => 'CO - ES II – Elaboration de matériel pédagogique transdisciplinaire biodiversité / EDD',
+'image' => NULL,
+'description' => '<p>Objectifs :<br />
+&bull; Cr&eacute;er une s&eacute;quence d&rsquo;enseignement interdisciplinaire (biologie /g&eacute;ographie) sur la th&eacute;matique de la<br />
+biodiversit&eacute; et de l&rsquo;agriculture durable en lien avec la FG 36/37 (2018-2019). L&rsquo;adapter &eacute;ventuellement<br />
+pour le secondaire II.<br />
+&bull; Cr&eacute;er 2 autres s&eacute;quences transdisciplinaires (biologie, g&eacute;ographie et physique) en lien avec l&rsquo;EDD<br />
+et la biodiversit&eacute;. (D&egrave;s 2019 &ndash; 2020). L&rsquo;adapter &eacute;ventuellement pour le secondaire II.<br />
+&bull; Valoriser la transdisciplinarit&eacute; entre la biologie, la g&eacute;ographie et la physique.<br />
+&bull; Valoriser la th&eacute;matique interd&eacute;pendance (FG 36/37) au CO.<br />
+R&eacute;alisation :<br />
+Proposer des s&eacute;quences d&rsquo;enseignement interdisciplinaires biologie/g&eacute;ographie/physique utilisables<br />
+par les enseignants des trois disciplines.<br />
+A ce jour une premi&egrave;re s&eacute;quence &laquo; Biodiversit&eacute; et agriculture durable &raquo; est en cours d&rsquo;&eacute;laboration.<br />
+Besoins :<br />
+R&eacute;mun&eacute;ration des enseignants du groupe de travail constitu&eacute; d&rsquo;un-e enseignant-e de biologie, d&rsquo;un-e<br />
+enseignant-e de g&eacute;ographie et d&rsquo;un-e enseignant-e de physique.<br />
+Contexte :<br />
+Depuis 2018, un GT constitu&eacute; d&rsquo;un enseignant de biologie et de g&eacute;ographie sont charg&eacute;s de<br />
+la production d&rsquo;une premi&egrave;re s&eacute;quence EDD/ biodiversit&eacute;. Ce travail s&rsquo;inscrit dans un projet de<br />
+collaboration interdisciplinaire biologie /g&eacute;ographie du CO dans le cadre de la mise en &oelig;uvre de la<br />
+th&eacute;matique interd&eacute;pendances au cycle 3.</p>',
+'indicator' => 'Par l’existence du support.',
+'R' => 0,
+'A' => 0,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:30:48',
+'updated_at' => '2020-04-06 06:30:48',
+),
+85 => 
+array (
+'id' => 87,
+'code' => '10.9',
+'label' => 'EP-CO (ESII) – Ressources sur la faune et la flore locales à visée pédagogique',
+'image' => NULL,
+'description' => '<p>Objectif :<br />
+&bull; Cr&eacute;ation de ressources p&eacute;dagogiques sur la biodiversit&eacute; genevoise sur diff&eacute;rents supports (papier<br />
+et/ou num&eacute;rique) par le biais d&rsquo;une collaboration entre enseignants et sp&eacute;cialistes de la biodiversit&eacute;.<br />
+&bull; Mettre &agrave; disposition de l&rsquo;ensemble des &eacute;l&egrave;ves de la 7P &agrave; la 11e CO un m&ecirc;me document de r&eacute;f&eacute;rence<br />
+pour sortir sur le terrain et pour le travail en classe.<br />
+&bull; Evaluer l&rsquo;opportunit&eacute; d&rsquo;adapter ce mat&eacute;riel aux enseignant-e-s du secondaire II.<br />
+R&eacute;alisation :<br />
+Cr&eacute;ation d&rsquo;une ressource adapt&eacute;e aux &eacute;l&egrave;ves de la 7P &agrave; la 11e CO qui r&eacute;pertorie la biodiversit&eacute; (faune<br />
+et flore locales) dans un p&eacute;rim&egrave;tre proche de l&rsquo;&eacute;cole. R&eacute;flexion &eacute;galement &agrave; mener au secondaire II.<br />
+Besoins :<br />
+Financement d&rsquo;un groupe de travail compos&eacute; de sp&eacute;cialistes du domaine de l&rsquo;Etat (DT), du Museum,<br />
+du Jardin botanique, de naturalistes et d&rsquo;enseignant-e-s sp&eacute;cialistes.<br />
+Contexte :<br />
+Actuellement aucune ressource ne regroupe les diverses esp&egrave;ces de la faune et la flore locales<br />
+proche des &eacute;tablissements scolaires. De m&ecirc;me afin de s&rsquo;informer il faut tr&egrave;s souvent avoir recours &agrave;<br />
+de nombreux ouvrages ou documents pas toujours actualis&eacute;s, difficilement transportables en sorties<br />
+ou qui ne sont pas disponibles dans l&rsquo;ensemble des classes. Une ressource papier ou num&eacute;rique<br />
+qui puisse servir de r&eacute;f&eacute;rence tant en classe que lors de sorties en ext&eacute;rieur, utilisable tant par les<br />
+&eacute;l&egrave;ves de 7-8P que de ceux du CO permettrait de pallier ce manque. R&eacute;flexion &eacute;galement &agrave; mener<br />
+au secondaire II</p>',
+'indicator' => 'Par l’existence du support.',
+'R' => 0,
+'A' => 0,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:32:13',
+'updated_at' => '2020-04-06 06:32:13',
+),
+86 => 
+array (
+'id' => 88,
+'code' => '10.10',
+'label' => 'EP (ES II) – Valorisation et renforcement des actions proposées par le Groupe sensibilisation nature piloté par le Département du territoire (DT)',
+'image' => NULL,
+'description' => '<p>Objectifs :<br />
+&bull; Valoriser et ajuster des actions et ressources &eacute;labor&eacute;es entre les services de l&rsquo;Etat.<br />
+&bull; Assurer l&rsquo;observation de divers milieux naturels par les &eacute;l&egrave;ves avec des accompagnants form&eacute;s.<br />
+&bull; Participer &agrave; l&rsquo;acquisition des objectifs d&rsquo;apprentissages du Plan d&rsquo;&eacute;tudes romand vis&eacute;s en<br />
+Sciences de la nature (MSN 18 et 28), en G&eacute;ographie (SHS 11 et 21), pour la Formation g&eacute;n&eacute;rale<br />
+(Interd&eacute;pendances sociales, &eacute;conomiques et environnementales FG 16-17 et 26-27), l&rsquo;&Eacute;ducation<br />
+&agrave; la citoyennet&eacute; et l&rsquo;&Eacute;ducation en vue d&rsquo;un d&eacute;veloppement durable.<br />
+&bull; Mettre en valeur le patrimoine naturel du canton de Gen&egrave;ve pour les &eacute;l&egrave;ves et les enseignant-e-s.<br />
+&bull; Etudier les projets propos&eacute;s par le groupe de travail pour les promouvoir au secondaire II en fonction<br />
+des besoins des enseignant-e-s de biologie ou autres disciplines int&eacute;ress&eacute;es.<br />
+R&eacute;alisations :<br />
+&bull; &Eacute;valuer les actions men&eacute;es ces derni&egrave;res ann&eacute;es &eacute;manant de la collaboration du DT et du DIP en<br />
+mati&egrave;re de sensibilisation &agrave; la nature et les reconduire en cas de bilan positif.<br />
+&bull; Promouvoir des actions &eacute;manant de collaborations entre le DIP et les acteurs de terrain en mati&egrave;re<br />
+de biodiversit&eacute; y compris au secondaire II.<br />
+&bull; Mettre &agrave; disposition des &eacute;l&egrave;ves et des enseignants des sp&eacute;cialistes pour aller sur le terrain<br />
+(naturalistes, urbanistes, forestiers, etc&hellip;).<br />
+&bull; Valoriser aupr&egrave;s des enseignant-e-s les ressources p&eacute;dagogiques existantes en apportant les<br />
+compl&eacute;ments n&eacute;cessaires pour assurer leur mise en &oelig;uvre.<br />
+&bull; Cr&eacute;er et diffuser un catalogue annuel de sorties Nature pour les &eacute;tablissements scolaires, extrait<br />
+de l&rsquo;Agenda nature nouvellement cr&eacute;&eacute;, afin d&rsquo;harmoniser, communiquer et mettre en &eacute;vidence les<br />
+synergies de l&rsquo;offre cantonale et de faciliter leur acc&egrave;s aux enseignant-e-s.<br />
+Besoins :<br />
+&bull; Augmentation de 50% du poste d&eacute;volu aux sciences de la nature et du d&eacute;veloppement durable au<br />
+sein des Coordinateurs de disciplines du SEE pour assurer le pilotage de ces actions en lien avec<br />
+les diff&eacute;rents acteurs (services de l&rsquo;Etat, communes, associations,&hellip;).<br />
+&bull; Financement d&rsquo;intervenants externes sp&eacute;cialistes pour accompagner les enseignants et &eacute;l&egrave;ves sur<br />
+le terrain si les personnes en charge des dossiers sensibilisation nature au sein des services de<br />
+l&rsquo;&eacute;tat ne sont pas disponibles.</p>
+
+<p>Contexte :<br />
+Le groupe de travail sensibilisation nature r&eacute;unit les principaux acteurs genevois engag&eacute;s dans la<br />
+protection de la nature, ainsi que deux repr&eacute;sentants du DIP (&eacute;cole primaire et cycle d&rsquo;orientation).<br />
+Ce groupe est coordonn&eacute; par Alexandra Maraia rattach&eacute;e actuellement au DT. Il s&rsquo;agira de l&rsquo;ouvrir<br />
+au secondaire II. Les repr&eacute;sentant-e-s du DIP au sein du groupe de travail ont pour mission de<br />
+recueillir les id&eacute;es de projets, les &eacute;valuer et les promouvoir au sein du DIP en fonction des besoins<br />
+des enseignant-e-s concern&eacute;-e-s.<br />
+Ces derni&egrave;res ann&eacute;es, diverses actions ont &eacute;t&eacute; propos&eacute;es aux enseignant-e-s et/ou aux &eacute;l&egrave;ves par<br />
+le DT en collaboration avec le groupe sensibilisation nature :<br />
+&bull; Ramsar (ateliers propos&eacute;s aux &eacute;l&egrave;ves au bord du lac en lien avec l&rsquo;observation des oiseaux d&rsquo;eau<br />
+et la protection des zones humides)<br />
+&bull; Corridors biologiques (document p&eacute;dagogique, exposition, &hellip;)<br />
+&bull; Contrats rivi&egrave;res<br />
+&bull; Rallyes des for&ecirc;ts<br />
+&bull; &hellip;<br />
+Certaines actions n&rsquo;ont pas &eacute;t&eacute; reconduites pour des questions budg&eacute;taires notamment. Elles<br />
+m&eacute;riteraient d&rsquo;&ecirc;tre r&eacute;&eacute;valu&eacute;es, puis en cas d&rsquo;un bilan positif des acteurs-trices concern&eacute;-e-s, renforc&eacute;es<br />
+et remises en valeur. Des dossiers p&eacute;dagogiques ont &eacute;t&eacute; r&eacute;dig&eacute;s par le DT en partenariat avec la<br />
+DIP (par ex. Corridors biologiques). Ces ressources sont peu exploit&eacute;es par les enseignant-e-s et<br />
+m&eacute;riteraient une r&eacute;flexion puis des actions pour renforcer leur mise en &oelig;uvre.<br />
+Par ailleurs, de nouvelles actions sont en cours de d&eacute;veloppement en collaboration avec le DT<br />
+(sorties lac).<br />
+Un agenda nature a &eacute;t&eacute; cr&eacute;&eacute; dans le cadre du groupe sensibilisation nature qu&rsquo;il s&rsquo;agirait de valoriser<br />
+et diffuser dans les &eacute;coles.</p>',
+'indicator' => '- Nombre d’animations réalisées pour les élèves et les enseignants.
+- Taux de satisfaction des différents acteurs en lien avec les actions mises en œuvre (sondage en ligne
+auprès d’enseignants, formateurs, personnels de l’État, des communes et partenaires associatifs
+concernés, etc.)',
+'R' => 0,
+'A' => 0,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:39:48',
+'updated_at' => '2020-04-06 06:39:48',
+),
+87 => 
+array (
+'id' => 89,
+'code' => '10.11',
+'label' => 'CO - ES II – Renforcement des actions proposées par le Groupe sensibilisation nature',
+'image' => NULL,
+'description' => '<p>Objectif :<br />
+&bull; Promouvoir les actions en lien avec la biodiversit&eacute; au niveau cantonal.<br />
+&bull; Diffuser et communiquer les informations aupr&egrave;s des &eacute;tablissements par le biais des RDs et des<br />
+r&eacute;f&eacute;rent-e-s EDD (&eacute;ducation en vue d&rsquo;un d&eacute;veloppement durable) du secondaire I et II afin de<br />
+faciliter l&rsquo;acc&egrave;s des enseignant-e-s aux offres.<br />
+&bull; Valoriser aupr&egrave;s des enseignant-e-s les ressources p&eacute;dagogiques existantes en lien avec leur<br />
+enseignement.<br />
+&bull; Cr&eacute;er de nouvelles ressources p&eacute;dagogiques pour l&rsquo;ensemble des enseignant-e-s de biologie du CO<br />
+en lien avec les formations continues annuelles biodiversit&eacute;. &Eacute;valuer l&rsquo;offre pour les enseignant-e-s<br />
+du secondaire II.<br />
+R&eacute;alisation :<br />
+&bull; Participer au groupe sensibilisation nature par le biais du PG/ coordinateur de biologie du CO et<br />
+responsable du DD du DIP.<br />
+&bull; Informer les enseignant-e-s:<br />
+&bull; Espace enseignant-e-s sur DisciplineCO : Sorties p&eacute;dagogiques (existant)<br />
+&bull; Pr&eacute;senter des associations naturalistes lors des s&eacute;ances de RDs de biologie.<br />
+&bull; Site DIP21.<br />
+&bull; Etablir des contacts avec les acteurs li&eacute;s &agrave; la biodiversit&eacute;.<br />
+&bull; Elaborer du mat&eacute;riel p&eacute;dagogique en lien avec les formations continues annuelles biodiversit&eacute; et<br />
+le mettre &agrave; disposition sur discipline CO. Le cas &eacute;ch&eacute;ant, les adapter au secondaire II.<br />
+&bull; Cr&eacute;er un onglet biodiversit&eacute; sur le site Discipline CO et sur le site DIP21 et l&rsquo;alimenter avec les<br />
+actions et le mat&eacute;riel p&eacute;dagogique biodiversit&eacute;.<br />
+Besoins :<br />
+&bull; R&eacute;mun&eacute;ration des intervenants externes sp&eacute;cialistes.<br />
+&bull; Augmentation du d&eacute;gr&egrave;vement du PG/coordinateur du SEE afin d&rsquo;assurer le pilotage des actions<br />
+biodiversit&eacute; en lien avec les diff&eacute;rents acteurs.<br />
+&bull; Financement du groupe de travail &laquo; FC et mat&eacute;riel p&eacute;dagogique &raquo; afin de maintenir la production<br />
+de mat&eacute;riel en lien avec les FC touchant &agrave; la biodiversit&eacute;.</p>
+
+<p>Contexte :<br />
+Le groupe de travail sensibilisation nature r&eacute;unit les principaux acteurs genevois engag&eacute;s dans<br />
+la protection de la nature, ainsi que deux repr&eacute;sentants du DIP (EP + CO). Il s&rsquo;agira de l&rsquo;ouvrir au<br />
+secondaire II. Ce groupe de travail est pilot&eacute; par le DT. Les repr&eacute;sentant-e-s du DIP au sein du groupe<br />
+de travail ont pour mission de recueillir les id&eacute;es de projets, les &eacute;valuer et les promouvoir au sein du<br />
+DIP en fonction des besoins des enseignant-e-s</p>',
+'indicator' => 'Par l’existence du support.',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:42:15',
+'updated_at' => '2020-04-06 06:42:15',
+),
+88 => 
+array (
+'id' => 90,
+'code' => '10.12',
+'label' => 'EP + CO + ES II – Actions autour de son bâtiment scolaire en lien avec la biodiversité',
+'image' => NULL,
+'description' => '<p>Objectifs:<br />
+&bull; Promouvoir la biodiversit&eacute; dans l&rsquo;environnement proche de chaque &eacute;cole primaire, et &eacute;tablissement<br />
+du secondaire I et II, si possible en coh&eacute;rence avec les priorit&eacute;s du DT en la mati&egrave;re.<br />
+&bull; D&eacute;velopper, gr&acirc;ce &agrave; ces actions, les connaissances et comp&eacute;tences des enseignant-e-s et des<br />
+&eacute;l&egrave;ves en mati&egrave;re de biodiversit&eacute; (notamment en lien avec les sciences de la nature, la g&eacute;ographie,<br />
+l&rsquo;&eacute;ducation citoyenne, les interd&eacute;pendances et l&rsquo;&eacute;ducation en vue d&rsquo;un d&eacute;veloppement durable).<br />
+&bull; Valoriser les actions r&eacute;alis&eacute;es par les &eacute;tablissements scolaires des 3 degr&eacute;s d&rsquo;enseignement aupr&egrave;s<br />
+de diff&eacute;rents publics cibles (internes et externes au DIP, grand public).<br />
+R&eacute;alisations :<br />
+&bull; Dresser l&rsquo;inventaire des &ldquo;actions&rdquo; existantes en lien avec la biodiversit&eacute; dans l&rsquo;environnement proche<br />
+des &eacute;tablissements scolaires. Par &ldquo;action&rdquo;, on entend une &eacute;tude (recensement de la faune et de la<br />
+flore, interview de sp&eacute;cialistes,&hellip;), la r&eacute;alisation d&rsquo;un am&eacute;nagement (h&ocirc;tels &agrave; insectes, &eacute;tang, prairie<br />
+fleurie au lieu d&rsquo;un gazon, plantation de haie, potagers en permaculture, toiture v&eacute;g&eacute;talis&eacute;e,&hellip;), une<br />
+d&eacute;marche de communication (exposition, film, blog, &hellip;), etc..<br />
+&bull; Proposer des am&eacute;nagements favorisant la biodiversit&eacute; aux alentours des &eacute;tablissements scolaires,<br />
+en concertation avec des sp&eacute;cialistes (collaborateurs/trices du DT, du MHN, des CJB, &hellip;) - si possible<br />
+en ad&eacute;quation avec le programme &ldquo;Nature en ville&rdquo; et les priorit&eacute;s du DT en la mati&egrave;re.<br />
+&bull; Mettre en &oelig;uvre, d&rsquo;ici 2030, avec les &eacute;l&egrave;ves, au moins une action en lien avec la biodiversit&eacute; aux<br />
+abords des &eacute;tablissements scolaires.<br />
+&bull; En fonction de la nature des projets, engager des sp&eacute;cialistes pour accompagner les enseignant.e.s<br />
+dans la phase de r&eacute;alisation (naturalistes, urbanistes, etc&hellip;).<br />
+&bull; &Eacute;laborer un concept de formation (contenus et ressources didactiques) ajust&eacute; aux actions et au<br />
+contexte de l&rsquo;&eacute;tablissement ; dispenser une formation continue en &eacute;tablissement pour les enseignant-<br />
+e-s concern&eacute;-e-s (ex au secondaire I: biologie, g&eacute;ographie..) d&rsquo;une dur&eacute;e maximale de deux journ&eacute;es<br />
+par ann&eacute;e scolaire (sur une ann&eacute;e scolaire &agrave; l&rsquo;EP, sur deux ann&eacute;es scolaires cons&eacute;cutives au CO,<br />
+&agrave; d&eacute;finir pour l&rsquo;ES II en fonction des besoins des enseignant-e-s) &ndash; cf. actions &laquo; formation continue<br />
+DIP &raquo;, &laquo; ressources p&eacute;dagogiques &raquo; et &laquo; actions en lien avec le groupe Sensibilisation Nature &raquo;.</p>
+
+<p>&bull; Diffuser les actions et ressources didactiques &eacute;labor&eacute;es dans le cadre des &eacute;tablissements aupr&egrave;s<br />
+de l&rsquo;ensemble des directions et enseignant-e-s du canton, valoriser les r&eacute;alisations aupr&egrave;s de tout<br />
+public, notamment par leur publication sur internet (ex. DIP21 / intranet DIP).<br />
+Besoins:<br />
+&bull; Budget pour r&eacute;aliser les projets au sein des &eacute;tablissements scolaires, pour les coordonner et<br />
+remplacer les enseignant-e-s lors des formations continues (cf. actions 10.3 &agrave; 10.6), pour engager<br />
+des sp&eacute;cialistes (pour accompagner la mise en &oelig;uvre des projets ou pour &eacute;laborer des ressources<br />
+didactiques &ndash; cf. actions 10.7 &agrave; 10.11)<br />
+&bull; Augmentation des ressources pour le pilotage des projets au sein de la DGEO (Service enseignement<br />
+et &eacute;valuation - SEE) et Service de la formation continue - SEFOD).</p>',
+'indicator' => '• Nombre d’études et/ou d’actions réalisées dans les établissements scolaires
+• Nombre de formations organisées par établissement
+• Taux de satisfaction des différents acteurs en lien avec les actions mises en œuvre (sondage en
+ligne auprès des publics cibles : enseignant-e-s, formateurs-trices, directions d’établissement, PAT,
+représentant-e-s des communes et associations,…)
+• Répartition des actions relativement aux différentes priorités et milieux définis par le Plan biodiversité
+2020-2023.',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:48:52',
+'updated_at' => '2020-04-06 06:48:52',
+),
+89 => 
+array (
+'id' => 91,
+'code' => '10.13',
+'label' => 'Promouvoir la biodiversité à l’Université',
+'image' => NULL,
+'description' => '<p>En 2017, des potagers ont &eacute;t&eacute; install&eacute;s sur deux sites universitaires: le terrain du b&acirc;timent du GAP<br />
+(Group of Applied Physics) au Chemin de Pinchat, d&rsquo;une part et le toit d&rsquo;Uni Dufour, d&rsquo;autre part.<br />
+Parall&egrave;lement, des ruchers ont pris place sur ces deux sites. Le Rectorat de l&rsquo;UNIGE a soutenu ce<br />
+projet, pour sa contribution &agrave; la sauvegarde de la biodiversit&eacute; et &agrave; sa sensibilisation. De plus, son<br />
+potentiel de mobilisation de la communaut&eacute; universitaire, collaborateur-trices et &eacute;tudiant-es, a &eacute;t&eacute;<br />
+jug&eacute; int&eacute;ressant.<br />
+D&egrave;s 2020, le Bioscope et le Rectorat se donnent pour mission de d&eacute;ployer cette initiative, en l&rsquo;orientant<br />
+davantage sur la conservation des esp&egrave;ces sauvages indig&egrave;nes et en renfor&ccedil;ant son potentiel de<br />
+sensibilisation des publics &agrave; la biodiversit&eacute; r&eacute;gionale.<br />
+Pour favoriser la biodiversit&eacute;, ils proposent:<br />
+1) de diversifier les am&eacute;nagements am&eacute;liorant la biodiversit&eacute;: nichoirs &agrave; insectes, nichoirs &agrave; oiseaux<br />
+et &agrave; chiropt&egrave;res, zones de friches, semis de plantes indig&egrave;nes (sur le mod&egrave;le de MissionB &ndash; RTS),<br />
+transformation de surfaces imperm&eacute;ables en surfaces perm&eacute;ables, etc.<br />
+2) de multiplier les sites am&eacute;nag&eacute;s dans plusieurs b&acirc;timents universitaires : Centre m&eacute;dical universitaire<br />
+/ Uni Mail / Sciences / SIP/ Battelle<br />
+3) de prendre en compte les territoires environnants et les connexions biologiques, la diversit&eacute;<br />
+g&eacute;n&eacute;tique et les relations entre les esp&egrave;ces<br />
+Pour sensibiliser la communaut&eacute; universitaire (17&rsquo;271 &eacute;tudiant-e-s et 6&rsquo;620 collaborateurs-trices),<br />
+ils proposent :<br />
+1) Des ateliers DIY du Bioscope : construction et pose de nichoirs, bombes &agrave; graines, etc.<br />
+2) Des appels &agrave; projets sur le d&eacute;veloppement durable et la biodiversit&eacute;, pour susciter et encourager<br />
+des projets &eacute;manant des &eacute;tudiant.es et des collaborateur.rices<br />
+3) Un programme annuel de sorties &laquo; nature &raquo; pour les collaborateurs et les &eacute;tudiants<br />
+4) Des inventaires participatifs de la biodiversit&eacute; locale : partage de photos sur une plateforme d&eacute;di&eacute;e<br />
+(possible en tout temps) + bioblitz (inventaire intensif pendant une courte p&eacute;riode) mettant en<br />
+contact amateurs et experts naturalistes<br />
+5) Une campagne d&rsquo;affichage interne communiquant positivement sur la biodiversit&eacute; r&eacute;gionale<br />
+6) Un suivi des sites en image : pose de cam&eacute;ras (nichoirs), diaporamas suivant l&rsquo;&eacute;volution de sites,<br />
+focus sur des esp&egrave;ces prioritaires</p>',
+'indicator' => 'Nombre d’aménagements et de sites / Surface transformée - végétalisée
+Nombre de participants / Nombre d’observations / Heures d’ateliers et sorties nature
+Enquête sur l’attitude et les connaissances des étudiant-e-s et des collaborateur-trices',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => NULL,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:51:21',
+'updated_at' => '2020-04-06 06:51:21',
+),
+90 => 
+array (
+'id' => 92,
+'code' => '10.14',
+'label' => 'Actions de promotion de la biodiversité au CFPNE',
+'image' => NULL,
+'description' => '<p>Avec plus de 130 ans d&rsquo;existence, l&rsquo;&eacute;cole d&rsquo;horticulture de Ch&acirc;telaine puis Ecole d&rsquo;horticulture de<br />
+Lullier et enfin Centre de formation professionnelle de Lullier a, de tout temps, &eacute;t&eacute; un p&ocirc;le de formation<br />
+reconnu et avant-gardiste. A l&rsquo;heure o&ugrave; le changement climatique et les atteintes &agrave; la biosph&egrave;re<br />
+impactent les mentalit&eacute;s et que les citoyennes et citoyens, dont sont partie prenantes les professionnels<br />
+des branches horticoles, se questionnent sur le devenir de notre environnement proche, il paraissait<br />
+important que le CFPNE puisse participer de mani&egrave;re concr&egrave;te et visible &agrave; la r&eacute;alisation de propositions<br />
+durables. Dispos&eacute;e au sein d&rsquo;un espace de 22 hectares, l&rsquo;&eacute;cole de Lullier peut, et doit, &ecirc;tre une<br />
+vitrine de ce qui peut se faire dans le respect de la biodiversit&eacute;, tant &agrave; l&rsquo;usage du grand public qu&rsquo;&agrave;<br />
+celui des professionnels. A ce titre le CFPNE a d&eacute;pos&eacute; un projet de travail de Bachelor aupr&egrave;s de la<br />
+fili&egrave;re Gestion de la Nature d&rsquo;HEPIA intitul&eacute; &ldquo;Diagnostic des potentiels &eacute;cologiques du secteur Parc et<br />
+Jardins de l&rsquo;Ecole d&rsquo;Horticulture, proposition de mesures favorables &agrave; la biodiversit&eacute; et d&eacute;veloppement<br />
+de propositions d&rsquo;am&eacute;nagement&rdquo; et qui a &eacute;t&eacute; choisi par un des &eacute;l&egrave;ves de cette fili&egrave;re. Nul doute que<br />
+les r&eacute;sultats de ce travail seront de nature &agrave; renforcer concr&egrave;tement notre ambition d&rsquo;&ecirc;tre la vitrine<br />
+&eacute;voqu&eacute;e ci-dessus.<br />
+1: Impl&eacute;mentation du bio parcellaire (f&eacute;d&eacute;ral) pour la culture mara&icirc;ch&egrave;re; 2: Lutte contre les insectes<br />
+nuisibles &agrave; l&rsquo;aide d&rsquo;auxiliaires dans la serre de collection des plantes verte; 3: Mise en place de bandes<br />
+en prairies fleuries pour le passage des tuyaux d&rsquo;irrigation parcellaires; 4: Installation d&rsquo;arbustes<br />
+entre les parcelles de l&eacute;gumes; 5: D&eacute;veloppement de la biodiversit&eacute; (animale et v&eacute;g&eacute;tale) du site: 6:<br />
+Gestion diff&eacute;renci&eacute;e des espaces herbeux du CFPNE; 7: Pose de nichoirs &agrave; hirondelles; 8: Cr&eacute;ation<br />
+et gestion d&rsquo;un jardin potager en permaculture; 9: Construction d&rsquo;un mur en pierres s&egrave;ches comme<br />
+abri de la faune; 10: Mur v&eacute;g&eacute;tal du b&acirc;timent de la station de lavage; 11: Semaine de la biodiversit&eacute;<br />
+par les &eacute;l&egrave;ves du CFPNE au profit d&rsquo;&eacute;l&egrave;ves du CO; 12: Entretien des toitures v&eacute;g&eacute;talis&eacute;es du CFPNE;<br />
+13: Sorties botaniques extrascolaires &eacute;l&egrave;ves-enseignants; 14: Verdissement des balcons de l&rsquo;internat;<br />
+15: Suppression des herbicides en p&eacute;pini&egrave;re ornementale</p>',
+'indicator' => 'Acceptation du dossier',
+'R' => 1,
+'A' => 0,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:54:48',
+'updated_at' => '2020-04-06 06:54:48',
+),
+91 => 
+array (
+'id' => 93,
+'code' => '10.15',
+'label' => 'Promotion des “métiers verts” ainsi que les dimensions développement durable / Biodiversité présentes dans les métiers (en prenant en compte l’évolution des métiers et le Masterplan cleantech de la Confédération).',
+'image' => NULL,
+'description' => '<p>La capacit&eacute; d&rsquo;innovation et la comp&eacute;titivit&eacute; de l&rsquo;&eacute;conomie suisse ont fortement besoin de main-d&rsquo;&oelig;uvre<br />
+qualifi&eacute;e. Cette condition de base s&rsquo;applique aussi au domaine des cleantechs promis &agrave; une croissance<br />
+internationale sup&eacute;rieure &agrave; la moyenne . Les cleantechs regroupent toutes les technologies et tous<br />
+les services et processus de fabrication qui contribuent &agrave; prot&eacute;ger et &agrave; pr&eacute;server les ressources et<br />
+les syst&egrave;mes naturels.<br />
+Les associations professionnelles et les entreprises sont conscientes dans leur grande majorit&eacute; de<br />
+l&rsquo;importance des cleantechs pour l&rsquo;avenir &eacute;conomique. La majorit&eacute; des professions a en outre int&eacute;gr&eacute;<br />
+des contenus relatifs aux dispositions environnementales et &agrave; la protection de l&rsquo;environnement en<br />
+g&eacute;n&eacute;ral dans l&rsquo;entreprise (y compris la promotion et la protection de la biodiversit&eacute;)<br />
+Objectifs:<br />
+&bull; Organisation chaque ann&eacute;e d&rsquo;un Zoom &ldquo;m&eacute;tiers verts&rdquo; (et liens avec promotion/pr&eacute;servation<br />
+biodiversit&eacute;)<br />
+&bull; Elaboration d&rsquo;une liste des contributions des m&eacute;tiers aux ODD (y compris biodiversit&eacute;) lors des<br />
+Zooms m&eacute;tiers ou lors de la Cit&eacute; des m&eacute;tiers (chaque 3 ans).<br />
+&bull; Organisation, au sein des &eacute;tablissements du secondaire I, par le dispositif Go Apprentissage,<br />
+d&rsquo;une pr&eacute;sentation des m&eacute;tiers verts (en collaboration avec les entreprises et les associations<br />
+professionnelles des domaines concern&eacute;s)<br />
+&bull; Partenariat presse sur les &ldquo;nouveaux m&eacute;tiers&rdquo; en mettant l&rsquo;accent sur les aspects li&eacute;s &agrave; l&rsquo;EDD (y<br />
+inclus la biodiversit&eacute;) dans ces nouvelles professions.<br />
+Public cible: Corps enseignant, directions d&rsquo;&eacute;tablissements, &eacute;l&egrave;ves, candidats &agrave; l&rsquo;apprentissage,<br />
+parents, services du DIP concern&eacute;s, grand public.<br />
+Partenaires: Organisations du monde du Travail pour la formation professionnelle (Ortras), entreprises<br />
+formatrices, services de l&rsquo;Etat concern&eacute;s, associations, ONG, Hautes &eacute;coles, entreprises de l&rsquo;ESS<br />
+(&eacute;conomie sociale et solidaire), communes.</p>',
+'indicator' => '• Nombre de participant-e-s aux Zooms “métiers verts”.
+• Nombre de fiches métiers mettant en évidence les dimensions DD/ biodiversité.
+• Nombre d’élèves du secondaire I touchés par le dispositif Go Apprentissage sur les métiers verts.
+• Nombre de points presse sur les (nouveaux) métiers incluant les aspects EDD/Biodiversité.',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:56:11',
+'updated_at' => '2020-04-06 06:56:11',
+),
+92 => 
+array (
+'id' => 94,
+'code' => '10.16',
+'label' => 'Renforcer les collaborations avec les Ortras 84 et entreprises formatrices pour promouvoir les questions liées au développement durable / biodiversité',
+'image' => NULL,
+'description' => '<p>La capacit&eacute; d&rsquo;innovation et la comp&eacute;titivit&eacute; de l&rsquo;&eacute;conomie suisse ont fortement besoin de main-d&rsquo;&oelig;uvre<br />
+qualifi&eacute;e. Cette condition de base s&rsquo;applique aussi au domaine des cleantechs promis &agrave; une croissance<br />
+internationale sup&eacute;rieure &agrave; la moyenne . Les cleantechs regroupent toutes les technologies et tous<br />
+les services et processus de fabrication qui contribuent &agrave; prot&eacute;ger et &agrave; pr&eacute;server les ressources et<br />
+les syst&egrave;mes naturels.<br />
+Les associations professionnelles et les entreprises sont conscientes dans leur grande majorit&eacute; de<br />
+l&rsquo;importance des cleantechs pour l&rsquo;avenir &eacute;conomique. La majorit&eacute; des professions a en outre int&eacute;gr&eacute;<br />
+des contenus relatifs aux dispositions environnementales et &agrave; la protection de l&rsquo;environnement en<br />
+g&eacute;n&eacute;ral dans l&rsquo;entreprise (y compris la promotion et la protection de la biodiversit&eacute;).<br />
+Objectifs:<br />
+&bull; Elaborer une liste des bonnes pratiques EDD / biodiversit&eacute; au sein des Ortras et des entreprises<br />
+formatrices (transmettre ces particularit&eacute;s dans les prestations d&rsquo;information qu&rsquo;elles assurent aupr&egrave;s<br />
+d&rsquo;un large public).<br />
+&bull; V&eacute;rifier si les prescriptions en lien avec l&rsquo;EDD / biodiversit&eacute; sont abord&eacute;es lors de l&rsquo;apprentissage<br />
+au sein des entreprises (sensibiliser les commissaires d&rsquo;apprentissage).<br />
+&bull; Renforcer les collaborations avec les Ortras pour promouvoir l&rsquo;EDD / biodiversit&eacute; (valoriser les<br />
+bonnes pratiques, int&eacute;grer cet objectif dans le contr&ocirc;le qualit&eacute; des &ldquo;cours interentreprises&rdquo; organis&eacute;s<br />
+par les associations professionnelles ou lors des examens de fin d&rsquo;apprentissage, ou encore dans<br />
+les crit&egrave;res d&rsquo;attribution du Prix de la meilleure entreprise formatrice).<br />
+Public cible: Corps enseignant, directions d&rsquo;&eacute;tablissements, &eacute;l&egrave;ves, candidats &agrave; l&rsquo;apprentissage,<br />
+commissaires d&rsquo;apprentissage, parents, services du DIP concern&eacute;s, Ortras, entreprises formatrices.<br />
+Partenaires: Ortras, entreprises formatrices, services de l&rsquo;Etat concern&eacute;s, associations, ONG, Hautes<br />
+&eacute;coles, entreprises de l&rsquo;ESS (&eacute;conomie sociale et solidaire), communes.</p>',
+'indicator' => 'Nombre de bonnes pratiques des Ortras, des entreprises formatrices et Centres de formation
+professionnelle.',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 06:59:42',
+'updated_at' => '2020-04-06 06:59:42',
+),
+93 => 
+array (
+'id' => 95,
+'code' => '10.17',
+'label' => 'Promouvoir l’éducation en vue d’un développement durable (EDD) / Biodiversité notamment via les fiches “cleantech” dans les contenus de la formation “métier” et culture générale ainsi que lors des cours interentreprises',
+'image' => NULL,
+'description' => '<p>La capacit&eacute; d&rsquo;innovation et la comp&eacute;titivit&eacute; de l&rsquo;&eacute;conomie suisse ont fortement besoin de main-d&rsquo;&oelig;uvre<br />
+qualifi&eacute;e. Cette condition de base s&rsquo;applique aussi au domaine des cleantechs promis &agrave; une croissance<br />
+internationale sup&eacute;rieure &agrave; la moyenne . Les cleantechs regroupent toutes les technologies et tous<br />
+les services et processus de fabrication qui contribuent &agrave; prot&eacute;ger et &agrave; pr&eacute;server les ressources et<br />
+les syst&egrave;mes naturels.<br />
+Les associations professionnelles et les entreprises sont conscientes dans leur grande majorit&eacute; de<br />
+l&rsquo;importance des cleantechs pour l&rsquo;avenir &eacute;conomique. La majorit&eacute; des professions a en outre int&eacute;gr&eacute;<br />
+des contenus relatifs aux dispositions environnementales et &agrave; la protection de l&rsquo;environnement en<br />
+g&eacute;n&eacute;ral dans l&rsquo;entreprise (y compris la promotion et la protection de la biodiversit&eacute;).<br />
+Objectifs:<br />
+&bull; Renforcer l&rsquo;enseignement EDD / Biodiversit&eacute; (cours professionnel et culture g&eacute;n&eacute;rale; cours<br />
+interentreprises)<br />
+&bull; Promouvoir l&rsquo;EDD / Biodiversit&eacute; notamment via fiches &laquo; cleantech &raquo;<br />
+Public cible: El&egrave;ves, corps enseignant, directions d&rsquo;&eacute;tablissements.<br />
+Partenaires: Ortras, entreprises formatrices, services de l&rsquo;Etat concern&eacute;s, associations, ONG, Hautes<br />
+&eacute;coles, entreprises de l&rsquo;ESS (&eacute;conomie sociale et solidaire), communes.</p>
+
+<p>&nbsp;</p>',
+'indicator' => NULL,
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 07:01:42',
+'updated_at' => '2020-04-06 07:01:42',
+),
+94 => 
+array (
+'id' => 96,
+'code' => '10.18',
+'label' => 'Renforcement du développement durable et de la biodiversité comme élément transversal dans les plans d’études (plan d’études PEc de l’Ecole de culture générale)',
+'image' => NULL,
+'description' => '<p>Les comp&eacute;tences et les objectifs de r&eacute;f&eacute;rence pour chaque discipline sont d&eacute;taill&eacute;s dans le PEC<br />
+ECG de la CDIP. La nouvelle conception du PEC de la CDIP impose la r&eacute;&eacute;criture du plan d&rsquo;&eacute;tudes<br />
+genevois (PEc) dans toutes les disciplines quelles que soient les modifications de dotation de<br />
+p&eacute;riodes, de contenus et les nouveaux cours.<br />
+L&rsquo;une des rubriques des objectifs du PEc porte sp&eacute;cifiquement sur le d&eacute;veloppement durable<br />
+(&ldquo;Aspects en lien avec le d&eacute;veloppement durable et la biodiversit&eacute;&rdquo;) et concerne des contenus ou des<br />
+th&eacute;matiques pouvant &ecirc;tre int&eacute;gr&eacute;es dans diverses disciplines. Il intervient en tant que comp&eacute;tence<br />
+transversale dans le PEc.<br />
+Au travers des diff&eacute;rents domaines du PEc les &eacute;l&egrave;ves devront &ecirc;tre sp&eacute;cifiquement amen&eacute;s &agrave; :<br />
+- renforcer la curiosit&eacute; face aux ph&eacute;nom&egrave;nes de notre environnement naturel<br />
+- d&eacute;velopper la capacit&eacute; d&rsquo;observation<br />
+- r&eacute;fl&eacute;chir &agrave; la probl&eacute;matique du d&eacute;veloppement durable et chercher des solutions<br />
+- prendre conscience de leur propre corps, comprendre les impacts qu&rsquo;ils exercent sur leur<br />
+environnement, ainsi que les impacts que l&rsquo;environnement exerce sur eux<br />
+- savoir comment s&rsquo;engager en faveur de la pr&eacute;servation de l&rsquo;environnement et savoir comment<br />
+se comporter de mani&egrave;re responsable sur les plans personnels, politique et &eacute;conomique<br />
+- constater l&rsquo;intervention de l&rsquo;homme par des processus chimiques dans le cycle naturel et biologique<br />
+de divers &eacute;l&eacute;ments et &agrave; prendre connaissance des modifications que cette intervention en tra&icirc;ne<br />
+- r&eacute;fl&eacute;chir &agrave; la probl&eacute;matique du d&eacute;veloppement durable et chercher des solutions<br />
+- d&eacute;crire les probl&egrave;mes environnementaux et leurs causes, d&rsquo;identifier les approches ad&eacute;quates<br />
+pour les r&eacute;soudre et d&rsquo;agir dans le respect de l&rsquo;espace naturel et social<br />
+- &ecirc;tre capables de d&eacute;crire les ph&eacute;nom&egrave;nes, les probl&eacute;matiques et les processus &eacute;conomiques<br />
+et juridiques en mettant en &eacute;vidence les conflits d&rsquo;objectifs ainsi que les interactions avec<br />
+l&rsquo;environnement naturel, technologique, &eacute;conomique, culturel et social. Ils saisissent les aspects<br />
+&eacute;conomiques du fonctionnement de la soci&eacute;t&eacute; et sont capables de d&eacute;crire les cadres l&eacute;gal et<br />
+&eacute;conomique applicables.<br />
+Des activit&eacute;s ou des manifestations trans- ou interdisciplinaires ponctuelles pourront avoir<br />
+&eacute;galement lieu.</p>',
+'indicator' => 'Au travers des contenus du PEc ainsi que des évaluations qui seront faites dans les différentes
+branches.',
+'R' => 0,
+'A' => 1,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 07:04:19',
+'updated_at' => '2020-04-06 07:04:19',
+),
+95 => 
+array (
+'id' => 97,
+'code' => '10.19',
+'label' => 'Développer des formations continues ciblées sur la gestion des milieux naturels',
+'image' => NULL,
+'description' => '<p>La gestion &eacute;cologique de milieux naturels et semi-naturels n&eacute;cessite des comp&eacute;tences sp&eacute;cifiques<br />
+et pointues, que la majorit&eacute; des professionnels actifs dans le domaine du paysagisme ne ma&icirc;trisent<br />
+souvent que partiellement.<br />
+Actuellement, &agrave; l&rsquo;exception de la gestion des esp&egrave;ces exotiques envahissantes, il n&rsquo;existe aucune<br />
+offre de formation continue pour les professionnels en exercice. Une lacune d&rsquo;autant plus critique &agrave;<br />
+l&rsquo;heure o&ugrave; la population et les collectivit&eacute;s publiques se pr&eacute;occupent pour la biodiversit&eacute;.<br />
+Cette action pr&eacute;voit de mettre sur pied un groupe de travail charg&eacute; d&rsquo;identifier et pr&eacute;ciser les besoins<br />
+et attentes de chacun (OCAN, HEPIA, CFPNE, professionnels). Puis, de d&eacute;finir les th&egrave;mes et la<br />
+forme des cours, de d&eacute;velopper leur contenu, et d&rsquo;offrir de nouvelles formations continues. Leurs<br />
+th&egrave;mes potentiels sont nombreux : gestion diff&eacute;renci&eacute;e de surfaces herbac&eacute;es, cr&eacute;ation et entretien de<br />
+lisi&egrave;res &eacute;tag&eacute;es, am&eacute;nagement de microstructures, cr&eacute;ation de biotopes aquatiques, reconnaissance<br />
+d&rsquo;esp&egrave;ces d&rsquo;int&eacute;r&ecirc;t, etc.<br />
+D&rsquo;autres sp&eacute;cialistes pourront &ecirc;tre int&eacute;gr&eacute;s selon les sujets : le centre de comp&eacute;tence en sylviculture<br />
+de Lyss, l&rsquo;HAFL, le centre de formation foresti&egrave;re du Mont-sur-Lausanne.</p>',
+'indicator' => 'Nombre d’étudiants / professionnels ayant suivi l’une des formations continues mises en place',
+'R' => 0,
+'A' => 1,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 07:06:30',
+'updated_at' => '2020-04-06 07:06:30',
+),
+96 => 
+array (
+'id' => 98,
+'code' => '10.20',
+'label' => 'Mettre en place un programme de formations continues pour l’animation nature',
+'image' => NULL,
+'description' => '<p>Offrir des modules de formations &agrave; l&rsquo;intention des acteurs qui effectuent des animations dans les<br />
+sites prot&eacute;g&eacute;s ou/et les sites &agrave; enjeux du canton.<br />
+L&rsquo;objectif de cette formation est de transmettre des connaissances approfondies sur les milieux<br />
+prot&eacute;g&eacute;s du canton afin que les visites de ces sites aient un impact minimum sur la flore et la faune<br />
+de ces milieux et que les messages transmis aux visiteurs soient pertinents, complets et coh&eacute;rents<br />
+avec les enjeux des sites. Elle permet de favoriser un comportement responsable des personnes<br />
+fr&eacute;quentant ces sites et induit une cohabitation harmonieuse entre la nature et les activit&eacute;s de loisirs.<br />
+Cette formation aborde notamment la th&eacute;matique de la l&eacute;gislation, de la faune et de la flore indig&egrave;ne,<br />
+des plantes n&eacute;ophytes, de la gestion des sites naturels, des services &eacute;cosyst&eacute;miques et de la<br />
+transmission de contenus aux diff&eacute;rents publics. Les publics cibles sont les adultes, particuli&egrave;rement<br />
+les animateurs nature des diverses associations et de l&rsquo;Etat de Gen&egrave;ve, ainsi que les enseignants<br />
+et professeurs.<br />
+Cette formation pourrait &ecirc;tre certifi&eacute;e par une accr&eacute;ditation officielle sous forme d&rsquo;un CAS ou prendre<br />
+la forme d&rsquo;une formation plus l&eacute;g&egrave;re sans certification officielle</p>',
+'indicator' => 'Le nombre de personnes inscrites à cette formation',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => NULL,
+'created_at' => '2020-04-06 07:08:50',
+'updated_at' => '2020-04-06 07:08:50',
+),
+97 => 
+array (
+'id' => 99,
+'code' => '10.21',
+'label' => 'Pérenniser et assurer la gratuité d’accès au programme d’animations de l’ASL dans les classes primaires',
+'image' => NULL,
+'description' => '<p>L&rsquo;Association pour la sauvegarde du L&eacute;man (ASL) propose depuis 2016 des animations en lien avec<br />
+le Programme d&rsquo;&eacute;tudes romand (PER) pour les classes primaires.<br />
+En effet, le L&eacute;man, est un important r&eacute;servoir d&rsquo;eau potable, un milieu naturel riche en faune et en flore,<br />
+un lieu privil&eacute;gi&eacute; pour la d&eacute;couverte de la nature et l&rsquo;apprentissage de th&egrave;mes li&eacute;s au d&eacute;veloppement<br />
+durable (contraintes li&eacute;es aux usages de l&rsquo;eau, pression sur la biodiversit&eacute;, enjeux environnementaux,<br />
+sociaux et &eacute;conomiques).<br />
+L&rsquo;objectif est de proposer des demi-journ&eacute;es d&rsquo;animations &agrave; 90 classes primaires par ann&eacute;e dans le<br />
+canton de Gen&egrave;ve.</p>',
+'indicator' => NULL,
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 10,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:10:09',
+'updated_at' => '2020-04-06 07:10:09',
+),
+98 => 
+array (
+'id' => 100,
+'code' => '11.1',
+'label' => 'Analyser l’architecture du système d’information de l’OCAN',
+'image' => NULL,
+'description' => '<p>L&rsquo;objectif de cette action est d&rsquo;inventorier pr&eacute;cis&eacute;ment l&rsquo;ensemble des donn&eacute;es g&eacute;n&eacute;r&eacute;es par l&rsquo;OCAN<br />
+et les diff&eacute;rents flux avec les autres syst&egrave;mes d&rsquo;information (SI). Cette analyse devra &ecirc;tre renouvel&eacute;e<br />
+et mise &agrave; jour r&eacute;guli&egrave;rement afin d&rsquo;atteindre une version id&eacute;ale du SI Agriculture et Nature.<br />
+Par exemple, il s&rsquo;agira d&rsquo;optimiser l&rsquo;application GESNAT, qui existe depuis 2012. Il s&rsquo;agit d&rsquo;une<br />
+extension du programme ArcGIS qui permet de g&eacute;or&eacute;f&eacute;rencer et renseigner les travaux r&eacute;alis&eacute;s au<br />
+sein des milieux naturels (types d&rsquo;intervention, dates, entreprises, co&ucirc;ts, etc.). Elle permet de conserver<br />
+l&rsquo;historique d&rsquo;un site et de planifier les interventions pour les ann&eacute;es suivantes, et ainsi de conserver<br />
+une vision globale de la gestion des sites prot&eacute;g&eacute;s. Actuellement, l&rsquo;application n&rsquo;est pas optimale et<br />
+pourrait &ecirc;tre am&eacute;lior&eacute;e. Pour un gain de temps dans la planification des travaux ou la pr&eacute;paration de<br />
+bilans annuels, il conviendrait notamment de faciliter la saisie et d&rsquo;optimiser les r&eacute;sultats des requ&ecirc;tes,<br />
+et de faciliter globalement son usage. L&rsquo;application GESNAT devrait aussi permettre de communiquer<br />
+au grand public les informations relatives aux travaux pr&eacute;vus sur les sites prot&eacute;g&eacute;s, ce qui renforcerait<br />
+la communication d&eacute;j&agrave; en place sur les diff&eacute;rents sites.<br />
+Actions/Etapes:<br />
+1. Inventorier les applications (ISAAC)<br />
+2. Lancer une &eacute;tude d&rsquo;architecture de notre SI avec la Direction de l&rsquo;organisation des syst&egrave;mes<br />
+d&rsquo;information. Identifier les flux vers les autres SI.<br />
+3. Identifier les donn&eacute;es manquantes dans les diff&eacute;rentes th&eacute;matiques et les besoins en applications<br />
+(comme GESNAT).<br />
+4. Relier les besoins dans le plan directeur SI et s&rsquo;inscrire dans un SI transversal pour le D&eacute;partement<br />
+du territoire.<br />
+5. Mettre en &oelig;uvre les projets informatiques qui r&eacute;pondent aux besoins identifi&eacute;s.<br />
+6. Mise &agrave; jour de l&rsquo;analyse d&rsquo;architecture.</p>',
+'indicator' => 'Nombre de besoins décrits par l’étude d’architecture. Projets informatiques réalisés.',
+'R' => 0,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 11,
+'comment_id' => NULL,
+'state_id' => 1,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:13:35',
+'updated_at' => '2020-04-06 07:13:35',
+),
+99 => 
+array (
+'id' => 101,
+'code' => '11.2',
+'label' => 'Renforcer la saisie et le partage de données',
+'image' => NULL,
+'description' => '<p>De nombreux naturalistes sp&eacute;cialis&eacute;s dans l&rsquo;&eacute;tude d&rsquo;un groupe d&rsquo;esp&egrave;ces particulier r&eacute;alisent des<br />
+observations de la faune et la flore de notre canton. Avec la carte des milieux naturels, ces nombreuses<br />
+observations, qui sont souvent g&eacute;or&eacute;f&eacute;renc&eacute;es, forment la base n&eacute;cessaire pour l&rsquo;analyse de notre<br />
+biodiversit&eacute;. Souvent centralis&eacute;es au sein d&rsquo;associations ou de fondations, ces observations sont<br />
+envoy&eacute;es aux bases de donn&eacute;es nationales, mais elles ne sont pas toujours transmises aux services<br />
+de la conservation de la nature au niveau cantonal, ni au niveau du Grand Gen&egrave;ve.<br />
+Actions/Etapes:<br />
+1. Organiser la coordination via une groupe de personnes responsables de l&rsquo;action. Syst&eacute;matiser la<br />
+transmission des observations vers les base de donn&eacute;es nationales au travers d&rsquo;une plateforme<br />
+commune, telle que FauneGen&egrave;ve ou le Syst&egrave;me d&rsquo;Informations du Patrimoine Vert.<br />
+2. Etablir des flux automatis&eacute;s entre les base de donn&eacute;es nationales et le SITG.<br />
+3. Etablir des conventions d&rsquo;&eacute;change de donn&eacute;es avec les r&eacute;gions fran&ccedil;aises et la r&eacute;gion de Nyon.<br />
+4. Stimuler la participation citoyenne au travers des associations et de projets innovants pour augmenter<br />
+les connaissances, notamment sur la flore et la faune communes (voir &eacute;galement CA8).<br />
+5. Utiliser ces projets de recensement comme vecteurs pour la sensibilisation aux enjeux de la<br />
+biodiversit&eacute;, notamment en milieu scolaire (source d&rsquo;informations pour les cours et p&eacute;dagogie<br />
+active, voir &eacute;galement CA 9).</p>',
+'indicator' => '1. Nombre de données saisies par mois ou par année, qui transitent à travers le flux de données
+nationales.
+2. Pourcentage de données précises par secteur, taxons, etc.',
+'R' => 0,
+'A' => 0,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 11,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => 2,
+'created_at' => '2020-04-06 07:14:44',
+'updated_at' => '2020-04-06 07:14:44',
+),
+100 => 
+array (
+'id' => 102,
+'code' => '11.3',
+'label' => 'Etendre et maintenir à jour la cartographie des milieux naturels',
+'image' => NULL,
+'description' => '<p>La carte des milieux est une donn&eacute;e issue du consortium Syst&egrave;me d&rsquo;information du patrimoine<br />
+vert (SIPV). La carte des milieux couvre l&rsquo;ensemble du canton de Gen&egrave;ve et distingue plus d&rsquo;une<br />
+centaine de cat&eacute;gories de milieux naturels et b&acirc;tis. Elle sert de base de travail pour la d&eacute;finition de<br />
+l&rsquo;infrastructure &eacute;cologique sur le Canton. Elle est r&eacute;guli&egrave;rement mise &agrave; jour et consolid&eacute;e par des<br />
+relev&eacute;s de terrain, et ses donn&eacute;es sont g&eacute;r&eacute;es par la Direction de l&rsquo;information du territoire. Cette<br />
+carte poss&egrave;de l&rsquo;avantage d&rsquo;int&eacute;grer les donn&eacute;es cadastrales sur la partie b&acirc;tie.<br />
+Actions/Etapes:<br />
+1. Poursuivre la mise &agrave; jour de la carte des milieux au niveau cantonal et du Grand Gen&egrave;ve.<br />
+2. Encourager les retours des municipalit&eacute;s et des citoyens.<br />
+3. D&eacute;velopper un outil de mise &agrave; jour th&eacute;matique et/ou g&eacute;om&eacute;trique mobile.<br />
+4. Elargir la cartographie &agrave; l&rsquo;ensemble du Grand Gen&egrave;ve.</p>',
+'indicator' => '1. Pourcentage de la surface mise à jour annuellement
+2. Nombre de polygones modifiés sur le total
+3. Nombre de retours pour améliorer la carte
+Nota : Les indicateurs MonGE pour la carte des Milieux Naturels sont les suivants.
+Pourcentage des corrections des alertes DIT traitées
+Pourcentage des reports terrain traités
+Pourcentage des SPB à jour (selon données fournies)
+Pourcentage des plans de gestion intégrés (selon données fournies)
+Mise à jour et diffusion via serveur métier/SITG effectuées.',
+'R' => 0,
+'A' => 0,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 11,
+'comment_id' => NULL,
+'state_id' => 1,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:18:00',
+'updated_at' => '2020-04-06 07:18:00',
+),
+101 => 
+array (
+'id' => 103,
+'code' => '11.4',
+'label' => 'Synthétiser l’évolution de la biodiversité',
+'image' => NULL,
+'description' => '<p>Le canton de Gen&egrave;ve poss&egrave;de un vaste panel de donn&eacute;es g&eacute;ographiques num&eacute;ris&eacute;es. Ces donn&eacute;es<br />
+sont en constante &eacute;volution, car elles refl&egrave;tent les changements sur le territoire. Des indicateurs<br />
+synth&eacute;tiques de l&rsquo;&eacute;tat de la biodiversit&eacute; peuvent &ecirc;tre group&eacute;s sous forme de tableaux de bord (ou<br />
+dashboards) qui fournissent une vue d&rsquo;ensemble de la situation et de l&rsquo;&eacute;volution de la biodiversit&eacute;,<br />
+afin de d&eacute;ployer les actions ad&eacute;quates. Des tableaux de bord de ce type sont en cours d&rsquo;&eacute;laboration<br />
+pour la flore sauvage, les bryophytes, les lichens, les arbres isol&eacute;s, les milieux naturels, les services<br />
+&eacute;cosyst&egrave;miques et l&rsquo;infrastructure &eacute;cologique. Les responsables de cette action donneront une<br />
+coh&eacute;rence &agrave; cet ensemble et s&eacute;lectionneront des indicateurs pour suivre l&rsquo;&eacute;volution de la biodiversit&eacute;<br />
+&agrave; l&rsquo;horizon 2030 (en coh&eacute;rence avec la vision de la SBG2030). Les autres indicateurs &ndash; pour le suivi<br />
+de la SBG2030 et du Plan Biodiversit&eacute; 2020-2023 &ndash; sont d&eacute;crits dans l&rsquo;action 12.9.<br />
+Actions/Etapes:<br />
+1. Mise en place des tableaux de bords et indicateurs<br />
+2. Mise &agrave; jour en continu et maintenance</p>',
+'indicator' => 'Fréquentation des sites web présentant ces tableaux de bord',
+'R' => 0,
+'A' => 1,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 11,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:19:51',
+'updated_at' => '2020-04-06 07:19:51',
+),
+102 => 
+array (
+'id' => 104,
+'code' => '11.5',
+'label' => 'Valoriser les données sur le vivant',
+'image' => NULL,
+'description' => '<p>Le SITG promeut les donn&eacute;es brutes ainsi que leur diffusion (open access) &agrave; l&rsquo;ensemble des<br />
+partenaires int&eacute;ress&eacute;s. Des outils de mise en forme de ces donn&eacute;es brutes se d&eacute;veloppent, afin de<br />
+les rendre accessibles &agrave; un large public. L&rsquo;information peut alors se d&eacute;cliner sous forme de sc&eacute;nario<br />
+narratif (voir par exemple la StoryMap Flore en ville).<br />
+Actions/Etapes:<br />
+1. Le Service de la communication (DT) projette la mise en place d&rsquo;un site web Gen&egrave;ve Nature, con&ccedil;u<br />
+comme une porte d&rsquo;entr&eacute;e qui rassemble, valorise et compl&egrave;te les sites web existants. Ce site web<br />
+devrait aussi servir de base de donn&eacute;es des connaissances sur la biodiversit&eacute; du Grand Gen&egrave;ve.<br />
+Cette action vise &agrave; soutenir le d&eacute;veloppement du module cartographique, les autres volets du site<br />
+web Gen&egrave;ve Nature &eacute;tant int&eacute;gr&eacute;s dans l&rsquo;action 8.12.<br />
+2. Une meilleure int&eacute;gration des donn&eacute;es sur la biodiversit&eacute; dans les plateformes existantes telles<br />
+que G&eacute;oAgglo, G&eacute;oFab, site web du SIPV, 1001sitesnatureenville sera &eacute;galement r&eacute;alis&eacute;e.</p>',
+'indicator' => 'Fréquentation du site web Genève Nature et d’autres sites présentant des données sur la biodiversité.',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 11,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:21:37',
+'updated_at' => '2020-04-06 07:21:37',
+),
+103 => 
+array (
+'id' => 105,
+'code' => '11.6',
+'label' => 'Développer un outil de gestion des suivis de chantier et des compensations',
+'image' => NULL,
+'description' => '<p>L&rsquo;OCAN d&eacute;livre plus de 2000 pr&eacute;avis par an dans le cadre notamment des autorisations de construire.<br />
+Des conditions sont mises &agrave; ces pr&eacute;avis pour le maintien ou le remplacement des valeurs naturelles<br />
+pendant et apr&egrave;s le chantier. A l&rsquo;heure actuelle, l&rsquo;OCAN ne dispose pas d&rsquo;outil de suivi des conditions<br />
+mises au pr&eacute;avis, ni des remplacements ou des compensations exig&eacute;es. Il est donc indispensable<br />
+de cr&eacute;er un outil de suivi temporel des chantiers, d&egrave;s leur ouverture et jusqu&rsquo;&agrave; r&eacute;ception finale (ie<br />
+v&eacute;rification 2 ans apr&egrave;s la plantation) des &eacute;l&eacute;ments naturels. Ce nouvel outil s&rsquo;inscrit aussi dans le<br />
+projet de d&eacute;mat&eacute;rialisation des autorisations de construire (AC-d&eacute;mat).<br />
+Actions/Etapes:<br />
+1. Cr&eacute;ation de l&rsquo;outil de suivi<br />
+2. Mettre en production et maintenir l&rsquo;outil</p>',
+'indicator' => '1. Surface de compensation
+2. Nombre d’arbre plantés',
+'R' => 0,
+'A' => 0,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 11,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:22:50',
+'updated_at' => '2020-04-06 07:22:50',
+),
+104 => 
+array (
+'id' => 106,
+'code' => '11.7',
+'label' => 'Intégrer la biodiversité dans les nouvelles technologies',
+'image' => NULL,
+'description' => '<p>Les exemples de d&eacute;marches innovantes sont nombreuses sur le canton et il est important que la<br />
+biodiversit&eacute; en fasse partie. Parmi ces exemples, la d&eacute;marche &ldquo;Smart Geneva&rdquo; (d&eacute;crite dans la Feuille<br />
+de route du DT pubil&eacute;e en mai 2019) et les conventions de collaboration entre l&rsquo;Etat de Gen&egrave;ve et<br />
+les hautes &eacute;coles (Universit&eacute; de Gen&egrave;ve et HEPIA). Ces conventions incluent l&rsquo;aide &agrave; la d&eacute;cision<br />
+strat&eacute;gique et politique en mati&egrave;re environnementale, qui sera fournie par le r&eacute;seau &ldquo;GE-EN-VIE&rdquo;.<br />
+Ce r&eacute;seau pr&eacute;voit la mise en place de trois &eacute;l&eacute;ments:<br />
+- Un Observatoire, pour produire de nouvelles connaissances et mettre en relation les besoins des<br />
+politiques publiques avec les comp&eacute;tences de recherche des hautes &eacute;coles genevoises.<br />
+- Un Laboratoire, pour exp&eacute;rimenter, mener des exp&eacute;riences innovantes et mettre en exergue des<br />
+actions pilotes ;<br />
+- Une Plateforme, pour am&eacute;liorer le partage d&rsquo;informations et la communication, notamment &agrave; propos<br />
+des actions d&eacute;ploy&eacute;es par le DT et les hautes &eacute;coles dans le domaine environnemental.<br />
+(Nota : Le volet biodiversit&eacute; est trait&eacute; par GE-21, un r&eacute;seau d&rsquo;experts provenant du milieu acad&eacute;mique<br />
+et de l&rsquo;administration publique).<br />
+Par ailleurs, le canton s&rsquo;inscrit r&eacute;solument dans l&rsquo;&eacute;volution num&eacute;rique, notamment au travers de<br />
+projets innovants tels que le BIM ; une mod&eacute;lisation 3D d&rsquo;un projet de b&acirc;timent et de son sous-sol,<br />
+ainsi que de sa r&eacute;alisation. Le BIM est un mod&egrave;le dynamique mis &agrave; jour pendant toute la dur&eacute;e de<br />
+vie du b&acirc;timent/ouvrage.<br />
+Le pas vers la num&eacute;risation se fait &eacute;galement au niveau de l&rsquo;administration publique et de<br />
+l&rsquo;am&eacute;nagement du territoire via notamment la plateforme du r&eacute;f&eacute;rentiel des projets urbains qui<br />
+permettra aux bureaux d&rsquo;&eacute;tude d&rsquo;extraire des donn&eacute;es en format num&eacute;rique, puis de les r&eacute;importer<br />
+avec un contr&ocirc;le de qualit&eacute; automatique. Dans le site cartographique du SITG de l&rsquo;am&eacute;nagement, les<br />
+donn&eacute;es proviennent actuellement de Synthurba et sont saisies &agrave; la main. A la mise en production<br />
+de la plateforme du r&eacute;f&eacute;rentiel urbain, cette mise &agrave; jour se fera automatiquement et quotidiennement.<br />
+Ces donn&eacute;es concernent des projets existants et termin&eacute;s mais &eacute;galement des projets en cours et &agrave;<br />
+venir, les projets seront suivis de leur &eacute;laboration &agrave; leur fin. Les p&eacute;rim&egrave;tres couverts sont ceux des<br />
+PLQ et les th&eacute;matiques trait&eacute;es sont l&rsquo;urbanisme, l&rsquo;environnement et la mobilit&eacute;. Des indicateurs<br />
+seront calcul&eacute;s &agrave; partir des donn&eacute;es du r&eacute;f&eacute;rentiel. Le lien de ce projet avec l&rsquo;action 1.3 est notable<br />
+pour la partie concernant les PLQ.</p>',
+'indicator' => 'Mise en place de l’Observatoire GE-EN-VIE.
+Nombre de projets innovants en lien avec la biodiversité',
+'R' => 0,
+'A' => 1,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 11,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:24:08',
+'updated_at' => '2020-04-06 07:24:08',
+),
+105 => 
+array (
+'id' => 107,
+'code' => '12.1',
+'label' => 'Soutenir les communes',
+'image' => NULL,
+'description' => '<p>Les communes genevoises participent d&eacute;j&agrave; &agrave; la pr&eacute;servation de la biodiversit&eacute; par le biais d&rsquo;actions<br />
+locales ; il s&rsquo;agit d&eacute;sormais de valoriser ce qui est fait, d&rsquo;accompagner la mise en &oelig;uvre de la strat&eacute;gie<br />
+biodiversit&eacute; et ses actions et de faciliter les synergies, notamment &agrave; travers les actions suivantes :<br />
+1. Encourager la nomination d&rsquo;un r&eacute;f&eacute;rent biodiversit&eacute; dans les communes (ou regroupement de<br />
+communes), comme interlocuteur privil&eacute;gi&eacute; pour organiser et coordonner les actions communales.<br />
+2. Accompagner les communes pour d&eacute;ployer les 3 mesures prioritaires identifi&eacute;es conjointement dans<br />
+le cadre de l&rsquo;atelier du 23 mai 2019 (voir point 6) :<br />
+a) Renforcer la biodiversit&eacute; au niveau communal pour une meilleure r&eacute;silience face aux changements<br />
+climatiques ;<br />
+b) Promouvoir la &laquo; trame noire &raquo; pour cr&eacute;er des corridors d&rsquo;obscurit&eacute; n&eacute;cessaires au d&eacute;placement<br />
+des esp&egrave;ces ;<br />
+c) Sensibiliser la population pour valoriser la biodiversit&eacute; et partager ses bienfaits face aux<br />
+changements climatiques.<br />
+3. Soutenir les communes pour l&rsquo;&eacute;laboration de leur plan d&rsquo;actions biodiversit&eacute; propre pr&eacute;cisant leurs<br />
+engagements dans leur plan directeur. Ce dernier sera bas&eacute; sur le plan cantonal (PB1). Il pourra<br />
+d&eacute;cliner une &agrave; deux actions sp&eacute;cifique(s) &agrave; la commune par champs d&rsquo;application et/ou faire un renvoi<br />
+au PB1 pour les actions transversales (cf. point 2 ci-dessus).<br />
+4. Soutenir le Service cantonal du d&eacute;veloppement durable dans la mise en &oelig;uvre du Plan d&rsquo;actions<br />
+d&eacute;veloppement durable 2019-2023 (collaboration avec les communes) qui pr&eacute;voit de : 1) Favoriser<br />
+l&rsquo;impl&eacute;mentation de l&rsquo;Agenda 2030 au niveau communal et veiller &agrave; la coh&eacute;rence des d&eacute;marches<br />
+entre les diff&eacute;rents &eacute;chelons (Conf&eacute;d&eacute;ration, canton, communes) ; 2) Fournir aux communes des<br />
+outils et informations pratiques pour faciliter la mise en &oelig;uvre d&rsquo;une d&eacute;marche de d&eacute;veloppement<br />
+durable ; 3) Favoriser l&rsquo;&eacute;change et le partage de bonnes pratiques.<br />
+5. Mettre &agrave; disposition des communes un outil cartographique sur le site GE-21, pour mieux concilier<br />
+social, environnement et &eacute;conomie lors de la r&eacute;vision de leur plan directeur communal.<br />
+6. Favoriser la coordination Etat/Communes pour promouvoir la mise en &oelig;uvre des bonnes pratiques, par<br />
+le biais de rencontres et d&rsquo;ateliers organis&eacute;s au moins deux fois par an. Un premier atelier th&eacute;matique<br />
+&laquo; Promotion de la biodiversit&eacute; dans les communes genevoises pour s&rsquo;adapter aux changements<br />
+climatiques &raquo; s&rsquo;est tenu le 23 mai 2019 en partenariat avec le Service cantonal du d&eacute;veloppement<br />
+durable.<br />
+7. Relayer l&rsquo;action &ldquo;Dehors &agrave; petits pas!&rdquo; mise en place par le WWF Gen&egrave;ve et SILVIVA &agrave; la rentr&eacute;e<br />
+2019-2020. Le but de ce projet est d&rsquo;offrir aux structures d&rsquo;accueil de la petite enfance (cr&egrave;ches) des<br />
+possibilit&eacute;s pour sortir davantage avec les enfants dans un environnement naturel proche et de donner<br />
+aux &eacute;ducateurs/trices les outils pour pouvoir sortir r&eacute;guli&egrave;rement avec leurs groupes d&rsquo;enfants.</p>',
+'indicator' => 'Bilan des actions communales',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:26:20',
+'updated_at' => '2020-04-06 07:26:20',
+),
+106 => 
+array (
+'id' => 108,
+'code' => '12.2',
+'label' => 'Protéger la biodiversité pour préserver notre santé',
+'image' => NULL,
+'description' => '<p>Parmi les facteurs d&eacute;terminant l&rsquo;&eacute;tat de sant&eacute; de la population, l&rsquo;environnement et les conditions<br />
+d&rsquo;habitat jouent un r&ocirc;le plus important que le syst&egrave;me de soins.<br />
+Partout dans le monde, de plus en plus de m&eacute;decins prescrivent comme traitement un s&eacute;jour dans la<br />
+nature pour toutes sortes de maladies, aussi bien physiques que mentales. &Ecirc;tre &agrave; l&rsquo;ext&eacute;rieur procure<br />
+d&rsquo;innombrables bienfaits &ndash; par exemple la r&eacute;duction des hormones responsables du stress et de<br />
+l&rsquo;inflammation &ndash; et cela sans aucun effet secondaire. Un s&eacute;jour dans la nature active notre syst&egrave;me<br />
+parasympathique, nous plongeant ainsi dans un &eacute;tat r&eacute;parateur, par contraste avec celui d&rsquo;&eacute;puisement<br />
+souvent caus&eacute; par le bruit ou la pollution.<br />
+Une &eacute;tude r&eacute;alis&eacute;e en Grande-Bretagne sur 20&rsquo;000 individus a observ&eacute; que les personnes qui passent<br />
+au moins 2 heures par semaine en contact avec la nature rapportent 1.6 fois plus fr&eacute;quemment &ecirc;tre<br />
+en bonne sant&eacute;. En Suisse, une &eacute;tude sur 8 ans et plus de 4 millions de personnes a r&eacute;v&eacute;l&eacute; un taux<br />
+de mortalit&eacute; r&eacute;duit de 5% chez les personnes r&eacute;sidant &agrave; moins de 500 m&egrave;tres d&rsquo;un parc ou d&rsquo;une<br />
+zone de verdure. La proximit&eacute; avec les espaces verts facilite une activit&eacute; physique r&eacute;guli&egrave;re, qui<br />
+contribue notamment &agrave; r&eacute;duire les risques d&rsquo;ob&eacute;sit&eacute;, de maladies cardiovasculaires, et de d&eacute;pression.<br />
+Ces espaces contribuent &agrave; cr&eacute;er un environnement agr&eacute;able qui incite les individus &agrave; se d&eacute;placer &agrave;<br />
+pied ou &agrave; bicyclette. Ils forment &eacute;galement des lieux de rencontre et de loisirs qui favorisent la mixit&eacute;<br />
+sociale et pr&eacute;viennent l&rsquo;isolement.<br />
+Pour renforcer le lien entre biodiversit&eacute; et sant&eacute;, les actions suivantes seront d&eacute;ploy&eacute;es :<br />
+&bull; Mat&eacute;rialiser les liens entre services &eacute;cosyst&eacute;miques et sant&eacute;, par exemple &agrave; travers l&rsquo;accessibilit&eacute; des<br />
+espaces naturels pour la d&eacute;tente, ou la r&eacute;silience face aux &eacute;v&egrave;nements m&eacute;t&eacute;orologiques extr&ecirc;mes.<br />
+&bull; Collaborer avec l&rsquo;Association Genevoise des M&eacute;decins pour &eacute;tablir des ordonnances prescrivant<br />
+explicitement des visites et immersions dans des espaces naturels.<br />
+&bull; Cartographier la pr&eacute;sence de plantes allerg&egrave;nes et de vecteurs de maladies (p.ex. tiques, moustique<br />
+tigre, etc.)<br />
+&bull; Mesurer l&rsquo;effet d&rsquo;un projet de renaturation ou v&eacute;g&eacute;talisation urbaine sur l&rsquo;&eacute;tat de sant&eacute; physique et<br />
+mentale des riverains (en collaboration avec le Bus Sant&eacute; des H&ocirc;pitaux Universitaires de Gen&egrave;ve).<br />
+&bull; En lien avec le champ d&rsquo;action 4 (Arbres) et le projet NOS-ARBRES, participer activement &agrave; la<br />
+d&eacute;finition des plans de v&eacute;g&eacute;talisation communaux pour planter des arbres prioritairement aux endroits<br />
+qui manquent de fra&icirc;cheur et d&rsquo;espaces de d&eacute;tente, pour att&eacute;nuer les pics de chaleur et am&eacute;liorer la<br />
+qualit&eacute; de vie des habitants.<br />
+&bull; Pr&eacute;ciser la &ldquo;R&eacute;partition g&eacute;ographique des espaces verts en zone urbaine&rdquo; (m&eacute;thodologie &agrave; d&eacute;finir),<br />
+un indicateur retenu pour suivre la mise en &oelig;uvre du Plan cantonal de promotion de la sant&eacute; et de<br />
+pr&eacute;vention 2019-2023.<br />
+Des liens seront &eacute;galement &agrave; mettre en place avec les projets Constellations Urbaines Vertes (CUV)<br />
+et CoolCity.</p>',
+'indicator' => 'Bilan des actions mises en œuvre en relation avec la santé',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 2,
+'created_at' => '2020-04-06 07:27:56',
+'updated_at' => '2020-04-06 07:27:56',
+),
+107 => 
+array (
+'id' => 109,
+'code' => '12.3',
+'label' => 'Faire de la biodiversité un des leviers de la résilience / Appliquer le “réflexe biodiversité”',
+'image' => NULL,
+'description' => '<p>La protection et le d&eacute;veloppement de la biodiversit&eacute; sont des enjeux transversaux qui s&rsquo;inscrivent dans<br />
+de nombreux domaines, il est donc indispensable de lier les enjeux de la biodiversit&eacute; aux grandes<br />
+th&eacute;matiques du d&eacute;veloppement durable et le climat en coh&eacute;rence avec la politique cantonale, les<br />
+orientations strat&eacute;giques et les plans sectoriels.<br />
+Les actions pr&eacute;vues doivent permettre d&rsquo;int&eacute;grer la biodiversit&eacute; dans une gouvernance de la transition<br />
+&eacute;cologique. Il s&rsquo;agira notamment de :<br />
+- Solliciter le P&ocirc;le de transition &eacute;cologique pour &eacute;lever les enjeux vitaux de la biodiversit&eacute; et du climat<br />
+au niveau de ceux de l&rsquo;&eacute;conomie et l&rsquo;&eacute;nergie. Ce p&ocirc;le regroupant notamment des repr&eacute;sentants<br />
+climat, environnement et biodiversit&eacute; aura la charge de coordonner les dispositifs en faveur de la<br />
+transition &eacute;cologique. Il devra par ailleurs avoir un poids d&eacute;cisionnel dans le cas de pes&eacute;e d&rsquo;int&eacute;r&ecirc;ts<br />
+dans les projets d&rsquo;am&eacute;nagement du territoire.<br />
+- Promouvoir une culture commune de la biodiversit&eacute; au sein de l&rsquo;administration cantonale et adopter<br />
+le r&eacute;flexe biodiversit&eacute; pour la gestion des parcelles appartenant &agrave; l&rsquo;Etat (Etat exemplaire).<br />
+- Instaurer un processus permettant d&rsquo;identifier les impacts en mati&egrave;re de biodiversit&eacute; d&rsquo;un projet de<br />
+loi avant son traitement parlementaire. La Chancellerie pourrait d&eacute;finir un processus qui permette<br />
+&agrave; l&rsquo;office charg&eacute; de la biodiversit&eacute; de participer &agrave; l&rsquo;&eacute;laboration de nouvelles lois (ou &agrave; la mise &agrave; jour<br />
+des lois existantes) et identifier l&rsquo;outil de suivi pour relever le nombre de consultations de l&rsquo;OCAN<br />
+en tant que co-rapporteur.<br />
+- Inscrire les enjeux de biodiversit&eacute; dans les politiques publiques.<br />
+- Proposer au Conseil d&rsquo;Etat une m&eacute;thodologie d&rsquo;examen sous l&rsquo;angle biodiversit&eacute; des strat&eacute;gies<br />
+sectorielles en vue de leur renouvellement.<br />
+- Renforcer la repr&eacute;sentation de la biodiversit&eacute; dans les instances appropri&eacute;es.<br />
+- Inscrire des orientations d&rsquo;am&eacute;nagement du territoire en faveur de la coh&eacute;rence &eacute;cologique d&egrave;s les<br />
+phases de planification directrices.<br />
+- Inscrire des prescriptions/pr&eacute;conisations sp&eacute;cifiques dans tous les projets d&rsquo;am&eacute;nagement du<br />
+territoire (y compris la prise en compte de la biodiversit&eacute; &laquo; grise &raquo; en phase chantier , planification<br />
+de chantiers respectueuse de la biodiversit&eacute;).<br />
+- Adapter les normes techniques faisant obstacle &agrave; la biodiversit&eacute; (VSS, BPA, etc.).</p>',
+'indicator' => 'Description qualitative de la mise en œuvre de ces actions',
+'R' => 1,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 2,
+'created_at' => '2020-04-06 07:29:20',
+'updated_at' => '2020-04-06 07:29:20',
+),
+108 => 
+array (
+'id' => 110,
+'code' => '12.4',
+'label' => 'Inclure les services écosystémiques dans les outils d’évaluation',
+'image' => NULL,
+'description' => '<p>Le canton de Gen&egrave;ve, s&rsquo;est dot&eacute; d&rsquo;un outil d&rsquo;&eacute;valuation environnemental strat&eacute;gique qui vise &agrave; orienter<br />
+les grands projets vers des variantes qui minimisent les impacts environnementaux. L&rsquo;application de<br />
+l&rsquo;outil Evaluation Environnementale Strat&eacute;gique (EES) a montr&eacute; ses limites dans plusieurs projets<br />
+d&rsquo;infrastructures routi&egrave;res dans le canton (exemples : TLac, Gen&egrave;ve Sud). Ces projets, sur le plan<br />
+environnemental, ont souffert de l&rsquo;absence d&rsquo;une v&eacute;ritable analyse prospective, ou d&rsquo;aides &agrave; la d&eacute;cision<br />
+sur les plans techniques et politiques (quelle plus-value, quelles pertes, quelles opportunit&eacute;s ?)<br />
+L&rsquo;int&eacute;gration des services &eacute;cosyst&eacute;miques rendus par la biodiversit&eacute; (esp&egrave;ces et &eacute;cosyst&egrave;mes) dans<br />
+l&rsquo;outil EES &ndash; ainsi que dans les Etudes d&rsquo;Impact sur l&rsquo;Environnement (EIE) &ndash; permettrait d&rsquo;int&eacute;grer<br />
+des dimensions environnementales non-trait&eacute;es classiquement jusqu&rsquo;ici dans l&rsquo;analyse et les pes&eacute;es<br />
+d&rsquo;int&eacute;r&ecirc;ts des projets, par exemple les valeurs culturelles et immat&eacute;rielles li&eacute;es &agrave; la biodiversit&eacute; et<br />
+au paysage.<br />
+Des m&eacute;thodes d&rsquo;&eacute;valuation des services &eacute;cosyst&eacute;miques sont en cours d&rsquo;analyse dans le cadre<br />
+des travaux men&eacute;s par GE-21 et permettront d&rsquo;orienter le choix sur la m&eacute;thode la plus adapt&eacute;e au<br />
+contexte genevois.</p>',
+'indicator' => 'Production d’un guide méthodologique et cartographique pour assurer l’intégration des SE dans les
+EES, voire les EIE.',
+'R' => 1,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 2,
+'created_at' => '2020-04-06 07:31:09',
+'updated_at' => '2020-04-06 07:31:09',
+),
+109 => 
+array (
+'id' => 111,
+'code' => '12.5',
+'label' => 'Compenser les pertes de biodiversité',
+'image' => NULL,
+'description' => '<p>Il est imp&eacute;ratif de conforter la biodiversit&eacute; comme donn&eacute;e structurante, notamment dans les projets<br />
+d&rsquo;am&eacute;nagement du territoire. Il s&rsquo;agira de rappeler constamment aux porteurs de projets soumis &agrave;<br />
+autorisation, les pr&eacute;conisations visant &agrave; &eacute;viter les atteintes &agrave; la biodiversit&eacute;, &agrave; d&eacute;faut &agrave; les r&eacute;duire et,<br />
+en dernier recours, &agrave; remplacer les impacts r&eacute;siduels n&rsquo;ayant pu &ecirc;tre &eacute;vit&eacute;s ou r&eacute;duits pour tendre<br />
+vers la z&eacute;ro perte nette de biodiversit&eacute;.<br />
+Au-del&agrave; de cela, la l&eacute;gislation (LPN art. 18b) demande aux cantons de veiller &agrave; mettre en place des<br />
+compensations &eacute;cologiques dans les r&eacute;gions o&ugrave; l&rsquo;exploitation du sol est intensive &agrave; l&rsquo;int&eacute;rieur et &agrave;<br />
+l&rsquo;ext&eacute;rieur des localit&eacute;s. Afin de positionner celles-ci le plus judicieusement possible sur le territoire,<br />
+il est indispensable que le canton se dote d&rsquo;outils performants dans ce domaine (voir action 11.6). La<br />
+compensation &eacute;cologique est r&eacute;alis&eacute;e selon trois principes, l&rsquo;&eacute;quivalence, la p&eacute;rennit&eacute; des mesures<br />
+sur la base de la dur&eacute;e des atteintes, et la proximit&eacute;.<br />
+Deux possibilit&eacute;s de compensation sont envisageables:<br />
+&bull; Directement par le porteur de projet.<br />
+&bull; Par acquisition d&rsquo;unit&eacute;s de compensation dans le cadre d&rsquo;un site naturel de compensation mis en<br />
+place et entretenu par un partenaire public ou priv&eacute; (notamment dans les gravi&egrave;res, qui ont un<br />
+potentiel &eacute;lev&eacute; dans ce domaine). On parlera de &ldquo;Coldspot&rdquo; dans &lsquo;infrastructure &eacute;cologique ou de<br />
+points de friction.<br />
+La planification de ces compensations pourra s&rsquo;appuyer sur l&rsquo;infrastructure &eacute;cologique pour identifier<br />
+les sites en favorisant les continuit&eacute;s &eacute;cologiques. Les mesures de compensation devront aussi &ecirc;tre<br />
+accompagn&eacute;es d&rsquo;un dispositif de suivi et de contr&ocirc;le sur le long terme pour garantir leurs effets.<br />
+Dans cette d&eacute;marche, l&rsquo;OCAN a d&eacute;j&agrave; mis en place une proc&eacute;dure pour int&eacute;grer des mesures<br />
+&ldquo;biodiversit&eacute;&rdquo; &agrave; l&rsquo;amont des projets et lors des pr&eacute;avis.</p>',
+'indicator' => '% de compensation écologique sur l’ensemble des zones déclassées',
+'R' => 1,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:32:30',
+'updated_at' => '2020-04-06 07:32:30',
+),
+110 => 
+array (
+'id' => 112,
+'code' => '12.6',
+'label' => 'Favoriser l’émergence de financements innovants et cohérents',
+'image' => NULL,
+'description' => '<p>La n&eacute;cessit&eacute; de sensibiliser aux enjeux, voire de mettre un terme &agrave; la perte de biodiversit&eacute;, doit<br />
+mobiliser des moyens financiers qui &agrave; ce jour d&eacute;passent les dispositifs traditionnels. Ceci pourrait<br />
+passer &agrave; terme par une valorisation des services &eacute;cosyst&eacute;miques. Il s&rsquo;agit donc de compl&eacute;ter les<br />
+dispositifs de financement actuels par d&rsquo;autres sources/leviers innovants.<br />
+Pour ceux d&eacute;j&agrave; existants, il s&rsquo;agit d&rsquo;optimiser leur utilisation afin de permettre la tra&ccedil;abilit&eacute; des moyens<br />
+et des actions d&eacute;j&agrave; financ&eacute;es par l&rsquo;Etat en faveur de la biodiversit&eacute;.<br />
+Il s&rsquo;agira notamment de d&eacute;velopper les actions suivantes :<br />
+- Mettre en place le monitoring des investissements engag&eacute;s pour la mise en &oelig;uvre du Plan<br />
+Biodiversit&eacute; 2020-2023.<br />
+- Lancer le Fonds en faveur de la biodiversit&eacute; et d&eacute;finir pr&eacute;cis&eacute;ment son fonctionnement, ses crit&egrave;res<br />
+d&rsquo;octroi de soutien, ses modalit&eacute;s de suivi des d&eacute;penses, etc.<br />
+- Asseoir un engagement politique durable et global en mettant notamment en &eacute;vidence l&rsquo;ensemble<br />
+des ressources que l&rsquo;&Eacute;tat souhaite consacrer &agrave; la biodiversit&eacute; A l&rsquo;heure actuelle, la part du budget<br />
+annuel du Canton d&eacute;di&eacute;e &agrave; la biodiversit&eacute; (CHF 6 mio) repr&eacute;sente moins de 0,1% du budget cantonal.<br />
+- Identifier au sein des diff&eacute;rentes conventions-programmes de la Conf&eacute;d&eacute;ration, non directement<br />
+li&eacute;es &agrave; la biodiversit&eacute;, les subventions ayant une influence sur la biodiversit&eacute; et analyser leurs effets.<br />
+Solliciter le cas &eacute;ch&eacute;ant, une adaptation ou des fonds suppl&eacute;mentaires aupr&egrave;s de la Conf&eacute;d&eacute;ration<br />
+(ie. Projet de loi)<br />
+- Mieux choisir / prioriser les mesures en d&eacute;finissant notamment des crit&egrave;res d&rsquo;octroi bas&eacute;s sur une<br />
+v&eacute;ritable strat&eacute;gie (crit&egrave;re d&rsquo;efficience).<br />
+- Assurer un reporting ad&eacute;quat des mesures financ&eacute;es (Canton / Conf&eacute;d&eacute;ration).<br />
+- S&rsquo;appuyer sur la LBio et le RBio.<br />
+D&rsquo;autres mesures innovantes devront &ecirc;tre &eacute;tudi&eacute;es, comme par exemple:<br />
+- La notion d&rsquo;externalit&eacute; positive pour la reconnaissance des services &eacute;cosyst&eacute;miques rendus par<br />
+certains espaces.<br />
+- Une incitation &eacute;conomique pour favoriser un changement de comportement et pr&eacute;server la<br />
+biodiversit&eacute;.<br />
+- La r&eacute;servation d&rsquo;un pourcent (1% biodiversit&eacute;) sur le co&ucirc;t d&rsquo;une construction pour financer des<br />
+actions en faveur de la biodiversit&eacute;, ou la d&eacute;taxation des projets immobiliers conformes &agrave; la r&egrave;gle<br />
+des 30% de superficie d&eacute;volus &agrave; l&rsquo;infrastructure &eacute;cologique.<br />
+- Taxe biodiversit&eacute;.</p>
+
+<p>- L&rsquo;implication renforc&eacute;e du secteur philanthropique, Gen&egrave;ve &eacute;tant particuli&egrave;rement bien<br />
+dot&eacute;e en la mati&egrave;re avec plus de 24 fondations pour 10&rsquo;000 habitants et plus de CHF 125<br />
+millions de patrimoine d&eacute;di&eacute; &agrave; la protection de l&rsquo;environnement (https://www.ge.ch/document/<br />
+rapport-fondations-suisse-2019). La Direction g&eacute;n&eacute;rale du d&eacute;veloppement &eacute;conomique, de<br />
+la recherche et de l&rsquo;innovation (D&eacute;partement du d&eacute;veloppement &eacute;conomique) tient d&rsquo;ailleurs<br />
+&agrave; jour une cartographie de ces acteurs https://sitg.maps.arcgis.com/apps/MapJournal/index.<br />
+html?appid=9895b4cab37b4e319bcfae9fa8e3b99b</p>',
+'indicator' => 'Mise en place d’outils alternatifs aux incitations négatives',
+'R' => 1,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 2,
+'created_at' => '2020-04-06 07:34:19',
+'updated_at' => '2020-04-06 07:34:19',
+),
+111 => 
+array (
+'id' => 113,
+'code' => '12.7',
+'label' => 'Promouvoir la biodiversité dans la solidarité internationale',
+'image' => NULL,
+'description' => '<p>Le d&eacute;partement veille &agrave; encourager des projets de solidarit&eacute; internationale touchant &agrave; la biodiversit&eacute;<br />
+(Lbio art. 9). La loi applicable en mati&egrave;re de solidarit&eacute; internationale est la Loi sur le financement<br />
+de la solidarit&eacute; internationale (LFSI) dont l&rsquo;objectif est de mener une politique active en faveur de la<br />
+solidarit&eacute; internationale. Pour concr&eacute;tiser cet objectif, la R&eacute;publique et canton de Gen&egrave;ve consacre<br />
+au moins 0,7% de son budget annuel de fonctionnement &agrave; la solidarit&eacute; internationale, particuli&egrave;rement<br />
+en soutenant des projets de coop&eacute;ration, d&rsquo;aide au d&eacute;veloppement, de promotion de la paix et de<br />
+d&eacute;fense des droits sociaux et de la personne. La coordination des actions men&eacute;es rel&egrave;ve du Service<br />
+de la solidarit&eacute; internationale (SSI).<br />
+Les deux services SSI et OCAN devront collaborer pour (mieux) int&eacute;grer la biodiversit&eacute; dans les<br />
+projets soutenus par le SSI dans le cadre de ses pr&eacute;rogatives :<br />
+Soutenir la mise en &oelig;uvre:<br />
+1. du Plan d&rsquo;actions d&eacute;veloppement durable 2019-2023 (Modes de production et de consommation)<br />
+2. du document Engagement du canton de Gen&egrave;ve dans la solidarit&eacute;́ internationale (2018- 2023).<br />
+Les actions pourront intervenir &agrave; deux niveaux:<br />
+1. Expertise biodiversit&eacute; pour les projets d&eacute;pos&eacute;s pour financements (renforcer les opportunit&eacute;s et<br />
+&eacute;viter les impacts n&eacute;gatifs)<br />
+2. Proposition de sujets / sites n&eacute;cessitant des actions, conseils en mati&egrave;re de biodiversit&eacute; pour la<br />
+pr&eacute;paration de projets</p>
+
+<p>&nbsp;</p>',
+'indicator' => 'Réalisations en matière de biodiversité dans des projets de solidarité internationale soutenus par le
+canton de Genève.',
+'R' => 1,
+'A' => 1,
+'E' => 1,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:35:38',
+'updated_at' => '2020-04-06 07:35:38',
+),
+112 => 
+array (
+'id' => 114,
+'code' => '12.8',
+'label' => 'Organiser la mise en œuvre du plan et partager les bonnes pratiques',
+'image' => NULL,
+'description' => '<p>La coordination entre les acteurs et la coh&eacute;sion des actions en faveur de la biodiversit&eacute; &agrave; diff&eacute;rentes<br />
+&eacute;chelles du territoire et de la r&eacute;gion sont essentielles. A cet effet, l&rsquo;OCAN coordonnera avec les acteurs<br />
+du territoire les actions suivantes :<br />
+- Nommer un r&eacute;f&eacute;rent d&eacute;di&eacute; biodiversit&eacute; au sein de l&rsquo;OCAN, garant du suivi de la mise en &oelig;uvre<br />
+des plans biodiversit&eacute; successifs. Il s&rsquo;agit d&rsquo;un &eacute;l&eacute;ment essentiel pour coordonner et soutenir les<br />
+acteurs du territoire, et faciliter et valoriser la mise en &oelig;uvre des bonnes pratiques.<br />
+- Cr&eacute;er le r&eacute;flexe biodiversit&eacute; en limitant les pressions et en renfor&ccedil;ant les synergies entre les acteurs<br />
+du territoire.<br />
+- Accompagner les &eacute;tablissements publics autonomes dans une d&eacute;marche d&rsquo;int&eacute;gration d&rsquo;objectifs<br />
+de biodiversit&eacute; dans les contrats de prestation et les conventions d&rsquo;objectifs, tout en valorisant les<br />
+actions d&eacute;j&agrave; entreprises par ces acteurs embl&eacute;matiques. Les accompagner &agrave; la mise en place<br />
+d&rsquo;actions nouvelles dans leur p&eacute;rim&egrave;tre d&rsquo;activit&eacute; et/ou &agrave; la participation &agrave; des initiatives en faveur<br />
+de la biodiversit&eacute;.<br />
+- Accompagner les acteurs de la Gen&egrave;ve internationale (OI, ONG, Missions diplomatiques) pour<br />
+l&rsquo;exploration de possibles collaborations ou d&rsquo;&eacute;changes de bonnes pratiques. Valoriser les actions<br />
+d&eacute;j&agrave; entreprises et &eacute;valuer la possibilit&eacute; d&rsquo;int&eacute;grer des objectifs de biodiversit&eacute; dans une &laquo;charte<br />
+environnementale&raquo;. Les accompagner &agrave; la mise en place d&rsquo;actions nouvelles dans leur p&eacute;rim&egrave;tre<br />
+d&rsquo;activit&eacute; et/ou &agrave; la participation &agrave; des initiatives en faveur de la biodiversit&eacute;. (lien FA07 solidarit&eacute;<br />
+internationale)<br />
+- Utiliser et renforcer le r&ocirc;le des instances existantes (notamment la CCDB et la plateforme GE-21).<br />
+Concernant la CCDB il s&rsquo;agira d&rsquo;assurer le suivi des actions, &eacute;valuer leurs effets, impulser la large<br />
+information pr&eacute;vue par la loi et soutenir la convergence des partenaires.<br />
+- Initier la cr&eacute;ation du Forum des acteurs de la Biodiversit&eacute; et des milieux int&eacute;ress&eacute;s &agrave; l&rsquo;&eacute;chelle<br />
+romande et organiser la collaboration avec le Forum Biodiversit&eacute; Suisse. Ce forum pourrait s&rsquo;engager<br />
+&agrave; promouvoir la recherche en biodiversit&eacute;, et &agrave; entretenir le dialogue et la collaboration entre les<br />
+scientifiques, la soci&eacute;t&eacute; et les d&eacute;cideurs dans l&rsquo;administration, la politique et l&rsquo;&eacute;conomie. GE-EN-<br />
+VIE et le Geneva-Lab pourraient aider &agrave; mettre en place une telle structure de mani&egrave;re novatrice<br />
+et participative (https://www.ge.ch/dossier/geneve-lab).</p>',
+'indicator' => 'Évaluation de la pertinence des actions énumérées et financement éventuel de mandats ciblés',
+'R' => 1,
+'A' => 1,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:37:02',
+'updated_at' => '2020-04-06 07:37:02',
+),
+113 => 
+array (
+'id' => 115,
+'code' => '12.9',
+'label' => 'Définir des indicateurs pour mesurer l’impact de la Stratégie Biodiversité Genève 2030',
+'image' => NULL,
+'description' => '<p>Pour suivre l&rsquo;&eacute;volution de la biodiversit&eacute; et v&eacute;rifier l&rsquo;efficacit&eacute; des actions d&eacute;ploy&eacute;es (outil d&rsquo;aide &agrave; la<br />
+d&eacute;cision), un syst&egrave;me d&rsquo;indicateurs sera mis en place en se basant sur 4 crit&egrave;res principaux :<br />
+- Pertinence : les indicateurs mesurent une composante sur laquelle les actions des plans biodiversit&eacute;<br />
+successifs devraient avoir un impact.<br />
+- Disponibilit&eacute; : id&eacute;alement, choisir des indicateurs dont les relev&eacute;s sont disponibles d&egrave;s 2018, pour<br />
+pouvoir mesurer l&rsquo;&eacute;tat initial (2019), interm&eacute;diaire (2023 et 2027) et final (2030).Ils devraient aussi<br />
+&ecirc;tre mesurables &agrave; l&rsquo;&eacute;chelle des communes, gr&acirc;ce &agrave; l&rsquo;Observatoire du r&eacute;seau GE-EN-VIE.<br />
+- Faisabilit&eacute; : la collecte de l&rsquo;information pour les indicateurs ne devrait pas &ecirc;tre trop difficile ou<br />
+co&ucirc;teuse.<br />
+- Sensibilit&eacute; : les indicateurs doivent &ecirc;tre assez sensibles pour d&eacute;tecter des changements significatifs<br />
+&agrave; l&rsquo;horizon 2030.<br />
+Dans le domaine de la biodiversit&eacute;, l&rsquo;Universit&eacute; de Gen&egrave;ve, l&rsquo;HEPIA et l&rsquo;OCAN collaborent d&eacute;j&agrave; depuis<br />
+plusieurs ann&eacute;es &agrave; travers la plateforme GE-21. Un groupe de travail indicateurs a entam&eacute; en 2019<br />
+des r&eacute;unions pour coordonner les diff&eacute;rents projets de recherche li&eacute;s &agrave; des indicateurs, notamment<br />
+pour le suivi de l&rsquo;&eacute;volution de la biodiversit&eacute; (action 11.4). Ce travail doit &ecirc;tre poursuivi pour aboutir<br />
+&agrave; une liste d&rsquo;indicateurs permettant de mesurer l&rsquo;effet de la SBG-2030. Le r&eacute;f&eacute;rentiel d&rsquo;indicateurs<br />
+propos&eacute;s, ainsi que les bilans &eacute;labor&eacute;s sur la base de ces indicateurs, seront soumis &agrave; l&rsquo;appr&eacute;ciation<br />
+de la CCDB dans son r&ocirc;le d&rsquo;accompagnement du suivi de la mise en &oelig;uvre de la SBG-2030 et des<br />
+plans biodiversit&eacute; qui en d&eacute;coulent.<br />
+L&rsquo;approche DPSIR permet d&rsquo;identifier et de r&eacute;partir les indicateurs dans cinq cat&eacute;gories: &ldquo;Drivers/driving<br />
+forces&rdquo; = forces, &ldquo;Pressures&rdquo; = pressions, &ldquo;State&rdquo; = &eacute;tat, &ldquo;Impact&rdquo; = impacts et &ldquo;Responses&rdquo; = r&eacute;ponses).<br />
+Cette classification des indicateurs r&eacute;v&egrave;le les relations de causalit&eacute; entre les activit&eacute;s humaines<br />
+et l&rsquo;environnement. Cette approche &ndash; &eacute;galement retenue par l&rsquo;Office f&eacute;d&eacute;ral de l&rsquo;environnement<br />
+&ndash; permettra de suivre l&rsquo;effet des plans d&rsquo;action successifs et l&rsquo;atteinte des objectifs de la SBG-<br />
+2030. Par exemple, les diff&eacute;rents indicateurs relatifs aux services &eacute;cosyst&eacute;miques font partie de la<br />
+cat&eacute;gorie &laquo; impact &raquo; ; ce sont ceux utilis&eacute;s &ndash; notamment par la Plateforme intergouvernementale<br />
+sur la biodiversit&eacute; et les services &eacute;cosyst&eacute;miques (IPBES) &ndash; pour communiquer avec la population<br />
+&agrave; propos de la biodiversit&eacute;.<br />
+En outre, pour la for&ecirc;t, l&rsquo;OCAN poss&egrave;de d&eacute;j&agrave; depuis 2015 un set d&rsquo;indicateurs inspir&eacute; des indicateurs<br />
+retenus au niveau international et d&eacute;crit par l&rsquo;OFEV et les cantons dans une aide &agrave; la d&eacute;cision.</p>',
+'indicator' => 'Nombre d’indicateurs relevés à la fin de chaque législature',
+'R' => 0,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:38:30',
+'updated_at' => '2020-04-06 07:38:30',
+),
+114 => 
+array (
+'id' => 116,
+'code' => '12.10',
+'label' => 'Adopter l’approche comportementale dans la compréhension et la résolution des enjeux de préservation de la biodiversité',
+'image' => NULL,
+'description' => '<p>Les facteurs humains et les comportements des populations, des &eacute;lus et des acteurs industriels<br />
+sont des enjeux transversaux aux 12 domaines de la Strat&eacute;gie Biodiversit&eacute; Gen&egrave;ve 2030. Le but de<br />
+cette action est d&rsquo;utiliser les outils scientifiques et interventionnels de l&rsquo;approche comportementale<br />
+(behavioral insights) pour comprendre et agir sur ces facteurs humains et comportementaux pour<br />
+accompagner la mise en &oelig;uvre du plan d&rsquo;actions. Pour ce faire, les actions suivantes sont pr&eacute;vues :<br />
+&bull; Accompagnement de la traduction de la SBG-2030 en Plan Biodiversit&eacute; en int&eacute;grant pour chaque<br />
+enjeu &eacute;cosyst&eacute;mique une r&eacute;flexion, et si n&eacute;cessaire une mod&eacute;lisation, des aspects humains et<br />
+comportementaux.<br />
+&bull; Accompagner les acteurs (&eacute;tat, associations, &eacute;tablissements publics autonomes) dans la conception<br />
+et la mise en &oelig;uvre de strat&eacute;gies d&rsquo;interventions comportementales qui visent &agrave; atteindre les objectifs<br />
+d&eacute;finis dans le PlanBiodiversit&eacute;<br />
+&bull; Pr&eacute;voir syst&eacute;matiquement une &eacute;valuation des strat&eacute;gies d&rsquo;interventions comportementales mises<br />
+en place (en lien avec les outils analytiques du domaine n&deg;11)<br />
+&bull; Nommer un r&eacute;f&eacute;rent d&eacute;di&eacute; &agrave; l&rsquo;approche comportementale au sein de l&rsquo;OCAN ou du DT</p>',
+'indicator' => 'Validation de chaque point par des indicateurs quantifiables :
+• nombre de domaines qui ont intégrés l’approche comportementale
+• nombre d’interventions conçues selon cette approche
+• proportion des interventions mises en place et évaluées',
+'R' => 0,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 2,
+'created_at' => '2020-04-06 07:39:44',
+'updated_at' => '2020-04-06 07:39:44',
+),
+115 => 
+array (
+'id' => 117,
+'code' => '12.11',
+'label' => 'Prendre en compte la biodiversité dans la politique d’achat des collectivités publiques',
+'image' => NULL,
+'description' => '<p>Veiller &agrave; ce que les achats publics selon les principes du Guide des achats professionnels responsables,<br />
+pr&eacute;voient sous aspects environnementaux la prise en compte des effets sur la biodiversit&eacute; du bien<br />
+en question, sur toute sa cha&icirc;ne de valeur.<br />
+Inscrire ces &eacute;l&eacute;ments dans les crit&egrave;res https://www.achats-responsables.ch/leguide/parse/outils/4/5 :<br />
+Texte actuel : &laquo;Ces crit&egrave;res portent sur les moyens mis en &oelig;uvre par le fournisseur pour limiter les<br />
+impacts environnementaux sur les sites de production. Il est recommand&eacute; de formuler ces principes<br />
+sous forme d&rsquo;engagements &agrave; s&rsquo;am&eacute;liorer.&raquo;<br />
+Modification propos&eacute;e &laquo; les impacts environnementaux, notamment sur la biodiversit&eacute;, en particulier<br />
+sur.. : &raquo;<br />
+Inscrire ces &eacute;l&eacute;ments dans le crit&egrave;re ci-dessous mentionn&eacute; d&rsquo;&eacute;ligibilit&eacute; comme fournisseur de la<br />
+centrale commune d&rsquo;achats : https://www.ge.ch/node/12243/impression<br />
+Texte actuel : &laquo;Fournir une &laquo; D&eacute;claration (...) s&rsquo;engageant &agrave; respecter les principes du d&eacute;veloppement<br />
+durable &raquo;<br />
+Ajout propos&eacute; &laquo; notamment en mati&egrave;re de biodiversit&eacute; &raquo;.<br />
+Cons&eacute;quence de l&rsquo;application de ce crit&egrave;re : s&rsquo;il n&rsquo;est pas garanti que le bien n&rsquo;a pas d&rsquo;impact n&eacute;gatif<br />
+ou un impact n&eacute;gligeable sur la biodiversit&eacute;, il ne peut &ecirc;tre achet&eacute; par une collectivit&eacute; publique.<br />
+Exemples : produits contenant de l&rsquo;huile de palme ou du soja cultiv&eacute; suite &agrave; la destruction de la for&ecirc;t<br />
+tropicale, un usage excessif de pesticides (interdits en Suisse) et/ou un mode de culture destructeur<br />
+du sol ; importations de bois tropical non certifi&eacute; FSC ou apparent&eacute;, etc.<br />
+Mesure : introduire ces pr&eacute;cisions, d&eacute;livrer des instructions/exemples sur comment les v&eacute;rifier et quels<br />
+sont les produits probl&eacute;matiques resp. alternatifs, organiser des formations ad hoc</p>',
+'indicator' => 'Nombre d’achats concernés et où l’absence d’impact négatif ou un impact négatif négligeable a été
+établi',
+'R' => 1,
+'A' => 0,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => 1,
+'created_at' => '2020-04-06 07:40:58',
+'updated_at' => '2020-04-06 07:40:58',
+),
+116 => 
+array (
+'id' => 118,
+'code' => '12.12',
+'label' => 'Interroger la mise en œuvre opérationnelle de la Stratégie Biodiversité Genève 2030',
+'image' => NULL,
+'description' => '<p>Une structure para&eacute;tatique pour la biodiversit&eacute; &agrave; l&rsquo;instar de l&rsquo;Agence fran&ccedil;aise pour la biodiversit&eacute;. Une<br />
+premi&egrave;re en Suisse. Cette structure aurait pour mission d&rsquo;assurer la mise en &oelig;uvre op&eacute;rationnelle<br />
+de la Strat&eacute;gie Biodiversit&eacute; Gen&egrave;ve 2030 (SBG-2030). Elle viendrait en appui aux acteurs publics<br />
+mais travaillerait &eacute;galement en partenariat &eacute;troit avec les acteurs priv&eacute;s socio-&eacute;conomiques. Elle<br />
+aurait &eacute;galement vocation &agrave; aller &agrave; la rencontre du public pour mobiliser les citoyens en faveur de la<br />
+biodiversit&eacute;. Un r&eacute;el op&eacute;rateur ind&eacute;pendant pour coordonner et accompagner les plans d&rsquo;actions et<br />
+les d&eacute;marches initi&eacute;es &agrave; l&rsquo;&eacute;chelle du territoire genevois. Cette structure pourrait se voir rattacher les<br />
+comp&eacute;tences, les outils et une partie des financements existants. Un savoir-faire ainsi regroup&eacute; dans<br />
+l&rsquo;action pour co-enclencher la transition &eacute;cologique et r&eacute;pondre &agrave; l&rsquo;urgence climatique.<br />
+La forme juridique &agrave; &eacute;valuer pourrait &ecirc;tre une fondation de droit priv&eacute; r&eacute;gie par les articles 80 et<br />
+suivants du code civil suisse ou un &eacute;tablissement public autonome. Dans les 2 cas, cette structure<br />
+serait sous tutelle de l&rsquo;Etat, ses objectifs et ses activit&eacute;s pourraient &ecirc;tre conclus avec ce dernier par<br />
+le biais d&rsquo;un contrat d&rsquo;objectifs et de prestations. Un projet de loi ouvrant un cr&eacute;dit d&rsquo;investissement<br />
+pour la constitution d&rsquo;un capital de dotation de l&rsquo;Etat de Gen&egrave;ve en faveur de la structure pourrait<br />
+&ecirc;tre vot&eacute;. De m&ecirc;me qu&rsquo;une indemnit&eacute; mon&eacute;taire d&rsquo;exploitation pourrait &ecirc;tre fix&eacute;e au sens de l&rsquo;article<br />
+2 de la loi sur les indemnit&eacute;s et les aides financi&egrave;res, du 15 d&eacute;cembre 2005.<br />
+La gouvernance devrait &ecirc;tre repr&eacute;sentative de la diversit&eacute; des acteurs de la biodiversit&eacute; et pourrait<br />
+se d&eacute;cliner comme suit :<br />
+&bull; Conseil d&rsquo;administration ;<br />
+&bull; Conseil scientifique<br />
+&bull; Comit&eacute;s d&rsquo;orientation th&eacute;matiques pour associer les acteurs (inc. soci&eacute;t&eacute; civile)<br />
+&bull; Comit&eacute; pour la concertation citoyenne<br />
+En synth&egrave;se, il s&rsquo;agit de lancer une analyse de faisabilit&eacute; pour &eacute;valuer la pertinence de cr&eacute;er une<br />
+telle structure &agrave; l&rsquo;&eacute;chelle du canton de Gen&egrave;ve et de d&eacute;crire le mod&egrave;le, la Gouvernance, le r&ocirc;le et<br />
+les responsabilit&eacute;s de cette entit&eacute;. Il sera &eacute;galement opportun d&rsquo;&eacute;valuer si cette structure doit/peut<br />
+int&eacute;grer d&rsquo;autres th&eacute;matiques et ainsi cr&eacute;er une entit&eacute; transversale et op&eacute;rationnelle en mati&egrave;re de<br />
+transition &eacute;cologique.</p>',
+'indicator' => 'Réalisation de l’étude de faisabilité pour la création de l’Agence Biodiversité du canton de Genève',
+'R' => 0,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 12,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 2,
+'created_at' => '2020-04-06 07:42:06',
+'updated_at' => '2020-04-06 07:42:06',
+),
 ));
         
         
