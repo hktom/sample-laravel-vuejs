@@ -1,8 +1,10 @@
 <template>
-    <div class="pb5">
+    <div class="">
         <HeaderPage/>
         <!-- <router-link :to="{ name: '' }">Home</router-link> | -->
         <router-view></router-view>
+
+        <FooterPage/>
     </div>
 </template>
 <script>

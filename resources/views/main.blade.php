@@ -17,6 +17,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" href="/img/plan_biodiversite_logo.png">
 </head>
 <body>
     <div id="app">

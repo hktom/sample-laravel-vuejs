@@ -1899,6 +1899,52 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FooterPage.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderPage.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HeaderPage.vue?vue&type=script&lang=js& ***!
@@ -2024,6 +2070,107 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
@@ -2037,6 +2184,8 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
 //
 //
 //
@@ -41885,6 +42034,25 @@ exports.push([module.i, "/*!\n * Rs v1.0.0 (https://github.com/hktom/rs)\n * Cop
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#footer ul li{\n    margin: 15px 0px 15px 0px;\n    -webkit-text-decoration: underline dotted white;\n            text-decoration: underline dotted white;\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/lib/css-base.js":
 /*!*************************************************!*\
   !*** ./node_modules/css-loader/lib/css-base.js ***!
@@ -62739,6 +62907,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/lib/addStyles.js":
 /*!****************************************************!*\
   !*** ./node_modules/style-loader/lib/addStyles.js ***!
@@ -63339,6 +63537,88 @@ var e=function(){return(e=Object.assign||function(e){for(var t,r=1,s=arguments.l
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75& ***!
+  \*************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "bg-info w100 py-5", attrs: { id: "footer" } },
+    [
+      _c(
+        "div",
+        { staticClass: "w80 mauto" },
+        [
+          _c(
+            "b-row",
+            [
+              _c("b-col", { attrs: { cols: "4" } }, [
+                _c("h4", { staticClass: "white mb4" }, [
+                  _vm._v("Plan Biodiversité 2020-2023 "),
+                  _c("br"),
+                  _vm._v("\nde la Stratégie Biodiversité Genève 2030")
+                ]),
+                _vm._v(" "),
+                _c("img", {
+                  staticClass: "w60 cover",
+                  attrs: { src: "/img/logo_white.png" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("b-col", { attrs: { cols: "4" } }, [
+                _c("h4", { staticClass: "white" }, [_vm._v("Menu")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "list-none" }, [
+                  _c("li", { staticClass: "white" }, [_vm._v("Introduction")]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "white" }, [
+                    _vm._v("Champ d'application")
+                  ]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "white" }, [_vm._v("Action")]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "white" }, [_vm._v("Contact")])
+                ])
+              ]),
+              _vm._v(" "),
+              _c("b-col", { attrs: { cols: "4" } }, [
+                _c("h4", { staticClass: "white" }, [_vm._v("Suivez-nous sur")]),
+                _vm._v(" "),
+                _c("ul", { staticClass: "list-none" }, [
+                  _c("li", { staticClass: "white" }, [_vm._v("Twitter")]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "white" }, [_vm._v("Linkedin")]),
+                  _vm._v(" "),
+                  _c("li", { staticClass: "white" }, [_vm._v("Facebook")])
+                ])
+              ])
+            ],
+            1
+          )
+        ],
+        1
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderPage.vue?vue&type=template&id=199a9967&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HeaderPage.vue?vue&type=template&id=199a9967& ***!
@@ -63451,14 +63731,19 @@ var render = function() {
           "b-row",
           [
             _c("b-col", { attrs: { cols: "7" } }, [
-              _c("span", { staticClass: "fs1-5" }, [
+              _c("div", { staticClass: "fs1-5 mt10" }, [
                 _vm._v(
                   "La biodiversité c’est notre assurance vie\nface aux changements climatiques.\nIl faut en faire une priorité pour réussir\nla transition écologique."
                 )
               ])
             ]),
             _vm._v(" "),
-            _c("b-col", [_vm._v("2 of 2")])
+            _c("b-col", [
+              _c("img", {
+                staticClass: "w50 cover",
+                attrs: { src: "/img/plan_biodiversite_logo.png" }
+              })
+            ])
           ],
           1
         )
@@ -63466,7 +63751,255 @@ var render = function() {
       1
     ),
     _vm._v(" "),
-    _vm._m(0)
+    _vm._m(0),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "w100 bg-info py-5" },
+      [
+        _c(
+          "b-container",
+          [
+            _c(
+              "b-row",
+              [
+                _c("b-col", { attrs: { cols: "5" } }, [
+                  _c("h3", { staticClass: "mt15 white" }, [
+                    _vm._v("Plan Biodiversité 2020-2023 "),
+                    _c("br"),
+                    _vm._v(
+                      "\n                                de la Stratégie Biodiversité Genève 2030\n                            "
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("p", { staticClass: "white" }, [
+                    _vm._v("117 actions menées dans 12 champs d’application")
+                  ])
+                ]),
+                _vm._v(" "),
+                _c(
+                  "b-col",
+                  [
+                    _c(
+                      "b-row",
+                      [
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/1.png" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/2.png" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/3.png" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/4.png" }
+                          })
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "y2 w100" }),
+                    _vm._v(" "),
+                    _c(
+                      "b-row",
+                      [
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/5.png" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/6.png" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/7.png" }
+                          })
+                        ]),
+                        _vm._v(" "),
+                        _c("b-col", [
+                          _c("img", {
+                            staticClass: "x8",
+                            attrs: { src: "/img/8.png" }
+                          })
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ],
+      1
+    ),
+    _vm._v(" "),
+    _c(
+      "div",
+      { staticClass: "w80 mauto py-5" },
+      [
+        _c("h3", [_vm._v("Les 3 Priorités")]),
+        _vm._v(" "),
+        _c(
+          "b-row",
+          [
+            _c("b-col", { attrs: { cols: "4" } }, [
+              _c("div", { staticClass: "fs1-8" }, [_vm._v("1.")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "bold uppercase text-info" }, [
+                _vm._v(
+                  "Réhabiliter une infrastructure écologique apte à renforcer\nla biodiversité de l’ensemble du territoire"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", [
+                _vm._v(
+                  "Pour améliorer la qualité de vie, garantir le déplacement des espèces\net les services vitaux offerts par la biodiversité."
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "bold" }, [
+                _vm._v("Pourquoi c’est important")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "L’infrastructure écologique c’est le réseau de vie couvrant notre territoire, elle est\nconstituée par :\n• les réservoirs de biodiversité, les espaces où les espèces prospèrent (réserves\nnaturelles, forêts, cours d’eau, zones encore riches en nature);\n• les relais (espaces faiblement urbanisés ou exploités), où les espèces peuvent\nséjourner temporairement;\n• les corridors biologiques, qui relient les espaces précédents et permettent aux\nespèces de se déplacer."
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                [
+                  _c("b-button", { attrs: { variant: "outline-info" } }, [
+                    _vm._v("En Savoir plus")
+                  ])
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("b-col", { attrs: { cols: "4" } }, [
+              _c("div", { staticClass: "fs1-8" }, [_vm._v("2.")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "bold uppercase text-info" }, [
+                _vm._v("Renforcer les liens de la population avec la nature")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", [
+                _vm._v(
+                  "Pour mieux protéger la biodiversité\net accroître le bien-être des habitants de la région"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "bold" }, [
+                _vm._v("Pourquoi c’est important")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Une grande partie de la population vit en ville et a une idée floue de la biodiversité et n’a pas\nconscience de son importance vitale, également pour la survie des humains (notamment à\ntravers les services écosystémiques). Il est donc urgent d’accroître ces connaissances à\nl’école et dans le cadre des formations professionnelles. Il est tout aussi crucial d’encourager\nles expériences du public avec la nature, pour une meilleure appropriation des enjeux liés à la\nbiodiversité. Il s’agit d’une étape nécessaire pour que les comportements évoluent, permettant\nainsi de préserver et d’accroître la biodiversité dans la région."
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                [
+                  _c("b-button", { attrs: { variant: "outline-info" } }, [
+                    _vm._v("En Savoir plus")
+                  ])
+                ],
+                1
+              )
+            ]),
+            _vm._v(" "),
+            _c("b-col", { attrs: { cols: "4" } }, [
+              _c("div", { staticClass: "fs1-8" }, [_vm._v("3.")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "bold uppercase text-info" }, [
+                _vm._v(
+                  "Adopter le « réflexe biodiversité » dans l’aménagement\ndu territoire et garantir un État exemplaire"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", [
+                _vm._v(
+                  "Pour favoriser la biodiversité par une bonne coordination\nau sein de l’administration et entre les acteurs publics et privés"
+                )
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("div", { staticClass: "bold" }, [
+                _vm._v("Pourquoi c’est important")
+              ]),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "L’érosion de la biodiversité n’est pas un problème nouveau. Il existe depuis longtemps une\nlégislation, des règlements et des recommandations pour protéger la biodiversité et la prendre\nen compte. Cela dit, que ce soit par ignorance des enjeux de la part des acteurs du territoire\nou parce que les objectifs économiques ont souvent la priorité sur la préservation de la\nnature, force est de constater que la biodiversité dispose d’un poids relativement faible dans\nla pesée des intérêts."
+                )
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                [
+                  _c("b-button", { attrs: { variant: "outline-info" } }, [
+                    _vm._v("En Savoir plus")
+                  ])
+                ],
+                1
+              )
+            ])
+          ],
+          1
+        )
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = [
@@ -63512,8 +64045,14 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "pb5" },
-    [_c("HeaderPage"), _vm._v(" "), _c("router-view")],
+    {},
+    [
+      _c("HeaderPage"),
+      _vm._v(" "),
+      _c("router-view"),
+      _vm._v(" "),
+      _c("FooterPage")
+    ],
     1
   )
 }
@@ -78653,6 +79192,7 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history'
 });
 Vue.component('HeaderPage', __webpack_require__(/*! ./components/HeaderPage.vue */ "./resources/js/components/HeaderPage.vue")["default"]);
+Vue.component('FooterPage', __webpack_require__(/*! ./components/FooterPage.vue */ "./resources/js/components/FooterPage.vue")["default"]);
 var app = new Vue({
   el: '#app',
   components: {
@@ -78765,6 +79305,93 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/FooterPage.vue":
+/*!************************************************!*\
+  !*** ./resources/js/components/FooterPage.vue ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _FooterPage_vue_vue_type_template_id_60ff7e75___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FooterPage.vue?vue&type=template&id=60ff7e75& */ "./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75&");
+/* harmony import */ var _FooterPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FooterPage.vue?vue&type=script&lang=js& */ "./resources/js/components/FooterPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _FooterPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FooterPage.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _FooterPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _FooterPage_vue_vue_type_template_id_60ff7e75___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _FooterPage_vue_vue_type_template_id_60ff7e75___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/FooterPage.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/FooterPage.vue?vue&type=script&lang=js&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/components/FooterPage.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterPage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css& ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_template_id_60ff7e75___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterPage.vue?vue&type=template&id=60ff7e75& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_template_id_60ff7e75___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_FooterPage_vue_vue_type_template_id_60ff7e75___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 

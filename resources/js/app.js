@@ -21,6 +21,7 @@ const router = new VueRouter({
 })
 
 Vue.component('HeaderPage', require('./components/HeaderPage.vue').default);
+Vue.component('FooterPage', require('./components/FooterPage.vue').default);
 
 const app = new Vue({
     el: '#app',
