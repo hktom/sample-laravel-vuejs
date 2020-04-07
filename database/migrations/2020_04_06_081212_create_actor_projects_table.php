@@ -21,6 +21,17 @@ class CreateActorProjectsTable extends Migration
             $table->foreign('project_id')->references('id')->on('projects');
             $table->timestamps();
         });
+
+
+        Schema::table('action_financements', function (Blueprint $table) {
+            $table->foreign('actor_id')->references('id')->on('actors');
+            $table->foreign('action_id')->references('id')->on('actions');
+        });
+
+        Schema::table('budget_financements', function (Blueprint $table) {
+            $table->foreign('actor_id')->references('id')->on('actors');
+            $table->foreign('budget_id')->references('id')->on('actions');
+        });
     }
 
     /**

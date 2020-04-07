@@ -3,10 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Calendar extends Model
+class implementation extends Model
 {
-    protected $fillable = ['year_2020' ,'year_2021', 'year_2022', 'year_2023'];
+    protected $fillable = ['responsable' ,'realisator'];
 
     public function action()
     {

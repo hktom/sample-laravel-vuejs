@@ -104,21 +104,41 @@ class ActionController extends AdminController
     {
         $form = new Form(new Action());
 
-        $this->_select("project", $form)->rules('required');
-        $form->text('code', __('code'))->rules('required|unique:actions');
-        $form->text('label', __('Label'))->rules('required|unique:actions');
+        $this->_select("project", $form)->creationRules('required');
+        $form->text('code', __('code'))->creationRules('required|unique:actions');
+        $form->text('label', __('Label'))->creationRules('required|unique:actions');
 
-        $form->multipleSelect("authors", "Auteur")->options('App\User'::all()->pluck('name', 'id'));
-        $form->multipleSelect("collaborators", "Collaborateurs")->options('App\User'::all()->pluck('name', 'id'));
+        $form->multipleSelect("authors", "Auteur")->options('App\Actor'::all()->pluck('name', 'id'));
+        $form->multipleSelect("collaborators", "Collaborateurs")->options('App\Actor'::all()->pluck('name', 'id'));
 
         //$form->image('image', __('Image'));
         $form->ckeditor('description', __('Description'));
         $form->textarea('indicator', __('Indicator'));
 
-        $form->multipleSelect("Responsables", "Responsables")->options('App\Entreprise'::all()->pluck('name', 'id'));
+        $form->hasMany('caracteristics', "Caracteristiques",  function (Form\NestedForm $form) {
+            $form->text('type')->creationRules("nullable");
+            $form->text('state', 'status')->creationRules("nullable");
+            $form->text('echelle')->creationRules("nullable");
+        });
 
-        $form->multipleSelect("realisators", "Realisateurs")->options('App\Entreprise'::all()->pluck('name', 'id'));
+        $form->divider();
+        $form->hasMany('calendars', "Calendrier",  function (Form\NestedForm $form) {
+            $form->text('year_2020', '2020')->creationRules("nullable");
+            $form->text('year_2021', '2021')->creationRules("nullable");
+            $form->text('year_2022', '2022')->creationRules("nullable");
+            $form->text('year_2023', '2023')->creationRules("nullable");
+        });
 
+        $form->divider();
+        $form->hasMany('implementations', "Mise en oeuvre",  function (Form\NestedForm $form) {
+            $form->text('responsable')->creationRules("nullable");
+            $form->text('realisator', 'Realisateur')->creationRules("nullable");
+        });
+
+        $form->multipleSelect("projects", "Champs liés")->options('App\Project'::all()->pluck('name', 'id'));
+
+        $form->multipleSelect("actions", "Actions liées")->options('App\Action'::all()->pluck('label', 'id'));
+        $form->divider();
 
         $form->switch('R', __('R'));
         $form->switch('A', __('A'));
@@ -187,6 +207,15 @@ class ActionController extends AdminController
                     return [$d->id => $d->content];
                 }
             })->ajax('/admin/api/comments');
+        }
+
+        if($select=="organisation"){
+            return   $form->select('entreprise_id', "Organisation")->options(function ($name) {
+                $d = 'App\Actor'::where('name', 'like', "%$name%")->orWhere('id', $name)->first();
+                if ($d) {
+                    return [$d->id => $d->name];
+                }
+            })->ajax('/admin/api/actors');
         }
     }
 }

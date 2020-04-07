@@ -15,7 +15,7 @@ class CreateBudgetFinancementsTable extends Migration
     {
         Schema::create('budget_financements', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->bigInteger('entreprise_id')->unsigned();
+            $table->bigInteger('actor_id')->unsigned();
             $table->bigInteger('budget_id')->unsigned();
             $table->timestamps();
         });

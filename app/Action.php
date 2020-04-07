@@ -25,42 +25,27 @@ class Action extends Model
 
     public function authors()
     {
-        return $this->belongsToMany('App\User', 'action_authors');
+        return $this->belongsToMany('App\Actor', 'author_actions');
     }
 
     public function collaborators()
     {
-        return $this->belongsToMany('App\User', 'action_collaborators');
+        return $this->belongsToMany('App\Actor', 'collaborator_actions');
     }
 
     public function responsables()
     {
-        return $this->belongsToMany('App\Entreprise', 'action_responsables');
+        return $this->belongsToMany("App\Actor", "responsable_actors");
     }
 
     public function realisators()
     {
-        return $this->belongsToMany('App\Entreprise', 'action_realisators');
+        return $this->belongsToMany("App\Actor", "realisator_actors");
     }
 
-    // public function cases()
-    // {
-    //     return $this->hasMany('App\Case', 'case_id');
-    // }
-
-    // public function echelles()
-    // {
-    //     return $this->hasMany('App\Echelles', 'echelle_id');
-    // }
-
-    // public function fields()
-    // {
-    //     return $this->hasMany('App\Field', 'field_id');
-    // }
-
-    public function orientations()
+    public function caracteristics()
     {
-        return $this->hasMany('App\Orientation', 'orientation_id');
+        return $this->hasMany('App\Caracteristic', 'action_id');
     }
 
     public function ponc()
@@ -73,11 +58,6 @@ class Action extends Model
         return $this->belongsTo('App\State');
     }
 
-    // public function types()
-    // {
-    //     return $this->hasMany('App\Type', 'type_id');
-    // }
-
     public function bugets()
     {
         return $this->hasMany('App\Budget');
@@ -86,5 +66,20 @@ class Action extends Model
     public function calendars()
     {
         return $this->hasMany('App\Calendar');
+    }
+
+    public function implementations()
+    {
+        return $this->hasMany('App\Implementation');
+    }
+
+    public function projects()
+    {
+        return $this->belongsToMany('App\Project', 'project_actions');
+    }
+
+    public function actions()
+    {
+        return $this->belongsToMany('App\Action', 'action_actions', 'action_link_id', 'action_id');
     }
 }

@@ -16,13 +16,9 @@ class CreateCaracteristicsTable extends Migration
         Schema::create('caracteristics', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('action_id')->unsigned();
-            $table->bigInteger('type_id')->unsigned()->nullable();
-            $table->bigInteger('state_id')->unsigned()->nullable();
-            $table->bigInteger('echelle_id')->unsigned()->nullable();
-            $table->foreign('action_id')->references('id')->on('actions');
-            $table->foreign('type_id')->references('id')->on('types');
-            $table->foreign('state_id')->references('id')->on('states');
-            $table->foreign('echelle_id')->references('id')->on('echelles');
+            $table->string('type')->nullable();
+            $table->string('state')->nullable();
+            $table->string('echelle')->nullable();
             $table->timestamps();
         });
     }

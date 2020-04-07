@@ -17,10 +17,8 @@ class CreateProjectActionsTable extends Migration
             $table->bigIncrements('id');
             $table->bigInteger('action_id')->unsigned();
             $table->bigInteger('project_id')->unsigned();
-            $table->bigInteger('action_link_id')->unsigned();
             $table->foreign('project_id')->references('id')->on('projects');
             $table->foreign('action_id')->references('id')->on('actions');
-            $table->foreign('action_link_id')->references('id')->on('actions');
             $table->timestamps();
         });
     }
