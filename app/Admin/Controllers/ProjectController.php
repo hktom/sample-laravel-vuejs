@@ -70,6 +70,7 @@ class ProjectController extends AdminController
     protected function form()
     {
         $form = new Form(new Project());
+        $form->image("image")->move('public/storage/')->uniqueName();
         $form->setTitle("Nouveau");
         $form->text('ca_principal', __('Code'))->creationRules("required|unique:projects");
         $form->text('name', __('Name'))->creationRules("required|unique:projects");

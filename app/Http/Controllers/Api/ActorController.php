@@ -15,7 +15,7 @@ class ActorController extends Controller
      */
     public function index()
     {
-        //
+        //return ActorResource::collection('App\Action'::OrderBy('id', 'DESC')->paginate(20));
     }
 
     /**
