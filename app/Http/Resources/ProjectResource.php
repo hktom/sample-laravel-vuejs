@@ -23,7 +23,8 @@ class ProjectResource extends JsonResource
             'context'=>$this->context,
             'to_know'=>$this->to_know,
             'to_enrich'=>$this->to_enrich,
-            'to_value'=>$this->to_value
+            'to_value'=>$this->to_value,
+            'actors'=>$this->actors,
         ];
     }
 }

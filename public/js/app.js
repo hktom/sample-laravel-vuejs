@@ -1926,6 +1926,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['article'],
   data: function data() {
@@ -2126,10 +2134,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    this.$store.commit("GET_PROJECTS"); //this.$store.commit("GET_ACTIONS");
-    //this.$store.commit("GET_ACTORS");
+    this.$store.commit("GET_PROJECTS");
+    this.$store.commit("GET_ACTORS"); //this.$store.commit("GET_ACTIONS");
     //this.$store.commit("SET_ARTICLE", '');
   },
   data: function data() {
@@ -2149,15 +2161,17 @@ __webpack_require__.r(__webpack_exports__);
       return this.$store.state.project_options;
     },
     option_actions: function option_actions() {},
-    option_actors: function option_actors() {}
+    option_actors: function option_actors() {
+      return this.$store.state.actor_options;
+    }
   },
   methods: {
     clicked: function clicked() {
       //this.counter++;
       this.$store.commit("increment");
     },
-    projectSetSelected: function projectSetSelected(value) {
-      console.log("VALUE SELECT ".concat(value)); //this.$store.commit("SET_ARTICLE", value);
+    project_set_Selected: function project_set_Selected(value) {
+      this.$store.dispatch("SET_ARTICLE_ACTION", value);
     }
   }
 });
@@ -63675,9 +63689,22 @@ var render = function() {
           _c("b-col", { attrs: { lg: "8", md: "12" } }, [
             _c("h2", [_vm._v(" " + _vm._s(_vm.article.name) + " ")]),
             _vm._v(" "),
-            _c("div", [_vm._v(" " + _vm._s(_vm.article.actors) + " ")]),
+            _c("p", [_vm._v(" " + _vm._s(_vm.article.vision) + " ")]),
             _vm._v(" "),
-            _c("p", [_vm._v(" " + _vm._s(_vm.article.vision) + " ")])
+            _c(
+              "p",
+              [
+                _vm._v("\n                Contributeurs:\n                "),
+                _vm._l(_vm.article.actors, function(actor) {
+                  return _c("span", [
+                    _c("span", { staticClass: "bold fs0-9" }, [
+                      _vm._v(" " + _vm._s(actor.name) + "  | ")
+                    ])
+                  ])
+                })
+              ],
+              2
+            )
           ])
         ],
         1
@@ -63946,9 +63973,9 @@ var render = function() {
                   attrs: {
                     placeholder: "Les champs d'application",
                     options: _vm.option_projects,
-                    value: _vm.$store.myValue
+                    value: _vm.$store.project_selected
                   },
-                  on: { input: _vm.projectSetSelected }
+                  on: { input: _vm.project_set_Selected }
                 })
               ],
               1
@@ -63960,9 +63987,11 @@ var render = function() {
               [
                 _c("v-select", {
                   attrs: {
-                    placeholder: "Les acteurs",
-                    options: ["Canada", "United States"]
-                  }
+                    placeholder: "Les Contributeurs",
+                    options: _vm.option_actors,
+                    value: _vm.$store.project_selected
+                  },
+                  on: { input: _vm.project_set_Selected }
                 })
               ],
               1
@@ -80883,34 +80912,64 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
     project_options: [],
     action_options: [],
     actor_options: [],
-    myValue: ''
+    project_selected: '',
+    action_selected: '',
+    actor_selected: ''
   },
   getters: {
     doubleClicks: function doubleClicks(state) {
       return state.counter * 2;
     }
   },
+  actions: {
+    SET_ARTICLE_ACTION: function SET_ARTICLE_ACTION(_ref, payload) {
+      var commit = _ref.commit;
+
+      if (payload != null) {
+        commit("SET_ARTICLE", payload);
+      } else {
+        commit("SET_ARTICLE_DEFAULT");
+      }
+    }
+  },
   mutations: {
     increment: function increment(state) {
       state.counter++;
     },
-    SET_ARTICLE: function SET_ARTICLE(state) {
-      var article_type = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-      // if(article_type==null || article_type==""){
-      //     state.articles=state.projects
-      // }
+    SET_ARTICLE_DEFAULT: function SET_ARTICLE_DEFAULT(state) {
       state.articles = state.projects;
-      console.log("DEBBUG ".concat(state.articles));
+    },
+    SET_ARTICLE: function SET_ARTICLE(state, payload) {
+      if (payload.type == "project") {
+        state.articles = [];
+        state.projects.map(function (item) {
+          if (item.id == payload.code) {
+            state.articles.push(item);
+          }
+        });
+      }
+
+      if (payload.type == "actor") {
+        state.articles = [];
+        state.projects.map(function (item) {
+          item.actors.map(function (actor) {
+            if (actor.id == payload.id) {
+              state.articles.push(item);
+            }
+          });
+        });
+      }
     },
     GET_PROJECTS: function GET_PROJECTS(state) {
       axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/projects').then(function (res) {
         state.projects = res.data.data;
-        state.articles = state.projects;
-        console.log(res);
+        state.articles = state.projects; //set options filter
+
         state.projects.map(function (item) {
           state.project_options.push({
             code: item.id,
-            label: item.name
+            label: item.name,
+            type: 'project'
           });
         });
       })["catch"](function (error) {
@@ -80932,7 +80991,15 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
     GET_ACTORS: function GET_ACTORS(state) {
       axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/actors').then(function (res) {
         state.actors = res.data.data;
-        console.log(res);
+        console.log(res); //set options filter
+
+        state.actors.map(function (item) {
+          state.actor_options.push({
+            code: item.id,
+            label: item.name,
+            type: 'actor'
+          });
+        });
       })["catch"](function (error) {
         // handle error
         state.error = error;

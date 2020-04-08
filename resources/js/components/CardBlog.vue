@@ -8,8 +8,16 @@
 
           <b-col lg="8" md="12">
               <h2> {{ article.name}} </h2>
-              <div> {{ article.actors }} </div>
               <p> {{ article.vision }} </p>
+
+              <p>
+                  Contributeurs:
+                  <span v-for="actor in article.actors">
+                  <span class="bold fs0-9"> {{actor.name}}  | </span>
+                  </span>
+              </p>
+
+
           </b-col>
 
       </b-row>

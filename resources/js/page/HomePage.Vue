@@ -32,13 +32,17 @@
           <v-select
             placeholder="Les champs d'application"
             :options="option_projects"
-             :value="$store.myValue"
-             @input="projectSetSelected"
+             :value="$store.project_selected"
+             @input="project_set_Selected"
           />
         </b-col>
 
         <b-col xs="12" md="12" lg="3">
-          <v-select placeholder="Les acteurs" :options="['Canada', 'United States']" />
+          <v-select placeholder="Les Contributeurs"
+          :options="option_actors"
+          :value="$store.project_selected"
+          @input="project_set_Selected"
+          />
         </b-col>
 
         <b-col xs="12" md="12" lg="3">
@@ -63,8 +67,8 @@
 export default {
   mounted() {
     this.$store.commit("GET_PROJECTS");
+    this.$store.commit("GET_ACTORS");
     //this.$store.commit("GET_ACTIONS");
-    //this.$store.commit("GET_ACTORS");
     //this.$store.commit("SET_ARTICLE", '');
   },
 
@@ -92,7 +96,7 @@ export default {
 
     },
     option_actors(){
-
+        return this.$store.state.actor_options;
     },
 
   },
@@ -103,9 +107,8 @@ export default {
       this.$store.commit("increment");
     },
 
-    projectSetSelected(value){
-        console.log(`VALUE SELECT ${value}`);
-        //this.$store.commit("SET_ARTICLE", value);
+    project_set_Selected(value){
+        this.$store.dispatch("SET_ARTICLE_ACTION", value);
     }
   }
 };
