@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SpinnerGrow v-if="has_data_loaded==false" />
+    <SpinnerGrow v-if="project_status==false || actor_status==false" />
 
     <div v-else>
       <HeaderPage />
@@ -20,9 +20,14 @@ export default {
   },
 
   computed: {
-    has_data_loaded() {
-      return this.$store.state.has_data_loaded;
-    }
+    project_status() {
+      return this.$store.state.project.status;
+    },
+
+    actor_status() {
+      return this.$store.state.actor.status;
+    },
+
   }
 };
 </script>

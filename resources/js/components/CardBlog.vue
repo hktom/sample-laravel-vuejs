@@ -8,15 +8,15 @@
 
           <b-col lg="8" md="12">
               <h2 class="lighter"> {{ article.name}} </h2>
-              <p> {{ article.vision }} </p>
-
               <p>
                   Contributeurs:
                   <span v-for="actor in article.actors">
                   <span class="bold fs0-9"> {{actor.name}}  | </span>
                   </span>
               </p>
-
+              <p> {{ article.vision }} 
+                  <router-link :to="{name: 'Root'}" class="link-article mx-3">Details du projet</router-link>
+              </p>
 
           </b-col>
 
@@ -55,6 +55,10 @@ data: function(){
 
 #cardBlog:hover{
     transform: scale(1.02);
+}
+
+.link-article{
+    color: #17A2B8;font-weight: bold;font-size:13px
 }
 
 </style>

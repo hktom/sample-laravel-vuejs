@@ -35,6 +35,8 @@ const router = new VueRouter({
 })
 
 Vue.component('v-select', vSelect)
+Vue.component('FilterForm', require('./components/FilterForm.vue').default);
+Vue.component('Baniere', require('./components/Baniere.vue').default);
 Vue.component('SpinnerGrow', require('./components/SpinnerGrow.vue').default);
 Vue.component('HeaderPage', require('./components/HeaderPage.vue').default);
 Vue.component('FooterPage', require('./components/FooterPage.vue').default);
