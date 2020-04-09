@@ -22,10 +22,10 @@ class ProjectsTableSeeder extends Seeder
                 'id' => 1,
                 'name' => 'Infrastructure écologique du territoire',
                 'ca_principal' => 'CA01',
-                'image' => NULL,
+                'image' => 'public/storage//4fd655acb407e4281b1258af9a369025.jpg',
                 'created_at' => '2020-03-30 19:11:11',
-                'updated_at' => '2020-04-06 11:11:39',
-                'vision' => '<p>VISION de la Strat&eacute;gie Biodiversit&eacute; : en 2030, le d&eacute;placement des esp&egrave;ces sauvages est assur&eacute; dans l&rsquo;ensemble du bassin genevois par une infrastructure &eacute;cologique de qualit&eacute;, prise en compte en amont de tout projet, afin d&rsquo;&eacute;viter ou de compenser sys t&eacute;matiquement leurs impacts n&eacute;gatifs. Pour cela, les &eacute;changes au sein des administrations et avec les partenaires civils sont devenus la r&egrave;gle, y compris au niveau transfrontalier.</p>',
+                'updated_at' => '2020-04-08 15:27:25',
+                'vision' => '<p>VISION de la Stratégie Biodiversité : en 2030, le déplacement des espèces sauvages est assuré dans l’ensemble du bassin genevois par une infrastructure écologique de qualité, prise en compte en amont de tout projet, afin d’éviter ou de compenser sys tématiquement leurs impacts négatifs. Pour cela, les échanges au sein des administrations et avec les partenaires civils sont devenus la règle, y compris au niveau transfrontalier.</p>',
                 'intro' => NULL,
                 'context' => '<p>On appelle infrastructure &eacute;cologique le r&eacute;seau constitu&eacute; par :<br />
 &bull; les r&eacute;servoirs de biodiversit&eacute;, les espaces o&ugrave; les esp&egrave;ces prosp&egrave;rent (r&eacute;serves<br />
@@ -82,27 +82,27 @@ territoire du point de vue biologique. Ces &laquo; meilleurs pixels &raquo; sont
 dans la planification et l&rsquo;am&eacute;nagement du territoire. Elle permet aussi de v&eacute;rifier l&rsquo;atteinte<br />
 des objectifs fix&eacute;s. Une storymap interactive permet de consulter cette carte sur internet :<br />
 https://www.ge.ch/dossier/geneve-engage-biodiversite-0</p>',
-            'to_know' => '<p>La carte de diagnostic de l&rsquo;infrastructure &eacute;cologique a d&eacute;j&agrave; &eacute;t&eacute; r&eacute;alis&eacute;e au niveau cantonal.<br />
-Elle sera mise &agrave; jour annuellement sur la base de nouvelles observations, &eacute;tendue au Grand<br />
-Gen&egrave;ve, et am&eacute;lior&eacute;e au niveau de sa r&eacute;solution spatiale (1.1). La cartographie de la trame<br />
-noire, disponible depuis octobre 2019, indique les sites dans lesquels l&rsquo;obscurit&eacute;́ nocturne<br />
-devrait &ecirc;tre pr&eacute;serv&eacute;e ou restaur&eacute;e ; cette carte devra &eacute;galement &ecirc;tre maintenue &agrave; jour (1.4).</p>',
-            'to_enrich' => '<p>La carte cantonale de &ldquo;diagnostic de l&rsquo;infrastructure &eacute;cologique&rdquo; &ndash; int&eacute;gr&eacute;e au Plan directeur<br />
-cantonal en 2019 &ndash; sera transcrite dans les plans directeurs communaux et d&rsquo;autres<br />
-instruments de planification de l&rsquo;am&eacute;nagement du territoire en 2020 (1.3). Cette carte<br />
-dynamique permet d&rsquo;ores et d&eacute;j&agrave; de prioriser les parcelles &agrave; pr&eacute;server et celles &agrave; assainir<br />
-pour faciliter le d&eacute;placement des esp&egrave;ces (p.ex. en facilitant le franchissement des routes).<br />
-La confrontation de la cartographie de la trame noire &agrave; la r&eacute;alit&eacute; de terrain a r&eacute;v&eacute;l&eacute; les zones<br />
-de conflits potentiels entre l&rsquo;&eacute;clairage public ou priv&eacute; et les continuums noirs; l&rsquo;extinction<br />
-ou l&rsquo;adaptation de lampadaires am&eacute;liorera la trame noire cantonale (1.5). Afin d&rsquo;assurer le<br />
-lien avec l&rsquo;espace transfrontalier, les &ldquo;contrats territoires &ldquo; ou corridors , int&eacute;gr&eacute;s au Projet<br />
-d&rsquo;agglom&eacute;ration Franco-Valdo-Genevoise, seront aussi renforc&eacute;s (1.6).</p>',
-            'to_value' => '<p>Dans une optique de transition &eacute;cologique, il est crucial de porter &agrave; la connaissance du<br />
-public, mais aussi sp&eacute;cifiquement aupr&egrave;s de nombreux partenaires (urbanistes, architectes,<br />
-agriculteurs, etc.), les notions d&rsquo;infrastructure &eacute;cologique et de services &eacute;cosyst&eacute;miques,<br />
-ainsi que d&rsquo;expliquer l&rsquo;importance de leur pr&eacute;servation et de leur d&eacute;veloppement (1.2).<br />
-Il s&rsquo;agira aussi de promouvoir le d&eacute;ploiement de la trame noire aupr&egrave;s de diff&eacute;rentes<br />
-entit&eacute;s: d&eacute;partements de l&rsquo;&Eacute;tat de Gen&egrave;ve, communes, zones industrielles et artisanales,<br />
+            'to_know' => '<p>La carte de diagnostic de l’infrastructure écologique a déjà été réalisée au niveau cantonal.<br />
+Elle sera mise à jour annuellement sur la base de nouvelles observations, étendue au Grand<br />
+Genève, et améliorée au niveau de sa résolution spatiale (1.1). La cartographie de la trame<br />
+noire, disponible depuis octobre 2019, indique les sites dans lesquels l’obscurité́ nocturne<br />
+devrait être préservée ou restaurée ; cette carte devra également être maintenue à jour (1.4).</p>',
+            'to_enrich' => '<p>La carte cantonale de “diagnostic de l’infrastructure écologique” – intégrée au Plan directeur<br />
+cantonal en 2019 – sera transcrite dans les plans directeurs communaux et d’autres<br />
+instruments de planification de l’aménagement du territoire en 2020 (1.3). Cette carte<br />
+dynamique permet d’ores et déjà de prioriser les parcelles à préserver et celles à assainir<br />
+pour faciliter le déplacement des espèces (p.ex. en facilitant le franchissement des routes).<br />
+La confrontation de la cartographie de la trame noire à la réalité de terrain a révélé les zones<br />
+de conflits potentiels entre l’éclairage public ou privé et les continuums noirs; l’extinction<br />
+ou l’adaptation de lampadaires améliorera la trame noire cantonale (1.5). Afin d’assurer le<br />
+lien avec l’espace transfrontalier, les “contrats territoires “ ou corridors , intégrés au Projet<br />
+d’agglomération Franco-Valdo-Genevoise, seront aussi renforcés (1.6).</p>',
+            'to_value' => '<p>Dans une optique de transition écologique, il est crucial de porter à la connaissance du<br />
+public, mais aussi spécifiquement auprès de nombreux partenaires (urbanistes, architectes,<br />
+agriculteurs, etc.), les notions d’infrastructure écologique et de services écosystémiques,<br />
+ainsi que d’expliquer l’importance de leur préservation et de leur développement (1.2).<br />
+Il s’agira aussi de promouvoir le déploiement de la trame noire auprès de différentes<br />
+entités: départements de l’État de Genève, communes, zones industrielles et artisanales,<br />
 et particuliers (1.5).</p>',
         ),
         1 => 
@@ -110,9 +110,9 @@ et particuliers (1.5).</p>',
             'id' => 2,
             'name' => 'Sites protégés et réserves naturelles',
             'ca_principal' => 'CA02',
-            'image' => NULL,
+            'image' => 'public/storage//767acdb2fb9533d7b5d5d5e8f9039283.jpg',
             'created_at' => '2020-03-30 19:11:19',
-            'updated_at' => '2020-04-06 12:19:59',
+            'updated_at' => '2020-04-08 15:28:12',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, le
 canton abrite un ensemble de réservoirs de biodi-
 versité protégés sur 17% de son territoire. Ils sont
@@ -145,9 +145,9 @@ notamment les nombreuses possibilités de découvrir la biodiversité locale (vo
             'id' => 3,
             'name' => 'Forêt',
             'ca_principal' => 'CA03',
-            'image' => NULL,
+            'image' => 'public/storage//5fd53cae3bf5492cdf216a955f305ff8.JPG',
             'created_at' => '2020-03-30 19:11:28',
-            'updated_at' => '2020-04-06 12:21:46',
+            'updated_at' => '2020-04-08 15:28:33',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la forêt
 genevoise couvre toujours 12% du territoire genevois
 et bénéficie d’une gestion favorable à la biodiversité.
@@ -220,9 +220,9 @@ en forêt.',
             'id' => 4,
             'name' => 'Arbres',
             'ca_principal' => 'CA04',
-            'image' => NULL,
+            'image' => 'public/storage//6f37382aabe6ed602d9003c5f058be28.jpg',
             'created_at' => '2020-03-30 19:11:35',
-            'updated_at' => '2020-04-06 12:22:48',
+            'updated_at' => '2020-04-08 15:28:48',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, le
 canton abrite un patrimoine arboré de haute valeur
 pour la biodiversité grâce à une diversité de taille et
@@ -268,9 +268,9 @@ d’abattage .',
             'id' => 5,
             'name' => 'Cours d\'eau et lac',
             'ca_principal' => 'CA05',
-            'image' => NULL,
+            'image' => 'public/storage//6d2163d88dc5a0eb6096e2d62aa2c00c.jpg',
             'created_at' => '2020-03-30 19:11:45',
-            'updated_at' => '2020-04-06 12:23:35',
+            'updated_at' => '2020-04-08 15:31:31',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, les
 cours d’eau genevois abritent une faune et une flore
 plus riches qu’aujourd’hui, grâce en particulier à la
@@ -327,9 +327,9 @@ en microplastiques sera réalisé dans les principaux affluents du Léman .',
             'id' => 6,
             'name' => 'Aire agricole',
             'ca_principal' => 'CA06',
-            'image' => NULL,
+            'image' => 'public/storage//e2da27ac3cfc4b3b624ac2a84dd4c63e.jpg',
             'created_at' => '2020-03-30 19:11:56',
-            'updated_at' => '2020-04-06 12:24:47',
+            'updated_at' => '2020-04-08 15:32:26',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la
 campagne genevoise est préservée de l’urbanisation
 et abrite une biodiversité riche et diversifiée, grâce
@@ -403,9 +403,9 @@ maintenir une agrobiodiversité utile face à l’uniformisation génétique des
             'id' => 7,
             'name' => 'Espace Bâti',
             'ca_principal' => 'CA07',
-            'image' => NULL,
+            'image' => 'public/storage//aa8d44f260a095938cb6ea6f49c33ffb.JPG',
             'created_at' => '2020-03-30 19:12:12',
-            'updated_at' => '2020-04-06 12:25:34',
+            'updated_at' => '2020-04-08 15:32:45',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, l’es-
 pace bâti genevois comprend une mosaïque de sites
 à caractère naturel permettant à la faune et à la flore
@@ -451,9 +451,9 @@ de terrain seront multipliées .',
             'id' => 8,
             'name' => 'Faune et flore',
             'ca_principal' => 'CA08',
-            'image' => NULL,
+            'image' => 'public/storage//c67cd10464305d3e90e5203cbb635bf4.JPG',
             'created_at' => '2020-03-30 19:12:31',
-            'updated_at' => '2020-04-06 12:26:10',
+            'updated_at' => '2020-04-08 15:32:59',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la
 faune et la flore genevoises sont plus riches, résil-
 ientes et diverses grâce à une gestion durable des
@@ -503,9 +503,9 @@ de soins genevois recueillant et soignant des espèces sauvages seront soutenus 
             'id' => 9,
             'name' => 'Sensibilisation',
             'ca_principal' => 'CA09',
-            'image' => NULL,
+            'image' => 'public/storage//6c779d822d408419ca6ba8b494ee2283.jpg',
             'created_at' => '2020-03-30 19:12:58',
-            'updated_at' => '2020-04-06 12:27:03',
+            'updated_at' => '2020-04-08 15:33:14',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la
 population, en particulier celle habitant en ville,
 connaît la valeur de sa nature, en apprécie les
@@ -545,9 +545,9 @@ nature et à leurs programmes d’animation sera pérennisée .',
             'id' => 10,
             'name' => 'Formation',
             'ca_principal' => 'CA10',
-            'image' => NULL,
+            'image' => 'public/storage//9715146d57af0a72cbfedfda8d056c52.jpg',
             'created_at' => '2020-03-30 19:13:13',
-            'updated_at' => '2020-04-06 12:28:16',
+            'updated_at' => '2020-04-08 15:33:30',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, les
 habitant-e-s du canton ont acquis au travers de leur
 parcours de formation une compétence et un sa-
@@ -595,9 +595,9 @@ développée ( et ).',
                 'id' => 11,
                 'name' => 'Outils analytiques',
                 'ca_principal' => 'CA11',
-                'image' => NULL,
+                'image' => 'public/storage//4a15d7fec142faa4504e214a799e90f8.jpg',
                 'created_at' => '2020-03-30 19:13:29',
-                'updated_at' => '2020-04-06 12:28:49',
+                'updated_at' => '2020-04-08 15:33:48',
                 'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la bio-
 diversité est suivie et évaluée périodiquement grâce
 à un dispositif performant qui permet de réajuster les
@@ -632,9 +632,9 @@ les échanges avec les autres systèmes d’information du Département du terri
             'id' => 12,
             'name' => 'Outils administratifs et politiques',
             'ca_principal' => 'CA12',
-            'image' => NULL,
+            'image' => 'public/storage//3563157bf68d1293632125d4ad3b5484.jpg',
             'created_at' => '2020-03-30 19:13:41',
-            'updated_at' => '2020-04-06 12:29:45',
+            'updated_at' => '2020-04-08 15:34:02',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, les
 prestations de la biodiversité sont reconnues par
 tous et valorisées à leur juste prix par la collectivité.

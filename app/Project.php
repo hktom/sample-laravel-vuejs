@@ -10,4 +10,9 @@ class Project extends Model
     {
         return $this->hasMany('App\Action');
     }
+
+    public function actors()
+    {
+        return $this->belongsToMany('App\Actor', 'project_actors');
+    }
 }

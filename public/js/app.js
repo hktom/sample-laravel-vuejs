@@ -1899,6 +1899,50 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardBlog.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ['article'],
+  data: function data() {
+    return {};
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FooterPage.vue?vue&type=script&lang=js& ***!
@@ -2094,84 +2138,43 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({});
+/* harmony default export */ __webpack_exports__["default"] = ({
+  mounted: function mounted() {
+    this.$store.commit("GET_PROJECTS");
+    this.$store.commit("GET_ACTORS"); //this.$store.commit("GET_ACTIONS");
+    //this.$store.commit("SET_ARTICLE", '');
+  },
+  data: function data() {
+    return {};
+  },
+  computed: {
+    articles: function articles() {
+      return this.$store.state.articles;
+    },
+    counter: function counter() {
+      return this.$store.state.counter;
+    },
+    "double": function double() {
+      return this.$store.getters.doubleClicks;
+    },
+    option_projects: function option_projects() {
+      return this.$store.state.project_options;
+    },
+    option_actions: function option_actions() {},
+    option_actors: function option_actors() {
+      return this.$store.state.actor_options;
+    }
+  },
+  methods: {
+    clicked: function clicked() {
+      //this.counter++;
+      this.$store.commit("increment");
+    },
+    project_set_Selected: function project_set_Selected(value) {
+      this.$store.dispatch("SET_ARTICLE_ACTION", value);
+    }
+  }
+});
 
 /***/ }),
 
@@ -41996,6 +41999,25 @@ exports.push([module.i, "/*!\n * Bootstrap v4.4.1 (https://getbootstrap.com/)\n 
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-select/dist/vue-select.css":
+/*!*************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-select/dist/vue-select.css ***!
+  \*************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".v-select{position:relative;font-family:inherit}.v-select,.v-select *{box-sizing:border-box}@-webkit-keyframes vSelectSpinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}@keyframes vSelectSpinner{0%{transform:rotate(0deg)}to{transform:rotate(1turn)}}.vs__fade-enter-active,.vs__fade-leave-active{pointer-events:none;transition:opacity .15s cubic-bezier(1,.5,.8,1)}.vs__fade-enter,.vs__fade-leave-to{opacity:0}.vs--disabled .vs__clear,.vs--disabled .vs__dropdown-toggle,.vs--disabled .vs__open-indicator,.vs--disabled .vs__search,.vs--disabled .vs__selected{cursor:not-allowed;background-color:#f8f8f8}.v-select[dir=rtl] .vs__actions{padding:0 3px 0 6px}.v-select[dir=rtl] .vs__clear{margin-left:6px;margin-right:0}.v-select[dir=rtl] .vs__deselect{margin-left:0;margin-right:2px}.v-select[dir=rtl] .vs__dropdown-menu{text-align:right}.vs__dropdown-toggle{-webkit-appearance:none;-moz-appearance:none;appearance:none;display:flex;padding:0 0 4px;background:none;border:1px solid rgba(60,60,60,.26);border-radius:4px;white-space:normal}.vs__selected-options{display:flex;flex-basis:100%;flex-grow:1;flex-wrap:wrap;padding:0 2px;position:relative}.vs__actions{display:flex;align-items:center;padding:4px 6px 0 3px}.vs--searchable .vs__dropdown-toggle{cursor:text}.vs--unsearchable .vs__dropdown-toggle{cursor:pointer}.vs--open .vs__dropdown-toggle{border-bottom-color:transparent;border-bottom-left-radius:0;border-bottom-right-radius:0}.vs__open-indicator{fill:rgba(60,60,60,.5);transform:scale(1);transition:transform .15s cubic-bezier(1,-.115,.975,.855);transition-timing-function:cubic-bezier(1,-.115,.975,.855)}.vs--open .vs__open-indicator{transform:rotate(180deg) scale(1)}.vs--loading .vs__open-indicator{opacity:0}.vs__clear{fill:rgba(60,60,60,.5);padding:0;border:0;background-color:transparent;cursor:pointer;margin-right:8px}.vs__dropdown-menu{display:block;box-sizing:border-box;position:absolute;top:calc(100% - 1px);left:0;z-index:1000;padding:5px 0;margin:0;width:100%;max-height:350px;min-width:160px;overflow-y:auto;box-shadow:0 3px 6px 0 rgba(0,0,0,.15);border:1px solid rgba(60,60,60,.26);border-top-style:none;border-radius:0 0 4px 4px;text-align:left;list-style:none;background:#fff}.vs__no-options{text-align:center}.vs__dropdown-option{line-height:1.42857143;display:block;padding:3px 20px;clear:both;color:#333;white-space:nowrap}.vs__dropdown-option:hover{cursor:pointer}.vs__dropdown-option--highlight{background:#5897fb;color:#fff}.vs__dropdown-option--disabled{background:inherit;color:rgba(60,60,60,.5)}.vs__dropdown-option--disabled:hover{cursor:inherit}.vs__selected{display:flex;align-items:center;background-color:#f0f0f0;border:1px solid rgba(60,60,60,.26);border-radius:4px;color:#333;line-height:1.4;margin:4px 2px 0;padding:0 .25em}.vs__deselect{display:inline-flex;-webkit-appearance:none;-moz-appearance:none;appearance:none;margin-left:4px;padding:0;border:0;cursor:pointer;background:none;fill:rgba(60,60,60,.5);text-shadow:0 1px 0 #fff}.vs--single .vs__selected{background-color:transparent;border-color:transparent}.vs--single.vs--open .vs__selected{position:absolute;opacity:.4}.vs--single.vs--searching .vs__selected{display:none}.vs__search::-webkit-search-cancel-button{display:none}.vs__search::-ms-clear,.vs__search::-webkit-search-decoration,.vs__search::-webkit-search-results-button,.vs__search::-webkit-search-results-decoration{display:none}.vs__search,.vs__search:focus{-webkit-appearance:none;-moz-appearance:none;appearance:none;line-height:1.4;font-size:1em;border:1px solid transparent;border-left:none;outline:none;margin:4px 0 0;padding:0 7px;background:none;box-shadow:none;width:0;max-width:100%;flex-grow:1}.vs__search::-webkit-input-placeholder{color:inherit}.vs__search::-moz-placeholder{color:inherit}.vs__search:-ms-input-placeholder{color:inherit}.vs__search::-ms-input-placeholder{color:inherit}.vs__search::placeholder{color:inherit}.vs--unsearchable .vs__search{opacity:1}.vs--unsearchable .vs__search:hover{cursor:pointer}.vs--single.vs--searching:not(.vs--open):not(.vs--loading) .vs__search{opacity:.2}.vs__spinner{align-self:center;opacity:0;font-size:5px;text-indent:-9999em;overflow:hidden;border:.9em solid hsla(0,0%,39.2%,.1);border-left-color:rgba(60,60,60,.45);transform:translateZ(0);-webkit-animation:vSelectSpinner 1.1s linear infinite;animation:vSelectSpinner 1.1s linear infinite;transition:opacity .1s}.vs__spinner,.vs__spinner:after{border-radius:50%;width:5em;height:5em}.vs--loading .vs__spinner{opacity:1}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./resources/js/asset/rs.color.css":
 /*!*************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./resources/js/asset/rs.color.css ***!
@@ -42008,7 +42030,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".btn-black{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-black:hover{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}.btn-blackwhite{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-blackwhite:hover{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}\n.btn-white{border-color:   black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-white:hover{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}.btn-whiteblack{border-color:  black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-whiteblack:hover{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}\n\n.btn-yellow{border-color: rgba(254, 242, 0, 1) ; color:black;background-color: rgba(254, 242, 0, 1)} .btn-yellow:hover{text-decoration:none; color:black;background-color: rgba(254, 242, 0, 0.8)}.btn-mellow{border-color: rgba(247, 223, 125, 1)  ; color:black;background-color: rgba(247, 223, 125, 1)} .btn-mellow:hover{text-decoration:none; color:black;background-color: rgba(247, 223, 125, 0.8)}.btn-cyber{border-color: rgba(255, 211, 2, 1)  ; color:black;background-color: rgba(255, 211, 2, 1)} .btn-cyber:hover{text-decoration:none; color:black;background-color: rgba(255, 211, 2, 0.8)}.btn-royal{border-color: rgba(249, 217, 94, 1)  ; color:black;background-color: rgba(249, 217, 94, 1)} .btn-royal:hover{text-decoration:none; color:black;background-color: rgba(249, 217, 94, 0.8)}.btn-trombone{border-color: rgba(208, 181, 92, 1)  ; color:black;background-color: rgba(208, 181, 92, 1)} .btn-trombone:hover{text-decoration:none; color:black;background-color: rgba(208, 181, 92, 0.8)}.btn-banana{border-color: rgba(251, 244, 163, 1)  ; color:black;background-color: rgba(251, 244, 163, 1)} .btn-banana:hover{text-decoration:none; color:black;background-color: rgba(251, 244, 163, 0.8)}.btn-tuscany{border-color: rgba(252, 208, 44, 1)  ; color:black;background-color: rgba(252, 208, 44, 1)} .btn-tuscany:hover{text-decoration:none; color:black;background-color: rgba(252, 208, 44, 0.8)}.btn-lemon{border-color: rgba(239, 253, 96, 1)  ; color:black;background-color: rgba(239, 253, 96, 1)} .btn-lemon:hover{text-decoration:none; color:black;background-color: rgba(239, 253, 96, 0.8)}.btn-bumblebee{border-color: rgba(254, 226, 5, 1)  ; color:black;background-color: rgba(254, 226, 5, 1)} .btn-bumblebee:hover{text-decoration:none; color:black;background-color: rgba(254, 226, 5, 0.8)}.btn-flax{border-color: rgba(239, 219, 130, 1)  ; color:black;background-color: rgba(239, 219, 130, 1)} .btn-flax:hover{text-decoration:none; color:black;background-color: rgba(239, 219, 130, 0.8)}.btn-cream{border-color: rgba(255, 252, 209, 1)  ; color:black;background-color: rgba(255, 252, 209, 1)} .btn-cream:hover{text-decoration:none; color:black;background-color: rgba(255, 252, 209, 0.8)}.btn-peach{border-color: rgba(255, 229, 180, 1)  ; color:black;background-color: rgba(255, 229, 180, 1)} .btn-peach:hover{text-decoration:none; color:black;background-color: rgba(255, 229, 180, 0.8)}.btn-laguna{border-color: rgba(248, 228, 115, 1)  ; color:black;background-color: rgba(248, 228, 115, 1)} .btn-laguna:hover{text-decoration:none; color:black;background-color: rgba(248, 228, 115, 0.8)}.btn-mustard{border-color: rgba(254, 220, 83, 1)  ; color:black;background-color: rgba(254, 220, 83, 1)} .btn-mustard:hover{text-decoration:none; color:black;background-color: rgba(254, 220, 83, 0.8)}.btn-ecru{border-color: rgba(205, 177, 129, 1)  ; color:black;background-color: rgba(205, 177, 129, 1)} .btn-ecru:hover{text-decoration:none; color:black;background-color: rgba(205, 177, 129, 0.8)}.btn-corn{border-color: rgba(228, 204, 6, 1)  ; color:black;background-color: rgba(228, 204, 6, 1)} .btn-corn:hover{text-decoration:none; color:black;background-color: rgba(228, 204, 6, 0.8)}.btn-pineapple{border-color: rgba(254, 225, 43, 1)  ; color:black;background-color: rgba(254, 225, 43, 1)} .btn-pineapple:hover{text-decoration:none; color:black;background-color: rgba(254, 225, 43, 0.8)}.btn-flaxen{border-color: rgba(214, 183, 90, 1)  ; color:black;background-color: rgba(214, 183, 90, 1)} .btn-flaxen:hover{text-decoration:none; color:black;background-color: rgba(214, 183, 90, 0.8)}.btn-eggnog{border-color: rgba(249, 226, 156, 1)  ; color:black;background-color: rgba(249, 226, 156, 1)} .btn-eggnog:hover{text-decoration:none; color:black;background-color: rgba(249, 226, 156, 0.8)}.btn-sepia{border-color: rgba(225, 183, 122, 1)  ; color:black;background-color: rgba(225, 183, 122, 1)} .btn-sepia:hover{text-decoration:none; color:black;background-color: rgba(225, 183, 122, 0.8)}.btn-orange{border-color: rgba(251, 102, 0, 1)  ; color: white;background-color: rgba(251, 102, 0, 1)} .btn-orange:hover{text-decoration:none; color: white;background-color: rgba(251, 102, 0, 0.8)}\n.btn-gold{border-color: rgba(249, 166, 2, 1)  ; color: white;background-color: rgba(249, 166, 2, 1)} .btn-gold:hover{text-decoration:none; color: white;background-color: rgba(249, 166, 2, 0.8)}.btn-goldenrod{border-color: rgba(219, 165, 33, 1)  ; color: white;background-color: rgba(219, 165, 33, 1)} .btn-goldenrod:hover{text-decoration:none; color: white;background-color: rgba(219, 165, 33, 0.8)}\n.btn-pumpkin{border-color: rgba(255, 115, 23, 1)  ; color: white;background-color: rgba(255, 115, 23, 1)} .btn-pumpkin:hover{text-decoration:none; color: white;background-color: rgba(255, 115, 23, 0.8)}.btn-fire{border-color: rgba(253, 165, 15, 1)  ; color: white;background-color: rgba(253, 165, 15, 1)} .btn-fire:hover{text-decoration:none; color: white;background-color: rgba(253, 165, 15, 0.8)}\n.btn-ochre{border-color: rgba(205, 119, 34, 1)  ; color: white;background-color: rgba(205, 119, 34, 1)} .btn-ochre:hover{text-decoration:none; color: white;background-color: rgba(205, 119, 34, 0.8)}.btn-amber{border-color: rgba(254, 191, 0, 1)  ; color: white;background-color: rgba(254, 191, 0, 1)} .btn-amber:hover{text-decoration:none; color: white;background-color: rgba(254, 191, 0, 0.8)}\n.btn-dijon{border-color: rgba(196, 145, 2, 1)  ; color: white;background-color: rgba(196, 145, 2, 1)} .btn-dijon:hover{text-decoration:none; color: white;background-color: rgba(196, 145, 2, 0.8)}.btn-tangerine{border-color: rgba(250, 128, 42, 1)  ; color: white;background-color: rgba(250, 128, 42, 1)} .btn-tangerine:hover{text-decoration:none; color: white;background-color: rgba(250, 128, 42, 0.8)}.btn-tiger{border-color: rgba(253, 106, 3, 1)  ; color: white;background-color: rgba(253, 106, 3, 1)} .btn-tiger:hover{text-decoration:none; color: white;background-color: rgba(253, 106, 3, 0.8)}.btn-honey{border-color: rgba(235, 150, 5, 1)  ; color: white;background-color: rgba(235, 150, 5, 1)} .btn-honey:hover{text-decoration:none; color: white;background-color: rgba(235, 150, 5, 0.8)}\n.btn-carrot{border-color: rgba(239, 114, 22, 1)  ; color: white;background-color: rgba(239, 114, 22, 1)} .btn-carrot:hover{text-decoration:none; color: white;background-color: rgba(239, 114, 22, 0.8)}.btn-apricot{border-color: rgba(239, 129, 14, 1)  ; color: white;background-color: rgba(239, 129, 14, 1)} .btn-apricot:hover{text-decoration:none; color: white;background-color: rgba(239, 129, 14, 0.8)}.btn-bronze{border-color: rgba(178, 85, 15, 1)  ; color: white;background-color: rgba(178, 85, 15, 1)} .btn-bronze:hover{text-decoration:none; color: white;background-color: rgba(178, 85, 15, 0.8)}.btn-cider{border-color: rgba(179, 103, 43, 1)  ; color: white;background-color: rgba(179, 103, 43, 1)} .btn-cider:hover{text-decoration:none; color: white;background-color: rgba(179, 103, 43, 0.8)}\n.btn-clay{border-color: rgba(129, 63, 11, 1)  ; color: white;background-color: rgba(129, 63, 11, 1)} .btn-clay:hover{text-decoration:none; color: white;background-color: rgba(129, 63, 11, 0.8)}.btn-rust{border-color: rgba(139, 64, 0, 1)  ; color: white;background-color: rgba(139, 64, 0, 1)} .btn-rust:hover{text-decoration:none; color: white;background-color: rgba(139, 64, 0, 0.8)}\n.btn-amber2{border-color: rgba(136, 48, 0, 1)  ; color: white;background-color: rgba(136, 48, 0, 1)} .btn-amber2:hover{text-decoration:none; color: white;background-color: rgba(136, 48, 0, 0.8)}.btn-spice{border-color: rgba(121, 56, 2, 1)  ; color: white;background-color: rgba(121, 56, 2, 1)} .btn-spice:hover{text-decoration:none; color: white;background-color: rgba(121, 56, 2, 0.8)}\n.btn-burntor{border-color: rgba(149, 64, 0, 1)  ; color: white;background-color: rgba(149, 64, 0, 1)} .btn-burntor:hover{text-decoration:none; color: white;background-color: rgba(149, 64, 0, 0.8)}.btn-red{border-color: rgba(209, 0, 4, 1)  ; color: white;background-color: rgba(209, 0, 4, 1)} .btn-red:hover{text-decoration:none; color: white;background-color: rgba(209, 0, 4, 0.8)}\n.btn-salmon{border-color: rgba(250, 128, 113, 1)  ; color: white;background-color: rgba(250, 128, 113, 1)} .btn-salmon:hover{text-decoration:none; color: white;background-color: rgba(250, 128, 113, 0.8)}.btn-scarlet{border-color: rgba(255, 35, 0, 1)  ; color: white;background-color: rgba(255, 35, 0, 1)} .btn-scarlet:hover{text-decoration:none; color: white;background-color: rgba(255, 35, 0, 0.8)}\n.btn-barnred{border-color: rgba(123, 11, 0, 1)  ; color: white;background-color: rgba(123, 11, 0, 1)} .btn-barnred:hover{text-decoration:none; color: white;background-color: rgba(123, 11, 0, 0.8)}.btn-imperial{border-color: rgba(237, 40, 57, 1)  ; color: white;background-color: rgba(237, 40, 57, 1)} .btn-imperial:hover{text-decoration:none; color: white;background-color: rgba(237, 40, 57, 0.8)}.btn-indianred{border-color: rgba(205, 93, 92, 1)  ; color: white;background-color: rgba(205, 93, 92, 1)} .btn-indianred:hover{text-decoration:none; color: white;background-color: rgba(205, 93, 92, 0.8)}.btn-chili{border-color: rgba(195, 24, 7, 1)  ; color: white;background-color: rgba(195, 24, 7, 1)} .btn-chili:hover{text-decoration:none; color: white;background-color: rgba(195, 24, 7, 0.8)}\n.btn-firebrick{border-color: rgba(178, 34, 33, 1)  ; color: white;background-color: rgba(178, 34, 33, 1)} .btn-firebrick:hover{text-decoration:none; color: white;background-color: rgba(178, 34, 33, 0.8)}.btn-maroon{border-color: rgba(128, 0, 1, 1)  ; color: white;background-color: rgba(128, 0, 1, 1)} .btn-maroon:hover{text-decoration:none; color: white;background-color: rgba(128, 0, 1, 0.8)}\n.btn-redwood{border-color: rgba(163, 90, 81, 1)  ; color: white;background-color: rgba(163, 90, 81, 1)} .btn-redwood:hover{text-decoration:none; color: white;background-color: rgba(163, 90, 81, 0.8)}.btn-raspberry{border-color: rgba(210, 31, 60, 1)  ; color: white;background-color: rgba(210, 31, 60, 1)} .btn-raspberry:hover{text-decoration:none; color: white;background-color: rgba(210, 31, 60, 0.8)}.btn-candyapple{border-color: rgba(255, 8, 0, 1)  ; color: white;background-color: rgba(255, 8, 0, 1)} .btn-candyapple:hover{text-decoration:none; color: white;background-color: rgba(255, 8, 0, 0.8)}.btn-carmine{border-color: rgba(150, 0, 27, 1)  ; color: white;background-color: rgba(150, 0, 27, 1)} .btn-carmine:hover{text-decoration:none; color: white;background-color: rgba(150, 0, 27, 0.8)}\n.btn-persian{border-color: rgba(202, 52, 51, 1)  ; color: white;background-color: rgba(202, 52, 51, 1)} .btn-persian:hover{text-decoration:none; color: white;background-color: rgba(202, 52, 51, 0.8)}.btn-usflag{border-color: rgba(191, 9, 49, 1)  ; color: white;background-color: rgba(191, 9, 49, 1)} .btn-usflag:hover{text-decoration:none; color: white;background-color: rgba(191, 9, 49, 0.8)}\n.btn-ferrari{border-color: rgba(254, 41, 1, 1)  ; color: white;background-color: rgba(254, 41, 1, 1)} .btn-ferrari:hover{text-decoration:none; color: white;background-color: rgba(254, 41, 1, 0.8)}.btn-burgundy{border-color: rgba(142, 2, 31, 1)  ; color: white;background-color: rgba(142, 2, 31, 1)} .btn-burgundy:hover{text-decoration:none; color: white;background-color: rgba(142, 2, 31, 0.8)}\n.btn-crimson{border-color: rgba(183, 16, 10, 1)  ; color: white;background-color: rgba(183, 16, 10, 1)} .btn-crimson:hover{text-decoration:none; color: white;background-color: rgba(183, 16, 10, 0.8)}.btn-sangria{border-color: rgba(94, 25, 18, 1)  ; color: white;background-color: rgba(94, 25, 18, 1)} .btn-sangria:hover{text-decoration:none; color: white;background-color: rgba(94, 25, 18, 0.8)}\n.btn-mahogany{border-color: rgba(64, 13, 9, 1)  ; color: white;background-color: rgba(64, 13, 9, 1)} .btn-mahogany:hover{text-decoration:none; color: white;background-color: rgba(64, 13, 9, 0.8)}.btn-pink{border-color: rgba(253, 14, 191, 1)  ; color: white;background-color: rgba(253, 14, 191, 1)} .btn-pink:hover{text-decoration:none; color: white;background-color: rgba(253, 14, 191, 0.8)}\n.btn-ruby{border-color: rgba(224, 17, 97, 1)  ; color: white;background-color: rgba(224, 17, 97, 1)} .btn-ruby:hover{text-decoration:none; color: white;background-color: rgba(224, 17, 97, 0.8)}.btn-ultra{border-color: rgba(255, 110, 253, 1)  ; color: white;background-color: rgba(255, 110, 253, 1)} .btn-ultra:hover{text-decoration:none; color: white;background-color: rgba(255, 110, 253, 0.8)}\n.btn-thulian{border-color: rgba(223, 110, 162, 1)  ; color: white;background-color: rgba(223, 110, 162, 1)} .btn-thulian:hover{text-decoration:none; color: white;background-color: rgba(223, 110, 162, 0.8)}.btn-magenta{border-color: rgba(255, 0, 144, 1)  ; color: white;background-color: rgba(255, 0, 144, 1)} .btn-magenta:hover{text-decoration:none; color: white;background-color: rgba(255, 0, 144, 0.8)}\n.btn-rosepink{border-color: rgba(255, 101, 203, 1)  ; color: white;background-color: rgba(255, 101, 203, 1)} .btn-rosepink:hover{text-decoration:none; color: white;background-color: rgba(255, 101, 203, 0.8)}.btn-lavender{border-color: rgba(251, 174, 210, 1)  ; color: white;background-color: rgba(251, 174, 210, 1)} .btn-lavender:hover{text-decoration:none; color: white;background-color: rgba(251, 174, 210, 0.8)}.btn-creamy{border-color: rgba(255, 105, 179, 1)  ; color: white;background-color: rgba(255, 105, 179, 1)} .btn-creamy:hover{text-decoration:none; color: white;background-color: rgba(255, 105, 179, 0.8)}.btn-fuchsia{border-color: rgba(255, 0, 254, 1)  ; color: white;background-color: rgba(255, 0, 254, 1)} .btn-fuchsia:hover{text-decoration:none; color: white;background-color: rgba(255, 0, 254, 0.8)}\n.btn-frenchrose{border-color: rgba(247, 74, 138, 1)  ; color: white;background-color: rgba(247, 74, 138, 1)} .btn-frenchrose:hover{text-decoration:none; color: white;background-color: rgba(247, 74, 138, 0.8)}.btn-cerise{border-color: rgba(221, 49, 99, 1)  ; color: white;background-color: rgba(221, 49, 99, 1)} .btn-cerise:hover{text-decoration:none; color: white;background-color: rgba(221, 49, 99, 0.8)}\n.btn-carnation{border-color: rgba(255, 166, 201, 1)  ; color: white;background-color: rgba(255, 166, 201, 1)} .btn-carnation:hover{text-decoration:none; color: white;background-color: rgba(255, 166, 201, 0.8)}.btn-brick{border-color: rgba(251, 96, 128, 1)  ; color: white;background-color: rgba(251, 96, 128, 1)} .btn-brick:hover{text-decoration:none; color: white;background-color: rgba(251, 96, 128, 0.8)}\n.btn-amaranth{border-color: rgba(242, 155, 187, 1)  ; color: white;background-color: rgba(242, 155, 187, 1)} .btn-amaranth:hover{text-decoration:none; color: white;background-color: rgba(242, 155, 187, 0.8)}.btn-taffy{border-color: rgba(249, 135, 195, 1)  ; color: white;background-color: rgba(249, 135, 195, 1)} .btn-taffy:hover{text-decoration:none; color: white;background-color: rgba(249, 135, 195, 0.8)}.btn-bubblegum{border-color: rgba(254, 91, 174, 1)  ; color: white;background-color: rgba(254, 91, 174, 1)} .btn-bubblegum:hover{text-decoration:none; color: white;background-color: rgba(254, 91, 174, 0.8)}.btn-hotpink{border-color: rgba(248, 24, 149, 1)  ; color: white;background-color: rgba(248, 24, 149, 1)} .btn-hotpink:hover{text-decoration:none; color: white;background-color: rgba(248, 24, 149, 0.8)}.btn-punch{border-color: rgba(236, 85, 120, 1)  ; color: white;background-color: rgba(236, 85, 120, 1)} .btn-punch:hover{text-decoration:none; color: white;background-color: rgba(236, 85, 120, 0.8)}.btn-lemonade{border-color: rgba(253, 185, 200, 1)  ; color: white;background-color: rgba(253, 185, 200, 1)} .btn-lemonade:hover{text-decoration:none; color: white;background-color: rgba(253, 185, 200, 0.8)}.btn-flamingo{border-color: rgba(255, 161, 185, 1)  ; color: white;background-color: rgba(255, 161, 185, 1)} .btn-flamingo:hover{text-decoration:none; color: white;background-color: rgba(255, 161, 185, 0.8)}.btn-violet{border-color: rgba(178, 0, 238, 1)  ; color: white;background-color: rgba(178, 0, 238, 1)} .btn-violet:hover{text-decoration:none; color: white;background-color: rgba(178, 0, 238, 0.8)}.btn-hibiscus{border-color: rgba(180, 55, 85, 1)  ; color: white;background-color: rgba(180, 55, 85, 1)} .btn-hibiscus:hover{text-decoration:none; color: white;background-color: rgba(180, 55, 85, 0.8)}.btn-mauve{border-color: rgba(120, 75, 132, 1)  ; color: white;background-color: rgba(120, 75, 132, 1)} .btn-mauve:hover{text-decoration:none; color: white;background-color: rgba(120, 75, 132, 0.8)}\n.btn-mulberry{border-color: rgba(198, 75, 138, 1)  ; color: white;background-color: rgba(198, 75, 138, 1)} .btn-mulberry:hover{text-decoration:none; color: white;background-color: rgba(198, 75, 138, 0.8)}.btn-lavender{border-color: rgba(228, 160, 247, 1)  ; color: white;background-color: rgba(228, 160, 247, 1)} .btn-lavender:hover{text-decoration:none; color: white;background-color: rgba(228, 160, 247, 0.8)}.btn-orchid{border-color: rgba(176, 104, 238, 1)  ; color: white;background-color: rgba(176, 104, 238, 1)} .btn-orchid:hover{text-decoration:none; color: white;background-color: rgba(176, 104, 238, 0.8)}.btn-lilac{border-color: rgba(182, 96, 207, 1)  ; color: white;background-color: rgba(182, 96, 207, 1)} .btn-lilac:hover{text-decoration:none; color: white;background-color: rgba(182, 96, 207, 0.8)}\n.btn-electric{border-color: rgba(144, 0, 255, 1)  ; color: white;background-color: rgba(144, 0, 255, 1)} .btn-electric:hover{text-decoration:none; color: white;background-color: rgba(144, 0, 255, 0.8)}.btn-african{border-color: rgba(178, 132, 188, 1)  ; color: white;background-color: rgba(178, 132, 188, 1)} .btn-african:hover{text-decoration:none; color: white;background-color: rgba(178, 132, 188, 0.8)}.btn-grape{border-color: rgba(110, 46, 169, 1)  ; color: white;background-color: rgba(110, 46, 169, 1)} .btn-grape:hover{text-decoration:none; color: white;background-color: rgba(110, 46, 169, 0.8)}.btn-amethyst{border-color: rgba(153, 102, 203, 1)  ; color: white;background-color: rgba(153, 102, 203, 1)} .btn-amethyst:hover{text-decoration:none; color: white;background-color: rgba(153, 102, 203, 0.8)}.btn-byzantine{border-color: rgba(111, 42, 99, 1)  ; color: white;background-color: rgba(111, 42, 99, 1)} .btn-byzantine:hover{text-decoration:none; color: white;background-color: rgba(111, 42, 99, 0.8)}.btn-fandango{border-color: rgba(180, 52, 137, 1)  ; color: white;background-color: rgba(180, 52, 137, 1)} .btn-fandango:hover{text-decoration:none; color: white;background-color: rgba(180, 52, 137, 0.8)}.btn-helio{border-color: rgba(224, 114, 254, 1)  ; color: white;background-color: rgba(224, 114, 254, 1)} .btn-helio:hover{text-decoration:none; color: white;background-color: rgba(224, 114, 254, 0.8)}.btn-floral{border-color: rgba(180, 126, 222, 1)  ; color: white;background-color: rgba(180, 126, 222, 1)} .btn-floral:hover{text-decoration:none; color: white;background-color: rgba(180, 126, 222, 0.8)}.btn-thistle{border-color: rgba(215, 191, 239, 1)  ; color: white;background-color: rgba(215, 191, 239, 1)} .btn-thistle:hover{text-decoration:none; color: white;background-color: rgba(215, 191, 239, 0.8)}.btn-royal{border-color: rgba(120, 82, 169, 1)  ; color: white;background-color: rgba(120, 82, 169, 1)} .btn-royal:hover{text-decoration:none; color: white;background-color: rgba(120, 82, 169, 0.8)}.btn-lollipop{border-color: rgba(129, 0, 127, 1)  ; color: white;background-color: rgba(129, 0, 127, 1)} .btn-lollipop:hover{text-decoration:none; color: white;background-color: rgba(129, 0, 127, 0.8)}.btn-plum{border-color: rgba(140, 70, 133, 1)  ; color: white;background-color: rgba(140, 70, 133, 1)} .btn-plum:hover{text-decoration:none; color: white;background-color: rgba(140, 70, 133, 0.8)}\n.btn-eggplant{border-color: rgba(50, 19, 50, 1)  ; color: white;background-color: rgba(50, 19, 50, 1)} .btn-eggplant:hover{text-decoration:none; color: white;background-color: rgba(50, 19, 50, 0.8)}.btn-blue{border-color: rgba(0, 25, 249, 1)  ; color: white;background-color: rgba(0, 25, 249, 1)} .btn-blue:hover{text-decoration:none; color: white;background-color: rgba(0, 25, 249, 0.8)}\n.btn-denim{border-color: rgba(19, 30, 58, 1)  ; color: white;background-color: rgba(19, 30, 58, 1)} .btn-denim:hover{text-decoration:none; color: white;background-color: rgba(19, 30, 58, 0.8)}.btn-pigeon{border-color: rgba(114, 133, 165, 1)  ; color: white;background-color: rgba(114, 133, 165, 1)} .btn-pigeon:hover{text-decoration:none; color: white;background-color: rgba(114, 133, 165, 0.8)}\n.btn-sky{border-color: rgba(149, 200, 217, 1)  ; color: white;background-color: rgba(149, 200, 217, 1)} .btn-sky:hover{text-decoration:none; color: white;background-color: rgba(149, 200, 217, 0.8)}.btn-independence{border-color: rgba(77, 81, 110, 1)  ; color: white;background-color: rgba(77, 81, 110, 1)} .btn-independence:hover{text-decoration:none; color: white;background-color: rgba(77, 81, 110, 0.8)}.btn-airforce{border-color: rgba(89, 139, 174, 1)  ; color: white;background-color: rgba(89, 139, 174, 1)} .btn-airforce:hover{text-decoration:none; color: white;background-color: rgba(89, 139, 174, 0.8)}.btn-babyblue{border-color: rgba(138, 207, 240, 1)  ; color: white;background-color: rgba(138, 207, 240, 1)} .btn-babyblue:hover{text-decoration:none; color: white;background-color: rgba(138, 207, 240, 0.8)}.btn-navy{border-color: rgba(1, 0, 128, 1)  ; color: white;background-color: rgba(1, 0, 128, 1)} .btn-navy:hover{text-decoration:none; color: white;background-color: rgba(1, 0, 128, 0.8)}.btn-steel{border-color: rgba(70, 130, 180, 1)  ; color: white;background-color: rgba(70, 130, 180, 1)} .btn-steel:hover{text-decoration:none; color: white;background-color: rgba(70, 130, 180, 0.8)}\n.btn-carolina{border-color: rgba(88, 160, 210, 1)  ; color: white;background-color: rgba(88, 160, 210, 1)} .btn-carolina:hover{text-decoration:none; color: white;background-color: rgba(88, 160, 210, 0.8)}.btn-turkish{border-color: rgba(81, 151, 163, 1)  ; color: white;background-color: rgba(81, 151, 163, 1)} .btn-turkish:hover{text-decoration:none; color: white;background-color: rgba(81, 151, 163, 0.8)}.btn-maya{border-color: rgba(115, 194, 251, 1)  ; color: white;background-color: rgba(115, 194, 251, 1)} .btn-maya:hover{text-decoration:none; color: white;background-color: rgba(115, 194, 251, 0.8)}.btn-cornflower{border-color: rgba(103, 147, 244, 1)  ; color: white;background-color: rgba(103, 147, 244, 1)} .btn-cornflower:hover{text-decoration:none; color: white;background-color: rgba(103, 147, 244, 0.8)}.btn-olympic{border-color: rgba(0, 142, 204, 1)  ; color: white;background-color: rgba(0, 142, 204, 1)} .btn-olympic:hover{text-decoration:none; color: white;background-color: rgba(0, 142, 204, 0.8)}.btn-saphire{border-color: rgba(15, 82, 186, 1)  ; color: white;background-color: rgba(15, 82, 186, 1)} .btn-saphire:hover{text-decoration:none; color: white;background-color: rgba(15, 82, 186, 0.8)}\n.btn-azure{border-color: rgba(0, 128, 253, 1)  ; color: white;background-color: rgba(0, 128, 253, 1)} .btn-azure:hover{text-decoration:none; color: white;background-color: rgba(0, 128, 253, 0.8)}.btn-egyptian{border-color: rgba(17, 53, 167, 1)  ; color: white;background-color: rgba(17, 53, 167, 1)} .btn-egyptian:hover{text-decoration:none; color: white;background-color: rgba(17, 53, 167, 0.8)}.btn-yale{border-color: rgba(13, 76, 145, 1)  ; color: white;background-color: rgba(13, 76, 145, 1)} .btn-yale:hover{text-decoration:none; color: white;background-color: rgba(13, 76, 145, 0.8)}.btn-prussian{border-color: rgba(0, 49, 82, 1)  ; color: white;background-color: rgba(0, 49, 82, 1)} .btn-prussian:hover{text-decoration:none; color: white;background-color: rgba(0, 49, 82, 0.8)}\n.btn-space{border-color: rgba(28, 41, 82, 1)  ; color: white;background-color: rgba(28, 41, 82, 1)} .btn-space:hover{text-decoration:none; color: white;background-color: rgba(28, 41, 82, 0.8)}.btn-green{border-color: rgba(59, 177, 63, 1)  ; color: white;background-color: rgba(59, 177, 63, 1)} .btn-green:hover{text-decoration:none; color: white;background-color: rgba(59, 177, 63, 0.8)}.btn-forest{border-color: rgba(11, 102, 35, 1)  ; color: white;background-color: rgba(11, 102, 35, 1)} .btn-forest:hover{text-decoration:none; color: white;background-color: rgba(11, 102, 35, 0.8)}.btn-sage{border-color: rgba(155, 194, 131, 1)  ; color: white;background-color: rgba(155, 194, 131, 1)} .btn-sage:hover{text-decoration:none; color: white;background-color: rgba(155, 194, 131, 0.8)}.btn-olive{border-color: rgba(112, 130, 56, 1)  ; color: white;background-color: rgba(112, 130, 56, 1)} .btn-olive:hover{text-decoration:none; color: white;background-color: rgba(112, 130, 56, 0.8)}.btn-lime{border-color: rgba(201, 233, 72, 1)  ; color: black;background-color: rgba(201, 233, 72, 1)} .btn-lime:hover{text-decoration:none; color: black;background-color: rgba(201, 233, 72, 0.8)}.btn-hunter{border-color: rgba(64, 111, 77, 1)  ; color: white;background-color: rgba(64, 111, 77, 1)} .btn-hunter:hover{text-decoration:none; color: white;background-color: rgba(64, 111, 77, 0.8)}\n.btn-jade{border-color: rgba(0, 168, 107, 1)  ; color: white;background-color: rgba(0, 168, 107, 1)} .btn-jade:hover{text-decoration:none; color: white;background-color: rgba(0, 168, 107, 0.8)}.btn-artichoke{border-color: rgba(144, 150, 122, 1)  ; color: white;background-color: rgba(144, 150, 122, 1)} .btn-artichoke:hover{text-decoration:none; color: white;background-color: rgba(144, 150, 122, 0.8)}.btn-fern{border-color: rgba(78, 121, 67, 1)  ; color: white;background-color: rgba(78, 121, 67, 1)} .btn-fern:hover{text-decoration:none; color: white;background-color: rgba(78, 121, 67, 0.8)}.btn-jungle{border-color: rgba(41, 171, 135, 1)  ; color: white;background-color: rgba(41, 171, 135, 1)} .btn-jungle:hover{text-decoration:none; color: white;background-color: rgba(41, 171, 135, 0.8)}.btn-laurel{border-color: rgba(170, 186, 159, 1)  ; color: white;background-color: rgba(170, 186, 159, 1)} .btn-laurel:hover{text-decoration:none; color: white;background-color: rgba(170, 186, 159, 0.8)}.btn-moss{border-color: rgba(138, 154, 91, 1)  ; color: white;background-color: rgba(138, 154, 91, 1)} .btn-moss:hover{text-decoration:none; color: white;background-color: rgba(138, 154, 91, 0.8)}.btn-mint{border-color: rgba(151, 251, 152, 1)  ; color: black;background-color: rgba(151, 251, 152, 1)} .btn-mint:hover{text-decoration:none; color: black;background-color: rgba(151, 251, 152, 0.8)}.btn-pine{border-color: rgba(0, 121, 112, 1)  ; color: white;background-color: rgba(0, 121, 112, 1)} .btn-pine:hover{text-decoration:none; color: white;background-color: rgba(0, 121, 112, 0.8)}.btn-tea{border-color:  rgba(208, 240, 191, 1) ; color: black;background-color: rgba(208, 240, 191, 1)} .btn-tea:hover{text-decoration:none; color: black;background-color: rgba(208, 240, 191, 0.8)}\n.btn-army{border-color: rgba(75, 83, 32, 1)  ; color: white;background-color: rgba(75, 83, 32, 1)} .btn-army:hover{text-decoration:none; color: white;background-color: rgba(75, 83, 32, 0.8)}.btn-emerald{border-color: rgba(79, 200, 120, 1)  ; color: white;background-color: rgba(79, 200, 120, 1)} .btn-emerald:hover{text-decoration:none; color: white;background-color: rgba(79, 200, 120, 0.8)}\n.btn-kelly{border-color: rgba(76, 187, 23, 1)  ; color: white;background-color: rgba(76, 187, 23, 1)} .btn-kelly:hover{text-decoration:none; color: white;background-color: rgba(76, 187, 23, 0.8)}.btn-sacramento{border-color: rgba(4, 57, 39, 1)  ; color: white;background-color: rgba(4, 57, 39, 1)} .btn-sacramento:hover{text-decoration:none; color: white;background-color: rgba(4, 57, 39, 0.8)}\n.btn-sea{border-color: rgba(45, 139, 87, 1)  ; color: white;background-color: rgba(45, 139, 87, 1)} .btn-sea:hover{text-decoration:none; color: white;background-color: rgba(45, 139, 87, 0.8)}.btn-brown{border-color: rgba(124, 71, 1, 1)  ; color: white;background-color: rgba(124, 71, 1, 1)} .btn-brown:hover{text-decoration:none; color: white;background-color: rgba(124, 71, 1, 0.8)}.btn-cedar{border-color: rgba(75, 58, 40, 1)  ; color: white;background-color: rgba(75, 58, 40, 1)} .btn-cedar:hover{text-decoration:none; color: white;background-color: rgba(75, 58, 40, 0.8)}.btn-cinnamon{border-color: rgba(98, 42, 17, 1)  ; color: white;background-color: rgba(98, 42, 17, 1)} .btn-cinnamon:hover{text-decoration:none; color: white;background-color: rgba(98, 42, 17, 0.8)}.btn-brunette{border-color: rgba(58, 31, 4, 1)  ; color: white;background-color: rgba(58, 31, 4, 1)} .btn-brunette:hover{text-decoration:none; color: white;background-color: rgba(58, 31, 4, 0.8)}.btn-tawny{border-color: rgba(125, 72, 28, 1)  ; color: white;background-color: rgba(125, 72, 28, 1)} .btn-tawny:hover{text-decoration:none; color: white;background-color: rgba(125, 72, 28, 0.8)}.btn-umber{border-color: rgba(54, 35, 20, 1)  ; color: white;background-color: rgba(54, 35, 20, 1)} .btn-umber:hover{text-decoration:none; color: white;background-color: rgba(54, 35, 20, 0.8)}\n.btn-tortilla{border-color: rgba(153, 121, 80, 1)  ; color: white;background-color: rgba(153, 121, 80, 1)} .btn-tortilla:hover{text-decoration:none; color: white;background-color: rgba(153, 121, 80, 0.8)}.btn-chocolate{border-color: rgba(43, 23, 0, 1)  ; color: white;background-color: rgba(43, 23, 0, 1)} .btn-chocolate:hover{text-decoration:none; color: white;background-color: rgba(43, 23, 0, 0.8)}\n.btn-syrup{border-color: rgba(75, 31, 2, 1)  ; color: white;background-color: rgba(75, 31, 2, 1)} .btn-syrup:hover{text-decoration:none; color: white;background-color: rgba(75, 31, 2, 0.8)}.btn-gingerbread{border-color: rgba(92, 44, 6, 1)  ; color: white;background-color: rgba(92, 44, 6, 1)} .btn-gingerbread:hover{text-decoration:none; color: white;background-color: rgba(92, 44, 6, 0.8)}\n.btn-caramel{border-color: rgba(98, 54, 19, 1)  ; color: white;background-color: rgba(98, 54, 19, 1)} .btn-caramel:hover{text-decoration:none; color: white;background-color: rgba(98, 54, 19, 0.8)}.btn-walnut{border-color: rgba(67, 39, 15, 1)  ; color: white;background-color: rgba(67, 39, 15, 1)} .btn-walnut:hover{text-decoration:none; color: white;background-color: rgba(67, 39, 15, 0.8)}\n.btn-pecan{border-color: rgba(72, 38, 13, 1)  ; color: white;background-color: rgba(72, 38, 13, 1)} .btn-pecan:hover{text-decoration:none; color: white;background-color: rgba(72, 38, 13, 0.8)}.btn-wood{border-color: rgba(64, 47, 29, 1)  ; color: white;background-color: rgba(64, 47, 29, 1)} .btn-wood:hover{text-decoration:none; color: white;background-color: rgba(64, 47, 29, 0.8)}.btn-hickory{border-color: rgba(52, 30, 16, 1)  ; color: white;background-color: rgba(52, 30, 16, 1)} .btn-hickory:hover{text-decoration:none; color: white;background-color: rgba(52, 30, 16, 0.8)}.btn-espresso{border-color: rgba(74, 56, 42, 1)  ; color: white;background-color: rgba(74, 56, 42, 1)} .btn-espresso:hover{text-decoration:none; color: white;background-color: rgba(74, 56, 42, 0.8)}.btn-peanut{border-color: rgba(121, 92, 50, 1)  ; color: white;background-color: rgba(121, 92, 50, 1)} .btn-peanut:hover{text-decoration:none; color: white;background-color: rgba(121, 92, 50, 0.8)}.btn-mocha{border-color: rgba(59, 39, 12, 1)  ; color: white;background-color: rgba(59, 39, 12, 1)} .btn-mocha:hover{text-decoration:none; color: white;background-color: rgba(59, 39, 12, 0.8)}.btn-coffee{border-color: rgba(74, 55, 25, 1)  ; color: white;background-color: rgba(74, 55, 25, 1)} .btn-coffee:hover{text-decoration:none; color: white;background-color: rgba(74, 55, 25, 0.8)}\n.btn-russet{border-color: rgba(127, 70, 27, 1)  ; color: white;background-color: rgba(127, 70, 27, 1)} .btn-russet:hover{text-decoration:none; color: white;background-color: rgba(127, 70, 27, 0.8)}.btn-gray{border-color: rgba(72, 72, 72, 1)  ; color: white;background-color: rgba(72, 72, 72, 1)} .btn-gray:hover{text-decoration:none; color: white;background-color: rgba(72, 72, 72, 0.8)}\n.btn-fossil{border-color: rgba(119, 114, 118, 1)  ; color: white;background-color: rgba(119, 114, 118, 1)} .btn-fossil:hover{text-decoration:none; color: white;background-color: rgba(119, 114, 118, 0.8)}.btn-mink{border-color: rgba(137, 127, 125, 1)  ; color: white;background-color: rgba(137, 127, 125, 1)} .btn-mink:hover{text-decoration:none; color: white;background-color: rgba(137, 127, 125, 0.8)}.btn-pearlriver{border-color: rgba(217, 221, 220, 1)  ; color: black;background-color: rgba(217, 221, 220, 1)} .btn-pearlriver:hover{text-decoration:none; color: black;background-color: rgba(217, 221, 220, 0.8)}.btn-abalone{border-color: rgba(214, 207, 197, 1)  ; color: black;background-color: rgba(214, 207, 197, 1)} .btn-abalone:hover{text-decoration:none; color: black;background-color: rgba(214, 207, 197, 0.8)}.btn-harborgray{border-color: rgba(199, 198, 194, 1)  ; color: black;background-color: rgba(199, 198, 194, 1)} .btn-harborgray:hover{text-decoration:none; color: black;background-color: rgba(199, 198, 194, 0.8)}.btn-smoke{border-color: rgba(190, 189, 185, 1)  ; color: black;background-color: rgba(190, 189, 185, 1)} .btn-smoke:hover{text-decoration:none; color: black;background-color: rgba(190, 189, 185, 0.8)}.btn-thunder{border-color: rgba(190, 182, 171, 1)  ; color: black;background-color: rgba(190, 182, 171, 1)} .btn-thunder:hover{text-decoration:none; color: black;background-color: rgba(190, 182, 171, 0.8)}.btn-pewter{border-color: rgba(153, 157, 160, 1)  ; color: white;background-color: rgba(153, 157, 160, 1)} .btn-pewter:hover{text-decoration:none; color: white;background-color: rgba(153, 157, 160, 0.8)}.btn-steel{border-color: rgba(118, 123, 126, 1)  ; color: white;background-color: rgba(118, 123, 126, 1)} .btn-steel:hover{text-decoration:none; color: white;background-color: rgba(118, 123, 126, 0.8)}.btn-stone{border-color: rgba(135, 127, 125, 1)  ; color: white;background-color: rgba(135, 127, 125, 1)} .btn-stone:hover{text-decoration:none; color: white;background-color: rgba(135, 127, 125, 0.8)}.btn-iron{border-color: rgba(72, 73, 75, 1)  ; color: white;background-color: rgba(72, 73, 75, 1)} .btn-iron:hover{text-decoration:none; color: white;background-color: rgba(72, 73, 75, 0.8)}.btn-rhino{border-color: rgba(185, 187, 182, 1)  ; color: black;background-color: rgba(185, 187, 182, 1)} .btn-rhino:hover{text-decoration:none; color: black;background-color: rgba(185, 187, 182, 0.8)}.btn-trout{border-color: rgba(151, 151, 143, 1)  ; color: white;background-color: rgba(151, 151, 143, 1)} .btn-trout:hover{text-decoration:none; color: white;background-color: rgba(151, 151, 143, 0.8)}.btn-seal{border-color: rgba(129, 131, 128, 1)  ; color: white;background-color: rgba(129, 131, 128, 1)} .btn-seal:hover{text-decoration:none; color: white;background-color: rgba(129, 131, 128, 0.8)}.btn-lava{border-color: rgba(129, 133, 136, 1)  ; color: white;background-color: rgba(129, 133, 136, 1)} .btn-lava:hover{text-decoration:none; color: white;background-color: rgba(129, 133, 136, 0.8)}.btn-shadow{border-color: rgba(54, 54, 54, 1)  ; color: white;background-color: rgba(54, 54, 54, 1)} .btn-shadow:hover{text-decoration:none; color: white;background-color: rgba(54, 54, 54, 0.8)}\n.btn-ash{border-color: rgba(85, 75, 74, 1)  ; color: white;background-color: rgba(85, 75, 74, 1)} .btn-ash:hover{text-decoration:none; color: white;background-color: rgba(85, 75, 74, 0.8)}.btn-anchor{border-color: rgba(63, 65, 77, 1)  ; color: white;background-color: rgba(63, 65, 77, 1)} .btn-anchor:hover{text-decoration:none; color: white;background-color: rgba(63, 65, 77, 0.8)}.btn-charcoal{border-color: rgba(34, 32, 33, 1)  ; color: white;background-color: rgba(34, 32, 33, 1)} .btn-charcoal:hover{text-decoration:none; color: white;background-color: rgba(34, 32, 33, 0.8)}\n\n.btn-black{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-black:focus{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}.btn-blackwhite{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-blackwhite:focus{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}\n.btn-white{border-color:   black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-white:focus{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}.btn-whiteblack{border-color:  black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-whiteblack:focus{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}\n\n.btn-yellow{border-color: rgba(254, 242, 0, 1) ; color:black;background-color: rgba(254, 242, 0, 1)} .btn-yellow:focus{text-decoration:none; color:black;background-color: rgba(254, 242, 0, 0.8)}.btn-mellow{border-color: rgba(247, 223, 125, 1)  ; color:black;background-color: rgba(247, 223, 125, 1)} .btn-mellow:focus{text-decoration:none; color:black;background-color: rgba(247, 223, 125, 0.8)}.btn-cyber{border-color: rgba(255, 211, 2, 1)  ; color:black;background-color: rgba(255, 211, 2, 1)} .btn-cyber:focus{text-decoration:none; color:black;background-color: rgba(255, 211, 2, 0.8)}.btn-royal{border-color: rgba(249, 217, 94, 1)  ; color:black;background-color: rgba(249, 217, 94, 1)} .btn-royal:focus{text-decoration:none; color:black;background-color: rgba(249, 217, 94, 0.8)}.btn-trombone{border-color: rgba(208, 181, 92, 1)  ; color:black;background-color: rgba(208, 181, 92, 1)} .btn-trombone:focus{text-decoration:none; color:black;background-color: rgba(208, 181, 92, 0.8)}.btn-banana{border-color: rgba(251, 244, 163, 1)  ; color:black;background-color: rgba(251, 244, 163, 1)} .btn-banana:focus{text-decoration:none; color:black;background-color: rgba(251, 244, 163, 0.8)}.btn-tuscany{border-color: rgba(252, 208, 44, 1)  ; color:black;background-color: rgba(252, 208, 44, 1)} .btn-tuscany:focus{text-decoration:none; color:black;background-color: rgba(252, 208, 44, 0.8)}.btn-lemon{border-color: rgba(239, 253, 96, 1)  ; color:black;background-color: rgba(239, 253, 96, 1)} .btn-lemon:focus{text-decoration:none; color:black;background-color: rgba(239, 253, 96, 0.8)}.btn-bumblebee{border-color: rgba(254, 226, 5, 1)  ; color:black;background-color: rgba(254, 226, 5, 1)} .btn-bumblebee:focus{text-decoration:none; color:black;background-color: rgba(254, 226, 5, 0.8)}.btn-flax{border-color: rgba(239, 219, 130, 1)  ; color:black;background-color: rgba(239, 219, 130, 1)} .btn-flax:focus{text-decoration:none; color:black;background-color: rgba(239, 219, 130, 0.8)}.btn-cream{border-color: rgba(255, 252, 209, 1)  ; color:black;background-color: rgba(255, 252, 209, 1)} .btn-cream:focus{text-decoration:none; color:black;background-color: rgba(255, 252, 209, 0.8)}.btn-peach{border-color: rgba(255, 229, 180, 1)  ; color:black;background-color: rgba(255, 229, 180, 1)} .btn-peach:focus{text-decoration:none; color:black;background-color: rgba(255, 229, 180, 0.8)}.btn-laguna{border-color: rgba(248, 228, 115, 1)  ; color:black;background-color: rgba(248, 228, 115, 1)} .btn-laguna:focus{text-decoration:none; color:black;background-color: rgba(248, 228, 115, 0.8)}.btn-mustard{border-color: rgba(254, 220, 83, 1)  ; color:black;background-color: rgba(254, 220, 83, 1)} .btn-mustard:focus{text-decoration:none; color:black;background-color: rgba(254, 220, 83, 0.8)}.btn-ecru{border-color: rgba(205, 177, 129, 1)  ; color:black;background-color: rgba(205, 177, 129, 1)} .btn-ecru:focus{text-decoration:none; color:black;background-color: rgba(205, 177, 129, 0.8)}.btn-corn{border-color: rgba(228, 204, 6, 1)  ; color:black;background-color: rgba(228, 204, 6, 1)} .btn-corn:focus{text-decoration:none; color:black;background-color: rgba(228, 204, 6, 0.8)}.btn-pineapple{border-color: rgba(254, 225, 43, 1)  ; color:black;background-color: rgba(254, 225, 43, 1)} .btn-pineapple:focus{text-decoration:none; color:black;background-color: rgba(254, 225, 43, 0.8)}.btn-flaxen{border-color: rgba(214, 183, 90, 1)  ; color:black;background-color: rgba(214, 183, 90, 1)} .btn-flaxen:focus{text-decoration:none; color:black;background-color: rgba(214, 183, 90, 0.8)}.btn-eggnog{border-color: rgba(249, 226, 156, 1)  ; color:black;background-color: rgba(249, 226, 156, 1)} .btn-eggnog:focus{text-decoration:none; color:black;background-color: rgba(249, 226, 156, 0.8)}.btn-sepia{border-color: rgba(225, 183, 122, 1)  ; color:black;background-color: rgba(225, 183, 122, 1)} .btn-sepia:focus{text-decoration:none; color:black;background-color: rgba(225, 183, 122, 0.8)}.btn-orange{border-color: rgba(251, 102, 0, 1)  ; color: white;background-color: rgba(251, 102, 0, 1)} .btn-orange:focus{text-decoration:none; color: white;background-color: rgba(251, 102, 0, 0.8)}\n.btn-gold{border-color: rgba(249, 166, 2, 1)  ; color: white;background-color: rgba(249, 166, 2, 1)} .btn-gold:focus{text-decoration:none; color: white;background-color: rgba(249, 166, 2, 0.8)}.btn-goldenrod{border-color: rgba(219, 165, 33, 1)  ; color: white;background-color: rgba(219, 165, 33, 1)} .btn-goldenrod:focus{text-decoration:none; color: white;background-color: rgba(219, 165, 33, 0.8)}\n.btn-pumpkin{border-color: rgba(255, 115, 23, 1)  ; color: white;background-color: rgba(255, 115, 23, 1)} .btn-pumpkin:focus{text-decoration:none; color: white;background-color: rgba(255, 115, 23, 0.8)}.btn-fire{border-color: rgba(253, 165, 15, 1)  ; color: white;background-color: rgba(253, 165, 15, 1)} .btn-fire:focus{text-decoration:none; color: white;background-color: rgba(253, 165, 15, 0.8)}\n.btn-ochre{border-color: rgba(205, 119, 34, 1)  ; color: white;background-color: rgba(205, 119, 34, 1)} .btn-ochre:focus{text-decoration:none; color: white;background-color: rgba(205, 119, 34, 0.8)}.btn-amber{border-color: rgba(254, 191, 0, 1)  ; color: white;background-color: rgba(254, 191, 0, 1)} .btn-amber:focus{text-decoration:none; color: white;background-color: rgba(254, 191, 0, 0.8)}\n.btn-dijon{border-color: rgba(196, 145, 2, 1)  ; color: white;background-color: rgba(196, 145, 2, 1)} .btn-dijon:focus{text-decoration:none; color: white;background-color: rgba(196, 145, 2, 0.8)}.btn-tangerine{border-color: rgba(250, 128, 42, 1)  ; color: white;background-color: rgba(250, 128, 42, 1)} .btn-tangerine:focus{text-decoration:none; color: white;background-color: rgba(250, 128, 42, 0.8)}.btn-tiger{border-color: rgba(253, 106, 3, 1)  ; color: white;background-color: rgba(253, 106, 3, 1)} .btn-tiger:focus{text-decoration:none; color: white;background-color: rgba(253, 106, 3, 0.8)}.btn-honey{border-color: rgba(235, 150, 5, 1)  ; color: white;background-color: rgba(235, 150, 5, 1)} .btn-honey:focus{text-decoration:none; color: white;background-color: rgba(235, 150, 5, 0.8)}\n.btn-carrot{border-color: rgba(239, 114, 22, 1)  ; color: white;background-color: rgba(239, 114, 22, 1)} .btn-carrot:focus{text-decoration:none; color: white;background-color: rgba(239, 114, 22, 0.8)}.btn-apricot{border-color: rgba(239, 129, 14, 1)  ; color: white;background-color: rgba(239, 129, 14, 1)} .btn-apricot:focus{text-decoration:none; color: white;background-color: rgba(239, 129, 14, 0.8)}.btn-bronze{border-color: rgba(178, 85, 15, 1)  ; color: white;background-color: rgba(178, 85, 15, 1)} .btn-bronze:focus{text-decoration:none; color: white;background-color: rgba(178, 85, 15, 0.8)}.btn-cider{border-color: rgba(179, 103, 43, 1)  ; color: white;background-color: rgba(179, 103, 43, 1)} .btn-cider:focus{text-decoration:none; color: white;background-color: rgba(179, 103, 43, 0.8)}\n.btn-clay{border-color: rgba(129, 63, 11, 1)  ; color: white;background-color: rgba(129, 63, 11, 1)} .btn-clay:focus{text-decoration:none; color: white;background-color: rgba(129, 63, 11, 0.8)}.btn-rust{border-color: rgba(139, 64, 0, 1)  ; color: white;background-color: rgba(139, 64, 0, 1)} .btn-rust:focus{text-decoration:none; color: white;background-color: rgba(139, 64, 0, 0.8)}\n.btn-amber2{border-color: rgba(136, 48, 0, 1)  ; color: white;background-color: rgba(136, 48, 0, 1)} .btn-amber2:focus{text-decoration:none; color: white;background-color: rgba(136, 48, 0, 0.8)}.btn-spice{border-color: rgba(121, 56, 2, 1)  ; color: white;background-color: rgba(121, 56, 2, 1)} .btn-spice:focus{text-decoration:none; color: white;background-color: rgba(121, 56, 2, 0.8)}\n.btn-burntor{border-color: rgba(149, 64, 0, 1)  ; color: white;background-color: rgba(149, 64, 0, 1)} .btn-burntor:focus{text-decoration:none; color: white;background-color: rgba(149, 64, 0, 0.8)}.btn-red{border-color: rgba(209, 0, 4, 1)  ; color: white;background-color: rgba(209, 0, 4, 1)} .btn-red:focus{text-decoration:none; color: white;background-color: rgba(209, 0, 4, 0.8)}\n.btn-salmon{border-color: rgba(250, 128, 113, 1)  ; color: white;background-color: rgba(250, 128, 113, 1)} .btn-salmon:focus{text-decoration:none; color: white;background-color: rgba(250, 128, 113, 0.8)}.btn-scarlet{border-color: rgba(255, 35, 0, 1)  ; color: white;background-color: rgba(255, 35, 0, 1)} .btn-scarlet:focus{text-decoration:none; color: white;background-color: rgba(255, 35, 0, 0.8)}\n.btn-barnred{border-color: rgba(123, 11, 0, 1)  ; color: white;background-color: rgba(123, 11, 0, 1)} .btn-barnred:focus{text-decoration:none; color: white;background-color: rgba(123, 11, 0, 0.8)}.btn-imperial{border-color: rgba(237, 40, 57, 1)  ; color: white;background-color: rgba(237, 40, 57, 1)} .btn-imperial:focus{text-decoration:none; color: white;background-color: rgba(237, 40, 57, 0.8)}.btn-indianred{border-color: rgba(205, 93, 92, 1)  ; color: white;background-color: rgba(205, 93, 92, 1)} .btn-indianred:focus{text-decoration:none; color: white;background-color: rgba(205, 93, 92, 0.8)}.btn-chili{border-color: rgba(195, 24, 7, 1)  ; color: white;background-color: rgba(195, 24, 7, 1)} .btn-chili:focus{text-decoration:none; color: white;background-color: rgba(195, 24, 7, 0.8)}\n.btn-firebrick{border-color: rgba(178, 34, 33, 1)  ; color: white;background-color: rgba(178, 34, 33, 1)} .btn-firebrick:focus{text-decoration:none; color: white;background-color: rgba(178, 34, 33, 0.8)}.btn-maroon{border-color: rgba(128, 0, 1, 1)  ; color: white;background-color: rgba(128, 0, 1, 1)} .btn-maroon:focus{text-decoration:none; color: white;background-color: rgba(128, 0, 1, 0.8)}\n.btn-redwood{border-color: rgba(163, 90, 81, 1)  ; color: white;background-color: rgba(163, 90, 81, 1)} .btn-redwood:focus{text-decoration:none; color: white;background-color: rgba(163, 90, 81, 0.8)}.btn-raspberry{border-color: rgba(210, 31, 60, 1)  ; color: white;background-color: rgba(210, 31, 60, 1)} .btn-raspberry:focus{text-decoration:none; color: white;background-color: rgba(210, 31, 60, 0.8)}.btn-candyapple{border-color: rgba(255, 8, 0, 1)  ; color: white;background-color: rgba(255, 8, 0, 1)} .btn-candyapple:focus{text-decoration:none; color: white;background-color: rgba(255, 8, 0, 0.8)}.btn-carmine{border-color: rgba(150, 0, 27, 1)  ; color: white;background-color: rgba(150, 0, 27, 1)} .btn-carmine:focus{text-decoration:none; color: white;background-color: rgba(150, 0, 27, 0.8)}\n.btn-persian{border-color: rgba(202, 52, 51, 1)  ; color: white;background-color: rgba(202, 52, 51, 1)} .btn-persian:focus{text-decoration:none; color: white;background-color: rgba(202, 52, 51, 0.8)}.btn-usflag{border-color: rgba(191, 9, 49, 1)  ; color: white;background-color: rgba(191, 9, 49, 1)} .btn-usflag:focus{text-decoration:none; color: white;background-color: rgba(191, 9, 49, 0.8)}\n.btn-ferrari{border-color: rgba(254, 41, 1, 1)  ; color: white;background-color: rgba(254, 41, 1, 1)} .btn-ferrari:focus{text-decoration:none; color: white;background-color: rgba(254, 41, 1, 0.8)}.btn-burgundy{border-color: rgba(142, 2, 31, 1)  ; color: white;background-color: rgba(142, 2, 31, 1)} .btn-burgundy:focus{text-decoration:none; color: white;background-color: rgba(142, 2, 31, 0.8)}\n.btn-crimson{border-color: rgba(183, 16, 10, 1)  ; color: white;background-color: rgba(183, 16, 10, 1)} .btn-crimson:focus{text-decoration:none; color: white;background-color: rgba(183, 16, 10, 0.8)}.btn-sangria{border-color: rgba(94, 25, 18, 1)  ; color: white;background-color: rgba(94, 25, 18, 1)} .btn-sangria:focus{text-decoration:none; color: white;background-color: rgba(94, 25, 18, 0.8)}\n.btn-mahogany{border-color: rgba(64, 13, 9, 1)  ; color: white;background-color: rgba(64, 13, 9, 1)} .btn-mahogany:focus{text-decoration:none; color: white;background-color: rgba(64, 13, 9, 0.8)}.btn-pink{border-color: rgba(253, 14, 191, 1)  ; color: white;background-color: rgba(253, 14, 191, 1)} .btn-pink:focus{text-decoration:none; color: white;background-color: rgba(253, 14, 191, 0.8)}\n.btn-ruby{border-color: rgba(224, 17, 97, 1)  ; color: white;background-color: rgba(224, 17, 97, 1)} .btn-ruby:focus{text-decoration:none; color: white;background-color: rgba(224, 17, 97, 0.8)}.btn-ultra{border-color: rgba(255, 110, 253, 1)  ; color: white;background-color: rgba(255, 110, 253, 1)} .btn-ultra:focus{text-decoration:none; color: white;background-color: rgba(255, 110, 253, 0.8)}\n.btn-thulian{border-color: rgba(223, 110, 162, 1)  ; color: white;background-color: rgba(223, 110, 162, 1)} .btn-thulian:focus{text-decoration:none; color: white;background-color: rgba(223, 110, 162, 0.8)}.btn-magenta{border-color: rgba(255, 0, 144, 1)  ; color: white;background-color: rgba(255, 0, 144, 1)} .btn-magenta:focus{text-decoration:none; color: white;background-color: rgba(255, 0, 144, 0.8)}\n.btn-rosepink{border-color: rgba(255, 101, 203, 1)  ; color: white;background-color: rgba(255, 101, 203, 1)} .btn-rosepink:focus{text-decoration:none; color: white;background-color: rgba(255, 101, 203, 0.8)}.btn-lavender{border-color: rgba(251, 174, 210, 1)  ; color: white;background-color: rgba(251, 174, 210, 1)} .btn-lavender:focus{text-decoration:none; color: white;background-color: rgba(251, 174, 210, 0.8)}.btn-creamy{border-color: rgba(255, 105, 179, 1)  ; color: white;background-color: rgba(255, 105, 179, 1)} .btn-creamy:focus{text-decoration:none; color: white;background-color: rgba(255, 105, 179, 0.8)}.btn-fuchsia{border-color: rgba(255, 0, 254, 1)  ; color: white;background-color: rgba(255, 0, 254, 1)} .btn-fuchsia:focus{text-decoration:none; color: white;background-color: rgba(255, 0, 254, 0.8)}\n.btn-frenchrose{border-color: rgba(247, 74, 138, 1)  ; color: white;background-color: rgba(247, 74, 138, 1)} .btn-frenchrose:focus{text-decoration:none; color: white;background-color: rgba(247, 74, 138, 0.8)}.btn-cerise{border-color: rgba(221, 49, 99, 1)  ; color: white;background-color: rgba(221, 49, 99, 1)} .btn-cerise:focus{text-decoration:none; color: white;background-color: rgba(221, 49, 99, 0.8)}\n.btn-carnation{border-color: rgba(255, 166, 201, 1)  ; color: white;background-color: rgba(255, 166, 201, 1)} .btn-carnation:focus{text-decoration:none; color: white;background-color: rgba(255, 166, 201, 0.8)}.btn-brick{border-color: rgba(251, 96, 128, 1)  ; color: white;background-color: rgba(251, 96, 128, 1)} .btn-brick:focus{text-decoration:none; color: white;background-color: rgba(251, 96, 128, 0.8)}\n.btn-amaranth{border-color: rgba(242, 155, 187, 1)  ; color: white;background-color: rgba(242, 155, 187, 1)} .btn-amaranth:focus{text-decoration:none; color: white;background-color: rgba(242, 155, 187, 0.8)}.btn-taffy{border-color: rgba(249, 135, 195, 1)  ; color: white;background-color: rgba(249, 135, 195, 1)} .btn-taffy:focus{text-decoration:none; color: white;background-color: rgba(249, 135, 195, 0.8)}.btn-bubblegum{border-color: rgba(254, 91, 174, 1)  ; color: white;background-color: rgba(254, 91, 174, 1)} .btn-bubblegum:focus{text-decoration:none; color: white;background-color: rgba(254, 91, 174, 0.8)}.btn-hotpink{border-color: rgba(248, 24, 149, 1)  ; color: white;background-color: rgba(248, 24, 149, 1)} .btn-hotpink:focus{text-decoration:none; color: white;background-color: rgba(248, 24, 149, 0.8)}.btn-punch{border-color: rgba(236, 85, 120, 1)  ; color: white;background-color: rgba(236, 85, 120, 1)} .btn-punch:focus{text-decoration:none; color: white;background-color: rgba(236, 85, 120, 0.8)}.btn-lemonade{border-color: rgba(253, 185, 200, 1)  ; color: white;background-color: rgba(253, 185, 200, 1)} .btn-lemonade:focus{text-decoration:none; color: white;background-color: rgba(253, 185, 200, 0.8)}.btn-flamingo{border-color: rgba(255, 161, 185, 1)  ; color: white;background-color: rgba(255, 161, 185, 1)} .btn-flamingo:focus{text-decoration:none; color: white;background-color: rgba(255, 161, 185, 0.8)}.btn-violet{border-color: rgba(178, 0, 238, 1)  ; color: white;background-color: rgba(178, 0, 238, 1)} .btn-violet:focus{text-decoration:none; color: white;background-color: rgba(178, 0, 238, 0.8)}.btn-hibiscus{border-color: rgba(180, 55, 85, 1)  ; color: white;background-color: rgba(180, 55, 85, 1)} .btn-hibiscus:focus{text-decoration:none; color: white;background-color: rgba(180, 55, 85, 0.8)}.btn-mauve{border-color: rgba(120, 75, 132, 1)  ; color: white;background-color: rgba(120, 75, 132, 1)} .btn-mauve:focus{text-decoration:none; color: white;background-color: rgba(120, 75, 132, 0.8)}\n.btn-mulberry{border-color: rgba(198, 75, 138, 1)  ; color: white;background-color: rgba(198, 75, 138, 1)} .btn-mulberry:focus{text-decoration:none; color: white;background-color: rgba(198, 75, 138, 0.8)}.btn-lavender{border-color: rgba(228, 160, 247, 1)  ; color: white;background-color: rgba(228, 160, 247, 1)} .btn-lavender:focus{text-decoration:none; color: white;background-color: rgba(228, 160, 247, 0.8)}.btn-orchid{border-color: rgba(176, 104, 238, 1)  ; color: white;background-color: rgba(176, 104, 238, 1)} .btn-orchid:focus{text-decoration:none; color: white;background-color: rgba(176, 104, 238, 0.8)}.btn-lilac{border-color: rgba(182, 96, 207, 1)  ; color: white;background-color: rgba(182, 96, 207, 1)} .btn-lilac:focus{text-decoration:none; color: white;background-color: rgba(182, 96, 207, 0.8)}\n.btn-electric{border-color: rgba(144, 0, 255, 1)  ; color: white;background-color: rgba(144, 0, 255, 1)} .btn-electric:focus{text-decoration:none; color: white;background-color: rgba(144, 0, 255, 0.8)}.btn-african{border-color: rgba(178, 132, 188, 1)  ; color: white;background-color: rgba(178, 132, 188, 1)} .btn-african:focus{text-decoration:none; color: white;background-color: rgba(178, 132, 188, 0.8)}.btn-grape{border-color: rgba(110, 46, 169, 1)  ; color: white;background-color: rgba(110, 46, 169, 1)} .btn-grape:focus{text-decoration:none; color: white;background-color: rgba(110, 46, 169, 0.8)}.btn-amethyst{border-color: rgba(153, 102, 203, 1)  ; color: white;background-color: rgba(153, 102, 203, 1)} .btn-amethyst:focus{text-decoration:none; color: white;background-color: rgba(153, 102, 203, 0.8)}.btn-byzantine{border-color: rgba(111, 42, 99, 1)  ; color: white;background-color: rgba(111, 42, 99, 1)} .btn-byzantine:focus{text-decoration:none; color: white;background-color: rgba(111, 42, 99, 0.8)}.btn-fandango{border-color: rgba(180, 52, 137, 1)  ; color: white;background-color: rgba(180, 52, 137, 1)} .btn-fandango:focus{text-decoration:none; color: white;background-color: rgba(180, 52, 137, 0.8)}.btn-helio{border-color: rgba(224, 114, 254, 1)  ; color: white;background-color: rgba(224, 114, 254, 1)} .btn-helio:focus{text-decoration:none; color: white;background-color: rgba(224, 114, 254, 0.8)}.btn-floral{border-color: rgba(180, 126, 222, 1)  ; color: white;background-color: rgba(180, 126, 222, 1)} .btn-floral:focus{text-decoration:none; color: white;background-color: rgba(180, 126, 222, 0.8)}.btn-thistle{border-color: rgba(215, 191, 239, 1)  ; color: white;background-color: rgba(215, 191, 239, 1)} .btn-thistle:focus{text-decoration:none; color: white;background-color: rgba(215, 191, 239, 0.8)}.btn-royal{border-color: rgba(120, 82, 169, 1)  ; color: white;background-color: rgba(120, 82, 169, 1)} .btn-royal:focus{text-decoration:none; color: white;background-color: rgba(120, 82, 169, 0.8)}.btn-lollipop{border-color: rgba(129, 0, 127, 1)  ; color: white;background-color: rgba(129, 0, 127, 1)} .btn-lollipop:focus{text-decoration:none; color: white;background-color: rgba(129, 0, 127, 0.8)}.btn-plum{border-color: rgba(140, 70, 133, 1)  ; color: white;background-color: rgba(140, 70, 133, 1)} .btn-plum:focus{text-decoration:none; color: white;background-color: rgba(140, 70, 133, 0.8)}\n.btn-eggplant{border-color: rgba(50, 19, 50, 1)  ; color: white;background-color: rgba(50, 19, 50, 1)} .btn-eggplant:focus{text-decoration:none; color: white;background-color: rgba(50, 19, 50, 0.8)}.btn-blue{border-color: rgba(0, 25, 249, 1)  ; color: white;background-color: rgba(0, 25, 249, 1)} .btn-blue:focus{text-decoration:none; color: white;background-color: rgba(0, 25, 249, 0.8)}\n.btn-denim{border-color: rgba(19, 30, 58, 1)  ; color: white;background-color: rgba(19, 30, 58, 1)} .btn-denim:focus{text-decoration:none; color: white;background-color: rgba(19, 30, 58, 0.8)}.btn-pigeon{border-color: rgba(114, 133, 165, 1)  ; color: white;background-color: rgba(114, 133, 165, 1)} .btn-pigeon:focus{text-decoration:none; color: white;background-color: rgba(114, 133, 165, 0.8)}\n.btn-sky{border-color: rgba(149, 200, 217, 1)  ; color: white;background-color: rgba(149, 200, 217, 1)} .btn-sky:focus{text-decoration:none; color: white;background-color: rgba(149, 200, 217, 0.8)}.btn-independence{border-color: rgba(77, 81, 110, 1)  ; color: white;background-color: rgba(77, 81, 110, 1)} .btn-independence:focus{text-decoration:none; color: white;background-color: rgba(77, 81, 110, 0.8)}.btn-airforce{border-color: rgba(89, 139, 174, 1)  ; color: white;background-color: rgba(89, 139, 174, 1)} .btn-airforce:focus{text-decoration:none; color: white;background-color: rgba(89, 139, 174, 0.8)}.btn-babyblue{border-color: rgba(138, 207, 240, 1)  ; color: white;background-color: rgba(138, 207, 240, 1)} .btn-babyblue:focus{text-decoration:none; color: white;background-color: rgba(138, 207, 240, 0.8)}.btn-navy{border-color: rgba(1, 0, 128, 1)  ; color: white;background-color: rgba(1, 0, 128, 1)} .btn-navy:focus{text-decoration:none; color: white;background-color: rgba(1, 0, 128, 0.8)}.btn-steel{border-color: rgba(70, 130, 180, 1)  ; color: white;background-color: rgba(70, 130, 180, 1)} .btn-steel:focus{text-decoration:none; color: white;background-color: rgba(70, 130, 180, 0.8)}\n.btn-carolina{border-color: rgba(88, 160, 210, 1)  ; color: white;background-color: rgba(88, 160, 210, 1)} .btn-carolina:focus{text-decoration:none; color: white;background-color: rgba(88, 160, 210, 0.8)}.btn-turkish{border-color: rgba(81, 151, 163, 1)  ; color: white;background-color: rgba(81, 151, 163, 1)} .btn-turkish:focus{text-decoration:none; color: white;background-color: rgba(81, 151, 163, 0.8)}.btn-maya{border-color: rgba(115, 194, 251, 1)  ; color: white;background-color: rgba(115, 194, 251, 1)} .btn-maya:focus{text-decoration:none; color: white;background-color: rgba(115, 194, 251, 0.8)}.btn-cornflower{border-color: rgba(103, 147, 244, 1)  ; color: white;background-color: rgba(103, 147, 244, 1)} .btn-cornflower:focus{text-decoration:none; color: white;background-color: rgba(103, 147, 244, 0.8)}.btn-olympic{border-color: rgba(0, 142, 204, 1)  ; color: white;background-color: rgba(0, 142, 204, 1)} .btn-olympic:focus{text-decoration:none; color: white;background-color: rgba(0, 142, 204, 0.8)}.btn-saphire{border-color: rgba(15, 82, 186, 1)  ; color: white;background-color: rgba(15, 82, 186, 1)} .btn-saphire:focus{text-decoration:none; color: white;background-color: rgba(15, 82, 186, 0.8)}\n.btn-azure{border-color: rgba(0, 128, 253, 1)  ; color: white;background-color: rgba(0, 128, 253, 1)} .btn-azure:focus{text-decoration:none; color: white;background-color: rgba(0, 128, 253, 0.8)}.btn-egyptian{border-color: rgba(17, 53, 167, 1)  ; color: white;background-color: rgba(17, 53, 167, 1)} .btn-egyptian:focus{text-decoration:none; color: white;background-color: rgba(17, 53, 167, 0.8)}.btn-yale{border-color: rgba(13, 76, 145, 1)  ; color: white;background-color: rgba(13, 76, 145, 1)} .btn-yale:focus{text-decoration:none; color: white;background-color: rgba(13, 76, 145, 0.8)}.btn-prussian{border-color: rgba(0, 49, 82, 1)  ; color: white;background-color: rgba(0, 49, 82, 1)} .btn-prussian:focus{text-decoration:none; color: white;background-color: rgba(0, 49, 82, 0.8)}\n.btn-space{border-color: rgba(28, 41, 82, 1)  ; color: white;background-color: rgba(28, 41, 82, 1)} .btn-space:focus{text-decoration:none; color: white;background-color: rgba(28, 41, 82, 0.8)}.btn-green{border-color: rgba(59, 177, 63, 1)  ; color: white;background-color: rgba(59, 177, 63, 1)} .btn-green:focus{text-decoration:none; color: white;background-color: rgba(59, 177, 63, 0.8)}.btn-forest{border-color: rgba(11, 102, 35, 1)  ; color: white;background-color: rgba(11, 102, 35, 1)} .btn-forest:focus{text-decoration:none; color: white;background-color: rgba(11, 102, 35, 0.8)}.btn-sage{border-color: rgba(155, 194, 131, 1)  ; color: white;background-color: rgba(155, 194, 131, 1)} .btn-sage:focus{text-decoration:none; color: white;background-color: rgba(155, 194, 131, 0.8)}.btn-olive{border-color: rgba(112, 130, 56, 1)  ; color: white;background-color: rgba(112, 130, 56, 1)} .btn-olive:focus{text-decoration:none; color: white;background-color: rgba(112, 130, 56, 0.8)}.btn-lime{border-color: rgba(201, 233, 72, 1)  ; color: black;background-color: rgba(201, 233, 72, 1)} .btn-lime:focus{text-decoration:none; color: black;background-color: rgba(201, 233, 72, 0.8)}.btn-hunter{border-color: rgba(64, 111, 77, 1)  ; color: white;background-color: rgba(64, 111, 77, 1)} .btn-hunter:focus{text-decoration:none; color: white;background-color: rgba(64, 111, 77, 0.8)}\n.btn-jade{border-color: rgba(0, 168, 107, 1)  ; color: white;background-color: rgba(0, 168, 107, 1)} .btn-jade:focus{text-decoration:none; color: white;background-color: rgba(0, 168, 107, 0.8)}.btn-artichoke{border-color: rgba(144, 150, 122, 1)  ; color: white;background-color: rgba(144, 150, 122, 1)} .btn-artichoke:focus{text-decoration:none; color: white;background-color: rgba(144, 150, 122, 0.8)}.btn-fern{border-color: rgba(78, 121, 67, 1)  ; color: white;background-color: rgba(78, 121, 67, 1)} .btn-fern:focus{text-decoration:none; color: white;background-color: rgba(78, 121, 67, 0.8)}.btn-jungle{border-color: rgba(41, 171, 135, 1)  ; color: white;background-color: rgba(41, 171, 135, 1)} .btn-jungle:focus{text-decoration:none; color: white;background-color: rgba(41, 171, 135, 0.8)}.btn-laurel{border-color: rgba(170, 186, 159, 1)  ; color: white;background-color: rgba(170, 186, 159, 1)} .btn-laurel:focus{text-decoration:none; color: white;background-color: rgba(170, 186, 159, 0.8)}.btn-moss{border-color: rgba(138, 154, 91, 1)  ; color: white;background-color: rgba(138, 154, 91, 1)} .btn-moss:focus{text-decoration:none; color: white;background-color: rgba(138, 154, 91, 0.8)}.btn-mint{border-color: rgba(151, 251, 152, 1)  ; color: black;background-color: rgba(151, 251, 152, 1)} .btn-mint:focus{text-decoration:none; color: black;background-color: rgba(151, 251, 152, 0.8)}.btn-pine{border-color: rgba(0, 121, 112, 1)  ; color: white;background-color: rgba(0, 121, 112, 1)} .btn-pine:focus{text-decoration:none; color: white;background-color: rgba(0, 121, 112, 0.8)}.btn-tea{border-color:  rgba(208, 240, 191, 1) ; color: black;background-color: rgba(208, 240, 191, 1)} .btn-tea:focus{text-decoration:none; color: black;background-color: rgba(208, 240, 191, 0.8)}\n.btn-army{border-color: rgba(75, 83, 32, 1)  ; color: white;background-color: rgba(75, 83, 32, 1)} .btn-army:focus{text-decoration:none; color: white;background-color: rgba(75, 83, 32, 0.8)}.btn-emerald{border-color: rgba(79, 200, 120, 1)  ; color: white;background-color: rgba(79, 200, 120, 1)} .btn-emerald:focus{text-decoration:none; color: white;background-color: rgba(79, 200, 120, 0.8)}\n.btn-kelly{border-color: rgba(76, 187, 23, 1)  ; color: white;background-color: rgba(76, 187, 23, 1)} .btn-kelly:focus{text-decoration:none; color: white;background-color: rgba(76, 187, 23, 0.8)}.btn-sacramento{border-color: rgba(4, 57, 39, 1)  ; color: white;background-color: rgba(4, 57, 39, 1)} .btn-sacramento:focus{text-decoration:none; color: white;background-color: rgba(4, 57, 39, 0.8)}\n.btn-sea{border-color: rgba(45, 139, 87, 1)  ; color: white;background-color: rgba(45, 139, 87, 1)} .btn-sea:focus{text-decoration:none; color: white;background-color: rgba(45, 139, 87, 0.8)}.btn-brown{border-color: rgba(124, 71, 1, 1)  ; color: white;background-color: rgba(124, 71, 1, 1)} .btn-brown:focus{text-decoration:none; color: white;background-color: rgba(124, 71, 1, 0.8)}.btn-cedar{border-color: rgba(75, 58, 40, 1)  ; color: white;background-color: rgba(75, 58, 40, 1)} .btn-cedar:focus{text-decoration:none; color: white;background-color: rgba(75, 58, 40, 0.8)}.btn-cinnamon{border-color: rgba(98, 42, 17, 1)  ; color: white;background-color: rgba(98, 42, 17, 1)} .btn-cinnamon:focus{text-decoration:none; color: white;background-color: rgba(98, 42, 17, 0.8)}.btn-brunette{border-color: rgba(58, 31, 4, 1)  ; color: white;background-color: rgba(58, 31, 4, 1)} .btn-brunette:focus{text-decoration:none; color: white;background-color: rgba(58, 31, 4, 0.8)}.btn-tawny{border-color: rgba(125, 72, 28, 1)  ; color: white;background-color: rgba(125, 72, 28, 1)} .btn-tawny:focus{text-decoration:none; color: white;background-color: rgba(125, 72, 28, 0.8)}.btn-umber{border-color: rgba(54, 35, 20, 1)  ; color: white;background-color: rgba(54, 35, 20, 1)} .btn-umber:focus{text-decoration:none; color: white;background-color: rgba(54, 35, 20, 0.8)}\n.btn-tortilla{border-color: rgba(153, 121, 80, 1)  ; color: white;background-color: rgba(153, 121, 80, 1)} .btn-tortilla:focus{text-decoration:none; color: white;background-color: rgba(153, 121, 80, 0.8)}.btn-chocolate{border-color: rgba(43, 23, 0, 1)  ; color: white;background-color: rgba(43, 23, 0, 1)} .btn-chocolate:focus{text-decoration:none; color: white;background-color: rgba(43, 23, 0, 0.8)}\n.btn-syrup{border-color: rgba(75, 31, 2, 1)  ; color: white;background-color: rgba(75, 31, 2, 1)} .btn-syrup:focus{text-decoration:none; color: white;background-color: rgba(75, 31, 2, 0.8)}.btn-gingerbread{border-color: rgba(92, 44, 6, 1)  ; color: white;background-color: rgba(92, 44, 6, 1)} .btn-gingerbread:focus{text-decoration:none; color: white;background-color: rgba(92, 44, 6, 0.8)}\n.btn-caramel{border-color: rgba(98, 54, 19, 1)  ; color: white;background-color: rgba(98, 54, 19, 1)} .btn-caramel:focus{text-decoration:none; color: white;background-color: rgba(98, 54, 19, 0.8)}.btn-walnut{border-color: rgba(67, 39, 15, 1)  ; color: white;background-color: rgba(67, 39, 15, 1)} .btn-walnut:focus{text-decoration:none; color: white;background-color: rgba(67, 39, 15, 0.8)}\n.btn-pecan{border-color: rgba(72, 38, 13, 1)  ; color: white;background-color: rgba(72, 38, 13, 1)} .btn-pecan:focus{text-decoration:none; color: white;background-color: rgba(72, 38, 13, 0.8)}.btn-wood{border-color: rgba(64, 47, 29, 1)  ; color: white;background-color: rgba(64, 47, 29, 1)} .btn-wood:focus{text-decoration:none; color: white;background-color: rgba(64, 47, 29, 0.8)}.btn-hickory{border-color: rgba(52, 30, 16, 1)  ; color: white;background-color: rgba(52, 30, 16, 1)} .btn-hickory:focus{text-decoration:none; color: white;background-color: rgba(52, 30, 16, 0.8)}.btn-espresso{border-color: rgba(74, 56, 42, 1)  ; color: white;background-color: rgba(74, 56, 42, 1)} .btn-espresso:focus{text-decoration:none; color: white;background-color: rgba(74, 56, 42, 0.8)}.btn-peanut{border-color: rgba(121, 92, 50, 1)  ; color: white;background-color: rgba(121, 92, 50, 1)} .btn-peanut:focus{text-decoration:none; color: white;background-color: rgba(121, 92, 50, 0.8)}.btn-mocha{border-color: rgba(59, 39, 12, 1)  ; color: white;background-color: rgba(59, 39, 12, 1)} .btn-mocha:focus{text-decoration:none; color: white;background-color: rgba(59, 39, 12, 0.8)}.btn-coffee{border-color: rgba(74, 55, 25, 1)  ; color: white;background-color: rgba(74, 55, 25, 1)} .btn-coffee:focus{text-decoration:none; color: white;background-color: rgba(74, 55, 25, 0.8)}\n.btn-russet{border-color: rgba(127, 70, 27, 1)  ; color: white;background-color: rgba(127, 70, 27, 1)} .btn-russet:focus{text-decoration:none; color: white;background-color: rgba(127, 70, 27, 0.8)}.btn-gray{border-color: rgba(72, 72, 72, 1)  ; color: white;background-color: rgba(72, 72, 72, 1)} .btn-gray:focus{text-decoration:none; color: white;background-color: rgba(72, 72, 72, 0.8)}\n.btn-fossil{border-color: rgba(119, 114, 118, 1)  ; color: white;background-color: rgba(119, 114, 118, 1)} .btn-fossil:focus{text-decoration:none; color: white;background-color: rgba(119, 114, 118, 0.8)}.btn-mink{border-color: rgba(137, 127, 125, 1)  ; color: white;background-color: rgba(137, 127, 125, 1)} .btn-mink:focus{text-decoration:none; color: white;background-color: rgba(137, 127, 125, 0.8)}.btn-pearlriver{border-color: rgba(217, 221, 220, 1)  ; color: black;background-color: rgba(217, 221, 220, 1)} .btn-pearlriver:focus{text-decoration:none; color: black;background-color: rgba(217, 221, 220, 0.8)}.btn-abalone{border-color: rgba(214, 207, 197, 1)  ; color: black;background-color: rgba(214, 207, 197, 1)} .btn-abalone:focus{text-decoration:none; color: black;background-color: rgba(214, 207, 197, 0.8)}.btn-harborgray{border-color: rgba(199, 198, 194, 1)  ; color: black;background-color: rgba(199, 198, 194, 1)} .btn-harborgray:focus{text-decoration:none; color: black;background-color: rgba(199, 198, 194, 0.8)}.btn-smoke{border-color: rgba(190, 189, 185, 1)  ; color: black;background-color: rgba(190, 189, 185, 1)} .btn-smoke:focus{text-decoration:none; color: black;background-color: rgba(190, 189, 185, 0.8)}.btn-thunder{border-color: rgba(190, 182, 171, 1)  ; color: black;background-color: rgba(190, 182, 171, 1)} .btn-thunder:focus{text-decoration:none; color: black;background-color: rgba(190, 182, 171, 0.8)}.btn-pewter{border-color: rgba(153, 157, 160, 1)  ; color: white;background-color: rgba(153, 157, 160, 1)} .btn-pewter:focus{text-decoration:none; color: white;background-color: rgba(153, 157, 160, 0.8)}.btn-steel{border-color: rgba(118, 123, 126, 1)  ; color: white;background-color: rgba(118, 123, 126, 1)} .btn-steel:focus{text-decoration:none; color: white;background-color: rgba(118, 123, 126, 0.8)}.btn-stone{border-color: rgba(135, 127, 125, 1)  ; color: white;background-color: rgba(135, 127, 125, 1)} .btn-stone:focus{text-decoration:none; color: white;background-color: rgba(135, 127, 125, 0.8)}.btn-iron{border-color: rgba(72, 73, 75, 1)  ; color: white;background-color: rgba(72, 73, 75, 1)} .btn-iron:focus{text-decoration:none; color: white;background-color: rgba(72, 73, 75, 0.8)}.btn-rhino{border-color: rgba(185, 187, 182, 1)  ; color: black;background-color: rgba(185, 187, 182, 1)} .btn-rhino:focus{text-decoration:none; color: black;background-color: rgba(185, 187, 182, 0.8)}.btn-trout{border-color: rgba(151, 151, 143, 1)  ; color: white;background-color: rgba(151, 151, 143, 1)} .btn-trout:focus{text-decoration:none; color: white;background-color: rgba(151, 151, 143, 0.8)}.btn-seal{border-color: rgba(129, 131, 128, 1)  ; color: white;background-color: rgba(129, 131, 128, 1)} .btn-seal:focus{text-decoration:none; color: white;background-color: rgba(129, 131, 128, 0.8)}.btn-lava{border-color: rgba(129, 133, 136, 1)  ; color: white;background-color: rgba(129, 133, 136, 1)} .btn-lava:focus{text-decoration:none; color: white;background-color: rgba(129, 133, 136, 0.8)}.btn-shadow{border-color: rgba(54, 54, 54, 1)  ; color: white;background-color: rgba(54, 54, 54, 1)} .btn-shadow:focus{text-decoration:none; color: white;background-color: rgba(54, 54, 54, 0.8)}\n.btn-ash{border-color: rgba(85, 75, 74, 1)  ; color: white;background-color: rgba(85, 75, 74, 1)} .btn-ash:focus{text-decoration:none; color: white;background-color: rgba(85, 75, 74, 0.8)}.btn-anchor{border-color: rgba(63, 65, 77, 1)  ; color: white;background-color: rgba(63, 65, 77, 1)} .btn-anchor:focus{text-decoration:none; color: white;background-color: rgba(63, 65, 77, 0.8)}.btn-charcoal{border-color: rgba(34, 32, 33, 1)  ; color: white;background-color: rgba(34, 32, 33, 1)} .btn-charcoal:focus{text-decoration:none; color: white;background-color: rgba(34, 32, 33, 0.8)}\n\n\n.bg-black{background-color: black}.bg-white{background-color: white}.bg-yellow{background-color: rgba(254, 242, 0, 1)} .bg-mellow{background-color: rgba(247, 223, 125, 1)} .bg-cyber{background-color: rgba(255, 211, 2, 1)} .bg-royal{background-color: rgba(249, 217, 94, 1)} .bg-trombone{background-color: rgba(208, 181, 92, 1)} .bg-banana{background-color: rgba(251, 244, 163, 1)}.bg-tuscany{background-color: rgba(252, 208, 44, 1)} .bg-lemon{background-color: rgba(239, 253, 96, 1)} .bg-bumblebee{background-color: rgba(254, 226, 5, 1)}.bg-flax{background-color: rgba(239, 219, 130, 1)} .bg-flax{background-color: rgba(239, 219, 130, 1)} .bg-peach{background-color: rgba(255, 229, 180, 1)} .bg-laguna{background-color: rgba(248, 228, 115, 1)} .bg-mustard{background-color: rgba(254, 220, 83, 1)}.bg-ecru{background-color: rgba(205, 177, 129, 1)} .bg-corn{background-color: rgba(228, 204, 6, 1)}.bg-pineapple{background-color: rgba(254, 225, 43, 1)} .bg-flaxen{background-color: rgba(214, 183, 90, 1)} .bg-eggnog{background-color: rgba(249, 226, 156, 1)}.bg-sepia{background-color: rgba(225, 183, 122, 1)}.bg-orange{background-color: rgba(251, 102, 0, 1)} .bg-gold{background-color: rgba(249, 166, 2, 1)} .bg-goldenrod{background-color: rgba(219, 165, 33, 1)}.bg-pumpkin{background-color: rgba(255, 115, 23, 1)}.bg-fire{background-color: rgba(253, 165, 15, 1)} .bg-ochre{background-color: rgba(205, 119, 34, 1)}.bg-amber{background-color: rgba(254, 191, 0, 1)}.bg-dijon{background-color: rgba(196, 145, 2, 1)} .bg-tangerine{background-color: rgba(250, 128, 42, 1)}.bg-tiger{background-color: rgba(253, 106, 3, 1)} .bg-honey{background-color: rgba(235, 150, 5, 1)}.bg-carrot{background-color: rgba(239, 114, 22, 1)}.bg-apricot{background-color: rgba(239, 129, 14, 1)} .bg-bronze{background-color: rgba(178, 85, 15, 1)} .bg-cider{background-color: rgba(179, 103, 43, 1)} .bg-clay{background-color: rgba(129, 63, 11, 1)} .bg-rust{background-color: rgba(139, 64, 0, 1)} .bg-amber2{background-color: rgba(136, 48, 0, 1)}  .bg-spice{background-color: rgba(121, 56, 2, 1)} .bg-burntor{background-color: rgba(149, 64, 0, 1)} .bg-red{background-color: rgba(209, 0, 4, 1)}.bg-salmon{background-color: rgba(250, 128, 113, 1)} .bg-scarlet{background-color: rgba(255, 35, 0, 1)} .bg-barnred{background-color: rgba(123, 11, 0, 1)}.bg-imperial{background-color: rgba(237, 40, 57, 1)} .bg-indianred{background-color: rgba(205, 93, 92, 1)}.bg-chili{background-color: rgba(195, 24, 7, 1)}.bg-firebrick{background-color: rgba(178, 34, 33, 1)} .bg-maroon{background-color: rgba(128, 0, 1, 1)}.bg-redwood{background-color: rgba(163, 90, 81, 1)} .bg-raspberry{background-color: rgba(210, 31, 60, 1)} .bg-candyapple{background-color: rgba(255, 8, 0, 1)}.bg-carmine{background-color: rgba(150, 0, 27, 1)} .bg-persian{background-color: rgba(202, 52, 51, 1)} .bg-usflag{background-color: rgba(191, 9, 49, 1)} .bg-ferrari{background-color: rgba(254, 41, 1, 1)}.bg-burgundy{background-color: rgba(142, 2, 31, 1)} .bg-crimson{background-color: rgba(183, 16, 10, 1)}.bg-sangria{background-color: rgba(94, 25, 18, 1)} .bg-mahogany{background-color: rgba(64, 13, 9, 1)}.bg-pink{background-color: rgba(253, 14, 191, 1)} .bg-ruby{background-color: rgba(224, 17, 97, 1)}  .bg-ultra{background-color: rgba(255, 110, 253, 1)} .bg-thulian{background-color: rgba(223, 110, 162, 1)} .bg-magenta{background-color: rgba(255, 0, 144, 1)} .bg-rosepink{background-color: rgba(255, 101, 203, 1)} .bg-lavender{background-color: rgba(251, 174, 210, 1)}.bg-creamy{background-color: rgba(255, 105, 179, 1)}.bg-fuchsia{background-color: rgba(255, 0, 254, 1)}.bg-frenchrose{background-color: rgba(247, 74, 138, 1)}.bg-cerise{background-color: rgba(221, 49, 99, 1)}.bg-carnation{background-color: rgba(255, 166, 201, 1)} .bg-brick{background-color: rgba(251, 96, 128, 1)}.bg-amaranth{background-color: rgba(242, 155, 187, 1)} .bg-taffy{background-color: rgba(249, 135, 195, 1)} .bg-bubblegum{background-color: rgba(254, 91, 174, 1)} .bg-hotpink{background-color: rgba(248, 24, 149, 1)} .bg-punch{background-color: rgba(236, 85, 120, 1)}.bg-lemonade{background-color: rgba(253, 185, 200, 1)} .bg-flamingo{background-color: rgba(255, 161, 185, 1)} .bg-violet{background-color: rgba(178, 0, 238, 1)} .bg-hibiscus{background-color: rgba(180, 55, 85, 1)} .bg-mauve{background-color: rgba(120, 75, 132, 1)} .bg-mulberry{background-color: rgba(198, 75, 138, 1)} .bg-lavender{background-color: rgba(228, 160, 247, 1)} .bg-orchid{background-color: rgba(176, 104, 238, 1)}.bg-lilac{background-color: rgba(182, 96, 207, 1)} .bg-electric{background-color: rgba(144, 0, 255, 1)}.bg-african{background-color: rgba(178, 132, 188, 1)}.bg-grape{background-color: rgba(110, 46, 169, 1)} .bg-amethyst{background-color: rgba(153, 102, 203, 1)}.bg-byzantine{background-color: rgba(111, 42, 99, 1)}.bg-fandango{background-color: rgba(180, 52, 137, 1)} .bg-helio{background-color: rgba(224, 114, 254, 1)} .bg-floral{background-color: rgba(180, 126, 222, 1)} .bg-thistle{background-color: rgba(215, 191, 239, 1)}.bg-royal{background-color: rgba(120, 82, 169, 1)}.bg-lollipop{background-color: rgba(129, 0, 127, 1)} .bg-plum{background-color: rgba(140, 70, 133, 1)}.bg-eggplant{background-color: rgba(50, 19, 50, 1)} .bg-blue{background-color: rgba(0, 25, 249, 1)} .bg-denim{background-color: rgba(19, 30, 58, 1)}  .bg-pigeon{background-color: rgba(114, 133, 165, 1)} .bg-sky{background-color: rgba(149, 200, 217, 1)} .bg-independence{background-color: rgba(77, 81, 110, 1)} .bg-airforce{background-color: rgba(89, 139, 174, 1)} .bg-babyblue{background-color: rgba(138, 207, 240, 1)} .bg-navy{background-color: rgba(1, 0, 128, 1)}.bg-steel{background-color: rgba(70, 130, 180, 1)}.bg-carolina{background-color: rgba(88, 160, 210, 1)}.bg-turkish{background-color: rgba(81, 151, 163, 1)} .bg-maya{background-color: rgba(115, 194, 251, 1)} .bg-cornflower{background-color: rgba(103, 147, 244, 1)}.bg-olympic{background-color: rgba(0, 142, 204, 1)} .bg-saphire{background-color: rgba(15, 82, 186, 1)}.bg-azure{background-color: rgba(0, 128, 253, 1)} .bg-egyptian{background-color: rgba(17, 53, 167, 1)} .bg-yale{background-color: rgba(13, 76, 145, 1)} .bg-prussian{background-color: rgba(0, 49, 82, 1)} .bg-space{background-color: rgba(28, 41, 82, 1)} .bg-green{background-color: rgba(59, 177, 63, 1)} .bg-forest{background-color: rgba(11, 102, 35, 1)} .bg-sage{background-color: rgba(155, 194, 131, 1)} .bg-olive{background-color: rgba(112, 130, 56, 1)} .bg-lime{background-color: rgba(201, 233, 72, 1)} .bg-hunter{background-color: rgba(64, 111, 77, 1)} .bg-jade{background-color: rgba(0, 168, 107, 1)} .bg-artichoke{background-color: rgba(144, 150, 122, 1)} .bg-fern{background-color: rgba(78, 121, 67, 1)}.bg-jungle{background-color: rgba(41, 171, 135, 1)} .bg-laurel{background-color: rgba(170, 186, 159, 1)} .bg-moss{background-color: rgba(138, 154, 91, 1)} .bg-mint{background-color: rgba(151, 251, 152, 1)} .bg-pine{background-color: rgba(0, 121, 112, 1)}  .bg-tea{background-color:  rgba(208, 240, 191, 1)}.bg-army{background-color: rgba(75, 83, 32, 1)} .bg-emerald{background-color: rgba(79, 200, 120, 1)}  .bg-kelly{background-color: rgba(76, 187, 23, 1)} .bg-sacramento{background-color: rgba(4, 57, 39, 1)} .bg-sea{background-color: rgba(45, 139, 87, 1)} .bg-brown{background-color: rgba(124, 71, 1, 1)}  .bg-cedar{background-color: rgba(75, 58, 40, 1)} .bg-cinnamon{background-color: rgba(98, 42, 17, 1)} .bg-brunette{background-color: rgba(58, 31, 4, 1)} .bg-tawny{background-color: rgba(125, 72, 28, 1)} .bg-umber{background-color: rgba(54, 35, 20, 1)}  .bg-tortilla{background-color: rgba(153, 121, 80, 1)}.bg-chocolate{background-color: rgba(43, 23, 0, 1)} .bg-syrup{background-color: rgba(75, 31, 2, 1)} .bg-gingerbread{background-color: rgba(92, 44, 6, 1)} .bg-caramel{background-color: rgba(98, 54, 19, 1)}.bg-walnut{background-color: rgba(67, 39, 15, 1)}.bg-pecan{background-color: rgba(72, 38, 13, 1)} .bg-wood{background-color: rgba(64, 47, 29, 1)}.bg-hickory{background-color: rgba(52, 30, 16, 1)}.bg-espresso{background-color: rgba(74, 56, 42, 1)} .bg-peanut{background-color: rgba(121, 92, 50, 1)} .bg-mocha{background-color: rgba(59, 39, 12, 1)}.bg-coffee{background-color: rgba(74, 55, 25, 1)}.bg-russet{background-color: rgba(127, 70, 27, 1)} .bg-gray{background-color: rgba(72, 72, 72, 1)} .bg-fossil{background-color: rgba(119, 114, 118, 1)} .bg-mink{background-color: rgba(137, 127, 125, 1)} .bg-pearlriver{background-color: rgba(217, 221, 220, 1)} .bg-abalone{background-color: rgba(214, 207, 197, 1)} .bg-harborgray{background-color: rgba(199, 198, 194, 1)} .bg-smoke{background-color: rgba(190, 189, 185, 1)} .bg-thunder{background-color: rgba(190, 182, 171, 1)} .bg-pewter{background-color: rgba(153, 157, 160, 1)} .bg-steel{background-color: rgba(118, 123, 126, 1)} .bg-stone{background-color: rgba(135, 127, 125, 1)}.bg-iron{background-color: rgba(72, 73, 75, 1)} .bg-rhino{background-color: rgba(185, 187, 182, 1)} .bg-trout{background-color: rgba(151, 151, 143, 1)} .bg-seal{background-color: rgba(129, 131, 128, 1)} .bg-lava{background-color: rgba(129, 133, 136, 1)}.bg-shadow{background-color: rgba(54, 54, 54, 1)} .bg-ash{background-color: rgba(85, 75, 74, 1)}.bg-anchor{background-color: rgba(63, 65, 77, 1)} .bg-charcoal{background-color: rgba(34, 32, 33, 1)}\n.black{color: black}.white{color: white}.yellow{color: rgba(254, 242, 0, 1)} .mellow{color: rgba(247, 223, 125, 1)} .cyber{color: rgba(255, 211, 2, 1)} .royal{color: rgba(249, 217, 94, 1)} .trombone{color: rgba(208, 181, 92, 1)} .banana{color: rgba(251, 244, 163, 1)}.tuscany{color: rgba(252, 208, 44, 1)} .lemon{color: rgba(239, 253, 96, 1)} .bumblebee{color: rgba(254, 226, 5, 1)}.flax{color: rgba(239, 219, 130, 1)} .flax{color: rgba(239, 219, 130, 1)} .peach{color: rgba(255, 229, 180, 1)} .laguna{color: rgba(248, 228, 115, 1)} .mustard{color: rgba(254, 220, 83, 1)}\n.ecru{color: rgba(205, 177, 129, 1)} .corn{color: rgba(228, 204, 6, 1)}.pineapple{color: rgba(254, 225, 43, 1)} .flaxen{color: rgba(214, 183, 90, 1)} .eggnog{color: rgba(249, 226, 156, 1)}.sepia{color: rgba(225, 183, 122, 1)}.orange{color: rgba(251, 102, 0, 1)} .gold{color: rgba(249, 166, 2, 1)} .goldenrod{color: rgba(219, 165, 33, 1)}.pumpkin{color: rgba(255, 115, 23, 1)}.fire{color: rgba(253, 165, 15, 1)} .ochre{color: rgba(205, 119, 34, 1)}.amber{color: rgba(254, 191, 0, 1)}.dijon{color: rgba(196, 145, 2, 1)} .tangerine{color: rgba(250, 128, 42, 1)}.tiger{color: rgba(253, 106, 3, 1)} .honey{color: rgba(235, 150, 5, 1)}.carrot{color: rgba(239, 114, 22, 1)}.apricot{color: rgba(239, 129, 14, 1)} .bronze{color: rgba(178, 85, 15, 1)} .cider{color: rgba(179, 103, 43, 1)} .clay{color: rgba(129, 63, 11, 1)} .rust{color: rgba(139, 64, 0, 1)} .amber2{color: rgba(136, 48, 0, 1)}  .spice{color: rgba(121, 56, 2, 1)} .burntor{color: rgba(149, 64, 0, 1)} .red{color: rgba(209, 0, 4, 1)}.salmon{color: rgba(250, 128, 113, 1)} .scarlet{color: rgba(255, 35, 0, 1)} .barnred{color: rgba(123, 11, 0, 1)}.imperial{color: rgba(237, 40, 57, 1)} .indianred{color: rgba(205, 93, 92, 1)}.chili{color: rgba(195, 24, 7, 1)}.firebrick{color: rgba(178, 34, 33, 1)} .maroon{color: rgba(128, 0, 1, 1)}.redwood{color: rgba(163, 90, 81, 1)} .raspberry{color: rgba(210, 31, 60, 1)} .candyapple{color: rgba(255, 8, 0, 1)}.carmine{color: rgba(150, 0, 27, 1)} .persian{color: rgba(202, 52, 51, 1)} .usflag{color: rgba(191, 9, 49, 1)} .ferrari{color: rgba(254, 41, 1, 1)}.burgundy{color: rgba(142, 2, 31, 1)} .crimson{color: rgba(183, 16, 10, 1)}.sangria{color: rgba(94, 25, 18, 1)} .mahogany{color: rgba(64, 13, 9, 1)}.pink{color: rgba(253, 14, 191, 1)} .ruby{color: rgba(224, 17, 97, 1)}  .ultra{color: rgba(255, 110, 253, 1)} .thulian{color: rgba(223, 110, 162, 1)} .magenta{color: rgba(255, 0, 144, 1)} .rosepink{color: rgba(255, 101, 203, 1)} .lavender{color: rgba(251, 174, 210, 1)}.creamy{color: rgba(255, 105, 179, 1)}.fuchsia{color: rgba(255, 0, 254, 1)}.frenchrose{color: rgba(247, 74, 138, 1)}.cerise{color: rgba(221, 49, 99, 1)}.carnation{color: rgba(255, 166, 201, 1)} .brick{color: rgba(251, 96, 128, 1)}.amaranth{color: rgba(242, 155, 187, 1)} .taffy{color: rgba(249, 135, 195, 1)} .bubblegum{color: rgba(254, 91, 174, 1)} .hotpink{color: rgba(248, 24, 149, 1)} .punch{color: rgba(236, 85, 120, 1)}.lemonade{color: rgba(253, 185, 200, 1)} .flamingo{color: rgba(255, 161, 185, 1)} .violet{color: rgba(178, 0, 238, 1)} .hibiscus{color: rgba(180, 55, 85, 1)} .mauve{color: rgba(120, 75, 132, 1)} .mulberry{color: rgba(198, 75, 138, 1)} .lavender{color: rgba(228, 160, 247, 1)} .orchid{color: rgba(176, 104, 238, 1)}.lilac{color: rgba(182, 96, 207, 1)} .electric{color: rgba(144, 0, 255, 1)}.african{color: rgba(178, 132, 188, 1)}.grape{color: rgba(110, 46, 169, 1)} .amethyst{color: rgba(153, 102, 203, 1)}.byzantine{color: rgba(111, 42, 99, 1)}.fandango{color: rgba(180, 52, 137, 1)} .helio{color: rgba(224, 114, 254, 1)} .floral{color: rgba(180, 126, 222, 1)} .thistle{color: rgba(215, 191, 239, 1)}.royal{color: rgba(120, 82, 169, 1)}.lollipop{color: rgba(129, 0, 127, 1)} .plum{color: rgba(140, 70, 133, 1)}.eggplant{color: rgba(50, 19, 50, 1)} .blue{color: rgba(0, 25, 249, 1)} .denim{color: rgba(19, 30, 58, 1)}  .pigeon{color: rgba(114, 133, 165, 1)} .sky{color: rgba(149, 200, 217, 1)} .independence{color: rgba(77, 81, 110, 1)} .airforce{color: rgba(89, 139, 174, 1)} .babyblue{color: rgba(138, 207, 240, 1)} .navy{color: rgba(1, 0, 128, 1)}.steel{color: rgba(70, 130, 180, 1)}.carolina{color: rgba(88, 160, 210, 1)}.turkish{color: rgba(81, 151, 163, 1)} .maya{color: rgba(115, 194, 251, 1)} .cornflower{color: rgba(103, 147, 244, 1)}.olympic{color: rgba(0, 142, 204, 1)} .saphire{color: rgba(15, 82, 186, 1)}.azure{color: rgba(0, 128, 253, 1)} .egyptian{color: rgba(17, 53, 167, 1)} .yale{color: rgba(13, 76, 145, 1)} .prussian{color: rgba(0, 49, 82, 1)} .space{color: rgba(28, 41, 82, 1)} .green{color: rgba(59, 177, 63, 1)} .forest{color: rgba(11, 102, 35, 1)} .sage{color: rgba(155, 194, 131, 1)} .olive{color: rgba(112, 130, 56, 1)} .lime{color: rgba(201, 233, 72, 1)} .hunter{color: rgba(64, 111, 77, 1)} .jade{color: rgba(0, 168, 107, 1)} .artichoke{color: rgba(144, 150, 122, 1)} .fern{color: rgba(78, 121, 67, 1)}.jungle{color: rgba(41, 171, 135, 1)} .laurel{color: rgba(170, 186, 159, 1)} .moss{color: rgba(138, 154, 91, 1)} .mint{color: rgba(151, 251, 152, 1)} .pine{color: rgba(0, 121, 112, 1)}  .tea{color:  rgba(208, 240, 191, 1)}.army{color: rgba(75, 83, 32, 1)} .emerald{color: rgba(79, 200, 120, 1)}  .kelly{color: rgba(76, 187, 23, 1)} .sacramento{color: rgba(4, 57, 39, 1)} .sea{color: rgba(45, 139, 87, 1)} .brown{color: rgba(124, 71, 1, 1)}  .cedar{color: rgba(75, 58, 40, 1)} .cinnamon{color: rgba(98, 42, 17, 1)} .brunette{color: rgba(58, 31, 4, 1)} .tawny{color: rgba(125, 72, 28, 1)} .umber{color: rgba(54, 35, 20, 1)}  .tortilla{color: rgba(153, 121, 80, 1)}.chocolate{color: rgba(43, 23, 0, 1)} .syrup{color: rgba(75, 31, 2, 1)} .gingerbread{color: rgba(92, 44, 6, 1)} .caramel{color: rgba(98, 54, 19, 1)}.walnut{color: rgba(67, 39, 15, 1)}.pecan{color: rgba(72, 38, 13, 1)} .wood{color: rgba(64, 47, 29, 1)}.hickory{color: rgba(52, 30, 16, 1)}.espresso{color: rgba(74, 56, 42, 1)} .peanut{color: rgba(121, 92, 50, 1)} .mocha{color: rgba(59, 39, 12, 1)}.coffee{color: rgba(74, 55, 25, 1)}.russet{color: rgba(127, 70, 27, 1)} .gray{color: rgba(72, 72, 72, 1)} .fossil{color: rgba(119, 114, 118, 1)} .mink{color: rgba(137, 127, 125, 1)} .pearlriver{color: rgba(217, 221, 220, 1)} .abalone{color: rgba(214, 207, 197, 1)} .harborgray{color: rgba(199, 198, 194, 1)} .smoke{color: rgba(190, 189, 185, 1)} .thunder{color: rgba(190, 182, 171, 1)} .pewter{color: rgba(153, 157, 160, 1)} .steel{color: rgba(118, 123, 126, 1)} .stone{color: rgba(135, 127, 125, 1)}.iron{color: rgba(72, 73, 75, 1)} .rhino{color: rgba(185, 187, 182, 1)} .trout{color: rgba(151, 151, 143, 1)} .seal{color: rgba(129, 131, 128, 1)} .lava{color: rgba(129, 133, 136, 1)}.shadow{color: rgba(54, 54, 54, 1)} .ash{color: rgba(85, 75, 74, 1)}.anchor{color: rgba(63, 65, 77, 1)} .charcoal{color: rgba(34, 32, 33, 1)}\n", ""]);
+exports.push([module.i, ".btn-black{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-black:hover{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}.btn-blackwhite{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-blackwhite:hover{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}\r\n.btn-white{border-color:   black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-white:hover{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}.btn-whiteblack{border-color:  black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-whiteblack:hover{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}\r\n\r\n.btn-yellow{border-color: rgba(254, 242, 0, 1) ; color:black;background-color: rgba(254, 242, 0, 1)} .btn-yellow:hover{text-decoration:none; color:black;background-color: rgba(254, 242, 0, 0.8)}.btn-mellow{border-color: rgba(247, 223, 125, 1)  ; color:black;background-color: rgba(247, 223, 125, 1)} .btn-mellow:hover{text-decoration:none; color:black;background-color: rgba(247, 223, 125, 0.8)}.btn-cyber{border-color: rgba(255, 211, 2, 1)  ; color:black;background-color: rgba(255, 211, 2, 1)} .btn-cyber:hover{text-decoration:none; color:black;background-color: rgba(255, 211, 2, 0.8)}.btn-royal{border-color: rgba(249, 217, 94, 1)  ; color:black;background-color: rgba(249, 217, 94, 1)} .btn-royal:hover{text-decoration:none; color:black;background-color: rgba(249, 217, 94, 0.8)}.btn-trombone{border-color: rgba(208, 181, 92, 1)  ; color:black;background-color: rgba(208, 181, 92, 1)} .btn-trombone:hover{text-decoration:none; color:black;background-color: rgba(208, 181, 92, 0.8)}.btn-banana{border-color: rgba(251, 244, 163, 1)  ; color:black;background-color: rgba(251, 244, 163, 1)} .btn-banana:hover{text-decoration:none; color:black;background-color: rgba(251, 244, 163, 0.8)}.btn-tuscany{border-color: rgba(252, 208, 44, 1)  ; color:black;background-color: rgba(252, 208, 44, 1)} .btn-tuscany:hover{text-decoration:none; color:black;background-color: rgba(252, 208, 44, 0.8)}.btn-lemon{border-color: rgba(239, 253, 96, 1)  ; color:black;background-color: rgba(239, 253, 96, 1)} .btn-lemon:hover{text-decoration:none; color:black;background-color: rgba(239, 253, 96, 0.8)}.btn-bumblebee{border-color: rgba(254, 226, 5, 1)  ; color:black;background-color: rgba(254, 226, 5, 1)} .btn-bumblebee:hover{text-decoration:none; color:black;background-color: rgba(254, 226, 5, 0.8)}.btn-flax{border-color: rgba(239, 219, 130, 1)  ; color:black;background-color: rgba(239, 219, 130, 1)} .btn-flax:hover{text-decoration:none; color:black;background-color: rgba(239, 219, 130, 0.8)}.btn-cream{border-color: rgba(255, 252, 209, 1)  ; color:black;background-color: rgba(255, 252, 209, 1)} .btn-cream:hover{text-decoration:none; color:black;background-color: rgba(255, 252, 209, 0.8)}.btn-peach{border-color: rgba(255, 229, 180, 1)  ; color:black;background-color: rgba(255, 229, 180, 1)} .btn-peach:hover{text-decoration:none; color:black;background-color: rgba(255, 229, 180, 0.8)}.btn-laguna{border-color: rgba(248, 228, 115, 1)  ; color:black;background-color: rgba(248, 228, 115, 1)} .btn-laguna:hover{text-decoration:none; color:black;background-color: rgba(248, 228, 115, 0.8)}.btn-mustard{border-color: rgba(254, 220, 83, 1)  ; color:black;background-color: rgba(254, 220, 83, 1)} .btn-mustard:hover{text-decoration:none; color:black;background-color: rgba(254, 220, 83, 0.8)}.btn-ecru{border-color: rgba(205, 177, 129, 1)  ; color:black;background-color: rgba(205, 177, 129, 1)} .btn-ecru:hover{text-decoration:none; color:black;background-color: rgba(205, 177, 129, 0.8)}.btn-corn{border-color: rgba(228, 204, 6, 1)  ; color:black;background-color: rgba(228, 204, 6, 1)} .btn-corn:hover{text-decoration:none; color:black;background-color: rgba(228, 204, 6, 0.8)}.btn-pineapple{border-color: rgba(254, 225, 43, 1)  ; color:black;background-color: rgba(254, 225, 43, 1)} .btn-pineapple:hover{text-decoration:none; color:black;background-color: rgba(254, 225, 43, 0.8)}.btn-flaxen{border-color: rgba(214, 183, 90, 1)  ; color:black;background-color: rgba(214, 183, 90, 1)} .btn-flaxen:hover{text-decoration:none; color:black;background-color: rgba(214, 183, 90, 0.8)}.btn-eggnog{border-color: rgba(249, 226, 156, 1)  ; color:black;background-color: rgba(249, 226, 156, 1)} .btn-eggnog:hover{text-decoration:none; color:black;background-color: rgba(249, 226, 156, 0.8)}.btn-sepia{border-color: rgba(225, 183, 122, 1)  ; color:black;background-color: rgba(225, 183, 122, 1)} .btn-sepia:hover{text-decoration:none; color:black;background-color: rgba(225, 183, 122, 0.8)}.btn-orange{border-color: rgba(251, 102, 0, 1)  ; color: white;background-color: rgba(251, 102, 0, 1)} .btn-orange:hover{text-decoration:none; color: white;background-color: rgba(251, 102, 0, 0.8)}\r\n.btn-gold{border-color: rgba(249, 166, 2, 1)  ; color: white;background-color: rgba(249, 166, 2, 1)} .btn-gold:hover{text-decoration:none; color: white;background-color: rgba(249, 166, 2, 0.8)}.btn-goldenrod{border-color: rgba(219, 165, 33, 1)  ; color: white;background-color: rgba(219, 165, 33, 1)} .btn-goldenrod:hover{text-decoration:none; color: white;background-color: rgba(219, 165, 33, 0.8)}\r\n.btn-pumpkin{border-color: rgba(255, 115, 23, 1)  ; color: white;background-color: rgba(255, 115, 23, 1)} .btn-pumpkin:hover{text-decoration:none; color: white;background-color: rgba(255, 115, 23, 0.8)}.btn-fire{border-color: rgba(253, 165, 15, 1)  ; color: white;background-color: rgba(253, 165, 15, 1)} .btn-fire:hover{text-decoration:none; color: white;background-color: rgba(253, 165, 15, 0.8)}\r\n.btn-ochre{border-color: rgba(205, 119, 34, 1)  ; color: white;background-color: rgba(205, 119, 34, 1)} .btn-ochre:hover{text-decoration:none; color: white;background-color: rgba(205, 119, 34, 0.8)}.btn-amber{border-color: rgba(254, 191, 0, 1)  ; color: white;background-color: rgba(254, 191, 0, 1)} .btn-amber:hover{text-decoration:none; color: white;background-color: rgba(254, 191, 0, 0.8)}\r\n.btn-dijon{border-color: rgba(196, 145, 2, 1)  ; color: white;background-color: rgba(196, 145, 2, 1)} .btn-dijon:hover{text-decoration:none; color: white;background-color: rgba(196, 145, 2, 0.8)}.btn-tangerine{border-color: rgba(250, 128, 42, 1)  ; color: white;background-color: rgba(250, 128, 42, 1)} .btn-tangerine:hover{text-decoration:none; color: white;background-color: rgba(250, 128, 42, 0.8)}.btn-tiger{border-color: rgba(253, 106, 3, 1)  ; color: white;background-color: rgba(253, 106, 3, 1)} .btn-tiger:hover{text-decoration:none; color: white;background-color: rgba(253, 106, 3, 0.8)}.btn-honey{border-color: rgba(235, 150, 5, 1)  ; color: white;background-color: rgba(235, 150, 5, 1)} .btn-honey:hover{text-decoration:none; color: white;background-color: rgba(235, 150, 5, 0.8)}\r\n.btn-carrot{border-color: rgba(239, 114, 22, 1)  ; color: white;background-color: rgba(239, 114, 22, 1)} .btn-carrot:hover{text-decoration:none; color: white;background-color: rgba(239, 114, 22, 0.8)}.btn-apricot{border-color: rgba(239, 129, 14, 1)  ; color: white;background-color: rgba(239, 129, 14, 1)} .btn-apricot:hover{text-decoration:none; color: white;background-color: rgba(239, 129, 14, 0.8)}.btn-bronze{border-color: rgba(178, 85, 15, 1)  ; color: white;background-color: rgba(178, 85, 15, 1)} .btn-bronze:hover{text-decoration:none; color: white;background-color: rgba(178, 85, 15, 0.8)}.btn-cider{border-color: rgba(179, 103, 43, 1)  ; color: white;background-color: rgba(179, 103, 43, 1)} .btn-cider:hover{text-decoration:none; color: white;background-color: rgba(179, 103, 43, 0.8)}\r\n.btn-clay{border-color: rgba(129, 63, 11, 1)  ; color: white;background-color: rgba(129, 63, 11, 1)} .btn-clay:hover{text-decoration:none; color: white;background-color: rgba(129, 63, 11, 0.8)}.btn-rust{border-color: rgba(139, 64, 0, 1)  ; color: white;background-color: rgba(139, 64, 0, 1)} .btn-rust:hover{text-decoration:none; color: white;background-color: rgba(139, 64, 0, 0.8)}\r\n.btn-amber2{border-color: rgba(136, 48, 0, 1)  ; color: white;background-color: rgba(136, 48, 0, 1)} .btn-amber2:hover{text-decoration:none; color: white;background-color: rgba(136, 48, 0, 0.8)}.btn-spice{border-color: rgba(121, 56, 2, 1)  ; color: white;background-color: rgba(121, 56, 2, 1)} .btn-spice:hover{text-decoration:none; color: white;background-color: rgba(121, 56, 2, 0.8)}\r\n.btn-burntor{border-color: rgba(149, 64, 0, 1)  ; color: white;background-color: rgba(149, 64, 0, 1)} .btn-burntor:hover{text-decoration:none; color: white;background-color: rgba(149, 64, 0, 0.8)}.btn-red{border-color: rgba(209, 0, 4, 1)  ; color: white;background-color: rgba(209, 0, 4, 1)} .btn-red:hover{text-decoration:none; color: white;background-color: rgba(209, 0, 4, 0.8)}\r\n.btn-salmon{border-color: rgba(250, 128, 113, 1)  ; color: white;background-color: rgba(250, 128, 113, 1)} .btn-salmon:hover{text-decoration:none; color: white;background-color: rgba(250, 128, 113, 0.8)}.btn-scarlet{border-color: rgba(255, 35, 0, 1)  ; color: white;background-color: rgba(255, 35, 0, 1)} .btn-scarlet:hover{text-decoration:none; color: white;background-color: rgba(255, 35, 0, 0.8)}\r\n.btn-barnred{border-color: rgba(123, 11, 0, 1)  ; color: white;background-color: rgba(123, 11, 0, 1)} .btn-barnred:hover{text-decoration:none; color: white;background-color: rgba(123, 11, 0, 0.8)}.btn-imperial{border-color: rgba(237, 40, 57, 1)  ; color: white;background-color: rgba(237, 40, 57, 1)} .btn-imperial:hover{text-decoration:none; color: white;background-color: rgba(237, 40, 57, 0.8)}.btn-indianred{border-color: rgba(205, 93, 92, 1)  ; color: white;background-color: rgba(205, 93, 92, 1)} .btn-indianred:hover{text-decoration:none; color: white;background-color: rgba(205, 93, 92, 0.8)}.btn-chili{border-color: rgba(195, 24, 7, 1)  ; color: white;background-color: rgba(195, 24, 7, 1)} .btn-chili:hover{text-decoration:none; color: white;background-color: rgba(195, 24, 7, 0.8)}\r\n.btn-firebrick{border-color: rgba(178, 34, 33, 1)  ; color: white;background-color: rgba(178, 34, 33, 1)} .btn-firebrick:hover{text-decoration:none; color: white;background-color: rgba(178, 34, 33, 0.8)}.btn-maroon{border-color: rgba(128, 0, 1, 1)  ; color: white;background-color: rgba(128, 0, 1, 1)} .btn-maroon:hover{text-decoration:none; color: white;background-color: rgba(128, 0, 1, 0.8)}\r\n.btn-redwood{border-color: rgba(163, 90, 81, 1)  ; color: white;background-color: rgba(163, 90, 81, 1)} .btn-redwood:hover{text-decoration:none; color: white;background-color: rgba(163, 90, 81, 0.8)}.btn-raspberry{border-color: rgba(210, 31, 60, 1)  ; color: white;background-color: rgba(210, 31, 60, 1)} .btn-raspberry:hover{text-decoration:none; color: white;background-color: rgba(210, 31, 60, 0.8)}.btn-candyapple{border-color: rgba(255, 8, 0, 1)  ; color: white;background-color: rgba(255, 8, 0, 1)} .btn-candyapple:hover{text-decoration:none; color: white;background-color: rgba(255, 8, 0, 0.8)}.btn-carmine{border-color: rgba(150, 0, 27, 1)  ; color: white;background-color: rgba(150, 0, 27, 1)} .btn-carmine:hover{text-decoration:none; color: white;background-color: rgba(150, 0, 27, 0.8)}\r\n.btn-persian{border-color: rgba(202, 52, 51, 1)  ; color: white;background-color: rgba(202, 52, 51, 1)} .btn-persian:hover{text-decoration:none; color: white;background-color: rgba(202, 52, 51, 0.8)}.btn-usflag{border-color: rgba(191, 9, 49, 1)  ; color: white;background-color: rgba(191, 9, 49, 1)} .btn-usflag:hover{text-decoration:none; color: white;background-color: rgba(191, 9, 49, 0.8)}\r\n.btn-ferrari{border-color: rgba(254, 41, 1, 1)  ; color: white;background-color: rgba(254, 41, 1, 1)} .btn-ferrari:hover{text-decoration:none; color: white;background-color: rgba(254, 41, 1, 0.8)}.btn-burgundy{border-color: rgba(142, 2, 31, 1)  ; color: white;background-color: rgba(142, 2, 31, 1)} .btn-burgundy:hover{text-decoration:none; color: white;background-color: rgba(142, 2, 31, 0.8)}\r\n.btn-crimson{border-color: rgba(183, 16, 10, 1)  ; color: white;background-color: rgba(183, 16, 10, 1)} .btn-crimson:hover{text-decoration:none; color: white;background-color: rgba(183, 16, 10, 0.8)}.btn-sangria{border-color: rgba(94, 25, 18, 1)  ; color: white;background-color: rgba(94, 25, 18, 1)} .btn-sangria:hover{text-decoration:none; color: white;background-color: rgba(94, 25, 18, 0.8)}\r\n.btn-mahogany{border-color: rgba(64, 13, 9, 1)  ; color: white;background-color: rgba(64, 13, 9, 1)} .btn-mahogany:hover{text-decoration:none; color: white;background-color: rgba(64, 13, 9, 0.8)}.btn-pink{border-color: rgba(253, 14, 191, 1)  ; color: white;background-color: rgba(253, 14, 191, 1)} .btn-pink:hover{text-decoration:none; color: white;background-color: rgba(253, 14, 191, 0.8)}\r\n.btn-ruby{border-color: rgba(224, 17, 97, 1)  ; color: white;background-color: rgba(224, 17, 97, 1)} .btn-ruby:hover{text-decoration:none; color: white;background-color: rgba(224, 17, 97, 0.8)}.btn-ultra{border-color: rgba(255, 110, 253, 1)  ; color: white;background-color: rgba(255, 110, 253, 1)} .btn-ultra:hover{text-decoration:none; color: white;background-color: rgba(255, 110, 253, 0.8)}\r\n.btn-thulian{border-color: rgba(223, 110, 162, 1)  ; color: white;background-color: rgba(223, 110, 162, 1)} .btn-thulian:hover{text-decoration:none; color: white;background-color: rgba(223, 110, 162, 0.8)}.btn-magenta{border-color: rgba(255, 0, 144, 1)  ; color: white;background-color: rgba(255, 0, 144, 1)} .btn-magenta:hover{text-decoration:none; color: white;background-color: rgba(255, 0, 144, 0.8)}\r\n.btn-rosepink{border-color: rgba(255, 101, 203, 1)  ; color: white;background-color: rgba(255, 101, 203, 1)} .btn-rosepink:hover{text-decoration:none; color: white;background-color: rgba(255, 101, 203, 0.8)}.btn-lavender{border-color: rgba(251, 174, 210, 1)  ; color: white;background-color: rgba(251, 174, 210, 1)} .btn-lavender:hover{text-decoration:none; color: white;background-color: rgba(251, 174, 210, 0.8)}.btn-creamy{border-color: rgba(255, 105, 179, 1)  ; color: white;background-color: rgba(255, 105, 179, 1)} .btn-creamy:hover{text-decoration:none; color: white;background-color: rgba(255, 105, 179, 0.8)}.btn-fuchsia{border-color: rgba(255, 0, 254, 1)  ; color: white;background-color: rgba(255, 0, 254, 1)} .btn-fuchsia:hover{text-decoration:none; color: white;background-color: rgba(255, 0, 254, 0.8)}\r\n.btn-frenchrose{border-color: rgba(247, 74, 138, 1)  ; color: white;background-color: rgba(247, 74, 138, 1)} .btn-frenchrose:hover{text-decoration:none; color: white;background-color: rgba(247, 74, 138, 0.8)}.btn-cerise{border-color: rgba(221, 49, 99, 1)  ; color: white;background-color: rgba(221, 49, 99, 1)} .btn-cerise:hover{text-decoration:none; color: white;background-color: rgba(221, 49, 99, 0.8)}\r\n.btn-carnation{border-color: rgba(255, 166, 201, 1)  ; color: white;background-color: rgba(255, 166, 201, 1)} .btn-carnation:hover{text-decoration:none; color: white;background-color: rgba(255, 166, 201, 0.8)}.btn-brick{border-color: rgba(251, 96, 128, 1)  ; color: white;background-color: rgba(251, 96, 128, 1)} .btn-brick:hover{text-decoration:none; color: white;background-color: rgba(251, 96, 128, 0.8)}\r\n.btn-amaranth{border-color: rgba(242, 155, 187, 1)  ; color: white;background-color: rgba(242, 155, 187, 1)} .btn-amaranth:hover{text-decoration:none; color: white;background-color: rgba(242, 155, 187, 0.8)}.btn-taffy{border-color: rgba(249, 135, 195, 1)  ; color: white;background-color: rgba(249, 135, 195, 1)} .btn-taffy:hover{text-decoration:none; color: white;background-color: rgba(249, 135, 195, 0.8)}.btn-bubblegum{border-color: rgba(254, 91, 174, 1)  ; color: white;background-color: rgba(254, 91, 174, 1)} .btn-bubblegum:hover{text-decoration:none; color: white;background-color: rgba(254, 91, 174, 0.8)}.btn-hotpink{border-color: rgba(248, 24, 149, 1)  ; color: white;background-color: rgba(248, 24, 149, 1)} .btn-hotpink:hover{text-decoration:none; color: white;background-color: rgba(248, 24, 149, 0.8)}.btn-punch{border-color: rgba(236, 85, 120, 1)  ; color: white;background-color: rgba(236, 85, 120, 1)} .btn-punch:hover{text-decoration:none; color: white;background-color: rgba(236, 85, 120, 0.8)}.btn-lemonade{border-color: rgba(253, 185, 200, 1)  ; color: white;background-color: rgba(253, 185, 200, 1)} .btn-lemonade:hover{text-decoration:none; color: white;background-color: rgba(253, 185, 200, 0.8)}.btn-flamingo{border-color: rgba(255, 161, 185, 1)  ; color: white;background-color: rgba(255, 161, 185, 1)} .btn-flamingo:hover{text-decoration:none; color: white;background-color: rgba(255, 161, 185, 0.8)}.btn-violet{border-color: rgba(178, 0, 238, 1)  ; color: white;background-color: rgba(178, 0, 238, 1)} .btn-violet:hover{text-decoration:none; color: white;background-color: rgba(178, 0, 238, 0.8)}.btn-hibiscus{border-color: rgba(180, 55, 85, 1)  ; color: white;background-color: rgba(180, 55, 85, 1)} .btn-hibiscus:hover{text-decoration:none; color: white;background-color: rgba(180, 55, 85, 0.8)}.btn-mauve{border-color: rgba(120, 75, 132, 1)  ; color: white;background-color: rgba(120, 75, 132, 1)} .btn-mauve:hover{text-decoration:none; color: white;background-color: rgba(120, 75, 132, 0.8)}\r\n.btn-mulberry{border-color: rgba(198, 75, 138, 1)  ; color: white;background-color: rgba(198, 75, 138, 1)} .btn-mulberry:hover{text-decoration:none; color: white;background-color: rgba(198, 75, 138, 0.8)}.btn-lavender{border-color: rgba(228, 160, 247, 1)  ; color: white;background-color: rgba(228, 160, 247, 1)} .btn-lavender:hover{text-decoration:none; color: white;background-color: rgba(228, 160, 247, 0.8)}.btn-orchid{border-color: rgba(176, 104, 238, 1)  ; color: white;background-color: rgba(176, 104, 238, 1)} .btn-orchid:hover{text-decoration:none; color: white;background-color: rgba(176, 104, 238, 0.8)}.btn-lilac{border-color: rgba(182, 96, 207, 1)  ; color: white;background-color: rgba(182, 96, 207, 1)} .btn-lilac:hover{text-decoration:none; color: white;background-color: rgba(182, 96, 207, 0.8)}\r\n.btn-electric{border-color: rgba(144, 0, 255, 1)  ; color: white;background-color: rgba(144, 0, 255, 1)} .btn-electric:hover{text-decoration:none; color: white;background-color: rgba(144, 0, 255, 0.8)}.btn-african{border-color: rgba(178, 132, 188, 1)  ; color: white;background-color: rgba(178, 132, 188, 1)} .btn-african:hover{text-decoration:none; color: white;background-color: rgba(178, 132, 188, 0.8)}.btn-grape{border-color: rgba(110, 46, 169, 1)  ; color: white;background-color: rgba(110, 46, 169, 1)} .btn-grape:hover{text-decoration:none; color: white;background-color: rgba(110, 46, 169, 0.8)}.btn-amethyst{border-color: rgba(153, 102, 203, 1)  ; color: white;background-color: rgba(153, 102, 203, 1)} .btn-amethyst:hover{text-decoration:none; color: white;background-color: rgba(153, 102, 203, 0.8)}.btn-byzantine{border-color: rgba(111, 42, 99, 1)  ; color: white;background-color: rgba(111, 42, 99, 1)} .btn-byzantine:hover{text-decoration:none; color: white;background-color: rgba(111, 42, 99, 0.8)}.btn-fandango{border-color: rgba(180, 52, 137, 1)  ; color: white;background-color: rgba(180, 52, 137, 1)} .btn-fandango:hover{text-decoration:none; color: white;background-color: rgba(180, 52, 137, 0.8)}.btn-helio{border-color: rgba(224, 114, 254, 1)  ; color: white;background-color: rgba(224, 114, 254, 1)} .btn-helio:hover{text-decoration:none; color: white;background-color: rgba(224, 114, 254, 0.8)}.btn-floral{border-color: rgba(180, 126, 222, 1)  ; color: white;background-color: rgba(180, 126, 222, 1)} .btn-floral:hover{text-decoration:none; color: white;background-color: rgba(180, 126, 222, 0.8)}.btn-thistle{border-color: rgba(215, 191, 239, 1)  ; color: white;background-color: rgba(215, 191, 239, 1)} .btn-thistle:hover{text-decoration:none; color: white;background-color: rgba(215, 191, 239, 0.8)}.btn-royal{border-color: rgba(120, 82, 169, 1)  ; color: white;background-color: rgba(120, 82, 169, 1)} .btn-royal:hover{text-decoration:none; color: white;background-color: rgba(120, 82, 169, 0.8)}.btn-lollipop{border-color: rgba(129, 0, 127, 1)  ; color: white;background-color: rgba(129, 0, 127, 1)} .btn-lollipop:hover{text-decoration:none; color: white;background-color: rgba(129, 0, 127, 0.8)}.btn-plum{border-color: rgba(140, 70, 133, 1)  ; color: white;background-color: rgba(140, 70, 133, 1)} .btn-plum:hover{text-decoration:none; color: white;background-color: rgba(140, 70, 133, 0.8)}\r\n.btn-eggplant{border-color: rgba(50, 19, 50, 1)  ; color: white;background-color: rgba(50, 19, 50, 1)} .btn-eggplant:hover{text-decoration:none; color: white;background-color: rgba(50, 19, 50, 0.8)}.btn-blue{border-color: rgba(0, 25, 249, 1)  ; color: white;background-color: rgba(0, 25, 249, 1)} .btn-blue:hover{text-decoration:none; color: white;background-color: rgba(0, 25, 249, 0.8)}\r\n.btn-denim{border-color: rgba(19, 30, 58, 1)  ; color: white;background-color: rgba(19, 30, 58, 1)} .btn-denim:hover{text-decoration:none; color: white;background-color: rgba(19, 30, 58, 0.8)}.btn-pigeon{border-color: rgba(114, 133, 165, 1)  ; color: white;background-color: rgba(114, 133, 165, 1)} .btn-pigeon:hover{text-decoration:none; color: white;background-color: rgba(114, 133, 165, 0.8)}\r\n.btn-sky{border-color: rgba(149, 200, 217, 1)  ; color: white;background-color: rgba(149, 200, 217, 1)} .btn-sky:hover{text-decoration:none; color: white;background-color: rgba(149, 200, 217, 0.8)}.btn-independence{border-color: rgba(77, 81, 110, 1)  ; color: white;background-color: rgba(77, 81, 110, 1)} .btn-independence:hover{text-decoration:none; color: white;background-color: rgba(77, 81, 110, 0.8)}.btn-airforce{border-color: rgba(89, 139, 174, 1)  ; color: white;background-color: rgba(89, 139, 174, 1)} .btn-airforce:hover{text-decoration:none; color: white;background-color: rgba(89, 139, 174, 0.8)}.btn-babyblue{border-color: rgba(138, 207, 240, 1)  ; color: white;background-color: rgba(138, 207, 240, 1)} .btn-babyblue:hover{text-decoration:none; color: white;background-color: rgba(138, 207, 240, 0.8)}.btn-navy{border-color: rgba(1, 0, 128, 1)  ; color: white;background-color: rgba(1, 0, 128, 1)} .btn-navy:hover{text-decoration:none; color: white;background-color: rgba(1, 0, 128, 0.8)}.btn-steel{border-color: rgba(70, 130, 180, 1)  ; color: white;background-color: rgba(70, 130, 180, 1)} .btn-steel:hover{text-decoration:none; color: white;background-color: rgba(70, 130, 180, 0.8)}\r\n.btn-carolina{border-color: rgba(88, 160, 210, 1)  ; color: white;background-color: rgba(88, 160, 210, 1)} .btn-carolina:hover{text-decoration:none; color: white;background-color: rgba(88, 160, 210, 0.8)}.btn-turkish{border-color: rgba(81, 151, 163, 1)  ; color: white;background-color: rgba(81, 151, 163, 1)} .btn-turkish:hover{text-decoration:none; color: white;background-color: rgba(81, 151, 163, 0.8)}.btn-maya{border-color: rgba(115, 194, 251, 1)  ; color: white;background-color: rgba(115, 194, 251, 1)} .btn-maya:hover{text-decoration:none; color: white;background-color: rgba(115, 194, 251, 0.8)}.btn-cornflower{border-color: rgba(103, 147, 244, 1)  ; color: white;background-color: rgba(103, 147, 244, 1)} .btn-cornflower:hover{text-decoration:none; color: white;background-color: rgba(103, 147, 244, 0.8)}.btn-olympic{border-color: rgba(0, 142, 204, 1)  ; color: white;background-color: rgba(0, 142, 204, 1)} .btn-olympic:hover{text-decoration:none; color: white;background-color: rgba(0, 142, 204, 0.8)}.btn-saphire{border-color: rgba(15, 82, 186, 1)  ; color: white;background-color: rgba(15, 82, 186, 1)} .btn-saphire:hover{text-decoration:none; color: white;background-color: rgba(15, 82, 186, 0.8)}\r\n.btn-azure{border-color: rgba(0, 128, 253, 1)  ; color: white;background-color: rgba(0, 128, 253, 1)} .btn-azure:hover{text-decoration:none; color: white;background-color: rgba(0, 128, 253, 0.8)}.btn-egyptian{border-color: rgba(17, 53, 167, 1)  ; color: white;background-color: rgba(17, 53, 167, 1)} .btn-egyptian:hover{text-decoration:none; color: white;background-color: rgba(17, 53, 167, 0.8)}.btn-yale{border-color: rgba(13, 76, 145, 1)  ; color: white;background-color: rgba(13, 76, 145, 1)} .btn-yale:hover{text-decoration:none; color: white;background-color: rgba(13, 76, 145, 0.8)}.btn-prussian{border-color: rgba(0, 49, 82, 1)  ; color: white;background-color: rgba(0, 49, 82, 1)} .btn-prussian:hover{text-decoration:none; color: white;background-color: rgba(0, 49, 82, 0.8)}\r\n.btn-space{border-color: rgba(28, 41, 82, 1)  ; color: white;background-color: rgba(28, 41, 82, 1)} .btn-space:hover{text-decoration:none; color: white;background-color: rgba(28, 41, 82, 0.8)}.btn-green{border-color: rgba(59, 177, 63, 1)  ; color: white;background-color: rgba(59, 177, 63, 1)} .btn-green:hover{text-decoration:none; color: white;background-color: rgba(59, 177, 63, 0.8)}.btn-forest{border-color: rgba(11, 102, 35, 1)  ; color: white;background-color: rgba(11, 102, 35, 1)} .btn-forest:hover{text-decoration:none; color: white;background-color: rgba(11, 102, 35, 0.8)}.btn-sage{border-color: rgba(155, 194, 131, 1)  ; color: white;background-color: rgba(155, 194, 131, 1)} .btn-sage:hover{text-decoration:none; color: white;background-color: rgba(155, 194, 131, 0.8)}.btn-olive{border-color: rgba(112, 130, 56, 1)  ; color: white;background-color: rgba(112, 130, 56, 1)} .btn-olive:hover{text-decoration:none; color: white;background-color: rgba(112, 130, 56, 0.8)}.btn-lime{border-color: rgba(201, 233, 72, 1)  ; color: black;background-color: rgba(201, 233, 72, 1)} .btn-lime:hover{text-decoration:none; color: black;background-color: rgba(201, 233, 72, 0.8)}.btn-hunter{border-color: rgba(64, 111, 77, 1)  ; color: white;background-color: rgba(64, 111, 77, 1)} .btn-hunter:hover{text-decoration:none; color: white;background-color: rgba(64, 111, 77, 0.8)}\r\n.btn-jade{border-color: rgba(0, 168, 107, 1)  ; color: white;background-color: rgba(0, 168, 107, 1)} .btn-jade:hover{text-decoration:none; color: white;background-color: rgba(0, 168, 107, 0.8)}.btn-artichoke{border-color: rgba(144, 150, 122, 1)  ; color: white;background-color: rgba(144, 150, 122, 1)} .btn-artichoke:hover{text-decoration:none; color: white;background-color: rgba(144, 150, 122, 0.8)}.btn-fern{border-color: rgba(78, 121, 67, 1)  ; color: white;background-color: rgba(78, 121, 67, 1)} .btn-fern:hover{text-decoration:none; color: white;background-color: rgba(78, 121, 67, 0.8)}.btn-jungle{border-color: rgba(41, 171, 135, 1)  ; color: white;background-color: rgba(41, 171, 135, 1)} .btn-jungle:hover{text-decoration:none; color: white;background-color: rgba(41, 171, 135, 0.8)}.btn-laurel{border-color: rgba(170, 186, 159, 1)  ; color: white;background-color: rgba(170, 186, 159, 1)} .btn-laurel:hover{text-decoration:none; color: white;background-color: rgba(170, 186, 159, 0.8)}.btn-moss{border-color: rgba(138, 154, 91, 1)  ; color: white;background-color: rgba(138, 154, 91, 1)} .btn-moss:hover{text-decoration:none; color: white;background-color: rgba(138, 154, 91, 0.8)}.btn-mint{border-color: rgba(151, 251, 152, 1)  ; color: black;background-color: rgba(151, 251, 152, 1)} .btn-mint:hover{text-decoration:none; color: black;background-color: rgba(151, 251, 152, 0.8)}.btn-pine{border-color: rgba(0, 121, 112, 1)  ; color: white;background-color: rgba(0, 121, 112, 1)} .btn-pine:hover{text-decoration:none; color: white;background-color: rgba(0, 121, 112, 0.8)}.btn-tea{border-color:  rgba(208, 240, 191, 1) ; color: black;background-color: rgba(208, 240, 191, 1)} .btn-tea:hover{text-decoration:none; color: black;background-color: rgba(208, 240, 191, 0.8)}\r\n.btn-army{border-color: rgba(75, 83, 32, 1)  ; color: white;background-color: rgba(75, 83, 32, 1)} .btn-army:hover{text-decoration:none; color: white;background-color: rgba(75, 83, 32, 0.8)}.btn-emerald{border-color: rgba(79, 200, 120, 1)  ; color: white;background-color: rgba(79, 200, 120, 1)} .btn-emerald:hover{text-decoration:none; color: white;background-color: rgba(79, 200, 120, 0.8)}\r\n.btn-kelly{border-color: rgba(76, 187, 23, 1)  ; color: white;background-color: rgba(76, 187, 23, 1)} .btn-kelly:hover{text-decoration:none; color: white;background-color: rgba(76, 187, 23, 0.8)}.btn-sacramento{border-color: rgba(4, 57, 39, 1)  ; color: white;background-color: rgba(4, 57, 39, 1)} .btn-sacramento:hover{text-decoration:none; color: white;background-color: rgba(4, 57, 39, 0.8)}\r\n.btn-sea{border-color: rgba(45, 139, 87, 1)  ; color: white;background-color: rgba(45, 139, 87, 1)} .btn-sea:hover{text-decoration:none; color: white;background-color: rgba(45, 139, 87, 0.8)}.btn-brown{border-color: rgba(124, 71, 1, 1)  ; color: white;background-color: rgba(124, 71, 1, 1)} .btn-brown:hover{text-decoration:none; color: white;background-color: rgba(124, 71, 1, 0.8)}.btn-cedar{border-color: rgba(75, 58, 40, 1)  ; color: white;background-color: rgba(75, 58, 40, 1)} .btn-cedar:hover{text-decoration:none; color: white;background-color: rgba(75, 58, 40, 0.8)}.btn-cinnamon{border-color: rgba(98, 42, 17, 1)  ; color: white;background-color: rgba(98, 42, 17, 1)} .btn-cinnamon:hover{text-decoration:none; color: white;background-color: rgba(98, 42, 17, 0.8)}.btn-brunette{border-color: rgba(58, 31, 4, 1)  ; color: white;background-color: rgba(58, 31, 4, 1)} .btn-brunette:hover{text-decoration:none; color: white;background-color: rgba(58, 31, 4, 0.8)}.btn-tawny{border-color: rgba(125, 72, 28, 1)  ; color: white;background-color: rgba(125, 72, 28, 1)} .btn-tawny:hover{text-decoration:none; color: white;background-color: rgba(125, 72, 28, 0.8)}.btn-umber{border-color: rgba(54, 35, 20, 1)  ; color: white;background-color: rgba(54, 35, 20, 1)} .btn-umber:hover{text-decoration:none; color: white;background-color: rgba(54, 35, 20, 0.8)}\r\n.btn-tortilla{border-color: rgba(153, 121, 80, 1)  ; color: white;background-color: rgba(153, 121, 80, 1)} .btn-tortilla:hover{text-decoration:none; color: white;background-color: rgba(153, 121, 80, 0.8)}.btn-chocolate{border-color: rgba(43, 23, 0, 1)  ; color: white;background-color: rgba(43, 23, 0, 1)} .btn-chocolate:hover{text-decoration:none; color: white;background-color: rgba(43, 23, 0, 0.8)}\r\n.btn-syrup{border-color: rgba(75, 31, 2, 1)  ; color: white;background-color: rgba(75, 31, 2, 1)} .btn-syrup:hover{text-decoration:none; color: white;background-color: rgba(75, 31, 2, 0.8)}.btn-gingerbread{border-color: rgba(92, 44, 6, 1)  ; color: white;background-color: rgba(92, 44, 6, 1)} .btn-gingerbread:hover{text-decoration:none; color: white;background-color: rgba(92, 44, 6, 0.8)}\r\n.btn-caramel{border-color: rgba(98, 54, 19, 1)  ; color: white;background-color: rgba(98, 54, 19, 1)} .btn-caramel:hover{text-decoration:none; color: white;background-color: rgba(98, 54, 19, 0.8)}.btn-walnut{border-color: rgba(67, 39, 15, 1)  ; color: white;background-color: rgba(67, 39, 15, 1)} .btn-walnut:hover{text-decoration:none; color: white;background-color: rgba(67, 39, 15, 0.8)}\r\n.btn-pecan{border-color: rgba(72, 38, 13, 1)  ; color: white;background-color: rgba(72, 38, 13, 1)} .btn-pecan:hover{text-decoration:none; color: white;background-color: rgba(72, 38, 13, 0.8)}.btn-wood{border-color: rgba(64, 47, 29, 1)  ; color: white;background-color: rgba(64, 47, 29, 1)} .btn-wood:hover{text-decoration:none; color: white;background-color: rgba(64, 47, 29, 0.8)}.btn-hickory{border-color: rgba(52, 30, 16, 1)  ; color: white;background-color: rgba(52, 30, 16, 1)} .btn-hickory:hover{text-decoration:none; color: white;background-color: rgba(52, 30, 16, 0.8)}.btn-espresso{border-color: rgba(74, 56, 42, 1)  ; color: white;background-color: rgba(74, 56, 42, 1)} .btn-espresso:hover{text-decoration:none; color: white;background-color: rgba(74, 56, 42, 0.8)}.btn-peanut{border-color: rgba(121, 92, 50, 1)  ; color: white;background-color: rgba(121, 92, 50, 1)} .btn-peanut:hover{text-decoration:none; color: white;background-color: rgba(121, 92, 50, 0.8)}.btn-mocha{border-color: rgba(59, 39, 12, 1)  ; color: white;background-color: rgba(59, 39, 12, 1)} .btn-mocha:hover{text-decoration:none; color: white;background-color: rgba(59, 39, 12, 0.8)}.btn-coffee{border-color: rgba(74, 55, 25, 1)  ; color: white;background-color: rgba(74, 55, 25, 1)} .btn-coffee:hover{text-decoration:none; color: white;background-color: rgba(74, 55, 25, 0.8)}\r\n.btn-russet{border-color: rgba(127, 70, 27, 1)  ; color: white;background-color: rgba(127, 70, 27, 1)} .btn-russet:hover{text-decoration:none; color: white;background-color: rgba(127, 70, 27, 0.8)}.btn-gray{border-color: rgba(72, 72, 72, 1)  ; color: white;background-color: rgba(72, 72, 72, 1)} .btn-gray:hover{text-decoration:none; color: white;background-color: rgba(72, 72, 72, 0.8)}\r\n.btn-fossil{border-color: rgba(119, 114, 118, 1)  ; color: white;background-color: rgba(119, 114, 118, 1)} .btn-fossil:hover{text-decoration:none; color: white;background-color: rgba(119, 114, 118, 0.8)}.btn-mink{border-color: rgba(137, 127, 125, 1)  ; color: white;background-color: rgba(137, 127, 125, 1)} .btn-mink:hover{text-decoration:none; color: white;background-color: rgba(137, 127, 125, 0.8)}.btn-pearlriver{border-color: rgba(217, 221, 220, 1)  ; color: black;background-color: rgba(217, 221, 220, 1)} .btn-pearlriver:hover{text-decoration:none; color: black;background-color: rgba(217, 221, 220, 0.8)}.btn-abalone{border-color: rgba(214, 207, 197, 1)  ; color: black;background-color: rgba(214, 207, 197, 1)} .btn-abalone:hover{text-decoration:none; color: black;background-color: rgba(214, 207, 197, 0.8)}.btn-harborgray{border-color: rgba(199, 198, 194, 1)  ; color: black;background-color: rgba(199, 198, 194, 1)} .btn-harborgray:hover{text-decoration:none; color: black;background-color: rgba(199, 198, 194, 0.8)}.btn-smoke{border-color: rgba(190, 189, 185, 1)  ; color: black;background-color: rgba(190, 189, 185, 1)} .btn-smoke:hover{text-decoration:none; color: black;background-color: rgba(190, 189, 185, 0.8)}.btn-thunder{border-color: rgba(190, 182, 171, 1)  ; color: black;background-color: rgba(190, 182, 171, 1)} .btn-thunder:hover{text-decoration:none; color: black;background-color: rgba(190, 182, 171, 0.8)}.btn-pewter{border-color: rgba(153, 157, 160, 1)  ; color: white;background-color: rgba(153, 157, 160, 1)} .btn-pewter:hover{text-decoration:none; color: white;background-color: rgba(153, 157, 160, 0.8)}.btn-steel{border-color: rgba(118, 123, 126, 1)  ; color: white;background-color: rgba(118, 123, 126, 1)} .btn-steel:hover{text-decoration:none; color: white;background-color: rgba(118, 123, 126, 0.8)}.btn-stone{border-color: rgba(135, 127, 125, 1)  ; color: white;background-color: rgba(135, 127, 125, 1)} .btn-stone:hover{text-decoration:none; color: white;background-color: rgba(135, 127, 125, 0.8)}.btn-iron{border-color: rgba(72, 73, 75, 1)  ; color: white;background-color: rgba(72, 73, 75, 1)} .btn-iron:hover{text-decoration:none; color: white;background-color: rgba(72, 73, 75, 0.8)}.btn-rhino{border-color: rgba(185, 187, 182, 1)  ; color: black;background-color: rgba(185, 187, 182, 1)} .btn-rhino:hover{text-decoration:none; color: black;background-color: rgba(185, 187, 182, 0.8)}.btn-trout{border-color: rgba(151, 151, 143, 1)  ; color: white;background-color: rgba(151, 151, 143, 1)} .btn-trout:hover{text-decoration:none; color: white;background-color: rgba(151, 151, 143, 0.8)}.btn-seal{border-color: rgba(129, 131, 128, 1)  ; color: white;background-color: rgba(129, 131, 128, 1)} .btn-seal:hover{text-decoration:none; color: white;background-color: rgba(129, 131, 128, 0.8)}.btn-lava{border-color: rgba(129, 133, 136, 1)  ; color: white;background-color: rgba(129, 133, 136, 1)} .btn-lava:hover{text-decoration:none; color: white;background-color: rgba(129, 133, 136, 0.8)}.btn-shadow{border-color: rgba(54, 54, 54, 1)  ; color: white;background-color: rgba(54, 54, 54, 1)} .btn-shadow:hover{text-decoration:none; color: white;background-color: rgba(54, 54, 54, 0.8)}\r\n.btn-ash{border-color: rgba(85, 75, 74, 1)  ; color: white;background-color: rgba(85, 75, 74, 1)} .btn-ash:hover{text-decoration:none; color: white;background-color: rgba(85, 75, 74, 0.8)}.btn-anchor{border-color: rgba(63, 65, 77, 1)  ; color: white;background-color: rgba(63, 65, 77, 1)} .btn-anchor:hover{text-decoration:none; color: white;background-color: rgba(63, 65, 77, 0.8)}.btn-charcoal{border-color: rgba(34, 32, 33, 1)  ; color: white;background-color: rgba(34, 32, 33, 1)} .btn-charcoal:hover{text-decoration:none; color: white;background-color: rgba(34, 32, 33, 0.8)}\r\n\r\n.btn-black{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-black:focus{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}.btn-blackwhite{border-color: black; color: white;background-color: rgba(0, 0, 0, 0.8)} .btn-blackwhite:focus{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}\r\n.btn-white{border-color:   black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-white:focus{text-decoration:none; color: black;background-color: rgba(255, 255, 255, 1)}.btn-whiteblack{border-color:  black; color: black;background-color: rgba(255, 255, 255, 0.8)} .btn-whiteblack:focus{text-decoration:none; color: white;background-color: rgba(0, 0, 0, 1)}\r\n\r\n.btn-yellow{border-color: rgba(254, 242, 0, 1) ; color:black;background-color: rgba(254, 242, 0, 1)} .btn-yellow:focus{text-decoration:none; color:black;background-color: rgba(254, 242, 0, 0.8)}.btn-mellow{border-color: rgba(247, 223, 125, 1)  ; color:black;background-color: rgba(247, 223, 125, 1)} .btn-mellow:focus{text-decoration:none; color:black;background-color: rgba(247, 223, 125, 0.8)}.btn-cyber{border-color: rgba(255, 211, 2, 1)  ; color:black;background-color: rgba(255, 211, 2, 1)} .btn-cyber:focus{text-decoration:none; color:black;background-color: rgba(255, 211, 2, 0.8)}.btn-royal{border-color: rgba(249, 217, 94, 1)  ; color:black;background-color: rgba(249, 217, 94, 1)} .btn-royal:focus{text-decoration:none; color:black;background-color: rgba(249, 217, 94, 0.8)}.btn-trombone{border-color: rgba(208, 181, 92, 1)  ; color:black;background-color: rgba(208, 181, 92, 1)} .btn-trombone:focus{text-decoration:none; color:black;background-color: rgba(208, 181, 92, 0.8)}.btn-banana{border-color: rgba(251, 244, 163, 1)  ; color:black;background-color: rgba(251, 244, 163, 1)} .btn-banana:focus{text-decoration:none; color:black;background-color: rgba(251, 244, 163, 0.8)}.btn-tuscany{border-color: rgba(252, 208, 44, 1)  ; color:black;background-color: rgba(252, 208, 44, 1)} .btn-tuscany:focus{text-decoration:none; color:black;background-color: rgba(252, 208, 44, 0.8)}.btn-lemon{border-color: rgba(239, 253, 96, 1)  ; color:black;background-color: rgba(239, 253, 96, 1)} .btn-lemon:focus{text-decoration:none; color:black;background-color: rgba(239, 253, 96, 0.8)}.btn-bumblebee{border-color: rgba(254, 226, 5, 1)  ; color:black;background-color: rgba(254, 226, 5, 1)} .btn-bumblebee:focus{text-decoration:none; color:black;background-color: rgba(254, 226, 5, 0.8)}.btn-flax{border-color: rgba(239, 219, 130, 1)  ; color:black;background-color: rgba(239, 219, 130, 1)} .btn-flax:focus{text-decoration:none; color:black;background-color: rgba(239, 219, 130, 0.8)}.btn-cream{border-color: rgba(255, 252, 209, 1)  ; color:black;background-color: rgba(255, 252, 209, 1)} .btn-cream:focus{text-decoration:none; color:black;background-color: rgba(255, 252, 209, 0.8)}.btn-peach{border-color: rgba(255, 229, 180, 1)  ; color:black;background-color: rgba(255, 229, 180, 1)} .btn-peach:focus{text-decoration:none; color:black;background-color: rgba(255, 229, 180, 0.8)}.btn-laguna{border-color: rgba(248, 228, 115, 1)  ; color:black;background-color: rgba(248, 228, 115, 1)} .btn-laguna:focus{text-decoration:none; color:black;background-color: rgba(248, 228, 115, 0.8)}.btn-mustard{border-color: rgba(254, 220, 83, 1)  ; color:black;background-color: rgba(254, 220, 83, 1)} .btn-mustard:focus{text-decoration:none; color:black;background-color: rgba(254, 220, 83, 0.8)}.btn-ecru{border-color: rgba(205, 177, 129, 1)  ; color:black;background-color: rgba(205, 177, 129, 1)} .btn-ecru:focus{text-decoration:none; color:black;background-color: rgba(205, 177, 129, 0.8)}.btn-corn{border-color: rgba(228, 204, 6, 1)  ; color:black;background-color: rgba(228, 204, 6, 1)} .btn-corn:focus{text-decoration:none; color:black;background-color: rgba(228, 204, 6, 0.8)}.btn-pineapple{border-color: rgba(254, 225, 43, 1)  ; color:black;background-color: rgba(254, 225, 43, 1)} .btn-pineapple:focus{text-decoration:none; color:black;background-color: rgba(254, 225, 43, 0.8)}.btn-flaxen{border-color: rgba(214, 183, 90, 1)  ; color:black;background-color: rgba(214, 183, 90, 1)} .btn-flaxen:focus{text-decoration:none; color:black;background-color: rgba(214, 183, 90, 0.8)}.btn-eggnog{border-color: rgba(249, 226, 156, 1)  ; color:black;background-color: rgba(249, 226, 156, 1)} .btn-eggnog:focus{text-decoration:none; color:black;background-color: rgba(249, 226, 156, 0.8)}.btn-sepia{border-color: rgba(225, 183, 122, 1)  ; color:black;background-color: rgba(225, 183, 122, 1)} .btn-sepia:focus{text-decoration:none; color:black;background-color: rgba(225, 183, 122, 0.8)}.btn-orange{border-color: rgba(251, 102, 0, 1)  ; color: white;background-color: rgba(251, 102, 0, 1)} .btn-orange:focus{text-decoration:none; color: white;background-color: rgba(251, 102, 0, 0.8)}\r\n.btn-gold{border-color: rgba(249, 166, 2, 1)  ; color: white;background-color: rgba(249, 166, 2, 1)} .btn-gold:focus{text-decoration:none; color: white;background-color: rgba(249, 166, 2, 0.8)}.btn-goldenrod{border-color: rgba(219, 165, 33, 1)  ; color: white;background-color: rgba(219, 165, 33, 1)} .btn-goldenrod:focus{text-decoration:none; color: white;background-color: rgba(219, 165, 33, 0.8)}\r\n.btn-pumpkin{border-color: rgba(255, 115, 23, 1)  ; color: white;background-color: rgba(255, 115, 23, 1)} .btn-pumpkin:focus{text-decoration:none; color: white;background-color: rgba(255, 115, 23, 0.8)}.btn-fire{border-color: rgba(253, 165, 15, 1)  ; color: white;background-color: rgba(253, 165, 15, 1)} .btn-fire:focus{text-decoration:none; color: white;background-color: rgba(253, 165, 15, 0.8)}\r\n.btn-ochre{border-color: rgba(205, 119, 34, 1)  ; color: white;background-color: rgba(205, 119, 34, 1)} .btn-ochre:focus{text-decoration:none; color: white;background-color: rgba(205, 119, 34, 0.8)}.btn-amber{border-color: rgba(254, 191, 0, 1)  ; color: white;background-color: rgba(254, 191, 0, 1)} .btn-amber:focus{text-decoration:none; color: white;background-color: rgba(254, 191, 0, 0.8)}\r\n.btn-dijon{border-color: rgba(196, 145, 2, 1)  ; color: white;background-color: rgba(196, 145, 2, 1)} .btn-dijon:focus{text-decoration:none; color: white;background-color: rgba(196, 145, 2, 0.8)}.btn-tangerine{border-color: rgba(250, 128, 42, 1)  ; color: white;background-color: rgba(250, 128, 42, 1)} .btn-tangerine:focus{text-decoration:none; color: white;background-color: rgba(250, 128, 42, 0.8)}.btn-tiger{border-color: rgba(253, 106, 3, 1)  ; color: white;background-color: rgba(253, 106, 3, 1)} .btn-tiger:focus{text-decoration:none; color: white;background-color: rgba(253, 106, 3, 0.8)}.btn-honey{border-color: rgba(235, 150, 5, 1)  ; color: white;background-color: rgba(235, 150, 5, 1)} .btn-honey:focus{text-decoration:none; color: white;background-color: rgba(235, 150, 5, 0.8)}\r\n.btn-carrot{border-color: rgba(239, 114, 22, 1)  ; color: white;background-color: rgba(239, 114, 22, 1)} .btn-carrot:focus{text-decoration:none; color: white;background-color: rgba(239, 114, 22, 0.8)}.btn-apricot{border-color: rgba(239, 129, 14, 1)  ; color: white;background-color: rgba(239, 129, 14, 1)} .btn-apricot:focus{text-decoration:none; color: white;background-color: rgba(239, 129, 14, 0.8)}.btn-bronze{border-color: rgba(178, 85, 15, 1)  ; color: white;background-color: rgba(178, 85, 15, 1)} .btn-bronze:focus{text-decoration:none; color: white;background-color: rgba(178, 85, 15, 0.8)}.btn-cider{border-color: rgba(179, 103, 43, 1)  ; color: white;background-color: rgba(179, 103, 43, 1)} .btn-cider:focus{text-decoration:none; color: white;background-color: rgba(179, 103, 43, 0.8)}\r\n.btn-clay{border-color: rgba(129, 63, 11, 1)  ; color: white;background-color: rgba(129, 63, 11, 1)} .btn-clay:focus{text-decoration:none; color: white;background-color: rgba(129, 63, 11, 0.8)}.btn-rust{border-color: rgba(139, 64, 0, 1)  ; color: white;background-color: rgba(139, 64, 0, 1)} .btn-rust:focus{text-decoration:none; color: white;background-color: rgba(139, 64, 0, 0.8)}\r\n.btn-amber2{border-color: rgba(136, 48, 0, 1)  ; color: white;background-color: rgba(136, 48, 0, 1)} .btn-amber2:focus{text-decoration:none; color: white;background-color: rgba(136, 48, 0, 0.8)}.btn-spice{border-color: rgba(121, 56, 2, 1)  ; color: white;background-color: rgba(121, 56, 2, 1)} .btn-spice:focus{text-decoration:none; color: white;background-color: rgba(121, 56, 2, 0.8)}\r\n.btn-burntor{border-color: rgba(149, 64, 0, 1)  ; color: white;background-color: rgba(149, 64, 0, 1)} .btn-burntor:focus{text-decoration:none; color: white;background-color: rgba(149, 64, 0, 0.8)}.btn-red{border-color: rgba(209, 0, 4, 1)  ; color: white;background-color: rgba(209, 0, 4, 1)} .btn-red:focus{text-decoration:none; color: white;background-color: rgba(209, 0, 4, 0.8)}\r\n.btn-salmon{border-color: rgba(250, 128, 113, 1)  ; color: white;background-color: rgba(250, 128, 113, 1)} .btn-salmon:focus{text-decoration:none; color: white;background-color: rgba(250, 128, 113, 0.8)}.btn-scarlet{border-color: rgba(255, 35, 0, 1)  ; color: white;background-color: rgba(255, 35, 0, 1)} .btn-scarlet:focus{text-decoration:none; color: white;background-color: rgba(255, 35, 0, 0.8)}\r\n.btn-barnred{border-color: rgba(123, 11, 0, 1)  ; color: white;background-color: rgba(123, 11, 0, 1)} .btn-barnred:focus{text-decoration:none; color: white;background-color: rgba(123, 11, 0, 0.8)}.btn-imperial{border-color: rgba(237, 40, 57, 1)  ; color: white;background-color: rgba(237, 40, 57, 1)} .btn-imperial:focus{text-decoration:none; color: white;background-color: rgba(237, 40, 57, 0.8)}.btn-indianred{border-color: rgba(205, 93, 92, 1)  ; color: white;background-color: rgba(205, 93, 92, 1)} .btn-indianred:focus{text-decoration:none; color: white;background-color: rgba(205, 93, 92, 0.8)}.btn-chili{border-color: rgba(195, 24, 7, 1)  ; color: white;background-color: rgba(195, 24, 7, 1)} .btn-chili:focus{text-decoration:none; color: white;background-color: rgba(195, 24, 7, 0.8)}\r\n.btn-firebrick{border-color: rgba(178, 34, 33, 1)  ; color: white;background-color: rgba(178, 34, 33, 1)} .btn-firebrick:focus{text-decoration:none; color: white;background-color: rgba(178, 34, 33, 0.8)}.btn-maroon{border-color: rgba(128, 0, 1, 1)  ; color: white;background-color: rgba(128, 0, 1, 1)} .btn-maroon:focus{text-decoration:none; color: white;background-color: rgba(128, 0, 1, 0.8)}\r\n.btn-redwood{border-color: rgba(163, 90, 81, 1)  ; color: white;background-color: rgba(163, 90, 81, 1)} .btn-redwood:focus{text-decoration:none; color: white;background-color: rgba(163, 90, 81, 0.8)}.btn-raspberry{border-color: rgba(210, 31, 60, 1)  ; color: white;background-color: rgba(210, 31, 60, 1)} .btn-raspberry:focus{text-decoration:none; color: white;background-color: rgba(210, 31, 60, 0.8)}.btn-candyapple{border-color: rgba(255, 8, 0, 1)  ; color: white;background-color: rgba(255, 8, 0, 1)} .btn-candyapple:focus{text-decoration:none; color: white;background-color: rgba(255, 8, 0, 0.8)}.btn-carmine{border-color: rgba(150, 0, 27, 1)  ; color: white;background-color: rgba(150, 0, 27, 1)} .btn-carmine:focus{text-decoration:none; color: white;background-color: rgba(150, 0, 27, 0.8)}\r\n.btn-persian{border-color: rgba(202, 52, 51, 1)  ; color: white;background-color: rgba(202, 52, 51, 1)} .btn-persian:focus{text-decoration:none; color: white;background-color: rgba(202, 52, 51, 0.8)}.btn-usflag{border-color: rgba(191, 9, 49, 1)  ; color: white;background-color: rgba(191, 9, 49, 1)} .btn-usflag:focus{text-decoration:none; color: white;background-color: rgba(191, 9, 49, 0.8)}\r\n.btn-ferrari{border-color: rgba(254, 41, 1, 1)  ; color: white;background-color: rgba(254, 41, 1, 1)} .btn-ferrari:focus{text-decoration:none; color: white;background-color: rgba(254, 41, 1, 0.8)}.btn-burgundy{border-color: rgba(142, 2, 31, 1)  ; color: white;background-color: rgba(142, 2, 31, 1)} .btn-burgundy:focus{text-decoration:none; color: white;background-color: rgba(142, 2, 31, 0.8)}\r\n.btn-crimson{border-color: rgba(183, 16, 10, 1)  ; color: white;background-color: rgba(183, 16, 10, 1)} .btn-crimson:focus{text-decoration:none; color: white;background-color: rgba(183, 16, 10, 0.8)}.btn-sangria{border-color: rgba(94, 25, 18, 1)  ; color: white;background-color: rgba(94, 25, 18, 1)} .btn-sangria:focus{text-decoration:none; color: white;background-color: rgba(94, 25, 18, 0.8)}\r\n.btn-mahogany{border-color: rgba(64, 13, 9, 1)  ; color: white;background-color: rgba(64, 13, 9, 1)} .btn-mahogany:focus{text-decoration:none; color: white;background-color: rgba(64, 13, 9, 0.8)}.btn-pink{border-color: rgba(253, 14, 191, 1)  ; color: white;background-color: rgba(253, 14, 191, 1)} .btn-pink:focus{text-decoration:none; color: white;background-color: rgba(253, 14, 191, 0.8)}\r\n.btn-ruby{border-color: rgba(224, 17, 97, 1)  ; color: white;background-color: rgba(224, 17, 97, 1)} .btn-ruby:focus{text-decoration:none; color: white;background-color: rgba(224, 17, 97, 0.8)}.btn-ultra{border-color: rgba(255, 110, 253, 1)  ; color: white;background-color: rgba(255, 110, 253, 1)} .btn-ultra:focus{text-decoration:none; color: white;background-color: rgba(255, 110, 253, 0.8)}\r\n.btn-thulian{border-color: rgba(223, 110, 162, 1)  ; color: white;background-color: rgba(223, 110, 162, 1)} .btn-thulian:focus{text-decoration:none; color: white;background-color: rgba(223, 110, 162, 0.8)}.btn-magenta{border-color: rgba(255, 0, 144, 1)  ; color: white;background-color: rgba(255, 0, 144, 1)} .btn-magenta:focus{text-decoration:none; color: white;background-color: rgba(255, 0, 144, 0.8)}\r\n.btn-rosepink{border-color: rgba(255, 101, 203, 1)  ; color: white;background-color: rgba(255, 101, 203, 1)} .btn-rosepink:focus{text-decoration:none; color: white;background-color: rgba(255, 101, 203, 0.8)}.btn-lavender{border-color: rgba(251, 174, 210, 1)  ; color: white;background-color: rgba(251, 174, 210, 1)} .btn-lavender:focus{text-decoration:none; color: white;background-color: rgba(251, 174, 210, 0.8)}.btn-creamy{border-color: rgba(255, 105, 179, 1)  ; color: white;background-color: rgba(255, 105, 179, 1)} .btn-creamy:focus{text-decoration:none; color: white;background-color: rgba(255, 105, 179, 0.8)}.btn-fuchsia{border-color: rgba(255, 0, 254, 1)  ; color: white;background-color: rgba(255, 0, 254, 1)} .btn-fuchsia:focus{text-decoration:none; color: white;background-color: rgba(255, 0, 254, 0.8)}\r\n.btn-frenchrose{border-color: rgba(247, 74, 138, 1)  ; color: white;background-color: rgba(247, 74, 138, 1)} .btn-frenchrose:focus{text-decoration:none; color: white;background-color: rgba(247, 74, 138, 0.8)}.btn-cerise{border-color: rgba(221, 49, 99, 1)  ; color: white;background-color: rgba(221, 49, 99, 1)} .btn-cerise:focus{text-decoration:none; color: white;background-color: rgba(221, 49, 99, 0.8)}\r\n.btn-carnation{border-color: rgba(255, 166, 201, 1)  ; color: white;background-color: rgba(255, 166, 201, 1)} .btn-carnation:focus{text-decoration:none; color: white;background-color: rgba(255, 166, 201, 0.8)}.btn-brick{border-color: rgba(251, 96, 128, 1)  ; color: white;background-color: rgba(251, 96, 128, 1)} .btn-brick:focus{text-decoration:none; color: white;background-color: rgba(251, 96, 128, 0.8)}\r\n.btn-amaranth{border-color: rgba(242, 155, 187, 1)  ; color: white;background-color: rgba(242, 155, 187, 1)} .btn-amaranth:focus{text-decoration:none; color: white;background-color: rgba(242, 155, 187, 0.8)}.btn-taffy{border-color: rgba(249, 135, 195, 1)  ; color: white;background-color: rgba(249, 135, 195, 1)} .btn-taffy:focus{text-decoration:none; color: white;background-color: rgba(249, 135, 195, 0.8)}.btn-bubblegum{border-color: rgba(254, 91, 174, 1)  ; color: white;background-color: rgba(254, 91, 174, 1)} .btn-bubblegum:focus{text-decoration:none; color: white;background-color: rgba(254, 91, 174, 0.8)}.btn-hotpink{border-color: rgba(248, 24, 149, 1)  ; color: white;background-color: rgba(248, 24, 149, 1)} .btn-hotpink:focus{text-decoration:none; color: white;background-color: rgba(248, 24, 149, 0.8)}.btn-punch{border-color: rgba(236, 85, 120, 1)  ; color: white;background-color: rgba(236, 85, 120, 1)} .btn-punch:focus{text-decoration:none; color: white;background-color: rgba(236, 85, 120, 0.8)}.btn-lemonade{border-color: rgba(253, 185, 200, 1)  ; color: white;background-color: rgba(253, 185, 200, 1)} .btn-lemonade:focus{text-decoration:none; color: white;background-color: rgba(253, 185, 200, 0.8)}.btn-flamingo{border-color: rgba(255, 161, 185, 1)  ; color: white;background-color: rgba(255, 161, 185, 1)} .btn-flamingo:focus{text-decoration:none; color: white;background-color: rgba(255, 161, 185, 0.8)}.btn-violet{border-color: rgba(178, 0, 238, 1)  ; color: white;background-color: rgba(178, 0, 238, 1)} .btn-violet:focus{text-decoration:none; color: white;background-color: rgba(178, 0, 238, 0.8)}.btn-hibiscus{border-color: rgba(180, 55, 85, 1)  ; color: white;background-color: rgba(180, 55, 85, 1)} .btn-hibiscus:focus{text-decoration:none; color: white;background-color: rgba(180, 55, 85, 0.8)}.btn-mauve{border-color: rgba(120, 75, 132, 1)  ; color: white;background-color: rgba(120, 75, 132, 1)} .btn-mauve:focus{text-decoration:none; color: white;background-color: rgba(120, 75, 132, 0.8)}\r\n.btn-mulberry{border-color: rgba(198, 75, 138, 1)  ; color: white;background-color: rgba(198, 75, 138, 1)} .btn-mulberry:focus{text-decoration:none; color: white;background-color: rgba(198, 75, 138, 0.8)}.btn-lavender{border-color: rgba(228, 160, 247, 1)  ; color: white;background-color: rgba(228, 160, 247, 1)} .btn-lavender:focus{text-decoration:none; color: white;background-color: rgba(228, 160, 247, 0.8)}.btn-orchid{border-color: rgba(176, 104, 238, 1)  ; color: white;background-color: rgba(176, 104, 238, 1)} .btn-orchid:focus{text-decoration:none; color: white;background-color: rgba(176, 104, 238, 0.8)}.btn-lilac{border-color: rgba(182, 96, 207, 1)  ; color: white;background-color: rgba(182, 96, 207, 1)} .btn-lilac:focus{text-decoration:none; color: white;background-color: rgba(182, 96, 207, 0.8)}\r\n.btn-electric{border-color: rgba(144, 0, 255, 1)  ; color: white;background-color: rgba(144, 0, 255, 1)} .btn-electric:focus{text-decoration:none; color: white;background-color: rgba(144, 0, 255, 0.8)}.btn-african{border-color: rgba(178, 132, 188, 1)  ; color: white;background-color: rgba(178, 132, 188, 1)} .btn-african:focus{text-decoration:none; color: white;background-color: rgba(178, 132, 188, 0.8)}.btn-grape{border-color: rgba(110, 46, 169, 1)  ; color: white;background-color: rgba(110, 46, 169, 1)} .btn-grape:focus{text-decoration:none; color: white;background-color: rgba(110, 46, 169, 0.8)}.btn-amethyst{border-color: rgba(153, 102, 203, 1)  ; color: white;background-color: rgba(153, 102, 203, 1)} .btn-amethyst:focus{text-decoration:none; color: white;background-color: rgba(153, 102, 203, 0.8)}.btn-byzantine{border-color: rgba(111, 42, 99, 1)  ; color: white;background-color: rgba(111, 42, 99, 1)} .btn-byzantine:focus{text-decoration:none; color: white;background-color: rgba(111, 42, 99, 0.8)}.btn-fandango{border-color: rgba(180, 52, 137, 1)  ; color: white;background-color: rgba(180, 52, 137, 1)} .btn-fandango:focus{text-decoration:none; color: white;background-color: rgba(180, 52, 137, 0.8)}.btn-helio{border-color: rgba(224, 114, 254, 1)  ; color: white;background-color: rgba(224, 114, 254, 1)} .btn-helio:focus{text-decoration:none; color: white;background-color: rgba(224, 114, 254, 0.8)}.btn-floral{border-color: rgba(180, 126, 222, 1)  ; color: white;background-color: rgba(180, 126, 222, 1)} .btn-floral:focus{text-decoration:none; color: white;background-color: rgba(180, 126, 222, 0.8)}.btn-thistle{border-color: rgba(215, 191, 239, 1)  ; color: white;background-color: rgba(215, 191, 239, 1)} .btn-thistle:focus{text-decoration:none; color: white;background-color: rgba(215, 191, 239, 0.8)}.btn-royal{border-color: rgba(120, 82, 169, 1)  ; color: white;background-color: rgba(120, 82, 169, 1)} .btn-royal:focus{text-decoration:none; color: white;background-color: rgba(120, 82, 169, 0.8)}.btn-lollipop{border-color: rgba(129, 0, 127, 1)  ; color: white;background-color: rgba(129, 0, 127, 1)} .btn-lollipop:focus{text-decoration:none; color: white;background-color: rgba(129, 0, 127, 0.8)}.btn-plum{border-color: rgba(140, 70, 133, 1)  ; color: white;background-color: rgba(140, 70, 133, 1)} .btn-plum:focus{text-decoration:none; color: white;background-color: rgba(140, 70, 133, 0.8)}\r\n.btn-eggplant{border-color: rgba(50, 19, 50, 1)  ; color: white;background-color: rgba(50, 19, 50, 1)} .btn-eggplant:focus{text-decoration:none; color: white;background-color: rgba(50, 19, 50, 0.8)}.btn-blue{border-color: rgba(0, 25, 249, 1)  ; color: white;background-color: rgba(0, 25, 249, 1)} .btn-blue:focus{text-decoration:none; color: white;background-color: rgba(0, 25, 249, 0.8)}\r\n.btn-denim{border-color: rgba(19, 30, 58, 1)  ; color: white;background-color: rgba(19, 30, 58, 1)} .btn-denim:focus{text-decoration:none; color: white;background-color: rgba(19, 30, 58, 0.8)}.btn-pigeon{border-color: rgba(114, 133, 165, 1)  ; color: white;background-color: rgba(114, 133, 165, 1)} .btn-pigeon:focus{text-decoration:none; color: white;background-color: rgba(114, 133, 165, 0.8)}\r\n.btn-sky{border-color: rgba(149, 200, 217, 1)  ; color: white;background-color: rgba(149, 200, 217, 1)} .btn-sky:focus{text-decoration:none; color: white;background-color: rgba(149, 200, 217, 0.8)}.btn-independence{border-color: rgba(77, 81, 110, 1)  ; color: white;background-color: rgba(77, 81, 110, 1)} .btn-independence:focus{text-decoration:none; color: white;background-color: rgba(77, 81, 110, 0.8)}.btn-airforce{border-color: rgba(89, 139, 174, 1)  ; color: white;background-color: rgba(89, 139, 174, 1)} .btn-airforce:focus{text-decoration:none; color: white;background-color: rgba(89, 139, 174, 0.8)}.btn-babyblue{border-color: rgba(138, 207, 240, 1)  ; color: white;background-color: rgba(138, 207, 240, 1)} .btn-babyblue:focus{text-decoration:none; color: white;background-color: rgba(138, 207, 240, 0.8)}.btn-navy{border-color: rgba(1, 0, 128, 1)  ; color: white;background-color: rgba(1, 0, 128, 1)} .btn-navy:focus{text-decoration:none; color: white;background-color: rgba(1, 0, 128, 0.8)}.btn-steel{border-color: rgba(70, 130, 180, 1)  ; color: white;background-color: rgba(70, 130, 180, 1)} .btn-steel:focus{text-decoration:none; color: white;background-color: rgba(70, 130, 180, 0.8)}\r\n.btn-carolina{border-color: rgba(88, 160, 210, 1)  ; color: white;background-color: rgba(88, 160, 210, 1)} .btn-carolina:focus{text-decoration:none; color: white;background-color: rgba(88, 160, 210, 0.8)}.btn-turkish{border-color: rgba(81, 151, 163, 1)  ; color: white;background-color: rgba(81, 151, 163, 1)} .btn-turkish:focus{text-decoration:none; color: white;background-color: rgba(81, 151, 163, 0.8)}.btn-maya{border-color: rgba(115, 194, 251, 1)  ; color: white;background-color: rgba(115, 194, 251, 1)} .btn-maya:focus{text-decoration:none; color: white;background-color: rgba(115, 194, 251, 0.8)}.btn-cornflower{border-color: rgba(103, 147, 244, 1)  ; color: white;background-color: rgba(103, 147, 244, 1)} .btn-cornflower:focus{text-decoration:none; color: white;background-color: rgba(103, 147, 244, 0.8)}.btn-olympic{border-color: rgba(0, 142, 204, 1)  ; color: white;background-color: rgba(0, 142, 204, 1)} .btn-olympic:focus{text-decoration:none; color: white;background-color: rgba(0, 142, 204, 0.8)}.btn-saphire{border-color: rgba(15, 82, 186, 1)  ; color: white;background-color: rgba(15, 82, 186, 1)} .btn-saphire:focus{text-decoration:none; color: white;background-color: rgba(15, 82, 186, 0.8)}\r\n.btn-azure{border-color: rgba(0, 128, 253, 1)  ; color: white;background-color: rgba(0, 128, 253, 1)} .btn-azure:focus{text-decoration:none; color: white;background-color: rgba(0, 128, 253, 0.8)}.btn-egyptian{border-color: rgba(17, 53, 167, 1)  ; color: white;background-color: rgba(17, 53, 167, 1)} .btn-egyptian:focus{text-decoration:none; color: white;background-color: rgba(17, 53, 167, 0.8)}.btn-yale{border-color: rgba(13, 76, 145, 1)  ; color: white;background-color: rgba(13, 76, 145, 1)} .btn-yale:focus{text-decoration:none; color: white;background-color: rgba(13, 76, 145, 0.8)}.btn-prussian{border-color: rgba(0, 49, 82, 1)  ; color: white;background-color: rgba(0, 49, 82, 1)} .btn-prussian:focus{text-decoration:none; color: white;background-color: rgba(0, 49, 82, 0.8)}\r\n.btn-space{border-color: rgba(28, 41, 82, 1)  ; color: white;background-color: rgba(28, 41, 82, 1)} .btn-space:focus{text-decoration:none; color: white;background-color: rgba(28, 41, 82, 0.8)}.btn-green{border-color: rgba(59, 177, 63, 1)  ; color: white;background-color: rgba(59, 177, 63, 1)} .btn-green:focus{text-decoration:none; color: white;background-color: rgba(59, 177, 63, 0.8)}.btn-forest{border-color: rgba(11, 102, 35, 1)  ; color: white;background-color: rgba(11, 102, 35, 1)} .btn-forest:focus{text-decoration:none; color: white;background-color: rgba(11, 102, 35, 0.8)}.btn-sage{border-color: rgba(155, 194, 131, 1)  ; color: white;background-color: rgba(155, 194, 131, 1)} .btn-sage:focus{text-decoration:none; color: white;background-color: rgba(155, 194, 131, 0.8)}.btn-olive{border-color: rgba(112, 130, 56, 1)  ; color: white;background-color: rgba(112, 130, 56, 1)} .btn-olive:focus{text-decoration:none; color: white;background-color: rgba(112, 130, 56, 0.8)}.btn-lime{border-color: rgba(201, 233, 72, 1)  ; color: black;background-color: rgba(201, 233, 72, 1)} .btn-lime:focus{text-decoration:none; color: black;background-color: rgba(201, 233, 72, 0.8)}.btn-hunter{border-color: rgba(64, 111, 77, 1)  ; color: white;background-color: rgba(64, 111, 77, 1)} .btn-hunter:focus{text-decoration:none; color: white;background-color: rgba(64, 111, 77, 0.8)}\r\n.btn-jade{border-color: rgba(0, 168, 107, 1)  ; color: white;background-color: rgba(0, 168, 107, 1)} .btn-jade:focus{text-decoration:none; color: white;background-color: rgba(0, 168, 107, 0.8)}.btn-artichoke{border-color: rgba(144, 150, 122, 1)  ; color: white;background-color: rgba(144, 150, 122, 1)} .btn-artichoke:focus{text-decoration:none; color: white;background-color: rgba(144, 150, 122, 0.8)}.btn-fern{border-color: rgba(78, 121, 67, 1)  ; color: white;background-color: rgba(78, 121, 67, 1)} .btn-fern:focus{text-decoration:none; color: white;background-color: rgba(78, 121, 67, 0.8)}.btn-jungle{border-color: rgba(41, 171, 135, 1)  ; color: white;background-color: rgba(41, 171, 135, 1)} .btn-jungle:focus{text-decoration:none; color: white;background-color: rgba(41, 171, 135, 0.8)}.btn-laurel{border-color: rgba(170, 186, 159, 1)  ; color: white;background-color: rgba(170, 186, 159, 1)} .btn-laurel:focus{text-decoration:none; color: white;background-color: rgba(170, 186, 159, 0.8)}.btn-moss{border-color: rgba(138, 154, 91, 1)  ; color: white;background-color: rgba(138, 154, 91, 1)} .btn-moss:focus{text-decoration:none; color: white;background-color: rgba(138, 154, 91, 0.8)}.btn-mint{border-color: rgba(151, 251, 152, 1)  ; color: black;background-color: rgba(151, 251, 152, 1)} .btn-mint:focus{text-decoration:none; color: black;background-color: rgba(151, 251, 152, 0.8)}.btn-pine{border-color: rgba(0, 121, 112, 1)  ; color: white;background-color: rgba(0, 121, 112, 1)} .btn-pine:focus{text-decoration:none; color: white;background-color: rgba(0, 121, 112, 0.8)}.btn-tea{border-color:  rgba(208, 240, 191, 1) ; color: black;background-color: rgba(208, 240, 191, 1)} .btn-tea:focus{text-decoration:none; color: black;background-color: rgba(208, 240, 191, 0.8)}\r\n.btn-army{border-color: rgba(75, 83, 32, 1)  ; color: white;background-color: rgba(75, 83, 32, 1)} .btn-army:focus{text-decoration:none; color: white;background-color: rgba(75, 83, 32, 0.8)}.btn-emerald{border-color: rgba(79, 200, 120, 1)  ; color: white;background-color: rgba(79, 200, 120, 1)} .btn-emerald:focus{text-decoration:none; color: white;background-color: rgba(79, 200, 120, 0.8)}\r\n.btn-kelly{border-color: rgba(76, 187, 23, 1)  ; color: white;background-color: rgba(76, 187, 23, 1)} .btn-kelly:focus{text-decoration:none; color: white;background-color: rgba(76, 187, 23, 0.8)}.btn-sacramento{border-color: rgba(4, 57, 39, 1)  ; color: white;background-color: rgba(4, 57, 39, 1)} .btn-sacramento:focus{text-decoration:none; color: white;background-color: rgba(4, 57, 39, 0.8)}\r\n.btn-sea{border-color: rgba(45, 139, 87, 1)  ; color: white;background-color: rgba(45, 139, 87, 1)} .btn-sea:focus{text-decoration:none; color: white;background-color: rgba(45, 139, 87, 0.8)}.btn-brown{border-color: rgba(124, 71, 1, 1)  ; color: white;background-color: rgba(124, 71, 1, 1)} .btn-brown:focus{text-decoration:none; color: white;background-color: rgba(124, 71, 1, 0.8)}.btn-cedar{border-color: rgba(75, 58, 40, 1)  ; color: white;background-color: rgba(75, 58, 40, 1)} .btn-cedar:focus{text-decoration:none; color: white;background-color: rgba(75, 58, 40, 0.8)}.btn-cinnamon{border-color: rgba(98, 42, 17, 1)  ; color: white;background-color: rgba(98, 42, 17, 1)} .btn-cinnamon:focus{text-decoration:none; color: white;background-color: rgba(98, 42, 17, 0.8)}.btn-brunette{border-color: rgba(58, 31, 4, 1)  ; color: white;background-color: rgba(58, 31, 4, 1)} .btn-brunette:focus{text-decoration:none; color: white;background-color: rgba(58, 31, 4, 0.8)}.btn-tawny{border-color: rgba(125, 72, 28, 1)  ; color: white;background-color: rgba(125, 72, 28, 1)} .btn-tawny:focus{text-decoration:none; color: white;background-color: rgba(125, 72, 28, 0.8)}.btn-umber{border-color: rgba(54, 35, 20, 1)  ; color: white;background-color: rgba(54, 35, 20, 1)} .btn-umber:focus{text-decoration:none; color: white;background-color: rgba(54, 35, 20, 0.8)}\r\n.btn-tortilla{border-color: rgba(153, 121, 80, 1)  ; color: white;background-color: rgba(153, 121, 80, 1)} .btn-tortilla:focus{text-decoration:none; color: white;background-color: rgba(153, 121, 80, 0.8)}.btn-chocolate{border-color: rgba(43, 23, 0, 1)  ; color: white;background-color: rgba(43, 23, 0, 1)} .btn-chocolate:focus{text-decoration:none; color: white;background-color: rgba(43, 23, 0, 0.8)}\r\n.btn-syrup{border-color: rgba(75, 31, 2, 1)  ; color: white;background-color: rgba(75, 31, 2, 1)} .btn-syrup:focus{text-decoration:none; color: white;background-color: rgba(75, 31, 2, 0.8)}.btn-gingerbread{border-color: rgba(92, 44, 6, 1)  ; color: white;background-color: rgba(92, 44, 6, 1)} .btn-gingerbread:focus{text-decoration:none; color: white;background-color: rgba(92, 44, 6, 0.8)}\r\n.btn-caramel{border-color: rgba(98, 54, 19, 1)  ; color: white;background-color: rgba(98, 54, 19, 1)} .btn-caramel:focus{text-decoration:none; color: white;background-color: rgba(98, 54, 19, 0.8)}.btn-walnut{border-color: rgba(67, 39, 15, 1)  ; color: white;background-color: rgba(67, 39, 15, 1)} .btn-walnut:focus{text-decoration:none; color: white;background-color: rgba(67, 39, 15, 0.8)}\r\n.btn-pecan{border-color: rgba(72, 38, 13, 1)  ; color: white;background-color: rgba(72, 38, 13, 1)} .btn-pecan:focus{text-decoration:none; color: white;background-color: rgba(72, 38, 13, 0.8)}.btn-wood{border-color: rgba(64, 47, 29, 1)  ; color: white;background-color: rgba(64, 47, 29, 1)} .btn-wood:focus{text-decoration:none; color: white;background-color: rgba(64, 47, 29, 0.8)}.btn-hickory{border-color: rgba(52, 30, 16, 1)  ; color: white;background-color: rgba(52, 30, 16, 1)} .btn-hickory:focus{text-decoration:none; color: white;background-color: rgba(52, 30, 16, 0.8)}.btn-espresso{border-color: rgba(74, 56, 42, 1)  ; color: white;background-color: rgba(74, 56, 42, 1)} .btn-espresso:focus{text-decoration:none; color: white;background-color: rgba(74, 56, 42, 0.8)}.btn-peanut{border-color: rgba(121, 92, 50, 1)  ; color: white;background-color: rgba(121, 92, 50, 1)} .btn-peanut:focus{text-decoration:none; color: white;background-color: rgba(121, 92, 50, 0.8)}.btn-mocha{border-color: rgba(59, 39, 12, 1)  ; color: white;background-color: rgba(59, 39, 12, 1)} .btn-mocha:focus{text-decoration:none; color: white;background-color: rgba(59, 39, 12, 0.8)}.btn-coffee{border-color: rgba(74, 55, 25, 1)  ; color: white;background-color: rgba(74, 55, 25, 1)} .btn-coffee:focus{text-decoration:none; color: white;background-color: rgba(74, 55, 25, 0.8)}\r\n.btn-russet{border-color: rgba(127, 70, 27, 1)  ; color: white;background-color: rgba(127, 70, 27, 1)} .btn-russet:focus{text-decoration:none; color: white;background-color: rgba(127, 70, 27, 0.8)}.btn-gray{border-color: rgba(72, 72, 72, 1)  ; color: white;background-color: rgba(72, 72, 72, 1)} .btn-gray:focus{text-decoration:none; color: white;background-color: rgba(72, 72, 72, 0.8)}\r\n.btn-fossil{border-color: rgba(119, 114, 118, 1)  ; color: white;background-color: rgba(119, 114, 118, 1)} .btn-fossil:focus{text-decoration:none; color: white;background-color: rgba(119, 114, 118, 0.8)}.btn-mink{border-color: rgba(137, 127, 125, 1)  ; color: white;background-color: rgba(137, 127, 125, 1)} .btn-mink:focus{text-decoration:none; color: white;background-color: rgba(137, 127, 125, 0.8)}.btn-pearlriver{border-color: rgba(217, 221, 220, 1)  ; color: black;background-color: rgba(217, 221, 220, 1)} .btn-pearlriver:focus{text-decoration:none; color: black;background-color: rgba(217, 221, 220, 0.8)}.btn-abalone{border-color: rgba(214, 207, 197, 1)  ; color: black;background-color: rgba(214, 207, 197, 1)} .btn-abalone:focus{text-decoration:none; color: black;background-color: rgba(214, 207, 197, 0.8)}.btn-harborgray{border-color: rgba(199, 198, 194, 1)  ; color: black;background-color: rgba(199, 198, 194, 1)} .btn-harborgray:focus{text-decoration:none; color: black;background-color: rgba(199, 198, 194, 0.8)}.btn-smoke{border-color: rgba(190, 189, 185, 1)  ; color: black;background-color: rgba(190, 189, 185, 1)} .btn-smoke:focus{text-decoration:none; color: black;background-color: rgba(190, 189, 185, 0.8)}.btn-thunder{border-color: rgba(190, 182, 171, 1)  ; color: black;background-color: rgba(190, 182, 171, 1)} .btn-thunder:focus{text-decoration:none; color: black;background-color: rgba(190, 182, 171, 0.8)}.btn-pewter{border-color: rgba(153, 157, 160, 1)  ; color: white;background-color: rgba(153, 157, 160, 1)} .btn-pewter:focus{text-decoration:none; color: white;background-color: rgba(153, 157, 160, 0.8)}.btn-steel{border-color: rgba(118, 123, 126, 1)  ; color: white;background-color: rgba(118, 123, 126, 1)} .btn-steel:focus{text-decoration:none; color: white;background-color: rgba(118, 123, 126, 0.8)}.btn-stone{border-color: rgba(135, 127, 125, 1)  ; color: white;background-color: rgba(135, 127, 125, 1)} .btn-stone:focus{text-decoration:none; color: white;background-color: rgba(135, 127, 125, 0.8)}.btn-iron{border-color: rgba(72, 73, 75, 1)  ; color: white;background-color: rgba(72, 73, 75, 1)} .btn-iron:focus{text-decoration:none; color: white;background-color: rgba(72, 73, 75, 0.8)}.btn-rhino{border-color: rgba(185, 187, 182, 1)  ; color: black;background-color: rgba(185, 187, 182, 1)} .btn-rhino:focus{text-decoration:none; color: black;background-color: rgba(185, 187, 182, 0.8)}.btn-trout{border-color: rgba(151, 151, 143, 1)  ; color: white;background-color: rgba(151, 151, 143, 1)} .btn-trout:focus{text-decoration:none; color: white;background-color: rgba(151, 151, 143, 0.8)}.btn-seal{border-color: rgba(129, 131, 128, 1)  ; color: white;background-color: rgba(129, 131, 128, 1)} .btn-seal:focus{text-decoration:none; color: white;background-color: rgba(129, 131, 128, 0.8)}.btn-lava{border-color: rgba(129, 133, 136, 1)  ; color: white;background-color: rgba(129, 133, 136, 1)} .btn-lava:focus{text-decoration:none; color: white;background-color: rgba(129, 133, 136, 0.8)}.btn-shadow{border-color: rgba(54, 54, 54, 1)  ; color: white;background-color: rgba(54, 54, 54, 1)} .btn-shadow:focus{text-decoration:none; color: white;background-color: rgba(54, 54, 54, 0.8)}\r\n.btn-ash{border-color: rgba(85, 75, 74, 1)  ; color: white;background-color: rgba(85, 75, 74, 1)} .btn-ash:focus{text-decoration:none; color: white;background-color: rgba(85, 75, 74, 0.8)}.btn-anchor{border-color: rgba(63, 65, 77, 1)  ; color: white;background-color: rgba(63, 65, 77, 1)} .btn-anchor:focus{text-decoration:none; color: white;background-color: rgba(63, 65, 77, 0.8)}.btn-charcoal{border-color: rgba(34, 32, 33, 1)  ; color: white;background-color: rgba(34, 32, 33, 1)} .btn-charcoal:focus{text-decoration:none; color: white;background-color: rgba(34, 32, 33, 0.8)}\r\n\r\n\r\n.bg-black{background-color: black}.bg-white{background-color: white}.bg-yellow{background-color: rgba(254, 242, 0, 1)} .bg-mellow{background-color: rgba(247, 223, 125, 1)} .bg-cyber{background-color: rgba(255, 211, 2, 1)} .bg-royal{background-color: rgba(249, 217, 94, 1)} .bg-trombone{background-color: rgba(208, 181, 92, 1)} .bg-banana{background-color: rgba(251, 244, 163, 1)}.bg-tuscany{background-color: rgba(252, 208, 44, 1)} .bg-lemon{background-color: rgba(239, 253, 96, 1)} .bg-bumblebee{background-color: rgba(254, 226, 5, 1)}.bg-flax{background-color: rgba(239, 219, 130, 1)} .bg-flax{background-color: rgba(239, 219, 130, 1)} .bg-peach{background-color: rgba(255, 229, 180, 1)} .bg-laguna{background-color: rgba(248, 228, 115, 1)} .bg-mustard{background-color: rgba(254, 220, 83, 1)}.bg-ecru{background-color: rgba(205, 177, 129, 1)} .bg-corn{background-color: rgba(228, 204, 6, 1)}.bg-pineapple{background-color: rgba(254, 225, 43, 1)} .bg-flaxen{background-color: rgba(214, 183, 90, 1)} .bg-eggnog{background-color: rgba(249, 226, 156, 1)}.bg-sepia{background-color: rgba(225, 183, 122, 1)}.bg-orange{background-color: rgba(251, 102, 0, 1)} .bg-gold{background-color: rgba(249, 166, 2, 1)} .bg-goldenrod{background-color: rgba(219, 165, 33, 1)}.bg-pumpkin{background-color: rgba(255, 115, 23, 1)}.bg-fire{background-color: rgba(253, 165, 15, 1)} .bg-ochre{background-color: rgba(205, 119, 34, 1)}.bg-amber{background-color: rgba(254, 191, 0, 1)}.bg-dijon{background-color: rgba(196, 145, 2, 1)} .bg-tangerine{background-color: rgba(250, 128, 42, 1)}.bg-tiger{background-color: rgba(253, 106, 3, 1)} .bg-honey{background-color: rgba(235, 150, 5, 1)}.bg-carrot{background-color: rgba(239, 114, 22, 1)}.bg-apricot{background-color: rgba(239, 129, 14, 1)} .bg-bronze{background-color: rgba(178, 85, 15, 1)} .bg-cider{background-color: rgba(179, 103, 43, 1)} .bg-clay{background-color: rgba(129, 63, 11, 1)} .bg-rust{background-color: rgba(139, 64, 0, 1)} .bg-amber2{background-color: rgba(136, 48, 0, 1)}  .bg-spice{background-color: rgba(121, 56, 2, 1)} .bg-burntor{background-color: rgba(149, 64, 0, 1)} .bg-red{background-color: rgba(209, 0, 4, 1)}.bg-salmon{background-color: rgba(250, 128, 113, 1)} .bg-scarlet{background-color: rgba(255, 35, 0, 1)} .bg-barnred{background-color: rgba(123, 11, 0, 1)}.bg-imperial{background-color: rgba(237, 40, 57, 1)} .bg-indianred{background-color: rgba(205, 93, 92, 1)}.bg-chili{background-color: rgba(195, 24, 7, 1)}.bg-firebrick{background-color: rgba(178, 34, 33, 1)} .bg-maroon{background-color: rgba(128, 0, 1, 1)}.bg-redwood{background-color: rgba(163, 90, 81, 1)} .bg-raspberry{background-color: rgba(210, 31, 60, 1)} .bg-candyapple{background-color: rgba(255, 8, 0, 1)}.bg-carmine{background-color: rgba(150, 0, 27, 1)} .bg-persian{background-color: rgba(202, 52, 51, 1)} .bg-usflag{background-color: rgba(191, 9, 49, 1)} .bg-ferrari{background-color: rgba(254, 41, 1, 1)}.bg-burgundy{background-color: rgba(142, 2, 31, 1)} .bg-crimson{background-color: rgba(183, 16, 10, 1)}.bg-sangria{background-color: rgba(94, 25, 18, 1)} .bg-mahogany{background-color: rgba(64, 13, 9, 1)}.bg-pink{background-color: rgba(253, 14, 191, 1)} .bg-ruby{background-color: rgba(224, 17, 97, 1)}  .bg-ultra{background-color: rgba(255, 110, 253, 1)} .bg-thulian{background-color: rgba(223, 110, 162, 1)} .bg-magenta{background-color: rgba(255, 0, 144, 1)} .bg-rosepink{background-color: rgba(255, 101, 203, 1)} .bg-lavender{background-color: rgba(251, 174, 210, 1)}.bg-creamy{background-color: rgba(255, 105, 179, 1)}.bg-fuchsia{background-color: rgba(255, 0, 254, 1)}.bg-frenchrose{background-color: rgba(247, 74, 138, 1)}.bg-cerise{background-color: rgba(221, 49, 99, 1)}.bg-carnation{background-color: rgba(255, 166, 201, 1)} .bg-brick{background-color: rgba(251, 96, 128, 1)}.bg-amaranth{background-color: rgba(242, 155, 187, 1)} .bg-taffy{background-color: rgba(249, 135, 195, 1)} .bg-bubblegum{background-color: rgba(254, 91, 174, 1)} .bg-hotpink{background-color: rgba(248, 24, 149, 1)} .bg-punch{background-color: rgba(236, 85, 120, 1)}.bg-lemonade{background-color: rgba(253, 185, 200, 1)} .bg-flamingo{background-color: rgba(255, 161, 185, 1)} .bg-violet{background-color: rgba(178, 0, 238, 1)} .bg-hibiscus{background-color: rgba(180, 55, 85, 1)} .bg-mauve{background-color: rgba(120, 75, 132, 1)} .bg-mulberry{background-color: rgba(198, 75, 138, 1)} .bg-lavender{background-color: rgba(228, 160, 247, 1)} .bg-orchid{background-color: rgba(176, 104, 238, 1)}.bg-lilac{background-color: rgba(182, 96, 207, 1)} .bg-electric{background-color: rgba(144, 0, 255, 1)}.bg-african{background-color: rgba(178, 132, 188, 1)}.bg-grape{background-color: rgba(110, 46, 169, 1)} .bg-amethyst{background-color: rgba(153, 102, 203, 1)}.bg-byzantine{background-color: rgba(111, 42, 99, 1)}.bg-fandango{background-color: rgba(180, 52, 137, 1)} .bg-helio{background-color: rgba(224, 114, 254, 1)} .bg-floral{background-color: rgba(180, 126, 222, 1)} .bg-thistle{background-color: rgba(215, 191, 239, 1)}.bg-royal{background-color: rgba(120, 82, 169, 1)}.bg-lollipop{background-color: rgba(129, 0, 127, 1)} .bg-plum{background-color: rgba(140, 70, 133, 1)}.bg-eggplant{background-color: rgba(50, 19, 50, 1)} .bg-blue{background-color: rgba(0, 25, 249, 1)} .bg-denim{background-color: rgba(19, 30, 58, 1)}  .bg-pigeon{background-color: rgba(114, 133, 165, 1)} .bg-sky{background-color: rgba(149, 200, 217, 1)} .bg-independence{background-color: rgba(77, 81, 110, 1)} .bg-airforce{background-color: rgba(89, 139, 174, 1)} .bg-babyblue{background-color: rgba(138, 207, 240, 1)} .bg-navy{background-color: rgba(1, 0, 128, 1)}.bg-steel{background-color: rgba(70, 130, 180, 1)}.bg-carolina{background-color: rgba(88, 160, 210, 1)}.bg-turkish{background-color: rgba(81, 151, 163, 1)} .bg-maya{background-color: rgba(115, 194, 251, 1)} .bg-cornflower{background-color: rgba(103, 147, 244, 1)}.bg-olympic{background-color: rgba(0, 142, 204, 1)} .bg-saphire{background-color: rgba(15, 82, 186, 1)}.bg-azure{background-color: rgba(0, 128, 253, 1)} .bg-egyptian{background-color: rgba(17, 53, 167, 1)} .bg-yale{background-color: rgba(13, 76, 145, 1)} .bg-prussian{background-color: rgba(0, 49, 82, 1)} .bg-space{background-color: rgba(28, 41, 82, 1)} .bg-green{background-color: rgba(59, 177, 63, 1)} .bg-forest{background-color: rgba(11, 102, 35, 1)} .bg-sage{background-color: rgba(155, 194, 131, 1)} .bg-olive{background-color: rgba(112, 130, 56, 1)} .bg-lime{background-color: rgba(201, 233, 72, 1)} .bg-hunter{background-color: rgba(64, 111, 77, 1)} .bg-jade{background-color: rgba(0, 168, 107, 1)} .bg-artichoke{background-color: rgba(144, 150, 122, 1)} .bg-fern{background-color: rgba(78, 121, 67, 1)}.bg-jungle{background-color: rgba(41, 171, 135, 1)} .bg-laurel{background-color: rgba(170, 186, 159, 1)} .bg-moss{background-color: rgba(138, 154, 91, 1)} .bg-mint{background-color: rgba(151, 251, 152, 1)} .bg-pine{background-color: rgba(0, 121, 112, 1)}  .bg-tea{background-color:  rgba(208, 240, 191, 1)}.bg-army{background-color: rgba(75, 83, 32, 1)} .bg-emerald{background-color: rgba(79, 200, 120, 1)}  .bg-kelly{background-color: rgba(76, 187, 23, 1)} .bg-sacramento{background-color: rgba(4, 57, 39, 1)} .bg-sea{background-color: rgba(45, 139, 87, 1)} .bg-brown{background-color: rgba(124, 71, 1, 1)}  .bg-cedar{background-color: rgba(75, 58, 40, 1)} .bg-cinnamon{background-color: rgba(98, 42, 17, 1)} .bg-brunette{background-color: rgba(58, 31, 4, 1)} .bg-tawny{background-color: rgba(125, 72, 28, 1)} .bg-umber{background-color: rgba(54, 35, 20, 1)}  .bg-tortilla{background-color: rgba(153, 121, 80, 1)}.bg-chocolate{background-color: rgba(43, 23, 0, 1)} .bg-syrup{background-color: rgba(75, 31, 2, 1)} .bg-gingerbread{background-color: rgba(92, 44, 6, 1)} .bg-caramel{background-color: rgba(98, 54, 19, 1)}.bg-walnut{background-color: rgba(67, 39, 15, 1)}.bg-pecan{background-color: rgba(72, 38, 13, 1)} .bg-wood{background-color: rgba(64, 47, 29, 1)}.bg-hickory{background-color: rgba(52, 30, 16, 1)}.bg-espresso{background-color: rgba(74, 56, 42, 1)} .bg-peanut{background-color: rgba(121, 92, 50, 1)} .bg-mocha{background-color: rgba(59, 39, 12, 1)}.bg-coffee{background-color: rgba(74, 55, 25, 1)}.bg-russet{background-color: rgba(127, 70, 27, 1)} .bg-gray{background-color: rgba(72, 72, 72, 1)} .bg-fossil{background-color: rgba(119, 114, 118, 1)} .bg-mink{background-color: rgba(137, 127, 125, 1)} .bg-pearlriver{background-color: rgba(217, 221, 220, 1)} .bg-abalone{background-color: rgba(214, 207, 197, 1)} .bg-harborgray{background-color: rgba(199, 198, 194, 1)} .bg-smoke{background-color: rgba(190, 189, 185, 1)} .bg-thunder{background-color: rgba(190, 182, 171, 1)} .bg-pewter{background-color: rgba(153, 157, 160, 1)} .bg-steel{background-color: rgba(118, 123, 126, 1)} .bg-stone{background-color: rgba(135, 127, 125, 1)}.bg-iron{background-color: rgba(72, 73, 75, 1)} .bg-rhino{background-color: rgba(185, 187, 182, 1)} .bg-trout{background-color: rgba(151, 151, 143, 1)} .bg-seal{background-color: rgba(129, 131, 128, 1)} .bg-lava{background-color: rgba(129, 133, 136, 1)}.bg-shadow{background-color: rgba(54, 54, 54, 1)} .bg-ash{background-color: rgba(85, 75, 74, 1)}.bg-anchor{background-color: rgba(63, 65, 77, 1)} .bg-charcoal{background-color: rgba(34, 32, 33, 1)}\r\n.black{color: black}.white{color: white}.yellow{color: rgba(254, 242, 0, 1)} .mellow{color: rgba(247, 223, 125, 1)} .cyber{color: rgba(255, 211, 2, 1)} .royal{color: rgba(249, 217, 94, 1)} .trombone{color: rgba(208, 181, 92, 1)} .banana{color: rgba(251, 244, 163, 1)}.tuscany{color: rgba(252, 208, 44, 1)} .lemon{color: rgba(239, 253, 96, 1)} .bumblebee{color: rgba(254, 226, 5, 1)}.flax{color: rgba(239, 219, 130, 1)} .flax{color: rgba(239, 219, 130, 1)} .peach{color: rgba(255, 229, 180, 1)} .laguna{color: rgba(248, 228, 115, 1)} .mustard{color: rgba(254, 220, 83, 1)}\r\n.ecru{color: rgba(205, 177, 129, 1)} .corn{color: rgba(228, 204, 6, 1)}.pineapple{color: rgba(254, 225, 43, 1)} .flaxen{color: rgba(214, 183, 90, 1)} .eggnog{color: rgba(249, 226, 156, 1)}.sepia{color: rgba(225, 183, 122, 1)}.orange{color: rgba(251, 102, 0, 1)} .gold{color: rgba(249, 166, 2, 1)} .goldenrod{color: rgba(219, 165, 33, 1)}.pumpkin{color: rgba(255, 115, 23, 1)}.fire{color: rgba(253, 165, 15, 1)} .ochre{color: rgba(205, 119, 34, 1)}.amber{color: rgba(254, 191, 0, 1)}.dijon{color: rgba(196, 145, 2, 1)} .tangerine{color: rgba(250, 128, 42, 1)}.tiger{color: rgba(253, 106, 3, 1)} .honey{color: rgba(235, 150, 5, 1)}.carrot{color: rgba(239, 114, 22, 1)}.apricot{color: rgba(239, 129, 14, 1)} .bronze{color: rgba(178, 85, 15, 1)} .cider{color: rgba(179, 103, 43, 1)} .clay{color: rgba(129, 63, 11, 1)} .rust{color: rgba(139, 64, 0, 1)} .amber2{color: rgba(136, 48, 0, 1)}  .spice{color: rgba(121, 56, 2, 1)} .burntor{color: rgba(149, 64, 0, 1)} .red{color: rgba(209, 0, 4, 1)}.salmon{color: rgba(250, 128, 113, 1)} .scarlet{color: rgba(255, 35, 0, 1)} .barnred{color: rgba(123, 11, 0, 1)}.imperial{color: rgba(237, 40, 57, 1)} .indianred{color: rgba(205, 93, 92, 1)}.chili{color: rgba(195, 24, 7, 1)}.firebrick{color: rgba(178, 34, 33, 1)} .maroon{color: rgba(128, 0, 1, 1)}.redwood{color: rgba(163, 90, 81, 1)} .raspberry{color: rgba(210, 31, 60, 1)} .candyapple{color: rgba(255, 8, 0, 1)}.carmine{color: rgba(150, 0, 27, 1)} .persian{color: rgba(202, 52, 51, 1)} .usflag{color: rgba(191, 9, 49, 1)} .ferrari{color: rgba(254, 41, 1, 1)}.burgundy{color: rgba(142, 2, 31, 1)} .crimson{color: rgba(183, 16, 10, 1)}.sangria{color: rgba(94, 25, 18, 1)} .mahogany{color: rgba(64, 13, 9, 1)}.pink{color: rgba(253, 14, 191, 1)} .ruby{color: rgba(224, 17, 97, 1)}  .ultra{color: rgba(255, 110, 253, 1)} .thulian{color: rgba(223, 110, 162, 1)} .magenta{color: rgba(255, 0, 144, 1)} .rosepink{color: rgba(255, 101, 203, 1)} .lavender{color: rgba(251, 174, 210, 1)}.creamy{color: rgba(255, 105, 179, 1)}.fuchsia{color: rgba(255, 0, 254, 1)}.frenchrose{color: rgba(247, 74, 138, 1)}.cerise{color: rgba(221, 49, 99, 1)}.carnation{color: rgba(255, 166, 201, 1)} .brick{color: rgba(251, 96, 128, 1)}.amaranth{color: rgba(242, 155, 187, 1)} .taffy{color: rgba(249, 135, 195, 1)} .bubblegum{color: rgba(254, 91, 174, 1)} .hotpink{color: rgba(248, 24, 149, 1)} .punch{color: rgba(236, 85, 120, 1)}.lemonade{color: rgba(253, 185, 200, 1)} .flamingo{color: rgba(255, 161, 185, 1)} .violet{color: rgba(178, 0, 238, 1)} .hibiscus{color: rgba(180, 55, 85, 1)} .mauve{color: rgba(120, 75, 132, 1)} .mulberry{color: rgba(198, 75, 138, 1)} .lavender{color: rgba(228, 160, 247, 1)} .orchid{color: rgba(176, 104, 238, 1)}.lilac{color: rgba(182, 96, 207, 1)} .electric{color: rgba(144, 0, 255, 1)}.african{color: rgba(178, 132, 188, 1)}.grape{color: rgba(110, 46, 169, 1)} .amethyst{color: rgba(153, 102, 203, 1)}.byzantine{color: rgba(111, 42, 99, 1)}.fandango{color: rgba(180, 52, 137, 1)} .helio{color: rgba(224, 114, 254, 1)} .floral{color: rgba(180, 126, 222, 1)} .thistle{color: rgba(215, 191, 239, 1)}.royal{color: rgba(120, 82, 169, 1)}.lollipop{color: rgba(129, 0, 127, 1)} .plum{color: rgba(140, 70, 133, 1)}.eggplant{color: rgba(50, 19, 50, 1)} .blue{color: rgba(0, 25, 249, 1)} .denim{color: rgba(19, 30, 58, 1)}  .pigeon{color: rgba(114, 133, 165, 1)} .sky{color: rgba(149, 200, 217, 1)} .independence{color: rgba(77, 81, 110, 1)} .airforce{color: rgba(89, 139, 174, 1)} .babyblue{color: rgba(138, 207, 240, 1)} .navy{color: rgba(1, 0, 128, 1)}.steel{color: rgba(70, 130, 180, 1)}.carolina{color: rgba(88, 160, 210, 1)}.turkish{color: rgba(81, 151, 163, 1)} .maya{color: rgba(115, 194, 251, 1)} .cornflower{color: rgba(103, 147, 244, 1)}.olympic{color: rgba(0, 142, 204, 1)} .saphire{color: rgba(15, 82, 186, 1)}.azure{color: rgba(0, 128, 253, 1)} .egyptian{color: rgba(17, 53, 167, 1)} .yale{color: rgba(13, 76, 145, 1)} .prussian{color: rgba(0, 49, 82, 1)} .space{color: rgba(28, 41, 82, 1)} .green{color: rgba(59, 177, 63, 1)} .forest{color: rgba(11, 102, 35, 1)} .sage{color: rgba(155, 194, 131, 1)} .olive{color: rgba(112, 130, 56, 1)} .lime{color: rgba(201, 233, 72, 1)} .hunter{color: rgba(64, 111, 77, 1)} .jade{color: rgba(0, 168, 107, 1)} .artichoke{color: rgba(144, 150, 122, 1)} .fern{color: rgba(78, 121, 67, 1)}.jungle{color: rgba(41, 171, 135, 1)} .laurel{color: rgba(170, 186, 159, 1)} .moss{color: rgba(138, 154, 91, 1)} .mint{color: rgba(151, 251, 152, 1)} .pine{color: rgba(0, 121, 112, 1)}  .tea{color:  rgba(208, 240, 191, 1)}.army{color: rgba(75, 83, 32, 1)} .emerald{color: rgba(79, 200, 120, 1)}  .kelly{color: rgba(76, 187, 23, 1)} .sacramento{color: rgba(4, 57, 39, 1)} .sea{color: rgba(45, 139, 87, 1)} .brown{color: rgba(124, 71, 1, 1)}  .cedar{color: rgba(75, 58, 40, 1)} .cinnamon{color: rgba(98, 42, 17, 1)} .brunette{color: rgba(58, 31, 4, 1)} .tawny{color: rgba(125, 72, 28, 1)} .umber{color: rgba(54, 35, 20, 1)}  .tortilla{color: rgba(153, 121, 80, 1)}.chocolate{color: rgba(43, 23, 0, 1)} .syrup{color: rgba(75, 31, 2, 1)} .gingerbread{color: rgba(92, 44, 6, 1)} .caramel{color: rgba(98, 54, 19, 1)}.walnut{color: rgba(67, 39, 15, 1)}.pecan{color: rgba(72, 38, 13, 1)} .wood{color: rgba(64, 47, 29, 1)}.hickory{color: rgba(52, 30, 16, 1)}.espresso{color: rgba(74, 56, 42, 1)} .peanut{color: rgba(121, 92, 50, 1)} .mocha{color: rgba(59, 39, 12, 1)}.coffee{color: rgba(74, 55, 25, 1)}.russet{color: rgba(127, 70, 27, 1)} .gray{color: rgba(72, 72, 72, 1)} .fossil{color: rgba(119, 114, 118, 1)} .mink{color: rgba(137, 127, 125, 1)} .pearlriver{color: rgba(217, 221, 220, 1)} .abalone{color: rgba(214, 207, 197, 1)} .harborgray{color: rgba(199, 198, 194, 1)} .smoke{color: rgba(190, 189, 185, 1)} .thunder{color: rgba(190, 182, 171, 1)} .pewter{color: rgba(153, 157, 160, 1)} .steel{color: rgba(118, 123, 126, 1)} .stone{color: rgba(135, 127, 125, 1)}.iron{color: rgba(72, 73, 75, 1)} .rhino{color: rgba(185, 187, 182, 1)} .trout{color: rgba(151, 151, 143, 1)} .seal{color: rgba(129, 131, 128, 1)} .lava{color: rgba(129, 133, 136, 1)}.shadow{color: rgba(54, 54, 54, 1)} .ash{color: rgba(85, 75, 74, 1)}.anchor{color: rgba(63, 65, 77, 1)} .charcoal{color: rgba(34, 32, 33, 1)}\r\n", ""]);
 
 // exports
 
@@ -42027,7 +42049,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "/*!\n * Rs v1.0.0 (https://github.com/hktom/rs)\n * Copyright 2018-2019 Tom Hikari\n * Licensed under MIT (https://github.com/hktom/rs)\n*/\n\n/*page default */\nhtml, body{height: 100%;width: 100%!important} #wrapper, #app{max-width: 100%;height:100%;position:relative;margin: auto;min-height: 100%!important} *{margin: 0;padding: 0}\n/*page default */\n\n /** font size fs **/\n .fs0{font-size: 0em}.fs0-1{font-size: 0.1em}.fs0-2{font-size: 0.2em}.fs0-3{font-size: 0.3em}.fs0-4{font-size: 0.4em}.fs0-5{font-size: 0.5em}.fs0-6{font-size: 0.6em}.fs0-7{font-size: 0.7em}.fs0-8{font-size: 0.8em}.fs0-9{font-size: 0.9em}.fs1{font-size: 1em}.fs1-1{font-size: 1.1em}.fs1-2{font-size: 1.2em}.fs1-3{font-size: 1.3em}.fs1-4{font-size: 1.4em}.fs1-5{font-size: 1.5em}.fs1-6{font-size: 1.6em}.fs1-7{font-size: 1.7em}.fs1-8{font-size: 1.8em}.fs1-9{font-size: 1.9em}.fs2{font-size: 2em}.fs3{font-size: 3em}.fs4{font-size: 4em}.fs5{font-size: 5em}.fs6{font-size: 6em}\n/** font size fs **/\n\n/*font face */\n.serif{font-family: serif!important}\n.sans-serif{font-family: sans-serif!important}\n.cursive{font-family: cursive!important} .monospace{font-family: monospace!important} .fantasy{font-family: fantasy!important} .arial{font-family: Arial!important} .calibri{font-family: Calibri!important} .helvetica{font-family: Helvetica!important} .roman{font-family: new time roman!important}.consolas{font-family: Consolas!important}\n.Console{font-family: Console!important}\n/*font face */\n\n/** font weight style **/\n.bold{font-weight: bold!important}.lighter{font-weight:lighter!important}.bolder{font-weight:bolder!important}\n.italic{font-style: italic}.oblique{font-style:oblique;}\n.uppercase{text-transform: uppercase}.lowercase{text-transform: lowercase}.capitalize{text-transform: capitalize}.fullwidth{text-transform: full-width}\n.decoration-null{text-decoration: none!important}.underline{text-decoration: underline}.overline{text-decoration: overline}.through{text-decoration: line-through}\n.left{text-align: left}.right{text-align: right}.center{text-align: center} .justify{text-align: justify}\n.text-top{vertical-align: text-top}.text-middle{vertical-align: middle}.text-bottom{vertical-align: text-bottom}\n.baseline{vertical-align: baseline}.sub{vertical-align: sub}.sup{vertical-align: super}.suptop{vertical-align: top}.bottom{vertical-align: bottom}\n\n.text-inherit{line-height: inherit}\n.text-y0{line-height: 0em}.text-y0-1{line-height: 0.1em}.text-y0-2{line-height: 0.2em}.text-y0-3{line-height: 0.3em}.text-y0-4{line-height: 0.4em}.text-y0-5{line-height: 0.5em}.text-y0-6{line-height: 0.6em}.text-y0-7{line-height: 0.7em}.text-y0-8{line-height: 0.8em}.text-y0-9{line-height: 0.9em}.text-y1{line-height: 1em}\n/* text-style */\n\n\n/* box style */\n.ofhidden{overflow: hidden}.ofscroll{overflow: scroll}.ofauto{overflow: auto}.ofvisible{overflow:visible}.ofinherit{overflow:inherit}\n.ofhidden-x{overflow-x: hidden}.ofscroll-x{overflow-x: scroll}.ofauto-x{overflow-x: auto}.ofvisible-x{overflow-x:visible}.ofinherit-x{overflow-x:inherit}\n.ofhidden-y{overflow-y: hidden}.ofscroll-y{overflow-y: scroll}.ofauto-y{overflow-y: auto}.ofvisible-y{overflow-y:visible}.ofinherit-y{overflow-y:inherit}\n/* box style */\n\n\n/** border radius **/\n.br0{border-radius:0rem}.br1{border-radius:1rem}.br2{border-radius:2rem}.br3{border-radius:3rem}.br4{border-radius:4rem}.br5{border-radius:5rem}.br6{border-radius:6rem}.br7{border-radius:7rem}.br8{border-radius:8rem}.br9{border-radius:9rem}\n.br10{border-radius:10rem}\n/*border radius */\n\n/* margin */\n.mauto{margin: auto}\n.m0{margin:0%}.m1{margin:1%}.m2{margin:2%}.m3{margin:3%}.m4{margin:4%}.m5{margin:5%}.m6{margin:6%}.m7{margin:7%}.m8{margin:8%}.m9{margin:9%}.m10{margin:10%}.m15{margin:15%}.m20{margin:20%}.m25{margin:25%}.m30{margin:30%}.m35{margin:35%}.m40{margin:40%}.m45{margin:45%}.m50{margin:50%}.m55{margin:55%}.m60{margin:60%}.m65{margin:65%}.m70{margin:70%}  .m75{margin:75%}.m80{margin:80%}.m85{margin:85%}.m90{margin:90%}.m95{margin:95%}.m100{margin:100%}\n/* margin */\n\n/** padding all **/\n.pauto{padding:auto}.p0{padding:0%}.p1{padding:1%}.p2{padding:2%}.p3{padding:3%}.p4{padding:4%}.p5{padding:5%}.p6{padding:6%}.p7{padding:7%}.p8{padding:8%}.p9{padding:9%}.p10{padding:10%}.p15{padding:15%}.p20{padding:20%}.p25{padding:25%}.p30{padding:30%}.p35{padding:35%}.p40{padding:40%}.p45{padding:45%}.p50{padding:50%}.p55{padding:55%}.p60{padding:60%}.p65{padding:65%}.p70{padding:70%}  .p75{padding:75%}.p80{padding:80%}.p85{padding:85%}.p90{padding:90%}.p95{padding:95%}.p100{padding:100%}\n\n/** margin top **/\n.mt0{margin-top:0%;top:0}.mt1{margin-top:1%}.mt2{margin-top:2%}.mt3{margin-top:3%}.mt4{margin-top:4%}.mt5{margin-top:5%}.mt6{margin-top:6%}.mt7{margin-top:7%}.mt8{margin-top:8%}.mt9{margin-top:9%}.mt10{margin-top:10%}.mt15{margin-top:15%}.mt20{margin-top:20%}.mt25{margin-top:25%}.mt30{margin-top:30%}.mt35{margin-top:35%}.mt40{margin-top:40%}.mt45{margin-top:45%}.mt50{margin-top:50%}.mt55{margin-top:55%}.mt60{margin-top:60%}.mt65{margin-top:65%}.mt70{margin-top:70%}  .mt75{margin-top:75%}.mt80{margin-top:80%}.mt85{margin-top:85%}.mt90{margin-top:90%}.mt95{margin-top:95%}.mt100{margin-top:100%}\n/** margin top **/\n\n/** margin bottom **/\n.mb0{margin-bottom:0%}.mb1{margin-bottom:1%}.mb2{margin-bottom:2%}.mb3{margin-bottom:3%}.mb4{margin-bottom:4%}.mb5{margin-bottom:5%}.mb6{margin-bottom:6%}.mb7{margin-bottom:7%}.mb8{margin-bottom:8%}.mb9{margin-bottom:9%}.mb10{margin-bottom:10%}.mb15{margin-bottom:15%}.mb20{margin-bottom:20%}.mb25{margin-bottom:25%}.mb30{margin-bottom:30%}.mb35{margin-bottom:35%}.mb40{margin-bottom:40%}.mb45{margin-bottom:45%}.mb50{margin-bottom:50%}.mb55{margin-bottom:55%}.mb60{margin-bottom:60%}.mb65{margin-bottom:65%}.mb70{margin-bottom:70%}  .mb75{margin-bottom:75%}.mb80{margin-bottom:80%}.mb85{margin-bottom:85%}.mb90{margin-bottom:90%}.mb95{margin-bottom:95%}.mb100{margin-bottom:100%}\n/** margin bottom **/\n\n/** margin left **/\n.ml0{margin-left:0%}.ml1{margin-left:1%}.ml2{margin-left:2%}.ml3{margin-left:3%}.ml4{margin-left:4%}.ml5{margin-left:5%}.ml6{margin-left:6%}.ml7{margin-left:7%}.ml8{margin-left:8%}.ml9{margin-left:9%}.ml10{margin-left:10%}.ml15{margin-left:15%}.ml20{margin-left:20%}.ml25{margin-left:25%}.ml30{margin-left:30%}.ml35{margin-left:35%}.ml40{margin-left:40%}.ml45{margin-left:45%}.ml50{margin-left:50%}.ml55{margin-left:55%}.ml60{margin-left:60%}.ml65{margin-left:65%}.ml70{margin-left:70%}  .ml75{margin-left:75%}.ml80{margin-left:80%}.ml85{margin-left:85%}.ml90{margin-left:90%}.ml95{margin-left:95%}.ml100{margin-left:100%}\n/** margin left **/\n\n/** margin right **/\n.mr0{margin-right:0%}.mr1{margin-right:1%}.mr2{margin-right:2%}.mr3{margin-right:3%}.mr4{margin-right:4%}.mr5{margin-right:5%}.mr6{margin-right:6%}.mr7{margin-right:7%}.mr8{margin-right:8%}.mr9{margin-right:9%}.mr10{margin-right:10%}.mr15{margin-right:15%}.mr20{margin-right:20%}.mr25{margin-right:25%}.mr30{margin-right:30%}.mr35{margin-right:35%}.mr40{margin-right:40%}.mr45{margin-right:45%}.mr50{margin-right:50%}.mr55{margin-right:55%}.mr60{margin-right:60%}.mr65{margin-right:65%}.mr70{margin-right:70%}  .mr75{margin-right:75%}.mr80{margin-right:80%}.mr85{margin-right:85%}.mr90{margin-right:90%}.mr95{margin-right:95%}.mr100{margin-right:100%}\n/** margin right **/\n\n\n/** padding top **/\n.pt0{padding-top:0%}.pt1{padding-top:1%}.pt2{padding-top:2%}.pt3{padding-top:3%}.pt4{padding-top:4%}.pt5{padding-top:5%}.pt6{padding-top:6%}.pt7{padding-top:7%}.pt8{padding-top:8%}.pt9{padding-top:9%}.pt10{padding-top:10%}.pt15{padding-top:15%}.pt20{padding-top:20%}.pt25{padding-top:25%}.pt30{padding-top:30%}.pt35{padding-top:35%}.pt40{padding-top:40%}.pt45{padding-top:45%}.pt50{padding-top:50%}.pt55{padding-top:55%}.pt60{padding-top:60%}.pt65{padding-top:65%}.pt70{padding-top:70%}  .pt75{padding-top:75%}.pt80{padding-top:80%}.pt85{padding-top:85%}.pt90{padding-top:90%}.pt95{padding-top:95%}.pt100{padding-top:100%}\n/** padding top **/\n\n/** padding bottop **/\n.pb0{padding-bottom:0%}.pb1{padding-bottom:1%}.pb2{padding-bottom:2%}.pb3{padding-bottom:3%}.pb4{padding-bottom:4%}.pb5{padding-bottom:5%}.pb6{padding-bottom:6%}.pb7{padding-bottom:7%}.pb8{padding-bottom:8%}.pb9{padding-bottom:9%}.pb10{padding-bottom:10%}.pb15{padding-bottom:15%}.pb20{padding-bottom:20%}.pb25{padding-bottom:25%}.pb30{padding-bottom:30%}.pb35{padding-bottom:35%}.pb40{padding-bottom:40%}.pb45{padding-bottom:45%}.pb50{padding-bottom:50%}.pb55{padding-bottom:55%}.pb60{padding-bottom:60%}.pb65{padding-bottom:65%}.pb70{padding-bottom:70%}  .pb75{padding-bottom:75%}.pb80{padding-bottom:80%}.pb85{padding-bottom:85%}.pb90{padding-bottom:90%}.pb95{padding-bottom:95%}.pb100{padding-bottom:100%}\n/** padding bottop **/\n\n/** padding left **/\n.pl0{padding-left:0%}.pl1{padding-left:1%}.pl2{padding-left:2%}.pl3{padding-left:3%}.pl4{padding-left:4%}.pl5{padding-left:5%}.pl6{padding-left:6%}.pl7{padding-left:7%}.pl8{padding-left:8%}.pl9{padding-left:9%}.pl10{padding-left:10%}.pl15{padding-left:15%}.pl20{padding-left:20%}.pl25{padding-left:25%}.pl30{padding-left:30%}.pl35{padding-left:35%}.pl40{padding-left:40%}.pl45{padding-left:45%}.pl50{padding-left:50%}.pl55{padding-left:55%}.pl60{padding-left:60%}.pl65{padding-left:65%}.pl70{padding-left:70%}  .pl75{padding-left:75%}.pl80{padding-left:80%}.pl85{padding-left:85%}.pl90{padding-left:90%}.pl95{padding-left:95%}.pl100{padding-left:100%}\n/** padding left **/\n\n/** padding right **/\n.pr0{padding-right:0%}.pr1{padding-right:1%}.pr2{padding-right:2%}.pr3{padding-right:3%}.pr4{padding-right:4%}.pr5{padding-right:5%}.pr6{padding-right:6%}.pr7{padding-right:7%}.pr8{padding-right:8%}.pr9{padding-right:9%}.pr10{padding-right:10%}.pr15{padding-right:15%}.pr20{padding-right:20%}.pr25{padding-right:25%}.pr30{padding-right:30%}.pr35{padding-right:35%}.pr40{padding-right:40%}.pr45{padding-right:45%}.pr50{padding-right:50%}.pr55{padding-right:55%}.pr60{padding-right:60%}.pr65{padding-right:65%}.pr70{padding-right:70%}  .pr75{padding-right:75%}.pr80{padding-right:80%}.pr85{padding-right:85%}.pr90{padding-right:90%}.pr95{padding-right:95%}.pr100{padding-right:100%}\n/** padding right **/\n\n.inline{display: inline} .block{display: block} .inline-block{display: inline-block} .none{display: none} .table{display: table} .contents{display: contents} .hidden{visibility: hidden} .visible{visibility: visible}\n.v-collapse{visibility: collapse} .v-inherit{visibility: inherit}\n\n.list-none{list-style-type: none} .list-disc{list-style-type: disc} .list-circle{list-style-type: circle} .list-square{list-style-type: square} .list-decimal{list-style-type: decimal} .list-decimalzero{list-style-type: decimal-leading-zero} .list-loweralpha{list-style-type: lower-alpha} .list-upperalpha{list-style-type: upper-alpha} .list-loweroman{list-style-type: lower-roman} .list-upperroman{list-style-type:upper-roman}\n.list-outside{list-style-position: outside} .list-inside{list-style-position: inside}\n\n.cursor-auto{cursor: auto}.cursor-crosshair{cursor: crosshair}.cursor-default{cursor: default}.cursor-pointer{cursor: pointer}.cursor-move{cursor: move} .cursor-text{cursor: text} .cursor-wait{cursor: wait} .cursor-help{cursor:help}\n\n.static{position: static}.relative{position: relative} .absolute{position: absolute} .fixed{position: fixed}\n\n.float-left{float: left} .float-right{float: right} .float-none{float: none} .float-inherit{float: inherit}\n.clear-left{clear: left} .clear-right{clear: right} .clear-both{clear: both}\n\n.fitme{width: 100%;height: 100%}\n.back{z-index: -9999}\n.front{z-index: 9999}\n.contain{-o-object-fit: contain;object-fit: contain} .cover{-o-object-fit: cover;object-fit: cover} .fill{-o-object-fit: fill;object-fit: fill} .scale-down{-o-object-fit: scale-down;object-fit: scale-down} .fit-none{-o-object-fit: none;object-fit: none}\n.imgtop{-o-object-position: top;object-position: top}.imgbottom{-o-object-position:bottom;object-position:bottom}.imgcenter{-o-object-position:center;object-position:center}.imgleft{-o-object-position:left;object-position:left}.imgright{-o-object-position:right;object-position:right}\n\n/** width **/\n.w0{width:0%}.w1{width:1%}.w2{width:2%}.w3{width:3%}.w4{width:4%}.w5{width:5%}.w6{width:6%}.w7{width:7%}.w8{width:8%}.w9{width:9%}.w10{width:10%}.w15{width:15%}.w20{width:20%}.w25{width:25%}.w30{width:30%}.w35{width:35%}.w40{width:40%}.w45{width:45%}.w50{width:50%}.w55{width:55%}.w60{width:60%}.w65{width:65%}.w70{width:70%}.w75{width:75%}.w80{width:80%}.w85{width:85%}.w90{width:90%}.w95{width:95%}.w100{width:100%}\n\n.x0{width:0rem}.x1{width:1rem}.x2{width:2rem}.x3{width:3rem}.x4{width:4rem}.x5{width:5rem}.x6{width:6rem}.x7{width:7rem}.x8{width:8rem}.x9{width:9rem}.x10{width:10rem}.x15{width:15rem}.x20{width:20rem}.x25{width:25rem}.x30{width:30rem}.x35{width:35rem}.x40{width:40rem}.x45{width:45rem}.x50{width:50rem}.x55{width:55rem}.x60{width:60rem}.x65{width:65rem}.x70{width:70rem}.x75{width:75rem}.x80{width:80rem}.x85{width:85rem}.x90{width:90rem}.x95{width:95rem}.x100{width:100rem}\n/** width **/\n\n/** height **/\n.h0{height:0%}.h1{height:1%}.h2{height:2%}.h3{height:3%}.h4{height:4%}.h5{height:5%}.h6{height:6%}.h7{height:7%}.h8{height:8%}.h9{height:9%}.h10{height:10%}.h15{height:15%}.h20{height:20%}.h25{height:25%}.h30{height:30%}.h35{height:35%}.h40{height:40%}.h45{height:45%}.h50{height:50%}.h55{height:55%}.h60{height:60%}.h65{height:65%}.h70{height:70%}.h75{height:75%}.h80{height:80%}.h85{height:85%}.h90{height:90%}.h95{height:95%}.h100{height:100%}\n\n.y0{height:0rem}.y1{height:1rem}.y2{height:2rem}.y3{height:3rem}.y4{height:4rem}.y5{height:5rem}.y6{height:6rem}.y7{height:7rem}.y8{height:8rem}.y9{height:9rem}.y10{height:10rem}.y15{height:15rem}.y20{height:20rem}.y25{height:25rem}.y30{height:30rem}.y35{height:35rem}.y40{height:40rem}.y45{height:45rem}.y50{height:50rem}.y55{height:55rem}.y60{height:60rem}.y65{height:65rem}.y70{height:70rem}.y75{height:75rem}.y80{height:80rem}.y85{height:85rem}.y90{height:90rem}.y95{height:95rem}.y100{height:100rem}\n/** height **/\n\n/*vls (very large screen)*/\n@media screen and (min-width:1441px)\n{\n    .vls-hidden{display: none}\n    .vls-fs0{font-size: 0em}.vls-fs0-1{font-size: 0.1em}.vls-fs0-2{font-size: 0.2em}.vls-fs0-3{font-size: 0.3em}.vls-fs0-4{font-size: 0.4em}.vls-fs0-5{font-size: 0.5em}.vls-fs0-6{font-size: 0.6em}.vls-fs0-7{font-size: 0.7em}.vls-fs0-8{font-size: 0.8em}.vls-fs0-9{font-size: 0.9em}.vls-fs1{font-size: 1em}.vls-fs1-1{font-size: 1.1em}.vls-fs1-2{font-size: 1.2em}.vls-fs1-3{font-size: 1.3em}.vls-fs1-4{font-size: 1.4em}.vls-fs1-5{font-size: 1.5em}.vls-fs1-6{font-size: 1.6em}.vls-fs1-7{font-size: 1.7em}.vls-fs1-8{font-size: 1.8em}.vls-fs1-9{font-size: 1.9em}.vls-fs2{font-size: 2em}.vls-fs3{font-size: 3em}.vls-fs4{font-size: 4em}.vls-fs5{font-size: 5em}.vls-fs6{font-size: 6em}\n\n    /** width **/\n    .vls-w0{width:0%}.vls-w1{width:1%}.vls-w2{width:2%}.vls-w3{width:3%}.vls-w4{width:4%}.vls-w5{width:5%}.vls-w6{width:6%}.vls-w7{width:7%}.vls-w8{width:8%}.vls-w9{width:9%}.vls-w10{width:10%}.vls-w15{width:15%}.vls-w20{width:20%}.vls-w25{width:25%}.vls-w30{width:30%}.vls-w35{width:35%}.vls-w40{width:40%}.vls-w45{width:45%}.vls-w50{width:50%}.vls-w55{width:55%}.vls-w60{width:60%}.vls-w65{width:65%}.vls-w70{width:70%}.vls-w75{width:75%}.vls-w80{width:80%}.vls-w85{width:85%}.vls-w90{width:90%}.vls-w95{width:95%}.vls-w100{width:100%}\n\n    .vls-x0{width:0rem}.vls-x1{width:1rem}.vls-x2{width:2rem}.vls-x3{width:3rem}.vls-x4{width:4rem}.vls-x5{width:5rem}.vls-x6{width:6rem}.vls-x7{width:7rem}.vls-x8{width:8rem}.vls-x9{width:9rem}.vls-x10{width:10rem}.vls-x15{width:15rem}.vls-x20{width:20rem}.vls-x25{width:25rem}.vls-x30{width:30rem}.vls-x35{width:35rem}.vls-x40{width:40rem}.vls-x45{width:45rem}.vls-x50{width:50rem}.vls-x55{width:55rem}.vls-x60{width:60rem}.vls-x65{width:65rem}.vls-x70{width:70rem}.vls-x75{width:75rem}.vls-x80{width:80rem}.vls-x85{width:85rem}.vls-x90{width:90rem}.vls-x95{width:95rem}.vls-x100{width:100rem}\n    /** width **/\n\n    /** height **/\n    .vls-h0{height:0%}.vls-h1{height:1%}.vls-h2{height:2%}.vls-h3{height:3%}.vls-h4{height:4%}.vls-h5{height:5%}.vls-h6{height:6%}.vls-h7{height:7%}.vls-h8{height:8%}.vls-h9{height:9%}.vls-h10{height:10%}.vls-h15{height:15%}.vls-h20{height:20%}.vls-h25{height:25%}.vls-h30{height:30%}.vls-h35{height:35%}.vls-h40{height:40%}.vls-h45{height:45%}.vls-h50{height:50%}.vls-h55{height:55%}.vls-h60{height:60%}.vls-h65{height:65%}.vls-h70{height:70%}.vls-h75{height:75%}.vls-h80{height:80%}.vls-h85{height:85%}.vls-h90{height:90%}.vls-h95{height:95%}.vls-h100{height:100%}\n\n    .vls-y0{height:0rem}.vls-y1{height:1rem}.vls-y2{height:2rem}.vls-y3{height:3rem}.vls-y4{height:4rem}.vls-y5{height:5rem}.vls-y6{height:6rem}.vls-y7{height:7rem}.vls-y8{height:8rem}.vls-y9{height:9rem}.vls-y10{height:10rem}.vls-y15{height:15rem}.vls-y20{height:20rem}.vls-y25{height:25rem}.vls-y30{height:30rem}.vls-y35{height:35rem}.vls-y40{height:40rem}.vls-y45{height:45rem}.vls-y50{height:50rem}.vls-y55{height:55rem}.vls-y60{height:60rem}.vls-y65{height:65rem}.vls-y70{height:70rem}.vls-y75{height:75rem}.vls-y80{height:80rem}.vls-y85{height:85rem}.vls-y90{height:90rem}.vls-y95{height:95rem}.vls-y100{height:100rem}\n    /** height **/\n\n\n\n}\n\n/*ls (large screen)*/\n@media screen and (min-width:1024px) and (max-width:1440px)\n{\n  .ls-hidden{display: none}\n  .ls-fs0{font-size: 0em}.ls-fs0-1{font-size: 0.1em}.ls-fs0-2{font-size: 0.2em}.ls-fs0-3{font-size: 0.3em}.ls-fs0-4{font-size: 0.4em}.ls-fs0-5{font-size: 0.5em}.ls-fs0-6{font-size: 0.6em}.ls-fs0-7{font-size: 0.7em}.ls-fs0-8{font-size: 0.8em}.ls-fs0-9{font-size: 0.9em}.ls-fs1{font-size: 1em}.ls-fs1-1{font-size: 1.1em}.ls-fs1-2{font-size: 1.2em}.ls-fs1-3{font-size: 1.3em}.ls-fs1-4{font-size: 1.4em}.ls-fs1-5{font-size: 1.5em}.ls-fs1-6{font-size: 1.6em}.ls-fs1-7{font-size: 1.7em}.ls-fs1-8{font-size: 1.8em}.ls-fs1-9{font-size: 1.9em}.ls-fs2{font-size: 2em}.ls-fs3{font-size: 3em}.ls-fs4{font-size: 4em}.ls-fs5{font-size: 5em}.ls-fs6{font-size: 6em}\n\n  /** width **/\n  .ls-w0{width:0%}.ls-w1{width:1%}.ls-w2{width:2%}.ls-w3{width:3%}.ls-w4{width:4%}.ls-w5{width:5%}.ls-w6{width:6%}.ls-w7{width:7%}.ls-w8{width:8%}.ls-w9{width:9%}.ls-w10{width:10%}.ls-w15{width:15%}.ls-w20{width:20%}.ls-w25{width:25%}.ls-w30{width:30%}.ls-w35{width:35%}.ls-w40{width:40%}.ls-w45{width:45%}.ls-w50{width:50%}.ls-w55{width:55%}.ls-w60{width:60%}.ls-w65{width:65%}.ls-w70{width:70%}.ls-w75{width:75%}.ls-w80{width:80%}.ls-w85{width:85%}.ls-w90{width:90%}.ls-w95{width:95%}.ls-w100{width:100%}\n\n  .ls-x0{width:0rem}.ls-x1{width:1rem}.ls-x2{width:2rem}.ls-x3{width:3rem}.ls-x4{width:4rem}.ls-x5{width:5rem}.ls-x6{width:6rem}.ls-x7{width:7rem}.ls-x8{width:8rem}.ls-x9{width:9rem}.ls-x10{width:10rem}.ls-x15{width:15rem}.ls-x20{width:20rem}.ls-x25{width:25rem}.ls-x30{width:30rem}.ls-x35{width:35rem}.ls-x40{width:40rem}.ls-x45{width:45rem}.ls-x50{width:50rem}.ls-x55{width:55rem}.ls-x60{width:60rem}.ls-x65{width:65rem}.ls-x70{width:70rem}.ls-x75{width:75rem}.ls-x80{width:80rem}.ls-x85{width:85rem}.ls-x90{width:90rem}.ls-x95{width:95rem}.ls-x100{width:100rem}\n  /** width **/\n\n  /** height **/\n  .ls-h0{height:0%}.ls-h1{height:1%}.ls-h2{height:2%}.ls-h3{height:3%}.ls-h4{height:4%}.ls-h5{height:5%}.ls-h6{height:6%}.ls-h7{height:7%}.ls-h8{height:8%}.ls-h9{height:9%}.ls-h10{height:10%}.ls-h15{height:15%}.ls-h20{height:20%}.ls-h25{height:25%}.ls-h30{height:30%}.ls-h35{height:35%}.ls-h40{height:40%}.ls-h45{height:45%}.ls-h50{height:50%}.ls-h55{height:55%}.ls-h60{height:60%}.ls-h65{height:65%}.ls-h70{height:70%}.ls-h75{height:75%}.ls-h80{height:80%}.ls-h85{height:85%}.ls-h90{height:90%}.ls-h95{height:95%}.ls-h100{height:100%}\n\n  .ls-y0{height:0rem}.ls-y1{height:1rem}.ls-y2{height:2rem}.ls-y3{height:3rem}.ls-y4{height:4rem}.ls-y5{height:5rem}.ls-y6{height:6rem}.ls-y7{height:7rem}.ls-y8{height:8rem}.ls-y9{height:9rem}.ls-y10{height:10rem}.ls-y15{height:15rem}.ls-y20{height:20rem}.ls-y25{height:25rem}.ls-y30{height:30rem}.ls-y35{height:35rem}.ls-y40{height:40rem}.ls-y45{height:45rem}.ls-y50{height:50rem}.ls-y55{height:55rem}.ls-y60{height:60rem}.ls-y65{height:65rem}.ls-y70{height:70rem}.ls-y75{height:75rem}.ls-y80{height:80rem}.ls-y85{height:85rem}.ls-y90{height:90rem}.ls-y95{height:95rem}.ls-y100{height:100rem}\n  /** height **/\n\n\n\n}\n\n/*lms (large medium screen)*/\n@media screen and (min-width:768px) and (max-width:1023px)\n{\n  .lms-hidden{display: none}\n  .lms-fs0{font-size: 0em}.lms-fs0-1{font-size: 0.1em}.lms-fs0-2{font-size: 0.2em}.lms-fs0-3{font-size: 0.3em}.lms-fs0-4{font-size: 0.4em}.lms-fs0-5{font-size: 0.5em}.lms-fs0-6{font-size: 0.6em}.lms-fs0-7{font-size: 0.7em}.lms-fs0-8{font-size: 0.8em}.lms-fs0-9{font-size: 0.9em}.lms-fs1{font-size: 1em}.lms-fs1-1{font-size: 1.1em}.lms-fs1-2{font-size: 1.2em}.lms-fs1-3{font-size: 1.3em}.lms-fs1-4{font-size: 1.4em}.lms-fs1-5{font-size: 1.5em}.lms-fs1-6{font-size: 1.6em}.lms-fs1-7{font-size: 1.7em}.lms-fs1-8{font-size: 1.8em}.lms-fs1-9{font-size: 1.9em}.lms-fs2{font-size: 2em}.lms-fs3{font-size: 3em}.lms-fs4{font-size: 4em}.lms-fs5{font-size: 5em}.lms-fs6{font-size: 6em}\n\n  /** width **/\n  .lms-w0{width:0%}.lms-w1{width:1%}.lms-w2{width:2%}.lms-w3{width:3%}.lms-w4{width:4%}.lms-w5{width:5%}.lms-w6{width:6%}.lms-w7{width:7%}.lms-w8{width:8%}.lms-w9{width:9%}.lms-w10{width:10%}.lms-w15{width:15%}.lms-w20{width:20%}.lms-w25{width:25%}.lms-w30{width:30%}.lms-w35{width:35%}.lms-w40{width:40%}.lms-w45{width:45%}.lms-w50{width:50%}.lms-w55{width:55%}.lms-w60{width:60%}.lms-w65{width:65%}.lms-w70{width:70%}.lms-w75{width:75%}.lms-w80{width:80%}.lms-w85{width:85%}.lms-w90{width:90%}.lms-w95{width:95%}.lms-w100{width:100%}\n\n  .lms-x0{width:0rem}.lms-x1{width:1rem}.lms-x2{width:2rem}.lms-x3{width:3rem}.lms-x4{width:4rem}.lms-x5{width:5rem}.lms-x6{width:6rem}.lms-x7{width:7rem}.lms-x8{width:8rem}.lms-x9{width:9rem}.lms-x10{width:10rem}.lms-x15{width:15rem}.lms-x20{width:20rem}.lms-x25{width:25rem}.lms-x30{width:30rem}.lms-x35{width:35rem}.lms-x40{width:40rem}.lms-x45{width:45rem}.lms-x50{width:50rem}.lms-x55{width:55rem}.lms-x60{width:60rem}.lms-x65{width:65rem}.lms-x70{width:70rem}.lms-x75{width:75rem}.lms-x80{width:80rem}.lms-x85{width:85rem}.lms-x90{width:90rem}.lms-x95{width:95rem}.lms-x100{width:100rem}\n  /** width **/\n\n  /** height **/\n  .lms-h0{height:0%}.lms-h1{height:1%}.lms-h2{height:2%}.lms-h3{height:3%}.lms-h4{height:4%}.lms-h5{height:5%}.lms-h6{height:6%}.lms-h7{height:7%}.lms-h8{height:8%}.lms-h9{height:9%}.lms-h10{height:10%}.lms-h15{height:15%}.lms-h20{height:20%}.lms-h25{height:25%}.lms-h30{height:30%}.lms-h35{height:35%}.lms-h40{height:40%}.lms-h45{height:45%}.lms-h50{height:50%}.lms-h55{height:55%}.lms-h60{height:60%}.lms-h65{height:65%}.lms-h70{height:70%}.lms-h75{height:75%}.lms-h80{height:80%}.lms-h85{height:85%}.lms-h90{height:90%}.lms-h95{height:95%}.lms-h100{height:100%}\n\n  .lms-y0{height:0rem}.lms-y1{height:1rem}.lms-y2{height:2rem}.lms-y3{height:3rem}.lms-y4{height:4rem}.lms-y5{height:5rem}.lms-y6{height:6rem}.lms-y7{height:7rem}.lms-y8{height:8rem}.lms-y9{height:9rem}.lms-y10{height:10rem}.lms-y15{height:15rem}.lms-y20{height:20rem}.lms-y25{height:25rem}.lms-y30{height:30rem}.lms-y35{height:35rem}.lms-y40{height:40rem}.lms-y45{height:45rem}.lms-y50{height:50rem}.lms-y55{height:55rem}.lms-y60{height:60rem}.lms-y65{height:65rem}.lms-y70{height:70rem}.lms-y75{height:75rem}.lms-y80{height:80rem}.lms-y85{height:85rem}.lms-y90{height:90rem}.lms-y95{height:95rem}.lms-y100{height:100rem}\n  /** height **/\n\n\n\n}\n\n/*ms(medium-screen)*/\n@media screen and (min-width:426px) and (max-width:767px)\n{\n  .ms-hidden{display: none}\n  .ms-fs0{font-size: 0em}.ms-fs0-1{font-size: 0.1em}.ms-fs0-2{font-size: 0.2em}.ms-fs0-3{font-size: 0.3em}.ms-fs0-4{font-size: 0.4em}.ms-fs0-5{font-size: 0.5em}.ms-fs0-6{font-size: 0.6em}.ms-fs0-7{font-size: 0.7em}.ms-fs0-8{font-size: 0.8em}.ms-fs0-9{font-size: 0.9em}.ms-fs1{font-size: 1em}.ms-fs1-1{font-size: 1.1em}.ms-fs1-2{font-size: 1.2em}.ms-fs1-3{font-size: 1.3em}.ms-fs1-4{font-size: 1.4em}.ms-fs1-5{font-size: 1.5em}.ms-fs1-6{font-size: 1.6em}.ms-fs1-7{font-size: 1.7em}.ms-fs1-8{font-size: 1.8em}.ms-fs1-9{font-size: 1.9em}.ms-fs2{font-size: 2em}.ms-fs3{font-size: 3em}.ms-fs4{font-size: 4em}.ms-fs5{font-size: 5em}.ms-fs6{font-size: 6em}\n\n  /** width **/\n  .ms-w0{width:0%}.ms-w1{width:1%}.ms-w2{width:2%}.ms-w3{width:3%}.ms-w4{width:4%}.ms-w5{width:5%}.ms-w6{width:6%}.ms-w7{width:7%}.ms-w8{width:8%}.ms-w9{width:9%}.ms-w10{width:10%}.ms-w15{width:15%}.ms-w20{width:20%}.ms-w25{width:25%}.ms-w30{width:30%}.ms-w35{width:35%}.ms-w40{width:40%}.ms-w45{width:45%}.ms-w50{width:50%}.ms-w55{width:55%}.ms-w60{width:60%}.ms-w65{width:65%}.ms-w70{width:70%}.ms-w75{width:75%}.ms-w80{width:80%}.ms-w85{width:85%}.ms-w90{width:90%}.ms-w95{width:95%}.ms-w100{width:100%}\n\n  .ms-x0{width:0rem}.ms-x1{width:1rem}.ms-x2{width:2rem}.ms-x3{width:3rem}.ms-x4{width:4rem}.ms-x5{width:5rem}.ms-x6{width:6rem}.ms-x7{width:7rem}.ms-x8{width:8rem}.ms-x9{width:9rem}.ms-x10{width:10rem}.ms-x15{width:15rem}.ms-x20{width:20rem}.ms-x25{width:25rem}.ms-x30{width:30rem}.ms-x35{width:35rem}.ms-x40{width:40rem}.ms-x45{width:45rem}.ms-x50{width:50rem}.ms-x55{width:55rem}.ms-x60{width:60rem}.ms-x65{width:65rem}.ms-x70{width:70rem}.ms-x75{width:75rem}.ms-x80{width:80rem}.ms-x85{width:85rem}.ms-x90{width:90rem}.ms-x95{width:95rem}.ms-x100{width:100rem}\n  /** width **/\n\n  /** height **/\n  .ms-h0{height:0%}.ms-h1{height:1%}.ms-h2{height:2%}.ms-h3{height:3%}.ms-h4{height:4%}.ms-h5{height:5%}.ms-h6{height:6%}.ms-h7{height:7%}.ms-h8{height:8%}.ms-h9{height:9%}.ms-h10{height:10%}.ms-h15{height:15%}.ms-h20{height:20%}.ms-h25{height:25%}.ms-h30{height:30%}.ms-h35{height:35%}.ms-h40{height:40%}.ms-h45{height:45%}.ms-h50{height:50%}.ms-h55{height:55%}.ms-h60{height:60%}.ms-h65{height:65%}.ms-h70{height:70%}.ms-h75{height:75%}.ms-h80{height:80%}.ms-h85{height:85%}.ms-h90{height:90%}.ms-h95{height:95%}.ms-h100{height:100%}\n\n  .ms-y0{height:0rem}.ms-y1{height:1rem}.ms-y2{height:2rem}.ms-y3{height:3rem}.ms-y4{height:4rem}.ms-y5{height:5rem}.ms-y6{height:6rem}.ms-y7{height:7rem}.ms-y8{height:8rem}.ms-y9{height:9rem}.ms-y10{height:10rem}.ms-y15{height:15rem}.ms-y20{height:20rem}.ms-y25{height:25rem}.ms-y30{height:30rem}.ms-y35{height:35rem}.ms-y40{height:40rem}.ms-y45{height:45rem}.ms-y50{height:50rem}.ms-y55{height:55rem}.ms-y60{height:60rem}.ms-y65{height:65rem}.ms-y70{height:70rem}.ms-y75{height:75rem}.ms-y80{height:80rem}.ms-y85{height:85rem}.ms-y90{height:90rem}.ms-y95{height:95rem}.ms-y100{height:100rem}\n  /** height **/\n\n\n\n\n}\n\n/*•\tMobilel: ss(small screen)*/\n@media screen and (max-width:425px)\n{\n  .ss-hidden{display: none}\n  .ss-fs0{font-size: 0em}.ss-fs0-1{font-size: 0.1em}.ss-fs0-2{font-size: 0.2em}.ss-fs0-3{font-size: 0.3em}.ss-fs0-4{font-size: 0.4em}.ss-fs0-5{font-size: 0.5em}.ss-fs0-6{font-size: 0.6em}.ss-fs0-7{font-size: 0.7em}.ss-fs0-8{font-size: 0.8em}.ss-fs0-9{font-size: 0.9em}.ss-fs1{font-size: 1em}.ss-fs1-1{font-size: 1.1em}.ss-fs1-2{font-size: 1.2em}.ss-fs1-3{font-size: 1.3em}.ss-fs1-4{font-size: 1.4em}.ss-fs1-5{font-size: 1.5em}.ss-fs1-6{font-size: 1.6em}.ss-fs1-7{font-size: 1.7em}.ss-fs1-8{font-size: 1.8em}.ss-fs1-9{font-size: 1.9em}.ss-fs2{font-size: 2em}.ss-fs3{font-size: 3em}.ss-fs4{font-size: 4em}.ss-fs5{font-size: 5em}.ss-fs6{font-size: 6em}\n\n  /** width **/\n  .ss-w0{width:0%}.ss-w1{width:1%}.ss-w2{width:2%}.ss-w3{width:3%}.ss-w4{width:4%}.ss-w5{width:5%}.ss-w6{width:6%}.ss-w7{width:7%}.ss-w8{width:8%}.ss-w9{width:9%}.ss-w10{width:10%}.ss-w15{width:15%}.ss-w20{width:20%}.ss-w25{width:25%}.ss-w30{width:30%}.ss-w35{width:35%}.ss-w40{width:40%}.ss-w45{width:45%}.ss-w50{width:50%}.ss-w55{width:55%}.ss-w60{width:60%}.ss-w65{width:65%}.ss-w70{width:70%}.ss-w75{width:75%}.ss-w80{width:80%}.ss-w85{width:85%}.ss-w90{width:90%}.ss-w95{width:95%}.ss-w100{width:100%}\n\n  .ss-x0{width:0rem}.ss-x1{width:1rem}.ss-x2{width:2rem}.ss-x3{width:3rem}.ss-x4{width:4rem}.ss-x5{width:5rem}.ss-x6{width:6rem}.ss-x7{width:7rem}.ss-x8{width:8rem}.ss-x9{width:9rem}.ss-x10{width:10rem}.ss-x15{width:15rem}.ss-x20{width:20rem}.ss-x25{width:25rem}.ss-x30{width:30rem}.ss-x35{width:35rem}.ss-x40{width:40rem}.ss-x45{width:45rem}.ss-x50{width:50rem}.ss-x55{width:55rem}.ss-x60{width:60rem}.ss-x65{width:65rem}.ss-x70{width:70rem}.ss-x75{width:75rem}.ss-x80{width:80rem}.ss-x85{width:85rem}.ss-x90{width:90rem}.ss-x95{width:95rem}.ss-x100{width:100rem}\n  /** width **/\n\n  /** height **/\n  .ss-h0{height:0%}.ss-h1{height:1%}.ss-h2{height:2%}.ss-h3{height:3%}.ss-h4{height:4%}.ss-h5{height:5%}.ss-h6{height:6%}.ss-h7{height:7%}.ss-h8{height:8%}.ss-h9{height:9%}.ss-h10{height:10%}.ss-h15{height:15%}.ss-h20{height:20%}.ss-h25{height:25%}.ss-h30{height:30%}.ss-h35{height:35%}.ss-h40{height:40%}.ss-h45{height:45%}.ss-h50{height:50%}.ss-h55{height:55%}.ss-h60{height:60%}.ss-h65{height:65%}.ss-h70{height:70%}.ss-h75{height:75%}.ss-h80{height:80%}.ss-h85{height:85%}.ss-h90{height:90%}.ss-h95{height:95%}.ss-h100{height:100%}\n\n  .ss-y0{height:0rem}.ss-y1{height:1rem}.ss-y2{height:2rem}.ss-y3{height:3rem}.ss-y4{height:4rem}.ss-y5{height:5rem}.ss-y6{height:6rem}.ss-y7{height:7rem}.ss-y8{height:8rem}.ss-y9{height:9rem}.ss-y10{height:10rem}.ss-y15{height:15rem}.ss-y20{height:20rem}.ss-y25{height:25rem}.ss-y30{height:30rem}.ss-y35{height:35rem}.ss-y40{height:40rem}.ss-y45{height:45rem}.ss-y50{height:50rem}.ss-y55{height:55rem}.ss-y60{height:60rem}.ss-y65{height:65rem}.ss-y70{height:70rem}.ss-y75{height:75rem}.ss-y80{height:80rem}.ss-y85{height:85rem}.ss-y90{height:90rem}.ss-y95{height:95rem}.ss-y100{height:100rem}\n  /** height **/\n\n\n\n}\n", ""]);
+exports.push([module.i, "/*!\r\n * Rs v1.0.0 (https://github.com/hktom/rs)\r\n * Copyright 2018-2019 Tom Hikari\r\n * Licensed under MIT (https://github.com/hktom/rs)\r\n*/\r\n\r\n/*page default */\r\nhtml, body{height: 100%;width: 100%!important} #wrapper, #app{max-width: 100%;height:100%;position:relative;margin: auto;min-height: 100%!important} *{margin: 0;padding: 0}\r\n/*page default */\r\n\r\n /** font size fs **/\r\n .fs0{font-size: 0em}.fs0-1{font-size: 0.1em}.fs0-2{font-size: 0.2em}.fs0-3{font-size: 0.3em}.fs0-4{font-size: 0.4em}.fs0-5{font-size: 0.5em}.fs0-6{font-size: 0.6em}.fs0-7{font-size: 0.7em}.fs0-8{font-size: 0.8em}.fs0-9{font-size: 0.9em}.fs1{font-size: 1em}.fs1-1{font-size: 1.1em}.fs1-2{font-size: 1.2em}.fs1-3{font-size: 1.3em}.fs1-4{font-size: 1.4em}.fs1-5{font-size: 1.5em}.fs1-6{font-size: 1.6em}.fs1-7{font-size: 1.7em}.fs1-8{font-size: 1.8em}.fs1-9{font-size: 1.9em}.fs2{font-size: 2em}.fs3{font-size: 3em}.fs4{font-size: 4em}.fs5{font-size: 5em}.fs6{font-size: 6em}\r\n/** font size fs **/\r\n\r\n/*font face */\r\n.serif{font-family: serif!important}\r\n.sans-serif{font-family: sans-serif!important}\r\n.cursive{font-family: cursive!important} .monospace{font-family: monospace!important} .fantasy{font-family: fantasy!important} .arial{font-family: Arial!important} .calibri{font-family: Calibri!important} .helvetica{font-family: Helvetica!important} .roman{font-family: new time roman!important}.consolas{font-family: Consolas!important}\r\n.Console{font-family: Console!important}\r\n/*font face */\r\n\r\n/** font weight style **/\r\n.bold{font-weight: bold!important}.lighter{font-weight:lighter!important}.bolder{font-weight:bolder!important}\r\n.italic{font-style: italic}.oblique{font-style:oblique;}\r\n.uppercase{text-transform: uppercase}.lowercase{text-transform: lowercase}.capitalize{text-transform: capitalize}.fullwidth{text-transform: full-width}\r\n.decoration-null{text-decoration: none!important}.underline{text-decoration: underline}.overline{text-decoration: overline}.through{text-decoration: line-through}\r\n.left{text-align: left}.right{text-align: right}.center{text-align: center} .justify{text-align: justify}\r\n.text-top{vertical-align: text-top}.text-middle{vertical-align: middle}.text-bottom{vertical-align: text-bottom}\r\n.baseline{vertical-align: baseline}.sub{vertical-align: sub}.sup{vertical-align: super}.suptop{vertical-align: top}.bottom{vertical-align: bottom}\r\n\r\n.text-inherit{line-height: inherit}\r\n.text-y0{line-height: 0em}.text-y0-1{line-height: 0.1em}.text-y0-2{line-height: 0.2em}.text-y0-3{line-height: 0.3em}.text-y0-4{line-height: 0.4em}.text-y0-5{line-height: 0.5em}.text-y0-6{line-height: 0.6em}.text-y0-7{line-height: 0.7em}.text-y0-8{line-height: 0.8em}.text-y0-9{line-height: 0.9em}.text-y1{line-height: 1em}\r\n/* text-style */\r\n\r\n\r\n/* box style */\r\n.ofhidden{overflow: hidden}.ofscroll{overflow: scroll}.ofauto{overflow: auto}.ofvisible{overflow:visible}.ofinherit{overflow:inherit}\r\n.ofhidden-x{overflow-x: hidden}.ofscroll-x{overflow-x: scroll}.ofauto-x{overflow-x: auto}.ofvisible-x{overflow-x:visible}.ofinherit-x{overflow-x:inherit}\r\n.ofhidden-y{overflow-y: hidden}.ofscroll-y{overflow-y: scroll}.ofauto-y{overflow-y: auto}.ofvisible-y{overflow-y:visible}.ofinherit-y{overflow-y:inherit}\r\n/* box style */\r\n\r\n\r\n/** border radius **/\r\n.br0{border-radius:0rem}.br1{border-radius:1rem}.br2{border-radius:2rem}.br3{border-radius:3rem}.br4{border-radius:4rem}.br5{border-radius:5rem}.br6{border-radius:6rem}.br7{border-radius:7rem}.br8{border-radius:8rem}.br9{border-radius:9rem}\r\n.br10{border-radius:10rem}\r\n/*border radius */\r\n\r\n/* margin */\r\n.mauto{margin: auto}\r\n.m0{margin:0%}.m1{margin:1%}.m2{margin:2%}.m3{margin:3%}.m4{margin:4%}.m5{margin:5%}.m6{margin:6%}.m7{margin:7%}.m8{margin:8%}.m9{margin:9%}.m10{margin:10%}.m15{margin:15%}.m20{margin:20%}.m25{margin:25%}.m30{margin:30%}.m35{margin:35%}.m40{margin:40%}.m45{margin:45%}.m50{margin:50%}.m55{margin:55%}.m60{margin:60%}.m65{margin:65%}.m70{margin:70%}  .m75{margin:75%}.m80{margin:80%}.m85{margin:85%}.m90{margin:90%}.m95{margin:95%}.m100{margin:100%}\r\n/* margin */\r\n\r\n/** padding all **/\r\n.pauto{padding:auto}.p0{padding:0%}.p1{padding:1%}.p2{padding:2%}.p3{padding:3%}.p4{padding:4%}.p5{padding:5%}.p6{padding:6%}.p7{padding:7%}.p8{padding:8%}.p9{padding:9%}.p10{padding:10%}.p15{padding:15%}.p20{padding:20%}.p25{padding:25%}.p30{padding:30%}.p35{padding:35%}.p40{padding:40%}.p45{padding:45%}.p50{padding:50%}.p55{padding:55%}.p60{padding:60%}.p65{padding:65%}.p70{padding:70%}  .p75{padding:75%}.p80{padding:80%}.p85{padding:85%}.p90{padding:90%}.p95{padding:95%}.p100{padding:100%}\r\n\r\n/** margin top **/\r\n.mt0{margin-top:0%;top:0}.mt1{margin-top:1%}.mt2{margin-top:2%}.mt3{margin-top:3%}.mt4{margin-top:4%}.mt5{margin-top:5%}.mt6{margin-top:6%}.mt7{margin-top:7%}.mt8{margin-top:8%}.mt9{margin-top:9%}.mt10{margin-top:10%}.mt15{margin-top:15%}.mt20{margin-top:20%}.mt25{margin-top:25%}.mt30{margin-top:30%}.mt35{margin-top:35%}.mt40{margin-top:40%}.mt45{margin-top:45%}.mt50{margin-top:50%}.mt55{margin-top:55%}.mt60{margin-top:60%}.mt65{margin-top:65%}.mt70{margin-top:70%}  .mt75{margin-top:75%}.mt80{margin-top:80%}.mt85{margin-top:85%}.mt90{margin-top:90%}.mt95{margin-top:95%}.mt100{margin-top:100%}\r\n/** margin top **/\r\n\r\n/** margin bottom **/\r\n.mb0{margin-bottom:0%}.mb1{margin-bottom:1%}.mb2{margin-bottom:2%}.mb3{margin-bottom:3%}.mb4{margin-bottom:4%}.mb5{margin-bottom:5%}.mb6{margin-bottom:6%}.mb7{margin-bottom:7%}.mb8{margin-bottom:8%}.mb9{margin-bottom:9%}.mb10{margin-bottom:10%}.mb15{margin-bottom:15%}.mb20{margin-bottom:20%}.mb25{margin-bottom:25%}.mb30{margin-bottom:30%}.mb35{margin-bottom:35%}.mb40{margin-bottom:40%}.mb45{margin-bottom:45%}.mb50{margin-bottom:50%}.mb55{margin-bottom:55%}.mb60{margin-bottom:60%}.mb65{margin-bottom:65%}.mb70{margin-bottom:70%}  .mb75{margin-bottom:75%}.mb80{margin-bottom:80%}.mb85{margin-bottom:85%}.mb90{margin-bottom:90%}.mb95{margin-bottom:95%}.mb100{margin-bottom:100%}\r\n/** margin bottom **/\r\n\r\n/** margin left **/\r\n.ml0{margin-left:0%}.ml1{margin-left:1%}.ml2{margin-left:2%}.ml3{margin-left:3%}.ml4{margin-left:4%}.ml5{margin-left:5%}.ml6{margin-left:6%}.ml7{margin-left:7%}.ml8{margin-left:8%}.ml9{margin-left:9%}.ml10{margin-left:10%}.ml15{margin-left:15%}.ml20{margin-left:20%}.ml25{margin-left:25%}.ml30{margin-left:30%}.ml35{margin-left:35%}.ml40{margin-left:40%}.ml45{margin-left:45%}.ml50{margin-left:50%}.ml55{margin-left:55%}.ml60{margin-left:60%}.ml65{margin-left:65%}.ml70{margin-left:70%}  .ml75{margin-left:75%}.ml80{margin-left:80%}.ml85{margin-left:85%}.ml90{margin-left:90%}.ml95{margin-left:95%}.ml100{margin-left:100%}\r\n/** margin left **/\r\n\r\n/** margin right **/\r\n.mr0{margin-right:0%}.mr1{margin-right:1%}.mr2{margin-right:2%}.mr3{margin-right:3%}.mr4{margin-right:4%}.mr5{margin-right:5%}.mr6{margin-right:6%}.mr7{margin-right:7%}.mr8{margin-right:8%}.mr9{margin-right:9%}.mr10{margin-right:10%}.mr15{margin-right:15%}.mr20{margin-right:20%}.mr25{margin-right:25%}.mr30{margin-right:30%}.mr35{margin-right:35%}.mr40{margin-right:40%}.mr45{margin-right:45%}.mr50{margin-right:50%}.mr55{margin-right:55%}.mr60{margin-right:60%}.mr65{margin-right:65%}.mr70{margin-right:70%}  .mr75{margin-right:75%}.mr80{margin-right:80%}.mr85{margin-right:85%}.mr90{margin-right:90%}.mr95{margin-right:95%}.mr100{margin-right:100%}\r\n/** margin right **/\r\n\r\n\r\n/** padding top **/\r\n.pt0{padding-top:0%}.pt1{padding-top:1%}.pt2{padding-top:2%}.pt3{padding-top:3%}.pt4{padding-top:4%}.pt5{padding-top:5%}.pt6{padding-top:6%}.pt7{padding-top:7%}.pt8{padding-top:8%}.pt9{padding-top:9%}.pt10{padding-top:10%}.pt15{padding-top:15%}.pt20{padding-top:20%}.pt25{padding-top:25%}.pt30{padding-top:30%}.pt35{padding-top:35%}.pt40{padding-top:40%}.pt45{padding-top:45%}.pt50{padding-top:50%}.pt55{padding-top:55%}.pt60{padding-top:60%}.pt65{padding-top:65%}.pt70{padding-top:70%}  .pt75{padding-top:75%}.pt80{padding-top:80%}.pt85{padding-top:85%}.pt90{padding-top:90%}.pt95{padding-top:95%}.pt100{padding-top:100%}\r\n/** padding top **/\r\n\r\n/** padding bottop **/\r\n.pb0{padding-bottom:0%}.pb1{padding-bottom:1%}.pb2{padding-bottom:2%}.pb3{padding-bottom:3%}.pb4{padding-bottom:4%}.pb5{padding-bottom:5%}.pb6{padding-bottom:6%}.pb7{padding-bottom:7%}.pb8{padding-bottom:8%}.pb9{padding-bottom:9%}.pb10{padding-bottom:10%}.pb15{padding-bottom:15%}.pb20{padding-bottom:20%}.pb25{padding-bottom:25%}.pb30{padding-bottom:30%}.pb35{padding-bottom:35%}.pb40{padding-bottom:40%}.pb45{padding-bottom:45%}.pb50{padding-bottom:50%}.pb55{padding-bottom:55%}.pb60{padding-bottom:60%}.pb65{padding-bottom:65%}.pb70{padding-bottom:70%}  .pb75{padding-bottom:75%}.pb80{padding-bottom:80%}.pb85{padding-bottom:85%}.pb90{padding-bottom:90%}.pb95{padding-bottom:95%}.pb100{padding-bottom:100%}\r\n/** padding bottop **/\r\n\r\n/** padding left **/\r\n.pl0{padding-left:0%}.pl1{padding-left:1%}.pl2{padding-left:2%}.pl3{padding-left:3%}.pl4{padding-left:4%}.pl5{padding-left:5%}.pl6{padding-left:6%}.pl7{padding-left:7%}.pl8{padding-left:8%}.pl9{padding-left:9%}.pl10{padding-left:10%}.pl15{padding-left:15%}.pl20{padding-left:20%}.pl25{padding-left:25%}.pl30{padding-left:30%}.pl35{padding-left:35%}.pl40{padding-left:40%}.pl45{padding-left:45%}.pl50{padding-left:50%}.pl55{padding-left:55%}.pl60{padding-left:60%}.pl65{padding-left:65%}.pl70{padding-left:70%}  .pl75{padding-left:75%}.pl80{padding-left:80%}.pl85{padding-left:85%}.pl90{padding-left:90%}.pl95{padding-left:95%}.pl100{padding-left:100%}\r\n/** padding left **/\r\n\r\n/** padding right **/\r\n.pr0{padding-right:0%}.pr1{padding-right:1%}.pr2{padding-right:2%}.pr3{padding-right:3%}.pr4{padding-right:4%}.pr5{padding-right:5%}.pr6{padding-right:6%}.pr7{padding-right:7%}.pr8{padding-right:8%}.pr9{padding-right:9%}.pr10{padding-right:10%}.pr15{padding-right:15%}.pr20{padding-right:20%}.pr25{padding-right:25%}.pr30{padding-right:30%}.pr35{padding-right:35%}.pr40{padding-right:40%}.pr45{padding-right:45%}.pr50{padding-right:50%}.pr55{padding-right:55%}.pr60{padding-right:60%}.pr65{padding-right:65%}.pr70{padding-right:70%}  .pr75{padding-right:75%}.pr80{padding-right:80%}.pr85{padding-right:85%}.pr90{padding-right:90%}.pr95{padding-right:95%}.pr100{padding-right:100%}\r\n/** padding right **/\r\n\r\n.inline{display: inline} .block{display: block} .inline-block{display: inline-block} .none{display: none} .table{display: table} .contents{display: contents} .hidden{visibility: hidden} .visible{visibility: visible}\r\n.v-collapse{visibility: collapse} .v-inherit{visibility: inherit}\r\n\r\n.list-none{list-style-type: none} .list-disc{list-style-type: disc} .list-circle{list-style-type: circle} .list-square{list-style-type: square} .list-decimal{list-style-type: decimal} .list-decimalzero{list-style-type: decimal-leading-zero} .list-loweralpha{list-style-type: lower-alpha} .list-upperalpha{list-style-type: upper-alpha} .list-loweroman{list-style-type: lower-roman} .list-upperroman{list-style-type:upper-roman}\r\n.list-outside{list-style-position: outside} .list-inside{list-style-position: inside}\r\n\r\n.cursor-auto{cursor: auto}.cursor-crosshair{cursor: crosshair}.cursor-default{cursor: default}.cursor-pointer{cursor: pointer}.cursor-move{cursor: move} .cursor-text{cursor: text} .cursor-wait{cursor: wait} .cursor-help{cursor:help}\r\n\r\n.static{position: static}.relative{position: relative} .absolute{position: absolute} .fixed{position: fixed}\r\n\r\n.float-left{float: left} .float-right{float: right} .float-none{float: none} .float-inherit{float: inherit}\r\n.clear-left{clear: left} .clear-right{clear: right} .clear-both{clear: both}\r\n\r\n.fitme{width: 100%;height: 100%}\r\n.back{z-index: -9999}\r\n.front{z-index: 9999}\r\n.contain{-o-object-fit: contain;object-fit: contain} .cover{-o-object-fit: cover;object-fit: cover} .fill{-o-object-fit: fill;object-fit: fill} .scale-down{-o-object-fit: scale-down;object-fit: scale-down} .fit-none{-o-object-fit: none;object-fit: none}\r\n.imgtop{-o-object-position: top;object-position: top}.imgbottom{-o-object-position:bottom;object-position:bottom}.imgcenter{-o-object-position:center;object-position:center}.imgleft{-o-object-position:left;object-position:left}.imgright{-o-object-position:right;object-position:right}\r\n\r\n/** width **/\r\n.w0{width:0%}.w1{width:1%}.w2{width:2%}.w3{width:3%}.w4{width:4%}.w5{width:5%}.w6{width:6%}.w7{width:7%}.w8{width:8%}.w9{width:9%}.w10{width:10%}.w15{width:15%}.w20{width:20%}.w25{width:25%}.w30{width:30%}.w35{width:35%}.w40{width:40%}.w45{width:45%}.w50{width:50%}.w55{width:55%}.w60{width:60%}.w65{width:65%}.w70{width:70%}.w75{width:75%}.w80{width:80%}.w85{width:85%}.w90{width:90%}.w95{width:95%}.w100{width:100%}\r\n\r\n.x0{width:0rem}.x1{width:1rem}.x2{width:2rem}.x3{width:3rem}.x4{width:4rem}.x5{width:5rem}.x6{width:6rem}.x7{width:7rem}.x8{width:8rem}.x9{width:9rem}.x10{width:10rem}.x15{width:15rem}.x20{width:20rem}.x25{width:25rem}.x30{width:30rem}.x35{width:35rem}.x40{width:40rem}.x45{width:45rem}.x50{width:50rem}.x55{width:55rem}.x60{width:60rem}.x65{width:65rem}.x70{width:70rem}.x75{width:75rem}.x80{width:80rem}.x85{width:85rem}.x90{width:90rem}.x95{width:95rem}.x100{width:100rem}\r\n/** width **/\r\n\r\n/** height **/\r\n.h0{height:0%}.h1{height:1%}.h2{height:2%}.h3{height:3%}.h4{height:4%}.h5{height:5%}.h6{height:6%}.h7{height:7%}.h8{height:8%}.h9{height:9%}.h10{height:10%}.h15{height:15%}.h20{height:20%}.h25{height:25%}.h30{height:30%}.h35{height:35%}.h40{height:40%}.h45{height:45%}.h50{height:50%}.h55{height:55%}.h60{height:60%}.h65{height:65%}.h70{height:70%}.h75{height:75%}.h80{height:80%}.h85{height:85%}.h90{height:90%}.h95{height:95%}.h100{height:100%}\r\n\r\n.y0{height:0rem}.y1{height:1rem}.y2{height:2rem}.y3{height:3rem}.y4{height:4rem}.y5{height:5rem}.y6{height:6rem}.y7{height:7rem}.y8{height:8rem}.y9{height:9rem}.y10{height:10rem}.y15{height:15rem}.y20{height:20rem}.y25{height:25rem}.y30{height:30rem}.y35{height:35rem}.y40{height:40rem}.y45{height:45rem}.y50{height:50rem}.y55{height:55rem}.y60{height:60rem}.y65{height:65rem}.y70{height:70rem}.y75{height:75rem}.y80{height:80rem}.y85{height:85rem}.y90{height:90rem}.y95{height:95rem}.y100{height:100rem}\r\n/** height **/\r\n\r\n/*vls (very large screen)*/\r\n@media screen and (min-width:1441px)\r\n{\r\n    .vls-hidden{display: none}\r\n    .vls-fs0{font-size: 0em}.vls-fs0-1{font-size: 0.1em}.vls-fs0-2{font-size: 0.2em}.vls-fs0-3{font-size: 0.3em}.vls-fs0-4{font-size: 0.4em}.vls-fs0-5{font-size: 0.5em}.vls-fs0-6{font-size: 0.6em}.vls-fs0-7{font-size: 0.7em}.vls-fs0-8{font-size: 0.8em}.vls-fs0-9{font-size: 0.9em}.vls-fs1{font-size: 1em}.vls-fs1-1{font-size: 1.1em}.vls-fs1-2{font-size: 1.2em}.vls-fs1-3{font-size: 1.3em}.vls-fs1-4{font-size: 1.4em}.vls-fs1-5{font-size: 1.5em}.vls-fs1-6{font-size: 1.6em}.vls-fs1-7{font-size: 1.7em}.vls-fs1-8{font-size: 1.8em}.vls-fs1-9{font-size: 1.9em}.vls-fs2{font-size: 2em}.vls-fs3{font-size: 3em}.vls-fs4{font-size: 4em}.vls-fs5{font-size: 5em}.vls-fs6{font-size: 6em}\r\n\r\n    /** width **/\r\n    .vls-w0{width:0%}.vls-w1{width:1%}.vls-w2{width:2%}.vls-w3{width:3%}.vls-w4{width:4%}.vls-w5{width:5%}.vls-w6{width:6%}.vls-w7{width:7%}.vls-w8{width:8%}.vls-w9{width:9%}.vls-w10{width:10%}.vls-w15{width:15%}.vls-w20{width:20%}.vls-w25{width:25%}.vls-w30{width:30%}.vls-w35{width:35%}.vls-w40{width:40%}.vls-w45{width:45%}.vls-w50{width:50%}.vls-w55{width:55%}.vls-w60{width:60%}.vls-w65{width:65%}.vls-w70{width:70%}.vls-w75{width:75%}.vls-w80{width:80%}.vls-w85{width:85%}.vls-w90{width:90%}.vls-w95{width:95%}.vls-w100{width:100%}\r\n\r\n    .vls-x0{width:0rem}.vls-x1{width:1rem}.vls-x2{width:2rem}.vls-x3{width:3rem}.vls-x4{width:4rem}.vls-x5{width:5rem}.vls-x6{width:6rem}.vls-x7{width:7rem}.vls-x8{width:8rem}.vls-x9{width:9rem}.vls-x10{width:10rem}.vls-x15{width:15rem}.vls-x20{width:20rem}.vls-x25{width:25rem}.vls-x30{width:30rem}.vls-x35{width:35rem}.vls-x40{width:40rem}.vls-x45{width:45rem}.vls-x50{width:50rem}.vls-x55{width:55rem}.vls-x60{width:60rem}.vls-x65{width:65rem}.vls-x70{width:70rem}.vls-x75{width:75rem}.vls-x80{width:80rem}.vls-x85{width:85rem}.vls-x90{width:90rem}.vls-x95{width:95rem}.vls-x100{width:100rem}\r\n    /** width **/\r\n\r\n    /** height **/\r\n    .vls-h0{height:0%}.vls-h1{height:1%}.vls-h2{height:2%}.vls-h3{height:3%}.vls-h4{height:4%}.vls-h5{height:5%}.vls-h6{height:6%}.vls-h7{height:7%}.vls-h8{height:8%}.vls-h9{height:9%}.vls-h10{height:10%}.vls-h15{height:15%}.vls-h20{height:20%}.vls-h25{height:25%}.vls-h30{height:30%}.vls-h35{height:35%}.vls-h40{height:40%}.vls-h45{height:45%}.vls-h50{height:50%}.vls-h55{height:55%}.vls-h60{height:60%}.vls-h65{height:65%}.vls-h70{height:70%}.vls-h75{height:75%}.vls-h80{height:80%}.vls-h85{height:85%}.vls-h90{height:90%}.vls-h95{height:95%}.vls-h100{height:100%}\r\n\r\n    .vls-y0{height:0rem}.vls-y1{height:1rem}.vls-y2{height:2rem}.vls-y3{height:3rem}.vls-y4{height:4rem}.vls-y5{height:5rem}.vls-y6{height:6rem}.vls-y7{height:7rem}.vls-y8{height:8rem}.vls-y9{height:9rem}.vls-y10{height:10rem}.vls-y15{height:15rem}.vls-y20{height:20rem}.vls-y25{height:25rem}.vls-y30{height:30rem}.vls-y35{height:35rem}.vls-y40{height:40rem}.vls-y45{height:45rem}.vls-y50{height:50rem}.vls-y55{height:55rem}.vls-y60{height:60rem}.vls-y65{height:65rem}.vls-y70{height:70rem}.vls-y75{height:75rem}.vls-y80{height:80rem}.vls-y85{height:85rem}.vls-y90{height:90rem}.vls-y95{height:95rem}.vls-y100{height:100rem}\r\n    /** height **/\r\n\r\n\r\n\r\n}\r\n\r\n/*ls (large screen)*/\r\n@media screen and (min-width:1024px) and (max-width:1440px)\r\n{\r\n  .ls-hidden{display: none}\r\n  .ls-fs0{font-size: 0em}.ls-fs0-1{font-size: 0.1em}.ls-fs0-2{font-size: 0.2em}.ls-fs0-3{font-size: 0.3em}.ls-fs0-4{font-size: 0.4em}.ls-fs0-5{font-size: 0.5em}.ls-fs0-6{font-size: 0.6em}.ls-fs0-7{font-size: 0.7em}.ls-fs0-8{font-size: 0.8em}.ls-fs0-9{font-size: 0.9em}.ls-fs1{font-size: 1em}.ls-fs1-1{font-size: 1.1em}.ls-fs1-2{font-size: 1.2em}.ls-fs1-3{font-size: 1.3em}.ls-fs1-4{font-size: 1.4em}.ls-fs1-5{font-size: 1.5em}.ls-fs1-6{font-size: 1.6em}.ls-fs1-7{font-size: 1.7em}.ls-fs1-8{font-size: 1.8em}.ls-fs1-9{font-size: 1.9em}.ls-fs2{font-size: 2em}.ls-fs3{font-size: 3em}.ls-fs4{font-size: 4em}.ls-fs5{font-size: 5em}.ls-fs6{font-size: 6em}\r\n\r\n  /** width **/\r\n  .ls-w0{width:0%}.ls-w1{width:1%}.ls-w2{width:2%}.ls-w3{width:3%}.ls-w4{width:4%}.ls-w5{width:5%}.ls-w6{width:6%}.ls-w7{width:7%}.ls-w8{width:8%}.ls-w9{width:9%}.ls-w10{width:10%}.ls-w15{width:15%}.ls-w20{width:20%}.ls-w25{width:25%}.ls-w30{width:30%}.ls-w35{width:35%}.ls-w40{width:40%}.ls-w45{width:45%}.ls-w50{width:50%}.ls-w55{width:55%}.ls-w60{width:60%}.ls-w65{width:65%}.ls-w70{width:70%}.ls-w75{width:75%}.ls-w80{width:80%}.ls-w85{width:85%}.ls-w90{width:90%}.ls-w95{width:95%}.ls-w100{width:100%}\r\n\r\n  .ls-x0{width:0rem}.ls-x1{width:1rem}.ls-x2{width:2rem}.ls-x3{width:3rem}.ls-x4{width:4rem}.ls-x5{width:5rem}.ls-x6{width:6rem}.ls-x7{width:7rem}.ls-x8{width:8rem}.ls-x9{width:9rem}.ls-x10{width:10rem}.ls-x15{width:15rem}.ls-x20{width:20rem}.ls-x25{width:25rem}.ls-x30{width:30rem}.ls-x35{width:35rem}.ls-x40{width:40rem}.ls-x45{width:45rem}.ls-x50{width:50rem}.ls-x55{width:55rem}.ls-x60{width:60rem}.ls-x65{width:65rem}.ls-x70{width:70rem}.ls-x75{width:75rem}.ls-x80{width:80rem}.ls-x85{width:85rem}.ls-x90{width:90rem}.ls-x95{width:95rem}.ls-x100{width:100rem}\r\n  /** width **/\r\n\r\n  /** height **/\r\n  .ls-h0{height:0%}.ls-h1{height:1%}.ls-h2{height:2%}.ls-h3{height:3%}.ls-h4{height:4%}.ls-h5{height:5%}.ls-h6{height:6%}.ls-h7{height:7%}.ls-h8{height:8%}.ls-h9{height:9%}.ls-h10{height:10%}.ls-h15{height:15%}.ls-h20{height:20%}.ls-h25{height:25%}.ls-h30{height:30%}.ls-h35{height:35%}.ls-h40{height:40%}.ls-h45{height:45%}.ls-h50{height:50%}.ls-h55{height:55%}.ls-h60{height:60%}.ls-h65{height:65%}.ls-h70{height:70%}.ls-h75{height:75%}.ls-h80{height:80%}.ls-h85{height:85%}.ls-h90{height:90%}.ls-h95{height:95%}.ls-h100{height:100%}\r\n\r\n  .ls-y0{height:0rem}.ls-y1{height:1rem}.ls-y2{height:2rem}.ls-y3{height:3rem}.ls-y4{height:4rem}.ls-y5{height:5rem}.ls-y6{height:6rem}.ls-y7{height:7rem}.ls-y8{height:8rem}.ls-y9{height:9rem}.ls-y10{height:10rem}.ls-y15{height:15rem}.ls-y20{height:20rem}.ls-y25{height:25rem}.ls-y30{height:30rem}.ls-y35{height:35rem}.ls-y40{height:40rem}.ls-y45{height:45rem}.ls-y50{height:50rem}.ls-y55{height:55rem}.ls-y60{height:60rem}.ls-y65{height:65rem}.ls-y70{height:70rem}.ls-y75{height:75rem}.ls-y80{height:80rem}.ls-y85{height:85rem}.ls-y90{height:90rem}.ls-y95{height:95rem}.ls-y100{height:100rem}\r\n  /** height **/\r\n\r\n\r\n\r\n}\r\n\r\n/*lms (large medium screen)*/\r\n@media screen and (min-width:768px) and (max-width:1023px)\r\n{\r\n  .lms-hidden{display: none}\r\n  .lms-fs0{font-size: 0em}.lms-fs0-1{font-size: 0.1em}.lms-fs0-2{font-size: 0.2em}.lms-fs0-3{font-size: 0.3em}.lms-fs0-4{font-size: 0.4em}.lms-fs0-5{font-size: 0.5em}.lms-fs0-6{font-size: 0.6em}.lms-fs0-7{font-size: 0.7em}.lms-fs0-8{font-size: 0.8em}.lms-fs0-9{font-size: 0.9em}.lms-fs1{font-size: 1em}.lms-fs1-1{font-size: 1.1em}.lms-fs1-2{font-size: 1.2em}.lms-fs1-3{font-size: 1.3em}.lms-fs1-4{font-size: 1.4em}.lms-fs1-5{font-size: 1.5em}.lms-fs1-6{font-size: 1.6em}.lms-fs1-7{font-size: 1.7em}.lms-fs1-8{font-size: 1.8em}.lms-fs1-9{font-size: 1.9em}.lms-fs2{font-size: 2em}.lms-fs3{font-size: 3em}.lms-fs4{font-size: 4em}.lms-fs5{font-size: 5em}.lms-fs6{font-size: 6em}\r\n\r\n  /** width **/\r\n  .lms-w0{width:0%}.lms-w1{width:1%}.lms-w2{width:2%}.lms-w3{width:3%}.lms-w4{width:4%}.lms-w5{width:5%}.lms-w6{width:6%}.lms-w7{width:7%}.lms-w8{width:8%}.lms-w9{width:9%}.lms-w10{width:10%}.lms-w15{width:15%}.lms-w20{width:20%}.lms-w25{width:25%}.lms-w30{width:30%}.lms-w35{width:35%}.lms-w40{width:40%}.lms-w45{width:45%}.lms-w50{width:50%}.lms-w55{width:55%}.lms-w60{width:60%}.lms-w65{width:65%}.lms-w70{width:70%}.lms-w75{width:75%}.lms-w80{width:80%}.lms-w85{width:85%}.lms-w90{width:90%}.lms-w95{width:95%}.lms-w100{width:100%}\r\n\r\n  .lms-x0{width:0rem}.lms-x1{width:1rem}.lms-x2{width:2rem}.lms-x3{width:3rem}.lms-x4{width:4rem}.lms-x5{width:5rem}.lms-x6{width:6rem}.lms-x7{width:7rem}.lms-x8{width:8rem}.lms-x9{width:9rem}.lms-x10{width:10rem}.lms-x15{width:15rem}.lms-x20{width:20rem}.lms-x25{width:25rem}.lms-x30{width:30rem}.lms-x35{width:35rem}.lms-x40{width:40rem}.lms-x45{width:45rem}.lms-x50{width:50rem}.lms-x55{width:55rem}.lms-x60{width:60rem}.lms-x65{width:65rem}.lms-x70{width:70rem}.lms-x75{width:75rem}.lms-x80{width:80rem}.lms-x85{width:85rem}.lms-x90{width:90rem}.lms-x95{width:95rem}.lms-x100{width:100rem}\r\n  /** width **/\r\n\r\n  /** height **/\r\n  .lms-h0{height:0%}.lms-h1{height:1%}.lms-h2{height:2%}.lms-h3{height:3%}.lms-h4{height:4%}.lms-h5{height:5%}.lms-h6{height:6%}.lms-h7{height:7%}.lms-h8{height:8%}.lms-h9{height:9%}.lms-h10{height:10%}.lms-h15{height:15%}.lms-h20{height:20%}.lms-h25{height:25%}.lms-h30{height:30%}.lms-h35{height:35%}.lms-h40{height:40%}.lms-h45{height:45%}.lms-h50{height:50%}.lms-h55{height:55%}.lms-h60{height:60%}.lms-h65{height:65%}.lms-h70{height:70%}.lms-h75{height:75%}.lms-h80{height:80%}.lms-h85{height:85%}.lms-h90{height:90%}.lms-h95{height:95%}.lms-h100{height:100%}\r\n\r\n  .lms-y0{height:0rem}.lms-y1{height:1rem}.lms-y2{height:2rem}.lms-y3{height:3rem}.lms-y4{height:4rem}.lms-y5{height:5rem}.lms-y6{height:6rem}.lms-y7{height:7rem}.lms-y8{height:8rem}.lms-y9{height:9rem}.lms-y10{height:10rem}.lms-y15{height:15rem}.lms-y20{height:20rem}.lms-y25{height:25rem}.lms-y30{height:30rem}.lms-y35{height:35rem}.lms-y40{height:40rem}.lms-y45{height:45rem}.lms-y50{height:50rem}.lms-y55{height:55rem}.lms-y60{height:60rem}.lms-y65{height:65rem}.lms-y70{height:70rem}.lms-y75{height:75rem}.lms-y80{height:80rem}.lms-y85{height:85rem}.lms-y90{height:90rem}.lms-y95{height:95rem}.lms-y100{height:100rem}\r\n  /** height **/\r\n\r\n\r\n\r\n}\r\n\r\n/*ms(medium-screen)*/\r\n@media screen and (min-width:426px) and (max-width:767px)\r\n{\r\n  .ms-hidden{display: none}\r\n  .ms-fs0{font-size: 0em}.ms-fs0-1{font-size: 0.1em}.ms-fs0-2{font-size: 0.2em}.ms-fs0-3{font-size: 0.3em}.ms-fs0-4{font-size: 0.4em}.ms-fs0-5{font-size: 0.5em}.ms-fs0-6{font-size: 0.6em}.ms-fs0-7{font-size: 0.7em}.ms-fs0-8{font-size: 0.8em}.ms-fs0-9{font-size: 0.9em}.ms-fs1{font-size: 1em}.ms-fs1-1{font-size: 1.1em}.ms-fs1-2{font-size: 1.2em}.ms-fs1-3{font-size: 1.3em}.ms-fs1-4{font-size: 1.4em}.ms-fs1-5{font-size: 1.5em}.ms-fs1-6{font-size: 1.6em}.ms-fs1-7{font-size: 1.7em}.ms-fs1-8{font-size: 1.8em}.ms-fs1-9{font-size: 1.9em}.ms-fs2{font-size: 2em}.ms-fs3{font-size: 3em}.ms-fs4{font-size: 4em}.ms-fs5{font-size: 5em}.ms-fs6{font-size: 6em}\r\n\r\n  /** width **/\r\n  .ms-w0{width:0%}.ms-w1{width:1%}.ms-w2{width:2%}.ms-w3{width:3%}.ms-w4{width:4%}.ms-w5{width:5%}.ms-w6{width:6%}.ms-w7{width:7%}.ms-w8{width:8%}.ms-w9{width:9%}.ms-w10{width:10%}.ms-w15{width:15%}.ms-w20{width:20%}.ms-w25{width:25%}.ms-w30{width:30%}.ms-w35{width:35%}.ms-w40{width:40%}.ms-w45{width:45%}.ms-w50{width:50%}.ms-w55{width:55%}.ms-w60{width:60%}.ms-w65{width:65%}.ms-w70{width:70%}.ms-w75{width:75%}.ms-w80{width:80%}.ms-w85{width:85%}.ms-w90{width:90%}.ms-w95{width:95%}.ms-w100{width:100%}\r\n\r\n  .ms-x0{width:0rem}.ms-x1{width:1rem}.ms-x2{width:2rem}.ms-x3{width:3rem}.ms-x4{width:4rem}.ms-x5{width:5rem}.ms-x6{width:6rem}.ms-x7{width:7rem}.ms-x8{width:8rem}.ms-x9{width:9rem}.ms-x10{width:10rem}.ms-x15{width:15rem}.ms-x20{width:20rem}.ms-x25{width:25rem}.ms-x30{width:30rem}.ms-x35{width:35rem}.ms-x40{width:40rem}.ms-x45{width:45rem}.ms-x50{width:50rem}.ms-x55{width:55rem}.ms-x60{width:60rem}.ms-x65{width:65rem}.ms-x70{width:70rem}.ms-x75{width:75rem}.ms-x80{width:80rem}.ms-x85{width:85rem}.ms-x90{width:90rem}.ms-x95{width:95rem}.ms-x100{width:100rem}\r\n  /** width **/\r\n\r\n  /** height **/\r\n  .ms-h0{height:0%}.ms-h1{height:1%}.ms-h2{height:2%}.ms-h3{height:3%}.ms-h4{height:4%}.ms-h5{height:5%}.ms-h6{height:6%}.ms-h7{height:7%}.ms-h8{height:8%}.ms-h9{height:9%}.ms-h10{height:10%}.ms-h15{height:15%}.ms-h20{height:20%}.ms-h25{height:25%}.ms-h30{height:30%}.ms-h35{height:35%}.ms-h40{height:40%}.ms-h45{height:45%}.ms-h50{height:50%}.ms-h55{height:55%}.ms-h60{height:60%}.ms-h65{height:65%}.ms-h70{height:70%}.ms-h75{height:75%}.ms-h80{height:80%}.ms-h85{height:85%}.ms-h90{height:90%}.ms-h95{height:95%}.ms-h100{height:100%}\r\n\r\n  .ms-y0{height:0rem}.ms-y1{height:1rem}.ms-y2{height:2rem}.ms-y3{height:3rem}.ms-y4{height:4rem}.ms-y5{height:5rem}.ms-y6{height:6rem}.ms-y7{height:7rem}.ms-y8{height:8rem}.ms-y9{height:9rem}.ms-y10{height:10rem}.ms-y15{height:15rem}.ms-y20{height:20rem}.ms-y25{height:25rem}.ms-y30{height:30rem}.ms-y35{height:35rem}.ms-y40{height:40rem}.ms-y45{height:45rem}.ms-y50{height:50rem}.ms-y55{height:55rem}.ms-y60{height:60rem}.ms-y65{height:65rem}.ms-y70{height:70rem}.ms-y75{height:75rem}.ms-y80{height:80rem}.ms-y85{height:85rem}.ms-y90{height:90rem}.ms-y95{height:95rem}.ms-y100{height:100rem}\r\n  /** height **/\r\n\r\n\r\n\r\n\r\n}\r\n\r\n/*•\tMobilel: ss(small screen)*/\r\n@media screen and (max-width:425px)\r\n{\r\n  .ss-hidden{display: none}\r\n  .ss-fs0{font-size: 0em}.ss-fs0-1{font-size: 0.1em}.ss-fs0-2{font-size: 0.2em}.ss-fs0-3{font-size: 0.3em}.ss-fs0-4{font-size: 0.4em}.ss-fs0-5{font-size: 0.5em}.ss-fs0-6{font-size: 0.6em}.ss-fs0-7{font-size: 0.7em}.ss-fs0-8{font-size: 0.8em}.ss-fs0-9{font-size: 0.9em}.ss-fs1{font-size: 1em}.ss-fs1-1{font-size: 1.1em}.ss-fs1-2{font-size: 1.2em}.ss-fs1-3{font-size: 1.3em}.ss-fs1-4{font-size: 1.4em}.ss-fs1-5{font-size: 1.5em}.ss-fs1-6{font-size: 1.6em}.ss-fs1-7{font-size: 1.7em}.ss-fs1-8{font-size: 1.8em}.ss-fs1-9{font-size: 1.9em}.ss-fs2{font-size: 2em}.ss-fs3{font-size: 3em}.ss-fs4{font-size: 4em}.ss-fs5{font-size: 5em}.ss-fs6{font-size: 6em}\r\n\r\n  /** width **/\r\n  .ss-w0{width:0%}.ss-w1{width:1%}.ss-w2{width:2%}.ss-w3{width:3%}.ss-w4{width:4%}.ss-w5{width:5%}.ss-w6{width:6%}.ss-w7{width:7%}.ss-w8{width:8%}.ss-w9{width:9%}.ss-w10{width:10%}.ss-w15{width:15%}.ss-w20{width:20%}.ss-w25{width:25%}.ss-w30{width:30%}.ss-w35{width:35%}.ss-w40{width:40%}.ss-w45{width:45%}.ss-w50{width:50%}.ss-w55{width:55%}.ss-w60{width:60%}.ss-w65{width:65%}.ss-w70{width:70%}.ss-w75{width:75%}.ss-w80{width:80%}.ss-w85{width:85%}.ss-w90{width:90%}.ss-w95{width:95%}.ss-w100{width:100%}\r\n\r\n  .ss-x0{width:0rem}.ss-x1{width:1rem}.ss-x2{width:2rem}.ss-x3{width:3rem}.ss-x4{width:4rem}.ss-x5{width:5rem}.ss-x6{width:6rem}.ss-x7{width:7rem}.ss-x8{width:8rem}.ss-x9{width:9rem}.ss-x10{width:10rem}.ss-x15{width:15rem}.ss-x20{width:20rem}.ss-x25{width:25rem}.ss-x30{width:30rem}.ss-x35{width:35rem}.ss-x40{width:40rem}.ss-x45{width:45rem}.ss-x50{width:50rem}.ss-x55{width:55rem}.ss-x60{width:60rem}.ss-x65{width:65rem}.ss-x70{width:70rem}.ss-x75{width:75rem}.ss-x80{width:80rem}.ss-x85{width:85rem}.ss-x90{width:90rem}.ss-x95{width:95rem}.ss-x100{width:100rem}\r\n  /** width **/\r\n\r\n  /** height **/\r\n  .ss-h0{height:0%}.ss-h1{height:1%}.ss-h2{height:2%}.ss-h3{height:3%}.ss-h4{height:4%}.ss-h5{height:5%}.ss-h6{height:6%}.ss-h7{height:7%}.ss-h8{height:8%}.ss-h9{height:9%}.ss-h10{height:10%}.ss-h15{height:15%}.ss-h20{height:20%}.ss-h25{height:25%}.ss-h30{height:30%}.ss-h35{height:35%}.ss-h40{height:40%}.ss-h45{height:45%}.ss-h50{height:50%}.ss-h55{height:55%}.ss-h60{height:60%}.ss-h65{height:65%}.ss-h70{height:70%}.ss-h75{height:75%}.ss-h80{height:80%}.ss-h85{height:85%}.ss-h90{height:90%}.ss-h95{height:95%}.ss-h100{height:100%}\r\n\r\n  .ss-y0{height:0rem}.ss-y1{height:1rem}.ss-y2{height:2rem}.ss-y3{height:3rem}.ss-y4{height:4rem}.ss-y5{height:5rem}.ss-y6{height:6rem}.ss-y7{height:7rem}.ss-y8{height:8rem}.ss-y9{height:9rem}.ss-y10{height:10rem}.ss-y15{height:15rem}.ss-y20{height:20rem}.ss-y25{height:25rem}.ss-y30{height:30rem}.ss-y35{height:35rem}.ss-y40{height:40rem}.ss-y45{height:45rem}.ss-y50{height:50rem}.ss-y55{height:55rem}.ss-y60{height:60rem}.ss-y65{height:65rem}.ss-y70{height:70rem}.ss-y75{height:75rem}.ss-y80{height:80rem}.ss-y85{height:85rem}.ss-y90{height:90rem}.ss-y95{height:95rem}.ss-y100{height:100rem}\r\n  /** height **/\r\n\r\n\r\n\r\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css&":
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css& ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#cardBlog{\n    /* border:2px solid gray; */\n    /* box-shadow: 2px 2px 2px black;\n    margin:15px 0px 15px 0px; */\n    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);\n    border-radius: 5px;\n    /* padding: 2em 4em !important; */\n    margin-bottom: 1.2em;\n    margin-left: 15px;\n    margin-right: 15px;\n    border: 1px solid #ddd;\n    transition: transform 0.3s;\n}\n#cardBlog:hover{\n    transform: scale(1.02);\n}\n\n", ""]);
 
 // exports
 
@@ -42046,7 +42087,26 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#footer ul li{\n    margin: 15px 0px 15px 0px;\n    -webkit-text-decoration: underline dotted white;\n            text-decoration: underline dotted white;\n}\n", ""]);
+exports.push([module.i, "\n#footer ul li{\r\n    margin: 15px 0px 15px 0px;\r\n    -webkit-text-decoration: underline dotted white;\r\n            text-decoration: underline dotted white;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#bg-image {\n  background-image: url(\"/img/wallapaper.jpg\");\n  background-position: bottom;\n  background-size: cover;\n  background-repeat: no-repeat;\n  filter: blur(1px);\n  -webkit-filter: blur(1px);\n}\n", ""]);
 
 // exports
 
@@ -62907,6 +62967,36 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./CardBlog.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&":
 /*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css& ***!
@@ -62916,6 +63006,36 @@ process.umask = function() { return 0; };
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css&":
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./HomePage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -63537,6 +63657,69 @@ var e=function(){return(e=Object.assign||function(e){for(var t,r=1,s=arguments.l
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=template&id=0e65733d&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardBlog.vue?vue&type=template&id=0e65733d& ***!
+  \***********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "py-4 px-4", attrs: { id: "cardBlog" } },
+    [
+      _c(
+        "b-row",
+        [
+          _c("b-col", { attrs: { lg: "4", md: "12" } }, [
+            _c("img", {
+              staticClass: "w100 y10 cover center",
+              attrs: { src: "uploads/" + _vm.article.image }
+            })
+          ]),
+          _vm._v(" "),
+          _c("b-col", { attrs: { lg: "8", md: "12" } }, [
+            _c("h2", [_vm._v(" " + _vm._s(_vm.article.name) + " ")]),
+            _vm._v(" "),
+            _c("p", [_vm._v(" " + _vm._s(_vm.article.vision) + " ")]),
+            _vm._v(" "),
+            _c(
+              "p",
+              [
+                _vm._v("\n                Contributeurs:\n                "),
+                _vm._l(_vm.article.actors, function(actor) {
+                  return _c("span", [
+                    _c("span", { staticClass: "bold fs0-9" }, [
+                      _vm._v(" " + _vm._s(actor.name) + "  | ")
+                    ])
+                  ])
+                })
+              ],
+              2
+            )
+          ])
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75&":
 /*!*************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/FooterPage.vue?vue&type=template&id=60ff7e75& ***!
@@ -63567,7 +63750,7 @@ var render = function() {
                 _c("h4", { staticClass: "white mb4" }, [
                   _vm._v("Plan Biodiversité 2020-2023 "),
                   _c("br"),
-                  _vm._v("\nde la Stratégie Biodiversité Genève 2030")
+                  _vm._v("\r\nde la Stratégie Biodiversité Genève 2030")
                 ]),
                 _vm._v(" "),
                 _c("img", {
@@ -63722,136 +63905,108 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
+  return _c("div", { staticClass: "pb10" }, [
+    _vm._m(0),
+    _vm._v(" "),
+    _c("div", { staticClass: "w80 mauto my-4" }, [
+      _c(
+        "div",
+        [
+          _c(
+            "router-link",
+            {
+              staticClass: "link-header current_link mx-3",
+              attrs: { to: { name: "Root" } }
+            },
+            [_vm._v("Projets")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "link-header mx-3",
+              attrs: { to: { name: "Thematiques" } }
+            },
+            [_vm._v("Thèmes")]
+          ),
+          _vm._v(" "),
+          _c(
+            "router-link",
+            {
+              staticClass: "link-header mx-3",
+              attrs: { to: { name: "Groupes" } }
+            },
+            [_vm._v("Structures académiques")]
+          )
+        ],
+        1
+      )
+    ]),
+    _vm._v(" "),
     _c(
       "div",
-      { staticClass: "w80 mt5 mauto", attrs: { id: "baniere" } },
+      { staticClass: "w80 mauto my-2" },
       [
         _c(
           "b-row",
           [
-            _c("b-col", { attrs: { cols: "7" } }, [
-              _c("div", { staticClass: "fs1-5 mt10" }, [
-                _vm._v(
-                  "La biodiversité c’est notre assurance vie\nface aux changements climatiques.\nIl faut en faire une priorité pour réussir\nla transition écologique."
-                )
-              ])
-            ]),
-            _vm._v(" "),
-            _c("b-col", [
-              _c("img", {
-                staticClass: "w50 cover",
-                attrs: { src: "/img/plan_biodiversite_logo.png" }
-              })
-            ])
-          ],
-          1
-        )
-      ],
-      1
-    ),
-    _vm._v(" "),
-    _vm._m(0),
-    _vm._v(" "),
-    _c(
-      "div",
-      { staticClass: "w100 bg-info py-5" },
-      [
-        _c(
-          "b-container",
-          [
             _c(
-              "b-row",
+              "b-col",
+              { attrs: { xs: "12", lg: "3" } },
               [
-                _c("b-col", { attrs: { cols: "5" } }, [
-                  _c("h3", { staticClass: "mt15 white" }, [
-                    _vm._v("Plan Biodiversité 2020-2023 "),
-                    _c("br"),
-                    _vm._v(
-                      "\n                                de la Stratégie Biodiversité Genève 2030\n                            "
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("p", { staticClass: "white" }, [
-                    _vm._v("117 actions menées dans 12 champs d’application")
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "b-col",
-                  [
-                    _c(
-                      "b-row",
-                      [
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/1.png" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/2.png" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/3.png" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/4.png" }
-                          })
-                        ])
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c("div", { staticClass: "y2 w100" }),
-                    _vm._v(" "),
-                    _c(
-                      "b-row",
-                      [
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/5.png" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/6.png" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/7.png" }
-                          })
-                        ]),
-                        _vm._v(" "),
-                        _c("b-col", [
-                          _c("img", {
-                            staticClass: "x8",
-                            attrs: { src: "/img/8.png" }
-                          })
-                        ])
-                      ],
-                      1
-                    )
-                  ],
-                  1
-                )
+                _c("b-input", {
+                  staticStyle: { height: "34px" },
+                  attrs: {
+                    id: "inline-form-input-name",
+                    placeholder: "Jane Doe"
+                  }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { xs: "12", md: "12", lg: "3" } },
+              [
+                _c("v-select", {
+                  attrs: {
+                    placeholder: "Les champs d'application",
+                    options: _vm.option_projects,
+                    value: _vm.$store.project_selected
+                  },
+                  on: { input: _vm.project_set_Selected }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { xs: "12", md: "12", lg: "3" } },
+              [
+                _c("v-select", {
+                  attrs: {
+                    placeholder: "Les Contributeurs",
+                    options: _vm.option_actors,
+                    value: _vm.$store.project_selected
+                  },
+                  on: { input: _vm.project_set_Selected }
+                })
+              ],
+              1
+            ),
+            _vm._v(" "),
+            _c(
+              "b-col",
+              { attrs: { xs: "12", md: "12", lg: "3" } },
+              [
+                _c("v-select", {
+                  attrs: {
+                    placeholder: "Etat d'action",
+                    options: ["Canada", "United States"]
+                  }
+                })
               ],
               1
             )
@@ -63864,141 +64019,11 @@ var render = function() {
     _vm._v(" "),
     _c(
       "div",
-      { staticClass: "w80 mauto py-5" },
-      [
-        _c("h3", [_vm._v("Les 3 Priorités")]),
-        _vm._v(" "),
-        _c(
-          "b-row",
-          [
-            _c("b-col", { attrs: { cols: "4" } }, [
-              _c("div", { staticClass: "fs1-8" }, [_vm._v("1.")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "bold uppercase text-info" }, [
-                _vm._v(
-                  "Réhabiliter une infrastructure écologique apte à renforcer\nla biodiversité de l’ensemble du territoire"
-                )
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "Pour améliorer la qualité de vie, garantir le déplacement des espèces\net les services vitaux offerts par la biodiversité."
-                )
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "bold" }, [
-                _vm._v("Pourquoi c’est important")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "L’infrastructure écologique c’est le réseau de vie couvrant notre territoire, elle est\nconstituée par :\n• les réservoirs de biodiversité, les espaces où les espèces prospèrent (réserves\nnaturelles, forêts, cours d’eau, zones encore riches en nature);\n• les relais (espaces faiblement urbanisés ou exploités), où les espèces peuvent\nséjourner temporairement;\n• les corridors biologiques, qui relient les espaces précédents et permettent aux\nespèces de se déplacer."
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                [
-                  _c("b-button", { attrs: { variant: "outline-info" } }, [
-                    _vm._v("En Savoir plus")
-                  ])
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _c("b-col", { attrs: { cols: "4" } }, [
-              _c("div", { staticClass: "fs1-8" }, [_vm._v("2.")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "bold uppercase text-info" }, [
-                _vm._v("Renforcer les liens de la population avec la nature")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "Pour mieux protéger la biodiversité\net accroître le bien-être des habitants de la région"
-                )
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "bold" }, [
-                _vm._v("Pourquoi c’est important")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Une grande partie de la population vit en ville et a une idée floue de la biodiversité et n’a pas\nconscience de son importance vitale, également pour la survie des humains (notamment à\ntravers les services écosystémiques). Il est donc urgent d’accroître ces connaissances à\nl’école et dans le cadre des formations professionnelles. Il est tout aussi crucial d’encourager\nles expériences du public avec la nature, pour une meilleure appropriation des enjeux liés à la\nbiodiversité. Il s’agit d’une étape nécessaire pour que les comportements évoluent, permettant\nainsi de préserver et d’accroître la biodiversité dans la région."
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                [
-                  _c("b-button", { attrs: { variant: "outline-info" } }, [
-                    _vm._v("En Savoir plus")
-                  ])
-                ],
-                1
-              )
-            ]),
-            _vm._v(" "),
-            _c("b-col", { attrs: { cols: "4" } }, [
-              _c("div", { staticClass: "fs1-8" }, [_vm._v("3.")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "bold uppercase text-info" }, [
-                _vm._v(
-                  "Adopter le « réflexe biodiversité » dans l’aménagement\ndu territoire et garantir un État exemplaire"
-                )
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", [
-                _vm._v(
-                  "Pour favoriser la biodiversité par une bonne coordination\nau sein de l’administration et entre les acteurs publics et privés"
-                )
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("div", { staticClass: "bold" }, [
-                _vm._v("Pourquoi c’est important")
-              ]),
-              _vm._v(" "),
-              _c("br"),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "L’érosion de la biodiversité n’est pas un problème nouveau. Il existe depuis longtemps une\nlégislation, des règlements et des recommandations pour protéger la biodiversité et la prendre\nen compte. Cela dit, que ce soit par ignorance des enjeux de la part des acteurs du territoire\nou parce que les objectifs économiques ont souvent la priorité sur la préservation de la\nnature, force est de constater que la biodiversité dispose d’un poids relativement faible dans\nla pesée des intérêts."
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                [
-                  _c("b-button", { attrs: { variant: "outline-info" } }, [
-                    _vm._v("En Savoir plus")
-                  ])
-                ],
-                1
-              )
-            ])
-          ],
-          1
-        )
-      ],
-      1
+      { staticClass: "w80 mauto mt3 ss-w100 ms-w100" },
+      _vm._l(_vm.articles, function(article) {
+        return _c("div", [_c("CardBlog", { attrs: { article: article } })], 1)
+      }),
+      0
     )
   ])
 }
@@ -64007,19 +64032,23 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "w80 mauto mt4 fs1-1" }, [
-      _c("p", [
-        _vm._v(
-          "Avec ce premier Plan Biodiversité 2020-2023, l’État, le secteur privé, les ONG et les\ncitoyens disposent d’un plan d’action pour répondre à deux urgences indissociables :\n« Climat » et « Biodiversité ». Ce plan souligne l’efficacité de certaines actions en\ncours, mais aussi les lacunes à combler. Il identifie les améliorations et les nouvelles\nactions à prévoir pour matérialiser la vision de la Stratégie Biodiversité Genève\n2030 (SBG-2030). Cette stratégie définit les 12 champs d’application ainsi que les\norientations qui ont permis de formuler ce premier plan d’action."
-        )
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "mt3" }, [
-        _vm._v(
-          "Il faut rappeler que l’enjeu est réel : malgré sa taille modeste, le canton de Genève\nabrite des milieux naturels riches et variés : plus de 40% des espèces d’animaux,\nde végétaux et de champignons qui existent en Suisse sont présents sur le territoire\nqui représente moins d’un pourcent de la surface du pays. Cette biodiversité\nest non seulement un précieux patrimoine sur le plan des richesses naturelles,\nmais elle nous offre surtout de nombreux services essentiels à la vie (services\nécosystémiques) : c’est grâce à la biodiversité que notre air et notre eau sont purifiés,\nque notre alimentation est produite et que nous bénéficions d’un environnement\nparticulièrement agréable (pour plus d’informations sur les services écosystémiques,\nconsulter la Stratégie Biodiversité Genève 2030, pages 14 et 15)."
-        )
-      ])
-    ])
+    return _c(
+      "div",
+      { staticClass: "w100 y15 relative", attrs: { id: "baniere" } },
+      [
+        _c("div", { staticClass: "fitme", attrs: { id: "bg-image" } }),
+        _vm._v(" "),
+        _c("div", { staticClass: "absolute mt0", attrs: { id: "bg-text" } }, [
+          _c("div", { staticClass: "fitme p8" }, [
+            _c("h2", { staticClass: "w75" }, [
+              _vm._v(
+                "\n          La biodiversité c’est notre assurance vie\n          face aux changements climatiques\n          et une priorité pour réussir la transition écologique.\n        "
+              )
+            ])
+          ])
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -67098,6 +67127,48 @@ if (inBrowser && window.Vue) {
 
 /* harmony default export */ __webpack_exports__["default"] = (VueRouter);
 
+
+/***/ }),
+
+/***/ "./node_modules/vue-select/dist/vue-select.css":
+/*!*****************************************************!*\
+  !*** ./node_modules/vue-select/dist/vue-select.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../css-loader??ref--6-1!../../postcss-loader/src??ref--6-2!./vue-select.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-select/dist/vue-select.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/vue-select/dist/vue-select.js":
+/*!****************************************************!*\
+  !*** ./node_modules/vue-select/dist/vue-select.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+!function(t,e){ true?module.exports=e():undefined}("undefined"!=typeof self?self:this,(function(){return function(t){var e={};function n(o){if(e[o])return e[o].exports;var i=e[o]={i:o,l:!1,exports:{}};return t[o].call(i.exports,i,i.exports,n),i.l=!0,i.exports}return n.m=t,n.c=e,n.d=function(t,e,o){n.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:o})},n.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},n.t=function(t,e){if(1&e&&(t=n(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var i in t)n.d(o,i,function(e){return t[e]}.bind(null,i));return o},n.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return n.d(e,"a",e),e},n.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},n.p="/",n(n.s=8)}([function(t,e,n){var o=n(4),i=n(5),s=n(6);t.exports=function(t){return o(t)||i(t)||s()}},function(t,e){function n(e){return"function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?t.exports=n=function(t){return typeof t}:t.exports=n=function(t){return t&&"function"==typeof Symbol&&t.constructor===Symbol&&t!==Symbol.prototype?"symbol":typeof t},n(e)}t.exports=n},function(t,e,n){},function(t,e){t.exports=function(t,e,n){return e in t?Object.defineProperty(t,e,{value:n,enumerable:!0,configurable:!0,writable:!0}):t[e]=n,t}},function(t,e){t.exports=function(t){if(Array.isArray(t)){for(var e=0,n=new Array(t.length);e<t.length;e++)n[e]=t[e];return n}}},function(t,e){t.exports=function(t){if(Symbol.iterator in Object(t)||"[object Arguments]"===Object.prototype.toString.call(t))return Array.from(t)}},function(t,e){t.exports=function(){throw new TypeError("Invalid attempt to spread non-iterable instance")}},function(t,e,n){"use strict";var o=n(2);n.n(o).a},function(t,e,n){"use strict";n.r(e);var o=n(0),i=n.n(o),s=n(1),r=n.n(s),a=n(3),l=n.n(a),c={watch:{typeAheadPointer:function(){this.maybeAdjustScroll()}},methods:{maybeAdjustScroll:function(){var t=this.pixelsToPointerTop(),e=this.pixelsToPointerBottom();return t<=this.viewport().top?this.scrollTo(t):e>=this.viewport().bottom?this.scrollTo(this.viewport().top+this.pointerHeight()):void 0},pixelsToPointerTop:function(){var t=0;if(this.$refs.dropdownMenu&&this.dropdownOpen)for(var e=0;e<this.typeAheadPointer;e++)t+=this.$refs.dropdownMenu.children[e].offsetHeight;return t},pixelsToPointerBottom:function(){return this.pixelsToPointerTop()+this.pointerHeight()},pointerHeight:function(){var t=!!this.$refs.dropdownMenu&&this.$refs.dropdownMenu.children[this.typeAheadPointer];return t?t.offsetHeight:0},viewport:function(){return{top:this.$refs.dropdownMenu?this.$refs.dropdownMenu.scrollTop:0,bottom:this.$refs.dropdownMenu?this.$refs.dropdownMenu.offsetHeight+this.$refs.dropdownMenu.scrollTop:0}},scrollTo:function(t){return this.$refs.dropdownMenu?this.$refs.dropdownMenu.scrollTop=t:null}}},u={data:function(){return{typeAheadPointer:-1}},watch:{filteredOptions:function(){for(var t=0;t<this.filteredOptions.length;t++)if(this.selectable(this.filteredOptions[t])){this.typeAheadPointer=t;break}}},methods:{typeAheadUp:function(){for(var t=this.typeAheadPointer-1;t>=0;t--)if(this.selectable(this.filteredOptions[t])){this.typeAheadPointer=t,this.maybeAdjustScroll&&this.maybeAdjustScroll();break}},typeAheadDown:function(){for(var t=this.typeAheadPointer+1;t<this.filteredOptions.length;t++)if(this.selectable(this.filteredOptions[t])){this.typeAheadPointer=t,this.maybeAdjustScroll&&this.maybeAdjustScroll();break}},typeAheadSelect:function(){var t=this.filteredOptions[this.typeAheadPointer];t?this.select(t):this.taggable&&this.search.length&&this.select(this.createOption(this.search)),this.clearSearchOnSelect&&(this.search="")}}},p={props:{loading:{type:Boolean,default:!1}},data:function(){return{mutableLoading:!1}},watch:{search:function(){this.$emit("search",this.search,this.toggleLoading)},loading:function(t){this.mutableLoading=t}},methods:{toggleLoading:function(){var t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:null;return this.mutableLoading=null==t?!this.mutableLoading:t}}};function h(t,e,n,o,i,s,r,a){var l,c="function"==typeof t?t.options:t;if(e&&(c.render=e,c.staticRenderFns=n,c._compiled=!0),o&&(c.functional=!0),s&&(c._scopeId="data-v-"+s),r?(l=function(t){(t=t||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext)||"undefined"==typeof __VUE_SSR_CONTEXT__||(t=__VUE_SSR_CONTEXT__),i&&i.call(this,t),t&&t._registeredComponents&&t._registeredComponents.add(r)},c._ssrRegister=l):i&&(l=a?function(){i.call(this,this.$root.$options.shadowRoot)}:i),l)if(c.functional){c._injectStyles=l;var u=c.render;c.render=function(t,e){return l.call(e),u(t,e)}}else{var p=c.beforeCreate;c.beforeCreate=p?[].concat(p,l):[l]}return{exports:t,options:c}}var d={Deselect:h({},(function(){var t=this.$createElement,e=this._self._c||t;return e("svg",{attrs:{xmlns:"http://www.w3.org/2000/svg",width:"10",height:"10"}},[e("path",{attrs:{d:"M6.895455 5l2.842897-2.842898c.348864-.348863.348864-.914488 0-1.263636L9.106534.261648c-.348864-.348864-.914489-.348864-1.263636 0L5 3.104545 2.157102.261648c-.348863-.348864-.914488-.348864-1.263636 0L.261648.893466c-.348864.348864-.348864.914489 0 1.263636L3.104545 5 .261648 7.842898c-.348864.348863-.348864.914488 0 1.263636l.631818.631818c.348864.348864.914773.348864 1.263636 0L5 6.895455l2.842898 2.842897c.348863.348864.914772.348864 1.263636 0l.631818-.631818c.348864-.348864.348864-.914489 0-1.263636L6.895455 5z"}})])}),[],!1,null,null,null).exports,OpenIndicator:h({},(function(){var t=this.$createElement,e=this._self._c||t;return e("svg",{attrs:{xmlns:"http://www.w3.org/2000/svg",width:"14",height:"10"}},[e("path",{attrs:{d:"M9.211364 7.59931l4.48338-4.867229c.407008-.441854.407008-1.158247 0-1.60046l-.73712-.80023c-.407008-.441854-1.066904-.441854-1.474243 0L7 5.198617 2.51662.33139c-.407008-.441853-1.066904-.441853-1.474243 0l-.737121.80023c-.407008.441854-.407008 1.158248 0 1.600461l4.48338 4.867228L7 10l2.211364-2.40069z"}})])}),[],!1,null,null,null).exports},f={inserted:function(t,e,n){var o=n.context;if(o.appendToBody){var i=o.$refs.toggle.getBoundingClientRect(),s=i.height,r=i.top,a=i.left,l=i.width;t.unbindPosition=o.calculatePosition(t,o,{width:l+"px",top:window.scrollY+r+s+"px",left:window.scrollX+a+"px"}),document.body.appendChild(t)}},unbind:function(t,e,n){n.context.appendToBody&&(t.unbindPosition&&"function"==typeof t.unbindPosition&&t.unbindPosition(),t.parentNode&&t.parentNode.removeChild(t))}};var y=function(t){var e={};return Object.keys(t).sort().forEach((function(n){e[n]=t[n]})),JSON.stringify(e)},b=0;var g=function(){return++b};function v(t,e){var n=Object.keys(t);if(Object.getOwnPropertySymbols){var o=Object.getOwnPropertySymbols(t);e&&(o=o.filter((function(e){return Object.getOwnPropertyDescriptor(t,e).enumerable}))),n.push.apply(n,o)}return n}function m(t){for(var e=1;e<arguments.length;e++){var n=null!=arguments[e]?arguments[e]:{};e%2?v(Object(n),!0).forEach((function(e){l()(t,e,n[e])})):Object.getOwnPropertyDescriptors?Object.defineProperties(t,Object.getOwnPropertyDescriptors(n)):v(Object(n)).forEach((function(e){Object.defineProperty(t,e,Object.getOwnPropertyDescriptor(n,e))}))}return t}var _={components:m({},d),mixins:[c,u,p],directives:{appendToBody:f},props:{value:{},components:{type:Object,default:function(){return{}}},options:{type:Array,default:function(){return[]}},disabled:{type:Boolean,default:!1},clearable:{type:Boolean,default:!0},searchable:{type:Boolean,default:!0},multiple:{type:Boolean,default:!1},placeholder:{type:String,default:""},transition:{type:String,default:"vs__fade"},clearSearchOnSelect:{type:Boolean,default:!0},closeOnSelect:{type:Boolean,default:!0},label:{type:String,default:"label"},autocomplete:{type:String,default:"off"},reduce:{type:Function,default:function(t){return t}},selectable:{type:Function,default:function(t){return!0}},getOptionLabel:{type:Function,default:function(t){return"object"===r()(t)?t.hasOwnProperty(this.label)?t[this.label]:console.warn('[vue-select warn]: Label key "option.'.concat(this.label,'" does not')+" exist in options object ".concat(JSON.stringify(t),".\n")+"https://vue-select.org/api/props.html#getoptionlabel"):t}},getOptionKey:{type:Function,default:function(t){if("object"!==r()(t))return t;try{return t.hasOwnProperty("id")?t.id:y(t)}catch(e){return console.warn("[vue-select warn]: Could not stringify this option to generate unique key. Please provide'getOptionKey' prop to return a unique key for each option.\nhttps://vue-select.org/api/props.html#getoptionkey",t,e)}}},onTab:{type:Function,default:function(){this.selectOnTab&&!this.isComposing&&this.typeAheadSelect()}},taggable:{type:Boolean,default:!1},tabindex:{type:Number,default:null},pushTags:{type:Boolean,default:!1},filterable:{type:Boolean,default:!0},filterBy:{type:Function,default:function(t,e,n){return(e||"").toLowerCase().indexOf(n.toLowerCase())>-1}},filter:{type:Function,default:function(t,e){var n=this;return t.filter((function(t){var o=n.getOptionLabel(t);return"number"==typeof o&&(o=o.toString()),n.filterBy(t,o,e)}))}},createOption:{type:Function,default:function(t){return"object"===r()(this.optionList[0])?l()({},this.label,t):t}},resetOnOptionsChange:{default:!1,validator:function(t){return["function","boolean"].includes(r()(t))}},clearSearchOnBlur:{type:Function,default:function(t){var e=t.clearSearchOnSelect,n=t.multiple;return e&&!n}},noDrop:{type:Boolean,default:!1},inputId:{type:String},dir:{type:String,default:"auto"},selectOnTab:{type:Boolean,default:!1},selectOnKeyCodes:{type:Array,default:function(){return[13]}},searchInputQuerySelector:{type:String,default:"[type=search]"},mapKeydown:{type:Function,default:function(t,e){return t}},appendToBody:{type:Boolean,default:!1},calculatePosition:{type:Function,default:function(t,e,n){var o=n.width,i=n.top,s=n.left;t.style.top=i,t.style.left=s,t.style.width=o}}},data:function(){return{uid:g(),search:"",open:!1,isComposing:!1,pushedTags:[],_value:[]}},watch:{options:function(t,e){var n=this;!this.taggable&&("function"==typeof n.resetOnOptionsChange?n.resetOnOptionsChange(t,e,n.selectedValue):n.resetOnOptionsChange)&&this.clearSelection(),this.value&&this.isTrackingValues&&this.setInternalValueFromOptions(this.value)},value:function(t){this.isTrackingValues&&this.setInternalValueFromOptions(t)},multiple:function(){this.clearSelection()},open:function(t){this.$emit(t?"open":"close")}},created:function(){this.mutableLoading=this.loading,void 0!==this.value&&this.isTrackingValues&&this.setInternalValueFromOptions(this.value),this.$on("option:created",this.pushTag)},methods:{setInternalValueFromOptions:function(t){var e=this;Array.isArray(t)?this.$data._value=t.map((function(t){return e.findOptionFromReducedValue(t)})):this.$data._value=this.findOptionFromReducedValue(t)},select:function(t){this.isOptionSelected(t)||(this.taggable&&!this.optionExists(t)&&this.$emit("option:created",t),this.multiple&&(t=this.selectedValue.concat(t)),this.updateValue(t)),this.onAfterSelect(t)},deselect:function(t){var e=this;this.updateValue(this.selectedValue.filter((function(n){return!e.optionComparator(n,t)})))},clearSelection:function(){this.updateValue(this.multiple?[]:null)},onAfterSelect:function(t){this.closeOnSelect&&(this.open=!this.open,this.searchEl.blur()),this.clearSearchOnSelect&&(this.search="")},updateValue:function(t){var e=this;this.isTrackingValues&&(this.$data._value=t),null!==t&&(t=Array.isArray(t)?t.map((function(t){return e.reduce(t)})):this.reduce(t)),this.$emit("input",t)},toggleDropdown:function(t){var e=t.target;[].concat(i()(this.$refs.deselectButtons||[]),i()([this.$refs.clearButton]||false)).some((function(t){return t.contains(e)||t===e}))||(this.open?this.searchEl.blur():this.disabled||(this.open=!0,this.searchEl.focus()))},isOptionSelected:function(t){var e=this;return this.selectedValue.some((function(n){return e.optionComparator(n,t)}))},optionComparator:function(t,e){return this.getOptionKey(t)===this.getOptionKey(e)},findOptionFromReducedValue:function(t){var e=this,n=[].concat(i()(this.options),i()(this.pushedTags)).filter((function(n){return JSON.stringify(e.reduce(n))===JSON.stringify(t)}));return 1===n.length?n[0]:n.find((function(t){return e.optionComparator(t,e.$data._value)}))||t},closeSearchOptions:function(){this.open=!1,this.$emit("search:blur")},maybeDeleteValue:function(){if(!this.searchEl.value.length&&this.selectedValue&&this.selectedValue.length&&this.clearable){var t=null;this.multiple&&(t=i()(this.selectedValue.slice(0,this.selectedValue.length-1))),this.updateValue(t)}},optionExists:function(t){var e=this;return this.optionList.some((function(n){return e.optionComparator(n,t)}))},normalizeOptionForSlot:function(t){return"object"===r()(t)?t:l()({},this.label,t)},pushTag:function(t){this.pushedTags.push(t)},onEscape:function(){this.search.length?this.search="":this.searchEl.blur()},onSearchBlur:function(){if(!this.mousedown||this.searching){var t=this.clearSearchOnSelect,e=this.multiple;return this.clearSearchOnBlur({clearSearchOnSelect:t,multiple:e})&&(this.search=""),void this.closeSearchOptions()}this.mousedown=!1,0!==this.search.length||0!==this.options.length||this.closeSearchOptions()},onSearchFocus:function(){this.open=!0,this.$emit("search:focus")},onMousedown:function(){this.mousedown=!0},onMouseUp:function(){this.mousedown=!1},onSearchKeyDown:function(t){var e=this,n=function(t){return t.preventDefault(),!e.isComposing&&e.typeAheadSelect()},o={8:function(t){return e.maybeDeleteValue()},9:function(t){return e.onTab()},27:function(t){return e.onEscape()},38:function(t){return t.preventDefault(),e.typeAheadUp()},40:function(t){return t.preventDefault(),e.typeAheadDown()}};this.selectOnKeyCodes.forEach((function(t){return o[t]=n}));var i=this.mapKeydown(o,this);if("function"==typeof i[t.keyCode])return i[t.keyCode](t)}},computed:{isTrackingValues:function(){return void 0===this.value||this.$options.propsData.hasOwnProperty("reduce")},selectedValue:function(){var t=this.value;return this.isTrackingValues&&(t=this.$data._value),t?[].concat(t):[]},optionList:function(){return this.options.concat(this.pushTags?this.pushedTags:[])},searchEl:function(){return this.$scopedSlots.search?this.$refs.selectedOptions.querySelector(this.searchInputQuerySelector):this.$refs.search},scope:function(){var t=this,e={search:this.search,loading:this.loading,searching:this.searching,filteredOptions:this.filteredOptions};return{search:{attributes:m({disabled:this.disabled,placeholder:this.searchPlaceholder,tabindex:this.tabindex,readonly:!this.searchable,id:this.inputId,"aria-autocomplete":"list","aria-labelledby":"vs".concat(this.uid,"__combobox"),"aria-controls":"vs".concat(this.uid,"__listbox"),ref:"search",type:"search",autocomplete:this.autocomplete,value:this.search},this.dropdownOpen&&this.filteredOptions[this.typeAheadPointer]?{"aria-activedescendant":"vs".concat(this.uid,"__option-").concat(this.typeAheadPointer)}:{}),events:{compositionstart:function(){return t.isComposing=!0},compositionend:function(){return t.isComposing=!1},keydown:this.onSearchKeyDown,blur:this.onSearchBlur,focus:this.onSearchFocus,input:function(e){return t.search=e.target.value}}},spinner:{loading:this.mutableLoading},noOptions:{search:this.search,loading:this.loading,searching:this.searching},openIndicator:{attributes:{ref:"openIndicator",role:"presentation",class:"vs__open-indicator"}},listHeader:e,listFooter:e,header:m({},e,{deselect:this.deselect}),footer:m({},e,{deselect:this.deselect})}},childComponents:function(){return m({},d,{},this.components)},stateClasses:function(){return{"vs--open":this.dropdownOpen,"vs--single":!this.multiple,"vs--searching":this.searching&&!this.noDrop,"vs--searchable":this.searchable&&!this.noDrop,"vs--unsearchable":!this.searchable,"vs--loading":this.mutableLoading,"vs--disabled":this.disabled}},searching:function(){return!!this.search},dropdownOpen:function(){return!this.noDrop&&(this.open&&!this.mutableLoading)},searchPlaceholder:function(){if(this.isValueEmpty&&this.placeholder)return this.placeholder},filteredOptions:function(){var t=[].concat(this.optionList);if(!this.filterable&&!this.taggable)return t;var e=this.search.length?this.filter(t,this.search,this):t;return this.taggable&&this.search.length&&!this.optionExists(this.createOption(this.search))&&e.unshift(this.search),e},isValueEmpty:function(){return 0===this.selectedValue.length},showClearButton:function(){return!this.multiple&&this.clearable&&!this.open&&!this.isValueEmpty}}},O=(n(7),h(_,(function(){var t=this,e=t.$createElement,n=t._self._c||e;return n("div",{staticClass:"v-select",class:t.stateClasses,attrs:{dir:t.dir}},[t._t("header",null,null,t.scope.header),t._v(" "),n("div",{ref:"toggle",staticClass:"vs__dropdown-toggle",attrs:{id:"vs"+t.uid+"__combobox",role:"combobox","aria-expanded":t.dropdownOpen.toString(),"aria-owns":"vs"+t.uid+"__listbox","aria-label":"Search for option"},on:{mousedown:function(e){return e.preventDefault(),t.toggleDropdown(e)}}},[n("div",{ref:"selectedOptions",staticClass:"vs__selected-options"},[t._l(t.selectedValue,(function(e){return t._t("selected-option-container",[n("span",{key:t.getOptionKey(e),staticClass:"vs__selected"},[t._t("selected-option",[t._v("\n            "+t._s(t.getOptionLabel(e))+"\n          ")],null,t.normalizeOptionForSlot(e)),t._v(" "),t.multiple?n("button",{ref:"deselectButtons",refInFor:!0,staticClass:"vs__deselect",attrs:{disabled:t.disabled,type:"button",title:"Deselect "+t.getOptionLabel(e),"aria-label":"Deselect "+t.getOptionLabel(e)},on:{click:function(n){return t.deselect(e)}}},[n(t.childComponents.Deselect,{tag:"component"})],1):t._e()],2)],{option:t.normalizeOptionForSlot(e),deselect:t.deselect,multiple:t.multiple,disabled:t.disabled})})),t._v(" "),t._t("search",[n("input",t._g(t._b({staticClass:"vs__search"},"input",t.scope.search.attributes,!1),t.scope.search.events))],null,t.scope.search)],2),t._v(" "),n("div",{ref:"actions",staticClass:"vs__actions"},[n("button",{directives:[{name:"show",rawName:"v-show",value:t.showClearButton,expression:"showClearButton"}],ref:"clearButton",staticClass:"vs__clear",attrs:{disabled:t.disabled,type:"button",title:"Clear Selected","aria-label":"Clear Selected"},on:{click:t.clearSelection}},[n(t.childComponents.Deselect,{tag:"component"})],1),t._v(" "),t._t("open-indicator",[t.noDrop?t._e():n(t.childComponents.OpenIndicator,t._b({tag:"component"},"component",t.scope.openIndicator.attributes,!1))],null,t.scope.openIndicator),t._v(" "),t._t("spinner",[n("div",{directives:[{name:"show",rawName:"v-show",value:t.mutableLoading,expression:"mutableLoading"}],staticClass:"vs__spinner"},[t._v("Loading...")])],null,t.scope.spinner)],2)]),t._v(" "),n("transition",{attrs:{name:t.transition}},[t.dropdownOpen?n("ul",{directives:[{name:"append-to-body",rawName:"v-append-to-body"}],ref:"dropdownMenu",staticClass:"vs__dropdown-menu",attrs:{id:"vs"+t.uid+"__listbox",role:"listbox"},on:{mousedown:function(e){return e.preventDefault(),t.onMousedown(e)},mouseup:t.onMouseUp}},[t._t("list-header",null,null,t.scope.listHeader),t._v(" "),t._l(t.filteredOptions,(function(e,o){return n("li",{key:t.getOptionKey(e),staticClass:"vs__dropdown-option",class:{"vs__dropdown-option--selected":t.isOptionSelected(e),"vs__dropdown-option--highlight":o===t.typeAheadPointer,"vs__dropdown-option--disabled":!t.selectable(e)},attrs:{role:"option",id:"vs"+t.uid+"__option-"+o,"aria-selected":o===t.typeAheadPointer||null},on:{mouseover:function(n){t.selectable(e)&&(t.typeAheadPointer=o)},mousedown:function(n){n.preventDefault(),n.stopPropagation(),t.selectable(e)&&t.select(e)}}},[t._t("option",[t._v("\n          "+t._s(t.getOptionLabel(e))+"\n        ")],null,t.normalizeOptionForSlot(e))],2)})),t._v(" "),0===t.filteredOptions.length?n("li",{staticClass:"vs__no-options"},[t._t("no-options",[t._v("Sorry, no matching options.")],null,t.scope.noOptions)],2):t._e(),t._v(" "),t._t("list-footer",null,null,t.scope.listFooter)],2):n("ul",{staticStyle:{display:"none",visibility:"hidden"},attrs:{id:"vs"+t.uid+"__listbox",role:"listbox"}})]),t._v(" "),t._t("footer",null,null,t.scope.footer)],2)}),[],!1,null,null,null).exports),w={ajax:p,pointer:u,pointerScroll:c};n.d(e,"VueSelect",(function(){return O})),n.d(e,"mixins",(function(){return w}));e.default=O}])}));
+//# sourceMappingURL=vue-select.js.map
 
 /***/ }),
 
@@ -79087,6 +79158,1078 @@ if (false) {} else {
 
 /***/ }),
 
+/***/ "./node_modules/vuex/dist/vuex.esm.js":
+/*!********************************************!*\
+  !*** ./node_modules/vuex/dist/vuex.esm.js ***!
+  \********************************************/
+/*! exports provided: default, Store, install, mapState, mapMutations, mapGetters, mapActions, createNamespacedHelpers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Store", function() { return Store; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "install", function() { return install; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapState", function() { return mapState; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapMutations", function() { return mapMutations; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapGetters", function() { return mapGetters; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapActions", function() { return mapActions; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createNamespacedHelpers", function() { return createNamespacedHelpers; });
+/**
+ * vuex v3.1.3
+ * (c) 2020 Evan You
+ * @license MIT
+ */
+function applyMixin (Vue) {
+  var version = Number(Vue.version.split('.')[0]);
+
+  if (version >= 2) {
+    Vue.mixin({ beforeCreate: vuexInit });
+  } else {
+    // override init and inject vuex init procedure
+    // for 1.x backwards compatibility.
+    var _init = Vue.prototype._init;
+    Vue.prototype._init = function (options) {
+      if ( options === void 0 ) options = {};
+
+      options.init = options.init
+        ? [vuexInit].concat(options.init)
+        : vuexInit;
+      _init.call(this, options);
+    };
+  }
+
+  /**
+   * Vuex init hook, injected into each instances init hooks list.
+   */
+
+  function vuexInit () {
+    var options = this.$options;
+    // store injection
+    if (options.store) {
+      this.$store = typeof options.store === 'function'
+        ? options.store()
+        : options.store;
+    } else if (options.parent && options.parent.$store) {
+      this.$store = options.parent.$store;
+    }
+  }
+}
+
+var target = typeof window !== 'undefined'
+  ? window
+  : typeof global !== 'undefined'
+    ? global
+    : {};
+var devtoolHook = target.__VUE_DEVTOOLS_GLOBAL_HOOK__;
+
+function devtoolPlugin (store) {
+  if (!devtoolHook) { return }
+
+  store._devtoolHook = devtoolHook;
+
+  devtoolHook.emit('vuex:init', store);
+
+  devtoolHook.on('vuex:travel-to-state', function (targetState) {
+    store.replaceState(targetState);
+  });
+
+  store.subscribe(function (mutation, state) {
+    devtoolHook.emit('vuex:mutation', mutation, state);
+  });
+}
+
+/**
+ * Get the first item that pass the test
+ * by second argument function
+ *
+ * @param {Array} list
+ * @param {Function} f
+ * @return {*}
+ */
+
+/**
+ * forEach for object
+ */
+function forEachValue (obj, fn) {
+  Object.keys(obj).forEach(function (key) { return fn(obj[key], key); });
+}
+
+function isObject (obj) {
+  return obj !== null && typeof obj === 'object'
+}
+
+function isPromise (val) {
+  return val && typeof val.then === 'function'
+}
+
+function assert (condition, msg) {
+  if (!condition) { throw new Error(("[vuex] " + msg)) }
+}
+
+function partial (fn, arg) {
+  return function () {
+    return fn(arg)
+  }
+}
+
+// Base data struct for store's module, package with some attribute and method
+var Module = function Module (rawModule, runtime) {
+  this.runtime = runtime;
+  // Store some children item
+  this._children = Object.create(null);
+  // Store the origin module object which passed by programmer
+  this._rawModule = rawModule;
+  var rawState = rawModule.state;
+
+  // Store the origin module's state
+  this.state = (typeof rawState === 'function' ? rawState() : rawState) || {};
+};
+
+var prototypeAccessors = { namespaced: { configurable: true } };
+
+prototypeAccessors.namespaced.get = function () {
+  return !!this._rawModule.namespaced
+};
+
+Module.prototype.addChild = function addChild (key, module) {
+  this._children[key] = module;
+};
+
+Module.prototype.removeChild = function removeChild (key) {
+  delete this._children[key];
+};
+
+Module.prototype.getChild = function getChild (key) {
+  return this._children[key]
+};
+
+Module.prototype.update = function update (rawModule) {
+  this._rawModule.namespaced = rawModule.namespaced;
+  if (rawModule.actions) {
+    this._rawModule.actions = rawModule.actions;
+  }
+  if (rawModule.mutations) {
+    this._rawModule.mutations = rawModule.mutations;
+  }
+  if (rawModule.getters) {
+    this._rawModule.getters = rawModule.getters;
+  }
+};
+
+Module.prototype.forEachChild = function forEachChild (fn) {
+  forEachValue(this._children, fn);
+};
+
+Module.prototype.forEachGetter = function forEachGetter (fn) {
+  if (this._rawModule.getters) {
+    forEachValue(this._rawModule.getters, fn);
+  }
+};
+
+Module.prototype.forEachAction = function forEachAction (fn) {
+  if (this._rawModule.actions) {
+    forEachValue(this._rawModule.actions, fn);
+  }
+};
+
+Module.prototype.forEachMutation = function forEachMutation (fn) {
+  if (this._rawModule.mutations) {
+    forEachValue(this._rawModule.mutations, fn);
+  }
+};
+
+Object.defineProperties( Module.prototype, prototypeAccessors );
+
+var ModuleCollection = function ModuleCollection (rawRootModule) {
+  // register root module (Vuex.Store options)
+  this.register([], rawRootModule, false);
+};
+
+ModuleCollection.prototype.get = function get (path) {
+  return path.reduce(function (module, key) {
+    return module.getChild(key)
+  }, this.root)
+};
+
+ModuleCollection.prototype.getNamespace = function getNamespace (path) {
+  var module = this.root;
+  return path.reduce(function (namespace, key) {
+    module = module.getChild(key);
+    return namespace + (module.namespaced ? key + '/' : '')
+  }, '')
+};
+
+ModuleCollection.prototype.update = function update$1 (rawRootModule) {
+  update([], this.root, rawRootModule);
+};
+
+ModuleCollection.prototype.register = function register (path, rawModule, runtime) {
+    var this$1 = this;
+    if ( runtime === void 0 ) runtime = true;
+
+  if (true) {
+    assertRawModule(path, rawModule);
+  }
+
+  var newModule = new Module(rawModule, runtime);
+  if (path.length === 0) {
+    this.root = newModule;
+  } else {
+    var parent = this.get(path.slice(0, -1));
+    parent.addChild(path[path.length - 1], newModule);
+  }
+
+  // register nested modules
+  if (rawModule.modules) {
+    forEachValue(rawModule.modules, function (rawChildModule, key) {
+      this$1.register(path.concat(key), rawChildModule, runtime);
+    });
+  }
+};
+
+ModuleCollection.prototype.unregister = function unregister (path) {
+  var parent = this.get(path.slice(0, -1));
+  var key = path[path.length - 1];
+  if (!parent.getChild(key).runtime) { return }
+
+  parent.removeChild(key);
+};
+
+function update (path, targetModule, newModule) {
+  if (true) {
+    assertRawModule(path, newModule);
+  }
+
+  // update target module
+  targetModule.update(newModule);
+
+  // update nested modules
+  if (newModule.modules) {
+    for (var key in newModule.modules) {
+      if (!targetModule.getChild(key)) {
+        if (true) {
+          console.warn(
+            "[vuex] trying to add a new module '" + key + "' on hot reloading, " +
+            'manual reload is needed'
+          );
+        }
+        return
+      }
+      update(
+        path.concat(key),
+        targetModule.getChild(key),
+        newModule.modules[key]
+      );
+    }
+  }
+}
+
+var functionAssert = {
+  assert: function (value) { return typeof value === 'function'; },
+  expected: 'function'
+};
+
+var objectAssert = {
+  assert: function (value) { return typeof value === 'function' ||
+    (typeof value === 'object' && typeof value.handler === 'function'); },
+  expected: 'function or object with "handler" function'
+};
+
+var assertTypes = {
+  getters: functionAssert,
+  mutations: functionAssert,
+  actions: objectAssert
+};
+
+function assertRawModule (path, rawModule) {
+  Object.keys(assertTypes).forEach(function (key) {
+    if (!rawModule[key]) { return }
+
+    var assertOptions = assertTypes[key];
+
+    forEachValue(rawModule[key], function (value, type) {
+      assert(
+        assertOptions.assert(value),
+        makeAssertionMessage(path, key, type, value, assertOptions.expected)
+      );
+    });
+  });
+}
+
+function makeAssertionMessage (path, key, type, value, expected) {
+  var buf = key + " should be " + expected + " but \"" + key + "." + type + "\"";
+  if (path.length > 0) {
+    buf += " in module \"" + (path.join('.')) + "\"";
+  }
+  buf += " is " + (JSON.stringify(value)) + ".";
+  return buf
+}
+
+var Vue; // bind on install
+
+var Store = function Store (options) {
+  var this$1 = this;
+  if ( options === void 0 ) options = {};
+
+  // Auto install if it is not done yet and `window` has `Vue`.
+  // To allow users to avoid auto-installation in some cases,
+  // this code should be placed here. See #731
+  if (!Vue && typeof window !== 'undefined' && window.Vue) {
+    install(window.Vue);
+  }
+
+  if (true) {
+    assert(Vue, "must call Vue.use(Vuex) before creating a store instance.");
+    assert(typeof Promise !== 'undefined', "vuex requires a Promise polyfill in this browser.");
+    assert(this instanceof Store, "store must be called with the new operator.");
+  }
+
+  var plugins = options.plugins; if ( plugins === void 0 ) plugins = [];
+  var strict = options.strict; if ( strict === void 0 ) strict = false;
+
+  // store internal state
+  this._committing = false;
+  this._actions = Object.create(null);
+  this._actionSubscribers = [];
+  this._mutations = Object.create(null);
+  this._wrappedGetters = Object.create(null);
+  this._modules = new ModuleCollection(options);
+  this._modulesNamespaceMap = Object.create(null);
+  this._subscribers = [];
+  this._watcherVM = new Vue();
+  this._makeLocalGettersCache = Object.create(null);
+
+  // bind commit and dispatch to self
+  var store = this;
+  var ref = this;
+  var dispatch = ref.dispatch;
+  var commit = ref.commit;
+  this.dispatch = function boundDispatch (type, payload) {
+    return dispatch.call(store, type, payload)
+  };
+  this.commit = function boundCommit (type, payload, options) {
+    return commit.call(store, type, payload, options)
+  };
+
+  // strict mode
+  this.strict = strict;
+
+  var state = this._modules.root.state;
+
+  // init root module.
+  // this also recursively registers all sub-modules
+  // and collects all module getters inside this._wrappedGetters
+  installModule(this, state, [], this._modules.root);
+
+  // initialize the store vm, which is responsible for the reactivity
+  // (also registers _wrappedGetters as computed properties)
+  resetStoreVM(this, state);
+
+  // apply plugins
+  plugins.forEach(function (plugin) { return plugin(this$1); });
+
+  var useDevtools = options.devtools !== undefined ? options.devtools : Vue.config.devtools;
+  if (useDevtools) {
+    devtoolPlugin(this);
+  }
+};
+
+var prototypeAccessors$1 = { state: { configurable: true } };
+
+prototypeAccessors$1.state.get = function () {
+  return this._vm._data.$$state
+};
+
+prototypeAccessors$1.state.set = function (v) {
+  if (true) {
+    assert(false, "use store.replaceState() to explicit replace store state.");
+  }
+};
+
+Store.prototype.commit = function commit (_type, _payload, _options) {
+    var this$1 = this;
+
+  // check object-style commit
+  var ref = unifyObjectStyle(_type, _payload, _options);
+    var type = ref.type;
+    var payload = ref.payload;
+    var options = ref.options;
+
+  var mutation = { type: type, payload: payload };
+  var entry = this._mutations[type];
+  if (!entry) {
+    if (true) {
+      console.error(("[vuex] unknown mutation type: " + type));
+    }
+    return
+  }
+  this._withCommit(function () {
+    entry.forEach(function commitIterator (handler) {
+      handler(payload);
+    });
+  });
+
+  this._subscribers
+    .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+    .forEach(function (sub) { return sub(mutation, this$1.state); });
+
+  if (
+     true &&
+    options && options.silent
+  ) {
+    console.warn(
+      "[vuex] mutation type: " + type + ". Silent option has been removed. " +
+      'Use the filter functionality in the vue-devtools'
+    );
+  }
+};
+
+Store.prototype.dispatch = function dispatch (_type, _payload) {
+    var this$1 = this;
+
+  // check object-style dispatch
+  var ref = unifyObjectStyle(_type, _payload);
+    var type = ref.type;
+    var payload = ref.payload;
+
+  var action = { type: type, payload: payload };
+  var entry = this._actions[type];
+  if (!entry) {
+    if (true) {
+      console.error(("[vuex] unknown action type: " + type));
+    }
+    return
+  }
+
+  try {
+    this._actionSubscribers
+      .slice() // shallow copy to prevent iterator invalidation if subscriber synchronously calls unsubscribe
+      .filter(function (sub) { return sub.before; })
+      .forEach(function (sub) { return sub.before(action, this$1.state); });
+  } catch (e) {
+    if (true) {
+      console.warn("[vuex] error in before action subscribers: ");
+      console.error(e);
+    }
+  }
+
+  var result = entry.length > 1
+    ? Promise.all(entry.map(function (handler) { return handler(payload); }))
+    : entry[0](payload);
+
+  return result.then(function (res) {
+    try {
+      this$1._actionSubscribers
+        .filter(function (sub) { return sub.after; })
+        .forEach(function (sub) { return sub.after(action, this$1.state); });
+    } catch (e) {
+      if (true) {
+        console.warn("[vuex] error in after action subscribers: ");
+        console.error(e);
+      }
+    }
+    return res
+  })
+};
+
+Store.prototype.subscribe = function subscribe (fn) {
+  return genericSubscribe(fn, this._subscribers)
+};
+
+Store.prototype.subscribeAction = function subscribeAction (fn) {
+  var subs = typeof fn === 'function' ? { before: fn } : fn;
+  return genericSubscribe(subs, this._actionSubscribers)
+};
+
+Store.prototype.watch = function watch (getter, cb, options) {
+    var this$1 = this;
+
+  if (true) {
+    assert(typeof getter === 'function', "store.watch only accepts a function.");
+  }
+  return this._watcherVM.$watch(function () { return getter(this$1.state, this$1.getters); }, cb, options)
+};
+
+Store.prototype.replaceState = function replaceState (state) {
+    var this$1 = this;
+
+  this._withCommit(function () {
+    this$1._vm._data.$$state = state;
+  });
+};
+
+Store.prototype.registerModule = function registerModule (path, rawModule, options) {
+    if ( options === void 0 ) options = {};
+
+  if (typeof path === 'string') { path = [path]; }
+
+  if (true) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+    assert(path.length > 0, 'cannot register the root module by using registerModule.');
+  }
+
+  this._modules.register(path, rawModule);
+  installModule(this, this.state, path, this._modules.get(path), options.preserveState);
+  // reset store to update getters...
+  resetStoreVM(this, this.state);
+};
+
+Store.prototype.unregisterModule = function unregisterModule (path) {
+    var this$1 = this;
+
+  if (typeof path === 'string') { path = [path]; }
+
+  if (true) {
+    assert(Array.isArray(path), "module path must be a string or an Array.");
+  }
+
+  this._modules.unregister(path);
+  this._withCommit(function () {
+    var parentState = getNestedState(this$1.state, path.slice(0, -1));
+    Vue.delete(parentState, path[path.length - 1]);
+  });
+  resetStore(this);
+};
+
+Store.prototype.hotUpdate = function hotUpdate (newOptions) {
+  this._modules.update(newOptions);
+  resetStore(this, true);
+};
+
+Store.prototype._withCommit = function _withCommit (fn) {
+  var committing = this._committing;
+  this._committing = true;
+  fn();
+  this._committing = committing;
+};
+
+Object.defineProperties( Store.prototype, prototypeAccessors$1 );
+
+function genericSubscribe (fn, subs) {
+  if (subs.indexOf(fn) < 0) {
+    subs.push(fn);
+  }
+  return function () {
+    var i = subs.indexOf(fn);
+    if (i > -1) {
+      subs.splice(i, 1);
+    }
+  }
+}
+
+function resetStore (store, hot) {
+  store._actions = Object.create(null);
+  store._mutations = Object.create(null);
+  store._wrappedGetters = Object.create(null);
+  store._modulesNamespaceMap = Object.create(null);
+  var state = store.state;
+  // init all modules
+  installModule(store, state, [], store._modules.root, true);
+  // reset vm
+  resetStoreVM(store, state, hot);
+}
+
+function resetStoreVM (store, state, hot) {
+  var oldVm = store._vm;
+
+  // bind store public getters
+  store.getters = {};
+  // reset local getters cache
+  store._makeLocalGettersCache = Object.create(null);
+  var wrappedGetters = store._wrappedGetters;
+  var computed = {};
+  forEachValue(wrappedGetters, function (fn, key) {
+    // use computed to leverage its lazy-caching mechanism
+    // direct inline function use will lead to closure preserving oldVm.
+    // using partial to return function with only arguments preserved in closure environment.
+    computed[key] = partial(fn, store);
+    Object.defineProperty(store.getters, key, {
+      get: function () { return store._vm[key]; },
+      enumerable: true // for local getters
+    });
+  });
+
+  // use a Vue instance to store the state tree
+  // suppress warnings just in case the user has added
+  // some funky global mixins
+  var silent = Vue.config.silent;
+  Vue.config.silent = true;
+  store._vm = new Vue({
+    data: {
+      $$state: state
+    },
+    computed: computed
+  });
+  Vue.config.silent = silent;
+
+  // enable strict mode for new vm
+  if (store.strict) {
+    enableStrictMode(store);
+  }
+
+  if (oldVm) {
+    if (hot) {
+      // dispatch changes in all subscribed watchers
+      // to force getter re-evaluation for hot reloading.
+      store._withCommit(function () {
+        oldVm._data.$$state = null;
+      });
+    }
+    Vue.nextTick(function () { return oldVm.$destroy(); });
+  }
+}
+
+function installModule (store, rootState, path, module, hot) {
+  var isRoot = !path.length;
+  var namespace = store._modules.getNamespace(path);
+
+  // register in namespace map
+  if (module.namespaced) {
+    if (store._modulesNamespaceMap[namespace] && "development" !== 'production') {
+      console.error(("[vuex] duplicate namespace " + namespace + " for the namespaced module " + (path.join('/'))));
+    }
+    store._modulesNamespaceMap[namespace] = module;
+  }
+
+  // set state
+  if (!isRoot && !hot) {
+    var parentState = getNestedState(rootState, path.slice(0, -1));
+    var moduleName = path[path.length - 1];
+    store._withCommit(function () {
+      if (true) {
+        if (moduleName in parentState) {
+          console.warn(
+            ("[vuex] state field \"" + moduleName + "\" was overridden by a module with the same name at \"" + (path.join('.')) + "\"")
+          );
+        }
+      }
+      Vue.set(parentState, moduleName, module.state);
+    });
+  }
+
+  var local = module.context = makeLocalContext(store, namespace, path);
+
+  module.forEachMutation(function (mutation, key) {
+    var namespacedType = namespace + key;
+    registerMutation(store, namespacedType, mutation, local);
+  });
+
+  module.forEachAction(function (action, key) {
+    var type = action.root ? key : namespace + key;
+    var handler = action.handler || action;
+    registerAction(store, type, handler, local);
+  });
+
+  module.forEachGetter(function (getter, key) {
+    var namespacedType = namespace + key;
+    registerGetter(store, namespacedType, getter, local);
+  });
+
+  module.forEachChild(function (child, key) {
+    installModule(store, rootState, path.concat(key), child, hot);
+  });
+}
+
+/**
+ * make localized dispatch, commit, getters and state
+ * if there is no namespace, just use root ones
+ */
+function makeLocalContext (store, namespace, path) {
+  var noNamespace = namespace === '';
+
+  var local = {
+    dispatch: noNamespace ? store.dispatch : function (_type, _payload, _options) {
+      var args = unifyObjectStyle(_type, _payload, _options);
+      var payload = args.payload;
+      var options = args.options;
+      var type = args.type;
+
+      if (!options || !options.root) {
+        type = namespace + type;
+        if ( true && !store._actions[type]) {
+          console.error(("[vuex] unknown local action type: " + (args.type) + ", global type: " + type));
+          return
+        }
+      }
+
+      return store.dispatch(type, payload)
+    },
+
+    commit: noNamespace ? store.commit : function (_type, _payload, _options) {
+      var args = unifyObjectStyle(_type, _payload, _options);
+      var payload = args.payload;
+      var options = args.options;
+      var type = args.type;
+
+      if (!options || !options.root) {
+        type = namespace + type;
+        if ( true && !store._mutations[type]) {
+          console.error(("[vuex] unknown local mutation type: " + (args.type) + ", global type: " + type));
+          return
+        }
+      }
+
+      store.commit(type, payload, options);
+    }
+  };
+
+  // getters and state object must be gotten lazily
+  // because they will be changed by vm update
+  Object.defineProperties(local, {
+    getters: {
+      get: noNamespace
+        ? function () { return store.getters; }
+        : function () { return makeLocalGetters(store, namespace); }
+    },
+    state: {
+      get: function () { return getNestedState(store.state, path); }
+    }
+  });
+
+  return local
+}
+
+function makeLocalGetters (store, namespace) {
+  if (!store._makeLocalGettersCache[namespace]) {
+    var gettersProxy = {};
+    var splitPos = namespace.length;
+    Object.keys(store.getters).forEach(function (type) {
+      // skip if the target getter is not match this namespace
+      if (type.slice(0, splitPos) !== namespace) { return }
+
+      // extract local getter type
+      var localType = type.slice(splitPos);
+
+      // Add a port to the getters proxy.
+      // Define as getter property because
+      // we do not want to evaluate the getters in this time.
+      Object.defineProperty(gettersProxy, localType, {
+        get: function () { return store.getters[type]; },
+        enumerable: true
+      });
+    });
+    store._makeLocalGettersCache[namespace] = gettersProxy;
+  }
+
+  return store._makeLocalGettersCache[namespace]
+}
+
+function registerMutation (store, type, handler, local) {
+  var entry = store._mutations[type] || (store._mutations[type] = []);
+  entry.push(function wrappedMutationHandler (payload) {
+    handler.call(store, local.state, payload);
+  });
+}
+
+function registerAction (store, type, handler, local) {
+  var entry = store._actions[type] || (store._actions[type] = []);
+  entry.push(function wrappedActionHandler (payload) {
+    var res = handler.call(store, {
+      dispatch: local.dispatch,
+      commit: local.commit,
+      getters: local.getters,
+      state: local.state,
+      rootGetters: store.getters,
+      rootState: store.state
+    }, payload);
+    if (!isPromise(res)) {
+      res = Promise.resolve(res);
+    }
+    if (store._devtoolHook) {
+      return res.catch(function (err) {
+        store._devtoolHook.emit('vuex:error', err);
+        throw err
+      })
+    } else {
+      return res
+    }
+  });
+}
+
+function registerGetter (store, type, rawGetter, local) {
+  if (store._wrappedGetters[type]) {
+    if (true) {
+      console.error(("[vuex] duplicate getter key: " + type));
+    }
+    return
+  }
+  store._wrappedGetters[type] = function wrappedGetter (store) {
+    return rawGetter(
+      local.state, // local state
+      local.getters, // local getters
+      store.state, // root state
+      store.getters // root getters
+    )
+  };
+}
+
+function enableStrictMode (store) {
+  store._vm.$watch(function () { return this._data.$$state }, function () {
+    if (true) {
+      assert(store._committing, "do not mutate vuex store state outside mutation handlers.");
+    }
+  }, { deep: true, sync: true });
+}
+
+function getNestedState (state, path) {
+  return path.reduce(function (state, key) { return state[key]; }, state)
+}
+
+function unifyObjectStyle (type, payload, options) {
+  if (isObject(type) && type.type) {
+    options = payload;
+    payload = type;
+    type = type.type;
+  }
+
+  if (true) {
+    assert(typeof type === 'string', ("expects string as the type, but found " + (typeof type) + "."));
+  }
+
+  return { type: type, payload: payload, options: options }
+}
+
+function install (_Vue) {
+  if (Vue && _Vue === Vue) {
+    if (true) {
+      console.error(
+        '[vuex] already installed. Vue.use(Vuex) should be called only once.'
+      );
+    }
+    return
+  }
+  Vue = _Vue;
+  applyMixin(Vue);
+}
+
+/**
+ * Reduce the code which written in Vue.js for getting the state.
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} states # Object's item can be a function which accept state and getters for param, you can do something for state and getters in it.
+ * @param {Object}
+ */
+var mapState = normalizeNamespace(function (namespace, states) {
+  var res = {};
+  if ( true && !isValidMap(states)) {
+    console.error('[vuex] mapState: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(states).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedState () {
+      var state = this.$store.state;
+      var getters = this.$store.getters;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapState', namespace);
+        if (!module) {
+          return
+        }
+        state = module.context.state;
+        getters = module.context.getters;
+      }
+      return typeof val === 'function'
+        ? val.call(this, state, getters)
+        : state[val]
+    };
+    // mark vuex getter for devtools
+    res[key].vuex = true;
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for committing the mutation
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} mutations # Object's item can be a function which accept `commit` function as the first param, it can accept anthor params. You can commit mutation and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
+var mapMutations = normalizeNamespace(function (namespace, mutations) {
+  var res = {};
+  if ( true && !isValidMap(mutations)) {
+    console.error('[vuex] mapMutations: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(mutations).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedMutation () {
+      var args = [], len = arguments.length;
+      while ( len-- ) args[ len ] = arguments[ len ];
+
+      // Get the commit method from store
+      var commit = this.$store.commit;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapMutations', namespace);
+        if (!module) {
+          return
+        }
+        commit = module.context.commit;
+      }
+      return typeof val === 'function'
+        ? val.apply(this, [commit].concat(args))
+        : commit.apply(this.$store, [val].concat(args))
+    };
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for getting the getters
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} getters
+ * @return {Object}
+ */
+var mapGetters = normalizeNamespace(function (namespace, getters) {
+  var res = {};
+  if ( true && !isValidMap(getters)) {
+    console.error('[vuex] mapGetters: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(getters).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    // The namespace has been mutated by normalizeNamespace
+    val = namespace + val;
+    res[key] = function mappedGetter () {
+      if (namespace && !getModuleByNamespace(this.$store, 'mapGetters', namespace)) {
+        return
+      }
+      if ( true && !(val in this.$store.getters)) {
+        console.error(("[vuex] unknown getter: " + val));
+        return
+      }
+      return this.$store.getters[val]
+    };
+    // mark vuex getter for devtools
+    res[key].vuex = true;
+  });
+  return res
+});
+
+/**
+ * Reduce the code which written in Vue.js for dispatch the action
+ * @param {String} [namespace] - Module's namespace
+ * @param {Object|Array} actions # Object's item can be a function which accept `dispatch` function as the first param, it can accept anthor params. You can dispatch action and do any other things in this function. specially, You need to pass anthor params from the mapped function.
+ * @return {Object}
+ */
+var mapActions = normalizeNamespace(function (namespace, actions) {
+  var res = {};
+  if ( true && !isValidMap(actions)) {
+    console.error('[vuex] mapActions: mapper parameter must be either an Array or an Object');
+  }
+  normalizeMap(actions).forEach(function (ref) {
+    var key = ref.key;
+    var val = ref.val;
+
+    res[key] = function mappedAction () {
+      var args = [], len = arguments.length;
+      while ( len-- ) args[ len ] = arguments[ len ];
+
+      // get dispatch function from store
+      var dispatch = this.$store.dispatch;
+      if (namespace) {
+        var module = getModuleByNamespace(this.$store, 'mapActions', namespace);
+        if (!module) {
+          return
+        }
+        dispatch = module.context.dispatch;
+      }
+      return typeof val === 'function'
+        ? val.apply(this, [dispatch].concat(args))
+        : dispatch.apply(this.$store, [val].concat(args))
+    };
+  });
+  return res
+});
+
+/**
+ * Rebinding namespace param for mapXXX function in special scoped, and return them by simple object
+ * @param {String} namespace
+ * @return {Object}
+ */
+var createNamespacedHelpers = function (namespace) { return ({
+  mapState: mapState.bind(null, namespace),
+  mapGetters: mapGetters.bind(null, namespace),
+  mapMutations: mapMutations.bind(null, namespace),
+  mapActions: mapActions.bind(null, namespace)
+}); };
+
+/**
+ * Normalize the map
+ * normalizeMap([1, 2, 3]) => [ { key: 1, val: 1 }, { key: 2, val: 2 }, { key: 3, val: 3 } ]
+ * normalizeMap({a: 1, b: 2, c: 3}) => [ { key: 'a', val: 1 }, { key: 'b', val: 2 }, { key: 'c', val: 3 } ]
+ * @param {Array|Object} map
+ * @return {Object}
+ */
+function normalizeMap (map) {
+  if (!isValidMap(map)) {
+    return []
+  }
+  return Array.isArray(map)
+    ? map.map(function (key) { return ({ key: key, val: key }); })
+    : Object.keys(map).map(function (key) { return ({ key: key, val: map[key] }); })
+}
+
+/**
+ * Validate whether given map is valid or not
+ * @param {*} map
+ * @return {Boolean}
+ */
+function isValidMap (map) {
+  return Array.isArray(map) || isObject(map)
+}
+
+/**
+ * Return a function expect two param contains namespace and map. it will normalize the namespace and then the param's function will handle the new namespace and the map.
+ * @param {Function} fn
+ * @return {Function}
+ */
+function normalizeNamespace (fn) {
+  return function (namespace, map) {
+    if (typeof namespace !== 'string') {
+      map = namespace;
+      namespace = '';
+    } else if (namespace.charAt(namespace.length - 1) !== '/') {
+      namespace += '/';
+    }
+    return fn(namespace, map)
+  }
+}
+
+/**
+ * Search a special module from store by namespace. if module not exist, print error message.
+ * @param {Object} store
+ * @param {String} helper
+ * @param {String} namespace
+ * @return {Object}
+ */
+function getModuleByNamespace (store, helper, namespace) {
+  var module = store._modulesNamespaceMap[namespace];
+  if ( true && !module) {
+    console.error(("[vuex] module namespace not found in " + helper + "(): " + namespace));
+  }
+  return module
+}
+
+var index_esm = {
+  Store: Store,
+  install: install,
+  version: '3.1.3',
+  mapState: mapState,
+  mapMutations: mapMutations,
+  mapGetters: mapGetters,
+  mapActions: mapActions,
+  createNamespacedHelpers: createNamespacedHelpers
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (index_esm);
+
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
 /***/ "./node_modules/webpack/buildin/global.js":
 /*!***********************************!*\
   !*** (webpack)/buildin/global.js ***!
@@ -79167,11 +80310,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(bootstrap_dist_css_bootstrap_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! bootstrap-vue/dist/bootstrap-vue.css */ "./node_modules/bootstrap-vue/dist/bootstrap-vue.css");
 /* harmony import */ var bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(bootstrap_vue_dist_bootstrap_vue_css__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _asset_rs_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./asset/rs.css */ "./resources/js/asset/rs.css");
-/* harmony import */ var _asset_rs_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_asset_rs_css__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _asset_rs_color_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./asset/rs.color.css */ "./resources/js/asset/rs.color.css");
-/* harmony import */ var _asset_rs_color_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_asset_rs_color_css__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
+/* harmony import */ var vue_select_dist_vue_select_css__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! vue-select/dist/vue-select.css */ "./node_modules/vue-select/dist/vue-select.css");
+/* harmony import */ var vue_select_dist_vue_select_css__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(vue_select_dist_vue_select_css__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _asset_rs_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./asset/rs.css */ "./resources/js/asset/rs.css");
+/* harmony import */ var _asset_rs_css__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_asset_rs_css__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _asset_rs_color_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./asset/rs.color.css */ "./resources/js/asset/rs.color.css");
+/* harmony import */ var _asset_rs_color_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_asset_rs_color_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var bootstrap_vue__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! bootstrap-vue */ "./node_modules/bootstrap-vue/esm/index.js");
+/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue-select */ "./node_modules/vue-select/dist/vue-select.js");
+/* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(vue_select__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./store/store */ "./resources/js/store/store.js");
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -79183,23 +80331,31 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 
 
+
+
+
+Vue.config.productionTip = false;
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
-Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_7__["BootstrapVue"]);
-Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_7__["IconsPlugin"]); //Register Routes
+Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_8__["BootstrapVue"]);
+Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_8__["IconsPlugin"]); //Register Routes
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: _router__WEBPACK_IMPORTED_MODULE_0__["routes"],
   mode: 'history'
 });
+Vue.component('v-select', vue_select__WEBPACK_IMPORTED_MODULE_9___default.a);
 Vue.component('HeaderPage', __webpack_require__(/*! ./components/HeaderPage.vue */ "./resources/js/components/HeaderPage.vue")["default"]);
 Vue.component('FooterPage', __webpack_require__(/*! ./components/FooterPage.vue */ "./resources/js/components/FooterPage.vue")["default"]);
+Vue.component('CardBlog', __webpack_require__(/*! ./components/CardBlog.vue */ "./resources/js/components/CardBlog.vue")["default"]);
 var app = new Vue({
-  el: '#app',
-  components: {
-    App: _root_App__WEBPACK_IMPORTED_MODULE_2__["default"]
+  store: _store_store__WEBPACK_IMPORTED_MODULE_10__["store"],
+  render: function render(h) {
+    return h(_root_App__WEBPACK_IMPORTED_MODULE_2__["default"]);
   },
-  router: router
-});
+  router: router // el: '#app',
+  // components: { App },
+
+}).$mount("#app");
 
 /***/ }),
 
@@ -79305,6 +80461,93 @@ if (token) {
 //     cluster: process.env.MIX_PUSHER_APP_CLUSTER,
 //     encrypted: true
 // });
+
+/***/ }),
+
+/***/ "./resources/js/components/CardBlog.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/components/CardBlog.vue ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CardBlog_vue_vue_type_template_id_0e65733d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardBlog.vue?vue&type=template&id=0e65733d& */ "./resources/js/components/CardBlog.vue?vue&type=template&id=0e65733d&");
+/* harmony import */ var _CardBlog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardBlog.vue?vue&type=script&lang=js& */ "./resources/js/components/CardBlog.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _CardBlog_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./CardBlog.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _CardBlog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CardBlog_vue_vue_type_template_id_0e65733d___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CardBlog_vue_vue_type_template_id_0e65733d___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CardBlog.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CardBlog.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/components/CardBlog.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CardBlog.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css& ***!
+  \*******************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./CardBlog.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CardBlog.vue?vue&type=template&id=0e65733d&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/components/CardBlog.vue?vue&type=template&id=0e65733d& ***!
+  \*****************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_template_id_0e65733d___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CardBlog.vue?vue&type=template&id=0e65733d& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardBlog.vue?vue&type=template&id=0e65733d&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_template_id_0e65733d___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardBlog_vue_vue_type_template_id_0e65733d___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
 
 /***/ }),
 
@@ -79475,7 +80718,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HomePage_vue_vue_type_template_id_475b3b20___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HomePage.vue?vue&type=template&id=475b3b20& */ "./resources/js/page/HomePage.vue?vue&type=template&id=475b3b20&");
 /* harmony import */ var _HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HomePage.vue?vue&type=script&lang=js& */ "./resources/js/page/HomePage.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _HomePage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HomePage.vue?vue&type=style&index=0&lang=css& */ "./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -79483,7 +80728,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _HomePage_vue_vue_type_template_id_475b3b20___WEBPACK_IMPORTED_MODULE_0__["render"],
   _HomePage_vue_vue_type_template_id_475b3b20___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -79512,6 +80757,22 @@ component.options.__file = "resources/js/page/HomePage.vue"
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./HomePage.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/page/HomePage.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css& ***!
+  \*************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./HomePage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HomePage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
 
 /***/ }),
 
@@ -79618,6 +80879,135 @@ var routes = [{
   path: '/',
   component: _page_HomePage__WEBPACK_IMPORTED_MODULE_0__["default"]
 }];
+
+/***/ }),
+
+/***/ "./resources/js/store/store.js":
+/*!*************************************!*\
+  !*** ./resources/js/store/store.js ***!
+  \*************************************/
+/*! exports provided: store */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "store", function() { return store; });
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(vue__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
+var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
+  state: {
+    counter: 0,
+    articles: [],
+    actors: [],
+    projects: [],
+    actions: [],
+    error: '',
+    project_options: [],
+    action_options: [],
+    actor_options: [],
+    project_selected: '',
+    action_selected: '',
+    actor_selected: ''
+  },
+  getters: {
+    doubleClicks: function doubleClicks(state) {
+      return state.counter * 2;
+    }
+  },
+  actions: {
+    SET_ARTICLE_ACTION: function SET_ARTICLE_ACTION(_ref, payload) {
+      var commit = _ref.commit;
+
+      if (payload != null) {
+        commit("SET_ARTICLE", payload);
+      } else {
+        commit("SET_ARTICLE_DEFAULT");
+      }
+    }
+  },
+  mutations: {
+    increment: function increment(state) {
+      state.counter++;
+    },
+    SET_ARTICLE_DEFAULT: function SET_ARTICLE_DEFAULT(state) {
+      state.articles = state.projects;
+    },
+    SET_ARTICLE: function SET_ARTICLE(state, payload) {
+      if (payload.type == "project") {
+        state.articles = [];
+        state.projects.map(function (item) {
+          if (item.id == payload.code) {
+            state.articles.push(item);
+          }
+        });
+      }
+
+      if (payload.type == "actor") {
+        state.articles = [];
+        state.projects.map(function (item) {
+          item.actors.map(function (actor) {
+            if (actor.id == payload.id) {
+              state.articles.push(item);
+            }
+          });
+        });
+      }
+    },
+    GET_PROJECTS: function GET_PROJECTS(state) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/projects').then(function (res) {
+        state.projects = res.data.data;
+        state.articles = state.projects; //set options filter
+
+        state.projects.map(function (item) {
+          state.project_options.push({
+            code: item.id,
+            label: item.name,
+            type: 'project'
+          });
+        });
+      })["catch"](function (error) {
+        // handle error
+        state.error = error;
+        console.log(error);
+      });
+    },
+    GET_ACTIONS: function GET_ACTIONS(state) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/actions').then(function (res) {
+        state.actions = res.data.data;
+        console.log(res);
+      })["catch"](function (error) {
+        // handle error
+        state.error = error;
+        console.log(error);
+      });
+    },
+    GET_ACTORS: function GET_ACTORS(state) {
+      axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/actors').then(function (res) {
+        state.actors = res.data.data;
+        console.log(res); //set options filter
+
+        state.actors.map(function (item) {
+          state.actor_options.push({
+            code: item.id,
+            label: item.name,
+            type: 'actor'
+          });
+        });
+      })["catch"](function (error) {
+        // handle error
+        state.error = error;
+        console.log(error);
+      });
+    }
+  }
+});
 
 /***/ }),
 

@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Api;
 use App\Actor;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\ActorResource;
+use Illuminate\Support\Facades\Validator;
 
 class ActorController extends Controller
 {
@@ -15,7 +17,7 @@ class ActorController extends Controller
      */
     public function index()
     {
-        //
+        return ActorResource::collection('App\Actor'::where('is_a_person', 0)->OrderBy('id', 'DESC')->get());
     }
 
     /**

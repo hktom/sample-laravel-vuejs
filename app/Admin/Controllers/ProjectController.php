@@ -79,6 +79,9 @@ class ProjectController extends AdminController
         $form->textarea('to_know', __('Pour connaitre'));
         $form->textarea('to_enrich', __('Pour enrichir'));
         $form->textarea('to_value', __('Pour valoriser'));
+        $form->multipleSelect("actors", "Contributeurs")->options('App\Actor'::all()->pluck('name', 'id'));
+        $form->divider();
+        $form->image("image")->move('public/storage/')->uniqueName();
         //$form->image('image', __('Image'));
 
         return $form;
