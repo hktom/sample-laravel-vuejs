@@ -42068,7 +42068,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#cardBlog{\n    /* border:2px solid gray; */\n    /* box-shadow: 2px 2px 2px black;\n    margin:15px 0px 15px 0px; */\n    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);\n    border-radius: 5px;\n    /* padding: 2em 4em !important; */\n    margin-bottom: 1.2em;\n    margin-left: 15px;\n    margin-right: 15px;\n    border: 1px solid #ddd;\n    transition: transform 0.3s;\n}\n#cardBlog:hover{\n    transform: scale(1.02);\n}\n\n", ""]);
+exports.push([module.i, "\n#cardBlog{\r\n    /* border:2px solid gray; */\r\n    /* box-shadow: 2px 2px 2px black;\r\n    margin:15px 0px 15px 0px; */\r\n    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);\r\n    border-radius: 5px;\r\n    /* padding: 2em 4em !important; */\r\n    margin-bottom: 1.2em;\r\n    margin-left: 15px;\r\n    margin-right: 15px;\r\n    border: 1px solid #ddd;\r\n    transition: transform 0.3s;\n}\n#cardBlog:hover{\r\n    transform: scale(1.02);\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -42106,7 +42106,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#bg-image {\n  background-image: url(\"/img/wallapaper.jpg\");\n  background-position: bottom;\n  background-size: cover;\n  background-repeat: no-repeat;\n  filter: blur(1px);\n  -webkit-filter: blur(1px);\n}\n", ""]);
+exports.push([module.i, "\n#bg-image {\r\n  background-image: url(\"/img/wallapaper.jpg\");\r\n  background-position: bottom;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  filter: blur(1px);\r\n  -webkit-filter: blur(1px);\n}\r\n", ""]);
 
 // exports
 
