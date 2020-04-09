@@ -7,7 +7,7 @@
           </b-col>
 
           <b-col lg="8" md="12">
-              <h2> {{ article.name}} </h2>
+              <h2 class="lighter"> {{ article.name}} </h2>
               <p> {{ article.vision }} </p>
 
               <p>
