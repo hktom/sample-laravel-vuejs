@@ -17,7 +17,7 @@
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="3">
+        <b-col xs="12" md="12" lg="6">
           <v-select placeholder="Les Contributeurs"
           :options="option_actors"
           :value="$store.project_selected"

@@ -65900,7 +65900,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "b-col",
-            { attrs: { xs: "12", md: "12", lg: "3" } },
+            { attrs: { xs: "12", md: "12", lg: "6" } },
             [
               _c("v-select", {
                 attrs: {
@@ -82956,15 +82956,14 @@ __webpack_require__.r(__webpack_exports__);
 /*!************************************************!*\
   !*** ./resources/js/components/FilterForm.vue ***!
   \************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _FilterForm_vue_vue_type_template_id_c84c21f2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FilterForm.vue?vue&type=template&id=c84c21f2& */ "./resources/js/components/FilterForm.vue?vue&type=template&id=c84c21f2&");
 /* harmony import */ var _FilterForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./FilterForm.vue?vue&type=script&lang=js& */ "./resources/js/components/FilterForm.vue?vue&type=script&lang=js&");
-/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _FilterForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _FilterForm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__[key]; }) }(__WEBPACK_IMPORT_KEY__));
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -82994,7 +82993,7 @@ component.options.__file = "resources/js/components/FilterForm.vue"
 /*!*************************************************************************!*\
   !*** ./resources/js/components/FilterForm.vue?vue&type=script&lang=js& ***!
   \*************************************************************************/
-/*! no static exports found */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -83567,7 +83566,11 @@ var projectModule = {
       var commit = _ref.commit;
 
       if (payload != null) {
-        commit("FILTER_PROJECT", payload);
+        if (payload.type == "actor") {
+          commit("FILTER_PROJECT_BY_ACTOR", payload);
+        } else {
+          commit("FILTER_PROJECT", payload);
+        }
       } else {
         commit("SET_PROJECT_DEFAULT");
       }
@@ -83583,6 +83586,18 @@ var projectModule = {
     }
   },
   mutations: {
+    FILTER_PROJECT_BY_ACTOR: function FILTER_PROJECT_BY_ACTOR(state, payload) {
+      state.item = [];
+      state.projects.map(function (project) {
+        project.actors.map(function (actor) {
+          if (actor.id === payload.code) {
+            state.item.push(project); //console.log(`DEBBUG ${actor.name}`);
+          }
+        }); // if (item.id == payload.code) {
+        //     state.item.push(item);
+        // }
+      });
+    },
     FILTER_PROJECT: function FILTER_PROJECT(state, payload) {
       state.item = [];
       state.projects.map(function (item) {

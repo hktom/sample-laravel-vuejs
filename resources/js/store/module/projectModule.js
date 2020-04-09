@@ -11,7 +11,15 @@ export const projectModule = {
     actions: {
         FILTER_PROJECT: ({ commit }, payload) => {
             if (payload != null) {
-                commit("FILTER_PROJECT", payload);
+                if(payload.type=="actor")
+                {
+
+                    commit("FILTER_PROJECT_BY_ACTOR", payload);
+                }
+                else
+                {
+                    commit("FILTER_PROJECT", payload);
+                }
             }
             else {
                 commit("SET_PROJECT_DEFAULT");
@@ -27,6 +35,23 @@ export const projectModule = {
         },
     },
     mutations: {
+        FILTER_PROJECT_BY_ACTOR: (state, payload) => {
+                state.item = [];
+                state.projects.map((project) => {
+                    project.actors.map((actor)=>{
+                        if(actor.id===payload.code)
+                        {
+                            state.item.push(project);
+                            //console.log(`DEBBUG ${actor.name}`);
+                        }
+                    })
+                    // if (item.id == payload.code) {
+                    //     state.item.push(item);
+                    // }
+                })
+
+        },
+
         FILTER_PROJECT: (state, payload) => {
                 state.item = [];
                 state.projects.map((item) => {
