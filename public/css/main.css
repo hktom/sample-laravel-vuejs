@@ -1,6 +1,8 @@
-@font-face {
+@import url(https://use.typekit.net/rco6seo.css);@charset "UTF-8";
+
+/* @font-face {
     font-family: mainFont;
     src: url('../font/AktivGroteskCorp-Light.ttf');
-  }
+  } */
 
-  *{font-family:mainFont}
+  *{font-family: aktiv-grotesk, sans-serif !important;}

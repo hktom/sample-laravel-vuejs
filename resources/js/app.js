@@ -11,13 +11,21 @@ import './asset/rs.color.css'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue';
 import vSelect from 'vue-select'
 import {store} from './store/store'
+import VueScrollReveal from 'vue-scroll-reveal';
 
 Vue.config.productionTip = false
 
 Vue.use(VueRouter);
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
-
+//Vue.use(VueScrollReveal);
+Vue.use(VueScrollReveal, {
+    class: 'v-scroll-reveal',
+    duration: 800,
+    scale: 1,
+    distance: '10px',
+    mobile: true
+  });
 
 //Register Routes
 const router = new VueRouter({
@@ -27,6 +35,7 @@ const router = new VueRouter({
 })
 
 Vue.component('v-select', vSelect)
+Vue.component('SpinnerGrow', require('./components/SpinnerGrow.vue').default);
 Vue.component('HeaderPage', require('./components/HeaderPage.vue').default);
 Vue.component('FooterPage', require('./components/FooterPage.vue').default);
 Vue.component('CardBlog', require('./components/CardBlog.vue').default);

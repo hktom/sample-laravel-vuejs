@@ -18,6 +18,7 @@ export const store = new Vuex.Store({
         project_selected: '',
         action_selected: '',
         actor_selected: '',
+        has_data_loaded:false,
     },
     getters: {
         doubleClicks: state => {
@@ -77,6 +78,7 @@ export const store = new Vuex.Store({
                 .then(function (res) {
                     state.projects = res.data.data
                     state.articles = state.projects
+                    state.has_data_loaded=true;
 
                     //set options filter
                     state.projects.map((item) => {

@@ -2027,32 +2027,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: 'HeaderPage',
   data: function data() {
@@ -2061,6 +2035,27 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {}
 });
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SpinnerGrow.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({});
 
 /***/ }),
 
@@ -2140,9 +2135,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   mounted: function mounted() {
-    this.$store.commit("GET_PROJECTS");
-    this.$store.commit("GET_ACTORS"); //this.$store.commit("GET_ACTIONS");
-    //this.$store.commit("SET_ARTICLE", '');
+    if (this.$store.state.has_data_loaded == false) {
+      this.$store.commit("GET_PROJECTS");
+      this.$store.commit("GET_ACTORS"); //this.$store.commit("GET_ACTIONS");
+      //this.$store.commit("SET_ARTICLE", '');
+    }
   },
   data: function data() {
     return {};
@@ -2196,9 +2193,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-// import HeaderPage from '../components/HeaderPage';
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  name: "App"
+  name: "App",
+  mounted: function mounted() {
+    this.$store.commit("GET_PROJECTS");
+    this.$store.commit("GET_ACTORS"); //this.$store.commit("GET_ACTIONS");
+    //this.$store.commit("SET_ARTICLE", '');
+  },
+  computed: {
+    has_data_loaded: function has_data_loaded() {
+      return this.$store.state.has_data_loaded;
+    }
+  }
 });
 
 /***/ }),
@@ -42094,6 +42102,44 @@ exports.push([module.i, "\n#footer ul li{\r\n    margin: 15px 0px 15px 0px;\r\n 
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css&":
+/*!****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.header-link{color:black;text-decoration: none;font-weight: 400;}\n.header-link:hover{text-decoration: none; color:#4B96F3}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css&":
+/*!*****************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n#spinner{\r\n    width: 100%;\r\n    height: 100%;\r\n    position: absolute;\r\n    z-index: 9999;\r\n    background-color: white;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css&":
 /*!********************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/page/HomePage.vue?vue&type=style&index=0&lang=css& ***!
@@ -42106,7 +42152,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#bg-image {\r\n  background-image: url(\"/img/wallapaper.jpg\");\r\n  background-position: bottom;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  filter: blur(1px);\r\n  -webkit-filter: blur(1px);\n}\r\n", ""]);
+exports.push([module.i, "\n#bg-image {\r\n  background-image: url(\"/img/bg-image.jpg\");\r\n  background-position: center;\r\n  background-size: cover;\r\n  background-repeat: no-repeat;\r\n  -webkit-filter: blur(4px );\r\n      filter: blur(4px);\r\n    transform: scale(1.1);\n}\n.text-header{color: white;text-shadow: 0 0 1em black;font-weight: normal;}\n.link-header{text-transform: uppercase;color: #17A2B8;font-weight: bold;}\n.current_link{background-color: #17A2B8; color: white; border-radius: 300px; padding: 7px 50px;}\n.link-header:hover{text-decoration: none;color: #64C1CF;}\n.link-header.current_link::after {\r\n    content: \"\";\r\n    border-top: 0.5em solid #026051;\r\n    border-left: 0.8em solid transparent;\r\n    border-right: 0.8em solid transparent;\r\n    position: absolute;\r\n    left: calc(50% - .8em);\r\n    top: 100%;\n}\r\n", ""]);
 
 // exports
 
@@ -42196,6 +42242,105 @@ function toComment(sourceMap) {
 
 	return '/*# ' + data + ' */';
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/is-dom-node-list/dist/is-dom-node-list.es.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/is-dom-node-list/dist/is-dom-node-list.es.js ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var is_dom_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! is-dom-node */ "./node_modules/is-dom-node/dist/is-dom-node.es.js");
+/*! @license is-dom-node-list v1.2.1
+
+	Copyright 2018 Fisssion LLC.
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+
+*/
+
+
+function isDomNodeList(x) {
+	var prototypeToString = Object.prototype.toString.call(x);
+	var regex = /^\[object (HTMLCollection|NodeList|Object)\]$/;
+
+	return typeof window.NodeList === 'object'
+		? x instanceof window.NodeList
+		: x !== null &&
+				typeof x === 'object' &&
+				typeof x.length === 'number' &&
+				regex.test(prototypeToString) &&
+				(x.length === 0 || Object(is_dom_node__WEBPACK_IMPORTED_MODULE_0__["default"])(x[0]))
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (isDomNodeList);
+
+
+/***/ }),
+
+/***/ "./node_modules/is-dom-node/dist/is-dom-node.es.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/is-dom-node/dist/is-dom-node.es.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/*! @license is-dom-node v1.0.4
+
+	Copyright 2018 Fisssion LLC.
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+
+*/
+function isDomNode(x) {
+	return typeof window.Node === 'object'
+		? x instanceof window.Node
+		: x !== null &&
+				typeof x === 'object' &&
+				typeof x.nodeType === 'number' &&
+				typeof x.nodeName === 'string'
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (isDomNode);
 
 
 /***/ }),
@@ -59316,6 +59461,62 @@ function toComment(sourceMap) {
 
 /***/ }),
 
+/***/ "./node_modules/miniraf/dist/miniraf.es.js":
+/*!*************************************************!*\
+  !*** ./node_modules/miniraf/dist/miniraf.es.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/*! @license miniraf v1.0.0
+
+	Copyright 2018 Fisssion LLC.
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+
+*/
+var polyfill = (function () {
+	var clock = Date.now();
+
+	return function (callback) {
+		var currentTime = Date.now();
+		if (currentTime - clock > 16) {
+			clock = currentTime;
+			callback(currentTime);
+		} else {
+			setTimeout(function () { return polyfill(callback); }, 0);
+		}
+	}
+})();
+
+var index = window.requestAnimationFrame ||
+	window.webkitRequestAnimationFrame ||
+	window.mozRequestAnimationFrame ||
+	polyfill;
+
+/* harmony default export */ __webpack_exports__["default"] = (index);
+
+
+/***/ }),
+
 /***/ "./node_modules/popper.js/dist/esm/popper.js":
 /*!***************************************************!*\
   !*** ./node_modules/popper.js/dist/esm/popper.js ***!
@@ -62769,6 +62970,1646 @@ process.umask = function() { return 0; };
 
 /***/ }),
 
+/***/ "./node_modules/rematrix/dist/rematrix.es.js":
+/*!***************************************************!*\
+  !*** ./node_modules/rematrix/dist/rematrix.es.js ***!
+  \***************************************************/
+/*! exports provided: format, identity, inverse, multiply, parse, rotate, rotateX, rotateY, rotateZ, scale, scaleX, scaleY, scaleZ, skew, skewX, skewY, toString, translate, translateX, translateY, translateZ */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "format", function() { return format; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "identity", function() { return identity; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "inverse", function() { return inverse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "multiply", function() { return multiply; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parse", function() { return parse; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rotate", function() { return rotate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rotateX", function() { return rotateX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rotateY", function() { return rotateY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "rotateZ", function() { return rotateZ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "scale", function() { return scale; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "scaleX", function() { return scaleX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "scaleY", function() { return scaleY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "scaleZ", function() { return scaleZ; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skew", function() { return skew; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skewX", function() { return skewX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skewY", function() { return skewY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toString", function() { return toString; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "translate", function() { return translate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "translateX", function() { return translateX; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "translateY", function() { return translateY; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "translateZ", function() { return translateZ; });
+/*! @license Rematrix v0.3.0
+
+	Copyright 2018 Julian Lloyd.
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in
+	all copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+	THE SOFTWARE.
+*/
+/**
+ * @module Rematrix
+ */
+
+/**
+ * Transformation matrices in the browser come in two flavors:
+ *
+ *  - `matrix` using 6 values (short)
+ *  - `matrix3d` using 16 values (long)
+ *
+ * This utility follows this [conversion guide](https://goo.gl/EJlUQ1)
+ * to expand short form matrices to their equivalent long form.
+ *
+ * @param  {array} source - Accepts both short and long form matrices.
+ * @return {array}
+ */
+function format(source) {
+	if (source.constructor !== Array) {
+		throw new TypeError('Expected array.')
+	}
+	if (source.length === 16) {
+		return source
+	}
+	if (source.length === 6) {
+		var matrix = identity();
+		matrix[0] = source[0];
+		matrix[1] = source[1];
+		matrix[4] = source[2];
+		matrix[5] = source[3];
+		matrix[12] = source[4];
+		matrix[13] = source[5];
+		return matrix
+	}
+	throw new RangeError('Expected array with either 6 or 16 values.')
+}
+
+/**
+ * Returns a matrix representing no transformation. The product of any matrix
+ * multiplied by the identity matrix will be the original matrix.
+ *
+ * > **Tip:** Similar to how `5 * 1 === 5`, where `1` is the identity.
+ *
+ * @return {array}
+ */
+function identity() {
+	var matrix = [];
+	for (var i = 0; i < 16; i++) {
+		i % 5 == 0 ? matrix.push(1) : matrix.push(0);
+	}
+	return matrix
+}
+
+/**
+ * Returns a matrix describing the inverse transformation of the source
+ * matrix. The product of any matrix multiplied by its inverse will be the
+ * identity matrix.
+ *
+ * > **Tip:** Similar to how `5 * (1/5) === 1`, where `1/5` is the inverse.
+ *
+ * @param  {array} source - Accepts both short and long form matrices.
+ * @return {array}
+ */
+function inverse(source) {
+	var m = format(source);
+
+	var s0 = m[0] * m[5] - m[4] * m[1];
+	var s1 = m[0] * m[6] - m[4] * m[2];
+	var s2 = m[0] * m[7] - m[4] * m[3];
+	var s3 = m[1] * m[6] - m[5] * m[2];
+	var s4 = m[1] * m[7] - m[5] * m[3];
+	var s5 = m[2] * m[7] - m[6] * m[3];
+
+	var c5 = m[10] * m[15] - m[14] * m[11];
+	var c4 = m[9] * m[15] - m[13] * m[11];
+	var c3 = m[9] * m[14] - m[13] * m[10];
+	var c2 = m[8] * m[15] - m[12] * m[11];
+	var c1 = m[8] * m[14] - m[12] * m[10];
+	var c0 = m[8] * m[13] - m[12] * m[9];
+
+	var determinant = 1 / (s0 * c5 - s1 * c4 + s2 * c3 + s3 * c2 - s4 * c1 + s5 * c0);
+
+	if (isNaN(determinant) || determinant === Infinity) {
+		throw new Error('Inverse determinant attempted to divide by zero.')
+	}
+
+	return [
+		(m[5] * c5 - m[6] * c4 + m[7] * c3) * determinant,
+		(-m[1] * c5 + m[2] * c4 - m[3] * c3) * determinant,
+		(m[13] * s5 - m[14] * s4 + m[15] * s3) * determinant,
+		(-m[9] * s5 + m[10] * s4 - m[11] * s3) * determinant,
+
+		(-m[4] * c5 + m[6] * c2 - m[7] * c1) * determinant,
+		(m[0] * c5 - m[2] * c2 + m[3] * c1) * determinant,
+		(-m[12] * s5 + m[14] * s2 - m[15] * s1) * determinant,
+		(m[8] * s5 - m[10] * s2 + m[11] * s1) * determinant,
+
+		(m[4] * c4 - m[5] * c2 + m[7] * c0) * determinant,
+		(-m[0] * c4 + m[1] * c2 - m[3] * c0) * determinant,
+		(m[12] * s4 - m[13] * s2 + m[15] * s0) * determinant,
+		(-m[8] * s4 + m[9] * s2 - m[11] * s0) * determinant,
+
+		(-m[4] * c3 + m[5] * c1 - m[6] * c0) * determinant,
+		(m[0] * c3 - m[1] * c1 + m[2] * c0) * determinant,
+		(-m[12] * s3 + m[13] * s1 - m[14] * s0) * determinant,
+		(m[8] * s3 - m[9] * s1 + m[10] * s0) * determinant
+	]
+}
+
+/**
+ * Returns a 4x4 matrix describing the combined transformations
+ * of both arguments.
+ *
+ * > **Note:** Order is very important. For example, rotating 45°
+ * along the Z-axis, followed by translating 500 pixels along the
+ * Y-axis... is not the same as translating 500 pixels along the
+ * Y-axis, followed by rotating 45° along on the Z-axis.
+ *
+ * @param  {array} m - Accepts both short and long form matrices.
+ * @param  {array} x - Accepts both short and long form matrices.
+ * @return {array}
+ */
+function multiply(m, x) {
+	var fm = format(m);
+	var fx = format(x);
+	var product = [];
+
+	for (var i = 0; i < 4; i++) {
+		var row = [fm[i], fm[i + 4], fm[i + 8], fm[i + 12]];
+		for (var j = 0; j < 4; j++) {
+			var k = j * 4;
+			var col = [fx[k], fx[k + 1], fx[k + 2], fx[k + 3]];
+			var result =
+				row[0] * col[0] + row[1] * col[1] + row[2] * col[2] + row[3] * col[3];
+
+			product[i + k] = result;
+		}
+	}
+
+	return product
+}
+
+/**
+ * Attempts to return a 4x4 matrix describing the CSS transform
+ * matrix passed in, but will return the identity matrix as a
+ * fallback.
+ *
+ * > **Tip:** This method is used to convert a CSS matrix (retrieved as a
+ * `string` from computed styles) to its equivalent array format.
+ *
+ * @param  {string} source - `matrix` or `matrix3d` CSS Transform value.
+ * @return {array}
+ */
+function parse(source) {
+	if (typeof source === 'string') {
+		var match = source.match(/matrix(3d)?\(([^)]+)\)/);
+		if (match) {
+			var raw = match[2].split(', ').map(parseFloat);
+			return format(raw)
+		}
+	}
+	return identity()
+}
+
+/**
+ * Returns a 4x4 matrix describing Z-axis rotation.
+ *
+ * > **Tip:** This is just an alias for `Rematrix.rotateZ` for parity with CSS
+ *
+ * @param  {number} angle - Measured in degrees.
+ * @return {array}
+ */
+function rotate(angle) {
+	return rotateZ(angle)
+}
+
+/**
+ * Returns a 4x4 matrix describing X-axis rotation.
+ *
+ * @param  {number} angle - Measured in degrees.
+ * @return {array}
+ */
+function rotateX(angle) {
+	var theta = Math.PI / 180 * angle;
+	var matrix = identity();
+
+	matrix[5] = matrix[10] = Math.cos(theta);
+	matrix[6] = matrix[9] = Math.sin(theta);
+	matrix[9] *= -1;
+
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing Y-axis rotation.
+ *
+ * @param  {number} angle - Measured in degrees.
+ * @return {array}
+ */
+function rotateY(angle) {
+	var theta = Math.PI / 180 * angle;
+	var matrix = identity();
+
+	matrix[0] = matrix[10] = Math.cos(theta);
+	matrix[2] = matrix[8] = Math.sin(theta);
+	matrix[2] *= -1;
+
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing Z-axis rotation.
+ *
+ * @param  {number} angle - Measured in degrees.
+ * @return {array}
+ */
+function rotateZ(angle) {
+	var theta = Math.PI / 180 * angle;
+	var matrix = identity();
+
+	matrix[0] = matrix[5] = Math.cos(theta);
+	matrix[1] = matrix[4] = Math.sin(theta);
+	matrix[4] *= -1;
+
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing 2D scaling. The first argument
+ * is used for both X and Y-axis scaling, unless an optional
+ * second argument is provided to explicitly define Y-axis scaling.
+ *
+ * @param  {number} scalar    - Decimal multiplier.
+ * @param  {number} [scalarY] - Decimal multiplier.
+ * @return {array}
+ */
+function scale(scalar, scalarY) {
+	var matrix = identity();
+
+	matrix[0] = scalar;
+	matrix[5] = typeof scalarY === 'number' ? scalarY : scalar;
+
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing X-axis scaling.
+ *
+ * @param  {number} scalar - Decimal multiplier.
+ * @return {array}
+ */
+function scaleX(scalar) {
+	var matrix = identity();
+	matrix[0] = scalar;
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing Y-axis scaling.
+ *
+ * @param  {number} scalar - Decimal multiplier.
+ * @return {array}
+ */
+function scaleY(scalar) {
+	var matrix = identity();
+	matrix[5] = scalar;
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing Z-axis scaling.
+ *
+ * @param  {number} scalar - Decimal multiplier.
+ * @return {array}
+ */
+function scaleZ(scalar) {
+	var matrix = identity();
+	matrix[10] = scalar;
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing shear. The first argument
+ * defines X-axis shearing, and an optional second argument
+ * defines Y-axis shearing.
+ *
+ * @param  {number} angleX   - Measured in degrees.
+ * @param  {number} [angleY] - Measured in degrees.
+ * @return {array}
+ */
+function skew(angleX, angleY) {
+	var thetaX = Math.PI / 180 * angleX;
+	var matrix = identity();
+
+	matrix[4] = Math.tan(thetaX);
+
+	if (angleY) {
+		var thetaY = Math.PI / 180 * angleY;
+		matrix[1] = Math.tan(thetaY);
+	}
+
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing X-axis shear.
+ *
+ * @param  {number} angle - Measured in degrees.
+ * @return {array}
+ */
+function skewX(angle) {
+	var theta = Math.PI / 180 * angle;
+	var matrix = identity();
+
+	matrix[4] = Math.tan(theta);
+
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing Y-axis shear.
+ *
+ * @param  {number} angle - Measured in degrees
+ * @return {array}
+ */
+function skewY(angle) {
+	var theta = Math.PI / 180 * angle;
+	var matrix = identity();
+
+	matrix[1] = Math.tan(theta);
+
+	return matrix
+}
+
+/**
+ * Returns a CSS Transform property value equivalent to the source matrix.
+ *
+ * @param  {array} source - Accepts both short and long form matrices.
+ * @return {string}
+ */
+function toString(source) {
+	return ("matrix3d(" + (format(source).join(', ')) + ")")
+}
+
+/**
+ * Returns a 4x4 matrix describing 2D translation. The first
+ * argument defines X-axis translation, and an optional second
+ * argument defines Y-axis translation.
+ *
+ * @param  {number} distanceX   - Measured in pixels.
+ * @param  {number} [distanceY] - Measured in pixels.
+ * @return {array}
+ */
+function translate(distanceX, distanceY) {
+	var matrix = identity();
+	matrix[12] = distanceX;
+
+	if (distanceY) {
+		matrix[13] = distanceY;
+	}
+
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing X-axis translation.
+ *
+ * @param  {number} distance - Measured in pixels.
+ * @return {array}
+ */
+function translateX(distance) {
+	var matrix = identity();
+	matrix[12] = distance;
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing Y-axis translation.
+ *
+ * @param  {number} distance - Measured in pixels.
+ * @return {array}
+ */
+function translateY(distance) {
+	var matrix = identity();
+	matrix[13] = distance;
+	return matrix
+}
+
+/**
+ * Returns a 4x4 matrix describing Z-axis translation.
+ *
+ * @param  {number} distance - Measured in pixels.
+ * @return {array}
+ */
+function translateZ(distance) {
+	var matrix = identity();
+	matrix[14] = distance;
+	return matrix
+}
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/scrollreveal/dist/scrollreveal.es.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/scrollreveal/dist/scrollreveal.es.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var tealight__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tealight */ "./node_modules/tealight/dist/tealight.es.js");
+/* harmony import */ var rematrix__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rematrix */ "./node_modules/rematrix/dist/rematrix.es.js");
+/* harmony import */ var miniraf__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! miniraf */ "./node_modules/miniraf/dist/miniraf.es.js");
+/*! @license ScrollReveal v4.0.6
+
+	Copyright 2020 Fisssion LLC.
+
+	Licensed under the GNU General Public License 3.0 for
+	compatible open source projects and non-commercial use.
+
+	For commercial sites, themes, projects, and applications,
+	keep your source code private/proprietary by purchasing
+	a commercial license from https://scrollrevealjs.org/
+*/
+
+
+
+
+var defaults = {
+	delay: 0,
+	distance: '0',
+	duration: 600,
+	easing: 'cubic-bezier(0.5, 0, 0, 1)',
+	interval: 0,
+	opacity: 0,
+	origin: 'bottom',
+	rotate: {
+		x: 0,
+		y: 0,
+		z: 0
+	},
+	scale: 1,
+	cleanup: false,
+	container: document.documentElement,
+	desktop: true,
+	mobile: true,
+	reset: false,
+	useDelay: 'always',
+	viewFactor: 0.0,
+	viewOffset: {
+		top: 0,
+		right: 0,
+		bottom: 0,
+		left: 0
+	},
+	afterReset: function afterReset() {},
+	afterReveal: function afterReveal() {},
+	beforeReset: function beforeReset() {},
+	beforeReveal: function beforeReveal() {}
+};
+
+function failure() {
+	document.documentElement.classList.remove('sr');
+
+	return {
+		clean: function clean() {},
+		destroy: function destroy() {},
+		reveal: function reveal() {},
+		sync: function sync() {},
+		get noop() {
+			return true
+		}
+	}
+}
+
+function success() {
+	document.documentElement.classList.add('sr');
+
+	if (document.body) {
+		document.body.style.height = '100%';
+	} else {
+		document.addEventListener('DOMContentLoaded', function () {
+			document.body.style.height = '100%';
+		});
+	}
+}
+
+var mount = { success: success, failure: failure };
+
+function isObject(x) {
+	return (
+		x !== null &&
+		x instanceof Object &&
+		(x.constructor === Object ||
+			Object.prototype.toString.call(x) === '[object Object]')
+	)
+}
+
+function each(collection, callback) {
+	if (isObject(collection)) {
+		var keys = Object.keys(collection);
+		return keys.forEach(function (key) { return callback(collection[key], key, collection); })
+	}
+	if (collection instanceof Array) {
+		return collection.forEach(function (item, i) { return callback(item, i, collection); })
+	}
+	throw new TypeError('Expected either an array or object literal.')
+}
+
+function logger(message) {
+	var details = [], len = arguments.length - 1;
+	while ( len-- > 0 ) details[ len ] = arguments[ len + 1 ];
+
+	if (this.constructor.debug && console) {
+		var report = "%cScrollReveal: " + message;
+		details.forEach(function (detail) { return (report += "\n — " + detail); });
+		console.log(report, 'color: #ea654b;'); // eslint-disable-line no-console
+	}
+}
+
+function rinse() {
+	var this$1 = this;
+
+	var struct = function () { return ({
+		active: [],
+		stale: []
+	}); };
+
+	var elementIds = struct();
+	var sequenceIds = struct();
+	var containerIds = struct();
+
+	/**
+	 * Take stock of active element IDs.
+	 */
+	try {
+		each(Object(tealight__WEBPACK_IMPORTED_MODULE_0__["default"])('[data-sr-id]'), function (node) {
+			var id = parseInt(node.getAttribute('data-sr-id'));
+			elementIds.active.push(id);
+		});
+	} catch (e) {
+		throw e
+	}
+	/**
+	 * Destroy stale elements.
+	 */
+	each(this.store.elements, function (element) {
+		if (elementIds.active.indexOf(element.id) === -1) {
+			elementIds.stale.push(element.id);
+		}
+	});
+
+	each(elementIds.stale, function (staleId) { return delete this$1.store.elements[staleId]; });
+
+	/**
+	 * Take stock of active container and sequence IDs.
+	 */
+	each(this.store.elements, function (element) {
+		if (containerIds.active.indexOf(element.containerId) === -1) {
+			containerIds.active.push(element.containerId);
+		}
+		if (element.hasOwnProperty('sequence')) {
+			if (sequenceIds.active.indexOf(element.sequence.id) === -1) {
+				sequenceIds.active.push(element.sequence.id);
+			}
+		}
+	});
+
+	/**
+	 * Destroy stale containers.
+	 */
+	each(this.store.containers, function (container) {
+		if (containerIds.active.indexOf(container.id) === -1) {
+			containerIds.stale.push(container.id);
+		}
+	});
+
+	each(containerIds.stale, function (staleId) {
+		var stale = this$1.store.containers[staleId].node;
+		stale.removeEventListener('scroll', this$1.delegate);
+		stale.removeEventListener('resize', this$1.delegate);
+		delete this$1.store.containers[staleId];
+	});
+
+	/**
+	 * Destroy stale sequences.
+	 */
+	each(this.store.sequences, function (sequence) {
+		if (sequenceIds.active.indexOf(sequence.id) === -1) {
+			sequenceIds.stale.push(sequence.id);
+		}
+	});
+
+	each(sequenceIds.stale, function (staleId) { return delete this$1.store.sequences[staleId]; });
+}
+
+function clean(target) {
+	var this$1 = this;
+
+	var dirty;
+	try {
+		each(Object(tealight__WEBPACK_IMPORTED_MODULE_0__["default"])(target), function (node) {
+			var id = node.getAttribute('data-sr-id');
+			if (id !== null) {
+				dirty = true;
+				var element = this$1.store.elements[id];
+				if (element.callbackTimer) {
+					window.clearTimeout(element.callbackTimer.clock);
+				}
+				node.setAttribute('style', element.styles.inline.generated);
+				node.removeAttribute('data-sr-id');
+				delete this$1.store.elements[id];
+			}
+		});
+	} catch (e) {
+		return logger.call(this, 'Clean failed.', e.message)
+	}
+
+	if (dirty) {
+		try {
+			rinse.call(this);
+		} catch (e) {
+			return logger.call(this, 'Clean failed.', e.message)
+		}
+	}
+}
+
+function destroy() {
+	var this$1 = this;
+
+	/**
+	 * Remove all generated styles and element ids
+	 */
+	each(this.store.elements, function (element) {
+		element.node.setAttribute('style', element.styles.inline.generated);
+		element.node.removeAttribute('data-sr-id');
+	});
+
+	/**
+	 * Remove all event listeners.
+	 */
+	each(this.store.containers, function (container) {
+		var target =
+			container.node === document.documentElement ? window : container.node;
+		target.removeEventListener('scroll', this$1.delegate);
+		target.removeEventListener('resize', this$1.delegate);
+	});
+
+	/**
+	 * Clear all data from the store
+	 */
+	this.store = {
+		containers: {},
+		elements: {},
+		history: [],
+		sequences: {}
+	};
+}
+
+var getPrefixedCssProp = (function () {
+	var properties = {};
+	var style = document.documentElement.style;
+
+	function getPrefixedCssProperty(name, source) {
+		if ( source === void 0 ) source = style;
+
+		if (name && typeof name === 'string') {
+			if (properties[name]) {
+				return properties[name]
+			}
+			if (typeof source[name] === 'string') {
+				return (properties[name] = name)
+			}
+			if (typeof source[("-webkit-" + name)] === 'string') {
+				return (properties[name] = "-webkit-" + name)
+			}
+			throw new RangeError(("Unable to find \"" + name + "\" style property."))
+		}
+		throw new TypeError('Expected a string.')
+	}
+
+	getPrefixedCssProperty.clearCache = function () { return (properties = {}); };
+
+	return getPrefixedCssProperty
+})();
+
+function style(element) {
+	var computed = window.getComputedStyle(element.node);
+	var position = computed.position;
+	var config = element.config;
+
+	/**
+	 * Generate inline styles
+	 */
+	var inline = {};
+	var inlineStyle = element.node.getAttribute('style') || '';
+	var inlineMatch = inlineStyle.match(/[\w-]+\s*:\s*[^;]+\s*/gi) || [];
+
+	inline.computed = inlineMatch ? inlineMatch.map(function (m) { return m.trim(); }).join('; ') + ';' : '';
+
+	inline.generated = inlineMatch.some(function (m) { return m.match(/visibility\s?:\s?visible/i); })
+		? inline.computed
+		: inlineMatch.concat( ['visibility: visible']).map(function (m) { return m.trim(); }).join('; ') + ';';
+
+	/**
+	 * Generate opacity styles
+	 */
+	var computedOpacity = parseFloat(computed.opacity);
+	var configOpacity = !isNaN(parseFloat(config.opacity))
+		? parseFloat(config.opacity)
+		: parseFloat(computed.opacity);
+
+	var opacity = {
+		computed: computedOpacity !== configOpacity ? ("opacity: " + computedOpacity + ";") : '',
+		generated: computedOpacity !== configOpacity ? ("opacity: " + configOpacity + ";") : ''
+	};
+
+	/**
+	 * Generate transformation styles
+	 */
+	var transformations = [];
+
+	if (parseFloat(config.distance)) {
+		var axis = config.origin === 'top' || config.origin === 'bottom' ? 'Y' : 'X';
+
+		/**
+		 * Let’s make sure our our pixel distances are negative for top and left.
+		 * e.g. { origin: 'top', distance: '25px' } starts at `top: -25px` in CSS.
+		 */
+		var distance = config.distance;
+		if (config.origin === 'top' || config.origin === 'left') {
+			distance = /^-/.test(distance) ? distance.substr(1) : ("-" + distance);
+		}
+
+		var ref = distance.match(/(^-?\d+\.?\d?)|(em$|px$|%$)/g);
+		var value = ref[0];
+		var unit = ref[1];
+
+		switch (unit) {
+			case 'em':
+				distance = parseInt(computed.fontSize) * value;
+				break
+			case 'px':
+				distance = value;
+				break
+			case '%':
+				/**
+				 * Here we use `getBoundingClientRect` instead of
+				 * the existing data attached to `element.geometry`
+				 * because only the former includes any transformations
+				 * current applied to the element.
+				 *
+				 * If that behavior ends up being unintuitive, this
+				 * logic could instead utilize `element.geometry.height`
+				 * and `element.geoemetry.width` for the distance calculation
+				 */
+				distance =
+					axis === 'Y'
+						? (element.node.getBoundingClientRect().height * value) / 100
+						: (element.node.getBoundingClientRect().width * value) / 100;
+				break
+			default:
+				throw new RangeError('Unrecognized or missing distance unit.')
+		}
+
+		if (axis === 'Y') {
+			transformations.push(Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["translateY"])(distance));
+		} else {
+			transformations.push(Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["translateX"])(distance));
+		}
+	}
+
+	if (config.rotate.x) { transformations.push(Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["rotateX"])(config.rotate.x)); }
+	if (config.rotate.y) { transformations.push(Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["rotateY"])(config.rotate.y)); }
+	if (config.rotate.z) { transformations.push(Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["rotateZ"])(config.rotate.z)); }
+	if (config.scale !== 1) {
+		if (config.scale === 0) {
+			/**
+			 * The CSS Transforms matrix interpolation specification
+			 * basically disallows transitions of non-invertible
+			 * matrixes, which means browsers won't transition
+			 * elements with zero scale.
+			 *
+			 * That’s inconvenient for the API and developer
+			 * experience, so we simply nudge their value
+			 * slightly above zero; this allows browsers
+			 * to transition our element as expected.
+			 *
+			 * `0.0002` was the smallest number
+			 * that performed across browsers.
+			 */
+			transformations.push(Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["scale"])(0.0002));
+		} else {
+			transformations.push(Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["scale"])(config.scale));
+		}
+	}
+
+	var transform = {};
+	if (transformations.length) {
+		transform.property = getPrefixedCssProp('transform');
+		/**
+		 * The default computed transform value should be one of:
+		 * undefined || 'none' || 'matrix()' || 'matrix3d()'
+		 */
+		transform.computed = {
+			raw: computed[transform.property],
+			matrix: Object(rematrix__WEBPACK_IMPORTED_MODULE_1__["parse"])(computed[transform.property])
+		};
+
+		transformations.unshift(transform.computed.matrix);
+		var product = transformations.reduce(rematrix__WEBPACK_IMPORTED_MODULE_1__["multiply"]);
+
+		transform.generated = {
+			initial: ((transform.property) + ": matrix3d(" + (product.join(', ')) + ");"),
+			final: ((transform.property) + ": matrix3d(" + (transform.computed.matrix.join(', ')) + ");")
+		};
+	} else {
+		transform.generated = {
+			initial: '',
+			final: ''
+		};
+	}
+
+	/**
+	 * Generate transition styles
+	 */
+	var transition = {};
+	if (opacity.generated || transform.generated.initial) {
+		transition.property = getPrefixedCssProp('transition');
+		transition.computed = computed[transition.property];
+		transition.fragments = [];
+
+		var delay = config.delay;
+		var duration = config.duration;
+		var easing = config.easing;
+
+		if (opacity.generated) {
+			transition.fragments.push({
+				delayed: ("opacity " + (duration / 1000) + "s " + easing + " " + (delay / 1000) + "s"),
+				instant: ("opacity " + (duration / 1000) + "s " + easing + " 0s")
+			});
+		}
+
+		if (transform.generated.initial) {
+			transition.fragments.push({
+				delayed: ((transform.property) + " " + (duration / 1000) + "s " + easing + " " + (delay / 1000) + "s"),
+				instant: ((transform.property) + " " + (duration / 1000) + "s " + easing + " 0s")
+			});
+		}
+
+		/**
+		 * The default computed transition property should be undefined, or one of:
+		 * '' || 'none 0s ease 0s' || 'all 0s ease 0s' || 'all 0s 0s cubic-bezier()'
+		 */
+		var hasCustomTransition =
+			transition.computed && !transition.computed.match(/all 0s|none 0s/);
+
+		if (hasCustomTransition) {
+			transition.fragments.unshift({
+				delayed: transition.computed,
+				instant: transition.computed
+			});
+		}
+
+		var composed = transition.fragments.reduce(
+			function (composition, fragment, i) {
+				composition.delayed += i === 0 ? fragment.delayed : (", " + (fragment.delayed));
+				composition.instant += i === 0 ? fragment.instant : (", " + (fragment.instant));
+				return composition
+			},
+			{
+				delayed: '',
+				instant: ''
+			}
+		);
+
+		transition.generated = {
+			delayed: ((transition.property) + ": " + (composed.delayed) + ";"),
+			instant: ((transition.property) + ": " + (composed.instant) + ";")
+		};
+	} else {
+		transition.generated = {
+			delayed: '',
+			instant: ''
+		};
+	}
+
+	return {
+		inline: inline,
+		opacity: opacity,
+		position: position,
+		transform: transform,
+		transition: transition
+	}
+}
+
+function animate(element, force) {
+	if ( force === void 0 ) force = {};
+
+	var pristine = force.pristine || this.pristine;
+	var delayed =
+		element.config.useDelay === 'always' ||
+		(element.config.useDelay === 'onload' && pristine) ||
+		(element.config.useDelay === 'once' && !element.seen);
+
+	var shouldReveal = element.visible && !element.revealed;
+	var shouldReset = !element.visible && element.revealed && element.config.reset;
+
+	if (force.reveal || shouldReveal) {
+		return triggerReveal.call(this, element, delayed)
+	}
+
+	if (force.reset || shouldReset) {
+		return triggerReset.call(this, element)
+	}
+}
+
+function triggerReveal(element, delayed) {
+	var styles = [
+		element.styles.inline.generated,
+		element.styles.opacity.computed,
+		element.styles.transform.generated.final
+	];
+	if (delayed) {
+		styles.push(element.styles.transition.generated.delayed);
+	} else {
+		styles.push(element.styles.transition.generated.instant);
+	}
+	element.revealed = element.seen = true;
+	element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
+	registerCallbacks.call(this, element, delayed);
+}
+
+function triggerReset(element) {
+	var styles = [
+		element.styles.inline.generated,
+		element.styles.opacity.generated,
+		element.styles.transform.generated.initial,
+		element.styles.transition.generated.instant
+	];
+	element.revealed = false;
+	element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
+	registerCallbacks.call(this, element);
+}
+
+function registerCallbacks(element, isDelayed) {
+	var this$1 = this;
+
+	var duration = isDelayed
+		? element.config.duration + element.config.delay
+		: element.config.duration;
+
+	var beforeCallback = element.revealed
+		? element.config.beforeReveal
+		: element.config.beforeReset;
+
+	var afterCallback = element.revealed
+		? element.config.afterReveal
+		: element.config.afterReset;
+
+	var elapsed = 0;
+	if (element.callbackTimer) {
+		elapsed = Date.now() - element.callbackTimer.start;
+		window.clearTimeout(element.callbackTimer.clock);
+	}
+
+	beforeCallback(element.node);
+
+	element.callbackTimer = {
+		start: Date.now(),
+		clock: window.setTimeout(function () {
+			afterCallback(element.node);
+			element.callbackTimer = null;
+			if (element.revealed && !element.config.reset && element.config.cleanup) {
+				clean.call(this$1, element.node);
+			}
+		}, duration - elapsed)
+	};
+}
+
+var nextUniqueId = (function () {
+	var uid = 0;
+	return function () { return uid++; }
+})();
+
+function sequence(element, pristine) {
+	if ( pristine === void 0 ) pristine = this.pristine;
+
+	/**
+	 * We first check if the element should reset.
+	 */
+	if (!element.visible && element.revealed && element.config.reset) {
+		return animate.call(this, element, { reset: true })
+	}
+
+	var seq = this.store.sequences[element.sequence.id];
+	var i = element.sequence.index;
+
+	if (seq) {
+		var visible = new SequenceModel(seq, 'visible', this.store);
+		var revealed = new SequenceModel(seq, 'revealed', this.store);
+
+		seq.models = { visible: visible, revealed: revealed };
+
+		/**
+		 * If the sequence has no revealed members,
+		 * then we reveal the first visible element
+		 * within that sequence.
+		 *
+		 * The sequence then cues a recursive call
+		 * in both directions.
+		 */
+		if (!revealed.body.length) {
+			var nextId = seq.members[visible.body[0]];
+			var nextElement = this.store.elements[nextId];
+
+			if (nextElement) {
+				cue.call(this, seq, visible.body[0], -1, pristine);
+				cue.call(this, seq, visible.body[0], +1, pristine);
+				return animate.call(this, nextElement, { reveal: true, pristine: pristine })
+			}
+		}
+
+		/**
+		 * If our element isn’t resetting, we check the
+		 * element sequence index against the head, and
+		 * then the foot of the sequence.
+		 */
+		if (
+			!seq.blocked.head &&
+			i === [].concat( revealed.head ).pop() &&
+			i >= [].concat( visible.body ).shift()
+		) {
+			cue.call(this, seq, i, -1, pristine);
+			return animate.call(this, element, { reveal: true, pristine: pristine })
+		}
+
+		if (
+			!seq.blocked.foot &&
+			i === [].concat( revealed.foot ).shift() &&
+			i <= [].concat( visible.body ).pop()
+		) {
+			cue.call(this, seq, i, +1, pristine);
+			return animate.call(this, element, { reveal: true, pristine: pristine })
+		}
+	}
+}
+
+function Sequence(interval) {
+	var i = Math.abs(interval);
+	if (!isNaN(i)) {
+		this.id = nextUniqueId();
+		this.interval = Math.max(i, 16);
+		this.members = [];
+		this.models = {};
+		this.blocked = {
+			head: false,
+			foot: false
+		};
+	} else {
+		throw new RangeError('Invalid sequence interval.')
+	}
+}
+
+function SequenceModel(seq, prop, store) {
+	var this$1 = this;
+
+	this.head = [];
+	this.body = [];
+	this.foot = [];
+
+	each(seq.members, function (id, index) {
+		var element = store.elements[id];
+		if (element && element[prop]) {
+			this$1.body.push(index);
+		}
+	});
+
+	if (this.body.length) {
+		each(seq.members, function (id, index) {
+			var element = store.elements[id];
+			if (element && !element[prop]) {
+				if (index < this$1.body[0]) {
+					this$1.head.push(index);
+				} else {
+					this$1.foot.push(index);
+				}
+			}
+		});
+	}
+}
+
+function cue(seq, i, direction, pristine) {
+	var this$1 = this;
+
+	var blocked = ['head', null, 'foot'][1 + direction];
+	var nextId = seq.members[i + direction];
+	var nextElement = this.store.elements[nextId];
+
+	seq.blocked[blocked] = true;
+
+	setTimeout(function () {
+		seq.blocked[blocked] = false;
+		if (nextElement) {
+			sequence.call(this$1, nextElement, pristine);
+		}
+	}, seq.interval);
+}
+
+function initialize() {
+	var this$1 = this;
+
+	rinse.call(this);
+
+	each(this.store.elements, function (element) {
+		var styles = [element.styles.inline.generated];
+
+		if (element.visible) {
+			styles.push(element.styles.opacity.computed);
+			styles.push(element.styles.transform.generated.final);
+			element.revealed = true;
+		} else {
+			styles.push(element.styles.opacity.generated);
+			styles.push(element.styles.transform.generated.initial);
+			element.revealed = false;
+		}
+
+		element.node.setAttribute('style', styles.filter(function (s) { return s !== ''; }).join(' '));
+	});
+
+	each(this.store.containers, function (container) {
+		var target =
+			container.node === document.documentElement ? window : container.node;
+		target.addEventListener('scroll', this$1.delegate);
+		target.addEventListener('resize', this$1.delegate);
+	});
+
+	/**
+	 * Manually invoke delegate once to capture
+	 * element and container dimensions, container
+	 * scroll position, and trigger any valid reveals
+	 */
+	this.delegate();
+
+	/**
+	 * Wipe any existing `setTimeout` now
+	 * that initialization has completed.
+	 */
+	this.initTimeout = null;
+}
+
+function isMobile(agent) {
+	if ( agent === void 0 ) agent = navigator.userAgent;
+
+	return /Android|iPhone|iPad|iPod/i.test(agent)
+}
+
+function deepAssign(target) {
+	var sources = [], len = arguments.length - 1;
+	while ( len-- > 0 ) sources[ len ] = arguments[ len + 1 ];
+
+	if (isObject(target)) {
+		each(sources, function (source) {
+			each(source, function (data, key) {
+				if (isObject(data)) {
+					if (!target[key] || !isObject(target[key])) {
+						target[key] = {};
+					}
+					deepAssign(target[key], data);
+				} else {
+					target[key] = data;
+				}
+			});
+		});
+		return target
+	} else {
+		throw new TypeError('Target must be an object literal.')
+	}
+}
+
+function reveal(target, options, syncing) {
+	var this$1 = this;
+	if ( options === void 0 ) options = {};
+	if ( syncing === void 0 ) syncing = false;
+
+	var containerBuffer = [];
+	var sequence$$1;
+	var interval = options.interval || defaults.interval;
+
+	try {
+		if (interval) {
+			sequence$$1 = new Sequence(interval);
+		}
+
+		var nodes = Object(tealight__WEBPACK_IMPORTED_MODULE_0__["default"])(target);
+		if (!nodes.length) {
+			throw new Error('Invalid reveal target.')
+		}
+
+		var elements = nodes.reduce(function (elementBuffer, elementNode) {
+			var element = {};
+			var existingId = elementNode.getAttribute('data-sr-id');
+
+			if (existingId) {
+				deepAssign(element, this$1.store.elements[existingId]);
+
+				/**
+				 * In order to prevent previously generated styles
+				 * from throwing off the new styles, the style tag
+				 * has to be reverted to its pre-reveal state.
+				 */
+				element.node.setAttribute('style', element.styles.inline.computed);
+			} else {
+				element.id = nextUniqueId();
+				element.node = elementNode;
+				element.seen = false;
+				element.revealed = false;
+				element.visible = false;
+			}
+
+			var config = deepAssign({}, element.config || this$1.defaults, options);
+
+			if ((!config.mobile && isMobile()) || (!config.desktop && !isMobile())) {
+				if (existingId) {
+					clean.call(this$1, element);
+				}
+				return elementBuffer // skip elements that are disabled
+			}
+
+			var containerNode = Object(tealight__WEBPACK_IMPORTED_MODULE_0__["default"])(config.container)[0];
+			if (!containerNode) {
+				throw new Error('Invalid container.')
+			}
+			if (!containerNode.contains(elementNode)) {
+				return elementBuffer // skip elements found outside the container
+			}
+
+			var containerId;
+			{
+				containerId = getContainerId(
+					containerNode,
+					containerBuffer,
+					this$1.store.containers
+				);
+				if (containerId === null) {
+					containerId = nextUniqueId();
+					containerBuffer.push({ id: containerId, node: containerNode });
+				}
+			}
+
+			element.config = config;
+			element.containerId = containerId;
+			element.styles = style(element);
+
+			if (sequence$$1) {
+				element.sequence = {
+					id: sequence$$1.id,
+					index: sequence$$1.members.length
+				};
+				sequence$$1.members.push(element.id);
+			}
+
+			elementBuffer.push(element);
+			return elementBuffer
+		}, []);
+
+		/**
+		 * Modifying the DOM via setAttribute needs to be handled
+		 * separately from reading computed styles in the map above
+		 * for the browser to batch DOM changes (limiting reflows)
+		 */
+		each(elements, function (element) {
+			this$1.store.elements[element.id] = element;
+			element.node.setAttribute('data-sr-id', element.id);
+		});
+	} catch (e) {
+		return logger.call(this, 'Reveal failed.', e.message)
+	}
+
+	/**
+	 * Now that element set-up is complete...
+	 * Let’s commit any container and sequence data we have to the store.
+	 */
+	each(containerBuffer, function (container) {
+		this$1.store.containers[container.id] = {
+			id: container.id,
+			node: container.node
+		};
+	});
+	if (sequence$$1) {
+		this.store.sequences[sequence$$1.id] = sequence$$1;
+	}
+
+	/**
+	 * If reveal wasn't invoked by sync, we want to
+	 * make sure to add this call to the history.
+	 */
+	if (syncing !== true) {
+		this.store.history.push({ target: target, options: options });
+
+		/**
+		 * Push initialization to the event queue, giving
+		 * multiple reveal calls time to be interpreted.
+		 */
+		if (this.initTimeout) {
+			window.clearTimeout(this.initTimeout);
+		}
+		this.initTimeout = window.setTimeout(initialize.bind(this), 0);
+	}
+}
+
+function getContainerId(node) {
+	var collections = [], len = arguments.length - 1;
+	while ( len-- > 0 ) collections[ len ] = arguments[ len + 1 ];
+
+	var id = null;
+	each(collections, function (collection) {
+		each(collection, function (container) {
+			if (id === null && container.node === node) {
+				id = container.id;
+			}
+		});
+	});
+	return id
+}
+
+/**
+ * Re-runs the reveal method for each record stored in history,
+ * for capturing new content asynchronously loaded into the DOM.
+ */
+function sync() {
+	var this$1 = this;
+
+	each(this.store.history, function (record) {
+		reveal.call(this$1, record.target, record.options, true);
+	});
+
+	initialize.call(this);
+}
+
+var polyfill = function (x) { return (x > 0) - (x < 0) || +x; };
+var mathSign = Math.sign || polyfill;
+
+function getGeometry(target, isContainer) {
+	/**
+	 * We want to ignore padding and scrollbars for container elements.
+	 * More information here: https://goo.gl/vOZpbz
+	 */
+	var height = isContainer ? target.node.clientHeight : target.node.offsetHeight;
+	var width = isContainer ? target.node.clientWidth : target.node.offsetWidth;
+
+	var offsetTop = 0;
+	var offsetLeft = 0;
+	var node = target.node;
+
+	do {
+		if (!isNaN(node.offsetTop)) {
+			offsetTop += node.offsetTop;
+		}
+		if (!isNaN(node.offsetLeft)) {
+			offsetLeft += node.offsetLeft;
+		}
+		node = node.offsetParent;
+	} while (node)
+
+	return {
+		bounds: {
+			top: offsetTop,
+			right: offsetLeft + width,
+			bottom: offsetTop + height,
+			left: offsetLeft
+		},
+		height: height,
+		width: width
+	}
+}
+
+function getScrolled(container) {
+	var top, left;
+	if (container.node === document.documentElement) {
+		top = window.pageYOffset;
+		left = window.pageXOffset;
+	} else {
+		top = container.node.scrollTop;
+		left = container.node.scrollLeft;
+	}
+	return { top: top, left: left }
+}
+
+function isElementVisible(element) {
+	if ( element === void 0 ) element = {};
+
+	var container = this.store.containers[element.containerId];
+	if (!container) { return }
+
+	var viewFactor = Math.max(0, Math.min(1, element.config.viewFactor));
+	var viewOffset = element.config.viewOffset;
+
+	var elementBounds = {
+		top: element.geometry.bounds.top + element.geometry.height * viewFactor,
+		right: element.geometry.bounds.right - element.geometry.width * viewFactor,
+		bottom: element.geometry.bounds.bottom - element.geometry.height * viewFactor,
+		left: element.geometry.bounds.left + element.geometry.width * viewFactor
+	};
+
+	var containerBounds = {
+		top: container.geometry.bounds.top + container.scroll.top + viewOffset.top,
+		right: container.geometry.bounds.right + container.scroll.left - viewOffset.right,
+		bottom:
+			container.geometry.bounds.bottom + container.scroll.top - viewOffset.bottom,
+		left: container.geometry.bounds.left + container.scroll.left + viewOffset.left
+	};
+
+	return (
+		(elementBounds.top < containerBounds.bottom &&
+			elementBounds.right > containerBounds.left &&
+			elementBounds.bottom > containerBounds.top &&
+			elementBounds.left < containerBounds.right) ||
+		element.styles.position === 'fixed'
+	)
+}
+
+function delegate(
+	event,
+	elements
+) {
+	var this$1 = this;
+	if ( event === void 0 ) event = { type: 'init' };
+	if ( elements === void 0 ) elements = this.store.elements;
+
+	Object(miniraf__WEBPACK_IMPORTED_MODULE_2__["default"])(function () {
+		var stale = event.type === 'init' || event.type === 'resize';
+
+		each(this$1.store.containers, function (container) {
+			if (stale) {
+				container.geometry = getGeometry.call(this$1, container, true);
+			}
+			var scroll = getScrolled.call(this$1, container);
+			if (container.scroll) {
+				container.direction = {
+					x: mathSign(scroll.left - container.scroll.left),
+					y: mathSign(scroll.top - container.scroll.top)
+				};
+			}
+			container.scroll = scroll;
+		});
+
+		/**
+		 * Due to how the sequencer is implemented, it’s
+		 * important that we update the state of all
+		 * elements, before any animation logic is
+		 * evaluated (in the second loop below).
+		 */
+		each(elements, function (element) {
+			if (stale) {
+				element.geometry = getGeometry.call(this$1, element);
+			}
+			element.visible = isElementVisible.call(this$1, element);
+		});
+
+		each(elements, function (element) {
+			if (element.sequence) {
+				sequence.call(this$1, element);
+			} else {
+				animate.call(this$1, element);
+			}
+		});
+
+		this$1.pristine = false;
+	});
+}
+
+function isTransformSupported() {
+	var style = document.documentElement.style;
+	return 'transform' in style || 'WebkitTransform' in style
+}
+
+function isTransitionSupported() {
+	var style = document.documentElement.style;
+	return 'transition' in style || 'WebkitTransition' in style
+}
+
+var version = "4.0.6";
+
+var boundDelegate;
+var boundDestroy;
+var boundReveal;
+var boundClean;
+var boundSync;
+var config;
+var debug;
+var instance;
+
+function ScrollReveal(options) {
+	if ( options === void 0 ) options = {};
+
+	var invokedWithoutNew =
+		typeof this === 'undefined' ||
+		Object.getPrototypeOf(this) !== ScrollReveal.prototype;
+
+	if (invokedWithoutNew) {
+		return new ScrollReveal(options)
+	}
+
+	if (!ScrollReveal.isSupported()) {
+		logger.call(this, 'Instantiation failed.', 'This browser is not supported.');
+		return mount.failure()
+	}
+
+	var buffer;
+	try {
+		buffer = config
+			? deepAssign({}, config, options)
+			: deepAssign({}, defaults, options);
+	} catch (e) {
+		logger.call(this, 'Invalid configuration.', e.message);
+		return mount.failure()
+	}
+
+	try {
+		var container = Object(tealight__WEBPACK_IMPORTED_MODULE_0__["default"])(buffer.container)[0];
+		if (!container) {
+			throw new Error('Invalid container.')
+		}
+	} catch (e) {
+		logger.call(this, e.message);
+		return mount.failure()
+	}
+
+	config = buffer;
+
+	if ((!config.mobile && isMobile()) || (!config.desktop && !isMobile())) {
+		logger.call(
+			this,
+			'This device is disabled.',
+			("desktop: " + (config.desktop)),
+			("mobile: " + (config.mobile))
+		);
+		return mount.failure()
+	}
+
+	mount.success();
+
+	this.store = {
+		containers: {},
+		elements: {},
+		history: [],
+		sequences: {}
+	};
+
+	this.pristine = true;
+
+	boundDelegate = boundDelegate || delegate.bind(this);
+	boundDestroy = boundDestroy || destroy.bind(this);
+	boundReveal = boundReveal || reveal.bind(this);
+	boundClean = boundClean || clean.bind(this);
+	boundSync = boundSync || sync.bind(this);
+
+	Object.defineProperty(this, 'delegate', { get: function () { return boundDelegate; } });
+	Object.defineProperty(this, 'destroy', { get: function () { return boundDestroy; } });
+	Object.defineProperty(this, 'reveal', { get: function () { return boundReveal; } });
+	Object.defineProperty(this, 'clean', { get: function () { return boundClean; } });
+	Object.defineProperty(this, 'sync', { get: function () { return boundSync; } });
+
+	Object.defineProperty(this, 'defaults', { get: function () { return config; } });
+	Object.defineProperty(this, 'version', { get: function () { return version; } });
+	Object.defineProperty(this, 'noop', { get: function () { return false; } });
+
+	return instance ? instance : (instance = this)
+}
+
+ScrollReveal.isSupported = function () { return isTransformSupported() && isTransitionSupported(); };
+
+Object.defineProperty(ScrollReveal, 'debug', {
+	get: function () { return debug || false; },
+	set: function (value) { return (debug = typeof value === 'boolean' ? value : debug); }
+});
+
+ScrollReveal();
+
+/* harmony default export */ __webpack_exports__["default"] = (ScrollReveal);
+
+
+/***/ }),
+
 /***/ "./node_modules/setimmediate/setImmediate.js":
 /*!***************************************************!*\
   !*** ./node_modules/setimmediate/setImmediate.js ***!
@@ -63006,6 +64847,66 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./FooterPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/FooterPage.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css&":
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css& ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./SpinnerGrow.vue?vue&type=style&index=0&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -63566,6 +65467,65 @@ module.exports = function (css) {
 
 /***/ }),
 
+/***/ "./node_modules/tealight/dist/tealight.es.js":
+/*!***************************************************!*\
+  !*** ./node_modules/tealight/dist/tealight.es.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var is_dom_node__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! is-dom-node */ "./node_modules/is-dom-node/dist/is-dom-node.es.js");
+/* harmony import */ var is_dom_node_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! is-dom-node-list */ "./node_modules/is-dom-node-list/dist/is-dom-node-list.es.js");
+/*! @license Tealight v0.3.6
+
+	Copyright 2018 Fisssion LLC.
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
+
+*/
+
+
+
+function tealight(target, context) {
+  if ( context === void 0 ) context = document;
+
+  if (target instanceof Array) { return target.filter(is_dom_node__WEBPACK_IMPORTED_MODULE_0__["default"]); }
+  if (Object(is_dom_node__WEBPACK_IMPORTED_MODULE_0__["default"])(target)) { return [target]; }
+  if (Object(is_dom_node_list__WEBPACK_IMPORTED_MODULE_1__["default"])(target)) { return Array.prototype.slice.call(target); }
+  if (typeof target === "string") {
+    try {
+      var query = context.querySelectorAll(target);
+      return Array.prototype.slice.call(query);
+    } catch (err) {
+      return [];
+    }
+  }
+  return [];
+}
+
+/* harmony default export */ __webpack_exports__["default"] = (tealight);
+
+
+/***/ }),
+
 /***/ "./node_modules/timers-browserify/main.js":
 /*!************************************************!*\
   !*** ./node_modules/timers-browserify/main.js ***!
@@ -63687,7 +65647,9 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("b-col", { attrs: { lg: "8", md: "12" } }, [
-            _c("h2", [_vm._v(" " + _vm._s(_vm.article.name) + " ")]),
+            _c("h2", { staticClass: "lighter" }, [
+              _vm._v(" " + _vm._s(_vm.article.name) + " ")
+            ]),
             _vm._v(" "),
             _c("p", [_vm._v(" " + _vm._s(_vm.article.vision) + " ")]),
             _vm._v(" "),
@@ -63826,7 +65788,7 @@ var render = function() {
           "b-navbar",
           { attrs: { toggleable: "lg", type: "light" } },
           [
-            _c("b-navbar-brand", { staticClass: "fs2" }, [
+            _c("b-navbar-brand", { staticClass: "fs2 lighter" }, [
               _vm._v("Plan Biodiversité")
             ]),
             _vm._v(" "),
@@ -63843,9 +65805,14 @@ var render = function() {
                     _c(
                       "b-nav-item",
                       [
-                        _c("router-link", { attrs: { to: "/project" } }, [
-                          _vm._v("Champ d'application")
-                        ])
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "header-link",
+                            attrs: { to: "/project" }
+                          },
+                          [_vm._v("Champ d'application")]
+                        )
                       ],
                       1
                     ),
@@ -63853,9 +65820,14 @@ var render = function() {
                     _c(
                       "b-nav-item",
                       [
-                        _c("router-link", { attrs: { to: "/action" } }, [
-                          _vm._v("Actions")
-                        ])
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "header-link",
+                            attrs: { to: "/action" }
+                          },
+                          [_vm._v("Actions")]
+                        )
                       ],
                       1
                     ),
@@ -63863,9 +65835,14 @@ var render = function() {
                     _c(
                       "b-nav-item",
                       [
-                        _c("router-link", { attrs: { to: "/contact" } }, [
-                          _vm._v("Contact")
-                        ])
+                        _c(
+                          "router-link",
+                          {
+                            staticClass: "header-link",
+                            attrs: { to: "/contact" }
+                          },
+                          [_vm._v("Contact")]
+                        )
                       ],
                       1
                     )
@@ -63878,6 +65855,45 @@ var render = function() {
           ],
           1
         )
+      ],
+      1
+    )
+  ])
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=template&id=81d19a9e&":
+/*!**************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/SpinnerGrow.vue?vue&type=template&id=81d19a9e& ***!
+  \**************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "text-center", attrs: { id: "spinner" } }, [
+    _c(
+      "div",
+      {
+        staticClass:
+          "d-flex align-items-center w100 h100 justify-content-center"
+      },
+      [
+        _c("b-spinner", {
+          staticStyle: { width: "5rem", height: "5rem" },
+          attrs: { variant: "info", type: "grow", label: "Spinning" }
+        })
       ],
       1
     )
@@ -63908,7 +65924,7 @@ var render = function() {
   return _c("div", { staticClass: "pb10" }, [
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "w80 mauto my-4" }, [
+    _c("div", { staticClass: "w80 mauto mt3 mb3 " }, [
       _c(
         "div",
         [
@@ -64021,7 +66037,18 @@ var render = function() {
       "div",
       { staticClass: "w80 mauto mt3 ss-w100 ms-w100" },
       _vm._l(_vm.articles, function(article) {
-        return _c("div", [_c("CardBlog", { attrs: { article: article } })], 1)
+        return _c(
+          "div",
+          [
+            _c("CardBlog", {
+              directives: [
+                { name: "scroll-reveal", rawName: "v-scroll-reveal" }
+              ],
+              attrs: { article: article }
+            })
+          ],
+          1
+        )
       }),
       0
     )
@@ -64034,13 +66061,17 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "w100 y15 relative", attrs: { id: "baniere" } },
+      { staticClass: "w100 y15 relative ofhidden", attrs: { id: "baniere" } },
       [
-        _c("div", { staticClass: "fitme", attrs: { id: "bg-image" } }),
+        _c("div", {
+          staticClass: "w100",
+          staticStyle: { height: "110%" },
+          attrs: { id: "bg-image" }
+        }),
         _vm._v(" "),
         _c("div", { staticClass: "absolute mt0", attrs: { id: "bg-text" } }, [
           _c("div", { staticClass: "fitme p8" }, [
-            _c("h2", { staticClass: "w75" }, [
+            _c("h2", { staticClass: "w75 text-header" }, [
               _vm._v(
                 "\n          La biodiversité c’est notre assurance vie\n          face aux changements climatiques\n          et une priorité pour réussir la transition écologique.\n        "
               )
@@ -64074,13 +66105,20 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    {},
     [
-      _c("HeaderPage"),
-      _vm._v(" "),
-      _c("router-view"),
-      _vm._v(" "),
-      _c("FooterPage")
+      _vm.has_data_loaded == false
+        ? _c("SpinnerGrow")
+        : _c(
+            "div",
+            [
+              _c("HeaderPage"),
+              _vm._v(" "),
+              _c("router-view"),
+              _vm._v(" "),
+              _c("FooterPage")
+            ],
+            1
+          )
     ],
     1
   )
@@ -67126,6 +69164,93 @@ if (inBrowser && window.Vue) {
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (VueRouter);
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-scroll-reveal/dist/vue-scroll-reveal.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/vue-scroll-reveal/dist/vue-scroll-reveal.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+
+var sr = __webpack_require__(/*! scrollreveal */ "./node_modules/scrollreveal/dist/scrollreveal.es.js").default();
+
+function generateOptions(defaultOptions, bindingValue, bindingModifiers) {
+  var options = _extends({}, defaultOptions, bindingValue);
+
+  if (bindingModifiers) {
+    if (bindingModifiers.reset) {
+      options.reset = true;
+    }
+
+    if (bindingModifiers.nomobile) {
+      options.mobile = false;
+    }
+
+    if (bindingModifiers.nodesktop) {
+      options.desktop = false;
+    }
+  }
+
+  return options;
+}
+
+var VueScrollReveal = {
+  install: function install(Vue, defaultOptions) {
+    Vue.directive('scroll-reveal', {
+      inserted: function inserted(el, binding) {
+        var options = generateOptions(defaultOptions, binding.value, binding.modifiers);
+
+        if (typeof options.class === 'string') {
+          el.classList.add(options.class);
+          delete options.class;
+        }
+
+        sr.reveal(el, options);
+      },
+      update: function update(el, binding) {
+        if (binding.value != binding.oldValue) {
+          var options = generateOptions(defaultOptions, binding.value, binding.modifiers);
+
+          sr.reveal(el, options);
+        }
+      }
+    });
+
+    var $sr = {
+      isSupported: function isSupported() {
+        return sr.isSupported();
+      },
+      sync: function sync() {
+        sr.sync();
+      },
+      reveal: function reveal(target, config, interval, sync) {
+        var options = generateOptions(defaultOptions, config);
+
+        sr.reveal(target, config, interval, sync);
+      }
+    };
+
+    Object.defineProperty(Vue.prototype, '$sr', {
+      get: function get() {
+        return $sr;
+      }
+    });
+  }
+};
+
+exports.default = VueScrollReveal;
 
 
 /***/ }),
@@ -80320,6 +82445,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! vue-select */ "./node_modules/vue-select/dist/vue-select.js");
 /* harmony import */ var vue_select__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(vue_select__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var _store_store__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./store/store */ "./resources/js/store/store.js");
+/* harmony import */ var vue_scroll_reveal__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! vue-scroll-reveal */ "./node_modules/vue-scroll-reveal/dist/vue-scroll-reveal.js");
+/* harmony import */ var vue_scroll_reveal__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(vue_scroll_reveal__WEBPACK_IMPORTED_MODULE_11__);
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
@@ -80334,16 +82461,26 @@ window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.
 
 
 
+
 Vue.config.productionTip = false;
 Vue.use(vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]);
 Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_8__["BootstrapVue"]);
-Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_8__["IconsPlugin"]); //Register Routes
+Vue.use(bootstrap_vue__WEBPACK_IMPORTED_MODULE_8__["IconsPlugin"]); //Vue.use(VueScrollReveal);
+
+Vue.use(vue_scroll_reveal__WEBPACK_IMPORTED_MODULE_11___default.a, {
+  "class": 'v-scroll-reveal',
+  duration: 800,
+  scale: 1,
+  distance: '10px',
+  mobile: true
+}); //Register Routes
 
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   routes: _router__WEBPACK_IMPORTED_MODULE_0__["routes"],
   mode: 'history'
 });
 Vue.component('v-select', vue_select__WEBPACK_IMPORTED_MODULE_9___default.a);
+Vue.component('SpinnerGrow', __webpack_require__(/*! ./components/SpinnerGrow.vue */ "./resources/js/components/SpinnerGrow.vue")["default"]);
 Vue.component('HeaderPage', __webpack_require__(/*! ./components/HeaderPage.vue */ "./resources/js/components/HeaderPage.vue")["default"]);
 Vue.component('FooterPage', __webpack_require__(/*! ./components/FooterPage.vue */ "./resources/js/components/FooterPage.vue")["default"]);
 Vue.component('CardBlog', __webpack_require__(/*! ./components/CardBlog.vue */ "./resources/js/components/CardBlog.vue")["default"]);
@@ -80649,7 +82786,9 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _HeaderPage_vue_vue_type_template_id_199a9967___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderPage.vue?vue&type=template&id=199a9967& */ "./resources/js/components/HeaderPage.vue?vue&type=template&id=199a9967&");
 /* harmony import */ var _HeaderPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HeaderPage.vue?vue&type=script&lang=js& */ "./resources/js/components/HeaderPage.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* empty/unused harmony star reexport *//* harmony import */ var _HeaderPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./HeaderPage.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -80657,7 +82796,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _HeaderPage_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _HeaderPage_vue_vue_type_template_id_199a9967___WEBPACK_IMPORTED_MODULE_0__["render"],
   _HeaderPage_vue_vue_type_template_id_199a9967___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
@@ -80689,6 +82828,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css& ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./HeaderPage.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HeaderPage.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
 /***/ "./resources/js/components/HeaderPage.vue?vue&type=template&id=199a9967&":
 /*!*******************************************************************************!*\
   !*** ./resources/js/components/HeaderPage.vue?vue&type=template&id=199a9967& ***!
@@ -80702,6 +82857,93 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_template_id_199a9967___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HeaderPage_vue_vue_type_template_id_199a9967___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/SpinnerGrow.vue":
+/*!*************************************************!*\
+  !*** ./resources/js/components/SpinnerGrow.vue ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _SpinnerGrow_vue_vue_type_template_id_81d19a9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SpinnerGrow.vue?vue&type=template&id=81d19a9e& */ "./resources/js/components/SpinnerGrow.vue?vue&type=template&id=81d19a9e&");
+/* harmony import */ var _SpinnerGrow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./SpinnerGrow.vue?vue&type=script&lang=js& */ "./resources/js/components/SpinnerGrow.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _SpinnerGrow_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SpinnerGrow.vue?vue&type=style&index=0&lang=css& */ "./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _SpinnerGrow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _SpinnerGrow_vue_vue_type_template_id_81d19a9e___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _SpinnerGrow_vue_vue_type_template_id_81d19a9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/SpinnerGrow.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/SpinnerGrow.vue?vue&type=script&lang=js&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/SpinnerGrow.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./SpinnerGrow.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css&":
+/*!**********************************************************************************!*\
+  !*** ./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css& ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--6-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--6-2!../../../node_modules/vue-loader/lib??vue-loader-options!./SpinnerGrow.vue?vue&type=style&index=0&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=style&index=0&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(__WEBPACK_IMPORT_KEY__ !== 'default') (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_6_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_6_2_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_style_index_0_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/SpinnerGrow.vue?vue&type=template&id=81d19a9e&":
+/*!********************************************************************************!*\
+  !*** ./resources/js/components/SpinnerGrow.vue?vue&type=template&id=81d19a9e& ***!
+  \********************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_template_id_81d19a9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./SpinnerGrow.vue?vue&type=template&id=81d19a9e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/SpinnerGrow.vue?vue&type=template&id=81d19a9e&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_template_id_81d19a9e___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_SpinnerGrow_vue_vue_type_template_id_81d19a9e___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -80914,7 +83156,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
     actor_options: [],
     project_selected: '',
     action_selected: '',
-    actor_selected: ''
+    actor_selected: '',
+    has_data_loaded: false
   },
   getters: {
     doubleClicks: function doubleClicks(state) {
@@ -80963,7 +83206,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
     GET_PROJECTS: function GET_PROJECTS(state) {
       axios__WEBPACK_IMPORTED_MODULE_2___default.a.get('/api/projects').then(function (res) {
         state.projects = res.data.data;
-        state.articles = state.projects; //set options filter
+        state.articles = state.projects;
+        state.has_data_loaded = true; //set options filter
 
         state.projects.map(function (item) {
           state.project_options.push({
