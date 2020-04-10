@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateCalendarsTable extends Migration
+class CreateRealisatorActionsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateCalendarsTable extends Migration
      */
     public function up()
     {
-        Schema::create('calendars', function (Blueprint $table) {
+        Schema::create('realisator_actions', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('action_id')->unsigned();
-            $table->text('year_2020')->nullable();
-            $table->text('year_2021')->nullable();
-            $table->text('year_2022')->nullable();
-            $table->text('year_2023')->nullable();
+            $table->bigInteger('actor_id')->unsigned();
+            $table->foreign('actor_id')->references('id')->on('actors');
+            $table->foreign('action_id')->references('id')->on('actions');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateCalendarsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('calendars');
+        Schema::dropIfExists('realisator_actions');
     }
 }

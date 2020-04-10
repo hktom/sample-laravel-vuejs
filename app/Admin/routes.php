@@ -23,6 +23,8 @@ Route::group([
     $router->resource('fonctions', FonctionController::class);
     $router->resource('poncs', PoncController::class);
     $router->resource('actors', ActorController::class);
+    $router->resource('echelles', EchelleController::class);
+    $router->resource('types', TypeController::class);
 
     Route::group(['prefix' => 'api'], function (Router $router) {
         $router->get('entreprises', 'ApiController@entreprises');

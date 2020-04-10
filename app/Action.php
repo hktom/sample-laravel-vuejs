@@ -33,15 +33,30 @@ class Action extends Model
         return $this->belongsToMany('App\Actor', 'collaborator_actions');
     }
 
-    // public function responsables()
-    // {
-    //     return $this->belongsToMany("App\Actor", "responsable_actors");
-    // }
+    public function responsables()
+    {
+        return $this->belongsToMany('App\Actor', 'responsable_actions');
+    }
 
-    // public function realisators()
-    // {
-    //     return $this->belongsToMany("App\Actor", "realisator_actors");
-    // }
+    public function realisators()
+    {
+        return $this->belongsToMany('App\Actor', 'realisator_actions');
+    }
+
+    public function echelles()
+    {
+        return $this->belongsToMany("App\Echelle", "echelle_actions");
+    }
+
+    public function types()
+    {
+        return $this->belongsToMany("App\Type", "type_actions");
+    }
+
+    public function states()
+    {
+        return $this->belongsToMany("App\State", "state_actions");
+    }
 
     public function caracteristics()
     {
@@ -51,11 +66,6 @@ class Action extends Model
     public function ponc()
     {
         return $this->belongsTo('App\Ponc');
-    }
-
-    public function state()
-    {
-        return $this->belongsTo('App\State');
     }
 
     public function bugets()

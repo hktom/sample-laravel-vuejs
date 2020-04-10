@@ -26,5 +26,13 @@ class DatabaseSeeder extends Seeder
         $this->call(ProjectActionsTableSeeder::class);
         $this->call(ImplementationsTableSeeder::class);
         $this->call(ProjectActorsTableSeeder::class);
+        $this->call(CalendarsTableSeeder::class);
+        $this->call(TypesTableSeeder::class);
+        $this->call(EchellesTableSeeder::class);
+        $this->call(TypeActionsTableSeeder::class);
+        $this->call(StateActionsTableSeeder::class);
+        $this->call(EchelleActionsTableSeeder::class);
+        $this->call(ResponsableActionsTableSeeder::class);
+        $this->call(RealisatorActionsTableSeeder::class);
     }
 }

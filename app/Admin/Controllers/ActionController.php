@@ -112,14 +112,19 @@ class ActionController extends AdminController
         $form->multipleSelect("collaborators", "Collaborateurs")->options('App\Actor'::all()->pluck('name', 'id'));
 
         //$form->image('image', __('Image'));
+        $form->textarea('short_description', __('Apercu'));
         $form->ckeditor('description', __('Description'));
         $form->textarea('indicator', __('Indicator'));
 
-        $form->hasMany('caracteristics', "Caracteristiques",  function (Form\NestedForm $form) {
-            $form->text('type')->creationRules("nullable");
-            $form->text('state', 'status')->creationRules("nullable");
-            $form->text('echelle')->creationRules("nullable");
-        });
+        $form->multipleSelect("types", "Type")->options('App\Type'::all()->pluck('name', 'id'));
+        $form->multipleSelect("states", "Status")->options('App\State'::all()->pluck('name', 'id'));
+        $form->multipleSelect("echelles", "Echelles")->options('App\Echelle'::all()->pluck('name', 'id'));
+
+        // $form->hasMany('caracteristics', "Caracteristiques",  function (Form\NestedForm $form) {
+        //     $form->text('type')->creationRules("nullable");
+        //     $form->text('state', 'status')->creationRules("nullable");
+        //     $form->text('echelle')->creationRules("nullable");
+        // });
 
         $form->divider();
         $form->hasMany('calendars', "Calendrier",  function (Form\NestedForm $form) {
@@ -130,10 +135,14 @@ class ActionController extends AdminController
         });
 
         $form->divider();
-        $form->hasMany('implementations', "Mise en oeuvre",  function (Form\NestedForm $form) {
-            $form->text('responsable')->creationRules("nullable");
-            $form->text('realisator', 'Realisateur')->creationRules("nullable");
-        });
+
+        $form->multipleSelect("responsables", "Responsables")->options('App\Actor'::all()->pluck('name', 'id'));
+        $form->multipleSelect("realisators", "Realisateurs")->options('App\Actor'::all()->pluck('name', 'id'));
+
+        // $form->hasMany('implementations', "Mise en oeuvre",  function (Form\NestedForm $form) {
+        //     $form->text('responsable')->creationRules("nullable");
+        //     $form->text('realisator', 'Realisateur')->creationRules("nullable");
+        // });
 
         $form->multipleSelect("projects", "Champs liés")->options('App\Project'::all()->pluck('name', 'id'));
 
@@ -144,13 +153,15 @@ class ActionController extends AdminController
         $form->switch('A', __('A'));
         $form->switch('E', __('E'));
         $form->switch('T', __('T'));
-        $this->_select("state", $form);
         $this->_select("type", $form);
         $this->_select("comment", $form);
+        // $this->_select("state", $form);
+        // $form->divider();
+        // $form->text('total_cout_etat', __('Total cout etat'));
+        // $form->text('cout_externe', __('Cout externe'));
+        // $form->text('total_couts', __('Total couts'));
         $form->divider();
-        $form->text('total_cout_etat', __('Total cout etat'));
-        $form->text('cout_externe', __('Cout externe'));
-        $form->text('total_couts', __('Total couts'));
+        $form->image("image")->move('public/storage/')->uniqueName();
 
         return $form;
     }
