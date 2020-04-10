@@ -33,15 +33,15 @@ class Action extends Model
         return $this->belongsToMany('App\Actor', 'collaborator_actions');
     }
 
-    public function responsables()
-    {
-        return $this->belongsToMany("App\Actor", "responsable_actors");
-    }
+    // public function responsables()
+    // {
+    //     return $this->belongsToMany("App\Actor", "responsable_actors");
+    // }
 
-    public function realisators()
-    {
-        return $this->belongsToMany("App\Actor", "realisator_actors");
-    }
+    // public function realisators()
+    // {
+    //     return $this->belongsToMany("App\Actor", "realisator_actors");
+    // }
 
     public function caracteristics()
     {

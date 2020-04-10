@@ -1,6 +1,6 @@
 <template>
   <div>
-    <SpinnerGrow v-if="project_status==false || actor_status==false" />
+    <SpinnerGrow v-if="action_status==false" />
 
     <div v-else>
       <HeaderPage />
@@ -13,10 +13,11 @@
 export default {
   name: "App",
   mounted() {
+    this.$store.commit("GET_ACTIONS");
     this.$store.commit("GET_PROJECTS");
     this.$store.commit("GET_ACTORS");
-    //this.$store.commit("GET_ACTIONS");
-    //this.$store.commit("SET_ARTICLE", '');
+    this.$store.commit("GET_TYPES");
+    this.$store.commit("GET_STATUS");
   },
 
   computed: {
@@ -27,6 +28,12 @@ export default {
     actor_status() {
       return this.$store.state.actor.status;
     },
+
+    action_status() {
+      return this.$store.state.action.status;
+    },
+
+
 
   }
 };

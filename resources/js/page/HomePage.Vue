@@ -5,32 +5,41 @@
 
     <div class="w80 mauto mt3 mb3 ">
       <div id="menu-item" class="relative">
-        <router-link :to="{name: 'Root'}" class="link-header current_link mx-3">Projets</router-link>
-        <router-link :to="{name: 'Thematiques'}" class="link-header mx-3"> Actions</router-link>
+        <router-link :to="{name: 'Root'}" class="link-header current_link mx-3">Actions</router-link>
+        <router-link :to="{name: 'Thematiques'}" class="link-header mx-3">
+            projects
+        </router-link>
         <router-link :to="{name: 'Groupes'}" class="link-header mx-3">Contributeurs</router-link>
       </div>
     </div>
 
-    <FilterForm pageName="home"/>
+    <!-- <FilterForm pageName="home"/> -->
+    <formFilter/>
 
     <div class="w80 mauto mt3 ss-w100 ms-w100">
 
-        <div v-for="project in projects">
-            <CardBlog @key="project.id" :article="project" v-scroll-reveal/>
+        <div v-for="action in actions">
+            <CardBlog @key="action.id" :article="action"/>
         </div>
     </div>
   </div>
 </template>
 
 <script>
+import formFilter from './action/formFilter';
 export default {
+components: {
+    formFilter
+  },
+
   mounted() {
-    if(this.$store.state.project.status==false || this.$store.state.actor.status==false)
+    if(this.$store.state.action.status==false)
     {
+    this.$store.commit("GET_ACTIONS");
     this.$store.commit("GET_PROJECTS");
     this.$store.commit("GET_ACTORS");
-    //this.$store.commit("GET_ACTIONS");
-    //this.$store.commit("SET_ARTICLE", '');
+    this.$store.commit("GET_TYPES");
+    this.$store.commit("GET_STATUS");
     }
   },
 
@@ -41,8 +50,8 @@ export default {
   },
 
   computed: {
-    projects(){
-        return this.$store.state.project.item;
+    actions(){
+        return this.$store.state.action.item;
     },
   },
 

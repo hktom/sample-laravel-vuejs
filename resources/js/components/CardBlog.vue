@@ -1,7 +1,7 @@
 <template>
   <div id="cardBlog" class="py-4 px-4">
       <!-- <h1>{{article}}</h1> -->
-      <b-row>
+      <b-row v-scroll-reveal>
           <b-col lg="4" md="12">
               <img :src="'uploads/'+article.image" class="w100 y10 cover center"/>
           </b-col>
@@ -9,14 +9,13 @@
           <b-col lg="8" md="12">
               <h2 class="lighter"> {{ article.name}} </h2>
               <p>
-                  Contributeurs:
-                  <span v-for="actor in article.actors">
-                  <span class="bold fs0-9"> {{actor.name}}  | </span>
+                  Auteurs:
+                  <span v-for="author in article.authors">
+                  <span class="bold fs0-9"> {{author.name}}  | </span>
                   </span>
               </p>
-              <p> {{ article.vision }} 
-                  <router-link :to="{name: 'Root'}" class="link-article mx-3">Details du projet</router-link>
-              </p>
+              <span v-html="article.description.slice(0, 240)+'...'"></span>
+              <router-link :to="{name: 'Root'}" class="link-article mx-3">Details de l'action </router-link>
 
           </b-col>
 

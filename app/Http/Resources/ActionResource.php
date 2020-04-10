@@ -14,6 +14,22 @@ class ActionResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'name' => $this->label,
+            'image' => $this->image,
+            'description' => $this->description,
+            'R' => $this->R,
+            'A' => $this->A,
+            'E' => $this->E,
+            'T' => $this->T,
+            'indicator' => $this->indicator,
+            'project'=>$this->project,
+            'authors'=>$this->authors,
+            'collaborators'=>$this->collaborators,
+            'caracteristics'=>$this->caracteristics,
+            'ponc'=>$this->ponc,
+            'state'=>$this->state,
+        ];
     }
 }
