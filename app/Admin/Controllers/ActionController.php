@@ -35,7 +35,7 @@ class ActionController extends AdminController
 
         $grid->column('code', __('Code'));
         $grid->column('label', __('Label'));
-        $grid->column('state.name', __('Status'));
+        //$grid->column('state.name', __('Status'));
         $this->_boolean($grid, "R");
         $this->_boolean($grid, "A");
         $this->_boolean($grid, "E");
