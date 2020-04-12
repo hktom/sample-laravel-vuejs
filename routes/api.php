@@ -22,3 +22,4 @@ Route::resource('actions', 'Api\ActionController');
 Route::resource('actors', 'Api\ActorController');
 Route::resource('states', 'Api\StatusController');
 Route::resource('types', 'Api\TypeController');
+Route::resource('echelles', 'Api\EchelleController');

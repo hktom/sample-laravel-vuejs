@@ -18,16 +18,10 @@ export default {
     this.$store.commit("GET_ACTORS");
     this.$store.commit("GET_TYPES");
     this.$store.commit("GET_STATUS");
+    this.$store.commit("GET_ECHELLES");
   },
 
   computed: {
-    project_status() {
-      return this.$store.state.project.status;
-    },
-
-    actor_status() {
-      return this.$store.state.actor.status;
-    },
 
     action_status() {
       return this.$store.state.action.status;

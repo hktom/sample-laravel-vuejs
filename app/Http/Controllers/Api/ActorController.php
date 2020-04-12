@@ -17,7 +17,7 @@ class ActorController extends Controller
      */
     public function index()
     {
-        return ActorResource::collection('App\Actor'::where('is_a_person', 0)->OrderBy('id', 'DESC')->get());
+        return ActorResource::collection('App\Actor'::where('is_a_person', 0)->OrderBy('name', 'ASC')->get());
     }
 
     /**

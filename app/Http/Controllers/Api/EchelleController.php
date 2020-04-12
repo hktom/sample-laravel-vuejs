@@ -2,13 +2,13 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Type;
+use App\Echelle;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\TypeResource;
+use App\Http\Resources\EchelleResource;
 use Illuminate\Support\Facades\Validator;
 
-class TypeController extends Controller
+class EchelleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class TypeController extends Controller
      */
     public function index()
     {
-        return TypeResource::collection('App\Type'::OrderBy('name', 'ASC')->get());
+        return EchelleResource::collection('App\Echelle'::OrderBy('name', 'ASC')->get());
     }
 
     /**
@@ -34,10 +34,10 @@ class TypeController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Type  $Type
+     * @param  \App\Echelle  $echelle
      * @return \Illuminate\Http\Response
      */
-    public function show(Type $Type)
+    public function show(Echelle $echelle)
     {
         //
     }
@@ -46,10 +46,10 @@ class TypeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Type  $Type
+     * @param  \App\Echelle  $echelle
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Type $Type)
+    public function update(Request $request, Echelle $echelle)
     {
         //
     }
@@ -57,10 +57,10 @@ class TypeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Type  $Type
+     * @param  \App\Echelle  $echelle
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Type $Type)
+    public function destroy(Echelle $echelle)
     {
         //
     }

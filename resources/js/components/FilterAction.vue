@@ -30,7 +30,7 @@
       <b-row class="mt2">
     <b-col xs="12" md="12" lg="3">
           <v-select
-            placeholder="Etat de l'action"
+            placeholder="Status"
             :options="option_status"
              :value="$store.action_filter"
              @input="action_set_filter"
@@ -39,8 +39,17 @@
 
          <b-col xs="12" md="12" lg="3">
           <v-select
-            placeholder="Type de l'action"
+            placeholder="Type"
             :options="option_type"
+             :value="$store.action_filter"
+             @input="action_set_filter"
+          />
+        </b-col>
+
+        <b-col xs="12" md="12" lg="3">
+          <v-select
+            placeholder="Echelle"
+            :options="option_echelle"
              :value="$store.action_filter"
              @input="action_set_filter"
           />
@@ -53,7 +62,7 @@
 
 <script>
 export default {
-  name:"formFilter",
+  name:"filterAction",
   data() {
     return {
         search:'',
@@ -73,6 +82,9 @@ export default {
     },
     option_type(){
         return this.$store.state.type.options;
+    },
+    option_echelle(){
+        return this.$store.state.echelle.options;
     }
 
   },

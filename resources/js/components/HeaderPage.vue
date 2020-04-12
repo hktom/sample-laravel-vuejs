@@ -8,12 +8,17 @@
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
-          <b-nav-item>
-              <router-link class="header-link" to="/project">Champ d'application</router-link>
-          </b-nav-item>
 
           <b-nav-item>
               <router-link class="header-link" to="/action">Actions</router-link>
+          </b-nav-item>
+
+           <b-nav-item>
+              <router-link class="header-link" to="/project">Champ d'application</router-link>
+          </b-nav-item>
+
+           <b-nav-item>
+              <router-link class="header-link" to="/project">Les acteurs</router-link>
           </b-nav-item>
 
           <b-nav-item>
