@@ -14,8 +14,11 @@
                   <span class="bold fs0-9"> {{author.name}}  | </span>
                   </span>
               </p>
-              <span v-html="article.description.slice(0, 240)+'...'"></span>
-              <router-link :to="{name: 'Root'}" class="link-article mx-3">Details de l'action </router-link>
+              <p>
+                  {{ article.short_description }} ...<br/>
+                  <router-link :to="{name: 'Root'}" class="link-article mx-3">Details de l'action </router-link>
+              </p>
+
 
           </b-col>
 

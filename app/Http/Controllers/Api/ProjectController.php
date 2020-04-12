@@ -17,7 +17,7 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        return ProjectResource::collection('App\Project'::OrderBy('name', 'ASC')->paginate(20));
+        return ProjectResource::collection('App\Project'::OrderBy('id', 'ASC')->paginate(20));
     }
 
     /**

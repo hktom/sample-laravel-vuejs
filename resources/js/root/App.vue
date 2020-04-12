@@ -13,6 +13,7 @@
 export default {
   name: "App",
   mounted() {
+    this.$store.commit("GET_ALL_ACTIONS");
     this.$store.commit("GET_ACTIONS");
     this.$store.commit("GET_PROJECTS");
     this.$store.commit("GET_ACTORS");

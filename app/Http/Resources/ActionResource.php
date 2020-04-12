@@ -16,8 +16,10 @@ class ActionResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'project_id' => $this->project_id,
             'name' => $this->label,
             'image' => $this->image,
+            'short_description' => $this->short_description,
             'description' => $this->description,
             'R' => $this->R,
             'A' => $this->A,
@@ -28,8 +30,9 @@ class ActionResource extends JsonResource
             'authors'=>$this->authors,
             'collaborators'=>$this->collaborators,
             'caracteristics'=>$this->caracteristics,
-            'ponc'=>$this->ponc,
-            'state'=>$this->state,
+            'types'=>$this->types,
+            'states'=>$this->states,
+            'echelles'=>$this->echelles,
         ];
     }
 }

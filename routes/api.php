@@ -23,3 +23,9 @@ Route::resource('actors', 'Api\ActorController');
 Route::resource('states', 'Api\StatusController');
 Route::resource('types', 'Api\TypeController');
 Route::resource('echelles', 'Api\EchelleController');
+
+// Route::group(['prefix' => 'actions'], function () {
+//     Route::get('all', 'Api\ActionController@index_all');
+// });
+
+Route::get('all/actions', 'Api\ActionController@index_all');

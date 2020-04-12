@@ -1963,6 +1963,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['article'],
   data: function data() {
@@ -1981,6 +1984,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -2072,7 +2076,6 @@ __webpack_require__.r(__webpack_exports__);
       this.$store.dispatch("FILTER_ACTION", value);
     },
     research: function research() {
-      //console.log(`DEBBUG ${this.search}`);
       if (this.search != null && this.search.length > 2) {
         this.$store.dispatch("FIND_ACTION", this.search.trim());
       } else {
@@ -2435,6 +2438,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "App",
   mounted: function mounted() {
+    this.$store.commit("GET_ALL_ACTIONS");
     this.$store.commit("GET_ACTIONS");
     this.$store.commit("GET_PROJECTS");
     this.$store.commit("GET_ACTORS");
@@ -65978,48 +65982,48 @@ var render = function() {
             })
           ]),
           _vm._v(" "),
-          _c(
-            "b-col",
-            { attrs: { lg: "8", md: "12" } },
-            [
-              _c("h2", { staticClass: "lighter" }, [
-                _vm._v(" " + _vm._s(_vm.article.name) + " ")
-              ]),
-              _vm._v(" "),
-              _c(
-                "p",
-                [
-                  _vm._v("\n                Auteurs:\n                "),
-                  _vm._l(_vm.article.authors, function(author) {
-                    return _c("span", [
-                      _c("span", { staticClass: "bold fs0-9" }, [
-                        _vm._v(" " + _vm._s(author.name) + "  | ")
-                      ])
+          _c("b-col", { attrs: { lg: "8", md: "12" } }, [
+            _c("h2", { staticClass: "lighter" }, [
+              _vm._v(" " + _vm._s(_vm.article.name) + " ")
+            ]),
+            _vm._v(" "),
+            _c(
+              "p",
+              [
+                _vm._v("\n                Auteurs:\n                "),
+                _vm._l(_vm.article.authors, function(author) {
+                  return _c("span", [
+                    _c("span", { staticClass: "bold fs0-9" }, [
+                      _vm._v(" " + _vm._s(author.name) + "  | ")
                     ])
-                  })
-                ],
-                2
-              ),
-              _vm._v(" "),
-              _c("span", {
-                domProps: {
-                  innerHTML: _vm._s(
-                    _vm.article.description.slice(0, 240) + "..."
-                  )
-                }
-              }),
-              _vm._v(" "),
-              _c(
-                "router-link",
-                {
-                  staticClass: "link-article mx-3",
-                  attrs: { to: { name: "Root" } }
-                },
-                [_vm._v("Details de l'action ")]
-              )
-            ],
-            1
-          )
+                  ])
+                })
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              [
+                _vm._v(
+                  "\n                " +
+                    _vm._s(_vm.article.short_description) +
+                    " ..."
+                ),
+                _c("br"),
+                _vm._v(" "),
+                _c(
+                  "router-link",
+                  {
+                    staticClass: "link-article mx-3",
+                    attrs: { to: { name: "Root" } }
+                  },
+                  [_vm._v("Details de l'action ")]
+                )
+              ],
+              1
+            )
+          ])
         ],
         1
       )
@@ -66085,8 +66089,8 @@ var render = function() {
             [
               _c("v-select", {
                 attrs: {
-                  placeholder: "Les champs d'application",
-                  options: _vm.option_ACTIONs,
+                  placeholder: "Echelle",
+                  options: _vm.option_echelle,
                   value: _vm.$store.action_filter
                 },
                 on: { input: _vm.action_set_filter }
@@ -66152,12 +66156,12 @@ var render = function() {
           _vm._v(" "),
           _c(
             "b-col",
-            { attrs: { xs: "12", md: "12", lg: "3" } },
+            { attrs: { xs: "12", md: "12", lg: "6" } },
             [
               _c("v-select", {
                 attrs: {
-                  placeholder: "Echelle",
-                  options: _vm.option_echelle,
+                  placeholder: "Les champs d'application",
+                  options: _vm.option_ACTIONs,
                   value: _vm.$store.action_filter
                 },
                 on: { input: _vm.action_set_filter }
@@ -84064,6 +84068,7 @@ var actionModule = {
   state: {
     item: [],
     actions: [],
+    all_actions: [],
     options: [],
     status: false,
     error: ''
@@ -84073,18 +84078,29 @@ var actionModule = {
       var commit = _ref.commit;
 
       if (payload != null) {
-        if (payload.type == "actor") {
-          commit("FILTER_ACTION_BY_ACTOR", payload);
-        }
+        switch (payload.type) {
+          case 'actor':
+            commit("FILTER_ACTION_BY_ACTOR", payload);
+            break;
 
-        if (payload.type == "status") {
-          commit("FILTER_ACTION_BY_STATUS", payload);
-        }
+          case 'status':
+            commit("FILTER_ACTION_BY_STATUS", payload);
+            break;
 
-        if (payload.type == "type") {
-          commit("FILTER_ACTION_BY_TYPE", payload);
-        } else {
-          commit("FILTER_ACTION", payload);
+          case 'type':
+            commit("FILTER_ACTION_BY_TYPE", payload);
+            break;
+
+          case 'echelle':
+            commit("FILTER_ACTION_BY_ECHELLE", payload);
+            break;
+
+          case 'project':
+            commit("FILTER_ACTION_BY_PROJECT", payload);
+            break;
+
+          default:
+            break;
         }
       } else {
         commit("SET_ACTION_DEFAULT");
@@ -84103,8 +84119,8 @@ var actionModule = {
   mutations: {
     FILTER_ACTION_BY_ACTOR: function FILTER_ACTION_BY_ACTOR(state, payload) {
       state.item = [];
-      state.actions.map(function (action) {
-        action.actors.map(function (actor) {
+      state.all_actions.map(function (action) {
+        action.authors.map(function (actor) {
           if (actor.id === payload.code) {
             state.item.push(action);
           }
@@ -84113,8 +84129,8 @@ var actionModule = {
     },
     FILTER_ACTION_BY_STATUS: function FILTER_ACTION_BY_STATUS(state, payload) {
       state.item = [];
-      state.actions.map(function (action) {
-        action.state.map(function (state) {
+      state.all_actions.map(function (action) {
+        action.states.map(function (state) {
           if (state.id === payload.code) {
             state.item.push(action);
           }
@@ -84123,25 +84139,35 @@ var actionModule = {
     },
     FILTER_ACTION_BY_TYPE: function FILTER_ACTION_BY_TYPE(state, payload) {
       state.item = [];
-      state.actions.map(function (action) {
-        action.ponc.map(function (ponc) {
-          if (ponc.id === payload.code) {
+      state.all_actions.map(function (action) {
+        action.types.map(function (type) {
+          if (type.id === payload.code) {
             state.item.push(action);
           }
         });
       });
     },
-    FILTER_ACTION: function FILTER_ACTION(state, payload) {
+    FILTER_ACTION_BY_ECHELLE: function FILTER_ACTION_BY_ECHELLE(state, payload) {
       state.item = [];
-      state.actions.map(function (item) {
-        if (item.id == payload.code) {
+      state.all_actions.map(function (action) {
+        action.echelles.map(function (echelle) {
+          if (echelle.id === payload.code) {
+            state.item.push(action);
+          }
+        });
+      });
+    },
+    FILTER_ACTION_BY_PROJECT: function FILTER_ACTION_BY_PROJECT(state, payload) {
+      state.item = [];
+      state.all_actions.map(function (item) {
+        if (item.project_id == payload.code) {
           state.item.push(item);
         }
       });
     },
     FIND_ACTION: function FIND_ACTION(state, payload) {
       state.item = [];
-      state.actions.map(function (item) {
+      state.all_actions.map(function (item) {
         if (item.name.toLowerCase().search(payload.toLowerCase()) !== -1) {
           state.item.push(item);
         }
@@ -84154,13 +84180,16 @@ var actionModule = {
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/actions').then(function (res) {
         state.actions = res.data.data;
         state.item = state.actions;
-        state.status = true, state.actions.map(function (item) {
-          state.options.push({
-            code: item.id,
-            label: item.name,
-            type: 'action'
-          });
-        });
+        state.status = true;
+      })["catch"](function (error) {
+        state.error = error;
+        console.log(error);
+      });
+    },
+    GET_ALL_ACTIONS: function GET_ALL_ACTIONS(state) {
+      axios__WEBPACK_IMPORTED_MODULE_0___default.a.get('/api/all/actions').then(function (res) {
+        state.all_actions = res.data.data;
+        state.status = true;
       })["catch"](function (error) {
         state.error = error;
         console.log(error);

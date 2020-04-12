@@ -4,6 +4,7 @@ export const actionModule = {
     state: {
         item:[],
         actions: [],
+        all_actions: [],
         options: [],
         status:false,
         error:'',
@@ -11,25 +12,32 @@ export const actionModule = {
     actions: {
         FILTER_ACTION: ({ commit }, payload) => {
             if (payload != null) {
-                if(payload.type=="actor")
-                {
 
-                    commit("FILTER_ACTION_BY_ACTOR", payload);
+                switch (payload.type) {
+                    case 'actor':
+                        commit("FILTER_ACTION_BY_ACTOR", payload);
+                        break;
+
+                    case 'status':
+                        commit("FILTER_ACTION_BY_STATUS", payload);
+                        break;
+
+                    case 'type':
+                        commit("FILTER_ACTION_BY_TYPE", payload);
+                        break;
+
+                    case 'echelle':
+                        commit("FILTER_ACTION_BY_ECHELLE", payload);
+                        break;
+
+                    case 'project':
+                        commit("FILTER_ACTION_BY_PROJECT", payload);
+                        break;
+
+                    default:
+                        break;
                 }
 
-                if(payload.type=="status")
-                {
-                    commit("FILTER_ACTION_BY_STATUS", payload);
-                }
-
-                if(payload.type=="type")
-                {
-                    commit("FILTER_ACTION_BY_TYPE", payload);
-                }
-                else
-                {
-                    commit("FILTER_ACTION", payload);
-                }
             }
             else {
                 commit("SET_ACTION_DEFAULT");
@@ -47,8 +55,8 @@ export const actionModule = {
     mutations: {
         FILTER_ACTION_BY_ACTOR: (state, payload) => {
                 state.item = [];
-                state.actions.map((action) => {
-                    action.actors.map((actor)=>{
+                state.all_actions.map((action) => {
+                    action.authors.map((actor)=>{
                         if(actor.id===payload.code)
                         {
                             state.item.push(action);
@@ -59,8 +67,8 @@ export const actionModule = {
         },
         FILTER_ACTION_BY_STATUS: (state, payload) => {
                 state.item = [];
-                state.actions.map((action) => {
-                    action.state.map((state)=>{
+                state.all_actions.map((action) => {
+                    action.states.map((state)=>{
                         if(state.id===payload.code)
                         {
                             state.item.push(action);
@@ -71,9 +79,21 @@ export const actionModule = {
         },
         FILTER_ACTION_BY_TYPE: (state, payload) => {
                 state.item = [];
-                state.actions.map((action) => {
-                    action.ponc.map((ponc)=>{
-                        if(ponc.id===payload.code)
+                state.all_actions.map((action) => {
+                    action.types.map((type)=>{
+                        if(type.id===payload.code)
+                        {
+                            state.item.push(action);
+                        }
+                    })
+                })
+
+        },
+        FILTER_ACTION_BY_ECHELLE: (state, payload) => {
+                state.item = [];
+                state.all_actions.map((action) => {
+                    action.echelles.map((echelle)=>{
+                        if(echelle.id===payload.code)
                         {
                             state.item.push(action);
                         }
@@ -82,19 +102,18 @@ export const actionModule = {
 
         },
 
-        FILTER_ACTION: (state, payload) => {
+        FILTER_ACTION_BY_PROJECT: (state, payload) => {
                 state.item = [];
-                state.actions.map((item) => {
-                    if (item.id == payload.code) {
+                state.all_actions.map((item) => {
+                    if (item.project_id == payload.code) {
                         state.item.push(item);
                     }
                 })
-
         },
 
         FIND_ACTION: (state, payload) => {
             state.item = [];
-            state.actions.map((item)=>{
+            state.all_actions.map((item)=>{
 
                 if(item.name.toLowerCase().search(payload.toLowerCase())!== -1)
                 {
@@ -113,13 +132,18 @@ export const actionModule = {
                 .then(function (res) {
                     state.actions = res.data.data
                     state.item = state.actions
-                    state.status=true,
-
-                    state.actions.map((item) => {
-                        state.options.push({ code: item.id, label: item.name, type: 'action' });
-
-                    });
-
+                    state.status=true;
+                })
+                .catch(function (error) {
+                    state.error = error;
+                    console.log(error);
+                })
+        },
+        GET_ALL_ACTIONS: state => {
+            axios.get('/api/all/actions')
+                .then(function (res) {
+                    state.all_actions = res.data.data
+                    state.status=true;
                 })
                 .catch(function (error) {
                     state.error = error;

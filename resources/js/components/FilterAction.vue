@@ -10,8 +10,8 @@
 
         <b-col xs="12" md="12" lg="3">
           <v-select
-            placeholder="Les champs d'application"
-            :options="option_ACTIONs"
+            placeholder="Echelle"
+            :options="option_echelle"
              :value="$store.action_filter"
              @input="action_set_filter"
           />
@@ -46,10 +46,11 @@
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="3">
+
+         <b-col xs="12" md="12" lg="6">
           <v-select
-            placeholder="Echelle"
-            :options="option_echelle"
+            placeholder="Les champs d'application"
+            :options="option_ACTIONs"
              :value="$store.action_filter"
              @input="action_set_filter"
           />
@@ -95,7 +96,7 @@ export default {
     },
 
     research(){
-        //console.log(`DEBBUG ${this.search}`);
+
         if(this.search!=null && this.search.length > 2)
         {
             this.$store.dispatch("FIND_ACTION", this.search.trim());

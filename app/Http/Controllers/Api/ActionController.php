@@ -17,7 +17,12 @@ class ActionController extends Controller
      */
     public function index()
     {
-        return ActionResource::collection('App\Action'::OrderBy('id', 'ASC')->paginate(10));
+        return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->paginate(10));
+    }
+
+    public function index_all()
+    {
+        return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->get());
     }
 
     /**
