@@ -18,7 +18,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::resource('projects', 'Api\ProjectController');
-Route::resource('actions', 'Api\ActionController');
+Route::apiResource('actions', 'Api\ActionController');
 Route::resource('actors', 'Api\ActorController');
 Route::resource('states', 'Api\StatusController');
 Route::resource('types', 'Api\TypeController');

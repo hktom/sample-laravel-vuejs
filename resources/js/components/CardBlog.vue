@@ -10,13 +10,15 @@
               <h2 class="lighter"> {{ article.name}} </h2>
               <p>
                   Auteurs:
-                  <span v-for="author in article.authors">
+                  <span v-for="author in article.authors" :key="author.id">
                   <span class="bold fs0-9"> {{author.name}}  | </span>
                   </span>
               </p>
               <p>
-                  {{ article.short_description }} ...<br/>
-                  <router-link :to="{name: 'Root'}" class="link-article mx-3">Details de l'action </router-link>
+                  {{ article.short_description }} [...]<br/>
+                  <router-link :to="{name: 'showAction', params: { id: article.id }}" class="link-article mx-3">Details de l'action
+                      <font-awesome-icon icon="arrow-circle-right" />
+                  </router-link>
               </p>
 
 
@@ -60,7 +62,7 @@ data: function(){
 }
 
 .link-article{
-    color: #17A2B8;font-weight: bold;font-size:13px
+    color: #17A2B8;font-weight: bold;font-size:15px
 }
 
 </style>

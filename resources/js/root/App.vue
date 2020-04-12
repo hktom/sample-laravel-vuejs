@@ -14,7 +14,7 @@ export default {
   name: "App",
   mounted() {
     this.$store.commit("GET_ALL_ACTIONS");
-    this.$store.commit("GET_ACTIONS");
+    this.$store.dispatch("GET_ACTIONS");
     this.$store.commit("GET_PROJECTS");
     this.$store.commit("GET_ACTORS");
     this.$store.commit("GET_TYPES");
@@ -23,13 +23,9 @@ export default {
   },
 
   computed: {
-
     action_status() {
       return this.$store.state.action.status;
     },
-
-
-
-  }
+  },
 };
 </script>

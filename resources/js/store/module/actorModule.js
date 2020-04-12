@@ -2,11 +2,11 @@ import axios from 'axios';
 
 export const actorModule = {
     state: {
-        item:[],
+        item: [],
         actors: [],
         options: [],
-        status:false,
-        error:'',
+        status: false,
+        error: '',
     },
     actions: {
         FILTER_ACTOR: ({ commit }, payload) => {
@@ -29,21 +29,20 @@ export const actorModule = {
     mutations: {
         SET_ACTOR: (state, payload) => {
 
-                state.item = [];
-                state.actors.map((item) => {
-                    if (item.id == payload.code) {
-                        state.item.push(item);
-                    }
-                })
+            state.item = [];
+            state.actors.map((item) => {
+                if (item.id == payload.code) {
+                    state.item.push(item);
+                }
+            })
 
         },
 
         FIND_ACTOR: (state, payload) => {
             state.item = [];
-            state.actors.map((item)=>{
+            state.actors.map((item) => {
 
-                if(item.name.toLowerCase().search(payload.toLowerCase())!== -1)
-                {
+                if (item.name.toLowerCase().search(payload.toLowerCase()) !== -1) {
                     state.item.push(item);
                 }
             })
@@ -59,12 +58,12 @@ export const actorModule = {
                 .then(function (res) {
                     state.actors = res.data.data
                     state.item = state.actors
-                    state.status=true,
+                    state.status = true,
 
-                    state.actors.map((item) => {
-                        state.options.push({ code: item.id, label: item.name, type: 'actor' });
+                        state.actors.map((item) => {
+                            state.options.push({ code: item.id, label: item.name, type: 'actor' });
 
-                    });
+                        });
 
                 })
                 .catch(function (error) {
@@ -74,4 +73,4 @@ export const actorModule = {
         },
     },
     getters: {}
-  }
+}

@@ -68,9 +68,9 @@ class ActionController extends Controller
      * @param  \App\Action  $action
      * @return \Illuminate\Http\Response
      */
-    public function show(Action $action)
+    public function show($id)
     {
-        //return PostResource::collection(Post::where('id', $id)->get());
+        return ActionResource::collection('App\Action'::where('id', $id)->get());
     }
 
     /**

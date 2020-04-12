@@ -2,10 +2,10 @@ import axios from 'axios';
 
 export const echelleModule = {
     state: {
-        item:[],
-        status:false,
-        options:[],
-        error:'',
+        item: [],
+        status: false,
+        options: [],
+        error: '',
     },
     actions: {
 
@@ -15,12 +15,12 @@ export const echelleModule = {
             axios.get('/api/echelles')
                 .then(function (res) {
                     state.item = res.data.data
-                    state.status=true,
+                    state.status = true,
 
-                    state.item.map((item) => {
-                        state.options.push({ code: item.id, label: item.name, type: 'echelle' });
+                        state.item.map((item) => {
+                            state.options.push({ code: item.id, label: item.name, type: 'echelle' });
 
-                    });
+                        });
 
                 })
                 .catch(function (error) {
@@ -30,4 +30,4 @@ export const echelleModule = {
         },
     },
     getters: {}
-  }
+}
