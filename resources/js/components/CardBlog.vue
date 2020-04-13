@@ -7,7 +7,11 @@
           </b-col>
 
           <b-col lg="8" md="12">
-              <h2 class="lighter"> {{ article.name}} </h2>
+              <h2 class="lighter">
+                  <router-link :to="{name: 'showAction', params: { id: article.id }}" class="link-title-article">
+                      {{ article.name}}
+                  </router-link>
+                   </h2>
               <p>
                   Auteurs:
                   <span v-for="author in article.authors" :key="author.id">
@@ -15,7 +19,7 @@
                   </span>
               </p>
               <p>
-                  {{ article.short_description }} [...]<br/>
+                  {{ article.short_description.slice(0, 255) }} [...]<br/>
                   <router-link :to="{name: 'showAction', params: { id: article.id }}" class="link-article mx-3">Details de l'action
                       <font-awesome-icon icon="arrow-circle-right" />
                   </router-link>
@@ -47,9 +51,9 @@ data: function(){
     /* border:2px solid gray; */
     /* box-shadow: 2px 2px 2px black;
     margin:15px 0px 15px 0px; */
+    /* padding: 2em 4em !important; */
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    /* padding: 2em 4em !important; */
     margin-bottom: 1.2em;
     margin-left: 15px;
     margin-right: 15px;
@@ -58,11 +62,25 @@ data: function(){
 }
 
 #cardBlog:hover{
-    transform: scale(1.02);
+    transform: scale(1.01);
+}
+
+.link-title-article{
+    color: black;
+    text-decoration: none;
+}
+
+.link-title-article:hover{
+    color:#17A2B8;
+    text-decoration: none;
 }
 
 .link-article{
-    color: #17A2B8;font-weight: bold;font-size:15px
+    color: #17A2B8;font-size:15px
+}
+.link-article:hover{
+    text-decoration: none;
+    color:black;
 }
 
 </style>

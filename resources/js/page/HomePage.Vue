@@ -41,14 +41,6 @@ export default {
   },
 
   mounted() {
-    if (this.$store.state.action.status == false) {
-      this.$store.dispatch("GET_ACTIONS");
-      this.$store.commit("GET_ALL_ACTIONS");
-      this.$store.commit("GET_PROJECTS");
-      this.$store.commit("GET_ACTORS");
-      this.$store.commit("GET_TYPES");
-      this.$store.commit("GET_STATUS");
-    }
   },
 
   data() {

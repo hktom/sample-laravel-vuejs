@@ -13,6 +13,8 @@
 export default {
   name: "App",
   mounted() {
+    if(this.action_status==false)
+    {
     this.$store.commit("GET_ALL_ACTIONS");
     this.$store.dispatch("GET_ACTIONS");
     this.$store.commit("GET_PROJECTS");
@@ -20,6 +22,7 @@ export default {
     this.$store.commit("GET_TYPES");
     this.$store.commit("GET_STATUS");
     this.$store.commit("GET_ECHELLES");
+    }
   },
 
   computed: {

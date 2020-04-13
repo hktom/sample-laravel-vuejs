@@ -30,6 +30,8 @@ class ActionResource extends JsonResource
             'authors'=>$this->authors,
             'collaborators'=>$this->collaborators,
             'caracteristics'=>$this->caracteristics,
+            'responsables'=>$this->responsables,
+            'realisators'=>$this->realisators,
             'types'=>$this->types,
             'states'=>$this->states,
             'echelles'=>$this->echelles,

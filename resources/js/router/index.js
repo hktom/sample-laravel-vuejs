@@ -4,6 +4,7 @@ import ActionPage from '../page/ActionPage'
 export const routes = [
     {
         path:'/',
+        name:'home',
         component:HomePage
     },
     {
