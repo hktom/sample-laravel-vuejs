@@ -3,9 +3,9 @@ import axios from 'axios';
 export const actionModule = {
     state: {
         item: [],
-        actions: [],
-        action:[],
-        all_actions: [],
+        actions: {},
+        action:{},
+        all_actions: {},
         options: [],
         status: false,
         error: '',
@@ -36,6 +36,7 @@ export const actionModule = {
                         break;
 
                     default:
+                        commit("SET_ACTION_DEFAULT");
                         break;
                 }
 
@@ -83,7 +84,7 @@ export const actionModule = {
 
         },
         FILTER_ACTION_BY_TYPE: (state, payload) => {
-            state.item = [];
+            //state.item = [];
             state.all_actions.map((action) => {
                 action.types.map((type) => {
                     if (type.id === payload.code) {
@@ -126,14 +127,14 @@ export const actionModule = {
         },
 
         SET_ACTION_DEFAULT: state => {
-            state.item = state.actions;
+            state.item = state.actions.data;
         },
 
         GET_ACTIONS: (state, payload) => {
             axios.get(`/api/actions?page=${payload}`)
                 .then(function (res) {
                     state.actions = res.data
-                    state.item = state.actions
+                    state.item = state.actions.data
                     state.status = true;
                 })
                 .catch(function (error) {
@@ -144,7 +145,7 @@ export const actionModule = {
         GET_ALL_ACTIONS: state => {
             axios.get('/api/all/actions')
                 .then(function (res) {
-                    state.all_actions = res.data.data
+                    state.all_actions = res.data.data;
                     state.status = true;
                 })
                 .catch(function (error) {

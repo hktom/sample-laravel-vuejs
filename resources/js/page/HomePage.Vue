@@ -10,7 +10,7 @@
     <div class="w80 mauto mt3 ss-w100 ms-w100">
         <pagination
         size="small"
-        :data="actions"
+        :data="pages"
         @pagination-change-page="this.getActions">
         <span slot="prev-nav">
             <font-awesome-icon icon="chevron-left"/>
@@ -23,7 +23,7 @@
 
     <div class="w80 mauto mt3 ss-w100 ms-w100">
 
-        <div v-for="action in actions.data" :key="action.id">
+        <div v-for="action in actions" :key="action.id">
             <CardBlog :article="action"/>
         </div>
     </div>
@@ -52,6 +52,11 @@ export default {
     actions() {
       return this.$store.state.action.item;
     },
+
+    pages() {
+      return this.$store.state.action.actions;
+    },
+
   },
 
   methods: {
