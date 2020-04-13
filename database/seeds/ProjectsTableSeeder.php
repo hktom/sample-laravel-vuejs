@@ -24,7 +24,7 @@ class ProjectsTableSeeder extends Seeder
                 'ca_principal' => 'CA01',
                 'image' => 'public/storage//4fd655acb407e4281b1258af9a369025.jpg',
                 'created_at' => '2020-03-30 19:11:11',
-                'updated_at' => '2020-04-08 15:27:25',
+                'updated_at' => '2020-04-13 11:51:35',
                 'vision' => '<p>VISION de la Stratégie Biodiversité : en 2030, le déplacement des espèces sauvages est assuré dans l’ensemble du bassin genevois par une infrastructure écologique de qualité, prise en compte en amont de tout projet, afin d’éviter ou de compenser sys tématiquement leurs impacts négatifs. Pour cela, les échanges au sein des administrations et avec les partenaires civils sont devenus la règle, y compris au niveau transfrontalier.</p>',
                 'intro' => NULL,
                 'context' => '<p>On appelle infrastructure &eacute;cologique le r&eacute;seau constitu&eacute; par :<br />
@@ -104,6 +104,8 @@ ainsi que d’expliquer l’importance de leur préservation et de leur dévelop
 Il s’agira aussi de promouvoir le déploiement de la trame noire auprès de différentes<br />
 entités: départements de l’État de Genève, communes, zones industrielles et artisanales,<br />
 et particuliers (1.5).</p>',
+            'icon' => 'public/storage//350d3c1fdf7395eb0ba5773b98cbb928.png',
+            'color' => '#f7d288',
         ),
         1 => 
         array (
@@ -112,7 +114,7 @@ et particuliers (1.5).</p>',
             'ca_principal' => 'CA02',
             'image' => 'public/storage//767acdb2fb9533d7b5d5d5e8f9039283.jpg',
             'created_at' => '2020-03-30 19:11:19',
-            'updated_at' => '2020-04-08 15:28:12',
+            'updated_at' => '2020-04-13 11:52:10',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, le
 canton abrite un ensemble de réservoirs de biodi-
 versité protégés sur 17% de son territoire. Ils sont
@@ -139,6 +141,8 @@ du patrimoine naturel et de l’aire agricole sera renforcée .',
 renforcés (voir également l’action ). Un site web sera aussi créé; il présentera
 notamment les nombreuses possibilités de découvrir la biodiversité locale (voir
 également l’action ).',
+            'icon' => 'public/storage//0dee67790fb03ca656a793923774fc8e.png',
+            'color' => '#ebaf7a',
         ),
         2 => 
         array (
@@ -147,7 +151,7 @@ notamment les nombreuses possibilités de découvrir la biodiversité locale (vo
             'ca_principal' => 'CA03',
             'image' => 'public/storage//5fd53cae3bf5492cdf216a955f305ff8.JPG',
             'created_at' => '2020-03-30 19:11:28',
-            'updated_at' => '2020-04-08 15:28:33',
+            'updated_at' => '2020-04-13 11:52:35',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la forêt
 genevoise couvre toujours 12% du territoire genevois
 et bénéficie d’une gestion favorable à la biodiversité.
@@ -214,6 +218,8 @@ parcelles propriétés de l’Etat sises à l’extérieur du périmètre du san
             'to_value' => 'Le Plan directeur forestier prévoit aussi la préparation d’un Concept précisant les moyens
 d’information à utiliser sur le terrain, notamment par la réduction du nombre de panneau
 en forêt.',
+            'icon' => 'public/storage//6fa58a8ff4a5ca36c48f4e3be8d63185.png',
+            'color' => '#d7dc92',
         ),
         3 => 
         array (
@@ -222,7 +228,7 @@ en forêt.',
             'ca_principal' => 'CA04',
             'image' => 'public/storage//6f37382aabe6ed602d9003c5f058be28.jpg',
             'created_at' => '2020-03-30 19:11:35',
-            'updated_at' => '2020-04-08 15:28:48',
+            'updated_at' => '2020-04-13 11:53:32',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, le
 canton abrite un patrimoine arboré de haute valeur
 pour la biodiversité grâce à une diversité de taille et
@@ -262,6 +268,8 @@ urbaine et périurbaine), ils seront identifiés sur la base de la faune, flore 
 accompagnés dans leurs démarches de conservation, et ces arbres singuliers
 seront mieux identifiés et pris en compte dans les procédures de construction et
 d’abattage .',
+            'icon' => 'public/storage//405867d55b2e2c2a8c4e288e43ebb525.png',
+            'color' => '#d1cfb3',
         ),
         4 => 
         array (
@@ -270,7 +278,7 @@ d’abattage .',
             'ca_principal' => 'CA05',
             'image' => 'public/storage//6d2163d88dc5a0eb6096e2d62aa2c00c.jpg',
             'created_at' => '2020-03-30 19:11:45',
-            'updated_at' => '2020-04-08 15:31:31',
+            'updated_at' => '2020-04-13 11:54:03',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, les
 cours d’eau genevois abritent une faune et une flore
 plus riches qu’aujourd’hui, grâce en particulier à la
@@ -321,6 +329,8 @@ l’évolution des températures sera poursuivie (5.8). Une méthode d’identif
 aquatiques d’intérêt pour la biodiversité sera développée , et un état des lieux des apports
 en microplastiques sera réalisé dans les principaux affluents du Léman .',
             'to_value' => NULL,
+            'icon' => 'public/storage//7eae5b2757780993bd15b8670d86c26f.png',
+            'color' => '#9eb7d0',
         ),
         5 => 
         array (
@@ -329,7 +339,7 @@ en microplastiques sera réalisé dans les principaux affluents du Léman .',
             'ca_principal' => 'CA06',
             'image' => 'public/storage//e2da27ac3cfc4b3b624ac2a84dd4c63e.jpg',
             'created_at' => '2020-03-30 19:11:56',
-            'updated_at' => '2020-04-08 15:32:26',
+            'updated_at' => '2020-04-13 11:54:38',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la
 campagne genevoise est préservée de l’urbanisation
 et abrite une biodiversité riche et diversifiée, grâce
@@ -397,6 +407,8 @@ phytosanitaires – seront promues auprès des producteurs, consommateurs et dis
 (6.5). Les anciennes variétés traditionnelles du territoire du Genevois seront recensées,
 leur commercialisation promue et leur patrimoine génétique préservé (6.6), dans le but de
 maintenir une agrobiodiversité utile face à l’uniformisation génétique des espèces cultivées.',
+            'icon' => 'public/storage//9110e70a62d79d23ef5eb8e6ab717410.png',
+            'color' => '#e9a28a',
         ),
         6 => 
         array (
@@ -405,7 +417,7 @@ maintenir une agrobiodiversité utile face à l’uniformisation génétique des
             'ca_principal' => 'CA07',
             'image' => 'public/storage//aa8d44f260a095938cb6ea6f49c33ffb.JPG',
             'created_at' => '2020-03-30 19:12:12',
-            'updated_at' => '2020-04-08 15:32:45',
+            'updated_at' => '2020-04-13 11:55:07',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, l’es-
 pace bâti genevois comprend une mosaïque de sites
 à caractère naturel permettant à la faune et à la flore
@@ -445,6 +457,8 @@ des enjeux climatiques en milieu urbain sera renforcée , tout comme le financem
 des approches «nature et paysage» . La promotion de la nature en ville sera poursuivie
 et les démarches participatives, les coopérations et les interactions avec les acteurs
 de terrain seront multipliées .',
+            'icon' => 'public/storage//9823bb2274f9adb695cecf5f1dc4994d.png',
+            'color' => '#c7b6ab',
         ),
         7 => 
         array (
@@ -453,7 +467,7 @@ de terrain seront multipliées .',
             'ca_principal' => 'CA08',
             'image' => 'public/storage//c67cd10464305d3e90e5203cbb635bf4.JPG',
             'created_at' => '2020-03-30 19:12:31',
-            'updated_at' => '2020-04-08 15:32:59',
+            'updated_at' => '2020-04-13 11:55:42',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la
 faune et la flore genevoises sont plus riches, résil-
 ientes et diverses grâce à une gestion durable des
@@ -497,6 +511,8 @@ surfaces de promotion de la biodiversité . Deux pôles d’expertise seront cr�
 sur les oiseaux et les petits mammifères, l’autre sur les arthropodes (8.7). Enfin, les centres
 de soins genevois recueillant et soignant des espèces sauvages seront soutenus par l’État,
 également pour leur rôle de sensibilisation auprès du public .',
+            'icon' => 'public/storage//9f5309aaa7ed6003f09e2875111e4ffe.png',
+            'color' => '#d6bd8a',
         ),
         8 => 
         array (
@@ -505,7 +521,7 @@ de soins genevois recueillant et soignant des espèces sauvages seront soutenus 
             'ca_principal' => 'CA09',
             'image' => 'public/storage//6c779d822d408419ca6ba8b494ee2283.jpg',
             'created_at' => '2020-03-30 19:12:58',
-            'updated_at' => '2020-04-08 15:33:14',
+            'updated_at' => '2020-04-13 11:56:25',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la
 population, en particulier celle habitant en ville,
 connaît la valeur de sa nature, en apprécie les
@@ -539,6 +555,8 @@ De nouvelles publications seront mises à disposition de la population sur la
 thématique du cycle de l’eau et des bonnes pratiques aux abords des cours d’eau
 ( et ), ou sur la faune locale . Enfin, la gratuité d’accès aux Centres
 nature et à leurs programmes d’animation sera pérennisée .',
+            'icon' => 'public/storage//45475ac223b470040fc4d847ba492a20.png',
+            'color' => '#c3bfa0',
         ),
         9 => 
         array (
@@ -547,7 +565,7 @@ nature et à leurs programmes d’animation sera pérennisée .',
             'ca_principal' => 'CA10',
             'image' => 'public/storage//9715146d57af0a72cbfedfda8d056c52.jpg',
             'created_at' => '2020-03-30 19:13:13',
-            'updated_at' => '2020-04-08 15:33:30',
+            'updated_at' => '2020-04-13 11:56:56',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, les
 habitant-e-s du canton ont acquis au travers de leur
 parcours de formation une compétence et un sa-
@@ -589,6 +607,8 @@ plans d’études (École de culture générale), dans la formation “métier�
 générale, ainsi que lors des cours inter-entreprises ( et ). L’offre de
 formation continue en gestion des milieux naturels et en «animation nature» sera
 développée ( et ).',
+                'icon' => 'public/storage//37092043a2cdde3188f674a3dd1f29c5.png',
+                'color' => '#a3d7c5',
             ),
             10 => 
             array (
@@ -597,7 +617,7 @@ développée ( et ).',
                 'ca_principal' => 'CA11',
                 'image' => 'public/storage//4a15d7fec142faa4504e214a799e90f8.jpg',
                 'created_at' => '2020-03-30 19:13:29',
-                'updated_at' => '2020-04-08 15:33:48',
+                'updated_at' => '2020-04-13 11:57:22',
                 'vision' => 'VISION de la Stratégie Biodiversité : en 2030, la bio-
 diversité est suivie et évaluée périodiquement grâce
 à un dispositif performant qui permet de réajuster les
@@ -626,6 +646,8 @@ grâce à son module de représentation cartographique; ). La structure du
 système d’information de l’OCAN sera aussi améliorée, pour renforcer et faciliter
 les échanges avec les autres systèmes d’information du Département du territoire
 .',
+            'icon' => 'public/storage//9eb6040d07632c05cb190f6d1c5cf3d7.png',
+            'color' => '#e0beab',
         ),
         11 => 
         array (
@@ -634,7 +656,7 @@ les échanges avec les autres systèmes d’information du Département du terri
             'ca_principal' => 'CA12',
             'image' => 'public/storage//3563157bf68d1293632125d4ad3b5484.jpg',
             'created_at' => '2020-03-30 19:13:41',
-            'updated_at' => '2020-04-08 15:34:02',
+            'updated_at' => '2020-04-13 11:57:50',
             'vision' => 'VISION de la Stratégie Biodiversité : en 2030, les
 prestations de la biodiversité sont reconnues par
 tous et valorisées à leur juste prix par la collectivité.
@@ -685,6 +707,8 @@ situation et l’évolution de la biodiversité seront mesurées à la fin de ch
 de la SBG à l’horizon 2030 . Enfin, une analyse de faisabilité permettra d’évaluer la
 pertinence de créer une structure paraétatique plus agile pour la promotion de la biodiversité
 du canton de Genève .',
+            'icon' => 'public/storage//9ee97977992add889040edb226496efd.png',
+            'color' => '#c1bec1',
         ),
     ));
         

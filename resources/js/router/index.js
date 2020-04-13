@@ -27,7 +27,7 @@ export const routes = [
     },
     {
         path:'/action/:id',
+        name:'showAction',
         component:ActionPage,
-        name:'showAction'
     }
 ];

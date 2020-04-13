@@ -1,15 +1,30 @@
 <template>
-  <div class="pb10">
 
-      <Baniere baniere="bg-image.jpg" description=" La biodiversité c’est notre assurance vie face aux changements climatiques et une priorité pour réussir la transition écologique." />
+<div>
+    <SpinnerGrow v-if="action_status==false" />
+
+    <div v-else>
+       <HeaderPage />
+
+      <div class="pb10">
+
+      <Baniere baniere="/img/bg-image.jpg" description=" La biodiversité c’est notre assurance vie face aux changements climatiques et une priorité pour réussir la transition écologique." />
 
       <menuIndicator menu="home"/>
 
     <filterAction/>
 
     <div class="w80 mauto mt3 ss-w100 ms-w100">
+
+        <div v-for="action in actions" :key="action.id">
+            <CardBlog :article="action"/>
+        </div>
+    </div>
+
+    <div class="w80 mauto mt3 ss-w100 ms-w100">
         <pagination
-        size="small"
+        align="center"
+        size="default"
         :data="pages"
         @pagination-change-page="this.getActions">
         <span slot="prev-nav">
@@ -21,14 +36,12 @@
         </pagination>
     </div>
 
-    <div class="w80 mauto mt3 ss-w100 ms-w100">
-
-        <div v-for="action in actions" :key="action.id">
-            <CardBlog :article="action"/>
-        </div>
-    </div>
-
   </div>
+
+  <FooterPage />
+  </div>
+
+</div>
 </template>
 
 <script>
@@ -41,6 +54,17 @@ export default {
   },
 
   mounted() {
+
+    if(this.action_status==false)
+    {
+    this.$store.commit("GET_ALL_ACTIONS");
+    this.$store.dispatch("GET_ACTIONS");
+    this.$store.commit("GET_PROJECTS");
+    this.$store.commit("GET_ACTORS");
+    this.$store.commit("GET_TYPES");
+    this.$store.commit("GET_STATUS");
+    this.$store.commit("GET_ECHELLES");
+    }
   },
 
   data() {
@@ -49,6 +73,10 @@ export default {
   },
 
   computed: {
+    action_status() {
+      return this.$store.state.action.status;
+    },
+
     actions() {
       return this.$store.state.action.item;
     },

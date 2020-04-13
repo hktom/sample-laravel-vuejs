@@ -36,6 +36,9 @@ class ActionResource extends JsonResource
             'types'=>$this->types,
             'states'=>$this->states,
             'echelles'=>$this->echelles,
+            'calendars'=>$this->calendars,
+            'projects'=>$this->projects,
+            'actions_link'=>$this->actions,
         ];
     }
 }

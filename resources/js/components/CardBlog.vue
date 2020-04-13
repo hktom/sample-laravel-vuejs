@@ -1,23 +1,33 @@
 <template>
-  <div id="cardBlog" class="py-4 px-4">
+  <div id="cardBlog" class="py-4 px-4 cursor-pointer" @click="seeAction(article.id)">
       <!-- <h1>{{article}}</h1> -->
       <b-row v-scroll-reveal>
-          <b-col lg="4" md="12">
-              <img :src="'uploads/'+article.image" class="w100 y10 cover center"/>
+          <b-col lg="2" md="12">
+              <img :src="'uploads/'+article.project.icon" class="w100 cover center"/>
           </b-col>
 
-          <b-col lg="8" md="12">
+          <b-col lg="10" md="12">
               <h3 class="lighter">
                   <router-link :to="{name: 'showAction', params: { id: article.id }}" class="link-title-article">
-                      Action {{ article.code }} <br/>
+                      <span :style="'color:'+article.project.color">Action {{ article.code }}</span><br/>
                       {{ article.name}}
                   </router-link>
                    </h3>
               <p>
                   Elaboré(e) par
                   <span v-for="author in article.authors" :key="author.id">
-                  <span class="bold fs0-9"> {{author.name}}  | </span>
+                  <span class="fs0-9" v-if="author.is_a_person"> {{author.name}}  /
                   </span>
+                  </span>
+
+                  (
+                  <span v-for="author in article.authors" :key="author.id+500">
+                    <span class="fs0-9" v-if="!author.is_a_person">
+                   {{author.name}},
+                  </span>
+                  </span>
+                  )
+
               </p>
               <p>
                   {{ article.short_description.slice(0, 255) }} [...]<br/>
@@ -40,6 +50,12 @@ data: function(){
     return {
 
     }
+},
+methods:{
+    seeAction(articleId){
+        return this.$router.push({ name: 'showAction', params: { id: articleId } });
+        //return this.$router.push({ path: `/action/${articleId}`});
+    }
 }
 
 
@@ -53,11 +69,11 @@ data: function(){
     /* box-shadow: 2px 2px 2px black;
     margin:15px 0px 15px 0px; */
     /* padding: 2em 4em !important; */
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-bottom: 1.2em;
     margin-left: 15px;
     margin-right: 15px;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     transition: 0.3s;
 }
@@ -72,7 +88,7 @@ data: function(){
 }
 
 .link-title-article:hover{
-    color:#17A2B8;
+    color:black;
     text-decoration: none;
 }
 

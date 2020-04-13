@@ -1,7 +1,7 @@
 <template>
       <div id="baniere" class="w100 y15 relative ofhidden">
       <div id="bg-image" class="w100"
-      :style="'height:110%;background-image: url(/img/'+baniere+')'">
+      :style="'height:110%;background-image: url('+baniere+')'">
       </div>
       <div id="bg-text" class="absolute mt0">
         <div class="fitme p8">

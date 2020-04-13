@@ -23,7 +23,7 @@
 <body>
     <div id="app">
         {{-- <router-view></router-view> --}}
-        <app></app>
+        {{-- <app></app> --}}
     </div>
 </body>
 <script src="{{ mix('js/app.js') }}"></script>

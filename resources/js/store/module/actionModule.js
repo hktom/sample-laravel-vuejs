@@ -8,6 +8,7 @@ export const actionModule = {
         all_actions: {},
         options: [],
         status: false,
+        get_action:false,
         error: '',
     },
     actions: {
@@ -154,10 +155,11 @@ export const actionModule = {
                 })
         },
         SHOW_ACTION: (state, payload) => {
+            state.get_action=false;
             axios.get(`/api/actions/${payload}`)
                 .then(function (res) {
                     state.action = res.data.data[0]
-                    state.status = true;
+                    state.get_action=true;
                 })
                 .catch(function (error) {
                     state.error = error;
