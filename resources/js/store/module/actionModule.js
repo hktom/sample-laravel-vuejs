@@ -76,8 +76,8 @@ export const actionModule = {
         FILTER_ACTION_BY_STATUS: (state, payload) => {
             state.item = [];
             state.all_actions.map((action) => {
-                action.states.map((state) => {
-                    if (state.id === payload.code) {
+                action.states.map((item) => {
+                    if (item.id === payload.code) {
                         state.item.push(action);
                     }
                 })
@@ -85,10 +85,10 @@ export const actionModule = {
 
         },
         FILTER_ACTION_BY_TYPE: (state, payload) => {
-            //state.item = [];
+            state.item = [];
             state.all_actions.map((action) => {
-                action.types.map((type) => {
-                    if (type.id === payload.code) {
+                action.types.map((item) => {
+                    if (item.id === payload.code) {
                         state.item.push(action);
                     }
                 })

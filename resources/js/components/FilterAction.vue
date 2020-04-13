@@ -82,7 +82,7 @@ export default {
         return this.$store.state.status.options;
     },
     option_type(){
-        return this.$store.state.type.options;
+        return this.$store.state.types.options;
     },
     option_echelle(){
         return this.$store.state.echelle.options;

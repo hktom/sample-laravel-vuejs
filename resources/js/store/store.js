@@ -16,7 +16,7 @@ export const store = new Vuex.Store({
         action:actionModule,
         actor: actorModule,
         status:statusModule,
-        type:typeModule,
+        types:typeModule,
         echelle:echelleModule,
     }
 })
