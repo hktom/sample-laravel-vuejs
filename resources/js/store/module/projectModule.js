@@ -82,7 +82,8 @@ export const projectModule = {
                     state.status = true,
 
                         state.projects.map((item) => {
-                            state.options.push({ code: item.id, label: item.name, type: 'project' });
+                            state.options.push({ code: item.id,
+                                label:`${item.id} ${item.name}` , type: 'project' });
 
                         });
 

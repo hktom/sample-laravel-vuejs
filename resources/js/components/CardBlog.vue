@@ -7,13 +7,14 @@
           </b-col>
 
           <b-col lg="8" md="12">
-              <h2 class="lighter">
+              <h3 class="lighter">
                   <router-link :to="{name: 'showAction', params: { id: article.id }}" class="link-title-article">
+                      Action {{ article.code }} <br/>
                       {{ article.name}}
                   </router-link>
-                   </h2>
+                   </h3>
               <p>
-                  Auteurs:
+                  Elaboré(e) par
                   <span v-for="author in article.authors" :key="author.id">
                   <span class="bold fs0-9"> {{author.name}}  | </span>
                   </span>
@@ -58,7 +59,7 @@ data: function(){
     margin-left: 15px;
     margin-right: 15px;
     border: 1px solid #ddd;
-    transition: transform 0.3s;
+    transition: 0.3s;
 }
 
 #cardBlog:hover{

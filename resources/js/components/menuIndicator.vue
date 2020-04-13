@@ -3,49 +3,49 @@
     <div class="w80 mauto mt3 mb3 ">
 
       <div id="menu-item" class="relative" v-if="menu=='home'">
-        <router-link :to="{name: 'Root'}"
-        class="link-header mx-3 current_link">
+        <router-link :to="{name: 'home'}"
+        class="link-header mx-3 current_link link_action">
         Actions</router-link>
 
-        <router-link :to="{name: 'Thematiques'}"
+        <router-link :to="{name: 'project'}"
         class="link-header mx-3 ">
             projects
         </router-link>
 
-        <router-link :to="{name: 'Groupes'}"
+        <router-link :to="{name: 'contributor'}"
         class="link-header mx-3 ">
         Contributeurs
         </router-link>
       </div>
 
       <div id="menu-item" class="relative" v-if="menu=='projects'">
-        <router-link :to="{name: 'Root'}"
+        <router-link :to="{name: 'home'}"
         class="link-header mx-3">
         Actions</router-link>
 
-        <router-link :to="{name: 'Thematiques'}"
-        class="link-header mx-3 current_link">
+        <router-link :to="{name: 'project'}"
+        class="link-header mx-3 current_link link_project">
             projects
         </router-link>
 
-        <router-link :to="{name: 'Groupes'}"
+        <router-link :to="{name: 'contributor'}"
         class="link-header mx-3 ">
         Contributeurs
         </router-link>
       </div>
 
       <div id="menu-item" class="relative" v-if="menu=='actions'">
-        <router-link :to="{name: 'Root'}"
+        <router-link :to="{name: 'home'}"
         class="link-header mx-3">
         Actions</router-link>
 
-        <router-link :to="{name: 'Thematiques'}"
+        <router-link :to="{name: 'project'}"
         class="link-header mx-3 ">
             projects
         </router-link>
 
-        <router-link :to="{name: 'Groupes'}"
-        class="link-header mx-3 current_link">
+        <router-link :to="{name: 'contributor'}"
+        class="link-header mx-3 current_link link_contributor">
         Contributeurs
         </router-link>
       </div>
@@ -70,7 +70,29 @@ name:"menuIndicator"
 .current_link:hover{
     color: white;
 }
-#menu-item .current_link::after {
+#menu-item .link_action::after {
+    content: "";
+    border-top: 0.5em solid #17A2B8;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid transparent;
+    position: absolute;
+    left: calc(50% - 31.5em);
+    /* left: 0; */
+    top: 120%;
+}
+
+#menu-item .link_project::after {
+    content: "";
+    border-top: 0.5em solid #17A2B8;
+    border-left: 0.8em solid transparent;
+    border-right: 0.8em solid transparent;
+    position: absolute;
+    left: calc(59% - 31.5em);
+    /* left: 0; */
+    top: 120%;
+}
+
+#menu-item .link_contributor::after {
     content: "";
     border-top: 0.5em solid #17A2B8;
     border-left: 0.8em solid transparent;

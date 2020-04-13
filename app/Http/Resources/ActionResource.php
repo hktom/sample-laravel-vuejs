@@ -16,6 +16,7 @@ class ActionResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'code' => $this->code,
             'project_id' => $this->project_id,
             'name' => $this->label,
             'image' => $this->image,
