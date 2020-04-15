@@ -1,6 +1,6 @@
 <template>
     <div>
-        <SpinnerGrow v-if="action_status == false" />
+        <SpinnerGrow v-if="project_status == false" />
         <div v-else>
             <HeaderPage />
             <div class="pb10">
@@ -46,7 +46,7 @@ export default {
     },
 
     mounted() {
-        if (this.status == false) {
+        if (this.project_status == false) {
             this.$store.commit("GET_PROJECTS");
         }
     },
@@ -60,7 +60,8 @@ export default {
             return this.$store.state.project.item;
         },
 
-        status() {
+        project_status() {
+            console.log(`DEBBUG ${this.$store.state.project.status}`);
             return this.$store.state.project.status;
         }
     },

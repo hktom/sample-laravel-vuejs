@@ -4,7 +4,9 @@ export const projectModule = {
     state: {
         item: [],
         projects: [],
+        project: [],
         options: [],
+        get_project: false,
         status: false,
         error: '',
     },
@@ -30,6 +32,10 @@ export const projectModule = {
             else {
                 commit("SET_PROJECT_DEFAULT");
             }
+        },
+
+        SHOW_PROJECT: ({ commit }, payload) => {
+            commit("SHOW_PROJECT", payload);
         },
     },
     mutations: {
@@ -78,16 +84,30 @@ export const projectModule = {
             state.status = false,
             axios.get('/api/projects')
                 .then(function (res) {
-                    state.projects = res.data.data
-                    state.item = state.projects
-                    state.status = true,
+                    state.projects = res.data.data;
+                    state.item = state.projects;
 
-                        state.projects.map((item) => {
-                            state.options.push({ code: item.id,
-                                label:`${item.id} ${item.name}` , type: 'project' });
+                    state.projects.map((item) => {
+                        state.options.push({ code: item.id,
+                            label:`${item.id} ${item.name}` , type: 'project' });
 
                         });
+                    state.status = true;
 
+                })
+                .catch(function (error) {
+                    state.error = error;
+                    console.log(error);
+                })
+        },
+
+        SHOW_PROJECT: (state, payload) => {
+            state.get_project = false,
+            axios.get(`/api/projects/${payload}`)
+                .then(function (res) {
+                    state.project = res.data.data
+                    state.item = state.projects
+                    state.get_project = true;
                 })
                 .catch(function (error) {
                     state.error = error;

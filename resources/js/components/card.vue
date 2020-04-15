@@ -18,7 +18,7 @@
 
             <b-button pill style="background-color:#05668D">
                 <router-link class="card-link"
-                :to="{ name: '/project/', params: { id: article.id }}">
+                :to="{ name: 'shwoProject', params: { id: article.id }}">
                 Voir le project
                 <font-awesome-icon
                     icon="arrow-circle-right"

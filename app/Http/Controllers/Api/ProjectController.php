@@ -37,9 +37,9 @@ class ProjectController extends Controller
      * @param  \App\Project  $project
      * @return \Illuminate\Http\Response
      */
-    public function show(Project $project)
+    public function show($id)
     {
-        //
+        return ProjectResource::collection('App\Project'::where('id', $id)->get());
     }
 
     /**

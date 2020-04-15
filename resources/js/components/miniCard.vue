@@ -1,7 +1,7 @@
 <template>
     <div>
         <h5
-            class="mt-4 action-title"
+            class="mt-4 action-title block"
             :style="'background-color:' + color"
         >
             <font-awesome-icon :icon="icon" />

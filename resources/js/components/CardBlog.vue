@@ -10,7 +10,7 @@
           <b-col lg="8" md="12">
 
               <h4>
-                  <span class="bold">
+                  <span class="bold" :style="'color:'+article.project.color">
                       ACTION {{ article.code }}
                   </span>
 

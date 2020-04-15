@@ -16,7 +16,7 @@ export const routes = [
         component:ProjectPage
     },
     {
-        path:'/project/:id',
+        path:'/projects/:id',
         name:'shwoProject',
         component:showProject
     },

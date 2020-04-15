@@ -68,6 +68,10 @@ export default {
             // return this.$router.push({
             //     path: `/project/${articleId}`,
             // });
+            this.$router.push({
+                name: "shwoProject",
+                params: { id: articleId }
+            });
         },
 
         goToAction(articleId) {

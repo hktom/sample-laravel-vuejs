@@ -18,12 +18,21 @@
            </router-link>
       </div>
 
+      <div class="btn-back" v-if="btnbackProject">
+
+           <router-link :to="{name: 'project'}" class="back-link">
+          <font-awesome-icon icon="arrow-circle-left" />
+          Revenir aux projects
+           </router-link>
+      </div>
+
+
     </div>
 </template>
 
 <script>
 export default {
-    props:["description", "baniere", "btnback"],
+    props:["description", "baniere", "btnback", "btnbackProject", "action_id", "btnBackAction"],
 }
 </script>
 

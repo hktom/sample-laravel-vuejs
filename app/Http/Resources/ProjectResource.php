@@ -16,6 +16,7 @@ class ProjectResource extends JsonResource
     {
         return [
             'id' => $this->id,
+            'ca_principal' => $this->ca_principal,
             'name' => $this->name,
             'image' => $this->image,
             'vision' => $this->vision,
@@ -25,6 +26,9 @@ class ProjectResource extends JsonResource
             'to_enrich'=>$this->to_enrich,
             'to_value'=>$this->to_value,
             'actors'=>$this->actors,
+            'actions'=>$this->actions,
+            'color'=>$this->color,
+            'icon'=>$this->icon,
         ];
     }
 }
