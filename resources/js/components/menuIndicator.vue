@@ -64,20 +64,30 @@ name:"menuIndicator"
 
 <style>
 
-.link-header{text-transform: uppercase;color: #17A2B8;font-weight: bold;}
-.current_link{background-color: #17A2B8; color: white; border-radius: 300px; padding: 7px 50px;}
+.link-header{
+text-transform: uppercase;
+/* color: #17A2B8; */
+color: black;
+font-weight: bold;
+/* opacity: 0.5; */
+}
+.current_link{
+/* background-color: #17A2B8;  */
+/* color: white;  */
+/* border-radius: 300px;
+padding: 7px 50px; */
+}
 .link-header:hover{text-decoration: none;color: #64C1CF;}
 .current_link:hover{
     color: white;
 }
-#menu-item .link_action::after {
+/* #menu-item .link_action::after {
     content: "";
     border-top: 0.5em solid #17A2B8;
     border-left: 0.8em solid transparent;
     border-right: 0.8em solid transparent;
     position: absolute;
     left: calc(50% - 31.5em);
-    /* left: 0; */
     top: 120%;
 }
 
@@ -88,7 +98,6 @@ name:"menuIndicator"
     border-right: 0.8em solid transparent;
     position: absolute;
     left: calc(59% - 31.5em);
-    /* left: 0; */
     top: 120%;
 }
 
@@ -99,7 +108,6 @@ name:"menuIndicator"
     border-right: 0.8em solid transparent;
     position: absolute;
     left: calc(50% - 31.5em);
-    /* left: 0; */
     top: 120%;
-}
+} */
 </style>

@@ -5,9 +5,9 @@
       </div>
       <div id="bg-text" class="absolute mt0">
         <div class="fitme p8">
-          <h2 class="w75 text-header">
+          <h3 class="w75 text-header ms-fs1 ss-fs1 lms-fs1-3">
             {{ description }}
-          </h2>
+          </h3>
         </div>
       </div>
 

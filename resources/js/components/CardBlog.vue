@@ -1,28 +1,27 @@
 <template>
+<div v-scroll-reveal>
   <div id="cardBlog" class="py-4 px-4 cursor-pointer" @click="seeAction(article.id)">
       <!-- <h1>{{article}}</h1> -->
-      <b-row v-scroll-reveal>
-          <b-col lg="2" md="12">
+      <b-row>
+          <b-col lg="4" md="12">
               <img :src="'uploads/'+article.project.icon" class="w100 cover center"/>
           </b-col>
 
-          <b-col lg="10" md="12">
-              <h3 class="lighter">
-                  <router-link :to="{name: 'showAction', params: { id: article.id }}" class="link-title-article">
+          <b-col lg="8" md="12">
+              <h4 class="" style="font-weight:bold">
                       <span :style="'color:'+article.project.color">Action {{ article.code }}</span><br/>
                       {{ article.name}}
-                  </router-link>
-                   </h3>
+                   </h4>
               <p>
                   Elaboré(e) par
                   <span v-for="author in article.authors" :key="author.id">
-                  <span class="fs0-9" v-if="author.is_a_person"> {{author.name}}  /
+                  <span class="fs0-9 bold" v-if="author.is_a_person"> {{author.name}}  /
                   </span>
                   </span>
 
                   (
                   <span v-for="author in article.authors" :key="author.id+500">
-                    <span class="fs0-9" v-if="!author.is_a_person">
+                    <span class="fs0-9 bold" v-if="!author.is_a_person">
                    {{author.name}},
                   </span>
                   </span>
@@ -30,16 +29,19 @@
 
               </p>
               <p>
-                  {{ article.short_description.slice(0, 255) }} [...]<br/>
-                  <router-link :to="{name: 'showAction', params: { id: article.id }}" class="link-article mx-3">Details de l'action
-                      <font-awesome-icon icon="arrow-circle-right" />
-                  </router-link>
+                  {{ article.short_description.slice(0, 255) }} [...]
+              </p>
+
+              <p class="link-article">
+                      Details de l'action
+                      <!-- <font-awesome-icon icon="arrow-circle-right" /> -->
               </p>
 
 
           </b-col>
 
       </b-row>
+  </div>
   </div>
 </template>
 
@@ -93,11 +95,18 @@ methods:{
 }
 
 .link-article{
-    color: #17A2B8;font-size:15px
+    /* color: #17A2B8; */
+    font-size:16px;
+    display: inline-block;
+    /* padding: 4px 5px; */
+    transition: 0.1s;
 }
 .link-article:hover{
     text-decoration: none;
-    color:black;
+    /* color:black; */
+    /* background-color: #17A2B8;
+    color: white; */
+    color: #17A2B8;
 }
 
 </style>

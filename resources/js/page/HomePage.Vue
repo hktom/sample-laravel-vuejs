@@ -10,7 +10,11 @@
 
       <Baniere baniere="/img/bg-image.jpg" description=" La biodiversité c’est notre assurance vie face aux changements climatiques et une priorité pour réussir la transition écologique." />
 
-      <menuIndicator menu="home"/>
+      <!-- <menuIndicator menu="home"/> -->
+
+    <div class="w80 mauto">
+        <h2 class="my-5">Liste des actions</h2>
+    </div>
 
     <filterAction/>
 

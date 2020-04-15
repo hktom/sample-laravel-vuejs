@@ -1,14 +1,14 @@
 <template>
     <div class="w80 mauto my-2">
       <b-row>
-        <b-col xs="12" lg="3">
+        <b-col xs="12" lg="3" class="my-2">
           <b-input id="inline-form-input-name" style="height:34px" placeholder="Mot clé, nom Entier"
           v-model="search"
           @input="research"
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="3">
+        <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
             placeholder="Echelle"
             :options="option_echelle"
@@ -17,7 +17,7 @@
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="6">
+        <b-col xs="12" md="12" lg="6" class="my-2">
           <v-select placeholder="Les Contributeurs"
           :options="option_actors"
           :value="$store.action_filter"
@@ -27,8 +27,8 @@
 
       </b-row>
 
-      <b-row class="mt2">
-    <b-col xs="12" md="12" lg="3">
+      <b-row>
+    <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
             placeholder="Status"
             :options="option_status"
@@ -37,7 +37,7 @@
           />
         </b-col>
 
-         <b-col xs="12" md="12" lg="3">
+         <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
             placeholder="Type"
             :options="option_type"
@@ -47,7 +47,7 @@
         </b-col>
 
 
-         <b-col xs="12" md="12" lg="6">
+         <b-col xs="12" md="12" lg="6" class="my-2">
           <v-select
             placeholder="Les champs d'application"
             :options="option_ACTIONs"
