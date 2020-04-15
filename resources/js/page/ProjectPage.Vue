@@ -6,10 +6,16 @@
             <div class="pb10">
                 <Baniere
                     baniere="/img/bg-image.jpg"
-                    description=" La biodiversité c’est notre assurance vie face aux changements climatiques et une priorité pour réussir la transition écologique."
+                    description=" <b>La biodiversité</b> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la transition <b>écologique.</b>"
                 />
 
-                <menuIndicator menu="projects" />
+                <!-- <menuIndicator menu="projects" /> -->
+
+                <div class="w80 mauto">
+                    <h2 class="ml2 mt3" style="color:#05668D">
+                        Liste des champs d'application
+                    </h2>
+                </div>
 
                 <div class="w80 mauto">
                     <b-row>
@@ -20,31 +26,7 @@
                             v-for="project in projects"
                             :key="project.id"
                         >
-                            <div v-scroll-reveal class="w100 h100">
-                                <div class="card w100 h100 scala">
-                                    <img
-                                        :src="'uploads/' + project.image"
-                                        class="card-img-top cover w100 h40"
-                                        alt=""
-                                    />
-                                    <div class="card-body">
-                                        <h4 class="card-title lighter">
-                                            {{ project.name }}
-                                        </h4>
-                                        <p class="card-text">
-                                            {{
-                                                project.vision.slice(0, 200)
-                                            }}[...]
-                                        </p>
-                                        <a href="#" class="btn btn-info btn-go"
-                                            >Voir le project
-                                            <font-awesome-icon
-                                                icon="arrow-circle-right"
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <card :article="project" />
                         </b-col>
                     </b-row>
                 </div>
@@ -55,11 +37,11 @@
 </template>
 
 <script>
-// import filterAction from "../components/FilterAction";
+import card from "../components/card";
 import menuIndicator from "../components/menuIndicator";
 export default {
     components: {
-        //filterAction,
+        card,
         menuIndicator
     },
 
@@ -91,26 +73,4 @@ export default {
 };
 </script>
 
-<style>
-.card {
-    transition: 0.3s;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-}
-.scala:hover {
-    transform: scale(1.01);
-}
-
-.btn-go {
-    background-color: rgb(23, 162, 184);
-    border: none !important;
-    font-size: 0.9em;
-    color: white !important;
-    font-weight: bold !important;
-    padding: 10px 20px !important;
-    border-radius: 300px !important;
-}
-
-.btn-go:hover {
-    background-color: rgb(7, 54, 61);
-}
-</style>
+<style></style>

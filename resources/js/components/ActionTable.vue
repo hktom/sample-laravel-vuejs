@@ -2,10 +2,15 @@
     <div>
         <b-row>
             <b-col lg="12">
-                <h5 style="color:#17A2B8" class="my-4">
-                    Champ d'application liée
+                <h5
+                @click="toggleFields"
+                class="my-4 action-title cursor-pointer"
+                :style="'background-color:' + color">
+                    <font-awesome-icon icon="palette" />
+                    Champs d'application liés
                 </h5>
                 <div
+                    v-if="fieldShow"
                     v-for="item in fields"
                     :key="item.id + '_project'"
                     class="table cursor-pointer"
@@ -16,8 +21,14 @@
             </b-col>
 
             <b-col lg="12">
-                <h5 style="color:#17A2B8" class="my-4">Action liée</h5>
+                <h5
+                @click="toggleAction"
+                :style="'background-color:' + color"
+                class="my-4 action-title cursor-pointer">
+                <font-awesome-icon icon="compact-disc" />
+                Actions liée</h5>
                 <div
+                    v-if="actionShow"
                     v-for="item in actions"
                     :key="item.id + '_action'"
                     class="table cursor-pointer"
@@ -33,8 +44,26 @@
 <script>
 export default {
     name: "actionTable",
-    props: ["fields", "actions"],
+    props: ["fields", "actions", "color"],
+        data(){
+
+    return {
+        fieldShow:false,
+        actionShow:false,
+    };
+
+        },
     methods: {
+
+        toggleFields(){
+
+            return this.fieldShow=!this.fieldShow;
+        },
+
+        toggleAction(){
+            return this.actionShow=!this.actionShow;
+        },
+
         goToProject(articleId) {
             // return this.$router.push({
             //     path: `/project/${articleId}`,

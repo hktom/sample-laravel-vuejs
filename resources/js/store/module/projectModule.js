@@ -75,6 +75,7 @@ export const projectModule = {
         },
 
         GET_PROJECTS: state => {
+            state.status = false,
             axios.get('/api/projects')
                 .then(function (res) {
                     state.projects = res.data.data

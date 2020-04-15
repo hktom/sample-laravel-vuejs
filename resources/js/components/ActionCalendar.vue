@@ -2,28 +2,28 @@
     <div>
         <b-row>
             <b-col lg="3" class="calendar">
-                <h6>2020</h6>
+                <h6 :style="'background-color:'+color">2020</h6>
                 <div v-for="item in items" :key="item.id+'_2020'">
                 <p>{{item.year_2020}} </p>
                 </div>
             </b-col>
 
             <b-col lg="3" class="calendar">
-                <h6>2021</h6>
+                <h6 :style="'background-color:'+color">2021</h6>
                 <div v-for="item in items" :key="item.id+'_2021'">
                 <p>{{item.year_2021}} </p>
                 </div>
             </b-col>
 
             <b-col lg="3" class="calendar">
-                <h6>2022</h6>
+                <h6 :style="'background-color:'+color">2022</h6>
                 <div v-for="item in items" :key="item.id+'_2022'">
                 <p>{{item.year_2022}} </p>
                 </div>
             </b-col>
 
             <b-col lg="3" class="calendar">
-                <h6>2023</h6>
+                <h6 :style="'background-color:'+color">2023</h6>
                 <div v-for="item in items" :key="item.id+'_2023'">
                 <p>{{item.year_2023}} </p>
                 </div>
@@ -36,7 +36,7 @@
 <script>
 export default {
     name:"actionCalendar",
-    props:["items"]
+    props:["items", "color"]
 }
 
 </script>
@@ -53,5 +53,5 @@ export default {
 
 }
 
-.calendar h6{background-color: #17A2B8;color: white;padding: 4px 0px 4px 0px}
+.calendar h6{color: black;padding: 4px 0px 4px 0px}
 </style>

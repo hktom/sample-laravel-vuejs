@@ -58,7 +58,7 @@ export default {
     border-radius: 300px !important;
     position: absolute;
     top:10em;
-    left: 10em;
+    left: 13em;
 }
 
 .btn-back:hover{

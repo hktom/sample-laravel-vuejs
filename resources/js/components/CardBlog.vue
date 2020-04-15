@@ -11,7 +11,7 @@
 
               <h4>
                   <span class="bold">
-                      Action {{ article.code }}
+                      ACTION {{ article.code }}
                   </span>
 
                   <b-badge variant="light">
@@ -32,14 +32,14 @@
               <p>
                   Elaboré(e) par
                   <span v-for="author in article.authors" :key="author.id">
-                  <span class="fs0-9 bold" v-if="author.is_a_person"> {{author.name}}  /
+                  <span class="fs0-9" v-if="author.is_a_person"> {{author.name}}  /
                   </span>
                   </span>
 
                   (
-                  <span v-for="author in article.authors" :key="author.id+500">
-                    <span class="fs0-9 bold" v-if="!author.is_a_person">
-                   {{author.name}},
+                  <span v-for="(author, count) in article.authors" :key="author.id+'_'">
+                    <span class="fs0-9" v-if="!author.is_a_person">
+                   {{author.name}} <span v-if="count+1 < article.authors.length">,</span>
                   </span>
                   </span>
                   )
