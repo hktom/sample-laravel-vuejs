@@ -13,14 +13,18 @@
       <!-- <menuIndicator menu="home"/> -->
 
     <div class="w80 mauto">
-        <h2 class="my-5">Liste des actions</h2>
+        <h2 class="my-3" style="color:#05668D">Liste des actions</h2>
     </div>
 
     <filterAction/>
 
     <div class="w80 mauto mt3 ss-w100 ms-w100">
 
-        <div v-for="action in actions" :key="action.id">
+        <div v-if="actions.length <=0">
+            <p class="text-center">Aucune action ne correspond à ces critères de recherche.</p>
+        </div>
+
+        <div v-else v-for="action in actions" :key="action.id">
             <CardBlog :article="action"/>
         </div>
     </div>
@@ -101,20 +105,20 @@ export default {
 
 <style>
 .page-link {
-    color: #17A2B8 !important;
-    transition: 0.4s;
+    color: #05668D !important;
+    transition: 0.2s;
 }
 
 .page-link:hover{
     color: #fff !important;
-    background-color: #17A2B8 !important;
-    border-color: #17A2B8 !important;
+    background-color: #05668D !important;
+    border-color: #05668D !important;
 }
 
 .page-item.active .page-link {
     color: #fff !important;
-    background-color: #17A2B8 !important;
-    border-color: #17A2B8 !important;
+    background-color: #05668D !important;
+    border-color: #05668D !important;
 }
 
 </style>

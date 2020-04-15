@@ -7,7 +7,11 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Plan Biodiversité</title>
+    <title>PLAN BIODIVERSITÉ 2020-2023 DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030</title>
+
+    <meta name="description" content="La biodiversité c’est notre assurance vie face aux changements climatiques.
+    Il faut en faire une priorité pour réussir
+    la transition écologique." >
 
 
 

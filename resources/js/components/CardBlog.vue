@@ -4,14 +4,31 @@
       <!-- <h1>{{article}}</h1> -->
       <b-row>
           <b-col lg="4" md="12">
-              <img :src="'uploads/'+article.project.icon" class="w100 cover center"/>
+              <img :src="'uploads/'+article.project.icon" class="w100 px-4 py-4 cover center"/>
           </b-col>
 
           <b-col lg="8" md="12">
-              <h4 class="" style="font-weight:bold">
-                      <span :style="'color:'+article.project.color">Action {{ article.code }}</span><br/>
+
+              <h4>
+                  <span class="bold">
+                      Action {{ article.code }}
+                  </span>
+
+                  <b-badge variant="light">
+
+                          <font-awesome-icon icon="check-circle" :style="{ color: '#05668D' }" />
+
+
+                      <span class="fs0-8" :style="{color: '#05668D'}">
+                          {{ filter }}
+                      </span>
+                  </b-badge>
+              </h4>
+
+              <h4 class="bold" style="font-weight:bold">
                       {{ article.name}}
-                   </h4>
+              </h4>
+
               <p>
                   Elaboré(e) par
                   <span v-for="author in article.authors" :key="author.id">
@@ -32,9 +49,9 @@
                   {{ article.short_description.slice(0, 255) }} [...]
               </p>
 
-              <p class="link-article">
+              <p class="link-article italic">
                       Details de l'action
-                      <!-- <font-awesome-icon icon="arrow-circle-right" /> -->
+                      <!-- <font-awesome-icon icon="chevron-right" /> -->
               </p>
 
 
@@ -51,6 +68,12 @@ props: ['article'],
 data: function(){
     return {
 
+    }
+},
+
+computed:{
+    filter(){
+        return this.$store.state.params.filter;
     }
 },
 methods:{
@@ -77,7 +100,7 @@ methods:{
     margin-right: 15px;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
-    transition: 0.3s;
+    transition: 0.2s;
 }
 
 #cardBlog:hover{

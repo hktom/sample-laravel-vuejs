@@ -63,6 +63,7 @@ export const actionModule = {
     },
     mutations: {
         FILTER_ACTION_BY_ACTOR: (state, payload) => {
+            state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
                 action.authors.map((actor) => {
@@ -70,10 +71,13 @@ export const actionModule = {
                         state.item.push(action);
                     }
                 })
-            })
+            });
+
+            state.status = true;
 
         },
         FILTER_ACTION_BY_STATUS: (state, payload) => {
+            state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
                 action.states.map((item) => {
@@ -81,10 +85,12 @@ export const actionModule = {
                         state.item.push(action);
                     }
                 })
-            })
+            });
 
+            state.status = true;
         },
         FILTER_ACTION_BY_TYPE: (state, payload) => {
+            state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
                 action.types.map((item) => {
@@ -92,10 +98,11 @@ export const actionModule = {
                         state.item.push(action);
                     }
                 })
-            })
-
+            });
+            state.status = true;
         },
         FILTER_ACTION_BY_ECHELLE: (state, payload) => {
+            state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
                 action.echelles.map((echelle) => {
@@ -103,27 +110,31 @@ export const actionModule = {
                         state.item.push(action);
                     }
                 })
-            })
-
+            });
+            state.status = true;
         },
 
         FILTER_ACTION_BY_PROJECT: (state, payload) => {
+            state.status = false;
             state.item = [];
             state.all_actions.map((item) => {
                 if (item.project_id == payload.code) {
                     state.item.push(item);
                 }
-            })
+            });
+            state.status = true;
         },
 
         FIND_ACTION: (state, payload) => {
+            state.status = false;
             state.item = [];
             state.all_actions.map((item) => {
 
                 if (item.name.toLowerCase().search(payload.toLowerCase()) !== -1) {
                     state.item.push(item);
                 }
-            })
+            });
+            state.status = true;
 
         },
 
@@ -132,6 +143,7 @@ export const actionModule = {
         },
 
         GET_ACTIONS: (state, payload) => {
+            state.status = false;
             axios.get(`/api/actions?page=${payload}`)
                 .then(function (res) {
                     state.actions = res.data

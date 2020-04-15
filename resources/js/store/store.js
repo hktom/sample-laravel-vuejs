@@ -7,6 +7,7 @@ import {actorModule} from './module/actorModule';
 import {typeModule} from './module/typeModule';
 import {statusModule} from './module/statusModule';
 import {echelleModule} from './module/echelleModule';
+import {paramsModule} from './module/paramsModule';
 
 Vue.use(Vuex);
 
@@ -18,5 +19,6 @@ export const store = new Vuex.Store({
         status:statusModule,
         types:typeModule,
         echelle:echelleModule,
+        params:paramsModule,
     }
 })

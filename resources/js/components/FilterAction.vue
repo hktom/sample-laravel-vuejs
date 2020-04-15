@@ -63,53 +63,73 @@
 
 <script>
 export default {
-  name:"filterAction",
+  name: "filterAction",
   data() {
     return {
-        search:'',
+      search: "",
     };
   },
 
   computed: {
-
-    option_ACTIONs(){
-        return this.$store.state.project.options;
+    option_ACTIONs() {
+      return this.$store.state.project.options;
     },
-    option_actors(){
-        return this.$store.state.actor.options;
+    option_actors() {
+      return this.$store.state.actor.options;
     },
-    option_status(){
-        return this.$store.state.status.options;
+    option_status() {
+      return this.$store.state.status.options;
     },
-    option_type(){
-        return this.$store.state.types.options;
+    option_type() {
+      return this.$store.state.types.options;
     },
-    option_echelle(){
-        return this.$store.state.echelle.options;
-    }
-
+    option_echelle() {
+      return this.$store.state.echelle.options;
+    },
   },
 
   methods: {
-    action_set_filter(value){
-        this.$store.dispatch("FILTER_ACTION", value);
+    action_set_filter(value) {
+      this.$store.dispatch("FILTER_ACTION", value);
+      this.set_badge(value);
     },
 
-    research(){
+    set_badge(value) {
+      let payload = "";
+      switch (value.type) {
+        case "actor":
+          payload = `Acteur ${value.label}`;
+          break;
 
-        if(this.search!=null && this.search.length > 2)
-        {
-            this.$store.dispatch("FIND_ACTION", this.search.trim());
-        }
-        else
-        {
-            this.$store.commit("SET_ACTION_DEFAULT");
-        }
-    }
-  }
+        case "project":
+          payload = `champ d'application ${value.label}`;
+          break;
+
+        default:
+          payload = `${value.type} ${value.label}`;
+          break;
+      }
+
+      if(value!=null)
+      {
+          this.$store.dispatch("SET_FILTER_BADGE", payload);
+      }
+      else
+      {
+          this.$store.dispatch("SET_FILTER_BADGE", "champ d'application");
+      }
+    },
+
+    research() {
+      if (this.search != null && this.search.length > 2) {
+        this.$store.dispatch("FIND_ACTION", this.search.trim());
+      } else {
+        this.$store.commit("SET_ACTION_DEFAULT");
+      }
+    },
+  },
 };
 </script>
 
 <style>
-
 </style>

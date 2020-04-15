@@ -2,13 +2,43 @@
   <div>
       <div class="w80 mauto">
   <b-navbar toggleable="lg" type="light">
-    <b-navbar-brand class="fs2 lighter">
+    <b-navbar-brand class="fs2 bold">
         <router-link class="brand-title" to="/">
         Plan Biodiversité
+        <span class="fs0-4 block">DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030</span>
         </router-link>
     </b-navbar-brand>
 
-    <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
+    <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle> -->
+
+        <b-button v-b-toggle.sidebar-1 class="d-md-none" variant="light">
+        <font-awesome-icon icon="bars" />
+        </b-button>
+
+
+
+    <b-sidebar id="sidebar-1" title="Plan Biodiversité" shadow class="d-md-none" bg-variant="info" text-variant="light">
+      <div class="px-3 py-2">
+          <ul class="list-none">
+              <li>
+                  <router-link class="side-header-link" to="/">Actions</router-link>
+              </li>
+
+              <li>
+                  <router-link class="side-header-link" to="/projects">Champs d'application</router-link>
+              </li>
+
+              <li>
+                  <router-link class="side-header-link" to="/actors">acteurs</router-link>
+              </li>
+
+              <li>
+                  <router-link class="side-header-link" to="/contact">Contact</router-link>
+              </li>
+
+          </ul>
+      </div>
+    </b-sidebar>
 
     <b-collapse id="nav-collapse" is-nav>
       <b-navbar-nav class="ml-auto">
@@ -50,8 +80,25 @@ export default {
 </script>
 
 <style>
+.side-header-link{
+    color:white;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 14px;
+    width: 100%;
+    display: block;
+    padding: 1em 0px;
+    transition: 0.3s;
+}
+
+.side-header-link:hover{
+    text-decoration: none;
+    color:#F8D289;
+    /* background-color: white; */
+}
 .header-link{color:black;text-decoration: none;font-weight: 400;text-transform: uppercase;font-size: 14px}
-.header-link:hover{text-decoration: none; color:#4B96F3}
+.header-link:hover{text-decoration: none; color:#17A2B8}
 .brand-title{color: black;text-decoration: none}
 .brand-title:hover{color: black;text-decoration: none}
 </style>

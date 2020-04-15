@@ -1,11 +1,11 @@
 <template>
-      <div id="baniere" class="w100 y15 relative ofhidden">
+      <div id="baniere" class="w100 y15 relative ofhidden ms-y10 ss-y10">
       <div id="bg-image" class="w100"
       :style="'height:110%;background-image: url('+baniere+')'">
       </div>
       <div id="bg-text" class="absolute mt0">
-        <div class="fitme p8">
-          <h3 class="w75 text-header ms-fs1 ss-fs1 lms-fs1-3">
+        <div class="fitme p8 w100">
+          <h3 class="w70 px-4 text-header ms-fs1 ss-fs1 lms-fs1-3">
             {{ description }}
           </h3>
         </div>

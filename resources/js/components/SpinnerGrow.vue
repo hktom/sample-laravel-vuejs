@@ -1,7 +1,7 @@
 <template>
   <div class="text-center" id="spinner">
       <div class="d-flex align-items-center w100 h100 justify-content-center">
-          <b-spinner variant="info" type="grow" label="Spinning" style="width: 5rem; height: 5rem;"/>
+          <b-spinner type="grow" label="Spinning" style="width: 5rem; height: 5rem;color:#05668D"/>
       </div>
   </div>
 </template>

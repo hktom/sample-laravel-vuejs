@@ -1,15 +1,17 @@
 <template>
 
-<div id="footer" class="bg-info w100 py-5">
+<div id="footer" class="w100 py-5" style="background-color:#05668D">
     <div class="w80 mauto">
         <b-row>
-            <b-col lg="4" md="12">
-                <h4 class="white mb4">Plan Biodiversité 2020-2023 <br/>
-de la Stratégie Biodiversité Genève 2030</h4>
-                <img src="/img/logo_white.png" class="w60 cover">
+            <b-col lg="6" md="12">
+                <h4 class="white mb4 uppercase">Plan Biodiversité 2020-2023 </h4>
+                 <p class="white">
+                     La biodiversité c’est notre assurance vie face aux changements climatiques et une priorité pour réussir la transition écologique.
+                 </p>
+                <!-- <img src="/img/logo_white.png" class="w60 cover"> -->
             </b-col>
-            <b-col lg="4" md="12">
-                <h4 class="white">Menu</h4>
+            <b-col lg="3" md="12">
+                <h4 class="white uppercase">Menu</h4>
                 <ul class="list-none">
                     <li class="white">Introduction</li>
                     <li class="white">Champ d'application</li>
@@ -17,8 +19,8 @@ de la Stratégie Biodiversité Genève 2030</h4>
                     <li class="white">Contact</li>
                 </ul>
             </b-col>
-            <b-col lg="4" md="12">
-                <h4 class="white">Suivez-nous sur</h4>
+            <b-col lg="3" md="12">
+                <h4 class="white uppercase">Suivez-nous sur</h4>
                 <ul class="list-none">
                     <li class="white">Twitter</li>
                     <li class="white">Linkedin</li>
