@@ -4,8 +4,9 @@
   <b-navbar toggleable="lg" type="light">
     <b-navbar-brand class="fs2 bold">
         <router-link class="brand-title" to="/">
-        Plan Biodiversité
-        <span class="fs0-4 block">DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030</span>
+        <img src="/img/header-logo.png" class="x20 ms-x15 ss-x15"/>
+        <!-- Plan Biodiversité
+        <span class="fs0-4 block">DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030</span> -->
         </router-link>
     </b-navbar-brand>
 
@@ -29,10 +30,6 @@
               </li>
 
               <li>
-                  <router-link class="side-header-link" to="/actors">acteurs</router-link>
-              </li>
-
-              <li>
                   <router-link class="side-header-link" to="/contact">Contact</router-link>
               </li>
 
@@ -49,10 +46,6 @@
 
            <b-nav-item>
               <router-link class="header-link" to="/projects">Champs d'application</router-link>
-          </b-nav-item>
-
-           <b-nav-item>
-              <router-link class="header-link" to="/actors">acteurs</router-link>
           </b-nav-item>
 
           <b-nav-item>

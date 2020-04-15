@@ -1,5 +1,5 @@
 <template>
-    <div class="w80 mauto my-2">
+    <div class="w80 mauto pl2">
       <b-row>
         <b-col xs="12" lg="3" class="my-2">
           <b-input id="inline-form-input-name" style="height:34px" placeholder="Mot clé, nom Entier"
