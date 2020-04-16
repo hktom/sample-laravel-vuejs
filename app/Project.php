@@ -15,4 +15,14 @@ class Project extends Model
     {
         return $this->belongsToMany('App\Actor', 'project_actors');
     }
+
+    public function news()
+    {
+        return $this->belongsToMany('App\Action', 'project_news');
+    }
+
+    public function purchases()
+    {
+        return $this->belongsToMany('App\Action', 'project_purchases');
+    }
 }

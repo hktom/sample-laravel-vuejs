@@ -80,12 +80,15 @@ class ProjectController extends AdminController
         $form->textarea('to_enrich', __('Pour enrichir'));
         $form->textarea('to_value', __('Pour valoriser'));
         $form->multipleSelect("actors", "Contributeurs")->options('App\Actor'::all()->pluck('name', 'id'));
+
+        $form->multipleSelect("news", "Nouveautés")->options('App\Action'::all()->pluck('code', 'id'));
+
+        $form->multipleSelect("purchases", "Poursuivre & renforcer les actions existantes")->options('App\Action'::all()->pluck('code', 'id'));
+
         $form->divider();
         $form->image("image")->move('public/storage/')->uniqueName();
         $form->image("icon")->move('public/storage/')->uniqueName();
-        //$form->text('color', __('Coleur'));
         $form->color('color', __('Coleur'))->default('#ccc');
-        //$form->image('image', __('Image'));
 
         return $form;
     }

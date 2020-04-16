@@ -35,7 +35,6 @@ class ActionController extends AdminController
 
         $grid->column('code', __('Code'));
         $grid->column('label', __('Label'));
-        //$grid->column('state.name', __('Status'));
         $this->_boolean($grid, "R");
         $this->_boolean($grid, "A");
         $this->_boolean($grid, "E");
@@ -103,7 +102,7 @@ class ActionController extends AdminController
     protected function form()
     {
         $form = new Form(new Action());
-
+        $form->text('orientation', __('Orientation'));
         $this->_select("project", $form)->creationRules('required');
         $form->text('code', __('code'))->creationRules('required|unique:actions');
         $form->text('label', __('Label'))->creationRules('required|unique:actions');
@@ -111,7 +110,7 @@ class ActionController extends AdminController
         $form->multipleSelect("authors", "Auteur")->options('App\Actor'::all()->pluck('name', 'id'));
         $form->multipleSelect("collaborators", "Collaborateurs")->options('App\Actor'::all()->pluck('name', 'id'));
 
-        //$form->image('image', __('Image'));
+
         $form->textarea('short_description', __('Apercu'));
         $form->ckeditor('description', __('Description'));
         $form->textarea('indicator', __('Indicator'));
@@ -119,12 +118,6 @@ class ActionController extends AdminController
         $form->multipleSelect("types", "Type")->options('App\Type'::all()->pluck('name', 'id'));
         $form->multipleSelect("states", "Status")->options('App\State'::all()->pluck('name', 'id'));
         $form->multipleSelect("echelles", "Echelles")->options('App\Echelle'::all()->pluck('name', 'id'));
-
-        // $form->hasMany('caracteristics', "Caracteristiques",  function (Form\NestedForm $form) {
-        //     $form->text('type')->creationRules("nullable");
-        //     $form->text('state', 'status')->creationRules("nullable");
-        //     $form->text('echelle')->creationRules("nullable");
-        // });
 
         $form->divider();
         $form->hasMany('calendars', "Calendrier",  function (Form\NestedForm $form) {
@@ -138,11 +131,6 @@ class ActionController extends AdminController
 
         $form->multipleSelect("responsables", "Responsables")->options('App\Actor'::all()->pluck('name', 'id'));
         $form->multipleSelect("realisators", "Realisateurs")->options('App\Actor'::all()->pluck('name', 'id'));
-
-        // $form->hasMany('implementations', "Mise en oeuvre",  function (Form\NestedForm $form) {
-        //     $form->text('responsable')->creationRules("nullable");
-        //     $form->text('realisator', 'Realisateur')->creationRules("nullable");
-        // });
 
         $form->multipleSelect("projects", "Champs liés")->options('App\Project'::all()->pluck('name', 'id'));
 
