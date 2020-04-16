@@ -4,11 +4,14 @@
     <div class="w80 mauto">
         <b-row>
             <b-col lg="6" md="12">
-                <img src="/img/header-logo-white.png" 
-                class="x30 ms-x15 ss-x15"/>
-                 <p class="white">
+
+                <logo color="white"/>
+                <p class="white">
                      <b>La biodiversité</b> c’est notre assurance vie face aux changements climatiques et une priorité pour réussir la transition écologique.
                  </p>
+                <!-- <img src="/img/header-logo-white.png"
+                class="x30 ms-x15 ss-x15"/>
+                  -->
                 <!-- <img src="/img/logo_white.png" class="w60 cover"> -->
             </b-col>
             <b-col lg="3" md="12">
@@ -46,8 +49,11 @@
 </template>
 
 <script>
+import logo from './logo';
 export default {
-
+        components:{
+          logo,
+      },
 }
 </script>
 

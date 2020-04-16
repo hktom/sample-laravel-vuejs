@@ -4,13 +4,9 @@
   <b-navbar toggleable="lg" type="light">
     <b-navbar-brand class="fs2 bold">
         <router-link class="brand-title" to="/">
-        <img src="/img/header-logo.png" class="x20 ms-x15 ss-x15"/>
-        <!-- Plan Biodiversité
-        <span class="fs0-4 block">DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030</span> -->
+        <logo color="black"/>
         </router-link>
     </b-navbar-brand>
-
-    <!-- <b-navbar-toggle target="nav-collapse"></b-navbar-toggle> -->
 
         <b-button v-b-toggle.sidebar-1 class="d-md-none" variant="light">
         <font-awesome-icon icon="bars" />
@@ -60,8 +56,12 @@
 </template>
 
 <script>
+import logo from './logo';
 export default {
       name: 'HeaderPage',
+      components:{
+          logo,
+      },
       data (){
           return {
               //menuVisible: false
