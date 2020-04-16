@@ -1,6 +1,6 @@
 <template>
 <div v-scroll-reveal class="w100 h100">
-    <div class="card w100 h100 scala">
+    <div class="card w100 h100 scala cursor-pointer" @click="_gotToProject(article.id)">
         <img
             :src="'uploads/' + article.image"
             class="card-img-top cover w100 h40"
@@ -17,13 +17,12 @@
             </p>
 
             <b-button pill style="background-color:#05668D">
-                <router-link class="card-link"
-                :to="{ name: 'shwoProject', params: { id: article.id }}">
-                Voir le project
+                <div class="card-link">
+                Voir les détails
                 <font-awesome-icon
                     icon="arrow-circle-right"
                 />
-                </router-link>
+                </div>
             </b-button>
 
         </div>
@@ -33,7 +32,13 @@
 <script>
 export default {
     name:'card',
-    props:['article']
+    props:['article'],
+    methods:{
+        _gotToProject(articleId){
+             return this.$router.push({ name: 'shwoProject', params: { id: articleId } });
+        }
+    }
+
 };
 </script>
 

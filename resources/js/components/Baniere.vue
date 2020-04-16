@@ -12,18 +12,18 @@
 
       <div class="btn-back" v-if="btnback">
 
-           <router-link :to="{name: 'home'}" class="back-link">
+           <div class="back-link cursor-pointer" @click="_goBack">
           <font-awesome-icon icon="arrow-circle-left" />
           Revenir aux actions
-           </router-link>
+           </div>
       </div>
 
       <div class="btn-back" v-if="btnbackProject">
 
-           <router-link :to="{name: 'project'}" class="back-link">
+           <div class="back-link cursor-pointer" @click="_goBack">
           <font-awesome-icon icon="arrow-circle-left" />
           Revenir aux projects
-           </router-link>
+           </div >
       </div>
 
 
@@ -33,6 +33,11 @@
 <script>
 export default {
     props:["description", "baniere", "btnback", "btnbackProject", "action_id", "btnBackAction"],
+    methods:{
+        _goBack(){
+             return this.$router.go(-1);
+        }
+    }
 }
 </script>
 

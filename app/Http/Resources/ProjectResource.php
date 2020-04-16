@@ -29,6 +29,9 @@ class ProjectResource extends JsonResource
             'actions'=>$this->actions,
             'color'=>$this->color,
             'icon'=>$this->icon,
+            'news'=>$this->news,
+            'purchases'=>$this->purchases,
+
         ];
     }
 }

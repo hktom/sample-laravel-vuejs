@@ -7,6 +7,7 @@
         <h4 class="bold">
             {{ action.name }}
         </h4>
+        <h6> {{action.orientation}} </h6>
 
         <flatCard
         :action="action.authors"
