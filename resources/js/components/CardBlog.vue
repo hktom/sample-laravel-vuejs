@@ -1,6 +1,6 @@
 <template>
 <div v-scroll-reveal>
-  <div id="cardBlog" class="py-4 px-4 cursor-pointer" @click="seeAction(article.id)">
+  <div id="cardBlog" class="py-4 px-4 cursor-pointer" @click="seeAction(article.slug)">
       <!-- <h1>{{article}}</h1> -->
       <b-row>
           <b-col lg="4" md="12">
@@ -10,18 +10,17 @@
           <b-col lg="8" md="12">
 
               <h4>
-                  <span class="bold" :style="'color:'+article.project.color">
+                  <span class="bold" :style="'font-weight:bold;color:'+article.project.color">
                       ACTION {{ article.code }}
                   </span>
 
                   <b-badge variant="light">
 
-                          <font-awesome-icon icon="check-circle" :style="{ color: '#05668D' }" />
-
-
+                          <!-- <font-awesome-icon icon="check-circle" :style="{ color: '#05668D' }" /> -->
                       <span class="fs0-8" :style="{color: '#05668D'}">
-                          {{ filter }}
+                          {{ filter=="champ d'application"? `champ d'application: ${article.project.name}` :filter }}
                       </span>
+
                   </b-badge>
               </h4>
 
@@ -46,13 +45,21 @@
 
               </p>
               <p>
-                  {{ article.short_description.slice(0, 255) }} [...]
+                  {{ article.short_description.slice(0, 255) }} ...
               </p>
 
-              <p class="link-article italic">
+            <b-button pill style="background-color:#05668D">
+                <div class="card-link">
+                Details de l'action
+                <font-awesome-icon
+                    icon="arrow-circle-right"
+                />
+                </div>
+            </b-button>
+
+              <!-- <p class="link-article italic">
                       Details de l'action
-                      <!-- <font-awesome-icon icon="chevron-right" /> -->
-              </p>
+              </p> -->
 
 
           </b-col>
