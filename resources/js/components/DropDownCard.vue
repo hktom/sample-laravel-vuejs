@@ -22,6 +22,14 @@
                     class="my-4 action-title cursor-pointer"
                     :style="'background-color:' + color"
                 >
+
+                    <font-awesome-icon
+                        v-if="icon!=null"
+                        :icon="icon"
+                        size="lg"
+                        class=""
+                    />
+
                     {{ cardTitle }}
 
                     <font-awesome-icon
@@ -46,8 +54,8 @@
                     class="table cursor-pointer"
                     @click="goTo(item.slug, route)"
                 >
-                    <p v-if="route == 'project'" class="table-row">
-                        {{ item.id }} {{ item.label }}
+                    <p v-if="route == 'showProject'" class="table-row">
+                        {{ item.id }} {{ item.name }}
                     </p>
 
                     <p v-else class="table-row">
@@ -56,6 +64,18 @@
                 </div>
             </b-col>
         </b-row>
+
+        <!-- <DropDownCard
+:articles="project.news"
+:color="project.color"
+title="Les actions du CA4 en un coup d’œil"
+icon="eye"
+iconColor="eye"
+subtitle="Les actions sur fond coloré sont prioritaires."
+cardTitle="nouveautés"
+slug=""
+route="showAction"
+/> -->
     </div>
 </template>
 
@@ -94,18 +114,6 @@ export default {
         }
     }
 };
-
-// <DropDownCard
-// :articles="project.news"
-// :color="project.color"
-// title="Les actions du CA4 en un coup d’œil"
-// icon="eye"
-// iconColor="eye"
-// subtitle="Les actions sur fond coloré sont prioritaires."
-// cardTitle="nouveautés"
-// slug=""
-// route="showAction"
-// />
 </script>
 
 <style>

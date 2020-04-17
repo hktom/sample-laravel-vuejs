@@ -13,7 +13,7 @@
             <p class="card-text">
                 {{
                     article.vision.slice(0, 200)
-                }}[...]
+                }}...
             </p>
 
             <b-button pill style="background-color:#05668D">
@@ -35,7 +35,7 @@ export default {
     props:['article'],
     methods:{
         _gotToProject(articleId){
-             return this.$router.push({ name: 'shwoProject', params: { id: articleId } });
+             return this.$router.push({ name: 'showProject', params: { id: articleId } });
         }
     }
 

@@ -12,12 +12,12 @@
                 <!-- <menuIndicator menu="projects" /> -->
 
                 <div class="w80 mauto">
-                    <h2 class="ml2 mt3" style="color:#05668D">
+                    <h4 class="ml2 mt3" style="color:#05668D">
                         Liste des champs d'application
-                    </h2>
+                    </h4>
                 </div>
 
-                <div class="w80 mauto">
+                <div class="w80 mauto px-1">
                     <b-row>
                         <b-col
                             lg="4"

@@ -29,10 +29,12 @@
 <script>
 import actionLeftSide from "../components/actionLeftSide";
 import actionRighSide from "../components/actionRightSide";
+import DropDownCard from '../components/DropDownCard'
 export default {
  components: {
     actionLeftSide,
-    actionRighSide
+    actionRighSide,
+     DropDownCard
   },
     mounted() {
         this.$store.commit("SHOW_ACTION", this.$route.params.id);

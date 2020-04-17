@@ -105,6 +105,15 @@
                             cardTitle="nouveautés"
                             route="showAction"
                             />
+
+                            <DropDownCard
+                            :articles="project.purchases"
+                            :color="project.color"
+                            cardTitle="Poursuivre & renforcer les actions existantes"
+                            route="showAction"
+                            />
+
+
                         </b-col>
 
                         <b-col lg="4" md="12">

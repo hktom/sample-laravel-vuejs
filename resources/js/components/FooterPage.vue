@@ -21,10 +21,10 @@
                         <router-link class="footer-link" to="/">Actions</router-link>
                     </li>
                     <li class="white">
-                        <router-link class="footer-link" to="/projects">Champs d'application</router-link>
+                        <router-link class="footer-link" :to="{name:'project'}">Champs d'application</router-link>
                     </li>
                     <li class="white">
-                        <router-link class="footer-link" to="/contact">Contact</router-link>
+                        <router-link class="footer-link" :to="{name:'contact'}">Contact</router-link>
                     </li>
                 </ul>
             </b-col>

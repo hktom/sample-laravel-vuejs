@@ -17,7 +17,7 @@ export const routes = [
     },
     {
         path:'/champ-d-application/:id',
-        name:'shwoProject',
+        name:'showProject',
         component:showProject
     },
     {
