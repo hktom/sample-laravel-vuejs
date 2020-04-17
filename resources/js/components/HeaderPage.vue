@@ -22,11 +22,11 @@
               </li>
 
               <li>
-                  <router-link class="side-header-link" to="/projects">Champs d'application</router-link>
+                  <router-link class="side-header-link" :to="{name: 'project'}">Champs d'application</router-link>
               </li>
 
               <li>
-                  <router-link class="side-header-link" to="/contact">Contact</router-link>
+                  <router-link class="side-header-link" :to="{name:'contact'}">Contact</router-link>
               </li>
 
           </ul>
@@ -41,11 +41,11 @@
           </b-nav-item>
 
            <b-nav-item>
-              <router-link class="header-link" to="/projects">Champs d'application</router-link>
+              <router-link class="header-link" :to="{name:'project'}">Champs d'application</router-link>
           </b-nav-item>
 
           <b-nav-item>
-              <router-link class="header-link" to="/contact">Contact</router-link>
+              <router-link class="header-link" :to="{name:'contact'}">Contact</router-link>
           </b-nav-item>
 
       </b-navbar-nav>

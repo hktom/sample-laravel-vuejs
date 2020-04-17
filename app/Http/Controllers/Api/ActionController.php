@@ -70,7 +70,7 @@ class ActionController extends Controller
      */
     public function show($id)
     {
-        return ActionResource::collection('App\Action'::where('id', $id)->get());
+        return ActionResource::collection('App\Action'::where('slug', $id)->get());
     }
 
     /**

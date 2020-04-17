@@ -20,7 +20,7 @@ class ProjectResource extends JsonResource
             'name' => $this->name,
             'image' => $this->image,
             'vision' => $this->vision,
-            'intro' => $this->intro,
+            'introduction' => $this->intro,
             'context'=>$this->context,
             'to_know'=>$this->to_know,
             'to_enrich'=>$this->to_enrich,
@@ -31,6 +31,7 @@ class ProjectResource extends JsonResource
             'icon'=>$this->icon,
             'news'=>$this->news,
             'purchases'=>$this->purchases,
+            'slug'=>$this->slug,
 
         ];
     }

@@ -1,6 +1,6 @@
 <template>
 <div v-scroll-reveal class="w100 h100">
-    <div class="card w100 h100 scala cursor-pointer" @click="_gotToProject(article.id)">
+    <div class="card w100 h100 scala cursor-pointer" @click="_gotToProject(article.slug)">
         <img
             :src="'uploads/' + article.image"
             class="card-img-top cover w100 h40"

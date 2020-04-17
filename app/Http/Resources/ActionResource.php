@@ -40,6 +40,7 @@ class ActionResource extends JsonResource
             'calendars'=>$this->calendars,
             'projects'=>$this->projects,
             'actions_link'=>$this->actions,
+            'slug'=>$this->slug,
         ];
     }
 }

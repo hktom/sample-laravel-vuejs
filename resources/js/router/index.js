@@ -2,7 +2,7 @@ import HomePage from '../page/HomePage'
 import ActionPage from '../page/ActionPage'
 import ProjectPage from '../page/ProjectPage'
 import showProject from '../page/project/showProject'
-import contributorPage from '../page/contributorPage'
+
 
 export const routes = [
     {
@@ -11,19 +11,14 @@ export const routes = [
         component:HomePage
     },
     {
-        path:'/projects',
+        path:'/champ-d-applications',
         name:'project',
         component:ProjectPage
     },
     {
-        path:'/projects/:id',
+        path:'/champ-d-application/:id',
         name:'shwoProject',
         component:showProject
-    },
-    {
-        path:'/contributeurs',
-        name:'contributor',
-        component:contributorPage
     },
     {
         path:'/action/:id',

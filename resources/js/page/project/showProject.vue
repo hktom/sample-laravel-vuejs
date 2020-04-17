@@ -29,6 +29,16 @@
                                 {{ project.name }}
                             </h3>
 
+                            <div v-if="project.introduction != null">
+
+                                <h4 class="bold uppercase mt-4">Introduction</h4>
+
+                                <div>
+                                    <div v-html="project.introduction"></div>
+                                </div>
+
+                            </div>
+
                             <div v-if="project.context != null">
                                 <h4 class="bold uppercase">Contexte</h4>
 
@@ -45,50 +55,56 @@
 
                             </div>
 
-                            <h3 class="bold mb-4">
+                            <h4 class="bold my-4">
                                 Ce que prévoit le Plan Biodiversité 2020-2023
-                            </h3>
+                            </h4>
 
                             <div v-if="project.to_know != null">
-                                <h4
-                                    @click="_dropdown_one"
-                                    class="bold action-title cursor-pointer"
-                                    :style="'background-color:' + project.color"
-                                >
-                                    Pour CONNAÎTRE la biodiversité et son
-                                    évolution
-                                </h4>
-                                <div style="transition:0.5s" v-if="dropdown_one" v-html="project.to_know"></div>
+
+                                <DropDown
+                                :color="project.color"
+                                title="Pour CONNAÎTRE la biodiversité et son
+                                    évolution"
+                                :text="project.to_know"
+                                />
+
                             </div>
 
                             <div v-if="project.to_enrich != null">
-                                <h4
-                                    @click="_dropdown_two"
-                                    class="bold uppercase action-title cursor-pointer"
-                                    :style="'background-color:' + project.color"
-                                >
-                                    Pour ENRICHIR la biodiversité et garantir
-                                    les services écosystémiques
-                                </h4>
-                                <div style="transition:0.2s" v-if="dropdown_two" v-html="project.to_enrich"></div>
+
+                                <DropDown
+                                :color="project.color"
+                                title="Pour ENRICHIR la biodiversité et garantir
+                                    les services écosystémiques"
+                                :text="project.to_enrich"
+                                />
+
                             </div>
 
                             <div v-if="project.to_value != null">
-                                <h4
-                                    @click="_dropdown_three"
-                                    class="bold uppercase action-title cursor-pointer"
-                                    :style="'background-color:' + project.color"
-                                >
-                                    Pour VALORISER la biodiversité et partager
-                                    ses bienfaits auprès de la population
-                                </h4>
-                                <div style="transition:0.2s" v-if="dropdown_three" v-html="project.to_value"></div>
-                            </div>
 
+                                <DropDown
+                                :color="project.color"
+                                title="Pour VALORISER la biodiversité et partager ses bienfaits auprès de la population"
+                                :text="project.to_value"
+                                />
+
+                            </div>
+<!--
                             <projectTable
                             :fields="project.news"
                             :actions="project.purchases"
-                            :color="project.color" />
+                            :color="project.color" /> -->
+
+                            <DropDownCard
+                            :articles="project.news"
+                            :color="project.color"
+                            title="Les actions du CA4 en un coup d’œil"
+                            iconColor="eye"
+                            subtitle="Les actions sur fond coloré sont prioritaires."
+                            cardTitle="nouveautés"
+                            route="showAction"
+                            />
                         </b-col>
 
                         <b-col lg="4" md="12">
@@ -154,9 +170,13 @@
 
 <script>
 import projectTable from '../../components/projectTable'
+import DropDown from '../../components/DropDown'
+import DropDownCard from '../../components/DropDownCard'
 export default {
     components: {
         projectTable,
+        DropDown,
+        DropDownCard,
     },
     mounted() {
         this.$store.commit("SHOW_PROJECT", this.$route.params.id);
@@ -171,9 +191,6 @@ export default {
     },
     data: function() {
         return {
-            dropdown_one:false,
-            dropdown_two:false,
-            dropdown_three:false,
             readmore:true,
         };
     },
@@ -182,18 +199,6 @@ export default {
         _readmore(){
             return this.readmore=!this.readmore;
         },
-        _dropdown_one(){
-            return this.dropdown_one=!this.dropdown_one;
-        },
-
-        _dropdown_two(){
-            return this.dropdown_two=!this.dropdown_two;
-        },
-
-        _dropdown_three(){
-            return this.dropdown_three=!this.dropdown_three;
-        },
-
     }
 };
 </script>

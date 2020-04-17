@@ -39,7 +39,7 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        return ProjectResource::collection('App\Project'::where('id', $id)->get());
+        return ProjectResource::collection('App\Project'::where('slug', $id)->get());
     }
 
     /**

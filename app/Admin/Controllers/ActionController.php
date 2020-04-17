@@ -102,54 +102,54 @@ class ActionController extends AdminController
     protected function form()
     {
         $form = new Form(new Action());
-        $form->text('orientation', __('Orientation'));
-        $this->_select("project", $form)->creationRules('required');
-        $form->text('code', __('code'))->creationRules('required|unique:actions');
-        $form->text('label', __('Label'))->creationRules('required|unique:actions');
+        // $form->text('orientation', __('Orientation'));
+        // $this->_select("project", $form)->creationRules('required');
+        // $form->text('code', __('code'))->creationRules('required|unique:actions');
+        // $form->text('label', __('Label'))->creationRules('required|unique:actions');
 
-        $form->multipleSelect("authors", "Auteur")->options('App\Actor'::all()->pluck('name', 'id'));
-        $form->multipleSelect("collaborators", "Collaborateurs")->options('App\Actor'::all()->pluck('name', 'id'));
+        // $form->multipleSelect("authors", "Auteur")->options('App\Actor'::all()->pluck('name', 'id'));
+        // $form->multipleSelect("collaborators", "Collaborateurs")->options('App\Actor'::all()->pluck('name', 'id'));
 
 
-        $form->textarea('short_description', __('Apercu'));
-        $form->ckeditor('description', __('Description'));
-        $form->textarea('indicator', __('Indicator'));
+        // $form->textarea('short_description', __('Apercu'));
+        // $form->ckeditor('description', __('Description'));
+        // $form->textarea('indicator', __('Indicator'));
 
-        $form->multipleSelect("types", "Type")->options('App\Type'::all()->pluck('name', 'id'));
-        $form->multipleSelect("states", "Status")->options('App\State'::all()->pluck('name', 'id'));
-        $form->multipleSelect("echelles", "Echelles")->options('App\Echelle'::all()->pluck('name', 'id'));
+        // $form->multipleSelect("types", "Type")->options('App\Type'::all()->pluck('name', 'id'));
+        // $form->multipleSelect("states", "Status")->options('App\State'::all()->pluck('name', 'id'));
+        // $form->multipleSelect("echelles", "Echelles")->options('App\Echelle'::all()->pluck('name', 'id'));
 
-        $form->divider();
-        $form->hasMany('calendars', "Calendrier",  function (Form\NestedForm $form) {
-            $form->text('year_2020', '2020')->creationRules("nullable");
-            $form->text('year_2021', '2021')->creationRules("nullable");
-            $form->text('year_2022', '2022')->creationRules("nullable");
-            $form->text('year_2023', '2023')->creationRules("nullable");
-        });
-
-        $form->divider();
-
-        $form->multipleSelect("responsables", "Responsables")->options('App\Actor'::all()->pluck('name', 'id'));
-        $form->multipleSelect("realisators", "Realisateurs")->options('App\Actor'::all()->pluck('name', 'id'));
-
-        $form->multipleSelect("projects", "Champs liés")->options('App\Project'::all()->pluck('name', 'id'));
-
-        $form->multipleSelect("actions", "Actions liées")->options('App\Action'::all()->pluck('label', 'id'));
-        $form->divider();
-
-        $form->switch('R', __('R'));
-        $form->switch('A', __('A'));
-        $form->switch('E', __('E'));
-        $form->switch('T', __('T'));
-        $this->_select("type", $form);
-        $this->_select("comment", $form);
-        // $this->_select("state", $form);
         // $form->divider();
-        // $form->text('total_cout_etat', __('Total cout etat'));
-        // $form->text('cout_externe', __('Cout externe'));
-        // $form->text('total_couts', __('Total couts'));
-        $form->divider();
-        $form->image("image")->move('public/storage/')->uniqueName();
+        // $form->hasMany('calendars', "Calendrier",  function (Form\NestedForm $form) {
+        //     $form->text('year_2020', '2020')->creationRules("nullable");
+        //     $form->text('year_2021', '2021')->creationRules("nullable");
+        //     $form->text('year_2022', '2022')->creationRules("nullable");
+        //     $form->text('year_2023', '2023')->creationRules("nullable");
+        // });
+
+        // $form->divider();
+
+        // $form->multipleSelect("responsables", "Responsables")->options('App\Actor'::all()->pluck('name', 'id'));
+        // $form->multipleSelect("realisators", "Realisateurs")->options('App\Actor'::all()->pluck('name', 'id'));
+
+        // $form->multipleSelect("projects", "Champs liés")->options('App\Project'::all()->pluck('name', 'id'));
+
+        // $form->multipleSelect("actions", "Actions liées")->options('App\Action'::all()->pluck('label', 'id'));
+        // $form->divider();
+
+        // $form->switch('R', __('R'));
+        // $form->switch('A', __('A'));
+        // $form->switch('E', __('E'));
+        // $form->switch('T', __('T'));
+        // $this->_select("type", $form);
+        // $this->_select("comment", $form);
+        // // $this->_select("state", $form);
+        // // $form->divider();
+        // // $form->text('total_cout_etat', __('Total cout etat'));
+        // // $form->text('cout_externe', __('Cout externe'));
+        // // $form->text('total_couts', __('Total couts'));
+        // $form->divider();
+        // $form->image("image")->move('public/storage/')->uniqueName();
 
         return $form;
     }
