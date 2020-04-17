@@ -1,6 +1,26 @@
-@font-face {
+@import url(https://use.typekit.net/rco6seo.css);@charset "UTF-8";
+
+/* @font-face {
     font-family: mainFont;
     src: url('../font/AktivGroteskCorp-Light.ttf');
+  } */
+
+  /*
+  *{font-family: aktiv-grotesk, sans-serif !important;}
+  */
+
+  @font-face {
+    font-family: h1;
+    src: url('../font/arial-black.ttf');
   }
 
-  *{font-family:mainFont}
+  @font-face {
+    font-family: primary;
+    src: url('../font/arial.ttf');
+  }
+
+
+  *{font-family: primary !important;}
+  h1, h2, h3, h4, h5, h6{font-family: h1 !important;}
+
+  p{width: 100%; text-align: justify;}

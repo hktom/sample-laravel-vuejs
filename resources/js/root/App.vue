@@ -1,15 +1,15 @@
 <template>
-    <div class="">
-        <HeaderPage/>
-        <!-- <router-link :to="{ name: '' }">Home</router-link> | -->
-        <router-view></router-view>
-
-        <FooterPage/>
-    </div>
+  <div id="app">
+      <router-view></router-view>
+  </div>
 </template>
 <script>
-   // import HeaderPage from '../components/HeaderPage';
-    export default {
-        name:"App"
-    }
+export default {
+  name: "div",
+  mounted() {
+  },
+
+  computed: {
+  },
+};
 </script>

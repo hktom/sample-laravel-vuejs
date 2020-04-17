@@ -14,6 +14,33 @@ class ActionResource extends JsonResource
      */
     public function toArray($request)
     {
-        return parent::toArray($request);
+        return [
+            'id' => $this->id,
+            'code' => $this->code,
+            'orientation' => $this->orientation,
+            'project_id' => $this->project_id,
+            'name' => $this->label,
+            'image' => $this->image,
+            'short_description' => $this->short_description,
+            'description' => $this->description,
+            'R' => $this->R,
+            'A' => $this->A,
+            'E' => $this->E,
+            'T' => $this->T,
+            'indicator' => $this->indicator,
+            'project'=>$this->project,
+            'authors'=>$this->authors,
+            'collaborators'=>$this->collaborators,
+            'caracteristics'=>$this->caracteristics,
+            'responsables'=>$this->responsables,
+            'realisators'=>$this->realisators,
+            'types'=>$this->types,
+            'states'=>$this->states,
+            'echelles'=>$this->echelles,
+            'calendars'=>$this->calendars,
+            'projects'=>$this->projects,
+            'actions_link'=>$this->actions,
+            'slug'=>$this->slug,
+        ];
     }
 }

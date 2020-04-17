@@ -13,17 +13,27 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(AdminTablesSeeder::class);
         $this->call(ProjectsTableSeeder::class);
-        $this->call(StatesTableSeeder::class);
         $this->call(CommentsTableSeeder::class);
+        $this->call(EchellesTableSeeder::class);
+        $this->call(TypesTableSeeder::class);
+        $this->call(StatesTableSeeder::class);
         $this->call(PoncsTableSeeder::class);
-        $this->call(ActionsTableSeeder::class);
         $this->call(ActorsTableSeeder::class);
-        //$this->call(EntreprisesTableSeeder::class);
-        //$this->call(UsersTableSeeder::class);
-        $this->call(AuthorActionsTableSeeder::class);
-        $this->call(CollaboratorActionsTableSeeder::class);
+        $this->call(ActionsTableSeeder::class);
         $this->call(ActionActionsTableSeeder::class);
+        $this->call(ActionRealisatorsTableSeeder::class);
+        $this->call(ActorProjectsTableSeeder::class);
+        $this->call(AuthorActionsTableSeeder::class);
+        $this->call(CalendarsTableSeeder::class);
+        $this->call(CollaboratorActionsTableSeeder::class);
+        $this->call(EchelleActionsTableSeeder::class);
         $this->call(ProjectActionsTableSeeder::class);
-        $this->call(ImplementationsTableSeeder::class);
+        $this->call(ProjectActorsTableSeeder::class);
+        $this->call(RealisatorActionsTableSeeder::class);
+        $this->call(ResponsableActionsTableSeeder::class);
+        $this->call(RolesTableSeeder::class);
+        $this->call(StateActionsTableSeeder::class);
+        $this->call(TypeActionsTableSeeder::class);
+        $this->call(UsersTableSeeder::class);
     }
 }

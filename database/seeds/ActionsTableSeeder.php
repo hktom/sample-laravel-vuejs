@@ -21,7 +21,7 @@ class ActionsTableSeeder extends Seeder
             array (
                 'id' => 2,
                 'code' => '1.1',
-                'label' => '1. Mettre à jour de la carte de planification de l’infrastructure écologique',
+                'label' => 'Mettre à jour de la carte de planification de l’infrastructure écologique',
                 'image' => NULL,
                 'description' => '<p>L&rsquo;infrastructure &eacute;cologique cantonale a &eacute;t&eacute; d&eacute;finie et cartographi&eacute;e sur la base des &eacute;l&eacute;ments suivants :<br />
 la composition en esp&egrave;ces (faune et flore) et en habitats naturels, la structure des milieux, leurs<br />
@@ -56,13 +56,20 @@ INDICATEURS-SE. Synth&egrave;se du rapport final. Universit&eacute; de Gen&egrav
             'state_id' => 1,
             'ponc_id' => 1,
             'created_at' => '2020-04-01 04:31:44',
-            'updated_at' => '2020-04-07 06:17:46',
+            'updated_at' => '2020-04-10 16:05:49',
+            'short_description' => 'L’infrastructure écologique cantonale a été définie et cartographiée sur la base des éléments suivants :
+la composition en espèces (faune et flore) et en habitats naturels, la structure des milieux, leurs
+fonctions (connectivité) et différents services écosystémiques. Ces éléments ont été synthétisés puis
+pondérés pour disposer d’une mesure intégrée de la qualité biologique du territoire à une résolution
+spatiale de 25x25 mètres. Ainsi, sur la carte de l’infrastructure écologique, chaque pixel du territoire
+a une valeur entre 1 (faible) et 100 (forte valeur biologique). La représentation sur le terrain est déjà
+disponible jusqu’au niveau de la parcelle.',
         ),
         1 => 
         array (
             'id' => 3,
             'code' => '1.2',
-            'label' => '2. Faire comprendre l’importance de l’infrastructure écologique ',
+            'label' => 'Faire comprendre l’importance de l’infrastructure écologique ',
             'image' => NULL,
             'description' => '<p>Dans une optique de transition &eacute;cologique, il est crucial de porter &agrave; la connaissance du public &ndash;<br />
 mais aussi sp&eacute;cifiquement aupr&egrave;s de certains partenaires (urbanistes, architectes, etc.) &ndash; la notion<br />
@@ -94,13 +101,17 @@ d&eacute;ploy&eacute;e en se basant sur les concepts &laquo; Chaque m2 compte &r
             'state_id' => 2,
             'ponc_id' => 1,
             'created_at' => '2020-04-01 05:11:50',
-            'updated_at' => '2020-04-07 06:32:02',
+            'updated_at' => '2020-04-10 16:08:45',
+            'short_description' => 'Dans une optique de transition écologique, il est crucial de porter à la connaissance du public –
+mais aussi spécifiquement auprès de certains partenaires (urbanistes, architectes, etc.) – la notion
+d’infrastructure écologique, et d’expliquer l’importance de sa préservation et de son développement.
+Il sera également important de faire comprendre la notion de « services écosystémiques ».',
         ),
         2 => 
         array (
             'id' => 4,
             'code' => '1.3',
-            'label' => '3. Intégrer l\'infrastructure écologique dans l\'aménagement du territoire et l’implémenter',
+            'label' => 'Intégrer l\'infrastructure écologique dans l\'aménagement du territoire et l’implémenter',
             'image' => NULL,
             'description' => '<p>Poursuivre le d&eacute;veloppement du canton sans penser &agrave; l&rsquo;infrastructure n&eacute;cessaire &agrave; la biodiversit&eacute;,<br />
 c&rsquo;est menacer notre propre survie. Les Plans Directeurs cantonal et communaux doivent garantir la<br />
@@ -149,68 +160,80 @@ pour les projets routiers).</p>',
         'state_id' => 2,
         'ponc_id' => 1,
         'created_at' => '2020-04-01 05:22:29',
-        'updated_at' => '2020-04-07 06:34:31',
-    ),
-    3 => 
-    array (
-        'id' => 5,
-        'code' => '1.4',
-        'label' => '4. Mettre à jour la carte de la trame noire idéale',
-        'image' => NULL,
-        'description' => '<p>La pollution lumineuse perturbe diverses esp&egrave;ces (p.ex. certaines chauves-souris menac&eacute;es<br />
+        'updated_at' => '2020-04-10 16:10:58',
+        'short_description' => 'Poursuivre le développement du canton sans penser à l’infrastructure nécessaire à la biodiversité,
+c’est menacer notre propre survie. Les Plans Directeurs cantonal et communaux doivent garantir la
+conservation d’une IE résiliente et durable, constituée idéalement des meilleurs 30% du territoire du
+point de vue écologique (Objectifs OFEV (CDB : Convention sur la Diversité Biologique) et Forum
+Biodiversité CH).',
+),
+3 => 
+array (
+    'id' => 5,
+    'code' => '1.4',
+    'label' => 'Mettre à jour la carte de la trame noire idéale',
+    'image' => NULL,
+    'description' => '<p>La pollution lumineuse perturbe diverses esp&egrave;ces (p.ex. certaines chauves-souris menac&eacute;es<br />
 d&rsquo;extinction au niveau r&eacute;gional ou de nombreuses esp&egrave;ces d&rsquo;insectes). Elle n&eacute;cessite la d&eacute;finition d&rsquo;une<br />
 trame noire qui vienne compl&eacute;ter l&rsquo;infrastructure &eacute;cologique et dans laquelle des efforts particuliers<br />
 doivent &ecirc;tre entrepris pour pr&eacute;server l&rsquo;obscurit&eacute; nocturne.</p>',
-        'indicator' => 'Cartographie de la trame noire réalisée',
-        'R' => 0,
-        'A' => 0,
-        'E' => 1,
-        'T' => 0,
-        'total_cout_etat' => NULL,
-        'cout_externe' => NULL,
-        'total_couts' => NULL,
-        'project_id' => 1,
-        'comment_id' => 2,
-        'state_id' => 1,
-        'ponc_id' => 1,
-        'created_at' => '2020-04-01 10:58:36',
-        'updated_at' => '2020-04-07 06:37:01',
-    ),
-    4 => 
-    array (
-        'id' => 6,
-        'code' => '1.5',
-        'label' => '5. Préserver et développer la trame noire',
-        'image' => NULL,
-        'description' => '<p>- Plan d&rsquo;action &ldquo;trame noire&rdquo; pour la restauration de corridors noirs, comprenant notamment l&rsquo;extinction<br />
+    'indicator' => 'Cartographie de la trame noire réalisée',
+    'R' => 0,
+    'A' => 0,
+    'E' => 1,
+    'T' => 0,
+    'total_cout_etat' => NULL,
+    'cout_externe' => NULL,
+    'total_couts' => NULL,
+    'project_id' => 1,
+    'comment_id' => 2,
+    'state_id' => 1,
+    'ponc_id' => 1,
+    'created_at' => '2020-04-01 10:58:36',
+    'updated_at' => '2020-04-10 16:58:47',
+    'short_description' => 'La pollution lumineuse perturbe diverses espèces (p.ex. certaines chauves-souris menacées
+d’extinction au niveau régional ou de nombreuses espèces d’insectes). Elle nécessite la définition d’une
+trame noire qui vienne compléter l’infrastructure écologique et dans laquelle des efforts particuliers
+doivent être entrepris pour préserver l’obscurité nocturne.',
+),
+4 => 
+array (
+    'id' => 6,
+    'code' => '1.5',
+    'label' => 'Préserver et développer la trame noire',
+    'image' => NULL,
+    'description' => '<p>- Plan d&rsquo;action &ldquo;trame noire&rdquo; pour la restauration de corridors noirs, comprenant notamment l&rsquo;extinction<br />
 ou la modification de lampadaires, l&rsquo;installation d&rsquo;&eacute;clairages dynamiques sur les routes et autres<br />
 infrastructures, etc.<br />
 - Cr&eacute;ation d&rsquo;un observatoire &ldquo;pollution lumineuse&rdquo; (sant&eacute;, biodiversit&eacute;, &eacute;nergie, etc.)<br />
 - Faire conna&icirc;tre la trame noire aux diff&eacute;rents services du canton porteurs de projets d&rsquo;&eacute;clairages<br />
 (OCGC, OU, etc.), aux Service Industriels de Gen&egrave;ve et aux communes, aux Zones Industrielles<br />
 et Artisanales et aux particuliers.</p>',
-        'indicator' => 'Définition et mise en œuvre d’un Plan d’action « trame noire » au niveau cantonal',
-        'R' => 0,
-        'A' => 1,
-        'E' => 1,
-        'T' => 1,
-        'total_cout_etat' => NULL,
-        'cout_externe' => NULL,
-        'total_couts' => NULL,
-        'project_id' => 1,
-        'comment_id' => NULL,
-        'state_id' => 3,
-        'ponc_id' => 1,
-        'created_at' => '2020-04-01 11:06:37',
-        'updated_at' => '2020-04-07 06:38:58',
-    ),
-    5 => 
-    array (
-        'id' => 7,
-        'code' => '1.6',
-        'label' => '6. Renforcer la mise en œuvre des contrats corridors transfrontaliers',
-        'image' => NULL,
-        'description' => '<p>Les contrats corridors ont &eacute;t&eacute; initi&eacute;s dans le cadre du Projet d&rsquo;agglom&eacute;ration Franco-Valdo-Genevoise.<br />
+    'indicator' => 'Définition et mise en œuvre d’un Plan d’action « trame noire » au niveau cantonal',
+    'R' => 0,
+    'A' => 1,
+    'E' => 1,
+    'T' => 1,
+    'total_cout_etat' => NULL,
+    'cout_externe' => NULL,
+    'total_couts' => NULL,
+    'project_id' => 1,
+    'comment_id' => NULL,
+    'state_id' => 3,
+    'ponc_id' => 1,
+    'created_at' => '2020-04-01 11:06:37',
+    'updated_at' => '2020-04-10 17:02:20',
+    'short_description' => 'Plan d’action “trame noire” pour la restauration de corridors noirs, comprenant notamment l’extinction
+ou la modification de lampadaires, l’installation d’éclairages dynamiques sur les routes et autres
+infrastructures, etc.',
+),
+5 => 
+array (
+    'id' => 7,
+    'code' => '1.6',
+    'label' => 'Renforcer la mise en œuvre des contrats corridors transfrontaliers',
+    'image' => NULL,
+    'description' => '<p>Les contrats corridors ont &eacute;t&eacute; initi&eacute;s dans le cadre du Projet d&rsquo;agglom&eacute;ration Franco-Valdo-Genevoise.<br />
 L&rsquo;outil contrat de territoire Espaces naturels sensibles est mis en &oelig;uvre par le D&eacute;partement de Haute-<br />
 Savoie ; il succ&egrave;de &agrave; l&rsquo;outil contrat corridors/vert&amp;bleu.<br />
 Cette action visera notamment &agrave; mettre en &oelig;uvre:<br />
@@ -219,28 +242,31 @@ Cette action visera notamment &agrave; mettre en &oelig;uvre:<br />
 - le Contrat de territoire Espaces naturels sensibles Vuache-Champagne-Genevois 2020-2023 ;<br />
 - le Contrat de territoire Espaces naturels sensibles Annemasse-Agglo 2020-2024 ;<br />
 - et &agrave; d&eacute;finir la suite du contrat corridors transfrontalier Vesancy-Versoix.</p>',
-        'indicator' => 'Indicateurs de suivi et résultats – Bilan intermédiaire et final',
-        'R' => 1,
-        'A' => 1,
-        'E' => 1,
-        'T' => 1,
-        'total_cout_etat' => NULL,
-        'cout_externe' => NULL,
-        'total_couts' => NULL,
-        'project_id' => 1,
-        'comment_id' => 1,
-        'state_id' => 3,
-        'ponc_id' => 1,
-        'created_at' => '2020-04-01 11:09:56',
-        'updated_at' => '2020-04-07 06:42:10',
-    ),
-    6 => 
-    array (
-        'id' => 8,
-        'code' => '2.1',
-        'label' => '1. Recenser et protéger les milieux et habitats d\'importance locale à régionale',
-        'image' => NULL,
-        'description' => '<p>Les principaux sites naturels du canton b&eacute;n&eacute;ficient actuellement de divers statuts de protection sur<br />
+    'indicator' => 'Indicateurs de suivi et résultats – Bilan intermédiaire et final',
+    'R' => 1,
+    'A' => 1,
+    'E' => 1,
+    'T' => 1,
+    'total_cout_etat' => NULL,
+    'cout_externe' => NULL,
+    'total_couts' => NULL,
+    'project_id' => 1,
+    'comment_id' => 1,
+    'state_id' => 3,
+    'ponc_id' => 1,
+    'created_at' => '2020-04-01 11:09:56',
+    'updated_at' => '2020-04-10 17:06:56',
+    'short_description' => 'Les contrats corridors ont été initiés dans le cadre du Projet d’agglomération Franco-Valdo-Genevoise.
+L’outil contrat de territoire Espaces naturels sensibles est mis en œuvre par le Département de Haute-
+Savoie ; il succède à l’outil contrat corridors/vert&bleu.',
+),
+6 => 
+array (
+    'id' => 8,
+    'code' => '2.1',
+    'label' => 'Recenser et protéger les milieux et habitats d\'importance locale à régionale',
+    'image' => NULL,
+    'description' => '<p>Les principaux sites naturels du canton b&eacute;n&eacute;ficient actuellement de divers statuts de protection sur<br />
 le plan l&eacute;gal, dont plusieurs attestent de leur valeur au niveau national : prairies et p&acirc;turages secs<br />
 (PPS), sites de reproduction de batraciens (OBat), bas-marais (IBM), etc.<br />
 Ces statuts de protection sont d&eacute;finis par divers crit&egrave;res permettant une s&eacute;lection des sites les plus<br />
@@ -271,28 +297,33 @@ inventaire, qui est d&eacute;j&agrave; d&eacute;clin&eacute; au niveau suisse.</
 <p><br />
 Enfin, selon les possibilit&eacute;s et opportunit&eacute;s, les sites recens&eacute;s seront acquis dans le but de p&eacute;renniser<br />
 leur gestion en faveur des valeurs naturelles inventori&eacute;es.</p>',
-    'indicator' => 'Nombre de sites protégés/prioritaires hors des objets d’importance nationale',
-    'R' => 1,
-    'A' => 0,
-    'E' => 1,
-    'T' => 0,
-    'total_cout_etat' => NULL,
-    'cout_externe' => NULL,
-    'total_couts' => NULL,
-    'project_id' => 2,
-    'comment_id' => 3,
-    'state_id' => 3,
-    'ponc_id' => 1,
-    'created_at' => '2020-04-01 11:18:24',
-    'updated_at' => '2020-04-01 11:18:24',
+'indicator' => 'Nombre de sites protégés/prioritaires hors des objets d’importance nationale',
+'R' => 1,
+'A' => 0,
+'E' => 1,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 2,
+'comment_id' => 3,
+'state_id' => 3,
+'ponc_id' => 1,
+'created_at' => '2020-04-01 11:18:24',
+'updated_at' => '2020-04-10 17:09:21',
+'short_description' => 'Les principaux sites naturels du canton bénéficient actuellement de divers statuts de protection sur
+le plan légal, dont plusieurs attestent de leur valeur au niveau national : prairies et pâturages secs
+(PPS), sites de reproduction de batraciens (OBat), bas-marais (IBM), etc.
+Ces statuts de protection sont définis par divers critères permettant une sélection des sites les plus
+riches.',
 ),
 7 => 
 array (
-    'id' => 9,
-    'code' => '2.2',
-    'label' => '2. Actualiser et mettre en œuvre les plans de gestion pour les sites protégés',
-    'image' => NULL,
-    'description' => '<p>Les plans de gestion sont &eacute;labor&eacute;s pour une dur&eacute;e de 10 &agrave; 15 ans. Ils constituent l&rsquo;outil de r&eacute;f&eacute;rence<br />
+'id' => 9,
+'code' => '2.2',
+'label' => 'Actualiser et mettre en œuvre les plans de gestion pour les sites protégés',
+'image' => NULL,
+'description' => '<p>Les plans de gestion sont &eacute;labor&eacute;s pour une dur&eacute;e de 10 &agrave; 15 ans. Ils constituent l&rsquo;outil de r&eacute;f&eacute;rence<br />
 pour la gestion et la conservation des sites prot&eacute;g&eacute;s au niveau cantonal, et r&eacute;gissent &eacute;galement leur<br />
 usage par le public. Leur &eacute;laboration suit trois phases:</p>
 
@@ -311,28 +342,31 @@ terme.<br />
 En parall&egrave;le, le cahier des charges et le format du document doivent r&eacute;guli&egrave;rement &ecirc;tre &eacute;valu&eacute;s<br />
 dans un souci d&rsquo;optimisation continue, orient&eacute;e sur la gestion appliqu&eacute;e des espaces semi-naturels<br />
 et naturels.</p>',
-    'indicator' => 'Nombre de plans de gestion renouvelés ou nouvellement élaborés',
-    'R' => 0,
-    'A' => 0,
-    'E' => 0,
-    'T' => 0,
-    'total_cout_etat' => NULL,
-    'cout_externe' => NULL,
-    'total_couts' => NULL,
-    'project_id' => 2,
-    'comment_id' => NULL,
-    'state_id' => 3,
-    'ponc_id' => 1,
-    'created_at' => '2020-04-01 11:24:03',
-    'updated_at' => '2020-04-01 11:24:03',
+'indicator' => 'Nombre de plans de gestion renouvelés ou nouvellement élaborés',
+'R' => 0,
+'A' => 0,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 2,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => 1,
+'created_at' => '2020-04-01 11:24:03',
+'updated_at' => '2020-04-10 17:12:17',
+'short_description' => 'Les plans de gestion sont élaborés pour une durée de 10 à 15 ans. Ils constituent l’outil de référence
+pour la gestion et la conservation des sites protégés au niveau cantonal, et régissent également leur
+usage par le public. Leur élaboration suit trois phases',
 ),
 8 => 
 array (
-    'id' => 10,
-    'code' => '2.3',
-    'label' => '3. Diversifier les acteurs de la gestion des sites naturels',
-    'image' => NULL,
-    'description' => '<p>Le d&eacute;veloppement important du canton et de sa r&eacute;gion frontali&egrave;re, notamment en termes de<br />
+'id' => 10,
+'code' => '2.3',
+'label' => 'Diversifier les acteurs de la gestion des sites naturels',
+'image' => NULL,
+'description' => '<p>Le d&eacute;veloppement important du canton et de sa r&eacute;gion frontali&egrave;re, notamment en termes de<br />
 d&eacute;mographie et d&rsquo;urbanisation, entra&icirc;ne un besoin toujours plus important de la population en espaces<br />
 de d&eacute;lassement. L&rsquo;espace rural, les for&ecirc;ts, les cours d&rsquo;eau, le Lac et les sites naturels prot&eacute;g&eacute;s sont<br />
 ainsi toujours plus sollicit&eacute;s. Cette pression grandissante s&rsquo;accompagne de comportements inad&eacute;quats<br />
@@ -347,27 +381,30 @@ Afin d&rsquo;accompagner le d&eacute;veloppement de notre r&eacute;gion tout en 
 des diff&eacute;rents acteurs de l&rsquo;espace rural, cette action visera &agrave; renforcer le secteur des gardes cantonaux<br />
 de l&rsquo;environnement par l&rsquo;engagement d&rsquo;au moins un(e) nouveau(-velle) collaborateur(-trice).</p>',
 'indicator' => 'Engagement d’au moins un(e) nouveau(-velle) garde.',
-    'R' => 0,
-    'A' => 1,
-    'E' => 0,
-    'T' => 1,
-    'total_cout_etat' => NULL,
-    'cout_externe' => NULL,
-    'total_couts' => NULL,
-    'project_id' => 2,
-    'comment_id' => NULL,
-    'state_id' => 2,
-    'ponc_id' => 1,
-    'created_at' => '2020-04-01 11:36:28',
-    'updated_at' => '2020-04-01 11:36:28',
+'R' => 0,
+'A' => 1,
+'E' => 0,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 2,
+'comment_id' => NULL,
+'state_id' => 2,
+'ponc_id' => 1,
+'created_at' => '2020-04-01 11:36:28',
+'updated_at' => '2020-04-10 17:15:30',
+'short_description' => 'Actuellement, la gestion des principaux sites naturels est majoritairement assurée par l’Office cantonal
+de l’agriculture et de la nature (OCAN), à travers son service de la biodiversité (SBio).
+Cette action vise à impliquer d’autres acteurs que l’OCAN dans cette gestion.',
 ),
 9 => 
 array (
-    'id' => 11,
-    'code' => '2.4',
-    'label' => '4. Renforcer la surveillance du patrimoine naturel et de l\'aire agricole',
-    'image' => NULL,
-    'description' => '<p>Le d&eacute;veloppement important du canton et de sa r&eacute;gion frontali&egrave;re, notamment en termes de<br />
+'id' => 11,
+'code' => '2.4',
+'label' => 'Renforcer la surveillance du patrimoine naturel et de l\'aire agricole',
+'image' => NULL,
+'description' => '<p>Le d&eacute;veloppement important du canton et de sa r&eacute;gion frontali&egrave;re, notamment en termes de<br />
 d&eacute;mographie et d&rsquo;urbanisation, entra&icirc;ne un besoin toujours plus important de la population en espaces<br />
 de d&eacute;lassement. L&rsquo;espace rural, les for&ecirc;ts, les cours d&rsquo;eau, le Lac et les sites naturels prot&eacute;g&eacute;s sont<br />
 ainsi toujours plus sollicit&eacute;s. Cette pression grandissante s&rsquo;accompagne de comportements inad&eacute;quats<br />
@@ -384,27 +421,31 @@ Afin d&rsquo;accompagner le d&eacute;veloppement de notre r&eacute;gion tout en 
 des diff&eacute;rents acteurs de l&rsquo;espace rural, cette action visera &agrave; renforcer le secteur des gardes cantonaux<br />
 de l&rsquo;environnement par l&rsquo;engagement d&rsquo;au moins un(e) nouveau(-velle) collaborateur(-trice).</p>',
 'indicator' => 'Engagement d’au moins un(e) nouveau(-velle) garde.',
-    'R' => 1,
-    'A' => 0,
-    'E' => 0,
-    'T' => 0,
-    'total_cout_etat' => NULL,
-    'cout_externe' => NULL,
-    'total_couts' => NULL,
-    'project_id' => 2,
-    'comment_id' => NULL,
-    'state_id' => 3,
-    'ponc_id' => 1,
-    'created_at' => '2020-04-01 11:39:31',
-    'updated_at' => '2020-04-01 11:39:31',
+'R' => 1,
+'A' => 0,
+'E' => 0,
+'T' => 0,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 2,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => 1,
+'created_at' => '2020-04-01 11:39:31',
+'updated_at' => '2020-04-10 17:17:42',
+'short_description' => 'Le développement important du canton et de sa région frontalière, notamment en termes de
+démographie et d’urbanisation, entraîne un besoin toujours plus important de la population en espaces
+de délassement. L’espace rural, les forêts, les cours d’eau, le Lac et les sites naturels protégés sont
+ainsi toujours plus sollicités.',
 ),
 10 => 
 array (
-    'id' => 12,
-    'code' => '3.1',
-    'label' => '1. Promouvoir la biodiversité en forêt',
-    'image' => NULL,
-    'description' => '<p>Dans le cadre de la r&eacute;vision du plan directeur forestier, les actions suivantes en faveur de la biodiversit&eacute;<br />
+'id' => 12,
+'code' => '3.1',
+'label' => 'Promouvoir la biodiversité en forêt',
+'image' => NULL,
+'description' => '<p>Dans le cadre de la r&eacute;vision du plan directeur forestier, les actions suivantes en faveur de la biodiversit&eacute;<br />
 seront d&eacute;velopp&eacute;es ou renforc&eacute;es (cf. synth&egrave;se du CA3) :<br />
 1. Mise en place d&rsquo;un r&eacute;seau d&rsquo;inventaire dendrom&eacute;trique et botanique, relevant &eacute;galement les esp&egrave;ces<br />
 de ch&ecirc;nes<br />
@@ -419,28 +460,30 @@ pour des raisons de biodiversit&eacute;<br />
 9. Observatoire des lisi&egrave;res<br />
 Les actions susmentionn&eacute;es sont d&eacute;taill&eacute;es &agrave; titre informatif dans le tableau ci-apr&egrave;s (annexe 1). Ce<br />
 sont les fiches du plan directeur forestier qui feront foi.</p>',
-    'indicator' => 'Différents indicateurs définis dans le rapport sur la durabilité des forêts et confirmés dans le plan directeur forestier. Le suivi sera effectué dans le cadre du rapport sur la durabilité, dont une actualisation est prévue tous les 5 ans.',
-    'R' => 1,
-    'A' => 1,
-    'E' => 1,
-    'T' => 1,
-    'total_cout_etat' => NULL,
-    'cout_externe' => NULL,
-    'total_couts' => NULL,
-    'project_id' => 3,
-    'comment_id' => NULL,
-    'state_id' => 3,
-    'ponc_id' => 1,
-    'created_at' => '2020-04-01 16:03:21',
-    'updated_at' => '2020-04-01 16:03:21',
+'indicator' => 'Différents indicateurs définis dans le rapport sur la durabilité des forêts et confirmés dans le plan directeur forestier. Le suivi sera effectué dans le cadre du rapport sur la durabilité, dont une actualisation est prévue tous les 5 ans.',
+'R' => 1,
+'A' => 1,
+'E' => 1,
+'T' => 1,
+'total_cout_etat' => NULL,
+'cout_externe' => NULL,
+'total_couts' => NULL,
+'project_id' => 3,
+'comment_id' => NULL,
+'state_id' => 3,
+'ponc_id' => 1,
+'created_at' => '2020-04-01 16:03:21',
+'updated_at' => '2020-04-10 17:23:13',
+'short_description' => 'Dans le cadre de la révision du plan directeur forestier, les actions suivantes en faveur de la biodiversité
+seront développées ou renforcées (cf. synthèse du CA3) :',
 ),
 11 => 
 array (
-    'id' => 13,
-    'code' => '4.1',
-    'label' => '1. Intégrer l’arbre dans la planification du sol et du sous-sol et mettre en œuvre une arborisation durable de qualité',
-    'image' => NULL,
-    'description' => '<p><strong>R&eacute;viser la l&eacute;gislation et les directives</strong></p>
+'id' => 13,
+'code' => '4.1',
+'label' => 'Intégrer l’arbre dans la planification du sol et du sous-sol et mettre en œuvre une arborisation durable de qualité',
+'image' => NULL,
+'description' => '<p><strong>R&eacute;viser la l&eacute;gislation et les directives</strong></p>
 
 <p>Pour anticiper les besoins li&eacute;s &agrave; l&rsquo;arborisation, son d&eacute;veloppement, sa gestion, sa conservation et son<br />
 r&eacute;tablissement, modifier les cadres r&eacute;glementaires au niveau des plans directeurs (PLQ notamment,<br />
@@ -504,13 +547,16 @@ pr&eacute;ciser que des plantations bien con&ccedil;ues et r&eacute;alis&eacute;
 'state_id' => 1,
 'ponc_id' => 1,
 'created_at' => '2020-04-01 16:11:25',
-'updated_at' => '2020-04-01 16:11:25',
+'updated_at' => '2020-04-10 17:26:23',
+'short_description' => 'Pour anticiper les besoins liés à l’arborisation, son développement, sa gestion, sa conservation et son
+rétablissement, modifier les cadres réglementaires au niveau des plans directeurs (PLQ notamment,
+densification en zone villa) afin de',
 ),
 12 => 
 array (
 'id' => 14,
 'code' => '4.2',
-'label' => '2. Concevoir une stratégie cantonale d\'arborisation et lutter contre les îlots de chaleur',
+'label' => 'Concevoir une stratégie cantonale d\'arborisation et lutter contre les îlots de chaleur',
 'image' => NULL,
 'description' => '<p>Elaborer une Strat&eacute;gie cantonale d&rsquo;arborisation et v&eacute;g&eacute;talisation en lien avec les changements<br />
 climatiques<br />
@@ -549,7 +595,10 @@ végétalisation et des aménagements adaptés aux changements climatiques
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-01 16:25:34',
-'updated_at' => '2020-04-01 16:25:34',
+'updated_at' => '2020-04-10 17:29:26',
+'short_description' => 'En collaboration avec les différents services de l’État et les communes, élaborer une Stratégie de
+végétalisation permettant de planter des arbres adaptés aux changements climatiques et d’identifier
+des secteurs prioritaires en lien avec le Plan climat cantonal 2018-2022 (mise en œuvre de la Fiche',
 ),
 13 => 
 array (
@@ -593,7 +642,10 @@ agricole
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 10:39:26',
-'updated_at' => '2020-04-03 10:39:26',
+'updated_at' => '2020-04-10 17:33:40',
+'short_description' => 'Constitution d’un groupe de travail piloté par AgriGenève, avec le GOBG et Pro Natura Genève, pour
+inciter la préservation et le renouvellement des arbres et des cordons arborés dans l’aire agricole.
+Ce groupe de travail sera notamment investi des tâches suivantes',
 ),
 14 => 
 array (
@@ -627,7 +679,12 @@ Note : collaboration avec l&rsquo;ASSA, ProNatura, GOBG, CCO, lien avec Concepti
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 10:41:37',
-'updated_at' => '2020-04-03 10:41:37',
+'updated_at' => '2020-04-10 17:36:07',
+'short_description' => 'Communiquer et sensibiliser à la préservation des arbres biotopes, majeurs et remarquables
+Elaboration d’une fiche de sensibilisation/communication à la préservation des arbres biotopes,
+majeurs et remarquables : critères d’identification, mesures d’accompagnement (taille, périmètres de
+protection, soins aux vieux arbres, préservation des microdendrohabitats etc.). Réédition d’un livre
+sur les arbres remarquables (avec un supplément d’arbres et fiches explicatives).',
 ),
 15 => 
 array (
@@ -700,7 +757,10 @@ secteurs à enjeux
 'state_id' => 3,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 10:43:53',
-'updated_at' => '2020-04-03 10:43:53',
+'updated_at' => '2020-04-10 17:39:19',
+'short_description' => 'Améliorer l’Inventaire cantonal des arbres (ICA) et le suivi du patrimoine arboré
+Mise en ligne de l’inventaire cantonal des arbres sur les plateformes du SITG ou de la Ville de Genève,
+soit environ 250’000 arbres inventoriés.',
 ),
 16 => 
 array (
@@ -730,7 +790,12 @@ Collaborations avec l&rsquo;OFEV, les communes, Jardin Suisse.</p>',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 10:46:08',
-'updated_at' => '2020-04-03 10:46:08',
+'updated_at' => '2020-04-10 17:40:41',
+'short_description' => 'Mener des actions de veille sanitaire via l’observatoire cantonal et anticiper les problèmes
+sanitaires liés aux changements climatiques (OCMPO)
+Poursuivre les actions réalisées par l’Observatoire cantonal des maladies des plantes ornementales
+(OCMPO). Anticiper les problèmes sanitaires liés aux changements climatiques.
+Note : Les plantes exotiques envahissantes sont traitées dans la fiche action faune/flore.',
 ),
 17 => 
 array (
@@ -769,7 +834,10 @@ prise en compte satisfaisante représentera 50% de la réalisation de l’action
 'state_id' => NULL,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 10:50:59',
-'updated_at' => '2020-04-03 10:50:59',
+'updated_at' => '2020-04-10 17:45:57',
+'short_description' => 'La quantité d’eau disponible dans les cours d’eau doit permettre, non seulement d’assurer la
+connectivité biologique de l’embouchure à la source, mais aussi d’offrir les volumes d’eau nécessaires
+au maintien de certains habitats sensibles.',
 ),
 18 => 
 array (
@@ -807,7 +875,11 @@ du changement climatique y prendra une place pr&eacute;pond&eacute;rante.</p>',
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 10:53:28',
-'updated_at' => '2020-04-03 10:53:28',
+'updated_at' => '2020-04-10 17:48:40',
+'short_description' => 'L’Office cantonal de l’eau (OCEau), en collaboration avec les autres offices cantonaux, les promoteurs,
+les ingénieurs et architectes, les communes et les partenaires privés, promeut, depuis de nombreuses
+années, des mesures de gestion des eaux pluviales aussi vertueuses que possible en matière
+d’intégration paysagère, de facilité d’entretien, de coûts, de biodiversité et de multifonctionnalités.',
 ),
 19 => 
 array (
@@ -862,7 +934,11 @@ le contrôle environnemental des chantiers sera opérationnel, 25% de l’action
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 10:55:38',
-'updated_at' => '2020-04-03 10:55:38',
+'updated_at' => '2020-04-10 17:52:13',
+'short_description' => 'Les installations privées d’évacuation des eaux des biens-fonds constituent souvent le maillon faible
+d’un système d’assainissement. Un contrôle rigoureux de ces équipements lors de leur construction
+permettrait de détecter et de corriger le plus tôt possible des malfaçons. Actuellement, pas ou peu
+de contrôles in situ sont effectués par l’Office cantonal de l’eau (OCEau).',
 ),
 20 => 
 array (
@@ -895,7 +971,12 @@ migration du poisson&rdquo; de la planification strat&eacute;gique cantonale sel
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 10:58:40',
-'updated_at' => '2020-04-03 10:58:40',
+'updated_at' => '2020-04-10 17:55:44',
+'short_description' => 'L’échelle à poissons actuellement en place au barrage de Vessy est non fonctionnelle. Pour rétablir
+la migration piscicole de manière efficace, la mesure plébiscitée est la création d’une rivière de
+contournement. Ces travaux doivent être réalisés par les services industriels de Genève (SIG),
+conformément à la décision d’assainissement adressée à SIG par l’Office cantonal de l’eau (OCEau)
+le 4 novembre 2016.',
 ),
 21 => 
 array (
@@ -933,7 +1014,10 @@ commune et que les premières interventions liées auront été réalisées, 25%
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 11:00:26',
-'updated_at' => '2020-04-03 11:00:26',
+'updated_at' => '2020-04-10 18:00:05',
+'short_description' => 'Des plans de gestion des forêts accompagnant les cours d’eau cantonaux doivent être progressivement
+élaborés afin d’organiser les travaux d’entretien et les interventions ponctuelles nécessaires au respect
+des contraintes spécifiques de ces forêts.',
 ),
 22 => 
 array (
@@ -973,7 +1057,11 @@ de l’eau, 50% de l’action sera réalisée.
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 11:05:30',
-'updated_at' => '2020-04-03 11:05:30',
+'updated_at' => '2020-04-10 18:04:06',
+'short_description' => 'La pression d’utilisation du Lac pour diverses activités augmente constamment, notamment pour la
+navigation. La gestion des places d’amarrage, des corps morts, des pontons, des ports et des autres
+infrastructures liées à la navigation est actuellement réalisée sans planification cantonale, selon les
+opportunités.',
 ),
 23 => 
 array (
@@ -1006,7 +1094,10 @@ actions priorisées sera publié, l’action sera réalisée.',
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 11:07:07',
-'updated_at' => '2020-04-03 11:07:07',
+'updated_at' => '2020-04-10 18:10:48',
+'short_description' => 'Actuellement, de nombreux paramètres physico-chimiques sont mesurés dans le cadre du monitoring
+des cours d’eau. Il est facile d’évaluer lesquels de ces critères respectent ou non les normes en
+vigueur.',
 ),
 24 => 
 array (
@@ -1052,7 +1143,10 @@ réalisée.',
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 11:10:29',
-'updated_at' => '2020-04-03 11:10:29',
+'updated_at' => '2020-04-10 18:13:35',
+'short_description' => 'De nombreuses séries de mesures de température des cours d’eau existent, tant dans le canton de
+Genève, qu’en France voisine. Ces séries, parfois encore sous format papier, ne sont pas centralisées
+et facilement accessibles.',
 ),
 25 => 
 array (
@@ -1086,7 +1180,13 @@ Recenser et prot&eacute;ger les milieux et habitats d&rsquo;importance locale &a
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 11:12:01',
-'updated_at' => '2020-04-03 11:12:01',
+'updated_at' => '2020-04-10 18:18:19',
+'short_description' => 'Actuellement, la valeur de biodiversité générale des sites aquatiques est jugée de manière empirique,
+par avis d’expert. Les sites sont souvent identifiés comme précieux sur la base de présence d’espèces
+rares ou menacées. Cependant, la biodiversité banale, c’est-à-dire une grande variété d’espèces non
+précieuses, est peu prise en compte. De plus, il n’existe actuellement pas de méthode permettant
+d’évaluer la valeur de la biodiversité de différents sites de manière à les comparer et à suivre leur
+évolution.',
 ),
 26 => 
 array (
@@ -1112,7 +1212,12 @@ affluents du L&eacute;man.</p>',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:14:08',
-'updated_at' => '2020-04-03 11:14:08',
+'updated_at' => '2020-04-10 18:31:22',
+'short_description' => 'Après la mise au point d’une méthode de prélèvement des microplastiques dans les cours d’eau,
+une campagne de prélèvements sera réalisée sur l’ensemble des grands affluents du Léman. Ces
+prélèvements serviront à quantifier et qualifier les apports en microplastiques de ces affluents au
+Lac. Il en résultera l’établissement d’un état des lieux des apports en microplastiques des grands
+affluents du Léman',
 ),
 27 => 
 array (
@@ -1138,7 +1243,11 @@ la nature (OCAN) et l’Office cantonal de l’eau (OCEau), l’action sera réa
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 11:16:36',
-'updated_at' => '2020-04-03 11:16:36',
+'updated_at' => '2020-04-10 18:33:34',
+'short_description' => 'Une première partie de revitalisation de la zone alluviale de Vers Vaux a été réalisée en 2019.
+La revitalisation de l’ensemble de cette zone alluviale concerne une grande surface, actuellement
+aux mains de divers propriétaires fonciers. Un projet ambitieux sera élaboré. Il sera présenté aux
+propriétaires et, le cas échéant, les acquisitions foncières nécessaires seront organisées.',
 ),
 28 => 
 array (
@@ -1163,7 +1272,11 @@ L&rsquo;&eacute;tude d&rsquo;avant-projet pour l&rsquo;am&eacute;lioration de ce
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:17:50',
-'updated_at' => '2020-04-03 11:17:50',
+'updated_at' => '2020-04-10 18:36:00',
+'short_description' => 'Afin d’améliorer la diversité des milieux, il convient de donner une certaine liberté au canal de fuite du
+barrage de Verbois. La première étape consistera en un désenrochement du virage en rive gauche du
+Rhône, permettant d’éroder le virage lors de crues. Cette érosion sera toutefois maîtrisée et limitée.
+L’étude d’avant-projet pour l’amélioration de ce canal de fuite sera lancée en 2021.',
 ),
 29 => 
 array (
@@ -1188,7 +1301,11 @@ sabot immerg&eacute; cot&eacute; lac prot&eacute;gera chacune d&rsquo;elles de l
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 11:19:52',
-'updated_at' => '2020-04-03 11:19:52',
+'updated_at' => '2020-04-10 18:38:57',
+'short_description' => 'Trois roselières seront créées le long du quai de Cologny. La plus importante s’étirera sur une longueur
+de 200m, pour une largeur de 20m. La seconde, à l’Ouest, fera aussi 200m de long, mais pour 15m
+de large. La troisième, à l’Est des deux autres, fera 120m de longueur pour une largeur de 15m. Un
+sabot immergé coté lac protégera chacune d’elles de la bise, afin de les pérenniser.',
 ),
 30 => 
 array (
@@ -1223,7 +1340,12 @@ agricole en matière de surfaces de promotion de la biodiversité, voire des mod
 'state_id' => 1,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:24:08',
-'updated_at' => '2020-04-03 11:24:08',
+'updated_at' => '2020-04-10 18:44:58',
+'short_description' => 'Cette action vise à dénombrer les populations d’insectes et d’oiseaux à l’échelle cantonale, pour
+mesurer l’efficacité du volet biodiversité de la politique agricole. Les groupes à étudier (papillons
+de jour, orthoptères (dont font partie les grillons et sauterelles) et oiseaux) ont été choisis pour des
+raisons théoriques (biologie bien connue) et pratiques (disponibilité d’un nombre suffisant d’experts
+pour le suivi sur une période de 2 ans).',
 ),
 31 => 
 array (
@@ -1269,7 +1391,11 @@ recevant des insecticides.',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:27:17',
-'updated_at' => '2020-04-03 11:27:17',
+'updated_at' => '2020-04-10 18:48:01',
+'short_description' => 'Le contrôle biologique effectué par les auxiliaires des cultures constitue, comme la pollinisation, un
+service écosystémique essentiel pour l’agriculture. La lutte biologique par conservation vise l’attraction
+d’auxiliaires par des modifications structurelles de l’environnement ou par le changement des pratiques
+de gestion (réduction de l’utilisation d’intrants, fauches tardives, etc.).',
 ),
 32 => 
 array (
@@ -1299,7 +1425,13 @@ par les experts.</p>',
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 11:29:10',
-'updated_at' => '2020-04-03 11:29:10',
+'updated_at' => '2020-04-10 18:51:12',
+'short_description' => 'Le sol est connu au niveau des aspects physico-chimique (% de sable, limon, agrile, M.O., P, K, Mg,
+etc..) mais moins par rapport à l’évolution de l’impact des pratiques agricoles novatrices sur sa vie
+biologique. La diversification des pratiques culturales (agriculture de conservation, etc.) a probablement
+un effet sur cette vie. L’amélioration des connaissances à ce sujet pourrait aider à mieux comprendre
+les bénéfices de différentes pratiques et contribuer à les préconiser dans les prochaines politiques
+agricoles.',
 ),
 33 => 
 array (
@@ -1333,7 +1465,10 @@ du mélange en termes de complétion face aux cultures.',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:30:27',
-'updated_at' => '2020-04-03 11:30:27',
+'updated_at' => '2020-04-10 18:53:28',
+'short_description' => 'Une généralisation de l’enherbement dans les cultures spéciales pérennes est souhaitée et répond
+à plusieurs objectifs : protéger et renforcer la vie biologique des sols, limiter l’usage d’herbicides et
+favoriser les auxiliaires.',
 ),
 34 => 
 array (
@@ -1361,7 +1496,12 @@ demander &agrave; la recherche agronomique de se pencher sur ces besoins.</p>',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:31:48',
-'updated_at' => '2020-04-03 11:31:48',
+'updated_at' => '2020-04-10 18:55:24',
+'short_description' => 'Cette action vise à recenser les variétés ayant des tolérances à certaines maladies chez les fruits,
+les légumes et les céréales. Par exemple, le vignoble cantonal plante et vinifie plusieurs cépages
+résistants (Divico et Divona) issues de la sélection d’Agroscope. Il s’agira ensuite de promouvoir leur
+utilisation par les producteurs (réalisation de tests), ainsi que leur commercialisation en impliquant
+les associations de consommateurs.',
 ),
 35 => 
 array (
@@ -1396,7 +1536,16 @@ de cette action.</p>',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:33:14',
-'updated_at' => '2020-04-03 11:33:14',
+'updated_at' => '2020-04-10 18:57:27',
+'short_description' => 'L’agrobiodiversité est un enjeu parallèle à la biodiversité qui gagne en importance devant l’uniformisation
+génétique des espèces cultivées. La préservation des variétés traditionnelles est un enjeu important
+génétiquement, mais aussi en termes culinaires avec un potentiel commercial non négligeable. Par
+exemple, l’AOP accordée au Cardon a permis de donner un nouvel élan à cette culture traditionnelle
+du territoire du Genevois ; l’artichaut violet de Plainpalais, dont la valorisation a débuté en 2010 portée
+par l’OCAN, ou la poire à rissoles ont également connu d’intéressants débouchés commerciaux,
+tout en permettant de rapprocher les milieux ruraux et urbains. Actuellement, aucun inventaire de
+l’ensemble de ces variétés n’est disponible, ni une vue d’ensemble des diverses actions ponctuelles
+pour les préserver.',
 ),
 36 => 
 array (
@@ -1432,7 +1581,12 @@ partenaires professionnels, les chefs de projets des offices.',
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 11:41:11',
-'updated_at' => '2020-04-03 11:41:11',
+'updated_at' => '2020-04-11 06:09:40',
+'short_description' => 'Développer des synergies entre les politiques transversales (paysage, espace public, urbanisme,
+environnement) notamment en regard des enjeux climatiques et de la problématique des îlots de
+chaleur dans l’espace bâti actuel et dans les futurs quartiers.
+Il faudrait décliner cet objectif en actions concrètes qui décrivent comment on souhaite développer
+les synergies.',
 ),
 37 => 
 array (
@@ -1485,7 +1639,11 @@ intercommunales, plans directeurs de quartier, image directrice, etc.',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:45:25',
-'updated_at' => '2020-04-03 11:45:25',
+'updated_at' => '2020-04-11 06:14:31',
+'short_description' => 'lusieurs outils de planification territoriale sont utilisés à l’échelle cantonale et communale : le
+Plan directeur cantonal 2030 accompagné des fiches C06 “préserver et reconstituer les continuités
+biologiques” et C04 “La politique cantonale du paysage”, les plans directeurs communaux, des images
+directrices, des plans directeurs de quartier, des plans directeurs de chemin pour piétons, etc.',
 ),
 38 => 
 array (
@@ -1549,7 +1707,9 @@ urbains (RFU)',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:47:34',
-'updated_at' => '2020-04-03 11:47:34',
+'updated_at' => '2020-04-11 06:18:14',
+'short_description' => 'Le plan localisé de quartier prévoit la végétation à sauvegarder ou à créer (art. 3, al 1 LGZD) et indique
+les arbres à abattre (art 3, al 4 let c LGZD).',
 ),
 39 => 
 array (
@@ -1597,7 +1757,12 @@ permettant de qualifier la nature des enjeux du point de vue de l’IE
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:49:44',
-'updated_at' => '2020-04-03 11:49:44',
+'updated_at' => '2020-04-11 06:20:28',
+'short_description' => 'Les compétences en matière de biodiversité sont, sur la base d’une analyse des projets issus de
+concours par l’OCAN, insuffisamment présentes dans les jurys de concours au regard des enjeux.
+L’objectif de cette action est de faire évoluer la pratique des concours d’architecture et/ou d’espaces
+publics pour prendre en compte le potentiel de préservation et d’amélioration de la biodiversité dans
+les projets.',
 ),
 40 => 
 array (
@@ -1663,7 +1828,10 @@ dans la planification du sol et du sous-sol et mettre en &oelig;uvre une arboris
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:51:42',
-'updated_at' => '2020-04-03 11:51:42',
+'updated_at' => '2020-04-11 06:23:03',
+'short_description' => 'Sur la base des contraintes normatives pré-identifiées, notamment la directive 7 SIS relative à la
+prévention et la sécurité incendie, rechercher des pistes de solutions permettant de concilier les
+contraintes normatives et le développement de la biodiversité en milieu urbain.',
 ),
 41 => 
 array (
@@ -1700,7 +1868,9 @@ des charges)',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:53:24',
-'updated_at' => '2020-04-03 11:53:24',
+'updated_at' => '2020-04-11 06:26:03',
+'short_description' => 'Faire connaitre les ressources financières de l’OCAN qui permettent de mettre en œuvre les mesures
+propices aux approches nature et paysage dans l’espace urbain Développer les partenariats publics-privés pour financer la nature en ville',
 ),
 42 => 
 array (
@@ -1768,7 +1938,13 @@ l’objet d’un accompagnement financier
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:57:03',
-'updated_at' => '2020-04-03 11:57:03',
+'updated_at' => '2020-04-11 06:30:30',
+'short_description' => 'L’inventaire de la biodiversité́ en ville (2015-2016), la carte des milieux naturels, l’écopotentialité
+et la cartographie de l’infrastructure écologique permettent d’ores et déjà aux acteurs du milieu
+bâti de préserver la biodiversité. Cela nécessite avant tout un nouveau regard et de nouveaux
+savoir-faire. De plus en plus d’acteurs privés et publics adoptent une gestion différenciée des
+espaces extérieurs. Les organisations professionnelles et spécialisées sont des acteurs clé
+pour relayer ces éléments auprès de la population.',
 ),
 43 => 
 array (
@@ -1812,7 +1988,10 @@ par dérogation sur les zones villas, il pourra être utilisé sur quelques sect
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 11:58:40',
-'updated_at' => '2020-04-03 11:58:40',
+'updated_at' => '2020-04-11 06:32:21',
+'short_description' => 'Le département du territoire a publié en juin 2017 un guide sur la densification de qualité de la zone 5
+en juin 2017, suite à l’entrée en vigueur de l’art. 59 al. 4 de la LCI permettant de densifier les logements
+situés dans ce type de zone.',
 ),
 44 => 
 array (
@@ -1840,7 +2019,10 @@ biodiversit&eacute;.</p>',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 12:00:00',
-'updated_at' => '2020-04-03 12:00:00',
+'updated_at' => '2020-04-11 06:34:13',
+'short_description' => 'Encourager les démarches participatives à toutes les étapes de fabrication de la ville
+Intégrer les notions de biodiversité, services écosystémiques et îlots de fraîcheur via des démarches
+participatives dans les phases de concertation relatives aux projets urbains.',
 ),
 45 => 
 array (
@@ -1890,7 +2072,16 @@ d’une séance dédiée.',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 12:04:42',
-'updated_at' => '2020-04-03 12:04:42',
+'updated_at' => '2020-04-11 06:40:23',
+'short_description' => 'Genève a une longue tradition naturaliste et de recherche scientifique. Aujourd’hui plusieurs
+associations et institutions s’engagent activement pour mieux connaitre, protéger et faire connaitre
+la biodiversité genevoise. Ce sont notamment le GOBG (oiseaux), KARCH-GE (batraciens et reptiles),
+CCO-GE (chauves-souris), COR (martinets), Faune Genève (toute la faune, notamment les groupes
+non couverts par les autres associations, comme les insectes et les mammifères), Sociétés botanique et
+mycologique de Genève. Les partenaires institutionnels sont également importants, les Conservatoire
+et Jardin botaniques de la Ville de Genève et le Muséum d’histoire naturelle, qui sont les principaux
+spécialistes de la biodiversité genevoise, ainsi que la Haute-école d’ingénieurs HEPIA, dont la filière
+« gestion de la nature » apporte des compétences précieuses.',
 ),
 46 => 
 array (
@@ -1943,7 +2134,12 @@ de ces deux groupes.</p>',
 'state_id' => 3,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 12:08:21',
-'updated_at' => '2020-04-03 12:08:21',
+'updated_at' => '2020-04-11 06:44:48',
+'short_description' => 'Depuis plusieurs années, les Conservatoire et Jardin botaniques de la Ville de Genève (CJBG)
+et l’OCAN collaborent pour réaliser un suivi cantonal de la flore et des milieux naturels. Ce travail
+permet de maintenir une vision globale de la biodiversité végétale et de développer des mesures sur
+le terrain pour la conservation des espèces les plus rares et les plus menacées, en partenariat avec
+les communes, les agriculteurs, etc.',
 ),
 47 => 
 array (
@@ -1987,7 +2183,11 @@ Les r&eacute;sultats obtenus pourront &ecirc;tre compar&eacute;s aux donn&eacute
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 12:11:04',
-'updated_at' => '2020-04-03 12:11:04',
+'updated_at' => '2020-04-11 06:47:29',
+'short_description' => 'Actuellement les connaissances sur l’avifaune du canton se basent sur des suivis spécifiques d’espèces
+ou de sites prioritaires, ou sur l’Atlas des oiseaux nicheurs du canton de Genève qui avait mené un
+inventaire exhaustif durant la période 1998-2001 (seul recensement exhaustif d’oiseaux nicheurs de
+tout le Canton).',
 ),
 48 => 
 array (
@@ -2014,7 +2214,12 @@ au cours d’une séance dédiée.',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 12:14:00',
-'updated_at' => '2020-04-03 12:14:00',
+'updated_at' => '2020-04-11 06:50:56',
+'short_description' => 'Les espèces prioritaires sont des espèces particulièrement menacées que les mesures de conservation
+des habitats et des sites ne suffisent pas à conserver. Elles font l’objet d’un processus de sélection,
+puis d’un plan d’action pour améliorer leur statut de protection. La mise en œuvre des plans d’action
+est en partie confiée à des associations spécialisées de protection de la faune et de la flore, par le
+biais de contrats de prestations.',
 ),
 49 => 
 array (
@@ -2039,7 +2244,11 @@ de ceux-ci et de mettre ainsi en &oelig;uvre une politique de conservation effic
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 12:15:41',
-'updated_at' => '2020-04-03 12:15:41',
+'updated_at' => '2020-04-11 06:53:20',
+'short_description' => 'Jusqu’à présent, les réflexions en matière de conservation de la faune ou de la flore ont été menées
+parallèlement. Les critères d’identification des espèces et sites prioritaires sont actuellement basés sur
+la rareté des espèces, leur localisation, leur vulnérabilité, etc. Il s’agira donc d’harmoniser l’ensemble
+de ceux-ci et de mettre ainsi en œuvre une politique de conservation efficace.',
 ),
 50 => 
 array (
@@ -2072,7 +2281,13 @@ permettraient d&rsquo;obtenir des donn&eacute;es quantitatives utiles pour mesur
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 12:18:17',
-'updated_at' => '2020-04-03 12:18:17',
+'updated_at' => '2020-04-11 06:56:55',
+'short_description' => 'La diversité des espèces du canton est relativement bien connue. En revanche, les effectifs des
+différentes espèces sont largement méconnus. En pratique, seuls les oiseaux, les grands mammifères,
+et un certain groupe d’espèces menacées (notamment les batraciens et certains reptiles, insectes
+ou plantes) ont fait l’objet d’évaluations quantitatives. De ce fait, des modifications considérables de
+la biodiversité passent relativement inaperçues, comme le montre par exemple la régression des
+insectes volants relevée en Allemagne.',
 ),
 51 => 
 array (
@@ -2128,7 +2343,12 @@ réalisé par an;
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 12:27:55',
-'updated_at' => '2020-04-03 12:27:55',
+'updated_at' => '2020-04-11 07:05:21',
+'short_description' => 'Actuellement, le groupe des arthropodes est délaissé par les spécialistes et méconnu du grand
+public – sauf pour quelques groupes emblématiques, tels que les papillons de jour – alors qu’il subit
+un fort déclin imputé à l’action humaine. Pour leur part, les mammifères sont très bien connus par les
+spécialistes et fortement appréciés du grand public. Mais les petits mammifères terrestres demeurent
+peu étudiés et sont souvent ignorés du grand public.',
 ),
 52 => 
 array (
@@ -2161,7 +2381,11 @@ non-conformes aux prescriptions.',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 12:30:09',
-'updated_at' => '2020-04-03 12:30:09',
+'updated_at' => '2020-04-11 07:08:11',
+'short_description' => 'Les recommandations formulées dès 2006 pour faciliter à la petite faune la traversée des routes et
+éviter de la piéger dans les évacuations d’eau de surface (Mesures à prendre en faveur de la petite
+faune) n’ont que très exceptionnellement été mises en place. Cela a pour conséquence d’entraver
+les déplacements de cette petite faune et d’induire une mortalité discrète, mais permanente.',
 ),
 53 => 
 array (
@@ -2201,7 +2425,11 @@ d&rsquo;arbres habitats, que ce soit en for&ecirc;t, en campagne ou en ville.</p
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 12:33:04',
-'updated_at' => '2020-04-03 12:33:04',
+'updated_at' => '2020-04-11 07:18:29',
+'short_description' => 'Une part non négligeable de la faune indigène a besoin de cavités pour son cycle biologique, et
+notamment sa reproduction. La raréfaction des vieux arbres et les constructions modernes font
+que ces cavités sont de plus en plus rares, au point de menacer de nombreuses espèces (oiseaux,
+chauve-souris, insectes, etc.).',
 ),
 54 => 
 array (
@@ -2232,7 +2460,15 @@ est importante pour assurer la diversit&eacute; des esp&egrave;ces qui les colon
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:35:39',
-'updated_at' => '2020-04-03 12:35:39',
+'updated_at' => '2020-04-11 07:31:16',
+'short_description' => 'Les centres de soins pour la faune sauvage sont des organismes d’utilité publique. Ces organismes
+sans but lucratif se consacrent à la meilleure prise en charge possible des animaux sauvages en
+difficulté trouvés par le grand public, dans le but de les soigner, de les réadapter à la vie sauvage et
+de les remettre en liberté. Ils sont au nombre de quatre à Genève: COR (spécialité oiseaux de toutes
+espèces), CRR (spécialité rapaces, autres oiseaux, mammifères y-compris chauve-souris), Parc
+Chalandes/BioParc (spécialité mammifères) et SOS hérissons (spécialité mammifères). Ils accueillent
+chaque année des milliers d’animaux dont une proportion importante pourra être relâchée après soins
+(environ 40% des oiseaux et 70% des hérissons).',
 ),
 55 => 
 array (
@@ -2281,7 +2517,15 @@ d’une séance dédiée.',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:40:44',
-'updated_at' => '2020-04-03 12:40:44',
+'updated_at' => '2020-04-11 07:44:25',
+'short_description' => 'Les centres de soins pour la faune sauvage sont des organismes d’utilité publique. Ces organismes
+sans but lucratif se consacrent à la meilleure prise en charge possible des animaux sauvages en
+difficulté trouvés par le grand public, dans le but de les soigner, de les réadapter à la vie sauvage et
+de les remettre en liberté. Ils sont au nombre de quatre à Genève: COR (spécialité oiseaux de toutes
+espèces), CRR (spécialité rapaces, autres oiseaux, mammifères y-compris chauve-souris), Parc
+Chalandes/BioParc (spécialité mammifères) et SOS hérissons (spécialité mammifères). Ils accueillent
+chaque année des milliers d’animaux dont une proportion importante pourra être relâchée après soins
+(environ 40% des oiseaux et 70% des hérissons).',
 ),
 56 => 
 array (
@@ -2319,7 +2563,11 @@ disponible &agrave; Gen&egrave;ve&rdquo;.</p>',
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:43:09',
-'updated_at' => '2020-04-03 12:43:09',
+'updated_at' => '2020-04-11 07:49:07',
+'short_description' => 'La population genevoise est désireuse de découvrir la nature et la biodiversité genevoise, mais
+l’information disponible est lacunaire et fragmentée. Au niveau de l’Etat de Genève, la rénovation
+du site web a fait disparaitre une partie des informations sur les réserves naturelles et les espèces
+sauvages.',
 ),
 57 => 
 array (
@@ -2354,7 +2602,11 @@ public.</p>',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:44:28',
-'updated_at' => '2020-04-03 12:44:28',
+'updated_at' => '2020-04-11 07:51:33',
+'short_description' => 'Aujourd’hui, au sein de l’OCAN, la conservation des « champignons » est intégrée au programme
+« flore ». Les avancées récentes en matière de classification du vivant ont démontré que la fonge
+constituait un embranchement séparé de la faune et de la flore. La fonge mérite donc d’être reconnue
+comme entité à part entière.',
 ),
 58 => 
 array (
@@ -2386,7 +2638,11 @@ certaines esp&egrave;ces menac&eacute;es, de mani&egrave;re &agrave; ce que les 
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:47:21',
-'updated_at' => '2020-04-03 12:47:21',
+'updated_at' => '2020-04-11 07:54:46',
+'short_description' => 'Les surfaces de promotion de la biodiversité (SPB) permettent la présence dans l’espace agricole
+d’espèces caractéristiques des milieux ouverts. Grâce à la bonne répartition de ces SPB dans le
+Canton, Genève a une responsabilité particulière pour plusieurs espèces, notamment les oiseaux,
+en regard des effectifs nationaux.',
 ),
 59 => 
 array (
@@ -2421,7 +2677,10 @@ Le cas échéant, bilan des mesures mises en œuvre.',
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:49:00',
-'updated_at' => '2020-04-03 12:49:00',
+'updated_at' => '2020-04-11 08:01:18',
+'short_description' => 'Les espèces sauvages indigènes sont capables de s’hybrider avec certaines espèces domestiques,
+exotiques ou horticoles, avec des conséquences potentiellement désastreuses pour la biodiversité,
+allant jusqu’à la disparition irréversible des espèces indigènes.',
 ),
 60 => 
 array (
@@ -2478,7 +2737,11 @@ La mise en &oelig;uvre de la fiche n&eacute;cessite une collaboration entre l&rs
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:50:45',
-'updated_at' => '2020-04-03 12:50:45',
+'updated_at' => '2020-04-11 08:07:17',
+'short_description' => 'La problématique des espèces exotiques envahissantes (EEE) impacte un grand nombre de domaines
+(santé, agriculture, sols, gravières, forêt, biodiversité, pêche, etc.), et un poste de référent-e
+cantonal-e EEE est nécessaire – et d’ailleurs requis par la Confédération – pour coordonner les
+activités de prévention, d’information et de lutte. Au minimum, un poste à 50% sera nécessaire.',
 ),
 61 => 
 array (
@@ -2516,7 +2779,13 @@ standardis&eacute;e &agrave; un co&ucirc;t acceptable qui permette de prot&eacut
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:55:11',
-'updated_at' => '2020-04-03 12:55:11',
+'updated_at' => '2020-04-11 08:12:32',
+'short_description' => 'Les ressources agricoles sont attractives pour de nombreuses espèces sauvages, ce qui peut
+provoquer des dégâts importants et des pertes pour les exploitants agricoles. Cette problématique
+est depuis longtemps gérée par l’Etat, en soutenant les agriculteurs dans la prévention des dégâts, en
+intervenant sur les animaux problématiques, en régulant les populations par le tir, et en indemnisant
+les dégâts causés par la faune sauvage. Cette assistance au monde agricole est essentielle pour
+assurer l’acceptation d’une faune riche et diversifiée dans le Canton.',
 ),
 62 => 
 array (
@@ -2565,7 +2834,11 @@ Canton
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-03 12:56:44',
-'updated_at' => '2020-04-03 12:56:44',
+'updated_at' => '2020-04-11 08:15:49',
+'short_description' => 'Alors que les ongulés sauvages (sanglier, chevreuil, cerf) étaient quasiment exterminés du canton
+en 1974, année de l’interdiction de la chasse à Genève, les ongulés ont progressivement recolonisé
+le Canton. Dépourvus de grands prédateurs, leurs populations ont progressé ces dernières années,
+en provoquant parfois des dégâts aux cultures ou en entravant le rajeunissement de certaines forêts.',
 ),
 63 => 
 array (
@@ -2601,7 +2874,11 @@ Synthèse des résultats et enjeux soulevés',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:14:55',
-'updated_at' => '2020-04-03 13:14:55',
+'updated_at' => '2020-04-11 08:18:18',
+'short_description' => 'Les questions liées à la biodiversité sont complexes et engagent une pluralité d’intérêts qui requièrent
+un arbitrage. Par ailleurs, l’appropriation de cette question par les citoyens représente un des 3 axes
+stratégiques de la stratégie Biodiversité Genève 2030. L’objectif de l’action est d’assurer une dimension
+participative à la mise en œuvre du plan biodiversité.',
 ),
 64 => 
 array (
@@ -2634,7 +2911,9 @@ Le succ&egrave;s de cette action repose sur l&rsquo;implication des acteurs acti
 'state_id' => 1,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:18:28',
-'updated_at' => '2020-04-03 13:18:28',
+'updated_at' => '2020-04-11 08:22:32',
+'short_description' => 'Offrir à la population une vision d’ensemble de l’offre en lien avec la nature disponible dans le canton
+de Genève dans le but de renforcer le lien entre le public et la biodiversité locale.',
 ),
 65 => 
 array (
@@ -2665,7 +2944,14 @@ montrer la biodiversit&eacute; sous-lacustre et des rivi&egrave;res, qui est lar
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-03 13:21:38',
-'updated_at' => '2020-04-03 13:21:38',
+'updated_at' => '2020-04-11 08:27:13',
+'short_description' => 'Le service des écoles et institutions pour l’enfance de la Ville de Genève est en train de rénover
+une maison qui se trouve au Bois de la Bâtie, où le Panda Club du WWF Genève va être relogé
+dès le mois de mai 2020. Ce service aimerait faire de ce lieu un « centre-nature » qui accueillerait
+des classes pendant la semaine. Le WWF Genève, en collaboration avec d’autres associations
+et le parc animalier du Bois de la Bâtie, aimerait monter un projet afin de pouvoir proposer des
+activités nature pour les écoles et le préscolaire, au Bois de la Bâtie. Ce bois se trouve au milieu
+de la ville, il est donc facilement accessible pour les écoles.',
 ),
 66 => 
 array (
@@ -2696,7 +2982,13 @@ canal adapt&eacute; pour r&eacute;pondre &agrave; ce besoin.</p>',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:24:01',
-'updated_at' => '2020-04-03 13:24:01',
+'updated_at' => '2020-04-11 08:33:53',
+'short_description' => 'L’action vise à faire mieux connaître les enjeux spécifiques des sites protégés auprès du public,
+tant en termes des valeurs patrimoniales que des impératifs de gestion. Concrètement, il s’agit de
+fournir régulièrement des informations sur leurs richesses (milieux et espèces), mais également sur
+les diverses mesures de gestion déployées pour les conserver ou les améliorer (fauche de prairie,
+abattage d’arbres, terrassement de plans d’eau, etc.). Ceci contribuerait notamment à une meilleure
+compréhension par le public du rôle des sites protégés et réserves naturelles.',
 ),
 67 => 
 array (
@@ -2731,7 +3023,10 @@ Synthèses détaillées des observations terrain et des enjeux soulevés',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:25:25',
-'updated_at' => '2020-04-03 13:25:25',
+'updated_at' => '2020-04-11 08:36:18',
+'short_description' => 'Une présence naturaliste orientée vers la médiation et la sensibilisation accrue et régulière dans
+les sites à enjeux du canton se profile comme un complément idéal au travail d’autorité des gardes
+de l’environnement.',
 ),
 68 => 
 array (
@@ -2793,7 +3088,10 @@ elles se trouvent et pouvant alimenter des programmes de réintroduction
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:27:34',
-'updated_at' => '2020-04-03 13:27:34',
+'updated_at' => '2020-04-11 08:40:25',
+'short_description' => 'Le Parc Challandes est actuellement une structure statique et isolée. Le BIOPARC en fera un centre
+dynamique et ouvert au sein d’un large réseau d’acteurs clés dans le monde de la conservation et
+de la sensibilisation.',
 ),
 69 => 
 array (
@@ -2827,7 +3125,9 @@ ces canaux.</p>',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:30:35',
-'updated_at' => '2020-04-03 13:30:35',
+'updated_at' => '2020-04-11 08:43:41',
+'short_description' => 'Afin d’encourager une meilleure compréhension par la population des enjeux de la thématique nature
+par le biais des médias locaux il convient d’agir sur deux axes.',
 ),
 70 => 
 array (
@@ -2852,7 +3152,10 @@ projets en faveur de la nature mise en place dans les communes suite à cette ac
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:31:43',
-'updated_at' => '2020-04-03 13:31:43',
+'updated_at' => '2020-04-11 08:46:16',
+'short_description' => 'Mener des sorties sur le terrain à l’attention des acteurs de la gouvernance locale et régionale - élus
+mais aussi cadres des administrations publiques - pour mettre à leur disposition une information
+éclairée en lien avec la nature en termes de valeurs patrimoniales forte de leur territoire.',
 ),
 71 => 
 array (
@@ -2913,7 +3216,14 @@ la biodiversité en insectes.',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:34:01',
-'updated_at' => '2020-04-03 13:34:01',
+'updated_at' => '2020-04-11 08:50:39',
+'short_description' => 'Initié par le Bioscope en 2015, le projet CodeMyBug a permis à plus de 1400 élèves de se relayer
+pour étudier de près la faune des arthropodes dans leur cour d’école. Ils ont ainsi pu collecter et
+déterminer plus de 1000 nouveaux codes-barres ADN et les ont soumis aux bases de données
+scientifiques. Ces résultats ont enrichi nos connaissances sur la faune genevoise, en se focalisant
+sur des groupes d’espèces habituellement peu étudiées. Ce projet a aussi constitué une occasion
+précieuse de sensibiliser les élèves et les enseignant-e-s à l’écologie d’animaux méconnus mais
+néanmoins utiles, et aux menaces pesant sur eux.',
 ),
 72 => 
 array (
@@ -2948,7 +3258,11 @@ Enquête auprès des participants',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:36:46',
-'updated_at' => '2020-04-03 13:36:46',
+'updated_at' => '2020-04-11 08:55:19',
+'short_description' => 'L’Université de Genève et l’Association pour la sauvegarde du Léman souhaitent développer un
+projet commun de science citoyenne et de sauvegarde de la biodiversité aquatique. L’objectif est
+d’encourager les citoyens à devenir les sentinelles des changements induits par les activités humaines
+dans le Léman et les cours d’eau genevois.',
 ),
 73 => 
 array (
@@ -2998,7 +3312,10 @@ dans le canton de Genève, effectué tous les deux ans sur un échantillon repr�
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:39:20',
-'updated_at' => '2020-04-03 13:39:20',
+'updated_at' => '2020-04-11 08:58:11',
+'short_description' => 'Poursuite de la campagne de communication OH MON EAU! avec renforcement du spectre de
+diffusion pour encourager les bons gestes quotidiens afin de protéger la qualité des cours d’eau et
+du lac, ainsi que leurs habitants.',
 ),
 74 => 
 array (
@@ -3046,7 +3363,15 @@ le canton de Genève, et effectué tous les deux ans sur un échantillon représ
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:42:07',
-'updated_at' => '2020-04-03 13:42:07',
+'updated_at' => '2020-04-11 09:01:35',
+'short_description' => 'Un dispositif de communication sera mis en place pour rappeler aux riverains (propriétaires, habitants
+et usagers) les bonnes pratiques et comportements à adopter au bord des cours d’eau, ainsi que
+leurs droits et devoirs. Il se basera, entre autres, sur le contenu de la brochure “Vivre nos rivières”
+(https://www.ge.ch/document/eau-vivre-nos-rivieres), datant de 2014, qui sera mise à jour pour la
+rendre plus actuelle et plus complète. Le lien avec différentes autres ressources sera ajouté, comme
+par exemple la Charte des Jardins ou la campagne “OH MON EAU!”, lancée en 2018. Les messages
+intégreront aussi les questions relatives aux berges du Lac. Cette nouvelle brochure sera diffusée
+aux propriétaires et habitants des rives genevoises après sa publication.',
 ),
 75 => 
 array (
@@ -3081,7 +3406,12 @@ motiver &agrave; observer et &agrave; prot&eacute;ger la faune qui nous entoure.
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:43:48',
-'updated_at' => '2020-04-03 13:43:48',
+'updated_at' => '2020-04-11 09:04:09',
+'short_description' => 'La faune du bassin genevois est relativement bien connue grâce à une longue tradition naturaliste,
+aux travaux de nombreux chercheurs et, plus récemment, à l’utilisation de plus en plus répandue de
+plateformes de collecte de données naturalistes sur le web. Toutefois, ces connaissances accumulées
+dans les bases de données restent relativement méconnues des amateurs et du grand public, en
+l’absence d’ouvrages de vulgarisation sur la faune genevoise.',
 ),
 76 => 
 array (
@@ -3108,13 +3438,18 @@ Questionnaires d’évaluation',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-03 13:45:47',
-'updated_at' => '2020-04-03 13:45:47',
+'updated_at' => '2020-04-11 09:07:41',
+'short_description' => 'Afin de permettre à la population de participer à des événements, des animations et des sorties
+nature à proximité de leur lieu d’habitation et de scolarisation, la gratuité d’accès aux infrastructures
+et aux prestations est essentielle. Les trois Centres Nature existants (peut-être bientôt rejoints par
+de nouveaux lieux d’accueil destinés à l’éducation à l’environnement), sensibilisent et informent plus
+de 50’000 visiteurs chaque année, dont de nombreux écoliers.',
 ),
 77 => 
 array (
 'id' => 79,
 'code' => '10.1',
-'label' => '1. EP – Sorties Nature 5P accompagnées de naturalistes',
+'label' => 'EP – Sorties Nature 5P accompagnées de naturalistes',
 'image' => NULL,
 'description' => '<p>Objectifs :<br />
 &bull; Assurer l&rsquo;observation de milieux naturels proches des &eacute;coles par tous les &eacute;l&egrave;ves de 5P avec des<br />
@@ -3177,7 +3512,11 @@ ce programme et responsable de son int&eacute;gration ad&eacute;quate dans les a
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 05:49:27',
-'updated_at' => '2020-04-06 05:49:27',
+'updated_at' => '2020-04-11 09:13:51',
+'short_description' => 'Assurer l’observation de milieux naturels proches des écoles par tous les élèves de 5P avec des
+accompagnants formés, ce qui répond à l’une des conditions-cadre à mettre en œuvre selon le
+Plan d’études romand (PER), à savoir “donner l’occasion de sortir pour observer et explorer le
+terrain et le milieu”.',
 ),
 78 => 
 array (
@@ -3225,7 +3564,11 @@ classes de 9 e .</p>',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:14:23',
-'updated_at' => '2020-04-06 06:14:23',
+'updated_at' => '2020-04-11 09:16:47',
+'short_description' => 'Participer à l’acquisition des objectifs d’apprentissages en lien avec la démarche d’investigation et
+d’observation scientifique sur le terrain. MSN 35/38
+• Participer à l’acquisition des objectifs d’apprentissages en lien avec les attentes fondamentales du
+PER MSN38 : 1/2/4 /A.',
 ),
 79 => 
 array (
@@ -3288,7 +3631,11 @@ temps scolaire (ST)',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:16:06',
-'updated_at' => '2020-04-06 06:16:06',
+'updated_at' => '2020-04-11 09:21:17',
+'short_description' => '• Actualiser les connaissances des enseignant-e-s sur la nouvelle classification du vivant, sur la
+biodiversité, les interdépendances, notamment en lien avec les séquences genevoises MSN 28.
+• Renforcer les compétences didactiques pour mener des activités sur la classification, la biodiversité
+et les interdépendances.',
 ),
 80 => 
 array (
@@ -3340,7 +3687,13 @@ d&rsquo;&eacute;tudes choisi dans une perspective EDD.</p>',
 'state_id' => 1,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:21:12',
-'updated_at' => '2020-04-06 06:21:12',
+'updated_at' => '2020-04-11 09:24:21',
+'short_description' => 'Renforcer les connaissances et compétences en lien avec MSN 38. Etudier l’opportunité de l’adapter
+au secondaire II.
+• Encourager les enseignant-e-s à s’informer et se former sur les thématiques liées à la biodiversité
+et suivre les changements liés à la discipline.
+• Approfondir les connaissances naturalistes de terrain des enseignant-e-s par des apports théoriques
+scientifiques et techniques.',
 ),
 81 => 
 array (
@@ -3366,7 +3719,11 @@ en fonction des besoins des enseignant-e-s, de l&rsquo;actualit&eacute; et des p
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:23:50',
-'updated_at' => '2020-04-06 06:23:50',
+'updated_at' => '2020-04-11 09:26:58',
+'short_description' => 'Chaque année, au moins 2 formations continues seront proposées aux enseignant-e-s de l’ES II
+avec la participation possible des enseignant-e-s du CO et du primaire. Les thèmes seront choisis
+en fonction des besoins des enseignant-e-s, de l’actualité et des priorités retenues pour la mise en
+œuvre du plan d’actions biodiversité PB1.',
 ),
 82 => 
 array (
@@ -3447,7 +3804,15 @@ int&egrave;grent plus largement les principes et notions d&rsquo;Education en vu
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:25:34',
-'updated_at' => '2020-04-06 06:25:34',
+'updated_at' => '2020-04-11 09:29:57',
+'short_description' => '• Inscrire de manière obligatoire et pérenne le thème de la biodiversité et de ses principes-clés dans
+la formation didactique de l’ensemble des étudiant-e-s se destinant à enseigner aux degrés primaire
+(généralistes), secondaire I et II (en biologie, géographie et économie) ;
+• Intégrer les principes d’une Éducation en vue d’un développement durable (EDD) dans les enseignements
+des didactiques mentionnées, dans les activités d’enseignement-apprentissage étudiées/menées.
+• Réaliser par les étudiant-e-s des actions « sur le terrain » qui ont trait à la biodiversité : étude/enquête,
+réalisation d’aménagement favorisant la biodiversité dans l’environnement proche/dans un établissement
+scolaire, etc.',
 ),
 83 => 
 array (
@@ -3513,7 +3878,10 @@ Salamandre et le DIP pourrait &ecirc;tre envisag&eacute;.</p>',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:27:39',
-'updated_at' => '2020-04-06 06:27:39',
+'updated_at' => '2020-04-11 09:31:55',
+'short_description' => 'Créer une séquence d’enseignement interdisciplinaire (biologie /géographie) sur la thématique de la
+biodiversité et de l’agriculture durable en lien avec la FG 36/37 (2018-2019). L’adapter éventuellement
+pour le secondaire II.',
 ),
 84 => 
 array (
@@ -3554,7 +3922,10 @@ th&eacute;matique interd&eacute;pendances au cycle 3.</p>',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:30:48',
-'updated_at' => '2020-04-06 06:30:48',
+'updated_at' => '2020-04-11 09:50:55',
+'short_description' => 'Créer une séquence d’enseignement interdisciplinaire (biologie /géographie) sur la thématique de la
+biodiversité et de l’agriculture durable en lien avec la FG 36/37 (2018-2019). L’adapter éventuellement
+pour le secondaire II.',
 ),
 85 => 
 array (
@@ -3595,7 +3966,11 @@ au secondaire II</p>',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:32:13',
-'updated_at' => '2020-04-06 06:32:13',
+'updated_at' => '2020-04-11 09:54:10',
+'short_description' => 'Création de ressources pédagogiques sur la biodiversité genevoise sur différents supports (papier
+et/ou numérique) par le biais d’une collaboration entre enseignants et spécialistes de la biodiversité.
+• Mettre à disposition de l’ensemble des élèves de la 7P à la 11e CO un même document de référence
+pour sortir sur le terrain et pour le travail en classe.',
 ),
 86 => 
 array (
@@ -3673,7 +4048,13 @@ concernés, etc.)',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:39:48',
-'updated_at' => '2020-04-06 06:39:48',
+'updated_at' => '2020-04-11 09:58:01',
+'short_description' => 'Valoriser et ajuster des actions et ressources élaborées entre les services de l’Etat.
+• Assurer l’observation de divers milieux naturels par les élèves avec des accompagnants formés.
+• Participer à l’acquisition des objectifs d’apprentissages du Plan d’études romand visés en
+Sciences de la nature (MSN 18 et 28), en Géographie (SHS 11 et 21), pour la Formation générale
+(Interdépendances sociales, économiques et environnementales FG 16-17 et 26-27), l’Éducation
+à la citoyenneté et l’Éducation en vue d’un développement durable.',
 ),
 87 => 
 array (
@@ -3729,7 +4110,13 @@ DIP en fonction des besoins des enseignant-e-s</p>',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:42:15',
-'updated_at' => '2020-04-06 06:42:15',
+'updated_at' => '2020-04-11 10:01:07',
+'short_description' => 'Promouvoir les actions en lien avec la biodiversité au niveau cantonal.
+• Diffuser et communiquer les informations auprès des établissements par le biais des RDs et des
+référent-e-s EDD (éducation en vue d’un développement durable) du secondaire I et II afin de
+faciliter l’accès des enseignant-e-s aux offres.
+• Valoriser auprès des enseignant-e-s les ressources pédagogiques existantes en lien avec leur
+enseignement.',
 ),
 88 => 
 array (
@@ -3794,7 +4181,14 @@ représentant-e-s des communes et associations,…)
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:48:52',
-'updated_at' => '2020-04-06 06:48:52',
+'updated_at' => '2020-04-11 10:07:40',
+'short_description' => 'romouvoir la biodiversité dans l’environnement proche de chaque école primaire, et établissement
+du secondaire I et II, si possible en cohérence avec les priorités du DT en la matière.
+• Développer, grâce à ces actions, les connaissances et compétences des enseignant-e-s et des
+élèves en matière de biodiversité (notamment en lien avec les sciences de la nature, la géographie,
+l’éducation citoyenne, les interdépendances et l’éducation en vue d’un développement durable).
+• Valoriser les actions réalisées par les établissements scolaires des 3 degrés d’enseignement auprès
+de différents publics cibles (internes et externes au DIP, grand public).',
 ),
 89 => 
 array (
@@ -3846,7 +4240,13 @@ Enquête sur l’attitude et les connaissances des étudiant-e-s et des collabor
 'state_id' => NULL,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:51:21',
-'updated_at' => '2020-04-06 06:51:21',
+'updated_at' => '2020-04-11 10:10:58',
+'short_description' => 'En 2017, des potagers ont été installés sur deux sites universitaires: le terrain du bâtiment du GAP
+(Group of Applied Physics) au Chemin de Pinchat, d’une part et le toit d’Uni Dufour, d’autre part.
+Parallèlement, des ruchers ont pris place sur ces deux sites. Le Rectorat de l’UNIGE a soutenu ce
+projet, pour sa contribution à la sauvegarde de la biodiversité et à sa sensibilisation. De plus, son
+potentiel de mobilisation de la communauté universitaire, collaborateur-trices et étudiant-es, a été
+jugé intéressant.',
 ),
 90 => 
 array (
@@ -3891,7 +4291,12 @@ par les &eacute;l&egrave;ves du CFPNE au profit d&rsquo;&eacute;l&egrave;ves du 
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:54:48',
-'updated_at' => '2020-04-06 06:54:48',
+'updated_at' => '2020-04-11 10:13:56',
+'short_description' => 'Avec plus de 130 ans d’existence, l’école d’horticulture de Châtelaine puis Ecole d’horticulture de
+Lullier et enfin Centre de formation professionnelle de Lullier a, de tout temps, été un pôle de formation
+reconnu et avant-gardiste. A l’heure où le changement climatique et les atteintes à la biosphère
+impactent les mentalités et que les citoyennes et citoyens, dont sont partie prenantes les professionnels
+des branches horticoles, se questionnent sur le devenir de notre environnement proche.',
 ),
 91 => 
 array (
@@ -3939,7 +4344,12 @@ formatrices, services de l&rsquo;Etat concern&eacute;s, associations, ONG, Haute
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:56:11',
-'updated_at' => '2020-04-06 06:56:11',
+'updated_at' => '2020-04-11 10:16:30',
+'short_description' => 'La capacité d’innovation et la compétitivité de l’économie suisse ont fortement besoin de main-d’œuvre
+qualifiée. Cette condition de base s’applique aussi au domaine des cleantechs promis à une croissance
+internationale supérieure à la moyenne . Les cleantechs regroupent toutes les technologies et tous
+les services et processus de fabrication qui contribuent à protéger et à préserver les ressources et
+les systèmes naturels.',
 ),
 92 => 
 array (
@@ -3984,7 +4394,11 @@ professionnelle.',
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 06:59:42',
-'updated_at' => '2020-04-06 06:59:42',
+'updated_at' => '2020-04-11 10:20:33',
+'short_description' => 'La capacité d’innovation et la compétitivité de l’économie suisse ont fortement besoin de main-d’œuvre
+qualifiée. Cette condition de base s’applique aussi au domaine des cleantechs promis à une croissance
+internationale supérieure à la moyenne . Les cleantechs regroupent toutes les technologies et tous
+les services et processu',
 ),
 93 => 
 array (
@@ -4023,7 +4437,12 @@ Partenaires: Ortras, entreprises formatrices, services de l&rsquo;Etat concern&e
 'state_id' => 3,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 07:01:42',
-'updated_at' => '2020-04-06 07:01:42',
+'updated_at' => '2020-04-11 10:22:12',
+'short_description' => 'La capacité d’innovation et la compétitivité de l’économie suisse ont fortement besoin de main-d’œuvre
+qualifiée. Cette condition de base s’applique aussi au domaine des cleantechs promis à une croissance
+internationale supérieure à la moyenne . Les cleantechs regroupent toutes les technologies et tous
+les services et processus de fabrication qui contribuent à protéger et à préserver les ressources et
+les systèmes naturels.',
 ),
 94 => 
 array (
@@ -4073,7 +4492,11 @@ branches.',
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 07:04:19',
-'updated_at' => '2020-04-06 07:04:19',
+'updated_at' => '2020-04-11 10:25:51',
+'short_description' => 'Les compétences et les objectifs de référence pour chaque discipline sont détaillés dans le PEC
+ECG de la CDIP. La nouvelle conception du PEC de la CDIP impose la réécriture du plan d’études
+genevois (PEc) dans toutes les disciplines quelles que soient les modifications de dotation de
+périodes, de contenus et les nouveaux cours.',
 ),
 95 => 
 array (
@@ -4108,7 +4531,10 @@ de Lyss, l&rsquo;HAFL, le centre de formation foresti&egrave;re du Mont-sur-Laus
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 07:06:30',
-'updated_at' => '2020-04-06 07:06:30',
+'updated_at' => '2020-04-11 10:29:01',
+'short_description' => 'La gestion écologique de milieux naturels et semi-naturels nécessite des compétences spécifiques
+et pointues, que la majorité des professionnels actifs dans le domaine du paysagisme ne maîtrisent
+souvent que partiellement.',
 ),
 96 => 
 array (
@@ -4143,7 +4569,9 @@ la forme d&rsquo;une formation plus l&eacute;g&egrave;re sans certification offi
 'state_id' => 2,
 'ponc_id' => NULL,
 'created_at' => '2020-04-06 07:08:50',
-'updated_at' => '2020-04-06 07:08:50',
+'updated_at' => '2020-04-11 10:31:41',
+'short_description' => 'Offrir des modules de formations à l’intention des acteurs qui effectuent des animations dans les
+sites protégés ou/et les sites à enjeux du canton.',
 ),
 97 => 
 array (
@@ -4172,7 +4600,9 @@ canton de Gen&egrave;ve.</p>',
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:10:09',
-'updated_at' => '2020-04-06 07:10:09',
+'updated_at' => '2020-04-11 10:33:03',
+'short_description' => 'L’Association pour la sauvegarde du Léman (ASL) propose depuis 2016 des animations en lien avec
+le Programme d’études romand (PER) pour les classes primaires.',
 ),
 98 => 
 array (
@@ -4216,7 +4646,10 @@ du territoire.<br />
 'state_id' => 1,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:13:35',
-'updated_at' => '2020-04-06 07:13:35',
+'updated_at' => '2020-04-11 10:36:34',
+'short_description' => 'L’objectif de cette action est d’inventorier précisément l’ensemble des données générées par l’OCAN
+et les différents flux avec les autres systèmes d’information (SI). Cette analyse devra être renouvelée
+et mise à jour régulièrement afin d’atteindre une version idéale du SI Agriculture et Nature.',
 ),
 99 => 
 array (
@@ -4256,7 +4689,13 @@ nationales.
 'state_id' => 3,
 'ponc_id' => 2,
 'created_at' => '2020-04-06 07:14:44',
-'updated_at' => '2020-04-06 07:14:44',
+'updated_at' => '2020-04-11 10:40:35',
+'short_description' => 'De nombreux naturalistes spécialisés dans l’étude d’un groupe d’espèces particulier réalisent des
+observations de la faune et la flore de notre canton. Avec la carte des milieux naturels, ces nombreuses
+observations, qui sont souvent géoréférencées, forment la base nécessaire pour l’analyse de notre
+biodiversité. Souvent centralisées au sein d’associations ou de fondations, ces observations sont
+envoyées aux bases de données nationales, mais elles ne sont pas toujours transmises aux services
+de la conservation de la nature au niveau cantonal, ni au niveau du Grand Genève.',
 ),
 100 => 
 array (
@@ -4296,7 +4735,13 @@ Mise à jour et diffusion via serveur métier/SITG effectuées.',
 'state_id' => 1,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:18:00',
-'updated_at' => '2020-04-06 07:18:00',
+'updated_at' => '2020-04-11 10:45:38',
+'short_description' => 'La carte des milieux est une donnée issue du consortium Système d’information du patrimoine
+vert (SIPV). La carte des milieux couvre l’ensemble du canton de Genève et distingue plus d’une
+centaine de catégories de milieux naturels et bâtis. Elle sert de base de travail pour la définition de
+l’infrastructure écologique sur le Canton. Elle est régulièrement mise à jour et consolidée par des
+relevés de terrain, et ses données sont gérées par la Direction de l’information du territoire. Cette
+carte possède l’avantage d’intégrer les données cadastrales sur la partie bâtie.',
 ),
 101 => 
 array (
@@ -4330,7 +4775,11 @@ Actions/Etapes:<br />
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:19:51',
-'updated_at' => '2020-04-06 07:19:51',
+'updated_at' => '2020-04-11 10:49:04',
+'short_description' => 'Le canton de Genève possède un vaste panel de données géographiques numérisées. Ces données
+sont en constante évolution, car elles reflètent les changements sur le territoire. Des indicateurs
+synthétiques de l’état de la biodiversité peuvent être groupés sous forme de tableaux de bord (ou
+dashboards) qui fournissent une vue d’ensemble de la situation et de l’évolution de la biodiversité,',
 ),
 102 => 
 array (
@@ -4363,7 +4812,11 @@ que G&eacute;oAgglo, G&eacute;oFab, site web du SIPV, 1001sitesnatureenville ser
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:21:37',
-'updated_at' => '2020-04-06 07:21:37',
+'updated_at' => '2020-04-11 10:52:48',
+'short_description' => 'Le SITG promeut les données brutes ainsi que leur diffusion (open access) à l’ensemble des
+partenaires intéressés. Des outils de mise en forme de ces données brutes se développent, afin de
+les rendre accessibles à un large public. L’information peut alors se décliner sous forme de scénario
+narratif (voir par exemple la StoryMap Flore en ville).',
 ),
 103 => 
 array (
@@ -4395,7 +4848,13 @@ Actions/Etapes:<br />
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:22:50',
-'updated_at' => '2020-04-06 07:22:50',
+'updated_at' => '2020-04-11 10:56:02',
+'short_description' => 'L’OCAN délivre plus de 2000 préavis par an dans le cadre notamment des autorisations de construire.
+Des conditions sont mises à ces préavis pour le maintien ou le remplacement des valeurs naturelles
+pendant et après le chantier. A l’heure actuelle, l’OCAN ne dispose pas d’outil de suivi des conditions
+mises au préavis, ni des remplacements ou des compensations exigées. Il est donc indispensable
+de créer un outil de suivi temporel des chantiers, dès leur ouverture et jusqu’à réception finale (ie
+vérification 2 ans après la plantation) des éléments naturels.',
 ),
 104 => 
 array (
@@ -4446,7 +4905,11 @@ Nombre de projets innovants en lien avec la biodiversité',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:24:08',
-'updated_at' => '2020-04-06 07:24:08',
+'updated_at' => '2020-04-11 10:59:39',
+'short_description' => 'Les exemples de démarches innovantes sont nombreuses sur le canton et il est important que la
+biodiversité en fasse partie. Parmi ces exemples, la démarche “Smart Geneva” (décrite dans la Feuille
+de route du DT pubilée en mai 2019) et les conventions de collaboration entre l’Etat de Genève et
+les hautes écoles (Université de Genève et HEPIA).',
 ),
 105 => 
 array (
@@ -4501,7 +4964,10 @@ aux &eacute;ducateurs/trices les outils pour pouvoir sortir r&eacute;guli&egrave
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:26:20',
-'updated_at' => '2020-04-06 07:26:20',
+'updated_at' => '2020-04-11 11:05:31',
+'short_description' => 'Les communes genevoises participent déjà à la préservation de la biodiversité par le biais d’actions
+locales ; il s’agit désormais de valoriser ce qui est fait, d’accompagner la mise en œuvre de la stratégie
+biodiversité et ses actions et de faciliter les synergies, notamment à travers les actions suivantes',
 ),
 106 => 
 array (
@@ -4557,7 +5023,9 @@ et CoolCity.</p>',
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-06 07:27:56',
-'updated_at' => '2020-04-06 07:27:56',
+'updated_at' => '2020-04-11 11:07:24',
+'short_description' => 'Parmi les facteurs déterminant l’état de santé de la population, l’environnement et les conditions
+d’habitat jouent un rôle plus important que le système de soins.',
 ),
 107 => 
 array (
@@ -4606,7 +5074,11 @@ de chantiers respectueuse de la biodiversit&eacute;).<br />
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-06 07:29:20',
-'updated_at' => '2020-04-06 07:29:20',
+'updated_at' => '2020-04-11 11:09:25',
+'short_description' => 'La protection et le développement de la biodiversité sont des enjeux transversaux qui s’inscrivent dans
+de nombreux domaines, il est donc indispensable de lier les enjeux de la biodiversité aux grandes
+thématiques du développement durable et le climat en cohérence avec la politique cantonale, les
+orientations stratégiques et les plans sectoriels.',
 ),
 108 => 
 array (
@@ -4642,7 +5114,13 @@ EES, voire les EIE.',
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-06 07:31:09',
-'updated_at' => '2020-04-06 07:31:09',
+'updated_at' => '2020-04-11 11:13:20',
+'short_description' => 'Le canton de Genève, s’est doté d’un outil d’évaluation environnemental stratégique qui vise à orienter
+les grands projets vers des variantes qui minimisent les impacts environnementaux. L’application de
+l’outil Evaluation Environnementale Stratégique (EES) a montré ses limites dans plusieurs projets
+d’infrastructures routières dans le canton (exemples : TLac, Genève Sud). Ces projets, sur le plan
+environnemental, ont souffert de l’absence d’une véritable analyse prospective, ou d’aides à la décision
+sur les plans techniques et politiques (quelle plus-value, quelles pertes, quelles opportunités ?)',
 ),
 109 => 
 array (
@@ -4685,7 +5163,12 @@ Dans cette d&eacute;marche, l&rsquo;OCAN a d&eacute;j&agrave; mis en place une p
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:32:30',
-'updated_at' => '2020-04-06 07:32:30',
+'updated_at' => '2020-04-11 11:16:16',
+'short_description' => 'Il est impératif de conforter la biodiversité comme donnée structurante, notamment dans les projets
+d’aménagement du territoire. Il s’agira de rappeler constamment aux porteurs de projets soumis à
+autorisation, les préconisations visant à éviter les atteintes à la biodiversité, à défaut à les réduire et,
+en dernier recours, à remplacer les impacts résiduels n’ayant pu être évités ou réduits pour tendre
+vers la zéro perte nette de biodiversité.',
 ),
 110 => 
 array (
@@ -4745,7 +5228,11 @@ html?appid=9895b4cab37b4e319bcfae9fa8e3b99b</p>',
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-06 07:34:19',
-'updated_at' => '2020-04-06 07:34:19',
+'updated_at' => '2020-04-11 11:19:56',
+'short_description' => 'La nécessité de sensibiliser aux enjeux, voire de mettre un terme à la perte de biodiversité, doit
+mobiliser des moyens financiers qui à ce jour dépassent les dispositifs traditionnels. Ceci pourrait
+passer à terme par une valorisation des services écosystémiques. Il s’agit donc de compléter les
+dispositifs de financement actuels par d’autres sources/leviers innovants.',
 ),
 111 => 
 array (
@@ -4787,7 +5274,15 @@ canton de Genève.',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:35:38',
-'updated_at' => '2020-04-06 07:35:38',
+'updated_at' => '2020-04-11 11:22:02',
+'short_description' => 'Le département veille à encourager des projets de solidarité internationale touchant à la biodiversité
+(Lbio art. 9). La loi applicable en matière de solidarité internationale est la Loi sur le financement
+de la solidarité internationale (LFSI) dont l’objectif est de mener une politique active en faveur de la
+solidarité internationale. Pour concrétiser cet objectif, la République et canton de Genève consacre
+au moins 0,7% de son budget annuel de fonctionnement à la solidarité internationale, particulièrement
+en soutenant des projets de coopération, d’aide au développement, de promotion de la paix et de
+défense des droits sociaux et de la personne. La coordination des actions menées relève du Service
+de la solidarité internationale (SSI).',
 ),
 112 => 
 array (
@@ -4836,7 +5331,10 @@ et participative (https://www.ge.ch/dossier/geneve-lab).</p>',
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:37:02',
-'updated_at' => '2020-04-06 07:37:02',
+'updated_at' => '2020-04-11 11:24:54',
+'short_description' => 'La coordination entre les acteurs et la cohésion des actions en faveur de la biodiversité à différentes
+échelles du territoire et de la région sont essentielles. A cet effet, l’OCAN coordonnera avec les acteurs
+du territoire les actions suivantes :',
 ),
 113 => 
 array (
@@ -4887,7 +5385,9 @@ retenus au niveau international et d&eacute;crit par l&rsquo;OFEV et les cantons
 'state_id' => 2,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:38:30',
-'updated_at' => '2020-04-06 07:38:30',
+'updated_at' => '2020-04-11 11:26:27',
+'short_description' => 'Pour suivre l’évolution de la biodiversité et vérifier l’efficacité des actions déployées (outil d’aide à la
+décision), un système d’indicateurs sera mis en place en se basant sur 4 critères principaux',
 ),
 114 => 
 array (
@@ -4925,7 +5425,12 @@ en place (en lien avec les outils analytiques du domaine n&deg;11)<br />
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-06 07:39:44',
-'updated_at' => '2020-04-06 07:39:44',
+'updated_at' => '2020-04-11 11:28:41',
+'short_description' => 'Les facteurs humains et les comportements des populations, des élus et des acteurs industriels
+sont des enjeux transversaux aux 12 domaines de la Stratégie Biodiversité Genève 2030. Le but de
+cette action est d’utiliser les outils scientifiques et interventionnels de l’approche comportementale
+(behavioral insights) pour comprendre et agir sur ces facteurs humains et comportementaux pour
+accompagner la mise en œuvre du plan d’actions. Pour ce faire, les actions suivantes sont prévues',
 ),
 115 => 
 array (
@@ -4968,7 +5473,10 @@ sont les produits probl&eacute;matiques resp. alternatifs, organiser des formati
 'state_id' => 3,
 'ponc_id' => 1,
 'created_at' => '2020-04-06 07:40:58',
-'updated_at' => '2020-04-06 07:40:58',
+'updated_at' => '2020-04-11 11:30:45',
+'short_description' => 'Veiller à ce que les achats publics selon les principes du Guide des achats professionnels responsables,
+prévoient sous aspects environnementaux la prise en compte des effets sur la biodiversité du bien
+en question, sur toute sa chaîne de valeur.',
 ),
 116 => 
 array (
@@ -5016,7 +5524,10 @@ transition &eacute;cologique.</p>',
 'state_id' => 2,
 'ponc_id' => 2,
 'created_at' => '2020-04-06 07:42:06',
-'updated_at' => '2020-04-06 07:42:06',
+'updated_at' => '2020-04-11 11:32:14',
+'short_description' => 'Une structure paraétatique pour la biodiversité à l’instar de l’Agence française pour la biodiversité. Une
+première en Suisse. Cette structure aurait pour mission d’assurer la mise en œuvre opérationnelle
+de la Stratégie Biodiversité Genève 2030 (SBG-2030).',
 ),
 ));
         

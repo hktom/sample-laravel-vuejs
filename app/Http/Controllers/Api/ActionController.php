@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Action;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Http\Resources\ProjectResource;
+use App\Http\Resources\ActionResource;
 use Illuminate\Support\Facades\Validator;
 
 class ActionController extends Controller
@@ -17,7 +17,12 @@ class ActionController extends Controller
      */
     public function index()
     {
-        return ProjectResource::collection('App\Project'::OrderBy('id', 'DESC')->paginate(20));
+        return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->paginate(10));
+    }
+
+    public function index_all()
+    {
+        return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->get());
     }
 
     /**
@@ -63,9 +68,9 @@ class ActionController extends Controller
      * @param  \App\Action  $action
      * @return \Illuminate\Http\Response
      */
-    public function show(Action $action)
+    public function show($id)
     {
-        //return PostResource::collection(Post::where('id', $id)->get());
+        return ActionResource::collection('App\Action'::where('slug', $id)->get());
     }
 
     /**

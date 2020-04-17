@@ -3,9 +3,20 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class Action extends Model
 {
+    use Sluggable;
+
+    public function sluggable()
+    {
+        return [
+            'slug' => [
+                'source' => 'label'
+            ]
+        ];
+    }
 
     public function project()
     {
@@ -35,12 +46,27 @@ class Action extends Model
 
     public function responsables()
     {
-        return $this->belongsToMany("App\Actor", "responsable_actors");
+        return $this->belongsToMany('App\Actor', 'responsable_actions');
     }
 
     public function realisators()
     {
-        return $this->belongsToMany("App\Actor", "realisator_actors");
+        return $this->belongsToMany('App\Actor', 'realisator_actions');
+    }
+
+    public function echelles()
+    {
+        return $this->belongsToMany("App\Echelle", "echelle_actions");
+    }
+
+    public function types()
+    {
+        return $this->belongsToMany("App\Type", "type_actions");
+    }
+
+    public function states()
+    {
+        return $this->belongsToMany("App\State", "state_actions");
     }
 
     public function caracteristics()
@@ -51,11 +77,6 @@ class Action extends Model
     public function ponc()
     {
         return $this->belongsTo('App\Ponc');
-    }
-
-    public function state()
-    {
-        return $this->belongsTo('App\State');
     }
 
     public function bugets()

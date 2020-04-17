@@ -16,10 +16,10 @@ class CreateCalendarsTable extends Migration
         Schema::create('calendars', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->bigInteger('action_id')->unsigned();
-            $table->text('2020')->nullable();
-            $table->text('2021')->nullable();
-            $table->text('2022')->nullable();
-            $table->text('2023')->nullable();
+            $table->text('year_2020')->nullable();
+            $table->text('year_2021')->nullable();
+            $table->text('year_2022')->nullable();
+            $table->text('year_2023')->nullable();
             $table->timestamps();
         });
     }
