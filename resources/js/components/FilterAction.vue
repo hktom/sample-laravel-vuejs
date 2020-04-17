@@ -1,14 +1,14 @@
 <template>
-    <div class="w80 mauto pl2">
-      <b-row>
-        <b-col xs="12" lg="3" class="my-2">
+    <div class="w100">
+      <b-row class="w80 mauto">
+        <b-col xs="12" lg="3" class="">
           <b-input id="inline-form-input-name" style="height:34px" placeholder="Mot clé, nom Entier"
           v-model="search"
           @input="research"
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="3" class="my-2">
+        <b-col xs="12" md="12" lg="3" class="">
           <v-select
             placeholder="Echelle"
             :options="option_echelle"
@@ -17,7 +17,7 @@
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="6" class="my-2">
+        <b-col xs="12" md="12" lg="6" class="">
           <v-select placeholder="Les Contributeurs"
           :options="option_actors"
           :value="$store.action_filter"
@@ -27,7 +27,7 @@
 
       </b-row>
 
-      <b-row>
+      <b-row class="w80 mauto">
     <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
             placeholder="Status"
@@ -90,8 +90,17 @@ export default {
 
   methods: {
     action_set_filter(value) {
-      this.$store.dispatch("FILTER_ACTION", value);
+        // console.log(`DEBBUG ${value}`);
+    if(value!=null)
+    {
+       this.$store.dispatch("FILTER_ACTION", value);
       this.set_badge(value);
+    }
+    else
+    {
+        this.$store.commit("SET_ACTION_DEFAULT");
+    }
+
     },
 
     set_badge(value) {

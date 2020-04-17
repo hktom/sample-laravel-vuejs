@@ -9,17 +9,13 @@
           <div>
 
                 <span v-for="author in action" :key="author.id+'_'">
-                  <span v-if="author.is_a_person"> {{author.name}}  /
-                  </span>
+                  <span v-if="author.is_a_person"> {{author.name}}/</span>
                 </span>
 
-                  (
-                  <span v-for="(author, count) in action" :key="author.id">
-                    <span v-if="!author.is_a_person">
-                   {{author.name}} <span v-if="count+1 < action.length">,</span>
-                  </span>
-                  </span>
-                  )
+                 <span v-if="action.length>0">
+                      (<span v-for="(author, count) in action" :key="author.id">
+                    <span v-if="!author.is_a_person">{{author.name}}<span v-if="count+1 < action.length">,</span></span></span>)
+                 </span>
 
           </div>
 

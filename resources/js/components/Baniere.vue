@@ -1,12 +1,14 @@
 <template>
       <div id="baniere" class="w100 y15 relative ofhidden ms-y10 ss-y10">
+
       <div id="bg-image" class="w100"
       :style="'height:110%;background-image: url('+baniere+')'">
       </div>
-      <div id="bg-text" class="absolute mt0">
-        <div class="fitme w80 mauto">
-          <h3 class="ml4 mt6 text-header ms-fs1 ss-fs1 lms-fs1-3" v-html="description">
-          </h3>
+
+      <div id="bg-text" class="absolute mt0 fitme py-5">
+        <div class="w80 mauto">
+            <h3 class="px-3 py-2 text-header ms-fs1 ss-fs1 lms-fs1-3" v-html="description">
+            </h3>
         </div>
       </div>
 

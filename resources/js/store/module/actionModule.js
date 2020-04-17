@@ -13,7 +13,7 @@ export const actionModule = {
     },
     actions: {
         FILTER_ACTION: ({ commit }, payload) => {
-            if (payload != null) {
+            if (payload.type != null) {
 
                 switch (payload.type) {
                     case 'actor':

@@ -4,25 +4,25 @@
       <!-- <h1>{{article}}</h1> -->
       <b-row>
           <b-col lg="4" md="12">
-              <img :src="'uploads/'+article.project.icon" class="w100 px-4 py-4 cover center"/>
+              <img :src="'uploads/'+article.project.icon" style="padding:70px" class="w100 vls-p50 cover center"/>
           </b-col>
 
           <b-col lg="8" md="12">
 
-              <h4>
-                  <span class="bold" :style="'font-weight:bold;color:'+article.project.color">
+              <div>
+                  <h4 class="bold inline-block" :style="'font-weight:bold;color:'+article.project.color">
                       ACTION {{ article.code }}
-                  </span>
+                  </h4>
 
                   <b-badge variant="light">
 
                           <!-- <font-awesome-icon icon="check-circle" :style="{ color: '#05668D' }" /> -->
-                      <span class="fs0-8" :style="{color: '#05668D'}">
-                          {{ filter=="champ d'application"? `champ d'application: ${article.project.name}` :filter }}
+                      <span class="fs1-2" :style="{color: '#05668D'}">
+                          {{ filter=="champ d'application"? `${article.project.name}` :filter }}
                       </span>
 
                   </b-badge>
-              </h4>
+              </div>
 
               <h4 class="bold" style="font-weight:bold">
                       {{ article.name}}
@@ -31,17 +31,9 @@
               <p>
                   Elaboré(e) par
                   <span v-for="author in article.authors" :key="author.id">
-                  <span class="fs0-9" v-if="author.is_a_person"> {{author.name}}  /
-                  </span>
-                  </span>
+                  <span class="fs0-9" v-if="author.is_a_person"> {{author.name}}/</span></span>
 
-                  (
-                  <span v-for="(author, count) in article.authors" :key="author.id+'_'">
-                    <span class="fs0-9" v-if="!author.is_a_person">
-                   {{author.name}} <span v-if="count+1 < article.authors.length">,</span>
-                  </span>
-                  </span>
-                  )
+                  (<span v-for="(author, count) in article.authors" :key="author.id+'_'"><span class="fs0-9" v-if="!author.is_a_person">{{author.name.trim()}}<span v-if="count+1 < article.authors.length">,</span></span></span>)
 
               </p>
               <p>

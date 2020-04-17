@@ -13,7 +13,7 @@
       <!-- <menuIndicator menu="home"/> -->
 
     <div class="w80 mauto">
-        <h3 class="ml2 mt3" style="color:#05668D">Liste des actions</h3>
+        <h3 class="px-3 mt3" style="color:#05668D">Liste des actions</h3>
     </div>
 
     <filterAction/>

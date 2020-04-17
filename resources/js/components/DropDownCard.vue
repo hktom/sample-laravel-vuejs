@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="title != null">
-            <h4 class="mt-4">
+            <h5 class="mt-4">
                 <span :style="'color:' + color" v-if="iconColor != null">
                     <font-awesome-icon :icon="iconColor" />
                 </span>
@@ -10,7 +10,7 @@
                     <font-awesome-icon :icon="iconColor" />
                 </span>
                 {{ title }}
-            </h4>
+            </h5>
 
             <h6 v-if="subtitle != null">{{ subtitle }}</h6>
         </div>

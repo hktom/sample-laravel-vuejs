@@ -31,7 +31,7 @@
 
                             <div v-if="project.introduction != null">
 
-                                <h4 class="bold uppercase mt-4">Introduction</h4>
+                                <h6 class="bold uppercase my-4">Introduction</h6>
 
                                 <div>
                                     <div v-html="project.introduction"></div>
@@ -40,7 +40,7 @@
                             </div>
 
                             <div v-if="project.context != null">
-                                <h4 class="bold uppercase">Contexte</h4>
+                                <h6 class="bold uppercase my-4">Contexte</h6>
 
                                 <div v-if="readmore">
                                    <div v-html="project.context.slice(0, 1500)"></div>
@@ -55,11 +55,11 @@
 
                             </div>
 
-                            <h4 class="bold my-4">
+                            <h6 class="bold my-4 uppercase">
                                 Ce que prévoit le Plan Biodiversité 2020-2023
-                            </h4>
+                            </h6>
 
-                            <div v-if="project.to_know != null">
+                            <div v-if="project.to_know != null" class="my-4">
 
                                 <DropDown
                                 :color="project.color"
@@ -70,7 +70,7 @@
 
                             </div>
 
-                            <div v-if="project.to_enrich != null">
+                            <div v-if="project.to_enrich != null" class="my-4">
 
                                 <DropDown
                                 :color="project.color"
@@ -81,7 +81,7 @@
 
                             </div>
 
-                            <div v-if="project.to_value != null">
+                            <div v-if="project.to_value != null" class="my-4">
 
                                 <DropDown
                                 :color="project.color"
