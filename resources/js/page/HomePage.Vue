@@ -8,12 +8,12 @@
 
       <div class="pb10">
 
-      <Baniere baniere="/img/bg-image.jpg" description=" <b>La biodiversité</b> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la transition <b>écologique.</b>" />
+      <Baniere baniere="/img/bg-image.jpg" description=" <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la transition <strong>écologique.</strong>" />
 
       <!-- <menuIndicator menu="home"/> -->
 
     <div class="w80 mauto">
-        <h2 class="ml2 mt3" style="color:#05668D">Liste des actions</h2>
+        <h3 class="ml2 mt3" style="color:#05668D">Liste des actions</h3>
     </div>
 
     <filterAction/>

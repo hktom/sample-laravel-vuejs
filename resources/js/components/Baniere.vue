@@ -4,9 +4,9 @@
       :style="'height:110%;background-image: url('+baniere+')'">
       </div>
       <div id="bg-text" class="absolute mt0">
-        <div class="fitme p8 w100">
-          <h2 class="ml7 text-header ms-fs1 ss-fs1 lms-fs1-3" v-html="description">
-          </h2>
+        <div class="fitme w80 mauto">
+          <h3 class="ml4 mt6 text-header ms-fs1 ss-fs1 lms-fs1-3" v-html="description">
+          </h3>
         </div>
       </div>
 
@@ -50,7 +50,15 @@ export default {
       filter: blur(4px);
     transform: scale(1.1);
 }
-.text-header{color: white;text-shadow: 0 0 1em black;font-weight: normal;}
+.text-header{
+    /* color: white;
+    text-shadow: 0 0 1em black;
+    font-weight: normal; */
+     color: #eee;
+    text-shadow: 0 0 0.2em #000;
+    font-weight: normal;
+    font-size: 1.6rem;
+    }
 
 .back-link{
     color: white;

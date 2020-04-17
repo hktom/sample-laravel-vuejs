@@ -7,7 +7,7 @@
 
                 <logo color="white"/>
                 <p class="white">
-                     <b>La biodiversité</b> c’est notre assurance vie face aux changements climatiques et une priorité pour réussir la transition écologique.
+                     <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la transition <strong>écologique.</strong>
                  </p>
                 <!-- <img src="/img/header-logo-white.png"
                 class="x30 ms-x15 ss-x15"/>
