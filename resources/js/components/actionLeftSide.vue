@@ -2,7 +2,7 @@
     <div>
         <b-row>
             <b-col cols="2" class="pr-0">
-                <img :src="'/uploads/' + action.project.icon" class="w100 cover" />
+                <img :src="'/uploads/' + action.project.icon" style="border-radius:20px" class="w100 cover" />
             </b-col>
 
             <b-col cols="10">

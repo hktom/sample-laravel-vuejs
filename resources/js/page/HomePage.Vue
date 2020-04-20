@@ -8,7 +8,7 @@
 
       <div class="pb10">
 
-      <Baniere baniere="/img/bg-image.jpg" description="<strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la transition <strong>écologique.</strong>" />
+      <Baniere baniere="/img/bg-image.jpg" description="<strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la<strong> transition écologique.</strong>" />
 
       <!-- <menuIndicator menu="home"/> -->
 
