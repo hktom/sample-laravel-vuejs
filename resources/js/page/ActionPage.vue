@@ -9,7 +9,7 @@
                 :baniere="'/uploads/'+action.project.image"
                 :btnback="true" />
 
-                <div class="w75 mauto my-5">
+                <div class="w80 px-3 mauto my-5 ms-w95 ss-w100">
                     <b-row>
                         <b-col lg="8" md="12">
                             <actionLeftSide :action="action"/>

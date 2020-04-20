@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="px-3">
         <b-row>
             <b-col lg="3" class="calendar">
                 <h6 :style="'background-color:'+color">2020</h6>

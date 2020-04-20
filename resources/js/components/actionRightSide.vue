@@ -1,8 +1,8 @@
 <template>
     <div>
-        <div>
+        <!-- <div>
             <img :src="'/uploads/' + action.project.icon" class="w100 cover" />
-        </div>
+        </div> -->
 
         <miniCard
             :action="action.types"

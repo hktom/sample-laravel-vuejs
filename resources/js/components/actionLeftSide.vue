@@ -1,5 +1,11 @@
 <template>
     <div>
+        <b-row>
+            <b-col cols="2" class="pr-0">
+                <img :src="'/uploads/' + action.project.icon" class="w100 cover" />
+            </b-col>
+
+            <b-col cols="10">
         <h3 class="bold" :style="'color:' + action.project.color">
             ACTION {{ action.code }}
         </h3>
@@ -8,6 +14,8 @@
             {{ action.name }}
         </h4>
         <h6>{{ action.orientation }}</h6>
+            </b-col>
+        </b-row>
 
         <flatCard
             :action="action.authors"

@@ -10,7 +10,7 @@
                     :btnbackProject="true"
                 />
 
-                <div class="w75 mauto my-5">
+                <div class="w80 px-3 mauto my-5 ms-w95 ss-w100">
                     <b-row>
                         <b-col lg="8" md="12">
                             <!-- <actionLeftSide :action="action"/> -->
@@ -25,9 +25,7 @@
                                 {{ project.ca_principal }}
                             </h3>
 
-                            <h3 class="uppercase bold">
-                                {{ project.name }}
-                            </h3>
+                            <h3 class="uppercase bold">{{ project.name }}</h3>
 
                             <div v-if="project.introduction != null">
 
@@ -43,14 +41,14 @@
                                 <h6 class="bold uppercase my-4">Contexte</h6>
 
                                 <div v-if="readmore">
-                                   <div v-html="project.context.slice(0, 1500)"></div>
+                                   <div id="nobreak" v-html="project.context.slice(0, 1500)"></div>
                                    <span
                                    @click="_readmore"
                                    class="italic cursor-pointer">[continuer la lecture...]</span>
                                 </div>
 
                                 <div v-else>
-                                    <div v-html="project.context"></div>
+                                    <div v-html="project.context" id="nobreak"></div>
                                 </div>
 
                             </div>
@@ -212,4 +210,10 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+
+#nobreak *{
+  white-space: nowrap;
+}
+
+</style>

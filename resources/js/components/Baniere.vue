@@ -7,8 +7,8 @@
 
       <div id="bg-text" class="absolute mt0 fitme py-5">
         <div class="w80 mauto">
-            <h3 class="px-3 py-2 text-header ms-fs1 ss-fs1 lms-fs1-3" v-html="description">
-            </h3>
+            <div class="px-3 py-2 text-header ms-fs1 ss-fs1 lms-fs1-3" v-html="description">
+            </div>
         </div>
       </div>
 
@@ -56,9 +56,9 @@ export default {
     /* color: white;
     text-shadow: 0 0 1em black;
     font-weight: normal; */
+    /* font-weight: normal; */
      color: #eee;
     text-shadow: 0 0 0.2em #000;
-    font-weight: normal;
     font-size: 1.6rem;
     }
 

@@ -34,14 +34,14 @@
 
                     <font-awesome-icon
                         v-if="!fieldShow"
-                        icon="sort-down"
+                        icon="chevron-down"
                         size="lg"
-                        class="mb-1"
+                        class=""
                     />
 
                     <font-awesome-icon
                         v-else
-                        icon="sort-up"
+                        icon="chevron-up"
                         size="lg"
                         class=""
                     />

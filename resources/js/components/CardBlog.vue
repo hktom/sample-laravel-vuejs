@@ -3,11 +3,11 @@
   <div id="cardBlog" class="py-4 px-4 cursor-pointer" @click="seeAction(article.slug)">
       <!-- <h1>{{article}}</h1> -->
       <b-row>
-          <b-col lg="4" md="12">
-              <img :src="'uploads/'+article.project.icon" style="padding:70px" class="w100 vls-p50 cover center"/>
+          <b-col lg="3" md="12">
+              <img :src="'uploads/'+article.project.icon" style="" class="w100 vls-p50 cover center"/>
           </b-col>
 
-          <b-col lg="8" md="12">
+          <b-col lg="9" md="12">
 
               <div>
                   <h4 class="bold inline-block" :style="'font-weight:bold;color:'+article.project.color">

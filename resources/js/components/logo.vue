@@ -17,17 +17,19 @@
                 />
             </div>
 
-            <div
-                v-if="color == 'black'"
-                :class="color + ' mx-0 px-0  fs0-5 bold'"
+            <h6
+            v-if="color == 'black'"
+                :class="color + ' mx-0 px-0  fs0-4 bold inline-block'"
                 style="line-height: 1rem;"
             >
-                PLAN BIODIVERSITÉ 2020-2023 <br />
+
+            PLAN BIODIVERSITÉ 2020-2023 <br />
                 DE LA STRATÉGIE BIODIVERSITÉ <br />
                 GENÈVE 2030
-            </div>
 
-            <div
+            </h6>
+
+            <h6
                 v-else
                 :class="color + ' mx-0 px-0  bold'"
                 style="line-height: 1rem;"
@@ -35,7 +37,8 @@
                 PLAN BIODIVERSITÉ 2020-2023 <br />
                 DE LA STRATÉGIE BIODIVERSITÉ <br />
                 GENÈVE 2030
-            </div>
+            </h6>
+
         </div>
     </div>
 </template>

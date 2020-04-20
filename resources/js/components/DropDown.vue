@@ -9,12 +9,12 @@
 
             <font-awesome-icon
                 v-if="!dropdown"
-                icon="sort-down"
+                icon="chevron-down"
                 size="lg"
-                class="mb-1"
+                class=""
             />
 
-            <font-awesome-icon v-else icon="sort-up" size="lg" class="" />
+            <font-awesome-icon v-else icon="chevron-up" size="lg" class="" />
         </h4>
         <p style="transition:0.5s" v-if="dropdown">{{ text }}</p>
     </div>
@@ -38,4 +38,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>
