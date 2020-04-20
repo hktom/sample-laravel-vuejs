@@ -212,8 +212,8 @@ export default {
 
 <style>
 
-#nobreak *{
+/* #nobreak *{
   white-space: nowrap;
-}
+} */
 
 </style>
