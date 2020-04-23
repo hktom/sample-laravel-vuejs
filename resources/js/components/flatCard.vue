@@ -1,7 +1,7 @@
 <template>
-    <div>
+    <div class="my-3">
         <div v-if="action != null">
-            <h5 class="my-4 action-title" :style="'background-color:' + color">
+            <h5 class="my-1 action-title" :style="'background-color:' + color">
                 <font-awesome-icon :icon="icon" />
                 {{ title }}
             </h5>
@@ -22,13 +22,11 @@
         </div>
 
         <div v-else>
-            <h5 class="my-4 action-title" :style="'background-color:' + color">
+            <h5 class="my-2 action-title" :style="'background-color:' + color">
                 <font-awesome-icon :icon="icon" />
                 {{ title }}
             </h5>
-            <p>
-                {{ text }}
-            </p>
+            <p v-html="text" id="paragraph"></p>
         </div>
     </div>
 </template>
@@ -39,3 +37,10 @@ export default {
     props: ["icon", "color", "action", "text", "title"]
 };
 </script>
+
+<style>
+#paragraph *{
+    text-align: justify !important;
+}
+</style>
+

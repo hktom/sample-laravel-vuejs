@@ -1,6 +1,6 @@
 <template>
     <div class="w100">
-        <div class="d-flex flex-row bd-highlight align-items-center mb-3">
+        <div class="d-flex flex-row bd-highlight align-items-center">
             <div v-if="color == 'black'">
                 <img
                     style="width:50px"

@@ -25,10 +25,8 @@
 
   p, pre{
       width: 100% !important;
-      text-align: justify;
       font-size: 16px !important;
       display: block !important;
       overflow: hidden !important;
       white-space: normal !important;
 }
-

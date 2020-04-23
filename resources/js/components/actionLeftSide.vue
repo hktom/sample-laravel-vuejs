@@ -1,21 +1,24 @@
 <template>
     <div>
-        <b-row>
-            <b-col cols="2" class="pr-0">
-                <img :src="'/uploads/' + action.project.icon" style="border-radius:20px" class="w100 cover" />
-            </b-col>
+        <div class="d-flex flex-row bd-highlight align-items-top">
+            <div class="x8 pr-2">
+                <img
+                    :src="'/img/' + action.project.id + '.png'"
+                    class="w100 cover"
+                />
+            </div>
 
-            <b-col cols="10">
-        <h3 class="bold" :style="'color:' + action.project.color">
-            ACTION {{ action.code }}
-        </h3>
+            <div>
+                <h3 class="bold" :style="'color:' + action.project.color">
+                    ACTION {{ action.code }}
+                </h3>
 
-        <h4 class="bold">
-            {{ action.name }}
-        </h4>
-        <h6>{{ action.orientation }}</h6>
-            </b-col>
-        </b-row>
+                <h4 class="bold">
+                    {{ action.name }}
+                </h4>
+                <h6>{{ action.orientation }}</h6>
+            </div>
+        </div>
 
         <flatCard
             :action="action.authors"
@@ -31,25 +34,19 @@
             :color="action.project.color"
         />
 
-        <h5
-            class="my-4 action-title"
-            :style="'background-color:' + action.project.color"
-        >
-            <font-awesome-icon icon="plug" />
-            Description
-        </h5>
+        <flatCard
+            :text="action.description"
+            icon="plug"
+            title="Description"
+            :color="action.project.color"
+        />
 
-        <div v-html="action.description"></div>
-
-        <h5
-            class="my-4 action-title"
-            :style="'background-color:' + action.project.color"
-        >
-            <font-awesome-icon icon="tachometer-alt" />
-            Indicateur
-        </h5>
-
-        <p>{{ action.indicator }}</p>
+        <flatCard
+            :text="action.indicator"
+            icon="tachometer-alt"
+            title="Indicateur"
+            :color="action.project.color"
+        />
 
         <h5
             class="my-4 action-title"

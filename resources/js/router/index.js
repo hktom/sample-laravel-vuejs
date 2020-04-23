@@ -1,6 +1,7 @@
-import HomePage from '../page/HomePage'
-import ActionPage from '../page/ActionPage'
-import ProjectPage from '../page/ProjectPage'
+import Action from '../page/Action'
+import Project from '../page/Project'
+import Contact from '../page/Contact'
+import showAction from '../page/action/showAction'
 import showProject from '../page/project/showProject'
 
 
@@ -8,12 +9,12 @@ export const routes = [
     {
         path:'/',
         name:'home',
-        component:HomePage
+        component:Action
     },
     {
         path:'/champ-d-applications',
         name:'project',
-        component:ProjectPage
+        component:Project
     },
     {
         path:'/champ-d-application/:id',
@@ -23,6 +24,11 @@ export const routes = [
     {
         path:'/action/:id',
         name:'showAction',
-        component:ActionPage,
+        component:showAction,
+    },
+    {
+        path:'/contact',
+        name:'contact',
+        component:Contact,
     }
 ];

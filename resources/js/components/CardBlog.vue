@@ -36,9 +36,7 @@
                   (<span v-for="(author, count) in article.authors" :key="author.id+'_'"><span class="fs0-9" v-if="!author.is_a_person">{{author.name.trim()}}<span v-if="count+1 < article.authors.length">,</span></span></span>)
 
               </p>
-              <p>
-                  {{ article.short_description.slice(0, 255) }} ...
-              </p>
+              <p v-html="article.short_description.slice(0, 255)+'...'"></p>
 
             <b-button pill style="background-color:#05668D">
                 <div class="card-link">

@@ -1,14 +1,14 @@
 <template>
     <div class="w100">
-      <b-row class="w80 mauto">
-        <b-col xs="12" lg="3" class="">
+      <b-row class="w80 mauto vls-w75 ms-w100 ss-w100">
+        <b-col xs="12" lg="3" class="my-2">
           <b-input id="inline-form-input-name" style="height:34px" placeholder="Mot clé, nom Entier"
           v-model="search"
           @input="research"
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="3" class="">
+        <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
             placeholder="Echelle"
             :options="option_echelle"
@@ -17,7 +17,7 @@
           />
         </b-col>
 
-        <b-col xs="12" md="12" lg="6" class="">
+        <b-col xs="12" md="12" lg="6" class="my-2">
           <v-select placeholder="Les Contributeurs"
           :options="option_actors"
           :value="$store.action_filter"
@@ -27,7 +27,7 @@
 
       </b-row>
 
-      <b-row class="w80 mauto">
+      <b-row class="w80 mauto vls-w75 ms-w100 ss-w100">
     <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
             placeholder="Status"
