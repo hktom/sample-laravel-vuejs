@@ -30,10 +30,8 @@
 
               <p>
                   Elaboré(e) par
-                  <span v-for="author in article.authors" :key="author.id">
-                  <span class="fs0-9" v-if="author.is_a_person"> {{author.name}}/</span></span>
-
-                  (<span v-for="(author, count) in article.authors" :key="author.id+'_'"><span class="fs0-9" v-if="!author.is_a_person">{{author.name.trim()}}<span v-if="count+1 < article.authors.length">,</span></span></span>)
+                  <Structure view="2" :collection="article.authors"/>
+                  <span v-if="organisations.length > 0">(<Structure view="3" :collection="article.authors"/>)</span>
 
               </p>
               <p v-html="article.short_description.slice(0, 255)+'...'"></p>
@@ -60,11 +58,16 @@
 </template>
 
 <script>
+import Structure from "./Structure";
 export default {
+    components:{
+        Structure
+    },
 props: ['article'],
 data: function(){
     return {
-
+        users: [],
+        organisations: [],
     }
 },
 
@@ -77,7 +80,21 @@ methods:{
     seeAction(articleId){
         return this.$router.push({ name: 'showAction', params: { id: articleId } });
         //return this.$router.push({ path: `/action/${articleId}`});
-    }
+    },
+
+    fill() {
+            this.article.authors.map((item) => {
+                if(item.is_a_person) {
+                    this.users.push(item);
+                } else {
+                    this.organisations.push(item);
+                }
+            });
+        },
+},
+
+mounted(){
+    this.fill();
 }
 
 

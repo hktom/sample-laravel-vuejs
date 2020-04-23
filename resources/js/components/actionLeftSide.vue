@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="d-flex flex-row bd-highlight align-items-top">
-            <div class="x8 pr-2">
+            <div class="x20 pr-2">
                 <img
                     :src="'/img/' + action.project.id + '.png'"
                     class="w100 cover"

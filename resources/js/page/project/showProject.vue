@@ -6,7 +6,7 @@
             <HeaderPage />
             <div>
                 <Baniere
-                     btnbackText="Revenir aux champs d'applications"
+                    btnbackText="Revenir aux champs d'applications"
                     :baniere="'/uploads/' + project.image"
                     :btnback="true"
                 />
@@ -14,19 +14,31 @@
                 <div class="w80 px-3 mauto my-5 vls-w75 ms-w100 ss-w100">
                     <b-row>
                         <b-col lg="8" md="12">
-                            <!-- <actionLeftSide :action="action"/> -->
-                            <h3
-                                :style="'color:' + project.color"
-                                class="uppercase bold"
+                            <div
+                                class="d-flex flex-row bd-highlight align-items-top"
                             >
-                                <img
-                                    :src="'/uploads/' + project.icon"
-                                    class="x10"
-                                />
-                                {{ project.ca_principal }}
-                            </h3>
+                                <div class="x8 pr-2">
+                                    <img
+                                        :src="
+                                            '/img/' + project.id + '.png'
+                                        "
+                                        class="w100 cover"
+                                    />
+                                </div>
 
-                            <h3 class="uppercase bold">{{ project.name }}</h3>
+                                <div>
+                                    <h3
+                                        class="bold"
+                                        :style="'color:' + project.color"
+                                    >
+                                        {{ project.ca_principal }}
+                                    </h3>
+
+                                    <h4 class="bold">
+                                        {{ project.name }}
+                                    </h4>
+                                </div>
+                            </div>
 
                             <div v-if="project.introduction != null">
                                 <h6 class="bold uppercase my-4">
@@ -91,7 +103,6 @@
                                 />
                             </div>
 
-
                             <DropDownCard
                                 :articles="project.news"
                                 :color="project.color"
@@ -121,10 +132,9 @@
 
                             <div>
                                 <h5
-                                    class="mt-4 action-title block"
+                                    class="mt-4 mb0 action-title block"
                                     :style="'background-color:' + project.color"
                                 >
-                                    <!-- <font-awesome-icon icon="user" /> -->
                                     Vision
                                 </h5>
                                 <b-card>
@@ -165,12 +175,14 @@ import projectTable from "../../components/projectTable";
 import DropDown from "../../components/DropDown";
 import DropDownCard from "../../components/DropDownCard";
 import Structure from "../../components/Structure";
+import flatCard from "../../components/flatCard";
 export default {
     components: {
         projectTable,
         DropDown,
         DropDownCard,
-        Structure
+        Structure,
+        flatCard
     },
     mounted() {
         this.$store.commit("SHOW_PROJECT", this.$route.params.id);

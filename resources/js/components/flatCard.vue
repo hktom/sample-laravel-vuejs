@@ -6,19 +6,12 @@
                 {{ title }}
             </h5>
 
-          <div>
-
-                <span v-for="author in action" :key="author.id+'_'">
-                  <span v-if="author.is_a_person"> {{author.name}}/</span>
-                </span>
-
-                 <span v-if="action.length>0">
-                      (<span v-for="(author, count) in action" :key="author.id">
-                    <span v-if="!author.is_a_person">{{author.name}}<span v-if="count+1 < action.length">,</span></span></span>)
-                 </span>
-
-          </div>
-
+            <div>
+                <Structure view="2" :collection="action" />
+                <span v-if="organisations.length > 0"
+                    >(<Structure view="3" :collection="action" />)</span
+                >
+            </div>
         </div>
 
         <div v-else>
@@ -32,15 +25,42 @@
 </template>
 
 <script>
+import Structure from "./Structure";
 export default {
+    components: {
+        Structure
+    },
     name: "flatCard",
-    props: ["icon", "color", "action", "text", "title"]
+    props: ["icon", "color", "action", "text", "title"],
+    data: function() {
+        return {
+            users: [],
+            organisations: []
+        };
+    },
+
+    mounted() {
+        if (this.action != null) {
+            this.fill();
+        }
+    },
+
+    methods: {
+        fill() {
+            this.action.map(item => {
+                if (item.is_a_person) {
+                    this.users.push(item);
+                } else {
+                    this.organisations.push(item);
+                }
+            });
+        }
+    }
 };
 </script>
 
 <style>
-#paragraph *{
+#paragraph * {
     text-align: justify !important;
 }
 </style>
-

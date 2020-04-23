@@ -1,26 +1,22 @@
 <template>
     <span v-if="view == 1">
         <span v-for="(item, count) in users" :key="item.id"
-            > {{item.name.trim()}}<span v-if="count + 1 < users.length">,</span>
-        </span>
+            >{{item.name.trim()}}{{ count+1 < users.length?',':''}}</span>
     </span>
 
     <span v-else-if="view == 2">
         <span v-for="(item, count) in users" :key="item.id"
-            > {{item.name.trim()}}<span v-if="count + 1 < users.length">/</span>
-        </span>
+            >{{item.name.trim()}}{{ count+1 < users.length?'/':''}}</span>
     </span>
 
     <span v-else-if="view == 3">
         <span v-for="(item, count) in organisations" :key="item.id"
-            > {{item.name.trim()}}<span v-if="count + 1 < organisations.length">,</span>
-        </span>
+            >{{item.name.trim()}}{{ count+1 < organisations.length?',': ''}}</span>
     </span>
 
     <span v-else>
         <span v-for="(item, count) in organisations" :key="item.id"
-            > {{item.name.trim()}}<span v-if="count + 1 < organisations.length">/</span>
-        </span>
+            >{{item.name.trim()}}{{ count+1 < organisations.length?'/':''}}</span>
     </span>
 </template>
 
