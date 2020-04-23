@@ -50,12 +50,12 @@ class ProjectController extends AdminController
         $show->field('ca_principal', __('Code'));
         $show->field('name', __('Name'));
         $show->field('created_at', __('Date création'));
-        $show->textarea('vision', __('Vision'));
+        $show->ckeditor('vision', __('Vision'));
         $show->ckeditor('intro', __('Introduction'));
         $show->ckeditor('context', __('Contexte'));
-        $show->textarea('to_know', __('Pour connaitre'));
-        $show->textarea('to_enrich', __('Pour enrichir'));
-        $show->textarea('to_value', __('Pour valoriser'));
+        $show->ckeditor('to_know', __('Pour connaitre'));
+        $show->ckeditor('to_enrich', __('Pour enrichir'));
+        $show->ckeditor('to_value', __('Pour valoriser'));
         //$show->field('image', __('Image'));
         //$show->field('updated_at', __('Updated at'));
 
@@ -73,12 +73,12 @@ class ProjectController extends AdminController
         $form->setTitle("Nouveau");
         $form->text('ca_principal', __('Code'))->creationRules("required|unique:projects");
         $form->text('name', __('Name'))->creationRules("required|unique:projects");
-        $form->textarea('vision', __('Vision'));
+        $form->ckeditor('vision', __('Vision'));
         $form->ckeditor('intro', __('Introduction'));
         $form->ckeditor('context', __('Contexte'));
-        $form->textarea('to_know', __('Pour connaitre'));
-        $form->textarea('to_enrich', __('Pour enrichir'));
-        $form->textarea('to_value', __('Pour valoriser'));
+        $form->ckeditor('to_know', __('Pour connaitre'));
+        $form->ckeditor('to_enrich', __('Pour enrichir'));
+        $form->ckeditor('to_value', __('Pour valoriser'));
         $form->multipleSelect("actors", "Contributeurs")->options('App\Actor'::all()->pluck('name', 'id'));
 
         $form->multipleSelect("news", "Nouveautés")->options('App\Action'::all()->pluck('code', 'id'));

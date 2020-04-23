@@ -132,8 +132,7 @@
                                     Vision
                                 </h5>
                                 <b-card>
-                                    <b-card-text>
-                                        {{ project.vision }}
+                                    <b-card-text v-html="project.vision">
                                     </b-card-text>
                                 </b-card>
                             </div>
