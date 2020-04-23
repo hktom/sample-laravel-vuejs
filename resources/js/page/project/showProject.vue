@@ -17,19 +17,15 @@
                             <div
                                 class="d-flex flex-row bd-highlight align-items-top"
                             >
-                                <div class="x8 pr-2">
-                                    <img
-                                        :src="
-                                            '/img/' + project.id + '.png'
-                                        "
+                                <div class="pr-2" style="width:150px">
+                                    <img :src="'/img/' + project.id + '.png'"
                                         class="w100 cover"
                                     />
                                 </div>
 
                                 <div>
-                                    <h3
-                                        class="bold"
-                                        :style="'color:' + project.color"
+                                    <h3 class="bold"
+                                    :style="'color:' + project.color"
                                     >
                                         {{ project.ca_principal }}
                                     </h3>

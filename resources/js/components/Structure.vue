@@ -1,20 +1,20 @@
 <template>
-    <span v-if="view == 1">
+    <span v-if="view == 1" class="structure">
         <span v-for="(item, count) in users" :key="item.id"
             >{{item.name.trim()}}{{ count+1 < users.length?',':''}}</span>
     </span>
 
-    <span v-else-if="view == 2">
+    <span v-else-if="view == 2" class="structure">
         <span v-for="(item, count) in users" :key="item.id"
             >{{item.name.trim()}}{{ count+1 < users.length?'/':''}}</span>
     </span>
 
-    <span v-else-if="view == 3">
+    <span v-else-if="view == 3" class="structure">
         <span v-for="(item, count) in organisations" :key="item.id"
             >{{item.name.trim()}}{{ count+1 < organisations.length?',': ''}}</span>
     </span>
 
-    <span v-else>
+    <span v-else class="structure">
         <span v-for="(item, count) in organisations" :key="item.id"
             >{{item.name.trim()}}{{ count+1 < organisations.length?'/':''}}</span>
     </span>
@@ -49,4 +49,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.structure *{
+    white-space: nowrap;
+}
+</style>
