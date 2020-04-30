@@ -1,5 +1,10 @@
 <template>
     <div>
+        <vue-headful
+            title="Contact"
+            description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
+        />
+
         <HeaderPage />
 
         <div class="pb10">

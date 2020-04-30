@@ -1,10 +1,15 @@
 <template>
 
 <div>
+    <vue-headful
+            title="PLAN BIODIVERSITÉ 2020-2023 DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030"
+            description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
+        />
+
     <SpinnerGrow v-if="action_status==false" />
 
     <div v-else>
-       <HeaderPage />
+       <HeaderPage/>
 
       <div class="pb10">
 
@@ -27,9 +32,11 @@
         <div v-else v-for="action in actions" :key="action.id">
             <CardBlog :article="action"/>
         </div>
+
     </div>
 
-    <div class="w80 mauto mt3 vls-w70 ms-w100 ss-w100">
+    <div class="w80 mauto mt3 vls-w75 ms-w100 ss-w100 ofhidden">
+        <div>
         <pagination
         align="center"
         size="default"
@@ -42,6 +49,7 @@
             <font-awesome-icon icon="chevron-right" />
         </span>
         </pagination>
+    </div>
     </div>
 
   </div>

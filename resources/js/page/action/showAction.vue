@@ -1,5 +1,10 @@
 <template>
     <div>
+        <vue-headful
+            :title="action.name"
+            description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
+        />
+
         <SpinnerGrow v-if="action_status == false" />
 
         <div v-else>

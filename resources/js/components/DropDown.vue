@@ -26,7 +26,7 @@ export default {
     props:["color", "text", "title"],
     data: function() {
         return {
-            dropdown: false
+            dropdown: true
         };
     },
 

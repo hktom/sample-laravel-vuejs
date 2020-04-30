@@ -17,6 +17,7 @@ class ActorResource extends JsonResource
         return [
             'id' => $this->id,
             'name' => $this->name,
+            'sigle' => $this->sigle,
             'is_a_person' => $this->is_a_person
         ];
     }

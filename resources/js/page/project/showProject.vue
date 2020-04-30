@@ -1,5 +1,10 @@
 <template>
     <div>
+        <vue-headful
+            :title="project.name"
+            description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
+        />
+
         <SpinnerGrow v-if="project_status == false" />
 
         <div v-else>
@@ -24,22 +29,22 @@
                                 </div>
 
                                 <div>
-                                    <h3 class="bold"
+                                    <h1 class="bold fs1-3"
                                     :style="'color:' + project.color"
                                     >
                                         {{ project.ca_principal }}
-                                    </h3>
+                                    </h1>
 
-                                    <h4 class="bold">
+                                    <h1 class="bold fs1-3">
                                         {{ project.name }}
-                                    </h4>
+                                    </h1>
                                 </div>
                             </div>
 
                             <div v-if="project.introduction != null">
-                                <h6 class="bold uppercase my-4">
+                                <h2 class="bold uppercase my-4 fs1-2">
                                     Introduction
-                                </h6>
+                                </h2>
 
                                 <div>
                                     <div v-html="project.introduction"></div>
@@ -47,7 +52,7 @@
                             </div>
 
                             <div v-if="project.context != null">
-                                <h6 class="bold uppercase my-4">Contexte</h6>
+                                <h2 class="bold uppercase my-4 fs1-2">Contexte</h2>
 
                                 <div v-if="readmore">
                                     <div
@@ -69,9 +74,9 @@
                                 </div>
                             </div>
 
-                            <h6 class="bold my-4 uppercase">
+                            <h2 class="bold my-4 uppercase fs1-2">
                                 Ce que prévoit le Plan Biodiversité 2020-2023
-                            </h6>
+                            </h2>
 
                             <div v-if="project.to_know != null" class="my-4">
                                 <DropDown
@@ -127,12 +132,12 @@
                             </div>
 
                             <div>
-                                <h5
-                                    class="mt-4 mb0 action-title block"
+                                <h3
+                                    class="mt-4 mb0 action-title block fs1"
                                     :style="'background-color:' + project.color"
                                 >
                                     Vision
-                                </h5>
+                                </h3>
                                 <b-card>
                                     <b-card-text v-html="project.vision">
                                     </b-card-text>
@@ -140,13 +145,13 @@
                             </div>
 
                             <div class="mt-4">
-                                <h5
-                                    class="mt-4 mb0 action-title block"
+                                <h3
+                                    class="mt-4 mb0 action-title block fs1"
                                     :style="'background-color:' + project.color"
                                 >
                                     <font-awesome-icon icon="user" />
                                     Contributeurs
-                                </h5>
+                                </h3>
 
                                 <b-card>
                                     <b-card-text>

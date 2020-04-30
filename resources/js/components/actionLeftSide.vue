@@ -9,14 +9,14 @@
             </div>
 
             <div>
-                <h3 class="bold" :style="'color:' + action.project.color">
+                <h1 class="bold fs1-4" :style="'color:' + action.project.color">
                     ACTION {{ action.code }}
-                </h3>
+                </h1>
 
-                <h4 class="bold">
+                <h1 class="bold fs1-4">
                     {{ action.name }}
-                </h4>
-                <h6>{{ action.orientation }}</h6>
+                </h1>
+                <h2 class="fs0-9">{{ action.orientation }}</h2>
             </div>
         </div>
 

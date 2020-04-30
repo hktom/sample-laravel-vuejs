@@ -1,5 +1,10 @@
 <template>
     <div>
+        <vue-headful
+            title="Champs d'application"
+            description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
+        />
+
         <SpinnerGrow v-if="project_status == false" />
         <div v-else>
             <HeaderPage />

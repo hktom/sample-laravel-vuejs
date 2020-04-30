@@ -1,31 +1,31 @@
 <template>
     <div class="px-3">
         <b-row>
-            <b-col lg="6" class="calendar my-1">
-                <h6 :style="'color:'+color" class="text-center">2020</h6>
+            <b-col lg="12" class="calendar my-1">
+                <h6 :style="'color:'+color" class="text-left px-3">2020</h6>
                 <div v-for="item in items" :key="item.id+'_2020'">
-                <div class="py-3 px-3">{{item.year_2020}} </div>
+                <div class="py-1 px-3">{{item.year_2020}} </div>
                 </div>
             </b-col>
 
-            <b-col lg="6" class="calendar my-1">
-                <h6 :style="'color:'+color" class="text-center">2021</h6>
+            <b-col lg="12" class="calendar my-1">
+                <h6 :style="'color:'+color" class="text-left px-3">2021</h6>
                 <div v-for="item in items" :key="item.id+'_2021'">
-                <div class="py-3 px-3">{{item.year_2021}} </div>
+                <div class="py-1 px-3">{{item.year_2021}} </div>
                 </div>
             </b-col>
 
-            <b-col lg="6" class="calendar my-1">
-                <h6 :style="'color:'+color" class="text-center">2022</h6>
+            <b-col lg="12" class="calendar my-1">
+                <h6 :style="'color:'+color" class="text-left px-3">2022</h6>
                 <div v-for="item in items" :key="item.id+'_2022'">
-                <div class="py-3 px-3">{{item.year_2022}} </div>
+                <div class="py-1 px-3">{{item.year_2022}} </div>
                 </div>
             </b-col>
 
-            <b-col lg="6" class="calendar my-1">
-                <h6 :style="'color:'+color" class="text-center">2023</h6>
+            <b-col lg="12" class="calendar my-1">
+                <h6 :style="'color:'+color" class="text-left px-3">2023</h6>
                 <div v-for="item in items" :key="item.id+'_2023'">
-                <div class="py-3 px-3">{{item.year_2023}} </div>
+                <div class="py-1 px-3">{{item.year_2023}} </div>
                 </div>
             </b-col>
 

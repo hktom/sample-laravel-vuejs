@@ -58,8 +58,8 @@ export default {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    -webkit-filter: blur(4px);
-    filter: blur(4px);
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
     transform: scale(1.1);
 }
 .text-header {
@@ -67,7 +67,7 @@ export default {
     text-shadow: 0 0 1em black;
     font-weight: normal; */
     /* font-weight: normal; */
-    color: #eee;
+    color: #fff /*#eee*/;
     text-shadow: 0 0 0.2em #000;
     font-size: 1.6rem;
 }

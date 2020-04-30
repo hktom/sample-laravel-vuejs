@@ -28,13 +28,13 @@
                       {{ article.name}}
               </h4>
 
-              <p>
+              <!-- <p>
                   Elaboré(e) par
                   <Structure view="2" :collection="article.authors"/>
                   <span v-if="organisations.length > 0">(<Structure view="3" :collection="article.authors"/>)</span>
 
-              </p>
-              <p v-html="article.short_description.slice(0, 255)+'...'"></p>
+              </p> -->
+              <p v-html="article.short_description+'...'"></p>
 
             <b-button pill style="background-color:#05668D">
                 <div class="card-link">

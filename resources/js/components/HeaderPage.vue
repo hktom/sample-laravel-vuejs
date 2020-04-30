@@ -1,9 +1,10 @@
 <template>
-    <div>
+    <div id="header">
         <div class="w80 mauto vls-w75 ms-w100 ss-w100">
             <b-navbar toggleable="lg" type="light">
                 <b-navbar-brand class="fs2 bold">
                     <router-link class="brand-title" to="/">
+                        <!-- logo with text  -->
                         <logo color="black" />
                     </router-link>
                 </b-navbar-brand>
@@ -58,8 +59,10 @@
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav class="ml-auto">
                         <b-nav-item>
-                            <router-link class="header-link" to="/"
-                                >Actions</router-link
+                            <router-link
+                            class="header-link"
+                            :to="{name:'home'}"
+                            >Actions</router-link
                             >
                         </b-nav-item>
 
@@ -88,6 +91,7 @@
 <script>
 import logo from "./logo";
 export default {
+    props:["action", "project", "contact"],
     name: "HeaderPage",
     components: {
         logo
@@ -114,6 +118,10 @@ export default {
     transition: 0.3s;
 }
 
+.side-active{
+    color: #f8d289;
+}
+
 .side-header-link:hover {
     text-decoration: none;
     color: #f8d289;
@@ -125,6 +133,10 @@ export default {
     font-weight: 400;
     text-transform: uppercase;
     font-size: 14px;
+}
+
+.active, .router-link-exact-active{
+    color: #17a2b8;
 }
 .header-link:hover {
     text-decoration: none;

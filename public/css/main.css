@@ -21,7 +21,7 @@
 
 
   *{font-family: primary !important;}
-  h1, h2, h3, h4, h5, h6{font-family: h1 !important;}
+  h1, h2, h3, h4, h5, h6, .title{font-family: h1 !important;}
 
   p, pre{
       width: 100% !important;
