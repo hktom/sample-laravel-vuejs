@@ -51,6 +51,7 @@ Vue.component('FooterPage', require('./components/FooterPage.vue').default);
 Vue.component('CardBlog', require('./components/CardBlog.vue').default);
 Vue.component('pagination', require('laravel-vue-pagination'));
 Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('pulse-loader', require('vue-spinner/src/PulseLoader.vue'));
 
 const app = new Vue({
     store,

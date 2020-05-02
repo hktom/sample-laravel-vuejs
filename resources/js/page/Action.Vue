@@ -35,7 +35,7 @@
 
     </div>
 
-    <div class="w80 mauto mt3 vls-w75 ms-w100 ss-w100 ofhidden">
+    <div class="w80 mauto mt3 vls-w75 ms-w100 ss-w100 ofhidden" v-if="pagination">
         <div>
         <pagination
         align="center"
@@ -89,6 +89,9 @@ export default {
   },
 
   computed: {
+    pagination(){
+        return this.$store.state.action.pagination;
+    },
     action_status() {
       return this.$store.state.action.status;
     },

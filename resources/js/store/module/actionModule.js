@@ -9,7 +9,8 @@ export const actionModule = {
         options: [],
         status: false,
         get_action:false,
-        error: '',
+        pagination:true,
+        error:'',
     },
     actions: {
         FILTER_ACTION: ({ commit }, payload) => {
@@ -63,6 +64,7 @@ export const actionModule = {
     },
     mutations: {
         FILTER_ACTION_BY_ACTOR: (state, payload) => {
+            state.pagination=false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -77,6 +79,7 @@ export const actionModule = {
 
         },
         FILTER_ACTION_BY_STATUS: (state, payload) => {
+            state.pagination=false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -90,6 +93,7 @@ export const actionModule = {
             state.status = true;
         },
         FILTER_ACTION_BY_TYPE: (state, payload) => {
+            state.pagination=false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -102,6 +106,7 @@ export const actionModule = {
             state.status = true;
         },
         FILTER_ACTION_BY_ECHELLE: (state, payload) => {
+            state.pagination=false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -115,6 +120,7 @@ export const actionModule = {
         },
 
         FILTER_ACTION_BY_PROJECT: (state, payload) => {
+            state.pagination=false;
             state.status = false;
             state.item = [];
             state.all_actions.map((item) => {
@@ -126,6 +132,7 @@ export const actionModule = {
         },
 
         FIND_ACTION: (state, payload) => {
+            state.pagination=false;
             state.status = false;
             state.item = [];
             state.all_actions.map((item) => {
@@ -139,6 +146,7 @@ export const actionModule = {
         },
 
         SET_ACTION_DEFAULT: state => {
+            state.pagination=true;
             state.item = state.actions.data;
         },
 

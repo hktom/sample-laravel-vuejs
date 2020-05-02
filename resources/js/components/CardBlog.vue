@@ -1,30 +1,31 @@
 <template>
 <div v-scroll-reveal>
-  <div id="cardBlog" class="py-4 px-4 cursor-pointer" @click="seeAction(article.slug)">
+  <div id="cardBlog" class="py-4 px-4 cursor-pointer">
       <!-- <h1>{{article}}</h1> -->
       <b-row>
-          <b-col lg="3" md="12">
+          <b-col lg="3" md="12" @click="seeAction(article.slug)">
               <img :src="'uploads/'+article.project.icon" style="" class="w100 vls-p50 cover center"/>
           </b-col>
 
           <b-col lg="9" md="12">
 
               <div>
-                  <h4 class="bold inline-block" :style="'font-weight:bold;color:'+article.project.color">
+                  <h4 class="bold inline-block" :style="'font-weight:bold;color:'+article.project.color" @click="seeAction(article.slug)">
                       ACTION {{ article.code }}
                   </h4>
 
                   <b-badge variant="light">
 
                           <!-- <font-awesome-icon icon="check-circle" :style="{ color: '#05668D' }" /> -->
-                      <span class="fs1-2" :style="{color: '#05668D'}">
-                          {{ filter=="champ d'application"? `${article.project.name}` :filter }}
+                      <span class="fs1-2 cursor-pointer card-field-link" @click="seeField(article.project.slug)">
+                          {{ article.project.name }}
+                          <!-- {{ filter=="champ d'application"? `${article.project.name}` :filter }} -->
                       </span>
 
                   </b-badge>
               </div>
 
-              <h4 class="bold" style="font-weight:bold">
+              <h4 class="bold" style="font-weight:bold" @click="seeAction(article.slug)">
                       {{ article.name}}
               </h4>
 
@@ -34,9 +35,11 @@
                   <span v-if="organisations.length > 0">(<Structure view="3" :collection="article.authors"/>)</span>
 
               </p> -->
-              <p v-html="article.short_description+'...'"></p>
+              <p
+              @click="seeAction(article.slug)"
+              v-html="article.short_description+'...'"></p>
 
-            <b-button pill style="background-color:#05668D">
+            <b-button pill style="background-color:#05668D" @click="seeAction(article.slug)" class="btn-card-link">
                 <div class="card-link">
                 Details de l'action
                 <font-awesome-icon
@@ -78,7 +81,12 @@ computed:{
 },
 methods:{
     seeAction(articleId){
-        return this.$router.push({ name: 'showAction', params: { id: articleId } });
+        return this.$router.push({ name: 'showAction', params: { id: slug } });
+        //return this.$router.push({ path: `/action/${articleId}`});
+    },
+
+    seeField(slug){
+        return this.$router.push({ name: 'showProject', params: { id: slug } });
         //return this.$router.push({ path: `/action/${articleId}`});
     },
 
@@ -144,6 +152,18 @@ mounted(){
     /* background-color: #17A2B8;
     color: white; */
     color: #17A2B8;
+}
+
+.card-field-link{
+    color: #05668D;
+}
+
+.card-field-link:hover{
+    color: #07363D;
+}
+
+.btn-card-link:hover{
+    background-color: #07363D !important;
 }
 
 </style>

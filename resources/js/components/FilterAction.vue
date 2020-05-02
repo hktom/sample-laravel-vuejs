@@ -2,7 +2,7 @@
     <div class="w100">
       <b-row class="w80 mauto vls-w75 ms-w100 ss-w100">
         <b-col xs="12" lg="3" class="my-2">
-          <b-input id="inline-form-input-name" style="height:34px" placeholder="Mot clé, nom Entier"
+          <b-input id="inline-form-input-name" style="height:34px;background-color:#F8F8F8" placeholder="Nom de l'action"
           v-model="search"
           @input="research"
           />
@@ -10,15 +10,19 @@
 
         <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
+          style="background-color:#F8F8F8"
             placeholder="Echelle"
             :options="option_echelle"
              :value="$store.action_filter"
              @input="action_set_filter"
+             transition="fade"
           />
         </b-col>
 
         <b-col xs="12" md="12" lg="6" class="my-2">
-          <v-select placeholder="Les Contributeurs"
+          <v-select
+          style="background-color:#F8F8F8"
+          placeholder="Les Contributeurs"
           :options="option_actors"
           :value="$store.action_filter"
           @input="action_set_filter"
@@ -30,6 +34,7 @@
       <b-row class="w80 mauto vls-w75 ms-w100 ss-w100">
     <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
+            style="background-color:#F8F8F8"
             placeholder="Status"
             :options="option_status"
              :value="$store.action_filter"
@@ -39,6 +44,7 @@
 
          <b-col xs="12" md="12" lg="3" class="my-2">
           <v-select
+            style="background-color:#F8F8F8"
             placeholder="Type"
             :options="option_type"
              :value="$store.action_filter"
@@ -49,6 +55,7 @@
 
          <b-col xs="12" md="12" lg="6" class="my-2">
           <v-select
+            style="background-color:#F8F8F8"
             placeholder="Les champs d'application"
             :options="option_ACTIONs"
              :value="$store.action_filter"

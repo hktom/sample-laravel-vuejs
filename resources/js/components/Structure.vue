@@ -15,15 +15,13 @@
 
     <span v-else-if="view == 3" class="structure">
         <span v-for="(item, count) in organisations" :key="item.id"
-            >{{ _sigle(item)
-            }}{{ count + 1 < organisations.length ? "," : "" }}</span
+            ><span class="cursor-pointer" v-if="item.sigle!=null" v-b-tooltip.hover :title="item.name" variant="light">{{item.sigle}}</span><span v-else>{{item.name}}</span>{{ count + 1 < organisations.length ? "," : "" }}</span
         >
     </span>
 
     <span v-else class="structure">
         <span v-for="(item, count) in organisations" :key="item.id"
-            >{{ _sigle(item)
-            }}{{ count + 1 < organisations.length ? "/" : "" }}</span
+            ><span class="cursor-pointer" v-if="item.sigle!=null" v-b-tooltip.hover :title="item.name" variant="light">{{item.sigle}}</span><span v-else>{{item.name}}</span>{{ count + 1 < organisations.length ? "/" : "" }}</span
         >
     </span>
 </template>
@@ -41,21 +39,6 @@ export default {
     computed: {},
 
     methods: {
-        _sigle(item) {
-            // if (item.sigle != "" || item.sigle.length <= 0) {
-            //     return (
-            //         <div class="tooltip">
-            //            {{ item.sigle }}}
-            //             <span class="tooltiptext">{{item.name}}</span>
-            //         </div>
-            //     );
-            // } else {
-            //     return item.name;
-            // }
-
-            return item.sigle!=''||item.length<=1?item.sigle:item.name;
-        },
-
         fill() {
             this.collection.map(item => {
                 if (item.is_a_person) {
@@ -77,7 +60,7 @@ export default {
     /* white-space: nowrap; */
 }
 
-.tooltip {
+/* .tooltip {
     position: relative;
     display: inline-block;
     border-bottom: 1px dotted black;
@@ -91,13 +74,11 @@ export default {
     text-align: center;
     border-radius: 6px;
     padding: 5px 0;
-
-    /* Position the tooltip */
     position: absolute;
     z-index: 1;
 }
 
 .tooltip:hover .tooltiptext {
     visibility: visible;
-}
+} */
 </style>
