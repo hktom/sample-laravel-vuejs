@@ -80,7 +80,7 @@ computed:{
     }
 },
 methods:{
-    seeAction(articleId){
+    seeAction(slug){
         return this.$router.push({ name: 'showAction', params: { id: slug } });
         //return this.$router.push({ path: `/action/${articleId}`});
     },
