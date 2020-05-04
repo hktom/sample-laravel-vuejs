@@ -2,7 +2,7 @@
     <div class="w100">
       <b-row class="w80 mauto vls-w75 ms-w100 ss-w100">
         <b-col xs="12" lg="3" class="my-2">
-          <b-input id="inline-form-input-name" style="height:34px;background-color:#F8F8F8" placeholder="Nom de l'action"
+          <b-input id="inline-form-input-name" style="height:34px;background-color:#F8F8F8" placeholder="Rechercher Action"
           v-model="search"
           @input="research"
           />

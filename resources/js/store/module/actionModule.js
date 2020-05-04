@@ -4,13 +4,13 @@ export const actionModule = {
     state: {
         item: [],
         actions: {},
-        action:{},
+        action: {},
         all_actions: {},
         options: [],
         status: false,
-        get_action:false,
-        pagination:true,
-        error:'',
+        get_action: false,
+        pagination: true,
+        error: '',
     },
     actions: {
         FILTER_ACTION: ({ commit }, payload) => {
@@ -64,7 +64,7 @@ export const actionModule = {
     },
     mutations: {
         FILTER_ACTION_BY_ACTOR: (state, payload) => {
-            state.pagination=false;
+            state.pagination = false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -79,7 +79,7 @@ export const actionModule = {
 
         },
         FILTER_ACTION_BY_STATUS: (state, payload) => {
-            state.pagination=false;
+            state.pagination = false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -93,7 +93,7 @@ export const actionModule = {
             state.status = true;
         },
         FILTER_ACTION_BY_TYPE: (state, payload) => {
-            state.pagination=false;
+            state.pagination = false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -106,7 +106,7 @@ export const actionModule = {
             state.status = true;
         },
         FILTER_ACTION_BY_ECHELLE: (state, payload) => {
-            state.pagination=false;
+            state.pagination = false;
             state.status = false;
             state.item = [];
             state.all_actions.map((action) => {
@@ -120,7 +120,7 @@ export const actionModule = {
         },
 
         FILTER_ACTION_BY_PROJECT: (state, payload) => {
-            state.pagination=false;
+            state.pagination = false;
             state.status = false;
             state.item = [];
             state.all_actions.map((item) => {
@@ -132,12 +132,16 @@ export const actionModule = {
         },
 
         FIND_ACTION: (state, payload) => {
-            state.pagination=false;
+            state.pagination = false;
             state.status = false;
             state.item = [];
             state.all_actions.map((item) => {
 
-                if (item.name.toLowerCase().search(payload.toLowerCase()) !== -1) {
+                var name = item.name.toLowerCase();
+                var description = item.short_description.toLowerCase();
+                var str = payload.toLowerCase();
+
+                if (name.search(str) > -1 || description.search(str) >-1) {
                     state.item.push(item);
                 }
             });
@@ -146,7 +150,7 @@ export const actionModule = {
         },
 
         SET_ACTION_DEFAULT: state => {
-            state.pagination=true;
+            state.pagination = true;
             state.item = state.actions.data;
         },
 
@@ -175,11 +179,11 @@ export const actionModule = {
                 })
         },
         SHOW_ACTION: (state, payload) => {
-            state.get_action=false;
+            state.get_action = false;
             axios.get(`/api/actions/${payload}`)
                 .then(function (res) {
                     state.action = res.data.data[0]
-                    state.get_action=true;
+                    state.get_action = true;
                 })
                 .catch(function (error) {
                     state.error = error;

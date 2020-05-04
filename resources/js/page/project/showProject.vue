@@ -107,7 +107,7 @@
                             <DropDownCard
                                 :articles="project.news"
                                 :color="project.color"
-                                title="Les actions du CA4 en un coup d’œil"
+                                :title="'Les actions du '+project.ca_principal+' en un coup d’œil'"
                                 iconColor="eye"
                                 subtitle="Les actions sur fond coloré sont prioritaires."
                                 cardTitle="nouveautés"
@@ -190,7 +190,7 @@ export default {
     },
     computed: {
         project() {
-            return this.$store.state.project.project[0];
+            return this.$store.state.project.project;
         },
         project_status() {
             return this.$store.state.project.get_project;

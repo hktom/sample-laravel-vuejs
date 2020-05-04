@@ -4,7 +4,7 @@
             <!-- color logo -->
             <div v-if="color == 'black'">
                 <img
-                    style="width:30px;vertical-align: inherit"
+                    style="width:30px;vertical-align: top;"
                     class="mr-2"
                     src="/img/plan_biodiversite_logo.png"
                 />
@@ -22,13 +22,8 @@
             <span
             v-if="color == 'black'"
                 :class="color + ' mx-0 px-0  fs0-4 bold inline-block ss-fs0-2 title'"
-                style=""
-            >
-
-            PLAN BIODIVERSITÉ 2020-2023 <br />
-                DE LA STRATÉGIE BIODIVERSITÉ <br />
-                GENÈVE 2030
-
+                style="line-height: 1rem !important;"
+            >PLAN BIODIVERSITÉ 2020-2023 <br /> DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030
             </span>
 
             <h6

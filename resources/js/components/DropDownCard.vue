@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="title != null">
-            <h3 class="mt-4">
+            <h2 class="mt-4 fs1-2 uppercase">
                 <span :style="'color:' + color" v-if="iconColor != null">
                     <font-awesome-icon :icon="iconColor" />
                 </span>
@@ -10,9 +10,9 @@
                     <font-awesome-icon :icon="iconColor" />
                 </span>
                 {{ title }}
-            </h3>
+            </h2>
 
-            <h3 v-if="subtitle != null">{{ subtitle }}</h3>
+            <!-- <h2 v-if="subtitle != null">{{ subtitle }}</h2> -->
         </div>
 
             <div>
@@ -55,28 +55,15 @@
                     class="table cursor-pointer"
                     @click="goTo(item.slug, route)"
                 >
-                    <p v-if="route == 'showProject'" class="table-row">
+                    <p v-if="route == 'showProject'" class="table-row text-left">
                         {{ item.id }} {{ item.name }}
                     </p>
 
-                    <p v-else class="table-row">
+                    <p v-else class="table-row text-left">
                         {{ item.code }} {{ item.label }}
                     </p>
                 </div>
             </div>
-
-
-        <!-- <DropDownCard
-:articles="project.news"
-:color="project.color"
-title="Les actions du CA4 en un coup d’œil"
-icon="eye"
-iconColor="eye"
-subtitle="Les actions sur fond coloré sont prioritaires."
-cardTitle="nouveautés"
-slug=""
-route="showAction"
-/> -->
     </div>
 </template>
 

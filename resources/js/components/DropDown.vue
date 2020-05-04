@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4
+        <h3
             @click="_dropdown"
             class="bold action-title cursor-pointer"
             :style="'background-color:' + color"
@@ -15,7 +15,7 @@
             />
 
             <font-awesome-icon v-else icon="chevron-up" size="lg" class="" />
-        </h4>
+        </h3>
         <p style="transition:0.5s" v-if="dropdown" v-html="text" id="paragraph"></p>
     </div>
 </template>
