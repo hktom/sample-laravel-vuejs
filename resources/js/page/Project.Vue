@@ -1,7 +1,7 @@
 <template>
     <div>
         <vue-headful
-            title="Champs d'application"
+            title="Champs d'application | PLAN BIODIVERSITÉ 2020-2023 DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030"
             description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
         />
 
