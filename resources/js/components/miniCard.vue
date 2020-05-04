@@ -2,13 +2,14 @@
     <div>
         <!-- if double card equal false -->
         <div v-if="!doubleCard">
-            <h5
+            <h3
                 class="mt-4 mb-0 py-1 action-title block"
                 :style="'background-color:' + color"
             >
-                <font-awesome-icon :icon="icon" />
+                <!-- <font-awesome-icon :icon="icon" /> -->
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
                 {{ title }}
-            </h5>
+            </h3>
             <b-card bg-variant="default" class="py-0 my-0">
                 <b-card-text>
                     <div>
@@ -27,13 +28,14 @@
 
         <!-- if double card equal true-->
         <div v-else>
-            <h5
+            <h3
                 class="mt-4 mb-0 py-1 action-title block"
                 :style="'background-color:' + color"
             >
-                <font-awesome-icon :icon="icon" />
+                <!-- <font-awesome-icon :icon="icon" /> -->
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
                 {{ title }}
-            </h5>
+            </h3>
             <b-card bg-variant="default" class="py-0 my-0">
                 <b-card-text>
                     <!-- subtitle one -->

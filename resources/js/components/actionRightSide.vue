@@ -20,7 +20,7 @@
 
         <miniCard
             :action="action.echelles"
-            icon="dolly-flatbed"
+            icon="chair"
             title="Echelle"
             :color="action.project.color"
         />
@@ -29,7 +29,7 @@
             :doubleCard=true
             :action="action.responsables"
             :actiontwo="action.realisators"
-            icon="retweet"
+            icon="refresh"
             title="Mise en oeuvre"
             subone="Qui est responsable :"
             subtwo="Qui réalise :"

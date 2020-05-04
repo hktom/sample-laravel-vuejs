@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="title != null">
-            <h5 class="mt-4">
+            <h3 class="mt-4">
                 <span :style="'color:' + color" v-if="iconColor != null">
                     <font-awesome-icon :icon="iconColor" />
                 </span>
@@ -10,25 +10,26 @@
                     <font-awesome-icon :icon="iconColor" />
                 </span>
                 {{ title }}
-            </h5>
+            </h3>
 
-            <h6 v-if="subtitle != null">{{ subtitle }}</h6>
+            <h3 v-if="subtitle != null">{{ subtitle }}</h3>
         </div>
 
-        <b-row>
-            <b-col lg="12">
-                <h5
+            <div>
+                <h3
                     @click="toggleFields"
                     class="my-4 action-title cursor-pointer"
                     :style="'background-color:' + color"
                 >
 
-                    <font-awesome-icon
+                    <!-- <font-awesome-icon
                         v-if="icon!=null"
                         :icon="icon"
                         size="lg"
                         class=""
-                    />
+                    /> -->
+
+                    <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom" v-if="icon!=null"/>
 
                     {{ cardTitle }}
 
@@ -45,7 +46,7 @@
                         size="lg"
                         class=""
                     />
-                </h5>
+                </h3>
 
                 <div
                     v-if="fieldShow"
@@ -62,8 +63,8 @@
                         {{ item.code }} {{ item.label }}
                     </p>
                 </div>
-            </b-col>
-        </b-row>
+            </div>
+
 
         <!-- <DropDownCard
 :articles="project.news"
@@ -130,7 +131,7 @@ export default {
 }
 
 .table:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .table h6 {

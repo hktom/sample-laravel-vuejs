@@ -1,10 +1,11 @@
 <template>
     <div class="my-3">
         <div v-if="action != null">
-            <h5 class="my-1 action-title" :style="'background-color:' + color">
-                <font-awesome-icon :icon="icon" />
+            <h3 class="my-1 action-title" :style="'background-color:' + color">
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
+                <!-- <font-awesome-icon :icon="icon" /> -->
                 {{ title }}
-            </h5>
+            </h3>
 
             <div>
                 <Structure view="2" :collection="action" />
@@ -15,10 +16,11 @@
         </div>
 
         <div v-else>
-            <h5 class="my-2 action-title" :style="'background-color:' + color">
-                <font-awesome-icon :icon="icon" />
+            <h3 class="my-2 action-title" :style="'background-color:' + color">
+                <!-- <font-awesome-icon :icon="icon" /> -->
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
                 {{ title }}
-            </h5>
+            </h3>
             <p v-html="text" id="paragraph"></p>
         </div>
     </div>

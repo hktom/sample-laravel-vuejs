@@ -16,7 +16,7 @@
                 <h1 class="bold fs1-4">
                     {{ action.name }}
                 </h1>
-                <h2 class="fs0-9">{{ action.orientation }}</h2>
+                <p class="fs0-9">{{ action.orientation }}</p>
             </div>
         </div>
 
@@ -48,13 +48,14 @@
             :color="action.project.color"
         />
 
-        <h5
+        <h3
             class="my-4 action-title"
             :style="'background-color:' + action.project.color"
         >
-            <font-awesome-icon icon="calendar-alt" />
+            <!-- <font-awesome-icon icon="calendar-alt" /> -->
+            <img src="/img/icon/calendar-alt.png" style="width:20px" class="bottom"/>
             Calendrier Prévu
-        </h5>
+        </h3>
 
         <ActionCalendar
             :items="action.calendars"
@@ -64,7 +65,7 @@
         <DropDownCard
             :articles="action.projects"
             :color="action.project.color"
-            icon="palette"
+            icon="pointer"
             cardTitle="Champs d'application liés"
             route="showProject"
         />
@@ -72,7 +73,7 @@
         <DropDownCard
             :articles="action.actions_link"
             :color="action.project.color"
-            icon="compact-disc"
+            icon="refresh-alt"
             cardTitle="Actions liée"
             route="showAction"
         />
