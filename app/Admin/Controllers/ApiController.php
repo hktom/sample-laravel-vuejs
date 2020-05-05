@@ -40,7 +40,7 @@ class ApiController extends AdminController
     public function actions(Request $request)
     {
         $q = $request->get('q');
-        return 'App\Action'::where('name', 'like', "%$q%")->orWhere('id', $q)->paginate(null, ['id', 'name as text']);
+        return 'App\Action'::Where('id', $q)->orWhere("label", "like", "%$q%")->paginate(null, ['id', 'label as text']);
     }
 
     public function actors(Request $request)
