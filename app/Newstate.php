@@ -13,15 +13,15 @@ class Newstate extends Model
 
     public function actors()
     {
-        return $this->belongsToMany('App\Actors', 'newstates_actors');
+        return $this->belongsToMany('App\Actor', 'newstates_actors', 'newstates_id');
     }
 
-    public function firstFonctions()
+    public function fonct31()
     {
         return $this->hasMany('App\FirstFonction', 'state_id');
     }
 
-    public function secondFonctions()
+    public function fonct36()
     {
         return $this->hasMany('App\SecondFonction', 'state_id');
     }
@@ -36,7 +36,7 @@ class Newstate extends Model
         return $this->hasMany('App\Other', 'state_id');
     }
 
-    public function invets()
+    public function invests()
     {
         return $this->hasMany('App\invest', 'state_id');
     }

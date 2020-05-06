@@ -27,16 +27,20 @@ class AcquiredstateController extends AdminController
         $grid = new Grid(new Acquiredstate());
 
         $grid->column('id', __('Id'));
-        //$grid->column('sourcefinancing', __('Sourcefinancing'));
-        //$grid->column('actor_id', __('Actor id'));
-        $grid->column('action_id', __('Action id'));
-        $grid->column('fonction31', __('Fonct 31'));
-        $grid->column('fonction36', __('Fonct 36'));
-        $grid->column('ivest', __('Ivest'));
-        $grid->column('rpt_20_23', __('Rpt 20-23'));
+        $grid->column('action.label', "Action");
+        $grid->column('fonction31', __('Fonct 31'))->display(function ($fonction31) {
+            return $fonction31>0?$fonction31:"0";
+        });
+        $grid->column('fonction36', __('Fonct 36'))->display(function ($fonction36) {
+            return $fonction36>0?$fonction36:"0";
+        });
+        $grid->column('invest', __('Invest'))->display(function ($invest) {
+            return $invest>0?$invest:"0";
+        });
+        $grid->column('rpt_20_23', __('RPT 20 23'))->display(function ($rpt_20_23) {
+            return $rpt_20_23>0?$rpt_20_23:"0";
+        });
         $grid->column('created_at', __('Created at'));
-        //$grid->column('total', __('Total'));
-        //$grid->column('updated_at', __('Updated at'));
 
         return $grid;
     }

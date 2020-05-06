@@ -13,7 +13,7 @@
           style="background-color:#F8F8F8"
             placeholder="Echelle"
             :options="option_echelle"
-             :value="$store.action_filter"
+             :value="$store.state.action.filter.echelle"
              @input="action_set_filter"
              transition="fade"
           />
@@ -24,7 +24,7 @@
           style="background-color:#F8F8F8"
           placeholder="Les Contributeurs"
           :options="option_actors"
-          :value="$store.action_filter"
+          :value="$store.state.action.filter.actor"
           @input="action_set_filter"
           />
         </b-col>
@@ -37,7 +37,7 @@
             style="background-color:#F8F8F8"
             placeholder="Status"
             :options="option_status"
-             :value="$store.action_filter"
+             :value="$store.state.action.filter.status"
              @input="action_set_filter"
           />
         </b-col>
@@ -47,7 +47,7 @@
             style="background-color:#F8F8F8"
             placeholder="Type"
             :options="option_type"
-             :value="$store.action_filter"
+             :value="$store.state.action.filter.type"
              @input="action_set_filter"
           />
         </b-col>
@@ -58,7 +58,7 @@
             style="background-color:#F8F8F8"
             placeholder="Les champs d'application"
             :options="option_ACTIONs"
-             :value="$store.action_filter"
+             :value="$store.state.action.filter.project"
              @input="action_set_filter"
           />
         </b-col>
@@ -97,17 +97,10 @@ export default {
 
   methods: {
     action_set_filter(value) {
-        // console.log(`DEBBUG ${value}`);
-    if(value!=null)
-    {
-       this.$store.dispatch("FILTER_ACTION", value);
-      this.set_badge(value);
-    }
-    else
-    {
-        this.$store.commit("SET_ACTION_DEFAULT");
-    }
-
+        //this.set_badge(value);
+      value!=null?
+      this.$store.dispatch("FILTER_ACTION", value):
+      this.$store.commit("SET_ACTION_DEFAULT");
     },
 
     set_badge(value) {

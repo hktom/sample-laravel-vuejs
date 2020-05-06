@@ -11,6 +11,7 @@ export const actionModule = {
         get_action: false,
         pagination: true,
         error: '',
+        filter: {},
     },
     actions: {
         FILTER_ACTION: ({ commit }, payload) => {
@@ -18,32 +19,39 @@ export const actionModule = {
 
                 switch (payload.type) {
                     case 'actor':
+                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_ACTOR", payload);
                         break;
 
                     case 'status':
+                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_STATUS", payload);
                         break;
 
                     case 'type':
+                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_TYPE", payload);
                         break;
 
                     case 'echelle':
+                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_ECHELLE", payload);
                         break;
 
                     case 'project':
+                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_PROJECT", payload);
                         break;
 
                     default:
+                        //commit("SET_FILTER_VALUE", payload);
                         commit("SET_ACTION_DEFAULT");
                         break;
                 }
 
             }
             else {
+                //commit("SET_FILTER_VALUE", payload);
                 commit("SET_ACTION_DEFAULT");
             }
         },
@@ -64,6 +72,7 @@ export const actionModule = {
     },
     mutations: {
         FILTER_ACTION_BY_ACTOR: (state, payload) => {
+            state.filter='';
             state.pagination = false;
             state.status = false;
             state.item = [];
@@ -141,7 +150,7 @@ export const actionModule = {
                 var description = item.short_description.toLowerCase();
                 var str = payload.toLowerCase();
 
-                if (name.search(str) > -1 || description.search(str) >-1) {
+                if (name.search(str) > -1 || description.search(str) > -1) {
                     state.item.push(item);
                 }
             });
@@ -152,6 +161,14 @@ export const actionModule = {
         SET_ACTION_DEFAULT: state => {
             state.pagination = true;
             state.item = state.actions.data;
+        },
+
+        // Trigger filter value
+        SET_FILTER_VALUE: (state, payload) => {
+            console.log(`FILTER VALUE ${payload.type}`);
+            state.filter='';
+            var index=payload.type;
+            //if(index!=null) state.filter.index=payload;
         },
 
         GET_ACTIONS: (state, payload) => {
