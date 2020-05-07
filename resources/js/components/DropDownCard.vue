@@ -55,11 +55,11 @@
                     class="table cursor-pointer"
                     @click="goTo(item.slug, route)"
                 >
-                    <p v-if="route == 'showProject'" class="table-row text-left">
+                    <p v-if="route == 'showProject'" class="table-row text-left mb0 py-3">
                         {{ item.id }} {{ item.name }}
                     </p>
 
-                    <p v-else class="table-row text-left">
+                    <p v-else class="table-row text-left mb0 py-3">
                         {{ item.code }} {{ item.label }}
                     </p>
                 </div>

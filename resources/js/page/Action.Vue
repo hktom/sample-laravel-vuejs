@@ -6,9 +6,7 @@
             description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
         />
 
-    <SpinnerGrow v-if="action_status==false" />
-
-    <div v-else>
+    <div>
        <HeaderPage/>
 
       <div class="pb10">
@@ -23,9 +21,11 @@
 
     <filterAction/>
 
-    <div class="w80 mauto mt3 vls-w75 ms-w100 ss-w100">
+    <SpinnerGrow v-if="action_status==false" class="mt2" :small=true />
 
-        <div v-if="actions.length <=0">
+    <div v-else class="w80 mauto mt3 vls-w75 ms-w100 ss-w100">
+
+        <div v-if="actions.length <=0 && action_status==false">
             <p class="text-center">Aucune action ne correspond à ces critères de recherche.</p>
         </div>
 
@@ -85,6 +85,8 @@ export default {
 
   data() {
     return {
+        // customs pagination
+        current_page:'',
     };
   },
 
@@ -104,9 +106,22 @@ export default {
       return this.$store.state.action.actions;
     },
 
+    //customs pagination
+    total_pages(){
+        var x=this.$store.state.action.item.length /10;
+        return Math.floor(x);
+    }
+
   },
 
   methods: {
+    //customs pages
+    prev(){},
+
+    next(){},
+
+    to(p){},
+
     getActions(page = 1) {
       return this.$store.dispatch("GET_ACTIONS", page);
     },

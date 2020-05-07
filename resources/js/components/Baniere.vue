@@ -25,7 +25,7 @@
                 <!-- show text -->
                 <div
                     v-else
-                    class="px-3 mt3 text-header ms-fs1 ss-fs1 lms-fs1-3 d-md-block"
+                    class="px-3 mt3 text-header ms-fs1 ss-fs1 lms-fs1-3 ss-hidden ms-hidden"
                     v-html="description"
                 ></div>
             </div>
