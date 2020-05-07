@@ -17,8 +17,13 @@ export const echelleModule = {
                     state.item = res.data.data
                     state.status = true,
 
+                    // vue select echelle options
                         state.item.map((item) => {
-                            state.options.push({ code: item.id, label: item.name, type: 'echelle' });
+                            state.options.push({
+                                code: item.id,
+                                label: item.name,
+                                type: 'echelle'
+                            });
 
                         });
 

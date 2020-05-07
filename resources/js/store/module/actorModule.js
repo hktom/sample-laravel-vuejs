@@ -60,8 +60,13 @@ export const actorModule = {
                     state.item = state.actors
                     state.status = true,
 
+                    //vue select options
                         state.actors.map((item) => {
-                            state.options.push({ code: item.id, label: item.name, type: 'actor' });
+                            state.options.push({
+                                code: item.id,
+                                label: item.sigle!=null?item.sigle:item.name,
+                                type: 'actor'
+                            });
 
                         });
 

@@ -11,49 +11,49 @@ export const actionModule = {
         get_action: false,
         pagination: true,
         error: '',
-        filter: {},
+        filter: {
+            'echelle':null,
+            'type':null,
+            'status':null,
+            'project':null,
+            'actor':null,
+        },
+        default_filter:{
+            'echelle':null,
+            'type':null,
+            'status':null,
+            'project':null,
+            'actor':null,
+        }
     },
     actions: {
+        //vue select filter option
         FILTER_ACTION: ({ commit }, payload) => {
-            if (payload.type != null) {
-
                 switch (payload.type) {
                     case 'actor':
-                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_ACTOR", payload);
                         break;
 
                     case 'status':
-                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_STATUS", payload);
                         break;
 
                     case 'type':
-                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_TYPE", payload);
                         break;
 
                     case 'echelle':
-                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_ECHELLE", payload);
                         break;
 
                     case 'project':
-                        //commit("SET_FILTER_VALUE", payload);
                         commit("FILTER_ACTION_BY_PROJECT", payload);
                         break;
 
                     default:
-                        //commit("SET_FILTER_VALUE", payload);
                         commit("SET_ACTION_DEFAULT");
                         break;
                 }
-
-            }
-            else {
-                //commit("SET_FILTER_VALUE", payload);
-                commit("SET_ACTION_DEFAULT");
-            }
         },
         FIND_ACTION: ({ commit }, payload) => {
             if (payload != null) {
@@ -71,8 +71,14 @@ export const actionModule = {
         },
     },
     mutations: {
+        RESET_FILTER_ECHELLE:state=>state.filter.echelle=null,
+        RESET_FILTER_STATUS:state=>state.filter.status=null,
+        RESET_FILTER_TYPE:state=>state.filter.type=null,
+        RESET_FILTER_ACTOR:state=>state.filter.actor=null,
+        RESET_FILTER_PROJECT:state=>state.filter.project=null,
+
         FILTER_ACTION_BY_ACTOR: (state, payload) => {
-            state.filter='';
+            state.filter.actor=payload;
             state.pagination = false;
             state.status = false;
             state.item = [];
@@ -88,6 +94,7 @@ export const actionModule = {
 
         },
         FILTER_ACTION_BY_STATUS: (state, payload) => {
+            state.filter.status=payload;
             state.pagination = false;
             state.status = false;
             state.item = [];
@@ -102,6 +109,7 @@ export const actionModule = {
             state.status = true;
         },
         FILTER_ACTION_BY_TYPE: (state, payload) => {
+            state.filter.type=payload;
             state.pagination = false;
             state.status = false;
             state.item = [];
@@ -115,6 +123,7 @@ export const actionModule = {
             state.status = true;
         },
         FILTER_ACTION_BY_ECHELLE: (state, payload) => {
+            state.filter.echelle=payload;
             state.pagination = false;
             state.status = false;
             state.item = [];
@@ -129,6 +138,7 @@ export const actionModule = {
         },
 
         FILTER_ACTION_BY_PROJECT: (state, payload) => {
+            state.filter.project=payload;
             state.pagination = false;
             state.status = false;
             state.item = [];
@@ -158,17 +168,18 @@ export const actionModule = {
 
         },
 
+        //sort filter default
         SET_ACTION_DEFAULT: state => {
             state.pagination = true;
             state.item = state.actions.data;
         },
 
-        // Trigger filter value
-        SET_FILTER_VALUE: (state, payload) => {
-            console.log(`FILTER VALUE ${payload.type}`);
-            state.filter='';
-            var index=payload.type;
-            //if(index!=null) state.filter.index=payload;
+        RESET_ALL_FILTER:({ commit }, state)=>{
+            commit("RESET_FILTER_ECHELLE");
+            commit("RESET_FILTER_STATUS");
+            commit("RESET_FILTER_TYPE");
+            commit("RESET_FILTER_ACTOR");
+            commit("RESET_FILTER_PROJECT");
         },
 
         GET_ACTIONS: (state, payload) => {

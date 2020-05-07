@@ -20,7 +20,10 @@
   }
 
 
-  *{font-family: primary !important;}
+  *{
+      font-family: primary !important;
+      /* border:1px solid red */
+    }
   h1, h2, h3, h4, h5, h6, .title{font-family: h1 !important;}
 
   p, pre{

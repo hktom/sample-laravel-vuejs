@@ -17,9 +17,9 @@
 
       <!-- <menuIndicator menu="home"/> -->
 
-    <div class="w80 mauto vls-w75 ms-w100 ss-w100">
+    <!-- <div class="w80 mauto vls-w75 ms-w100 ss-w100">
         <h3 class="px-3 mt3" style="color:#05668D">Liste des actions</h3>
-    </div>
+    </div> -->
 
     <filterAction/>
 

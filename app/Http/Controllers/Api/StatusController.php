@@ -17,7 +17,7 @@ class StatusController extends Controller
      */
     public function index()
     {
-        return StatusResource::collection('App\State'::OrderBy('name', 'ASC')->get());
+        return StatusResource::collection('App\State'::OrderBy('id', 'ASC')->get());
     }
 
     /**
