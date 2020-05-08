@@ -4,10 +4,9 @@
         <!-- side bar menu -->
                 <b-sidebar
                     id="sidebar-1"
-                    title="Plan Biodiversité"
+                    title="PLAN BIODIVERSITÉ 2020-202 DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030"
                     shadow
                     class="d-lg-none"
-                    bg-variant="info"
                     text-variant="light"
                 >
                     <div class="px-3 py-2">
@@ -141,6 +140,10 @@ export default {
 .active, .router-link-exact-active{
     color: #17a2b8;
 }
+
+#sidebar-1 .active, #sidebar-1 .router-link-exact-active{
+     color: #f8d289;
+}
 .header-link:hover {
     text-decoration: none;
     color: #17a2b8;
@@ -152,5 +155,15 @@ export default {
 .brand-title:hover {
     color: black;
     text-decoration: none;
+}
+
+#sidebar-1___title__{
+    font-size: 14px;
+    padding-top: 20px !important;
+    display: inline-block;
+}
+
+#sidebar-1{
+    background-color:#05668D !important;
 }
 </style>

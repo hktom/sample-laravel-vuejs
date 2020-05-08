@@ -8,7 +8,7 @@
 
                 <logo color="white"/>
                 <p class="white">
-                     <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir <strong> la transition écologique.</strong>
+                     <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la <strong>transition écologique.</strong>
                  </p>
             </b-col>
             <b-col lg="3" md="12">

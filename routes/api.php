@@ -29,3 +29,4 @@ Route::resource('echelles', 'Api\EchelleController');
 // });
 
 Route::get('all/actions', 'Api\ActionController@index_all');
+Route::get('actions/{q}/{v}', 'Api\ActionController@index_by');

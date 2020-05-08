@@ -10,4 +10,9 @@ class Actor extends Model
     {
         return $this->belongsTo('App\Entreprise');
     }
+
+    public function actions()
+    {
+        return $this->belongsToMany('App\Action', 'author_actions');
+    }
 }

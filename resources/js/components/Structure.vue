@@ -52,7 +52,7 @@ export default {
 
 <style>
 .structure * {
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 /* .tooltip {

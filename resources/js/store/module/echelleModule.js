@@ -22,7 +22,8 @@ export const echelleModule = {
                             state.options.push({
                                 code: item.id,
                                 label: item.name,
-                                type: 'echelle'
+                                type: 'echelle',
+                                page:1
                             });
 
                         });

@@ -24,14 +24,50 @@ class ActionController extends Controller
     {
         switch ($q) {
             case 'echelle':
-                # code...
+                $action = Action::whereHas('echelles', function ($query) use ($v) {
+                    $query->where('echelle_id', $v);
+                })->paginate(10);
+                return ActionResource::collection($action);
+                break;
+
+            case 'status':
+                $action = Action::whereHas('states', function ($query) use ($v) {
+                    $query->where('state_id', $v);
+                })->paginate(10);
+                return ActionResource::collection($action);
+                break;
+
+            case 'type':
+                $action = Action::whereHas('types', function ($query) use ($v) {
+                    $query->where('type_id', $v);
+                })->paginate(10);
+                return ActionResource::collection($action);
+                break;
+
+            case 'project':
+                $action = Action::whereHas('project', function ($query) use ($v) {
+                    $query->where('project_id', $v);
+                })->paginate(10);
+                return ActionResource::collection($action);
+                break;
+
+            case 'actor':
+                $action = Action::whereHas('authors', function ($query) use ($v) {
+                    $query->where('actor_id', $v);
+                })->paginate(10);
+                return ActionResource::collection($action);
+                break;
+
+            case 'search':
+                $action = Action::where('label', 'like', "%$v%")
+                ->where('short_description', 'like', "%$v%")->paginate(10);
+                return ActionResource::collection($action);
                 break;
 
             default:
-                # code...
+                return ActionResource::collection([]);
                 break;
         }
-
     }
 
     public function index_all()
@@ -96,37 +132,37 @@ class ActionController extends Controller
      */
     public function update(Request $request, Action $action)
     {
-    //     $data=$this->validateForm($request->all());
+        //     $data=$this->validateForm($request->all());
 
-    //     try {
-    //         $post=Post::find($id);
-    //         $post->title=$data['title'];
-    //         $post->content=$data['content'];
-    //         $post->folder_id=$data['folder_id'];
-    //         $post->user_id=auth()->user()->id;
-    //         //$post->themes->delete();
-    //         // $post->themes()->detach();
+        //     try {
+        //         $post=Post::find($id);
+        //         $post->title=$data['title'];
+        //         $post->content=$data['content'];
+        //         $post->folder_id=$data['folder_id'];
+        //         $post->user_id=auth()->user()->id;
+        //         //$post->themes->delete();
+        //         // $post->themes()->detach();
 
-    //         if($post->save())
-    //         {
-    //             PostTheme::where('post_id', $id)->delete();
-    //             foreach ($data['themes'] as $variable) {
+        //         if($post->save())
+        //         {
+        //             PostTheme::where('post_id', $id)->delete();
+        //             foreach ($data['themes'] as $variable) {
 
-    //                 $postTheme=new PostTheme();
-    //                     $postTheme->theme_id=$variable['value'];
-    //                     $postTheme->post_id=$post->id;
-    //                     $postTheme->save();
+        //                 $postTheme=new PostTheme();
+        //                     $postTheme->theme_id=$variable['value'];
+        //                     $postTheme->post_id=$post->id;
+        //                     $postTheme->save();
 
 
-    //                 }
+        //                 }
 
-    //         }
+        //         }
 
-    //     return response()->json(['satus'=>200])->setStatusCode(200);
+        //     return response()->json(['satus'=>200])->setStatusCode(200);
 
-    // } catch (\Throwable $th) {
-    //     return response()->json([$th->getMessage()])->setStatusCode(500);
-    // }
+        // } catch (\Throwable $th) {
+        //     return response()->json([$th->getMessage()])->setStatusCode(500);
+        // }
 
     }
 

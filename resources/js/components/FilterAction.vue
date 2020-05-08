@@ -42,7 +42,7 @@
                 <v-select
                     :class="filter == 'actor' ? 'vue-select-active' : ''"
                     style="background-color:#F8F8F8"
-                    placeholder="Les Contributeurs"
+                    placeholder="Acteurs"
                     :options="option_actors"
                     :value="$store.state.action.filter.actor"
                     @input="filter_actor"
@@ -77,7 +77,7 @@
                 <v-select
                     :class="filter == 'project' ? 'vue-select-active' : ''"
                     style="background-color:#F8F8F8"
-                    placeholder="Les champs d'application"
+                    placeholder="Champs d'application"
                     :options="option_projects"
                     :value="$store.state.action.filter.project"
                     @input="filter_project"
@@ -119,6 +119,7 @@ export default {
         deselect(){
             this.filter = null;
             this.reset_filter();
+            this.search=null;
             this.$store.commit("SET_ACTION_DEFAULT");
         },
         reset_filter() {
@@ -220,7 +221,14 @@ export default {
 
         research() {
             if (this.search != null && this.search.length > 2) {
-                this.$store.dispatch("FIND_ACTION", this.search.trim());
+                 this.reset_filter();
+                var payload={
+                    'type':'search',
+                    'code': this.search,
+                    'page':1
+                };
+                //this.$store.dispatch("FIND_ACTION", this.search.trim());
+                this.$store.dispatch("FIND_ACTION", payload);
             } else {
                 this.$store.commit("SET_ACTION_DEFAULT");
             }

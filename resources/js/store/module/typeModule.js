@@ -18,7 +18,12 @@ export const typeModule = {
                     state.status = true,
 
                         state.item.map((item) => {
-                            state.options.push({ code: item.id, label: item.name, type: 'type' });
+                            state.options.push({
+                                code: item.id,
+                                label: item.name,
+                                type: 'type',
+                                page:1
+                             });
 
                         });
 

@@ -9,13 +9,13 @@
         <!-- background image  -->
 
         <!-- text baniere -->
-        <div id="bg-text" class="absolute mt0 fitme py-5">
+        <div id="bg-text" class="absolute mt0 fitme py-5 ss-hidden ms-hidden">
             <div class="w80 mauto vls-w75 ms-w100 ss-w100">
 
                 <!-- button back -->
                 <div
                     v-if="btnback"
-                    class="btn-back back-link cursor-pointer mx-3 mt5 ss-mt0"
+                    class="btn-back back-link cursor-pointer mx-3 mt5"
                     @click="_goBack"
                 >
                     <font-awesome-icon icon="arrow-circle-left" />

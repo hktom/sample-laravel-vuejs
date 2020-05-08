@@ -65,7 +65,8 @@ export const actorModule = {
                             state.options.push({
                                 code: item.id,
                                 label: item.sigle!=null?item.sigle:item.name,
-                                type: 'actor'
+                                type: 'actor',
+                                page:1
                             });
 
                         });

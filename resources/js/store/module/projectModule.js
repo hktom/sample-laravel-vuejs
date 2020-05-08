@@ -91,7 +91,9 @@ export const projectModule = {
                         state.options.push({
                             code: item.id,
                             label:`${item.id} ${item.name}`,
-                            type: 'project' });
+                            type: 'project',
+                            page:1
+                           });
                         });
                     state.status = true;
 

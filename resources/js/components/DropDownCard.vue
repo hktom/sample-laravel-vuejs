@@ -52,7 +52,7 @@
                     v-if="fieldShow"
                     v-for="item in articles"
                     :key="item.id"
-                    class="table cursor-pointer"
+                    class="table cursor-pointer link-hover"
                     @click="goTo(item.slug, route)"
                 >
                     <p v-if="route == 'showProject'" class="table-row text-left mb0 py-3">
@@ -131,5 +131,10 @@ export default {
 .table-row {
     padding: 5px 15px 5px 15px;
     /* border-bottom: 2px solid #E9EBEC; */
+}
+
+.link-hover:hover{
+    color:#05668D;
+    font-weight: bold;
 }
 </style>
