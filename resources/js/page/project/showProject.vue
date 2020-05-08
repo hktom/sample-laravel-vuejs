@@ -18,7 +18,7 @@
 
                 <div class="w80 px-3 mauto my-5 vls-w75 ms-w100 ss-w100">
                     <b-row>
-                        <b-col lg="8" md="12">
+                        <b-col lg="7" md="12">
                             <div
                                 class="d-flex flex-row bd-highlight align-items-top"
                             >
@@ -105,6 +105,7 @@
                             </div>
 
                             <DropDownCard
+                                v-if="project.news.length >0"
                                 :articles="project.news"
                                 :color="project.color"
                                 :title="'Les actions du '+project.ca_principal+' en un coup d’œil'"
@@ -115,6 +116,7 @@
                             />
 
                             <DropDownCard
+                                v-if="project.purchases.length >0"
                                 :articles="project.purchases"
                                 :color="project.color"
                                 cardTitle="Poursuivre & renforcer les actions existantes"
@@ -122,12 +124,12 @@
                             />
                         </b-col>
 
-                        <b-col lg="4" md="12">
+                        <b-col lg="5" md="12">
                             <!-- <actionRighSide :action="action"/> -->
                             <div>
                                 <img
                                     :src="'/uploads/' + project.image"
-                                    class="w100 y15 cover"
+                                    class="w100 y15 cover ss-hidden ms-hidden lms-hidden"
                                 />
                             </div>
 

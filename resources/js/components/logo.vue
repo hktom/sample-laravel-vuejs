@@ -1,11 +1,11 @@
 <template>
-    <div class="wauto">
+    <div>
         <div class="d-flex flex-row bd-highlight align-items-top">
             <!-- color logo -->
             <div v-if="color == 'black'">
                 <img
                     style="width:30px;vertical-align: top;"
-                    class="mr-2"
+                    class="mr-1"
                     src="/img/plan_biodiversite_logo.png"
                 />
             </div>
@@ -19,12 +19,19 @@
                 />
             </div>
 
-            <span
+            <div
             v-if="color == 'black'"
-                :class="color + ' mx-0 px-0  fs0-4 bold inline-block ss-fs0-2 title'"
                 style="line-height: 1rem !important;"
-            >PLAN BIODIVERSITÉ 2020-2023 <br /> DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030
-            </span>
+            >
+            <h1 class="mx-0 px-0 fs0-5 vls-fs0-7 ls-fs0-7 lms-fs0-6 ms-fs0-6">
+                PLAN BIODIVERSITÉ 2020-2023 <br /> DE LA STRATÉGIE BIODIVERSITÉ <br class="ls-hidden ms-hidden lms-hidden vls-hidden"/>GENÈVE 2030
+            </h1>
+            <!-- <h1 class="ls-hidden ms-hidden lms-hidden vls-hidden mx-0 px-0  fs0-5">
+                PLAN BIODIVERSITÉ 2020-2023
+                <br /> DE LA STRATÉGIE BIODIVERSITÉ
+                <br/> GENÈVE 2030
+            </h1> -->
+            </div>
 
             <h6
                 v-else

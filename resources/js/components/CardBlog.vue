@@ -1,45 +1,36 @@
 <template>
-<div v-scroll-reveal>
-  <div id="cardBlog" class="py-4 px-4 cursor-pointer">
-      <!-- <h1>{{article}}</h1> -->
-      <b-row>
-          <b-col lg="3" md="12" @click="seeAction(article.slug)">
+<div v-scroll-reveal class="w100 px-3">
+<div class="w100 mauto p-4" id="cardBlog">
+    <b-row class="cursor-pointer">
+          <b-col lg="3" md="12" @click="seeAction(article.slug)" class="ss-m0">
               <img :src="'uploads/'+article.project.icon" style="" class="w100 vls-p50 cover center"/>
           </b-col>
 
-          <b-col lg="9" md="12">
+          <b-col lg="9" md="12" class="ss-m0">
 
               <div>
-                  <h4 class="bold inline-block" :style="'font-weight:bold;color:'+article.project.color" @click="seeAction(article.slug)">
+                  <h3 class="bold inline-block ss-fs1-3" :style="'font-weight:bold;color:'+article.project.color" @click="seeAction(article.slug)">
                       ACTION {{ article.code }}
-                  </h4>
+                  </h3>
 
                   <b-badge variant="light">
-
-                          <!-- <font-awesome-icon icon="check-circle" :style="{ color: '#05668D' }" /> -->
                       <span class="fs1-2 cursor-pointer card-field-link" @click="seeField(article.project.slug)">
                           {{ article.project.name }}
-                          <!-- {{ filter=="champ d'application"? `${article.project.name}` :filter }} -->
                       </span>
 
                   </b-badge>
               </div>
 
-              <h4 class="bold" style="font-weight:bold" @click="seeAction(article.slug)">
-                      {{ article.name}}
-              </h4>
+              <h2 class="bold ss-fs1 fs1-5" style="font-weight:bold" @click="seeAction(article.slug)">{{ article.name}}</h2>
 
-              <!-- <p>
-                  Elaboré(e) par
-                  <Structure view="2" :collection="article.authors"/>
-                  <span v-if="organisations.length > 0">(<Structure view="3" :collection="article.authors"/>)</span>
-
-              </p> -->
               <p
+              class="ss-hidden"
               @click="seeAction(article.slug)"
-              v-html="article.short_description+'...'"></p>
+              v-html="article.short_description"></p>
 
-            <b-button pill style="background-color:#05668D" @click="seeAction(article.slug)" class="btn-card-link">
+            <b-button pill style="background-color:#05668D"
+            @click="seeAction(article.slug)"
+            class="btn-card-link">
                 <div class="card-link">
                 Details de l'action
                 <font-awesome-icon
@@ -48,16 +39,10 @@
                 </div>
             </b-button>
 
-              <!-- <p class="link-article italic">
-                      Details de l'action
-              </p> -->
-
-
           </b-col>
-
-      </b-row>
-  </div>
-  </div>
+  </b-row>
+</div>
+</div>
 </template>
 
 <script>
@@ -116,10 +101,10 @@ mounted(){
     /* box-shadow: 2px 2px 2px black;
     margin:15px 0px 15px 0px; */
     /* padding: 2em 4em !important; */
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
     border-radius: 5px;
     margin-bottom: 1.2em;
-    margin-left: 15px;
-    margin-right: 15px;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     transition: 0.2s;

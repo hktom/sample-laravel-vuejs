@@ -20,6 +20,20 @@ class ActionController extends Controller
         return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->paginate(10));
     }
 
+    public function index_by($q, $v)
+    {
+        switch ($q) {
+            case 'echelle':
+                # code...
+                break;
+
+            default:
+                # code...
+                break;
+        }
+
+    }
+
     public function index_all()
     {
         return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->get());

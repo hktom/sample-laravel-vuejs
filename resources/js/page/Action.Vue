@@ -1,6 +1,6 @@
 <template>
 
-<div>
+<div class="ofhidden-x">
     <vue-headful
             title="PLAN BIODIVERSITÉ 2020-2023 DE LA STRATÉGIE BIODIVERSITÉ GENÈVE 2030"
             description="La biodiversité c’est notre assurance vie face aux changements climatiques. Il faut en faire une priorité pour réussir la transition écologique."
@@ -13,18 +13,13 @@
 
       <Baniere baniere="/img/bg-image.jpg" description="<strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la<strong> transition écologique.</strong>" />
 
-      <!-- <menuIndicator menu="home"/> -->
-
-    <!-- <div class="w80 mauto vls-w75 ms-w100 ss-w100">
-        <h3 class="px-3 mt3" style="color:#05668D">Liste des actions</h3>
-    </div> -->
-
+    <div class="w80 mauto mt3 vls-w75 ms-w95 ss-w95">
     <filterAction/>
+    </div>
 
     <SpinnerGrow v-if="action_status==false" class="mt2" :small=true />
 
-    <div v-else class="w80 mauto mt3 vls-w75 ms-w100 ss-w100">
-
+    <div v-else class="w80 mauto mt3 vls-w75 ms-w95 ss-w95">
         <div v-if="actions.length <=0 && action_status==false">
             <p class="text-center">Aucune action ne correspond à ces critères de recherche.</p>
         </div>
@@ -34,10 +29,10 @@
         </div>
 
     </div>
-
-    <div class="w80 mauto mt3 vls-w75 ms-w100 ss-w100 ofhidden" v-if="pagination">
-        <div>
+    <!-- w80 mauto mt3 vls-w75 ms-w95 ss-w95 ofhidden -->
+    <div class="wauto" v-if="pagination">
         <pagination
+        class="w80 mauto mt3 vls-w75 ms-w90 ss-w90"
         align="center"
         size="default"
         :data="pages"
@@ -49,7 +44,6 @@
             <font-awesome-icon icon="chevron-right" />
         </span>
         </pagination>
-    </div>
     </div>
 
   </div>
@@ -87,6 +81,7 @@ export default {
     return {
         // customs pagination
         current_page:'',
+        current_data:{},
     };
   },
 
@@ -105,12 +100,17 @@ export default {
     pages() {
       return this.$store.state.action.actions;
     },
-
     //customs pagination
     total_pages(){
         var x=this.$store.state.action.item.length /10;
         return Math.floor(x);
     }
+
+    //customs pagination
+    //page_data(){
+      //  for(var i=1;i<=10;i++){
+        //}
+    //}
 
   },
 
@@ -145,6 +145,12 @@ export default {
     color: #fff !important;
     background-color: #05668D !important;
     border-color: #05668D !important;
+}
+
+.pagination{
+  /* overflow: overlay !important; */
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
 
 </style>

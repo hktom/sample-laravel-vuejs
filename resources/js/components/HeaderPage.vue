@@ -1,26 +1,7 @@
 <template>
     <div id="header">
-        <div class="w80 mauto vls-w75 ms-w100 ss-w100">
-            <b-navbar toggleable="lg" type="light">
-                <b-navbar-brand class="fs2 bold">
-                    <router-link class="brand-title" to="/">
-                        <!-- logo with text  -->
-                        <logo color="black" />
-                    </router-link>
-                </b-navbar-brand>
 
-                <!-- toggle button -->
-
-                <b-button
-                    v-b-toggle.sidebar-1
-                    class="d-lg-none"
-                    variant="light"
-                >
-                    <font-awesome-icon icon="bars" />
-                </b-button>
-
-                <!-- toggle button -->
-
+        <!-- side bar menu -->
                 <b-sidebar
                     id="sidebar-1"
                     title="Plan Biodiversité"
@@ -45,16 +26,38 @@
                                 >
                             </li>
 
-                            <li>
+                            <!-- <li>
                                 <router-link
                                     class="side-header-link"
                                     :to="{ name: 'contact' }"
                                     >Contact</router-link
                                 >
-                            </li>
+                            </li> -->
                         </ul>
                     </div>
                 </b-sidebar>
+
+            <!-- navbar menu -->
+        <div class="w80 mauto vls-w75 ms-w100 ss-w100 relative">
+            <b-navbar toggleable="lg" type="light">
+                <b-navbar-brand>
+                    <router-link class="brand-title" to="/">
+                        <!-- logo with text  -->
+                        <logo color="black" />
+                    </router-link>
+                </b-navbar-brand>
+
+                <!-- toggle button -->
+
+                <div
+                    v-b-toggle.sidebar-1
+                    class="d-lg-none cursor-pointer"
+                    variant="light"
+                >
+                    <font-awesome-icon icon="bars" />
+                </div>
+
+                <!-- toggle button -->
 
                 <b-collapse id="nav-collapse" is-nav>
                     <b-navbar-nav class="ml-auto">
@@ -74,13 +77,13 @@
                             >
                         </b-nav-item>
 
-                        <b-nav-item>
+                        <!-- <b-nav-item>
                             <router-link
                                 class="header-link"
                                 :to="{ name: 'contact' }"
                                 >Contact</router-link
                             >
-                        </b-nav-item>
+                        </b-nav-item> -->
                     </b-navbar-nav>
                 </b-collapse>
             </b-navbar>

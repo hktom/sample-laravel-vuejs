@@ -22,14 +22,14 @@
 
   *{
       font-family: primary !important;
-      /* border:1px solid red */
+      /* border:0.4px solid red */
     }
   h1, h2, h3, h4, h5, h6, .title{font-family: h1 !important;}
 
   p, pre{
-      width: 100% !important;
       font-size: 16px !important;
-      display: block !important;
-      overflow: hidden !important;
-      white-space: normal !important;
+      /* width: 100% !important; */
+      /* white-space: normal !important; */
+      /* display: block !important; */
+      /* overflow: hidden !important; */
 }

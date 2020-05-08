@@ -1,8 +1,8 @@
 <template>
-    <div class="w80 mauto vls-w75 ms-w100 ss-w100 mt3">
+    <div class="w100 my-3">
         <b-row class="px-3">
             <b-col cols="10">
-                <h3 style="color:#05668D">Liste des actions</h3>
+                <h1 style="color:#05668D" class="fs1-8 ss-fs1 ms-fs1-4">Liste des actions</h1>
             </b-col>
             <b-col cols="2">
                 <b-button

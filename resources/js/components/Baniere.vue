@@ -1,5 +1,5 @@
 <template>
-    <div id="baniere" class="w100 y15 relative ofhidden ms-y10 ss-y10">
+    <div id="baniere" class="w100 y15 relative ofhidden ms-y5 ss-y5">
         <!-- background image  -->
         <div
             id="bg-image"
@@ -15,7 +15,7 @@
                 <!-- button back -->
                 <div
                     v-if="btnback"
-                    class="btn-back back-link cursor-pointer mx-3 mt5"
+                    class="btn-back back-link cursor-pointer mx-3 mt5 ss-mt0"
                     @click="_goBack"
                 >
                     <font-awesome-icon icon="arrow-circle-left" />

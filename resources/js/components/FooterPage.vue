@@ -8,7 +8,7 @@
 
                 <logo color="white"/>
                 <p class="white">
-                     <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la transition <strong>écologique.</strong>
+                     <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir <strong> la transition écologique.</strong>
                  </p>
             </b-col>
             <b-col lg="3" md="12">
@@ -20,9 +20,9 @@
                     <li class="white">
                         <router-link class="footer-link" :to="{name:'project'}">Champs d'application</router-link>
                     </li>
-                    <li class="white">
+                    <!-- <li class="white">
                         <router-link class="footer-link" :to="{name:'contact'}">Contact</router-link>
-                    </li>
+                    </li> -->
                 </ul>
             </b-col>
             <b-col lg="3" md="12">

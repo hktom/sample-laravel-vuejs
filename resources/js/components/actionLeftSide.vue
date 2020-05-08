@@ -63,6 +63,7 @@
         />
 
         <DropDownCard
+            v-if="action.projects.length >0"
             :articles="action.projects"
             :color="action.project.color"
             icon="pointer"
@@ -71,6 +72,7 @@
         />
 
         <DropDownCard
+            v-if="action.actions_link.length >0"
             :articles="action.actions_link"
             :color="action.project.color"
             icon="refresh-alt"
