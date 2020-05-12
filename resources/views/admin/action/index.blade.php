@@ -4,6 +4,7 @@
 @include('admin.action.show')
 @include('admin.action.acquiredstate')
 @include('admin.action.newstate')
+@include('admin.action.budget')
 
 
 

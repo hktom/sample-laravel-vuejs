@@ -4,6 +4,9 @@ namespace App\Admin\Controllers;
 
 use App\Action;
 use Encore\Admin\Controllers\AdminController;
+use App\Http\Controllers\Controller;
+use Encore\Admin\Facades\Admin;
+use Encore\Admin\Layout\Content;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
@@ -61,7 +64,6 @@ class ActionController extends AdminController
     protected function detail($id)
     {
         $show = new Show(Action::findOrFail($id));
-
         $show->field('id', __('Id'));
         $show->field('document_num', __('Document num'));
         $show->field('label', __('Label'));

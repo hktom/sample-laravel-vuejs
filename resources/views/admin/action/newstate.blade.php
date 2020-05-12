@@ -32,9 +32,9 @@ $total=array();
                     <?php
                     for ($i=0; $i < 3 ; $i++) {
                         try {
-                            echo "<td>{$state["fonct31"][$i]->amount}</td>";
+                            echo "<td> CHF {$state["fonct31"][$i]->amount}</td>";
                         } catch (\Throwable $th) {
-                            echo "<td>0</td>";
+                            echo "<td> CHF 0</td>";
                         }
                     }
                     ?>
@@ -48,7 +48,7 @@ $total=array();
                             $total[0]=$total[0]+0;
                         }
                     }
-                    echo "<th>{$total[0]}</th>"
+                    echo "<th> CHF {$total[0]}</th>"
                     ?>
 
                 </tr>
@@ -59,9 +59,9 @@ $total=array();
                     <?php
                     for ($i=0; $i < 3 ; $i++) {
                         try {
-                            echo "<td>{$state["fonct36"][$i]->amount}</td>";
+                            echo "<td> CHF {$state["fonct36"][$i]->amount}</td>";
                         } catch (\Throwable $th) {
-                            echo "<td>0</td>";
+                            echo "<td> CHF 0</td>";
                         }
                     }
                     ?>
@@ -75,7 +75,7 @@ $total=array();
                             $total[1]=$total[1]+0;
                         }
                     }
-                    echo "<th>{$total[1]}</th>"
+                    echo "<th> CHF {$total[1]}</th>"
                     ?>
 
                 </tr>
@@ -86,9 +86,9 @@ $total=array();
                     <?php
                     for ($i=0; $i < 3 ; $i++) {
                         try {
-                            echo "<td>{$state["invests"][$i]->amount}</td>";
+                            echo "<td> CHF {$state["invests"][$i]->amount}</td>";
                         } catch (\Throwable $th) {
-                            echo "<td>0</td>";
+                            echo "<td> CHF 0</td>";
                         }
                     }
                     ?>
@@ -102,7 +102,7 @@ $total=array();
                             $total[2]=$total[2]+0;
                         }
                     }
-                    echo "<th>{$total[2]}</th>"
+                    echo "<th> CHF {$total[2]}</th>"
                     ?>
 
                 </tr>
@@ -113,9 +113,9 @@ $total=array();
                     <?php
                     for ($i=0; $i < 3 ; $i++) {
                         try {
-                            echo "<td>{$state["rhs"][$i]->amount}</td>";
+                            echo "<td> CHF {$state["rhs"][$i]->amount}</td>";
                         } catch (\Throwable $th) {
-                            echo "<td>0</td>";
+                            echo "<td> CHF 0</td>";
                         }
                     }
                     ?>
@@ -129,7 +129,7 @@ $total=array();
                             $total[3]=$total[3]+0;
                         }
                     }
-                    echo "<th>{$total[3]}</th>"
+                    echo "<th> CHF {$total[3]}</th>"
                     ?>
 
                 </tr>
@@ -140,9 +140,9 @@ $total=array();
                     <?php
                     for ($i=0; $i < 3 ; $i++) {
                         try {
-                            echo "<td>{$state["others"][$i]->amount}</td>";
+                            echo "<td> CHF {$state["others"][$i]->amount}</td>";
                         } catch (\Throwable $th) {
-                            echo "<td>0</td>";
+                            echo "<td> CHF 0</td>";
                         }
                     }
                     ?>
@@ -156,7 +156,7 @@ $total=array();
                             $total[4]=$total[4]+0;
                         }
                     }
-                    echo "<th>{$total[4]}</th>"
+                    echo "<th> CHF {$total[4]}</th>"
                     ?>
 
                 </tr>
@@ -182,10 +182,10 @@ $total=array();
 
                         $row_total=$fonct31+$fonct36+$rhs+$others;
                         $final_total=$final_total+$row_total;
-                        echo "<th>$row_total</th>";
+                        echo "<th> CHF $row_total</th>";
                     }
 
-                    echo "<th>$final_total</th>";
+                    echo "<th> CHF $final_total</th>";
                     ?>
 
                 </tr>

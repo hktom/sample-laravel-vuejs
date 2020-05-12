@@ -17,8 +17,8 @@ Route::group([
     $router->resource('entreprises', EntrepriseController::class);
     $router->resource('states', StateController::class);
     $router->resource('comments', CommentController::class);
-    $router->resource('actions', ActionController::class);
-    $router->resource('action-budget', ActionBudgetController::class);
+    $router->resource('actions', ActionBudgetController::class);
+    //$router->resource('action-budget', ActionBudgetController::class);
     $router->resource('budgets', BudgetController::class);
     $router->resource('applications', ApplicationController::class);
     $router->resource('fonctions', FonctionController::class);
