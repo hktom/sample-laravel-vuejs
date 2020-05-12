@@ -18,12 +18,12 @@ class Newstate extends Model
 
     public function fonct31()
     {
-        return $this->hasMany('App\FirstFonction', 'state_id');
+        return $this->hasMany('App\Firstfonction', 'state_id');
     }
 
     public function fonct36()
     {
-        return $this->hasMany('App\SecondFonction', 'state_id');
+        return $this->hasMany('App\Secondfonction', 'state_id');
     }
 
     public function rhs()
