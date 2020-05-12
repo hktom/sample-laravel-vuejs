@@ -27,10 +27,20 @@ class NewstateController extends AdminController
     {
         $grid = new Grid(new Newstate());
 
-        $grid->column('id', __('Id'));
+        $grid->column('id', __('Id'))->width(10);
+        $grid->column('action.label', "Action")->width(300);
+        $grid->fonct31()->display(function ($fonct31) {
+
+            $fonct31 = array_map(function ($value) {
+                return "{$value['amount']}";
+            }, $fonct31);
+
+            return join('&nbsp;', $fonct31);
+        });
+
+
         //$grid->column('action_id', __('Action id'));
-        $grid->column('action.label', "Action");
-        $grid->column('created_at', __('Created at'));
+        //$grid->column('created_at', __('Created at'));
         //$grid->column('updated_at', __('Updated at'));
 
         return $grid;

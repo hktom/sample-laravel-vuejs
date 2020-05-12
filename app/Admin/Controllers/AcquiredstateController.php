@@ -40,7 +40,7 @@ class AcquiredstateController extends AdminController
         $grid->column('rpt_20_23', __('RPT 20 23'))->display(function ($rpt_20_23) {
             return $rpt_20_23>0?$rpt_20_23:"0";
         });
-        $grid->column('created_at', __('Created at'));
+        //$grid->column('created_at', __('Created at'));
 
         return $grid;
     }

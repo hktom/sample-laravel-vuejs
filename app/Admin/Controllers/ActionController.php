@@ -17,13 +17,13 @@ class ActionController extends AdminController
      */
     protected $title = 'Action';
     protected $description = [
-        //    'index'  => 'Actions',
-        //        'show'   => 'Show',
-        //        'edit'   => 'Edit',
+        'index'  => 'Actions',
+        'show'   => 'Show',
+        'edit'   => 'Edit',
         'create' => 'nouveau',
     ];
 
-
+    public $perPage = 10;
     /**
      * Make a grid builder.
      *
@@ -47,19 +47,8 @@ class ActionController extends AdminController
 
             return join('&nbsp;', $authors);
         });
+
         $grid->column('created_at', __('Created at'));
-
-         //$grid->column('id', __('Id'));
-        //$grid->column('image', __('Image'));
-        //$grid->column('indicator', __('Indicator'));
-        //$grid->column('description', __('Description'));
-        //$grid->column('total_cout_etat', __('Total cout etat'));
-        //$grid->column('cout_externe', __('Cout externe'));
-        //$grid->column('total_couts', __('Total couts'));
-        //$grid->column('project_id', __('Project id'));
-        //$grid->column('comment_id', __('Comment id'));
-        //$grid->column('updated_at', __('Updated at'));
-
         return $grid;
     }
 
@@ -83,14 +72,7 @@ class ActionController extends AdminController
         $show->field('A', __('A'));
         $show->field('E', __('E'));
         $show->field('T', __('T'));
-        $show->field('total_cout_etat', __('Total cout etat'));
-        $show->field('cout_externe', __('Cout externe'));
-        $show->field('total_couts', __('Total couts'));
-        //$show->field('project_id', __('Project id'));
-        //$show->field('comment_id', __('Comment id'));
         $show->field('created_at', __('Created at'));
-        //$show->field('updated_at', __('Updated at'));
-
         return $show;
     }
 
@@ -143,29 +125,21 @@ class ActionController extends AdminController
         $form->switch('T', __('T'));
         $this->_select("type", $form);
         $this->_select("comment", $form);
-        // $this->_select("state", $form);
-        // $form->divider();
-        // $form->text('total_cout_etat', __('Total cout etat'));
-        // $form->text('cout_externe', __('Cout externe'));
-        // $form->text('total_couts', __('Total couts'));
         $form->divider();
         $form->image("image")->move('public/storage/')->uniqueName();
 
         return $form;
     }
 
-    public function _boolean($grid, $b){
+    public function _boolean($grid, $b)
+    {
 
         return $grid->column("$b", __("$b"))->display(function ($v) {
-            if($v==1)
-            {
+            if ($v == 1) {
                 return "<span style='color:blue'>X</span>";
-            }
-            else
-            {
+            } else {
                 return "<span style='color:blue'></span>";
             }
-
         });
     }
     public function _select($select, $form)
@@ -208,7 +182,7 @@ class ActionController extends AdminController
             })->ajax('/admin/api/comments');
         }
 
-        if($select=="organisation"){
+        if ($select == "organisation") {
             return   $form->select('entreprise_id', "Organisation")->options(function ($name) {
                 $d = 'App\Actor'::where('name', 'like', "%$name%")->orWhere('id', $name)->first();
                 if ($d) {

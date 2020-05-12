@@ -103,4 +103,16 @@ class Action extends Model
     {
         return $this->belongsToMany('App\Action', 'action_actions', 'action_link_id', 'action_id');
     }
+
+    public function acquiredstates()
+    {
+        return $this->hasMany('App\Acquiredstate', 'action_id');
+    }
+
+    public function newstates()
+    {
+        return $this->hasMany('App\Newstate', 'action_id');
+    }
+
+
 }

@@ -18,6 +18,7 @@ Route::group([
     $router->resource('states', StateController::class);
     $router->resource('comments', CommentController::class);
     $router->resource('actions', ActionController::class);
+    $router->resource('action-budget', ActionBudgetController::class);
     $router->resource('budgets', BudgetController::class);
     $router->resource('applications', ApplicationController::class);
     $router->resource('fonctions', FonctionController::class);
@@ -28,6 +29,8 @@ Route::group([
     $router->resource('acquiredstates', AcquiredstateController::class);
     $router->resource('newstates', NewstateController::class);
 
+    //Route::get('actions/{id}', 'ActionBudgetController@show');
+
     Route::group(['prefix' => 'api'], function (Router $router) {
         $router->get('entreprises', 'ApiController@entreprises');
         $router->get('projects', 'ApiController@projects');
@@ -37,5 +40,6 @@ Route::group([
         $router->get('actors', 'ApiController@actors');
         $router->get('actions', 'ApiController@actions');
     });
+
 
 });
