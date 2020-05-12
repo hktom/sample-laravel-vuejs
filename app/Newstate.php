@@ -38,6 +38,6 @@ class Newstate extends Model
 
     public function invests()
     {
-        return $this->hasMany('App\invest', 'state_id');
+        return $this->hasMany('App\Invest', 'state_id');
     }
 }
