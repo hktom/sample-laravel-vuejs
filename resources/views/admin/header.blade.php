@@ -7,11 +7,11 @@
     <i class="fa fa-trash"></i><span class="hidden-xs">  Delete</span>
 </a>
 </div><div class="btn-group pull-right" style="margin-right: 5px">
-<a href="/admin/action-budge/2/edit" class="btn btn-sm btn-primary" title="Edit">
+<a href="/admin/actions/{{ $data['id'] }}/edit" class="btn btn-sm btn-primary" title="Edit">
     <i class="fa fa-edit"></i><span class="hidden-xs"> Edit</span>
 </a>
 </div><div class="btn-group pull-right" style="margin-right: 5px">
-<a href="/admin/action-budge" class="btn btn-sm btn-default" title="List">
+<a href="/admin/actions" class="btn btn-sm btn-default" title="List">
     <i class="fa fa-list"></i><span class="hidden-xs"> List</span>
 </a>
 </div>

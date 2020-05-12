@@ -18,81 +18,74 @@ class ActionController extends Controller
      *
      * @var string
      */
-    protected $title = 'App\Action';
+    protected $title = 'Action';
+    protected $description = [
+        'index'  => 'Actions',
+        'show'   => 'Show',
+        'edit'   => 'Edit',
+        'create' => 'nouveau',
+    ];
 
+    public $perPage = 10;
     /**
      * Make a grid builder.
      *
      * @return Grid
      */
-
-    public function index(){
-        return Admin::content(function (Content $content) {
-            $content->header('Actions Budgetaires');
-            $content->description('liste des actions');
-            $content->breadcrumb(
-                ['text' => 'Dashboard', 'url' => '/'],
-                ['text' => 'Actions', 'url' => '/admin/actions'],
-                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
-                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
-            );
-            $content->body($this->grid());
-        });
-    }
-
-    public function show($id){
-        return Admin::content(function (Content $content) use ($id) {
-            $action=Action::findOrFail($id);
-            $content->header('Actions '.$action["label"]);
-            $content->description('Action Details');
-            $content->breadcrumb(
-                ['text' => 'Dashboard', 'url' => '/'],
-                ['text' => 'Actions', 'url' => '/admin/actions'],
-                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
-                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
-            );
-            //id new state
-            $state_id=$action["newstates"][0]->id;
-            $newstates='App\NewState'::findOrFail($state_id);
-
-            $content->header('Action Details');
-            $content->description("Detail budgetaire de l' action");
-            $content->view('admin.action.index', ['data' => $action, 'state'=>$newstates]);
-        });
-    }
-
-    public function create(){
-        return Admin::content(function (Content $content){
-            $content->header('Nouvelle Action');
-            $content->description('.');
-            $content->breadcrumb(
-                ['text' => 'Dashboard', 'url' => '/'],
-                ['text' => 'Actions', 'url' => '/admin/actions'],
-                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
-                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
-            );
-            $content->body($this->form(0));
-        });
-    }
-
-    public function edit($id){
-        return Admin::content(function (Content $content) use ($id){
-            $content->header('Modifier Action');
-            $content->description('.');
-            $content->breadcrumb(
-                ['text' => 'Dashboard', 'url' => '/'],
-                ['text' => 'Actions', 'url' => '/admin/actions'],
-                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
-                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
-            );
-            $content->body($this->form('edit')->edit($id));
-        });
-    }
-
-    public function form($id)
+    protected function grid()
     {
-        $action = $id==0?new Action():Action::findOrFail($id);
-        $form = new Form($action);
+        $grid = new Grid(new Action());
+
+        $grid->column('code', __('Code'));
+        $grid->column('label', __('Label'));
+        $this->_boolean($grid, "R");
+        $this->_boolean($grid, "A");
+        $this->_boolean($grid, "E");
+        $this->_boolean($grid, "T");
+        $grid->column("authors", "Elaboré par")->display(function ($authors) {
+
+            $authors = array_map(function ($authors) {
+                return "<span class=''>{$authors['name']}</span>";
+            }, $authors);
+
+            return join('&nbsp;', $authors);
+        });
+
+        $grid->column('created_at', __('Created at'));
+        return $grid;
+    }
+
+    /**
+     * Make a show builder.
+     *
+     * @param mixed $id
+     * @return Show
+     */
+    protected function detail($id)
+    {
+        $show = new Show(Action::findOrFail($id));
+        $show->field('id', __('Id'));
+        $show->field('document_num', __('Document num'));
+        $show->field('label', __('Label'));
+        $show->field('image', __('Image'));
+        $show->field('description', __('Description'));
+        $show->field('indicator', __('Indicator'));
+        $show->field('R', __('R'));
+        $show->field('A', __('A'));
+        $show->field('E', __('E'));
+        $show->field('T', __('T'));
+        $show->field('created_at', __('Created at'));
+        return $show;
+    }
+
+    /**
+     * Make a form builder.
+     *
+     * @return Form
+     */
+    protected function form()
+    {
+        $form = new Form(new Action());
         $form->text('orientation', __('Orientation'));
         $this->_select("project", $form)->creationRules('required');
         $form->text('code', __('code'))->creationRules('required|unique:actions');
@@ -127,8 +120,7 @@ class ActionController extends Controller
 
         $form->multipleSelect("actions", "Actions liées")->options('App\Action'::all()->pluck('code', 'id'));
         $form->divider();
-        $form->decimal('cout_externe', __('Cout Externe'));
-        $form->divider();
+
         $form->switch('R', __('R'));
         $form->switch('A', __('A'));
         $form->switch('E', __('E'));
@@ -141,6 +133,17 @@ class ActionController extends Controller
         return $form;
     }
 
+    public function _boolean($grid, $b)
+    {
+
+        return $grid->column("$b", __("$b"))->display(function ($v) {
+            if ($v == 1) {
+                return "<span style='color:blue'>X</span>";
+            } else {
+                return "<span style='color:blue'></span>";
+            }
+        });
+    }
     public function _select($select, $form)
     {
         if ($select == "project") {
@@ -189,40 +192,5 @@ class ActionController extends Controller
                 }
             })->ajax('/admin/api/actors');
         }
-    }
-
-    public function grid()
-    {
-        $grid = new Grid(new Action());
-
-        $grid->column('code', __('Code'));
-        $grid->column('label', __('Label'));
-        $this->_boolean($grid, "R");
-        $this->_boolean($grid, "A");
-        $this->_boolean($grid, "E");
-        $this->_boolean($grid, "T");
-        $grid->column("authors", "Elaboré par")->display(function ($authors) {
-
-            $authors = array_map(function ($authors) {
-                return "<span class=''>{$authors['name']}</span>";
-            }, $authors);
-
-            return join('&nbsp;', $authors);
-        });
-
-        $grid->column('created_at', __('Created at'));
-        return $grid;
-    }
-
-    public function _boolean($grid, $b)
-    {
-
-        return $grid->column("$b", __("$b"))->display(function ($v) {
-            if ($v == 1) {
-                return "<span style='color:blue'>X</span>";
-            } else {
-                return "<span style='color:blue'></span>";
-            }
-        });
     }
 }
