@@ -23,7 +23,7 @@
             v-if="color == 'black'"
                 style="line-height: 1rem !important;"
             >
-            <h1 class="mx-0 px-0 fs0-5 vls-fs0-7 ls-fs0-7 lms-fs0-6 ms-fs0-6">
+            <h1 class="mx-0 px-0 fs0-5 vls-fs0-7 ls-fs0-7 lms-fs0-6 ms-fs0-6" style="margin-top: -0.2rem">
                 PLAN BIODIVERSITÉ 2020-2023 <br /> DE LA STRATÉGIE BIODIVERSITÉ <br class="ls-hidden ms-hidden lms-hidden vls-hidden"/>GENÈVE 2030
             </h1>
             <!-- <h1 class="ls-hidden ms-hidden lms-hidden vls-hidden mx-0 px-0  fs0-5">

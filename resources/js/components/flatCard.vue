@@ -21,7 +21,7 @@
                 <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
                 {{ title }}
             </h3>
-            <p v-html="text" id="paragraph"></p>
+            <p v-html="text" class="paragraph"></p>
         </div>
     </div>
 </template>
@@ -62,7 +62,7 @@ export default {
 </script>
 
 <style>
-#paragraph * {
-    text-align: justify !important;
+.paragraph * {
+    text-align: left !important;
 }
 </style>

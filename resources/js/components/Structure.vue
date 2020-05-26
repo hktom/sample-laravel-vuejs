@@ -1,8 +1,6 @@
 <template>
     <span v-if="view == 1" class="structure">
-        <span v-for="(item, count) in users" :key="item.id">
-        {{item.name.trim()}}{{ count + 1 < users.length ? "," : "" }}
-        </span>
+        <span v-for="(item, count) in users" :key="item.id">{{item.name.trim()}}{{ count + 1 < users.length ? "," : "" }}</span>
     </span>
 
     <span v-else-if="view == 2" class="structure">

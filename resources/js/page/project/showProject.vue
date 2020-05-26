@@ -56,7 +56,7 @@
 
                                 <div v-if="readmore">
                                     <div
-                                        id="paragraph"
+                                        class="paragraph"
                                         v-html="project.context.slice(0, 1500)"
                                     ></div>
                                     <span
@@ -69,7 +69,7 @@
                                 <div v-else>
                                     <div
                                         v-html="project.context"
-                                        id="paragraph"
+                                        class="paragraph"
                                     ></div>
                                 </div>
                             </div>

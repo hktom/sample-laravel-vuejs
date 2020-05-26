@@ -41,6 +41,7 @@ class ActionResource extends JsonResource
             'projects'=>$this->projects,
             'actions_link'=>$this->actions,
             'slug'=>$this->slug,
+            'pdf_file'=>$this->pdf_file,
         ];
     }
 }

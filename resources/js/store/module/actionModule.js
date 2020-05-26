@@ -191,6 +191,7 @@ export const actionModule = {
             commit("RESET_FILTER_PROJECT");
         },
 
+        // filter action
         GET_ACTIONS_BY_FILTER: (state, payload) => {
             // SET_FILTER_LABEL(state, payload);
             switch (payload.type) {

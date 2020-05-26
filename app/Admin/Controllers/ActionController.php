@@ -10,6 +10,7 @@ use Encore\Admin\Layout\Content;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Illuminate\Http\Request;
 
 class ActionController extends Controller
 {
@@ -28,7 +29,7 @@ class ActionController extends Controller
 
     public function index(){
         return Admin::content(function (Content $content) {
-            $content->header('Actions Budgetaires');
+            $content->header('Actions');
             $content->description('liste des actions');
             $content->breadcrumb(
                 ['text' => 'Dashboard', 'url' => '/'],
@@ -89,6 +90,25 @@ class ActionController extends Controller
         });
     }
 
+
+    public function update($id){
+        return Admin::content(function (Content $content) use ($id){
+            $content->body($this->form('edit')->update($id));
+        });
+    }
+
+    public function store(){
+        return Admin::content(function (Content $content) use ($id){
+            $content->body($this->form('edit')->store());
+        });
+    }
+
+    public function destroy($id){
+        return Admin::content(function (Content $content) use ($id){
+            $content->body($this->form('edit')->destroy($id));
+        });
+    }
+
     public function form($id)
     {
         $action = $id==0?new Action():Action::findOrFail($id);
@@ -137,6 +157,7 @@ class ActionController extends Controller
         $this->_select("comment", $form);
         $form->divider();
         $form->image("image")->move('public/storage/')->uniqueName();
+        $form->file("pdf_file" ,"fichier PDF")->move('public/storage/')->uniqueName();
 
         return $form;
     }

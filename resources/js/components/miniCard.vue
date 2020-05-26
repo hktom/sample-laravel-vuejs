@@ -42,7 +42,7 @@
                     <div>
                     <h6>{{ subone }}</h6>
                     <Structure view="3" :collection="action"/>
-                    <span v-if="action_users.length > 0">/(<Structure view="1" :collection="action"/>)</span>
+                    <span v-if="action_users.length > 0">(<Structure view="1" :collection="action"/>)</span>
                     </div>
                     <!-- subtitle one -->
 
@@ -50,7 +50,7 @@
                     <div>
                     <h6>{{ subtwo }}</h6>
                     <Structure view="3" :collection="actiontwo"/>
-                    <span v-if="action_two_users.length > 0">/(<Structure view="1" :collection="action"/>)</span>
+                    <span v-if="action_two_users.length > 0">(<Structure view="1" :collection="action"/>)</span>
                     </div>
                     <!-- subtitle two -->
 

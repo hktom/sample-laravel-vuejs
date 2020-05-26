@@ -64,9 +64,10 @@ export const actorModule = {
                         state.actors.map((item) => {
                             state.options.push({
                                 code: item.id,
-                                label: item.sigle!=null?item.sigle:item.name,
+                                label: item.name,
                                 type: 'actor',
                                 page:1
+                                //label: item.sigle!=null?item.sigle:item.name,
                             });
 
                         });

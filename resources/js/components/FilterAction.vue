@@ -31,7 +31,7 @@
                 <v-select
                     :class="filter == 'echelle' ? 'vue-select-active' : ''"
                     style="background-color:#F8F8F8"
-                    placeholder="Echelle"
+                    placeholder="Échelle"
                     :options="option_echelle"
                     :value="$store.state.action.filter.echelle"
                     @input="filter_echelle"
@@ -55,7 +55,7 @@
                 <v-select
                     :class="filter == 'status' ? 'vue-select-active' : ''"
                     style="background-color:#F8F8F8"
-                    placeholder="Status"
+                    placeholder="Statut"
                     :options="option_status"
                     :value="$store.state.action.filter.status"
                     @input="filter_status"

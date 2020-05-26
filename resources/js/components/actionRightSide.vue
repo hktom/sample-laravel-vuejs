@@ -14,7 +14,7 @@
         <miniCard
             :action="action.states"
             icon="chart-line"
-            title="Status"
+            title="Statut"
             :color="action.project.color"
         />
 
@@ -35,6 +35,12 @@
             subtwo="Qui réalise :"
             :color="action.project.color"
         />
+
+        <div class="p-4" v-if="action.pdf_file!=null">
+            <a :href="'/uploads/'+action.pdf_file" class="fs1 black">
+            <span class="red fs2"><font-awesome-icon icon="file-pdf" /> </span>
+            Fichier PDF</a>
+        </div>
 
     </div>
 </template>

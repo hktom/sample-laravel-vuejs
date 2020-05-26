@@ -16,7 +16,7 @@
 
             <font-awesome-icon v-else icon="chevron-up" size="lg" class="" />
         </h3>
-        <p style="transition:0.5s" v-if="dropdown" v-html="text" id="paragraph"></p>
+        <p style="transition:0.5s" v-if="dropdown" v-html="text" class="paragraph"></p>
     </div>
 </template>
 
