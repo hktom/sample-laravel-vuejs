@@ -97,7 +97,6 @@ export const actionModule = {
             state.filter[payload.type]=payload;
 
             // SET_FILTER_LABEL(state, payload);
-            console.log(`DEBBUG ${JSON.stringify(state.filter)}`);
             state.filter_payload=payload;
 
             var url=payload.type=="search"?`/api/actions/search?page=${payload.page}`:`/api/actions/filter?page=${payload.page}`;

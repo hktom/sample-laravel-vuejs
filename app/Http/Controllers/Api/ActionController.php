@@ -59,19 +59,19 @@ class ActionController extends Controller
             ->whereHas('authors', function ($query) use ($actor_id) {
                 $actor_id > 0 ? $query->where('actor_id', $actor_id) :
                     $query->where('actor_id', '!=', 0);
-            })
-            ->orWhereHas('collaborators', function ($query) use ($actor_id) {
-                $actor_id > 0 ? $query->where('actor_id', $actor_id) :
-                    $query->where('actor_id', '!=', 0);
-            })
-            ->orWhereHas('responsables', function ($query) use ($actor_id) {
-                $actor_id > 0 ? $query->where('actor_id', $actor_id) :
-                    $query->where('actor_id', '!=', 0);
-            })
-            ->orWhereHas('realisators', function ($query) use ($actor_id) {
-                $actor_id > 0 ? $query->where('actor_id', $actor_id) :
-                    $query->where('actor_id', '!=', 0);
             })->paginate(10);
+            // ->orWhereHas('collaborators', function ($query) use ($actor_id) {
+            //     $actor_id > 0 ? $query->where('actor_id', $actor_id) :
+            //         $query->where('actor_id', '!=', 0);
+            // })
+            // ->orWhereHas('responsables', function ($query) use ($actor_id) {
+            //     $actor_id > 0 ? $query->where('actor_id', $actor_id) :
+            //         $query->where('actor_id', '!=', 0);
+            // })
+            // ->orWhereHas('realisators', function ($query) use ($actor_id) {
+            //     $actor_id > 0 ? $query->where('actor_id', $actor_id) :
+            //         $query->where('actor_id', '!=', 0);
+            // })->paginate(10);
 
         return ActionResource::collection($action);
     }

@@ -139,36 +139,37 @@ export default {
             this.$store.commit("RESET_FILTER_PROJECT");
             this.$store.commit("RESET_FILTER_ECHELLE");
         },
-        filter_action(value, field) {
+        filter_action(value, field, action) {
             if (value != null) {
                 this.search = null;
                 this.filter[field] = true;
                 this.$store.dispatch("FILTER_ACTION", value);
             } else {
                 this.filter[field] = false;
-                this.$store.commit("RESET_FILTER_ECHELLE");
-                this.$store.commit("SET_ACTION_DEFAULT");
+                this.$store.commit(action);
+                //this.$store.dispatch("FILTER_ACTION", value);
+                //this.$store.commit("SET_ACTION_DEFAULT");
             }
         },
 
         filter_echelle(value) {
-            this.filter_action(value, 'echelle');
+            this.filter_action(value, 'echelle', "RESET_FILTER_ECHELLE");
         },
 
         filter_status(value) {
-            this.filter_action(value, 'status');
+            this.filter_action(value, 'status', "RESET_FILTER_STATUS");
         },
 
         filter_type(value) {
-            this.filter_action(value, 'type');
+            this.filter_action(value, 'type', "RESET_FILTER_TYPE");
         },
 
         filter_actor(value) {
-            this.filter_action(value, 'actor');
+            this.filter_action(value, 'actor', "RESET_FILTER_ACTOR");
         },
 
         filter_project(value) {
-            this.filter_action(value, 'project');
+            this.filter_action(value, 'project', "RESET_FILTER_PROJECT");
         },
 
         // action_set_filter(value) {
