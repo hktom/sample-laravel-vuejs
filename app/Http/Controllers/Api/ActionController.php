@@ -20,54 +20,60 @@ class ActionController extends Controller
         return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->paginate(10));
     }
 
-    public function index_by($q, $v)
+
+    // action search by word
+    public function search_action(Request $request){
+        $data=$request->all();
+        $search=$data['search']['search'];
+        $action=Action::where('label', 'like', "%$search%")->orWhere('short_description', 'like', "%$search%")->paginate(10);
+
+        return ActionResource::collection($action);
+    }
+
+    // action filter by index
+    public function index_by(Request $request)
     {
-        switch ($q) {
-            case 'echelle':
-                $action = Action::whereHas('echelles', function ($query) use ($v) {
-                    $query->where('echelle_id', $v);
-                })->paginate(10);
-                return ActionResource::collection($action);
-                break;
 
-            case 'status':
-                $action = Action::whereHas('states', function ($query) use ($v) {
-                    $query->where('state_id', $v);
-                })->paginate(10);
-                return ActionResource::collection($action);
-                break;
+        $data = $request->all();
+        $echelle_id = $data['echelle']['code'];
+        $type_id = $data['type']['code'];
+        $status_id = $data['status']['code'];
+        $project_id = $data['project']['code'];
+        $actor_id = $data['actor']['code'];
 
-            case 'type':
-                $action = Action::whereHas('types', function ($query) use ($v) {
-                    $query->where('type_id', $v);
-                })->paginate(10);
-                return ActionResource::collection($action);
-                break;
+        $action = Action::whereHas('echelles', function ($query) use ($echelle_id) {
+            $echelle_id > 0 ? $query->where('echelle_id', $echelle_id) : $query->where('echelle_id', '!=', 0);
+        })
+            ->whereHas('states', function ($query) use ($status_id) {
+                $status_id > 0 ? $query->where('state_id', $status_id) :
+                    $query->where('state_id', '!=', 0);
+            })
+            ->whereHas('types', function ($query) use ($type_id) {
+                $type_id > 0 ? $query->where('type_id', $type_id) :
+                    $query->where('type_id', '!=', 0);
+            })
+            ->whereHas('project', function ($query) use ($project_id) {
+                $project_id > 0 ? $query->where('project_id', $project_id) :
+                    $query->where('project_id', '!=', 0);
+            })
+            ->whereHas('authors', function ($query) use ($actor_id) {
+                $actor_id > 0 ? $query->where('actor_id', $actor_id) :
+                    $query->where('actor_id', '!=', 0);
+            })
+            ->orWhereHas('collaborators', function ($query) use ($actor_id) {
+                $actor_id > 0 ? $query->where('actor_id', $actor_id) :
+                    $query->where('actor_id', '!=', 0);
+            })
+            ->orWhereHas('responsables', function ($query) use ($actor_id) {
+                $actor_id > 0 ? $query->where('actor_id', $actor_id) :
+                    $query->where('actor_id', '!=', 0);
+            })
+            ->orWhereHas('realisators', function ($query) use ($actor_id) {
+                $actor_id > 0 ? $query->where('actor_id', $actor_id) :
+                    $query->where('actor_id', '!=', 0);
+            })->paginate(10);
 
-            case 'project':
-                $action = Action::whereHas('project', function ($query) use ($v) {
-                    $query->where('project_id', $v);
-                })->paginate(10);
-                return ActionResource::collection($action);
-                break;
-
-            case 'actor':
-                $action = Action::whereHas('authors', function ($query) use ($v) {
-                    $query->where('actor_id', $v);
-                })->paginate(10);
-                return ActionResource::collection($action);
-                break;
-
-            case 'search':
-                $action = Action::where('label', 'like', "%$v%")
-                ->where('short_description', 'like', "%$v%")->paginate(10);
-                return ActionResource::collection($action);
-                break;
-
-            default:
-                return ActionResource::collection([]);
-                break;
-        }
+        return ActionResource::collection($action);
     }
 
     public function index_all()
