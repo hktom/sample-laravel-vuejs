@@ -1,7 +1,7 @@
 <template>
     <div>
         <div v-if="title != null">
-            <h4 class="mt-4">
+            <h2 class="mt-4 fs1-2 uppercase">
                 <span :style="'color:' + color" v-if="iconColor != null">
                     <font-awesome-icon :icon="iconColor" />
                 </span>
@@ -10,52 +10,60 @@
                     <font-awesome-icon :icon="iconColor" />
                 </span>
                 {{ title }}
-            </h4>
+            </h2>
 
-            <h6 v-if="subtitle != null">{{ subtitle }}</h6>
+            <!-- <h2 v-if="subtitle != null">{{ subtitle }}</h2> -->
         </div>
 
-        <b-row>
-            <b-col lg="12">
-                <h5
+            <div>
+                <h3
                     @click="toggleFields"
                     class="my-4 action-title cursor-pointer"
                     :style="'background-color:' + color"
                 >
+
+                    <!-- <font-awesome-icon
+                        v-if="icon!=null"
+                        :icon="icon"
+                        size="lg"
+                        class=""
+                    /> -->
+
+                    <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom" v-if="icon!=null"/>
+
                     {{ cardTitle }}
 
                     <font-awesome-icon
                         v-if="!fieldShow"
-                        icon="sort-down"
+                        icon="chevron-down"
                         size="lg"
-                        class="mb-1"
+                        class=""
                     />
 
                     <font-awesome-icon
                         v-else
-                        icon="sort-up"
+                        icon="chevron-up"
                         size="lg"
                         class=""
                     />
-                </h5>
+                </h3>
 
                 <div
                     v-if="fieldShow"
                     v-for="item in articles"
                     :key="item.id"
-                    class="table cursor-pointer"
+                    class="table cursor-pointer link-hover"
                     @click="goTo(item.slug, route)"
                 >
-                    <p v-if="route == 'project'" class="table-row">
-                        {{ item.id }} {{ item.label }}
+                    <p v-if="route == 'showProject'" class="table-row text-left mb0 py-3">
+                        {{ item.id }} {{ item.name }}
                     </p>
 
-                    <p v-else class="table-row">
+                    <p v-else class="table-row text-left mb0 py-3">
                         {{ item.code }} {{ item.label }}
                     </p>
                 </div>
-            </b-col>
-        </b-row>
+            </div>
     </div>
 </template>
 
@@ -75,7 +83,7 @@ export default {
     ],
     data() {
         return {
-            fieldShow: false
+            fieldShow: true
         };
     },
     methods: {
@@ -94,18 +102,6 @@ export default {
         }
     }
 };
-
-// <DropDownCard
-// :articles="project.news"
-// :color="project.color"
-// title="Les actions du CA4 en un coup d’œil"
-// icon="eye"
-// iconColor="eye"
-// subtitle="Les actions sur fond coloré sont prioritaires."
-// cardTitle="nouveautés"
-// slug=""
-// route="showAction"
-// />
 </script>
 
 <style>
@@ -122,7 +118,7 @@ export default {
 }
 
 .table:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 .table h6 {
@@ -135,5 +131,10 @@ export default {
 .table-row {
     padding: 5px 15px 5px 15px;
     /* border-bottom: 2px solid #E9EBEC; */
+}
+
+.link-hover:hover{
+    color:#05668D;
+    font-weight: bold;
 }
 </style>

@@ -15,6 +15,7 @@ import VueScrollReveal from 'vue-scroll-reveal';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import vueHeadful from 'vue-headful';
 library.add(fas)
 
 Vue.config.productionTip = false
@@ -40,8 +41,9 @@ const router = new VueRouter({
 
 })
 
+Vue.component('vue-headful', vueHeadful);
 Vue.component('v-select', vSelect)
-Vue.component('FilterForm', require('./components/FilterForm.vue').default);
+// Vue.component('FilterForm', require('./components/FilterForm.vue').default);
 Vue.component('Baniere', require('./components/Baniere.vue').default);
 Vue.component('SpinnerGrow', require('./components/SpinnerGrow.vue').default);
 Vue.component('HeaderPage', require('./components/HeaderPage.vue').default);
@@ -49,6 +51,7 @@ Vue.component('FooterPage', require('./components/FooterPage.vue').default);
 Vue.component('CardBlog', require('./components/CardBlog.vue').default);
 Vue.component('pagination', require('laravel-vue-pagination'));
 Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('pulse-loader', require('vue-spinner/src/PulseLoader.vue'));
 
 const app = new Vue({
     store,

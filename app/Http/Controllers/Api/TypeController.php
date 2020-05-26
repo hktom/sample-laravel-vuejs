@@ -17,7 +17,7 @@ class TypeController extends Controller
      */
     public function index()
     {
-        return TypeResource::collection('App\Type'::OrderBy('name', 'ASC')->get());
+        return TypeResource::collection('App\Type'::OrderBy('id', 'ASC')->get());
     }
 
     /**

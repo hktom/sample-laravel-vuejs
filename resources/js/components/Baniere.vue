@@ -1,76 +1,88 @@
 <template>
-      <div id="baniere" class="w100 y15 relative ofhidden ms-y10 ss-y10">
-      <div id="bg-image" class="w100"
-      :style="'height:110%;background-image: url('+baniere+')'">
-      </div>
-      <div id="bg-text" class="absolute mt0">
-        <div class="fitme w80 mauto">
-          <h3 class="ml4 mt6 text-header ms-fs1 ss-fs1 lms-fs1-3" v-html="description">
-          </h3>
+    <div id="baniere" class="w100 y15 relative ofhidden ms-y5 ss-y5">
+        <!-- background image  -->
+        <div
+            id="bg-image"
+            class="w100"
+            :style="'height:110%;background-image: url(' + baniere + ')'"
+        ></div>
+        <!-- background image  -->
+
+        <!-- text baniere -->
+        <div id="bg-text" class="absolute mt0 fitme py-5 ss-hidden ms-hidden">
+            <div class="w80 mauto vls-w75 ms-w100 ss-w100">
+
+                <!-- button back -->
+                <div
+                    v-if="btnback"
+                    class="btn-back back-link cursor-pointer mx-3 mt5"
+                    @click="_goBack"
+                >
+                    <font-awesome-icon icon="arrow-circle-left" />
+                    {{ btnbackText }}
+                </div>
+
+                <!-- show text -->
+                <div
+                    v-else
+                    class="px-3 mt3 text-header ms-fs1 ss-fs1 lms-fs1-3 ss-hidden ms-hidden"
+                    v-html="description"
+                ></div>
+            </div>
         </div>
-      </div>
-
-      <div class="btn-back" v-if="btnback">
-
-           <div class="back-link cursor-pointer" @click="_goBack">
-          <font-awesome-icon icon="arrow-circle-left" />
-          Revenir aux actions
-           </div>
-      </div>
-
-      <div class="btn-back" v-if="btnbackProject">
-
-           <div class="back-link cursor-pointer" @click="_goBack">
-          <font-awesome-icon icon="arrow-circle-left" />
-          Revenir aux projects
-           </div >
-      </div>
-
-
+        <!-- text baniere -->
     </div>
 </template>
 
 <script>
 export default {
-    props:["description", "baniere", "btnback", "btnbackProject", "action_id", "btnBackAction"],
-    methods:{
-        _goBack(){
-             return this.$router.go(-1);
+    props: [
+        "description",
+        "baniere",
+        "btnback",
+        "btnbackProject",
+        "action_id",
+        "btnBackAction",
+        "btnbackText"
+    ],
+    methods: {
+        _goBack() {
+            return this.$router.go(-1);
         }
     }
-}
+};
 </script>
 
 <style>
 #bg-image {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  -webkit-filter: blur(4px );
-      filter: blur(4px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-filter: blur(6px);
+    filter: blur(6px);
     transform: scale(1.1);
 }
-.text-header{
+.text-header {
     /* color: white;
     text-shadow: 0 0 1em black;
     font-weight: normal; */
-     color: #eee;
+    /* font-weight: normal; */
+    color: #fff /*#eee*/;
     text-shadow: 0 0 0.2em #000;
-    font-weight: normal;
     font-size: 1.6rem;
-    }
+}
 
-.back-link{
+.back-link {
     color: white;
     text-decoration: none;
 }
 
-.back-link:hover{
+.back-link:hover {
     text-decoration: none;
-    color: white
+    color: white;
 }
 
-.btn-back{
+.btn-back {
     background-color: rgb(23, 162, 184);
     border: none !important;
     font-size: 0.9em;
@@ -78,12 +90,13 @@ export default {
     font-weight: bold !important;
     padding: 10px 20px !important;
     border-radius: 300px !important;
-    position: absolute;
-    top:10em;
-    left: 13em;
+    display: inline-block !important;
+    /* position: absolute; */
+    /* top: 10em;
+    left: 13em; */
 }
 
-.btn-back:hover{
+.btn-back:hover {
     background-color: rgb(7, 54, 61);
 }
 </style>

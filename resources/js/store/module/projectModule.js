@@ -88,9 +88,12 @@ export const projectModule = {
                     state.item = state.projects;
 
                     state.projects.map((item) => {
-                        state.options.push({ code: item.id,
-                            label:`${item.id} ${item.name}` , type: 'project' });
-
+                        state.options.push({
+                            code: item.id,
+                            label:`${item.id} ${item.name}`,
+                            type: 'project',
+                            page:1
+                           });
                         });
                     state.status = true;
 
@@ -105,8 +108,8 @@ export const projectModule = {
             state.get_project = false,
             axios.get(`/api/projects/${payload}`)
                 .then(function (res) {
-                    state.project = res.data.data
-                    state.item = state.projects
+                    state.project = res.data.data[0]
+                    //state.item = state.projects
                     state.get_project = true;
                 })
                 .catch(function (error) {

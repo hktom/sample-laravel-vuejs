@@ -1,18 +1,15 @@
 <template>
 
 <div id="footer" class="w100 py-5" style="background-color:#05668D">
-    <div class="w80 mauto">
-        <b-row>
+    <div class="w80 mauto vls-w75 ms-w100 ss-w100">
+        <div class="px-3">
+            <b-row>
             <b-col lg="6" md="12">
 
                 <logo color="white"/>
                 <p class="white">
-                     <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la transition <strong>écologique.</strong>
+                     <strong>La biodiversité</strong> c’est notre assurance vie </br> face aux changements climatiques et une priorité pour réussir la <strong>transition écologique.</strong>
                  </p>
-                <!-- <img src="/img/header-logo-white.png"
-                class="x30 ms-x15 ss-x15"/>
-                  -->
-                <!-- <img src="/img/logo_white.png" class="w60 cover"> -->
             </b-col>
             <b-col lg="3" md="12">
                 <h6 class="white uppercase">Menu</h6>
@@ -21,11 +18,11 @@
                         <router-link class="footer-link" to="/">Actions</router-link>
                     </li>
                     <li class="white">
-                        <router-link class="footer-link" to="/projects">Champs d'application</router-link>
+                        <router-link class="footer-link" :to="{name:'project'}">Champs d'application</router-link>
                     </li>
-                    <li class="white">
-                        <router-link class="footer-link" to="/contact">Contact</router-link>
-                    </li>
+                    <!-- <li class="white">
+                        <router-link class="footer-link" :to="{name:'contact'}">Contact</router-link>
+                    </li> -->
                 </ul>
             </b-col>
             <b-col lg="3" md="12">
@@ -43,6 +40,7 @@
                 </ul>
             </b-col>
         </b-row>
+        </div>
     </div>
 </div>
 

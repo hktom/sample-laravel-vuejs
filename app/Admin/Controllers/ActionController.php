@@ -4,170 +4,164 @@ namespace App\Admin\Controllers;
 
 use App\Action;
 use Encore\Admin\Controllers\AdminController;
+use App\Http\Controllers\Controller;
+use Encore\Admin\Facades\Admin;
+use Encore\Admin\Layout\Content;
 use Encore\Admin\Form;
 use Encore\Admin\Grid;
 use Encore\Admin\Show;
+use Illuminate\Http\Request;
 
-class ActionController extends AdminController
+class ActionController extends Controller
 {
     /**
      * Title for current resource.
      *
      * @var string
      */
-    protected $title = 'Action';
-    protected $description = [
-        //    'index'  => 'Actions',
-        //        'show'   => 'Show',
-        //        'edit'   => 'Edit',
-        'create' => 'nouveau',
-    ];
-
+    protected $title = 'App\Action';
 
     /**
      * Make a grid builder.
      *
      * @return Grid
      */
-    protected function grid()
-    {
-        $grid = new Grid(new Action());
 
-        $grid->column('code', __('Code'));
-        $grid->column('label', __('Label'));
-        $this->_boolean($grid, "R");
-        $this->_boolean($grid, "A");
-        $this->_boolean($grid, "E");
-        $this->_boolean($grid, "T");
-        $grid->column("authors", "Elaboré par")->display(function ($authors) {
-
-            $authors = array_map(function ($authors) {
-                return "<span class=''>{$authors['name']}</span>";
-            }, $authors);
-
-            return join('&nbsp;', $authors);
+    public function index(){
+        return Admin::content(function (Content $content) {
+            $content->header('Actions');
+            $content->description('liste des actions');
+            $content->breadcrumb(
+                ['text' => 'Dashboard', 'url' => '/'],
+                ['text' => 'Actions', 'url' => '/admin/actions'],
+                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
+                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
+            );
+            $content->body($this->grid());
         });
-        $grid->column('created_at', __('Created at'));
-
-         //$grid->column('id', __('Id'));
-        //$grid->column('image', __('Image'));
-        //$grid->column('indicator', __('Indicator'));
-        //$grid->column('description', __('Description'));
-        //$grid->column('total_cout_etat', __('Total cout etat'));
-        //$grid->column('cout_externe', __('Cout externe'));
-        //$grid->column('total_couts', __('Total couts'));
-        //$grid->column('project_id', __('Project id'));
-        //$grid->column('comment_id', __('Comment id'));
-        //$grid->column('updated_at', __('Updated at'));
-
-        return $grid;
     }
 
-    /**
-     * Make a show builder.
-     *
-     * @param mixed $id
-     * @return Show
-     */
-    protected function detail($id)
-    {
-        $show = new Show(Action::findOrFail($id));
+    public function show($id){
+        return Admin::content(function (Content $content) use ($id) {
+            $action=Action::findOrFail($id);
+            $content->header('Actions '.$action["label"]);
+            $content->description('Action Details');
+            $content->breadcrumb(
+                ['text' => 'Dashboard', 'url' => '/'],
+                ['text' => 'Actions', 'url' => '/admin/actions'],
+                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
+                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
+            );
+            //id new state
+            $state_id=$action["newstates"][0]->id;
+            $newstates='App\NewState'::findOrFail($state_id);
 
-        $show->field('id', __('Id'));
-        $show->field('document_num', __('Document num'));
-        $show->field('label', __('Label'));
-        $show->field('image', __('Image'));
-        $show->field('description', __('Description'));
-        $show->field('indicator', __('Indicator'));
-        $show->field('R', __('R'));
-        $show->field('A', __('A'));
-        $show->field('E', __('E'));
-        $show->field('T', __('T'));
-        $show->field('total_cout_etat', __('Total cout etat'));
-        $show->field('cout_externe', __('Cout externe'));
-        $show->field('total_couts', __('Total couts'));
-        //$show->field('project_id', __('Project id'));
-        //$show->field('comment_id', __('Comment id'));
-        $show->field('created_at', __('Created at'));
-        //$show->field('updated_at', __('Updated at'));
-
-        return $show;
+            $content->header('Action Details');
+            $content->description("Detail budgetaire de l' action");
+            $content->view('admin.action.index', ['data' => $action, 'state'=>$newstates]);
+        });
     }
 
-    /**
-     * Make a form builder.
-     *
-     * @return Form
-     */
-    protected function form()
+    public function create(){
+        return Admin::content(function (Content $content){
+            $content->header('Nouvelle Action');
+            $content->description('.');
+            $content->breadcrumb(
+                ['text' => 'Dashboard', 'url' => '/'],
+                ['text' => 'Actions', 'url' => '/admin/actions'],
+                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
+                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
+            );
+            $content->body($this->form(0));
+        });
+    }
+
+    public function edit($id){
+        return Admin::content(function (Content $content) use ($id){
+            $content->header('Modifier Action');
+            $content->description('.');
+            $content->breadcrumb(
+                ['text' => 'Dashboard', 'url' => '/'],
+                ['text' => 'Actions', 'url' => '/admin/actions'],
+                ['text' => 'Etats Acquis', 'url' => '/admin/acquiredstates'],
+                ['text' => 'Etats Nouveaux', 'url' => '/admin/newstates']
+            );
+            $content->body($this->form('edit')->edit($id));
+        });
+    }
+
+
+    public function update($id){
+        return Admin::content(function (Content $content) use ($id){
+            $content->body($this->form('edit')->update($id));
+        });
+    }
+
+    public function store(){
+        return Admin::content(function (Content $content) use ($id){
+            $content->body($this->form('edit')->store());
+        });
+    }
+
+    public function destroy($id){
+        return Admin::content(function (Content $content) use ($id){
+            $content->body($this->form('edit')->destroy($id));
+        });
+    }
+
+    public function form($id)
     {
-        $form = new Form(new Action());
-        // $form->text('orientation', __('Orientation'));
-        // $this->_select("project", $form)->creationRules('required');
-        // $form->text('code', __('code'))->creationRules('required|unique:actions');
-        // $form->text('label', __('Label'))->creationRules('required|unique:actions');
+        $action = $id==0?new Action():Action::findOrFail($id);
+        $form = new Form($action);
+        $form->text('orientation', __('Orientation'));
+        $this->_select("project", $form)->creationRules('required');
+        $form->text('code', __('code'))->creationRules('required|unique:actions');
+        $form->text('label', __('Label'))->creationRules('required|unique:actions');
 
-        // $form->multipleSelect("authors", "Auteur")->options('App\Actor'::all()->pluck('name', 'id'));
-        // $form->multipleSelect("collaborators", "Collaborateurs")->options('App\Actor'::all()->pluck('name', 'id'));
+        $form->multipleSelect("authors", "Auteur")->options('App\Actor'::all()->pluck('name', 'id'));
+        $form->multipleSelect("collaborators", "Collaborateurs")->options('App\Actor'::all()->pluck('name', 'id'));
 
 
-        // $form->textarea('short_description', __('Apercu'));
-        // $form->ckeditor('description', __('Description'));
-        // $form->textarea('indicator', __('Indicator'));
+        $form->ckeditor('short_description', __('Apercu'));
+        $form->ckeditor('description', __('Description'));
+        $form->ckeditor('indicator', __('Indicator'));
 
-        // $form->multipleSelect("types", "Type")->options('App\Type'::all()->pluck('name', 'id'));
-        // $form->multipleSelect("states", "Status")->options('App\State'::all()->pluck('name', 'id'));
-        // $form->multipleSelect("echelles", "Echelles")->options('App\Echelle'::all()->pluck('name', 'id'));
+        $form->multipleSelect("types", "Type")->options('App\Type'::all()->pluck('name', 'id'));
+        $form->multipleSelect("states", "Status")->options('App\State'::all()->pluck('name', 'id'));
+        $form->multipleSelect("echelles", "Echelles")->options('App\Echelle'::all()->pluck('name', 'id'));
 
-        // $form->divider();
-        // $form->hasMany('calendars', "Calendrier",  function (Form\NestedForm $form) {
-        //     $form->text('year_2020', '2020')->creationRules("nullable");
-        //     $form->text('year_2021', '2021')->creationRules("nullable");
-        //     $form->text('year_2022', '2022')->creationRules("nullable");
-        //     $form->text('year_2023', '2023')->creationRules("nullable");
-        // });
+        $form->divider();
+        $form->hasMany('calendars', "Calendrier",  function (Form\NestedForm $form) {
+            $form->text('year_2020', '2020')->creationRules("nullable");
+            $form->text('year_2021', '2021')->creationRules("nullable");
+            $form->text('year_2022', '2022')->creationRules("nullable");
+            $form->text('year_2023', '2023')->creationRules("nullable");
+        });
 
-        // $form->divider();
+        $form->divider();
 
-        // $form->multipleSelect("responsables", "Responsables")->options('App\Actor'::all()->pluck('name', 'id'));
-        // $form->multipleSelect("realisators", "Realisateurs")->options('App\Actor'::all()->pluck('name', 'id'));
+        $form->multipleSelect("responsables", "Responsables")->options('App\Actor'::all()->pluck('name', 'id'));
+        $form->multipleSelect("realisators", "Realisateurs")->options('App\Actor'::all()->pluck('name', 'id'));
 
-        // $form->multipleSelect("projects", "Champs liés")->options('App\Project'::all()->pluck('name', 'id'));
+        $form->multipleSelect("projects", "Champs liés")->options('App\Project'::all()->pluck('ca_principal', 'id'));
 
-        // $form->multipleSelect("actions", "Actions liées")->options('App\Action'::all()->pluck('label', 'id'));
-        // $form->divider();
-
-        // $form->switch('R', __('R'));
-        // $form->switch('A', __('A'));
-        // $form->switch('E', __('E'));
-        // $form->switch('T', __('T'));
-        // $this->_select("type", $form);
-        // $this->_select("comment", $form);
-        // // $this->_select("state", $form);
-        // // $form->divider();
-        // // $form->text('total_cout_etat', __('Total cout etat'));
-        // // $form->text('cout_externe', __('Cout externe'));
-        // // $form->text('total_couts', __('Total couts'));
-        // $form->divider();
-        // $form->image("image")->move('public/storage/')->uniqueName();
+        $form->multipleSelect("actions", "Actions liées")->options('App\Action'::all()->pluck('code', 'id'));
+        $form->divider();
+        $form->decimal('cout_externe', __('Cout Externe'));
+        $form->divider();
+        $form->switch('R', __('R'));
+        $form->switch('A', __('A'));
+        $form->switch('E', __('E'));
+        $form->switch('T', __('T'));
+        $this->_select("type", $form);
+        $this->_select("comment", $form);
+        $form->divider();
+        $form->image("image")->move('public/storage/')->uniqueName();
+        $form->file("pdf_file" ,"fichier PDF")->move('public/storage/')->uniqueName();
 
         return $form;
     }
 
-    public function _boolean($grid, $b){
-
-        return $grid->column("$b", __("$b"))->display(function ($v) {
-            if($v==1)
-            {
-                return "<span style='color:blue'>X</span>";
-            }
-            else
-            {
-                return "<span style='color:blue'></span>";
-            }
-
-        });
-    }
     public function _select($select, $form)
     {
         if ($select == "project") {
@@ -208,7 +202,7 @@ class ActionController extends AdminController
             })->ajax('/admin/api/comments');
         }
 
-        if($select=="organisation"){
+        if ($select == "organisation") {
             return   $form->select('entreprise_id', "Organisation")->options(function ($name) {
                 $d = 'App\Actor'::where('name', 'like', "%$name%")->orWhere('id', $name)->first();
                 if ($d) {
@@ -216,5 +210,40 @@ class ActionController extends AdminController
                 }
             })->ajax('/admin/api/actors');
         }
+    }
+
+    public function grid()
+    {
+        $grid = new Grid(new Action());
+
+        $grid->column('code', __('Code'));
+        $grid->column('label', __('Label'));
+        $this->_boolean($grid, "R");
+        $this->_boolean($grid, "A");
+        $this->_boolean($grid, "E");
+        $this->_boolean($grid, "T");
+        $grid->column("authors", "Elaboré par")->display(function ($authors) {
+
+            $authors = array_map(function ($authors) {
+                return "<span class=''>{$authors['name']}</span>";
+            }, $authors);
+
+            return join('&nbsp;', $authors);
+        });
+
+        $grid->column('created_at', __('Created at'));
+        return $grid;
+    }
+
+    public function _boolean($grid, $b)
+    {
+
+        return $grid->column("$b", __("$b"))->display(function ($v) {
+            if ($v == 1) {
+                return "<span style='color:blue'>X</span>";
+            } else {
+                return "<span style='color:blue'></span>";
+            }
+        });
     }
 }

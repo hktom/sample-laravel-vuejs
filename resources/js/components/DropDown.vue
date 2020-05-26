@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h4
+        <h3
             @click="_dropdown"
             class="bold action-title cursor-pointer"
             :style="'background-color:' + color"
@@ -9,14 +9,14 @@
 
             <font-awesome-icon
                 v-if="!dropdown"
-                icon="sort-down"
+                icon="chevron-down"
                 size="lg"
-                class="mb-1"
+                class=""
             />
 
-            <font-awesome-icon v-else icon="sort-up" size="lg" class="" />
-        </h4>
-        <p style="transition:0.5s" v-if="dropdown">{{ text }}</p>
+            <font-awesome-icon v-else icon="chevron-up" size="lg" class="" />
+        </h3>
+        <p style="transition:0.5s" v-if="dropdown" v-html="text" class="paragraph"></p>
     </div>
 </template>
 
@@ -26,7 +26,7 @@ export default {
     props:["color", "text", "title"],
     data: function() {
         return {
-            dropdown: false
+            dropdown: true
         };
     },
 
@@ -38,4 +38,5 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+</style>

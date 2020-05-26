@@ -1,54 +1,36 @@
 <template>
-<div v-scroll-reveal>
-  <div id="cardBlog" class="py-4 px-4 cursor-pointer" @click="seeAction(article.slug)">
-      <!-- <h1>{{article}}</h1> -->
-      <b-row>
-          <b-col lg="4" md="12">
-              <img :src="'uploads/'+article.project.icon" class="w100 px-4 py-4 cover center"/>
+<div v-scroll-reveal class="w100 px-3">
+<div class="w100 mauto p-4" id="cardBlog">
+    <b-row class="cursor-pointer">
+          <b-col lg="3" md="12" @click="seeAction(article.slug)" class="ss-m0">
+              <img :src="'uploads/'+article.project.icon" style="" class="w100 vls-p50 cover center"/>
           </b-col>
 
-          <b-col lg="8" md="12">
+          <b-col lg="9" md="12" class="ss-m0">
 
-              <h4>
-                  <span class="bold" :style="'font-weight:bold;color:'+article.project.color">
+              <div>
+                  <h3 class="bold inline-block ss-fs1-3" :style="'font-weight:bold;color:'+article.project.color" @click="seeAction(article.slug)">
                       ACTION {{ article.code }}
-                  </span>
+                  </h3>
 
                   <b-badge variant="light">
-
-                          <!-- <font-awesome-icon icon="check-circle" :style="{ color: '#05668D' }" /> -->
-                      <span class="fs0-8" :style="{color: '#05668D'}">
-                          {{ filter=="champ d'application"? `champ d'application: ${article.project.name}` :filter }}
+                      <span class="fs1-2 cursor-pointer card-field-link" @click="seeField(article.project.slug)">
+                          {{ article.project.name }}
                       </span>
 
                   </b-badge>
-              </h4>
+              </div>
 
-              <h4 class="bold" style="font-weight:bold">
-                      {{ article.name}}
-              </h4>
+              <h2 class="bold ss-fs1 fs1-5" style="font-weight:bold" @click="seeAction(article.slug)">{{ article.name}}</h2>
 
-              <p>
-                  Elaboré(e) par
-                  <span v-for="author in article.authors" :key="author.id">
-                  <span class="fs0-9" v-if="author.is_a_person"> {{author.name}}  /
-                  </span>
-                  </span>
+              <p
+              class="ss-hidden"
+              @click="seeAction(article.slug)"
+              v-html="article.short_description"></p>
 
-                  (
-                  <span v-for="(author, count) in article.authors" :key="author.id+'_'">
-                    <span class="fs0-9" v-if="!author.is_a_person">
-                   {{author.name}} <span v-if="count+1 < article.authors.length">,</span>
-                  </span>
-                  </span>
-                  )
-
-              </p>
-              <p>
-                  {{ article.short_description.slice(0, 255) }} ...
-              </p>
-
-            <b-button pill style="background-color:#05668D">
+            <b-button pill style="background-color:#05668D"
+            @click="seeAction(article.slug)"
+            class="btn-card-link">
                 <div class="card-link">
                 Details de l'action
                 <font-awesome-icon
@@ -57,24 +39,23 @@
                 </div>
             </b-button>
 
-              <!-- <p class="link-article italic">
-                      Details de l'action
-              </p> -->
-
-
           </b-col>
-
-      </b-row>
-  </div>
-  </div>
+  </b-row>
+</div>
+</div>
 </template>
 
 <script>
+import Structure from "./Structure";
 export default {
+    components:{
+        Structure
+    },
 props: ['article'],
 data: function(){
     return {
-
+        users: [],
+        organisations: [],
     }
 },
 
@@ -84,10 +65,29 @@ computed:{
     }
 },
 methods:{
-    seeAction(articleId){
-        return this.$router.push({ name: 'showAction', params: { id: articleId } });
+    seeAction(slug){
+        return this.$router.push({ name: 'showAction', params: { id: slug } });
         //return this.$router.push({ path: `/action/${articleId}`});
-    }
+    },
+
+    seeField(slug){
+        return this.$router.push({ name: 'showProject', params: { id: slug } });
+        //return this.$router.push({ path: `/action/${articleId}`});
+    },
+
+    fill() {
+            this.article.authors.map((item) => {
+                if(item.is_a_person) {
+                    this.users.push(item);
+                } else {
+                    this.organisations.push(item);
+                }
+            });
+        },
+},
+
+mounted(){
+    this.fill();
 }
 
 
@@ -101,10 +101,10 @@ methods:{
     /* box-shadow: 2px 2px 2px black;
     margin:15px 0px 15px 0px; */
     /* padding: 2em 4em !important; */
+    /* margin-left: 15px; */
+    /* margin-right: 15px; */
     border-radius: 5px;
     margin-bottom: 1.2em;
-    margin-left: 15px;
-    margin-right: 15px;
     box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
     border: 1px solid #ddd;
     transition: 0.2s;
@@ -137,6 +137,18 @@ methods:{
     /* background-color: #17A2B8;
     color: white; */
     color: #17A2B8;
+}
+
+.card-field-link{
+    color: #05668D;
+}
+
+.card-field-link:hover{
+    color: #07363D;
+}
+
+.btn-card-link:hover{
+    background-color: #07363D !important;
 }
 
 </style>

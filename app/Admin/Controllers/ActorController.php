@@ -28,6 +28,7 @@ class ActorController extends AdminController
 
         $grid->column('id', __('Id'));
         //$grid->column('entreprise_id', __('Entreprise id'));
+        $grid->column('sigle', __('Sigle'));
         $grid->column('name', __('Name'));
         $this->_boolean($grid, "is_a_person");
         $grid->column('created_at', __('Created at'));
@@ -68,6 +69,7 @@ class ActorController extends AdminController
         $form = new Form(new Actor());
 
         $form->text('name', __('Nom'))->creationRules("required|unique:actors");
+        $form->text('sigle', __('Sigle'))->creationRules("nullable|required|unique:actors");
         //$form->email('email', __('Email'));
         //$form->text('logo', __('Logo'));
         $form->text('description', __('Description'));

@@ -1,45 +1,68 @@
 <template>
-    <div>
+    <div class="my-3">
         <div v-if="action != null">
-            <h5 class="my-4 action-title" :style="'background-color:' + color">
-                <font-awesome-icon :icon="icon" />
+            <h3 class="my-1 action-title" :style="'background-color:' + color">
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
+                <!-- <font-awesome-icon :icon="icon" /> -->
                 {{ title }}
-            </h5>
+            </h3>
 
-          <div>
-
-                <span v-for="author in action" :key="author.id+'_'">
-                  <span v-if="author.is_a_person"> {{author.name}}  /
-                  </span>
-                </span>
-
-                  (
-                  <span v-for="(author, count) in action" :key="author.id">
-                    <span v-if="!author.is_a_person">
-                   {{author.name}} <span v-if="count+1 < action.length">,</span>
-                  </span>
-                  </span>
-                  )
-
-          </div>
-
+            <div>
+                <Structure view="2" :collection="action" />
+                <span v-if="organisations.length > 0"
+                    >(<Structure view="3" :collection="action" />)</span
+                >
+            </div>
         </div>
 
         <div v-else>
-            <h5 class="my-4 action-title" :style="'background-color:' + color">
-                <font-awesome-icon :icon="icon" />
+            <h3 class="my-2 action-title" :style="'background-color:' + color">
+                <!-- <font-awesome-icon :icon="icon" /> -->
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
                 {{ title }}
-            </h5>
-            <p>
-                {{ text }}
-            </p>
+            </h3>
+            <p v-html="text" class="paragraph"></p>
         </div>
     </div>
 </template>
 
 <script>
+import Structure from "./Structure";
 export default {
+    components: {
+        Structure
+    },
     name: "flatCard",
-    props: ["icon", "color", "action", "text", "title"]
+    props: ["icon", "color", "action", "text", "title"],
+    data: function() {
+        return {
+            users: [],
+            organisations: []
+        };
+    },
+
+    mounted() {
+        if (this.action != null) {
+            this.fill();
+        }
+    },
+
+    methods: {
+        fill() {
+            this.action.map(item => {
+                if (item.is_a_person) {
+                    this.users.push(item);
+                } else {
+                    this.organisations.push(item);
+                }
+            });
+        }
+    }
 };
 </script>
+
+<style>
+.paragraph * {
+    text-align: left !important;
+}
+</style>

@@ -18,7 +18,12 @@ export const statusModule = {
                     state.status = true,
 
                         state.item.map((item) => {
-                            state.options.push({ code: item.id, label: item.name, type: 'status' });
+                            state.options.push({
+                                code: item.id,
+                                label: item.name,
+                                type: 'status',
+                                page:1
+                        });
 
                         });
 

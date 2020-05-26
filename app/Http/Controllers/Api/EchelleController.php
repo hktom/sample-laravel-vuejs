@@ -17,7 +17,7 @@ class EchelleController extends Controller
      */
     public function index()
     {
-        return EchelleResource::collection('App\Echelle'::OrderBy('name', 'ASC')->get());
+        return EchelleResource::collection('App\Echelle'::OrderBy('id', 'ASC')->get());
     }
 
     /**

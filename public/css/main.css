@@ -20,7 +20,16 @@
   }
 
 
-  *{font-family: primary !important;}
-  h1, h2, h3, h4, h5, h6{font-family: h1 !important;}
+  *{
+      font-family: primary !important;
+      /* border:0.4px solid red */
+    }
+  h1, h2, h3, h4, h5, h6, .title{font-family: h1 !important;}
 
-  p{width: 100%; text-align: justify;}
+  p, pre{
+      font-size: 16px !important;
+      /* width: 100% !important; */
+      /* white-space: normal !important; */
+      /* display: block !important; */
+      /* overflow: hidden !important; */
+}

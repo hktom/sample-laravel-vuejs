@@ -10,11 +10,7 @@
             <h4 class="card-title">
                 {{ article.name }}
             </h4>
-            <p class="card-text">
-                {{
-                    article.vision.slice(0, 200)
-                }}[...]
-            </p>
+            <p class="card-text" v-html="article.vision.slice(0, 150)+'...'"></p>
 
             <b-button pill style="background-color:#05668D">
                 <div class="card-link">
@@ -35,7 +31,7 @@ export default {
     props:['article'],
     methods:{
         _gotToProject(articleId){
-             return this.$router.push({ name: 'shwoProject', params: { id: articleId } });
+             return this.$router.push({ name: 'showProject', params: { id: articleId } });
         }
     }
 
