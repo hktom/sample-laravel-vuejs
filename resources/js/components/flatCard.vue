@@ -61,7 +61,5 @@ export default {
 </script>
 
 <style>
-.paragraph * {
-    text-align: left !important;
-}
+
 </style>

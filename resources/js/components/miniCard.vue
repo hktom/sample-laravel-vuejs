@@ -6,8 +6,8 @@
             <!-- card  -->
             <div class="card mt-4 mb-0 ">
                 <!-- card header -->
-                <div class="card-header py-1 px-1" :style="'background-color:' + color">
-                    <h3 class="action-title block">
+                <div class="card-header p-0" :style="'background-color:' + color">
+                    <h3 class="action-title-nopad block">
                 <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>{{ title }}</h3>
                 </div>
                 <!-- card header -->
@@ -38,8 +38,8 @@
             <!-- card  -->
             <div class="card mt-4 mb-0 ">
                 <!-- card header -->
-                <div class="card-header py-1 px-1" :style="'background-color:' + color">
-                    <h3 class="action-title block">
+                <div class="card-header p-0" :style="'background-color:' + color">
+                    <h3 class="action-title-nopad block">
                 <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>{{ title }}</h3>
                 </div>
                 <!-- card header -->

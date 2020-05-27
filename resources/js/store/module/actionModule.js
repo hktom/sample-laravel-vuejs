@@ -94,12 +94,22 @@ export const actionModule = {
         GET_ACTIONS_BY_FILTER: (state, payload) => {
 
             // SET_FILTER_LABEL(state, payload);
-            state.filter[payload.type]=payload;
+            if(payload!=null){
+                state.filter[payload.type]=payload;
+                var type=payload.type;
+                var page=payload.page;
+            }
+            else
+            {
+                var type='filter';
+                var page=1;
+            }
+
 
             // SET_FILTER_LABEL(state, payload);
             state.filter_payload=payload;
 
-            var url=payload.type=="search"?`/api/actions/search?page=${payload.page}`:`/api/actions/filter?page=${payload.page}`;
+            var url=type=="search"?`/api/actions/search?page=${page}`:`/api/actions/filter?page=${page}`;
 
             state.status = false;
             state.pagination = false;

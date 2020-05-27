@@ -145,10 +145,11 @@ export default {
                 this.filter[field] = true;
                 this.$store.dispatch("FILTER_ACTION", value);
             } else {
+                //var _value={"code":null,"type":field,"page":1};
                 this.filter[field] = false;
                 this.$store.commit(action);
-                //this.$store.dispatch("FILTER_ACTION", value);
-                //this.$store.commit("SET_ACTION_DEFAULT");
+                this.$store.dispatch("FILTER_ACTION",value);
+
             }
         },
 
