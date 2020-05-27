@@ -58,20 +58,21 @@ class ActionController extends Controller
             })
             ->whereHas('authors', function ($query) use ($actor_id) {
                 $actor_id > 0 ? $query->where('actor_id', $actor_id) :
-                    $query->where('actor_id', '!=', 0);
-            })->paginate(10);
-            // ->orWhereHas('collaborators', function ($query) use ($actor_id) {
-            //     $actor_id > 0 ? $query->where('actor_id', $actor_id) :
-            //         $query->where('actor_id', '!=', 0);
+                $query->where('actor_id', '!=', 0);
+            })
+            // ->whereHas('collaborators', function ($query) use ($actor_id) {
+            //     $actor_id > 0 ? $query->orWhere('actor_id', $actor_id) :
+            //     $query->orWhere('actor_id', '!=', 0);
             // })
-            // ->orWhereHas('responsables', function ($query) use ($actor_id) {
-            //     $actor_id > 0 ? $query->where('actor_id', $actor_id) :
-            //         $query->where('actor_id', '!=', 0);
+            // ->whereHas('responsables', function ($query) use ($actor_id) {
+            //     $actor_id > 0 ? $query->orWhere('actor_id', $actor_id) :
+            //         $query->orWhere('actor_id', '!=', 0);
             // })
-            // ->orWhereHas('realisators', function ($query) use ($actor_id) {
-            //     $actor_id > 0 ? $query->where('actor_id', $actor_id) :
-            //         $query->where('actor_id', '!=', 0);
-            // })->paginate(10);
+            // ->whereHas('realisators', function ($query) use ($actor_id) {
+            //     $actor_id > 0 ? $query->orWhere('actor_id', $actor_id) :
+            //         $query->orWhere('actor_id', '!=', 0);
+            // })
+            ->paginate(10);
 
         return ActionResource::collection($action);
     }
@@ -79,43 +80,6 @@ class ActionController extends Controller
     public function index_all()
     {
         return ActionResource::collection('App\Action'::OrderBy('project_id', 'ASC')->get());
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        // $data=$this->validateForm($request->all());
-        // try {
-        //         $post=new Post();
-        //         $post->title=$data['title'];
-        //         $post->content=$data['content'];
-        //         $post->folder_id=$data['folder_id'];
-        //         $post->user_id=auth()->user()->id;
-        //         //$post->user_id=1;
-
-        //         if($post->save())
-        //         {
-        //             foreach ($data['themes'] as $variable) {
-
-        //                 $postTheme=new PostTheme();
-        //                 $postTheme->theme_id=$variable['value'];
-        //                 $postTheme->post_id=$post->id;
-        //                 $postTheme->save();
-
-        //             }
-
-        //         }
-
-        //     return response()->json(['satus'=>200])->setStatusCode(200);
-
-        // } catch (\Throwable $th) {
-        //     return response()->json([$th->getMessage()])->setStatusCode(500);
-        // }
     }
 
     /**
@@ -129,78 +93,4 @@ class ActionController extends Controller
         return ActionResource::collection('App\Action'::where('slug', $id)->get());
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Action  $action
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Action $action)
-    {
-        //     $data=$this->validateForm($request->all());
-
-        //     try {
-        //         $post=Post::find($id);
-        //         $post->title=$data['title'];
-        //         $post->content=$data['content'];
-        //         $post->folder_id=$data['folder_id'];
-        //         $post->user_id=auth()->user()->id;
-        //         //$post->themes->delete();
-        //         // $post->themes()->detach();
-
-        //         if($post->save())
-        //         {
-        //             PostTheme::where('post_id', $id)->delete();
-        //             foreach ($data['themes'] as $variable) {
-
-        //                 $postTheme=new PostTheme();
-        //                     $postTheme->theme_id=$variable['value'];
-        //                     $postTheme->post_id=$post->id;
-        //                     $postTheme->save();
-
-
-        //                 }
-
-        //         }
-
-        //     return response()->json(['satus'=>200])->setStatusCode(200);
-
-        // } catch (\Throwable $th) {
-        //     return response()->json([$th->getMessage()])->setStatusCode(500);
-        // }
-
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Action  $action
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Action $action)
-    {
-        // try {
-        //     PostTheme::where('post_id', $id)->delete();
-        //     Post::where('id', $id)->delete();
-        //     return PostResource::collection(Post::OrderBy('id', 'DESC')->paginate(10));
-
-        // } catch (\Throwable $th) {
-
-        //     return response()->json(['data'=>$th->getMessage()])->setStatusCode(500);
-        // }
-
-    }
-
-    public function validateForm(array $data)
-    {
-        return Validator::make($data, [
-            "title" => "required|min:6|string",
-            "content" => "nullable|min:6|string",
-            "folder_id" => "required|integer",
-            "themes" => "required|array",
-            "image" => "nullable|min:6|string",
-
-        ])->validate();
-    }
 }

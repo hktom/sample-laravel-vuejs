@@ -2,16 +2,18 @@
     <div>
         <!-- if double card equal false -->
         <div v-if="!doubleCard">
-            <h3
-                class="mt-4 mb-0 py-1 action-title block"
-                :style="'background-color:' + color"
-            >
-                <!-- <font-awesome-icon :icon="icon" /> -->
-                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
-                {{ title }}
-            </h3>
-            <b-card bg-variant="default" class="py-0 my-0">
-                <b-card-text>
+
+            <!-- card  -->
+            <div class="card mt-4 mb-0 ">
+                <!-- card header -->
+                <div class="card-header py-1 px-1" :style="'background-color:' + color">
+                    <h3 class="action-title block">
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>{{ title }}</h3>
+                </div>
+                <!-- card header -->
+
+                <!-- card body -->
+                <div class="card-body">
                     <div>
                         <ul v-for="(item, count) in action" :key="item.id" class="list-none">
                             <li style="text-decoration:none;line-height:0.8rem">
@@ -22,23 +24,29 @@
                             </li>
                         </ul>
                     </div>
-                </b-card-text>
-            </b-card>
+                </div>
+                <!-- card body -->
+
+            </div>
+            <!-- card  -->
+
         </div>
 
         <!-- if double card equal true-->
         <div v-else>
-            <h3
-                class="mt-4 mb-0 py-1 action-title block"
-                :style="'background-color:' + color"
-            >
-                <!-- <font-awesome-icon :icon="icon" /> -->
-                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
-                {{ title }}
-            </h3>
-            <b-card bg-variant="default" class="py-0 my-0">
-                <b-card-text>
-                    <!-- subtitle one -->
+
+            <!-- card  -->
+            <div class="card mt-4 mb-0 ">
+                <!-- card header -->
+                <div class="card-header py-1 px-1" :style="'background-color:' + color">
+                    <h3 class="action-title block">
+                <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>{{ title }}</h3>
+                </div>
+                <!-- card header -->
+
+                <!-- card body -->
+                <div class="card-body">
+                   <!-- subtitle one -->
                     <div>
                     <h6>{{ subone }}</h6>
                     <Structure view="3" :collection="action"/>
@@ -53,10 +61,12 @@
                     <span v-if="action_two_users.length > 0">(<Structure view="1" :collection="action"/>)</span>
                     </div>
                     <!-- subtitle two -->
+                </div>
+                <!-- card body -->
 
+            </div>
+            <!-- card  -->
 
-                </b-card-text>
-            </b-card>
         </div>
         <!-- if double card equal true-->
     </div>

@@ -26,11 +26,10 @@ class ActorController extends AdminController
     {
         $grid = new Grid(new Actor());
 
-        $grid->column('id', __('Id'));
-        //$grid->column('entreprise_id', __('Entreprise id'));
-        $grid->column('sigle', __('Sigle'));
-        $grid->column('name', __('Name'));
-        $this->_boolean($grid, "is_a_person");
+        $grid->column('id', __('Id'))->sortable();
+        $grid->column('name', __('Name'))->sortable();
+        $grid->column('sigle', __('Sigle'))->sortable();
+        $this->_boolean($grid, "is_a_person")->sortable();
         $grid->column('created_at', __('Created at'));
         return $grid;
     }
