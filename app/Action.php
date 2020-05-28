@@ -114,5 +114,10 @@ class Action extends Model
         return $this->hasMany('App\Newstate', 'action_id');
     }
 
+    public function files()
+    {
+        return $this->hasMany('App\File', 'action_id');
+    }
+
 
 }

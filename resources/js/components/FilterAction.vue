@@ -119,7 +119,6 @@ export default {
 
     methods: {
         deselect(all=false) {
-            //this.filter = null;
             this.filter = {
                 actor: false,
                 project: false,
@@ -141,11 +140,9 @@ export default {
         },
         filter_action(value, field, action) {
             if (value != null) {
-                this.search = null;
                 this.filter[field] = true;
                 this.$store.dispatch("FILTER_ACTION", value);
             } else {
-                //var _value={"code":null,"type":field,"page":1};
                 this.filter[field] = false;
                 this.$store.commit(action);
                 this.$store.dispatch("FILTER_ACTION",value);
@@ -173,43 +170,14 @@ export default {
             this.filter_action(value, 'project', "RESET_FILTER_PROJECT");
         },
 
-        // action_set_filter(value) {
-        //   value!=null?
-        //   this.$store.dispatch("FILTER_ACTION", value):
-        //   this.$store.commit("SET_ACTION_DEFAULT");
-        // },
-
-        set_badge(value) {
-            let payload = "";
-            switch (value.type) {
-                case "actor":
-                    payload = `Acteur ${value.label}`;
-                    break;
-
-                case "project":
-                    payload = `champ d'application ${value.label}`;
-                    break;
-
-                default:
-                    payload = `${value.type} ${value.label}`;
-                    break;
-            }
-
-            if (value != null) {
-                this.$store.dispatch("SET_FILTER_BADGE", payload);
-            } else {
-                this.$store.dispatch("SET_FILTER_BADGE", "champ d'application");
-            }
-        },
-
         research() {
             if (this.search != null && this.search.length > 2) {
-                this.deselect();
                 //this.reset_filter();
                 var payload = {
                     search: this.search,
                     page: 1,
-                    type:'search'
+                    type:'search',
+                    label:'search',
                 };
                 //this.$store.dispatch("FIND_ACTION", this.search.trim());
                 this.$store.dispatch("FIND_ACTION", payload);

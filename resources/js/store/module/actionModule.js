@@ -19,6 +19,7 @@ export const actionModule = {
             'status':null,
             'project':null,
             'actor':null,
+            'search':null,
         },
         default_filter:{
             'echelle':null,
@@ -26,6 +27,7 @@ export const actionModule = {
             'status':null,
             'project':null,
             'actor':null,
+            'search':null,
         }
     },
     actions: {
@@ -109,7 +111,8 @@ export const actionModule = {
             // SET_FILTER_LABEL(state, payload);
             state.filter_payload=payload;
 
-            var url=type=="search"?`/api/actions/search?page=${page}`:`/api/actions/filter?page=${page}`;
+            //var url=type=="search"?`/api/actions/search?page=${page}`:`/api/actions/filter?page=${page}`;
+            var url=`/api/actions/filter?page=${page}`;
 
             state.status = false;
             state.pagination = false;

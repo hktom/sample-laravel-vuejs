@@ -21,7 +21,7 @@
         <miniCard
             :action="action.echelles"
             icon="chair"
-            title="Echelle"
+            title="Échelle"
             :color="action.project.color"
         />
 
@@ -36,10 +36,17 @@
             :color="action.project.color"
         />
 
-        <div class="p-4" v-if="action.pdf_file!=null">
-            <a :href="'/uploads/'+action.pdf_file" class="fs1 black">
-            <span class="red fs2"><font-awesome-icon icon="file-pdf" /> </span>
-            Fichier PDF</a>
+        <div class="p-4" v-if="action.files.length > 0">
+
+            <div v-for="file in action.files" :key="file.id">
+                <a :href="'/uploads/'+file.location" class="fs1 black">
+                <span :class="file.type=='pdf'?'text-danger fs2':'text-primary fs2'">
+                <font-awesome-icon
+                :icon="file.type=='pdf'?'file-pdf':'file-word'" /> </span>
+                {{ file.name }}
+                </a>
+            </div>
+
         </div>
 
     </div>

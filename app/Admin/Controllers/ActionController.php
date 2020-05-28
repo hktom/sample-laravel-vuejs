@@ -92,21 +92,16 @@ class ActionController extends Controller
 
 
     public function update($id){
-        return Admin::content(function (Content $content) use ($id){
-            $content->body($this->form('edit')->update($id));
-        });
+        return $this->form('edit')->update($id);
     }
 
     public function store(){
-        return Admin::content(function (Content $content) use ($id){
-            $content->body($this->form('edit')->store());
-        });
+        return $this->form('edit')->store();
     }
 
     public function destroy($id){
-        return Admin::content(function (Content $content) use ($id){
-            $content->body($this->form('edit')->destroy($id));
-        });
+        return $this->form('edit')->destroy($id);
+
     }
 
     public function form($id)
@@ -157,7 +152,13 @@ class ActionController extends Controller
         $this->_select("comment", $form);
         $form->divider();
         $form->image("image")->move('public/storage/')->uniqueName();
-        $form->file("pdf_file" ,"fichier PDF")->move('public/storage/')->uniqueName();
+
+        $form->divider();
+        $form->hasMany('files', "Fichier",  function (Form\NestedForm $form) {
+            $form->text('name', 'Titre')->creationRules("nullable|unique:files");
+            $form->radio('type', 'Type')->options(['pdf' => 'PDF', 'word'=> 'Word'])->default('pdf');
+            $form->file("location" ,"Location")->move('public/storage/')->uniqueName();
+        });
 
         return $form;
     }

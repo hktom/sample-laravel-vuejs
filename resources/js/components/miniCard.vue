@@ -19,7 +19,7 @@
                             <li style="text-decoration:none;line-height:0.8rem">
                                 {{ item.name.trim()
                                 }}<span v-if="count + 1 < action.length"
-                                    >,</span
+                                    ></span
                                 >
                             </li>
                         </ul>
@@ -58,7 +58,7 @@
                     <div>
                     <h6>{{ subtwo }}</h6>
                     <Structure view="3" :collection="actiontwo"/>
-                    <span v-if="action_two_users.length > 0">(<Structure view="1" :collection="action"/>)</span>
+                    <span v-if="action_two_users.length > 0">(<Structure view="1" :collection="actiontwo"/>)</span>
                     </div>
                     <!-- subtitle two -->
                 </div>
@@ -116,6 +116,8 @@ export default {
                     this.action_two_organisation.push(item);
                 }
             });
+
+            console.log(`DEBBUG ${this.action_two_users}`);
         }
     },
     mounted() {
