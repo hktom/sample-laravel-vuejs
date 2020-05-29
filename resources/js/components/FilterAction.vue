@@ -50,7 +50,7 @@
                     @input="filter_actor"
                 >
                 <template v-slot:option="option">
-                    <span> <b>{{ option.sigle }}</b> {{ option.label }} </span>
+                    <span> <b>{{ option.sigle }}</b> {{ option.title }} </span>
                 </template>
                 </v-select>
             </b-col>
