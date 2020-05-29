@@ -217,6 +217,17 @@ class ActionController extends Controller
     {
         $grid = new Grid(new Action());
 
+        $grid->filter(function($filter){
+
+            // Remove the default id filter
+            $filter->disableIdFilter();
+
+            // Add a column filter
+            $filter->like('label', 'Label');
+
+
+        });
+
         $grid->column('code', __('Code'));
         $grid->column('label', __('Label'));
         $this->_boolean($grid, "R");

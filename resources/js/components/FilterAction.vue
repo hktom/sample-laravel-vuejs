@@ -48,7 +48,11 @@
                     :options="option_actors"
                     :value="$store.state.action.filter.actor"
                     @input="filter_actor"
-                />
+                >
+                <template v-slot:option="option">
+                    <span> <b>{{ option.sigle }}</b> {{ option.label }} </span>
+                </template>
+                </v-select>
             </b-col>
         </b-row>
 
