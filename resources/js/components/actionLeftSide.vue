@@ -98,11 +98,5 @@ export default {
 </script>
 
 <style>
-.action-title {
-    display: inline-block;
-    padding: 4px 40px;
-    color: black;
-    text-transform: uppercase;
-    font-size: 14px;
-}
+
 </style>

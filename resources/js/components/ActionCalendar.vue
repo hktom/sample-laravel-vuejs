@@ -42,16 +42,5 @@ export default {
 </script>
 
 <style>
-.calendar{
-    /* border:0.5px solid #E9EBEC; */
-    text-align: left;
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
-    border: 1px solid #ddd;
-    border-radius: 5px;
 
-}
-
-.calendar h6{color: black;padding: 4px 0px 4px 0px}
 </style>

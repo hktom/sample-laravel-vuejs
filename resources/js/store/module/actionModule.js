@@ -19,6 +19,7 @@ export const actionModule = {
             'status':null,
             'project':null,
             'actor':null,
+            'search':null,
         },
         default_filter:{
             'echelle':null,
@@ -26,38 +27,15 @@ export const actionModule = {
             'status':null,
             'project':null,
             'actor':null,
+            'search':null,
         }
     },
     actions: {
         //vue select filter option
         FILTER_ACTION: ({ commit }, payload) => {
                 commit("GET_ACTIONS_BY_FILTER", payload);
-                // switch (payload.type) {
-                //     case 'actor':
-                //         commit("FILTER_ACTION_BY_ACTOR", payload);
-                //         break;
-
-                //     case 'status':
-                //         commit("FILTER_ACTION_BY_STATUS", payload);
-                //         break;
-
-                //     case 'type':
-                //         commit("FILTER_ACTION_BY_TYPE", payload);
-                //         break;
-
-                //     case 'echelle':
-                //         commit("FILTER_ACTION_BY_ECHELLE", payload);
-                //         break;
-
-                //     case 'project':
-                //         commit("FILTER_ACTION_BY_PROJECT", payload);
-                //         break;
-
-                //     default:
-                //         commit("SET_ACTION_DEFAULT");
-                //         break;
-                // }
         },
+
         FIND_ACTION: ({ commit }, payload) => {
             if (payload != null) {
                 //commit("FIND_ACTION", payload);
@@ -71,10 +49,6 @@ export const actionModule = {
             commit("GET_ACTIONS", payload);
         },
 
-        // GET_ACTIONS_BY_FILTER:({commit}, payload, page)=> {
-        //     commit("GET_ACTIONS_BY_FILTER", payload, page);
-        // },
-
         SHOW_ACTION: ({ commit }, payload) => {
             commit("SHOW_ACTION", payload);
         },
@@ -85,79 +59,6 @@ export const actionModule = {
         RESET_FILTER_TYPE:state=>state.filter.type=null,
         RESET_FILTER_ACTOR:state=>state.filter.actor=null,
         RESET_FILTER_PROJECT:state=>state.filter.project=null,
-
-        // FILTER_ACTION_BY_ACTOR: (state, payload) => {
-        //     state.filter.actor=payload;
-        //     state.pagination = false;
-        //     state.status = false;
-        //     state.item = [];
-        //     state.all_actions.map((action) => {
-        //         action.authors.map((actor) => {
-        //             if (actor.id === payload.code) {
-        //                 state.item.push(action);
-        //             }
-        //         })
-        //     });
-
-        //     state.status = true;
-
-        // },
-        // FILTER_ACTION_BY_STATUS: (state, payload) => {
-        //     state.filter.status=payload;
-        //     state.pagination = false;
-        //     state.status = false;
-        //     state.item = [];
-        //     state.all_actions.map((action) => {
-        //         action.states.map((item) => {
-        //             if (item.id === payload.code) {
-        //                 state.item.push(action);
-        //             }
-        //         })
-        //     });
-
-        //     state.status = true;
-        // },
-        // FILTER_ACTION_BY_TYPE: (state, payload) => {
-        //     state.filter.type=payload;
-        //     state.pagination = false;
-        //     state.status = false;
-        //     state.item = [];
-        //     state.all_actions.map((action) => {
-        //         action.types.map((item) => {
-        //             if (item.id === payload.code) {
-        //                 state.item.push(action);
-        //             }
-        //         })
-        //     });
-        //     state.status = true;
-        // },
-        // FILTER_ACTION_BY_ECHELLE: (state, payload) => {
-        //     state.filter.echelle=payload;
-        //     state.pagination = false;
-        //     state.status = false;
-        //     state.item = [];
-        //     state.all_actions.map((action) => {
-        //         action.echelles.map((echelle) => {
-        //             if (echelle.id === payload.code) {
-        //                 state.item.push(action);
-        //             }
-        //         })
-        //     });
-        //     state.status = true;
-        // },
-
-        // FILTER_ACTION_BY_PROJECT: (state, payload) => {
-        //     state.filter.project=payload;
-        //     state.pagination = false;
-        //     state.status = false;
-        //     state.item = [];
-        //     state.all_actions.map((item) => {
-        //         if (item.project_id == payload.code) {
-        //             state.item.push(item);
-        //         }
-        //     });
-        //     state.status = true;
-        // },
 
         FIND_ACTION: (state, payload) => {
             state.pagination = false;
@@ -193,35 +94,29 @@ export const actionModule = {
 
         // filter action
         GET_ACTIONS_BY_FILTER: (state, payload) => {
+
             // SET_FILTER_LABEL(state, payload);
-            switch (payload.type) {
-                case 'actor':
-                    state.filter.actor=payload;
-                    break;
-                case 'status':
-                    state.filter.status=payload;
-                    break;
-                case 'type':
-                    state.filter.type=payload;
-                    break;
-                case 'echelle':
-                    state.filter.echelle=payload;
-                    break;
-
-                case 'project':
-                    state.filter.project=payload;
-                    break;
-
-                default:
-                    //state.filter=null;
-                    break;
+            if(payload!=null){
+                state.filter[payload.type]=payload;
+                var type=payload.type;
+                var page=payload.page;
             }
+            else
+            {
+                var type='filter';
+                var page=1;
+            }
+
+
             // SET_FILTER_LABEL(state, payload);
             state.filter_payload=payload;
-            var url=`/api/actions/${payload.type}/${payload.code}?page=${payload.page}`;
+
+            //var url=type=="search"?`/api/actions/search?page=${page}`:`/api/actions/filter?page=${page}`;
+            var url=`/api/actions/filter?page=${page}`;
+
             state.status = false;
             state.pagination = false;
-            axios.get(url)
+            axios.post(url, state.filter)
                 .then(function (res) {
                     state.filter_actions = res.data
                     state.item = state.filter_actions.data

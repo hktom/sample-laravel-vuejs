@@ -62,9 +62,12 @@ export const actorModule = {
 
                     //vue select options
                         state.actors.map((item) => {
+                            var sigle=item.sigle!=null?`${item.sigle} : `:``;
                             state.options.push({
                                 code: item.id,
-                                label: item.name,
+                                label: sigle+item.name,
+                                title:item.name,
+                                sigle: sigle,
                                 type: 'actor',
                                 page:1
                                 //label: item.sigle!=null?item.sigle:item.name,

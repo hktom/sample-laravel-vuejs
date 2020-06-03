@@ -1,6 +1,6 @@
 <template>
     <span v-if="view == 1" class="structure">
-        <span v-for="(item, count) in users" :key="item.id">{{item.name.trim()}}{{ count + 1 < users.length ? "," : "" }}</span>
+        <span v-for="(item, count) in users" :key="item.id">{{item.name.trim()}}{{ count + 1 < users.length ? ", " : "" }}</span>
     </span>
 
     <span v-else-if="view == 2" class="structure">
@@ -10,7 +10,7 @@
 
     <span v-else-if="view == 3" class="structure">
         <span v-for="(item, count) in organisations" :key="item.id"
-            ><span class="cursor-pointer" v-if="item.sigle!=null" v-b-tooltip.hover :title="item.name" variant="light">{{item.sigle}}</span><span v-else>{{item.name}}</span>{{ count + 1 < organisations.length ? "," : "" }}</span>
+            ><span class="cursor-pointer" v-if="item.sigle!=null" v-b-tooltip.hover :title="item.name" variant="light">{{item.sigle}}</span><span v-else>{{item.name}}</span>{{ count + 1 < organisations.length ? ", " : "" }}</span>
     </span>
 
     <span v-else class="structure">

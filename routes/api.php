@@ -29,4 +29,5 @@ Route::resource('echelles', 'Api\EchelleController');
 // });
 
 Route::get('all/actions', 'Api\ActionController@index_all');
-Route::get('actions/{q}/{v}', 'Api\ActionController@index_by');
+Route::post('actions/search', 'Api\ActionController@search_action');
+Route::post('actions/filter', 'Api\ActionController@index_by');

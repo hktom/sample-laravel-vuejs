@@ -1,9 +1,8 @@
 <template>
     <div class="my-3">
         <div v-if="action != null">
-            <h3 class="my-1 action-title" :style="'background-color:' + color">
+            <h3 class="my-1 mb-3 action-title" :style="'background-color:' + color">
                 <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
-                <!-- <font-awesome-icon :icon="icon" /> -->
                 {{ title }}
             </h3>
 
@@ -16,7 +15,7 @@
         </div>
 
         <div v-else>
-            <h3 class="my-2 action-title" :style="'background-color:' + color">
+            <h3 class="my-2 mb-3 action-title" :style="'background-color:' + color">
                 <!-- <font-awesome-icon :icon="icon" /> -->
                 <img :src="'/img/icon/'+icon+'.png'" style="width:20px" class="bottom"/>
                 {{ title }}
@@ -62,7 +61,5 @@ export default {
 </script>
 
 <style>
-.paragraph * {
-    text-align: left !important;
-}
+
 </style>
